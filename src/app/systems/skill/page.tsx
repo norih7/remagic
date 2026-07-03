@@ -4,7 +4,7 @@ import SectionTitle from "@/components/SectionTitle";
 import SectionHeader from "@/components/SectionHeader";
 import GuideList from "@/components/GuideList";
 import Image from "next/image";
-
+import Information from "@/components/Information";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
@@ -27,14 +27,12 @@ export default async function HomePage() {
       <section className="mb-12">
         <SectionTitle type="system">リッド/ファラの特技習得</SectionTitle>
         <div className="mb-8">
+          <h3>専用レベル（斬り/突き/拳/蹴り）と確認方法</h3>
           <p>
-            リッドとファラは通常のレベルとは別に専用レベル（リッドは斬りレベル、突きレベル/ファラは拳レベル、蹴りレベル）を持っており、これらが一定レベルまで上がると特技や奥義を習得します。
+            リッドとファラは特殊な専用レベル（リッドは斬り/突き、ファラは拳/蹴り）を持っており、特技や奥義の習得条件となっています。専用レベルは戦闘中にキャラクターの通常攻撃の回数（リッドは斬る/突く）によって加算されていきます。戦闘中に斬り攻撃ばかりをしていると突きレベルが上がらず、特技を習得できないため注意しましょう。
           </p>
           <p>
-            斬りレベルなどは戦闘中にキャラクターが行った攻撃の種類の回数（リッドは斬る/突く）によって加算されていきます。戦闘中に斬り攻撃ばかりをしていると突きレベルが上がらず、特技を習得できないため注意しましょう。
-          </p>
-          <p>
-            斬りレベルなどはステータス画面でおおよそ確認できます。Lvは下記のようにゲージ進行で表示されていてMAXはLv30です。（画像は斬Lv30、突Lv28）
+            専用レベルはリッドとファラのステータス画面でおおよそ確認できます。Lvは下記のようにゲージ進行で表示されていてMAXはLv30です。（画像は斬Lv30、突Lv28）
           </p>
           <Image
             src="/systems/skill-level-rid.jpg"
@@ -54,21 +52,38 @@ export default async function HomePage() {
             height={200}
             className="mb-2"
           />
+        </div>
+        <div className="mb-8">
+          <h3>技の利用回数</h3>
+          <p>
+            虎牙連斬のような上位技の習得には「斬り/突き」レベルに加え、前段となる「虎牙破斬」を150回以上使用するといった条件も必要となります。予め技の関係を理解しておけば、効率よく技の利用回数を稼ぐことができます。特技一覧ページでは専用レベルや技の使用回数も掲載していますのでご覧ください。
+          </p>
+          <GuideList
+            items={[
+              {
+                title: "リッドの特技一覧",
+                href: "/skills/rid",
+              },
+              {
+                title: "ファラの特技一覧",
+                href: "/skills/farth",
+              },
+            ]}
+          />
 
-          <div className="mb-8">
-            <GuideList
-              items={[
-                {
-                  title: "リッドの特技一覧",
-                  href: "/skills/rid",
-                },
-                {
-                  title: "ファラの特技一覧",
-                  href: "/skills/farth",
-                },
-              ]}
+          <Information type="info">
+            <h4>特技画面に表示される未習得特技について</h4>
+            <p>
+              特技画面には以下のように青色で使用できない未習得技が表示されることがあります。これは習得まであと1つの要素が足りないことを示しています。例えば今回の画像だと斬り/突きレベルは満たしていますが、前段の閃空裂破の使用回数が250回を超えていません。
+            </p>
+            <Image
+              src="/systems/skill-level-unreach.jpg"
+              alt=""
+              width={300}
+              height={200}
+              className="mb-2"
             />
-          </div>
+          </Information>
         </div>
       </section>
 
