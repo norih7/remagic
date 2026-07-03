@@ -531,11 +531,10 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <h2>おすすめの晶霊術</h2>
+      {/* <h2>おすすめの晶霊術</h2>
       <div className="advice">
         <p>準備中</p>
-      </div>
-
+      </div> */}
       <SectionTitle type="skill">晶霊術一覧</SectionTitle>
       <SkillPropertyList skills={skills} />
     </article>

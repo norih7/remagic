@@ -80,11 +80,13 @@ export default async function HomePage() {
         <p>
           フォッグの特技一覧ページです。習得できるサブイベントは別ページがありますので参照ください。
         </p>
-        <GuideList
-          items={[
-            { title: "フォッグの特技習得", href: "/subevents/skill-fog" },
-          ]}
-        ></GuideList>
+        <div className="mb-4">
+          <GuideList
+            items={[
+              { title: "フォッグの特技習得", href: "/subevents/skill-fog" },
+            ]}
+          ></GuideList>
+        </div>
       </PageSummary>
       {/* 
       <section className="mb-12">

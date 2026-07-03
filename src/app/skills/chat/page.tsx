@@ -85,11 +85,13 @@ export default async function HomePage() {
         <p>
           チャットの特技一覧ページです。習得できるサブイベントは別ページがありますので参照ください。
         </p>
-        <GuideList
-          items={[
-            { title: "チャットの特技習得", href: "/subevents/skill-chat" },
-          ]}
-        ></GuideList>
+        <div className="mb-4">
+          <GuideList
+            items={[
+              { title: "チャットの特技習得", href: "/subevents/skill-chat" },
+            ]}
+          ></GuideList>
+        </div>
       </PageSummary>
       {/* 
       <section className="mb-12">

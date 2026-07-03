@@ -16,16 +16,16 @@ interface GuideListProps {
 export const GuideList: React.FC<GuideListProps> = ({ items }) => {
   return (
     <div className="pt-4">
-      <span className={`mb-2 text-sm inline-flex items-center font-bold`}>
+      <span className={`mb-3 text-sm inline-flex items-center font-bold`}>
         <LuFile className="mr-1" />
         ページリンク
       </span>
-      <ul>
+      <ul className="grid grid-cols-2 gap-2">
         {items.map((item, index) => (
-          <li key={index} className="mb-2">
+          <li key={index} className="">
             <a
               href={item.href}
-              className="flex items-center p-2 text-sm text-sky-800 bg-sky-50 border border-sky-200 rounded-sm transition-all duration-200 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-300"
+              className="flex items-center p-2 text-sm text-sky-900 bg-blue-50 border border-sky-200 rounded-lg transition-all duration-200 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-300"
             >
               <MdKeyboardArrowRight className="mr-1" />
               <span>{item.title}</span>

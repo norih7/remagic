@@ -187,9 +187,13 @@ export default async function HomePage() {
         <p>
           ファラの特技と奥義の一覧ページです。習得に必要な「拳レベル」などの説明、秘奥義の説明は別ページがありますので参照ください。
         </p>
-        <GuideList
-          items={[{ title: "拳レベル/蹴レベルの説明", href: "/systems/skill" }]}
-        ></GuideList>
+        <div className="mb-4">
+          <GuideList
+            items={[
+              { title: "拳レベル/蹴レベルの説明", href: "/systems/skill" },
+            ]}
+          ></GuideList>
+        </div>
       </PageSummary>
       {/* 
       <section className="mb-12">

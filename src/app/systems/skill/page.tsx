@@ -3,6 +3,7 @@ import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import SectionHeader from "@/components/SectionHeader";
 import GuideList from "@/components/GuideList";
+import Image from "next/image";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,24 +31,41 @@ export default async function HomePage() {
             リッドとファラは通常のレベルとは別に専用レベル（リッドは斬りレベル、突きレベル/ファラは拳レベル、蹴りレベル）を持っており、これらが一定レベルまで上がると特技や奥義を習得します。
           </p>
           <p>
-            斬りレベルなどは戦闘中にキャラクターが行った攻撃の種類の回数(リッドの場合は斬る/突く)によって加算されていきます。戦闘中に斬り攻撃ばかりをしていると突きレベルが上がらず、特技を習得できないため注意しましょう。
+            斬りレベルなどは戦闘中にキャラクターが行った攻撃の種類の回数（リッドは斬る/突く）によって加算されていきます。戦闘中に斬り攻撃ばかりをしていると突きレベルが上がらず、特技を習得できないため注意しましょう。
           </p>
-          <p>斬りレベルなどはリッドとファラのステータス画面で確認できます。</p>
-        </div>
-        <div className="mb-8">
-          <h3 className="mb-2">特技一覧と習得情報</h3>
-          <GuideList
-            items={[
-              {
-                title: "リッドの特技一覧",
-                href: "/skills/rid",
-              },
-              {
-                title: "ファラの特技一覧",
-                href: "/skills/farth",
-              },
-            ]}
-          />
+          <p>
+            斬りレベルなどはステータス画面でおおよそ確認できます。Lvは下記のようにゲージ進行で表示されていてMAXはLv30です。（画像は斬Lv30、突Lv28）また戦闘終了後に通常のレベルアップだけではなく斬レベルのレベルアップも表示されます。通常レベルは「LEVEL
+            UP」、斬りレベルは「SLASH UP」と表示されます。
+          </p>
+          <div className="flex justify-between">
+            <Image
+              src="/systems/skill-level-rid.jpg"
+              alt=""
+              width={300}
+              height={200}
+              className=""
+            />
+            <Image
+              src="/systems/skill-level-buttle.jpg"
+              alt=""
+              width={300}
+              height={200}
+            />
+          </div>
+          <div className="mb-8">
+            <GuideList
+              items={[
+                {
+                  title: "リッドの特技一覧",
+                  href: "/skills/rid",
+                },
+                {
+                  title: "ファラの特技一覧",
+                  href: "/skills/farth",
+                },
+              ]}
+            />
+          </div>
         </div>
       </section>
 
@@ -55,33 +73,38 @@ export default async function HomePage() {
         <SectionTitle type="system">キール/メルディの術習得</SectionTitle>
         <div className="mb-8">
           <p>
-            キールとメルディは契約している大晶霊をC.ケイジのフリンジで組み合わせて晶霊術を習得できる。フリンジをするにはそれぞれの大晶霊の組み合わせとレベルが必要となる。
+            キールとメルディは契約している大晶霊をC.ケイジのフリンジで組み合わせて晶霊術を習得できます。フリンジで晶霊術を習得するには大晶霊の組み合わせと一定以上のレベルが必要です。フリンジの組み合わせについては晶霊術一覧をご覧ください。
           </p>
           <p>
-            大晶霊のレベルは戦闘勝利後に手に入る経験値がほぼそのまま加算されていく。ただし大晶霊は各々に経験値を蓄えており、契約後は0から蓄えていくことになる。
+            大晶霊は戦闘勝利後に手に入る経験値が加算されてレベルアップしていきます。ただし大晶霊は個別に経験値を蓄えており、ストーリー後半で契約できる大晶霊は0から蓄えていくことになためレベルが低くなりがちです（レムなど）
           </p>
-          <p>各大晶霊の経験値はC.ケイジから確認することができる。</p>
-        </div>
-        <div className="mb-8">
-          <h3 className="mb-2">晶霊術一覧とフリンジ情報</h3>
-          <GuideList
-            items={[
-              {
-                title: "晶霊術一覧",
-                href: "/skills/magic",
-              },
-            ]}
+          <p>各大晶霊の経験値はC.ケイジから確認することができます。</p>
+          <Image
+            src="/systems/skill-level-magic.jpg"
+            alt=""
+            width={300}
+            height={200}
           />
+          <div className="mb-8">
+            <GuideList
+              items={[
+                {
+                  title: "晶霊術一覧",
+                  href: "/skills/magic",
+                },
+              ]}
+            />
+          </div>
         </div>
       </section>
 
       <section className="mb-12">
         <SectionTitle type="system">チャット/フォッグの特技習得</SectionTitle>
+        <p>
+          チャットとフォッグはサブイベントにて特技を習得していきます。特技一覧や習得サブイベントの詳細は下記ページをご覧ください。
+        </p>
+
         <div className="mb-8">
-          <p>チャットとフォッグはサブイベントにて特技を習得していく。</p>
-        </div>
-        <div className="mb-8">
-          <h3 className="mb-2">特技一覧と習得情報</h3>
           <GuideList
             items={[
               {
