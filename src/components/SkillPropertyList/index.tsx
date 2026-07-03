@@ -21,6 +21,7 @@ export interface Skill {
   name: string;
   ruby?: string;
   description: string;
+  remarks?: string;
   requirement: string;
   requirement2?: string;
   tp?: number;
@@ -137,6 +138,15 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
             <span className="text-xs">{ruby}</span>
           </h3>
         );
+        const descripion =
+          skill.remarks === undefined ? (
+            <p>{skill.description}</p>
+          ) : (
+            <>
+              <p>{skill.description}</p>
+              <p className="border-t border-gray-200 pt-2">{skill.remarks}</p>
+            </>
+          );
         return (
           <div key={index}>
             {skillName}
@@ -164,9 +174,9 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 <LiaComment className="mr-1" />
                 説明
               </h4>
-              <p className="bg-slate-50 px-3 py-2 rounded-lg border border-slate-200">
-                {skill.description}
-              </p>
+              <div className="bg-slate-50 px-3 pt-2 rounded-lg border border-slate-200">
+                {descripion}
+              </div>
             </div>
           </div>
         );

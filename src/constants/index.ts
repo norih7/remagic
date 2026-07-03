@@ -210,11 +210,11 @@ export const extraLinks = {
 export const elementMap = {
   water: {
     name: "水",
-    color: "text-sky-500",
+    color: "text-sky-400",
   },
   wind: {
     name: "風",
-    color: "text-lime-500",
+    color: "text-lime-400",
   },
   fire: {
     name: "火",
@@ -222,35 +222,35 @@ export const elementMap = {
   },
   earth: {
     name: "土",
-    color: "text-yellow-800",
+    color: "text-amber-600",
   },
   ice: {
     name: "氷",
-    color: "text-gray-300",
+    color: "text-slate-300",
   },
   light: {
     name: "光",
-    color: "text-yellow-200",
+    color: "text-amber-300",
   },
   thunder: {
     name: "雷",
-    color: "text-amber-400",
+    color: "text-yellow-500",
   },
   dark: {
     name: "闇",
-    color: "text-gray-800",
+    color: "text-gray-600",
   },
   origin: {
     name: "元",
-    color: "text-gray-800",
+    color: "text-mauve-400",
   },
   time: {
     name: "時",
-    color: "text-gray-800",
+    color: "text-purple-400",
   },
   normal: {
     name: "武器属性",
-    color: "text-gray-500",
+    color: "text-mist-400",
   },
   none: {
     name: "-",

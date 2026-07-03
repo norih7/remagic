@@ -86,13 +86,13 @@ export default async function HomePage() {
           ]}
         ></GuideList>
       </PageSummary>
-
+      {/* 
       <section className="mb-12">
         <SectionTitle type="data">おすすめの特技</SectionTitle>
         <div className="advice">
           <p>準備中</p>
         </div>
-      </section>
+      </section> */}
 
       <section className="mb-12">
         <SectionTitle type="skill">フォッグの特技</SectionTitle>

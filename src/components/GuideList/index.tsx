@@ -25,7 +25,7 @@ export const GuideList: React.FC<GuideListProps> = ({ items }) => {
           <li key={index} className="mb-2">
             <a
               href={item.href}
-              className="flex items-center p-2 text-sm text-blue-800 bg-blue-50 border border-blue-100 rounded-sm transition-all duration-200 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-300"
+              className="flex items-center p-2 text-sm text-sky-800 bg-sky-50 border border-sky-200 rounded-sm transition-all duration-200 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-300"
             >
               <MdKeyboardArrowRight className="mr-1" />
               <span>{item.title}</span>

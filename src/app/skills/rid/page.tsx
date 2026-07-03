@@ -4,6 +4,7 @@ import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
 import SkillPropertyList from "@/components/SkillPropertyList";
 import { Skill } from "@/components/SkillPropertyList";
+import Information from "@/components/Information";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -21,6 +22,7 @@ export default async function HomePage() {
       ruby: "まじんけん",
       description:
         "剣圧を放つ飛び攻撃。敵の詠唱を妨げたいときの飛び道具として結構使えます。",
+      remarks: "後続技: 魔神剣・双牙、魔神千裂破",
       requirement: "斬Lv1/突Lv1",
       tp: 4,
       hit: 1,
@@ -32,6 +34,7 @@ export default async function HomePage() {
       ruby: "らいじんけん",
       description:
         "雷属性の突き攻撃。突きがヒットすると追加で雷ダメージを与える。",
+      remarks: "後続技: 風雷神剣、雷神双破斬",
       requirement: "斬Lv1/突Lv2",
       tp: 4,
       hit: 2,
@@ -43,6 +46,7 @@ export default async function HomePage() {
       ruby: "こがはざん",
       description:
         "上下の2段斬りを行う。動作に無駄がなく終盤でも活躍する特技。",
+      remarks: "後続技: 虎牙連斬、雷神双破斬",
       requirement: "斬Lv5/突Lv2",
       tp: 6,
       hit: 2,
@@ -54,6 +58,7 @@ export default async function HomePage() {
       ruby: "ちりさだめ",
       description:
         "最大5HITの連続突きを行う。武器の命中率が低いとあまりHITしないので注意。",
+      remarks: "後続技: 秋沙雨、魔神千裂破、空破絶掌撃",
       requirement: "斬Lv2/突Lv5",
       tp: 7,
       hit: 5,
@@ -64,7 +69,8 @@ export default async function HomePage() {
       name: "裂空斬",
       ruby: "れっくうざん",
       description:
-        "円を描きながら回転斬りを行う。敵の背後に回り込むために使用するのも有効。使用回数が100を超えるとジャンプ中に発動可能になり、使い道が広がる。",
+        "円を描きながら回転斬りを行う。敵の背後に回り込むために使用するのも有効。使用回数が100を超えるとジャンプ中に発動可能になり、使い道が広がります。",
+      remarks: "後続技: 真空列斬、翔雨裂空撃",
       requirement: "斬Lv16/突Lv8",
       tp: 7,
       hit: 5,
@@ -75,12 +81,13 @@ export default async function HomePage() {
       name: "風雷神剣",
       ruby: "ふうらいじんけん",
       description:
-        "雷神剣を強化した攻撃。使い勝手的には雷神剣と大きな差はないが、のちに鳳凰天駆を習得するために多くの使用回数が必要となる。習得にはレベル以外に「雷神剣」の使用が50回以上必要。",
+        "雷神剣を強化した攻撃。使い勝手的には雷神剣と大きな差はないが、のちに鳳凰天駆を習得するために多くの使用回数が必要となります。1撃目は風属性で雷撃は雷属性。習得にはレベル以外に「雷神剣」の使用が50回以上必要。",
+      remarks: "後続技: 空破絶掌撃",
       requirement: "斬Lv4/突Lv10",
       requirement2: "雷神剣50回以上",
       tp: 8,
       hit: 3,
-      element: ["thunder"],
+      element: ["wind", "thunder"],
       type: "特技",
     },
     {
@@ -88,6 +95,7 @@ export default async function HomePage() {
       ruby: "まじんけんそうが",
       description:
         "魔神剣をテンポよく2回放つ。一定の距離の敵にしか届かないが、タイミングをずらした素早い2連撃は魅力的。習得にはレベル以外に「魔神剣」の使用が48回以上必要。",
+      remarks: "後続技: 魔神連牙斬",
       requirement: "斬Lv10/突Lv3",
       requirement2: "魔神剣48回",
       tp: 8,
@@ -100,6 +108,7 @@ export default async function HomePage() {
       ruby: "こがれんざん",
       description:
         "虎牙破斬を強化した攻撃。虎牙破斬から乗り換える人が多数の特技でかなり使い勝手がいい。習得にはレベル以外に「虎牙破斬」の使用が150回以上必要。",
+      remarks: "後続技: 雷神双破斬、猛虎連撃破",
       requirement: "斬Lv13/突Lv4",
       requirement2: "虎牙破斬150回",
       tp: 10,
@@ -112,6 +121,7 @@ export default async function HomePage() {
       ruby: "あきさだめ",
       description:
         "最大11HITの連続突きを行う。最後には突き上げ斬りをするためコンボに使う場合は使い勝手が難しい。習得にはレベル以外に「散沙雨」の使用が130回以上必要。",
+      remarks: "後続技: 翔雨裂空撃",
       requirement: "斬Lv4/突Lv13",
       requirement2: "散沙雨130回",
       tp: 12,
@@ -172,6 +182,7 @@ export default async function HomePage() {
       ruby: "せんくうれっぱ",
       description:
         "敵を巻き込みながら攻撃。光属性の攻撃であり、命中率が高ければ中々使い勝手がいい。",
+      remarks: "後続技: 閃空翔裂破",
       requirement: "斬Lv9/突Lv16",
       tp: 10,
       hit: 8,
@@ -181,7 +192,7 @@ export default async function HomePage() {
     {
       name: "閃空双破斬",
       ruby: "せんくうそうはざん",
-      description: "準備中",
+      description: "閃空裂破と虎牙破斬を組み合わせた奥義。",
       requirement: "斬Lv19/突Lv14",
       tp: 20,
       hit: 8,
@@ -192,11 +203,11 @@ export default async function HomePage() {
       name: "翔雨裂空撃",
       ruby: "しょううれっくうげき",
       description:
-        "裂空斬と秋沙雨を組み合わせた奥義。最大HIT数は19ですが、これを出すのは難しい。習得にはレベル以外に「裂空斬破」の使用が120回以上、「秋沙雨」の使用が80回以上必要。",
+        "裂空斬と秋沙雨を組み合わせた奥義。最大HIT数は19ですが、これを出すのは難しい。習得にはレベル以外に「裂空斬」の使用が80回以上、「秋沙雨」の使用が120回以上必要。",
       requirement: "斬Lv14/突Lv19",
-      requirement2: "裂空斬破120回/秋沙雨80回",
+      requirement2: "裂空斬80回/秋沙雨120回",
       tp: 24,
-      hit: 10,
+      hit: 19,
       element: ["normal"],
       type: "特技",
     },
@@ -212,12 +223,12 @@ export default async function HomePage() {
       type: "奥義",
     },
     {
-      name: "真空列斬",
+      name: "真空裂斬",
       ruby: "しんくうれつざん",
       description:
         "裂空斬を強化した攻撃。風属性の攻撃となり、モーションが早くなっている。",
+      remarks: "後続技: 翔雨裂空撃",
       requirement: "斬Lv23/突Lv4",
-      requirement2: "裂空斬250回",
       tp: 14,
       hit: 5,
       element: ["wind"],
@@ -257,6 +268,34 @@ export default async function HomePage() {
       element: ["wind"],
       type: "奥義",
     },
+    {
+      name: "極光壁",
+      ruby: "きょっこうへき",
+      description: "戦闘中にHPが減り赤くなった状態で○×△を同時押しすると発動。",
+      requirement: "ストーリーで習得",
+      tp: 25,
+      element: ["light"],
+      type: "奥義",
+    },
+    {
+      name: "極光剣",
+      ruby: "きょっこうけん",
+      description: "極光壁発動中に○ボタンを押すと追加発動。",
+      requirement: "ストーリーで習得",
+      tp: 50,
+      element: ["light"],
+      type: "奥義",
+    },
+    {
+      name: "極光波",
+      ruby: "きょっこうは",
+      description:
+        "ラスボス戦で使用する。エターナルファイナリティを発動されたときに○×△を同時押しすると発動。",
+      requirement: "ストーリーで習得",
+      tp: 25,
+      element: ["light"],
+      type: "奥義",
+    },
   ] as Skill[];
   return (
     <article>
@@ -271,12 +310,9 @@ export default async function HomePage() {
         ></GuideList>
       </PageSummary>
 
-      <section className="mb-12">
-        <SectionTitle type="data">おすすめの特技/奥義</SectionTitle>
-        <div className="advice">
-          <p>準備中</p>
-        </div>
-      </section>
+      {/* <section className="mb-12">
+        <SectionTitle type="data">おすすめ特技/奥義</SectionTitle>
+      </section> */}
 
       <section className="mb-12">
         <SectionTitle type="skill">リッドの特技/奥義一覧</SectionTitle>

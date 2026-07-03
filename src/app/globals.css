@@ -5,31 +5,96 @@
   --foreground: #171717;
 }
 
-@theme inline {
+@theme {
+  /* フォントとベース設定 */
+  --font-base: "Inter", "Noto Sans JP", sans-serif;
+  --text-base: 0.9rem;
+
+  /* 既存のカスタム変数 */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-
   --color-brand-blue: #2563eb;
   --color-test-red: #ff0000;
-  --font-base: "Inter", "Noto Sans JP", sans-serif;
-  --text-base: 0.9rem;
+  /* ベース（500）を少し明るく調整 
+     (元の彩度を保ちつつ、明度を上げたカラーパレット)
+  */
+  --color-sky-500: #78a3ce;
+  --color-lime-500: #a3ba6e;
+  --color-red-500: #d67d7d;
+  --color-yellow-500: #e0cc6d;
+  --color-amber-500: #e3b56d;
+
+  /* 100〜900の自動生成 
+     color-mixで白(100〜400)と黒(600〜900)を混ぜることで統一感を確保
+  */
+
+  /* Sky */
+  --color-sky-100: color-mix(in srgb, var(--color-sky-500), white 80%);
+  --color-sky-200: color-mix(in srgb, var(--color-sky-500), white 60%);
+  --color-sky-300: color-mix(in srgb, var(--color-sky-500), white 40%);
+  --color-sky-400: color-mix(in srgb, var(--color-sky-500), white 20%);
+  --color-sky-600: color-mix(in srgb, var(--color-sky-500), black 20%);
+  --color-sky-700: color-mix(in srgb, var(--color-sky-500), black 40%);
+  --color-sky-800: color-mix(in srgb, var(--color-sky-500), black 60%);
+  --color-sky-900: color-mix(in srgb, var(--color-sky-500), black 80%);
+
+  /* Lime */
+  --color-lime-100: color-mix(in srgb, var(--color-lime-500), white 80%);
+  --color-lime-200: color-mix(in srgb, var(--color-lime-500), white 60%);
+  --color-lime-300: color-mix(in srgb, var(--color-lime-500), white 40%);
+  --color-lime-400: color-mix(in srgb, var(--color-lime-500), white 20%);
+  --color-lime-600: color-mix(in srgb, var(--color-lime-500), black 20%);
+  --color-lime-700: color-mix(in srgb, var(--color-lime-500), black 40%);
+  --color-lime-800: color-mix(in srgb, var(--color-lime-500), black 60%);
+  --color-lime-900: color-mix(in srgb, var(--color-lime-500), black 80%);
+
+  /* Red */
+  --color-red-100: color-mix(in srgb, var(--color-red-500), white 80%);
+  --color-red-200: color-mix(in srgb, var(--color-red-500), white 60%);
+  --color-red-300: color-mix(in srgb, var(--color-red-500), white 40%);
+  --color-red-400: color-mix(in srgb, var(--color-red-500), white 20%);
+  --color-red-600: color-mix(in srgb, var(--color-red-500), black 20%);
+  --color-red-700: color-mix(in srgb, var(--color-red-500), black 40%);
+  --color-red-800: color-mix(in srgb, var(--color-red-500), black 60%);
+  --color-red-900: color-mix(in srgb, var(--color-red-500), black 80%);
+
+  /* Yellow */
+  --color-yellow-100: color-mix(in srgb, var(--color-yellow-500), white 80%);
+  --color-yellow-200: color-mix(in srgb, var(--color-yellow-500), white 60%);
+  --color-yellow-300: color-mix(in srgb, var(--color-yellow-500), white 40%);
+  --color-yellow-400: color-mix(in srgb, var(--color-yellow-500), white 20%);
+  --color-yellow-600: color-mix(in srgb, var(--color-yellow-500), black 20%);
+  --color-yellow-700: color-mix(in srgb, var(--color-yellow-500), black 40%);
+  --color-yellow-800: color-mix(in srgb, var(--color-yellow-500), black 60%);
+  --color-yellow-900: color-mix(in srgb, var(--color-yellow-500), black 80%);
+
+  /* Amber */
+  --color-amber-100: color-mix(in srgb, var(--color-amber-500), white 80%);
+  --color-amber-200: color-mix(in srgb, var(--color-amber-500), white 60%);
+  --color-amber-300: color-mix(in srgb, var(--color-amber-500), white 40%);
+  --color-amber-400: color-mix(in srgb, var(--color-amber-500), white 20%);
+  --color-amber-600: color-mix(in srgb, var(--color-amber-500), black 20%);
+  --color-amber-700: color-mix(in srgb, var(--color-amber-500), black 40%);
+  --color-amber-800: color-mix(in srgb, var(--color-amber-500), black 60%);
+  --color-amber-900: color-mix(in srgb, var(--color-amber-500), black 80%);
 }
 
 @layer base {
   body {
     font-family: var(--font-base);
-    /* 攻略サイトの信頼感を生む微調整 */
-    -webkit-font-smoothing: antialiased; /* Macで文字をくっきり見せる */
-    letter-spacing: -0.01em; /* 文字間隔を少し詰めて、情報の密度を上げる */
-    line-height: 1.6; /* 行間を広げて、大量のテキストを読みやすくする */
-    font-size: 0.9rem;
+    font-size: var(--text-base);
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
   }
+
   h2,
   h3 {
     font-size: 1.1rem;
   }
+
   p {
     padding-bottom: 8px;
     line-height: 1.6;
