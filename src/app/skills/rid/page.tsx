@@ -24,7 +24,7 @@ export default async function HomePage() {
       requirement: "斬Lv1/突Lv1",
       tp: 4,
       hit: 1,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -35,7 +35,7 @@ export default async function HomePage() {
       requirement: "斬Lv1/突Lv2",
       tp: 4,
       hit: 2,
-      element: "thunder",
+      element: ["thunder"],
       type: "特技",
     },
     {
@@ -46,7 +46,7 @@ export default async function HomePage() {
       requirement: "斬Lv5/突Lv2",
       tp: 6,
       hit: 2,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -57,7 +57,7 @@ export default async function HomePage() {
       requirement: "斬Lv2/突Lv5",
       tp: 7,
       hit: 5,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -68,7 +68,7 @@ export default async function HomePage() {
       requirement: "斬Lv16/突Lv8",
       tp: 7,
       hit: 5,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -80,7 +80,7 @@ export default async function HomePage() {
       requirement2: "雷神剣50回以上",
       tp: 8,
       hit: 3,
-      element: "thunder",
+      element: ["thunder"],
       type: "特技",
     },
     {
@@ -92,7 +92,7 @@ export default async function HomePage() {
       requirement2: "魔神剣48回",
       tp: 8,
       hit: 3,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -104,7 +104,7 @@ export default async function HomePage() {
       requirement2: "虎牙破斬150回",
       tp: 10,
       hit: 4,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -116,7 +116,7 @@ export default async function HomePage() {
       requirement2: "散沙雨130回",
       tp: 12,
       hit: 11,
-      element: "normal",
+      element: ["normal"],
       type: "奥義",
     },
     {
@@ -128,7 +128,7 @@ export default async function HomePage() {
       requirement2: "雷神剣16回以上/虎牙破斬16回以上",
       tp: 4,
       hit: 4,
-      element: "thunder",
+      element: ["thunder"],
       type: "奥義",
     },
     {
@@ -140,7 +140,7 @@ export default async function HomePage() {
       requirement2: "魔神剣24回/散沙雨24回",
       tp: 10,
       hit: 6,
-      element: "normal",
+      element: ["normal"],
       type: "奥義",
     },
     {
@@ -152,7 +152,7 @@ export default async function HomePage() {
       requirement2: "魔神剣60回/魔神剣双牙50回",
       tp: 15,
       hit: 4,
-      element: "normal",
+      element: ["normal"],
       type: "奥義",
     },
     {
@@ -164,7 +164,7 @@ export default async function HomePage() {
       requirement2: "雷神剣70回/散沙雨70回",
       tp: 15,
       hit: 2,
-      element: "normal",
+      element: ["normal"],
       type: "奥義",
     },
     {
@@ -175,7 +175,7 @@ export default async function HomePage() {
       requirement: "斬Lv9/突Lv16",
       tp: 10,
       hit: 8,
-      element: "light",
+      element: ["light"],
       type: "奥義",
     },
     {
@@ -185,7 +185,7 @@ export default async function HomePage() {
       requirement: "斬Lv19/突Lv14",
       tp: 20,
       hit: 8,
-      element: "light",
+      element: ["light"],
       type: "奥義",
     },
     {
@@ -197,7 +197,7 @@ export default async function HomePage() {
       requirement2: "裂空斬破120回/秋沙雨80回",
       tp: 24,
       hit: 10,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -208,7 +208,7 @@ export default async function HomePage() {
       requirement2: "閃空裂破250回",
       tp: 14,
       hit: 4,
-      element: "light",
+      element: ["light"],
       type: "奥義",
     },
     {
@@ -220,7 +220,7 @@ export default async function HomePage() {
       requirement2: "裂空斬250回",
       tp: 14,
       hit: 5,
-      element: "wind",
+      element: ["wind"],
       type: "特技",
     },
     {
@@ -232,7 +232,7 @@ export default async function HomePage() {
       requirement2: "風雷神剣200回/空破絶掌撃破150回",
       tp: 40,
       hit: 9,
-      element: "fire",
+      element: ["fire"],
       type: "奥義",
     },
     {
@@ -244,7 +244,7 @@ export default async function HomePage() {
       requirement2: "虎牙破斬200回",
       tp: 40,
       hit: 8,
-      element: "normal",
+      element: ["normal"],
       type: "奥義",
     },
     {
@@ -254,7 +254,7 @@ export default async function HomePage() {
       requirement: "斬Lv30/突Lv30",
       tp: 40,
       hit: 2,
-      element: "wind",
+      element: ["wind"],
       type: "奥義",
     },
   ] as Skill[];

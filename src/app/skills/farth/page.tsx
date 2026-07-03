@@ -24,7 +24,7 @@ export default async function HomePage() {
       requirement: "拳Lv2/蹴Lv2",
       tp: 6,
       hit: 3,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -35,7 +35,7 @@ export default async function HomePage() {
       requirement: "拳Lv5/蹴Lv2",
       tp: 8,
       hit: 6,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -46,7 +46,7 @@ export default async function HomePage() {
       requirement: "拳Lv4/蹴Lv5",
       tp: 7,
       hit: 3,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -57,7 +57,7 @@ export default async function HomePage() {
       requirement: "拳Lv3/蹴Lv8",
       tp: 8,
       hit: 3,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -68,7 +68,7 @@ export default async function HomePage() {
       requirement: "拳Lv8/蹴Lv4",
       tp: 12,
       hit: 3,
-      element: "wind",
+      element: ["wind"],
       type: "特技",
     },
     {
@@ -79,7 +79,7 @@ export default async function HomePage() {
       requirement: "拳Lv11/蹴Lv12",
       tp: 12,
       hit: 4,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -89,7 +89,7 @@ export default async function HomePage() {
       requirement: "拳Lv10/蹴Lv8",
       tp: 12,
       hit: 2,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -101,7 +101,7 @@ export default async function HomePage() {
       requirement2: "飛燕連脚150回",
       tp: 13,
       hit: 4,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -112,7 +112,7 @@ export default async function HomePage() {
       requirement2: "連牙弾150回",
       tp: 18,
       hit: 11,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -124,7 +124,7 @@ export default async function HomePage() {
       requirement2: "散華猛襲脚100回/飛燕連天脚100回",
       tp: 20,
       hit: 4,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -136,7 +136,7 @@ export default async function HomePage() {
       requirement2: "八葉連牙100回/双撞掌底破160回",
       tp: 20,
       hit: 4,
-      element: "normal",
+      element: ["normal"],
       type: "特技",
     },
     {
@@ -148,7 +148,7 @@ export default async function HomePage() {
       requirement2: "獅子戦吼120回/鷹爪落爆蹴120回",
       tp: 60,
       hit: 21,
-      element: "fire",
+      element: ["fire"],
       type: "特技",
     },
     {
@@ -157,7 +157,7 @@ export default async function HomePage() {
       description:
         "ストーリー上で習得(モルルでのイベント)。仲間一人の毒状態を回復する。",
       tp: 8,
-      element: "none",
+      element: [],
       type: "回復",
     },
     {
@@ -166,7 +166,7 @@ export default async function HomePage() {
       description:
         "ストーリー上で習得(モルルでのイベント)。仲間一人の毒状態を回復する。",
       tp: 8,
-      element: "none",
+      element: [],
       type: "回復",
     },
     {
@@ -175,7 +175,7 @@ export default async function HomePage() {
       description:
         "ストーリー上で習得(ファロース教会でのイベント)。仲間一人の戦闘不能状態を回復する。",
       tp: 50,
-      element: "none",
+      element: [],
       type: "回復",
     },
   ] as Skill[];

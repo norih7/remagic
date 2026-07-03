@@ -15,6 +15,8 @@ import { TbSquareChevronDownFilled } from "react-icons/tb";
 import { FaCircleDot } from "react-icons/fa6";
 import { elementMap } from "@/constants";
 
+type Element = keyof typeof elementMap;
+
 export interface Skill {
   name: string;
   ruby?: string;
@@ -23,7 +25,7 @@ export interface Skill {
   requirement2?: string;
   tp?: number;
   hit?: number;
-  element: keyof typeof elementMap;
+  element: Element[];
   type?: string;
 }
 
@@ -49,7 +51,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
   return (
     <>
       {result.map((skill, index) => {
-        const bg = elementMap[skill.element].color;
+        // const bg = elementMap[skill.element].color;
         const properties = [
           {
             label: (
@@ -87,12 +89,19 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
             ),
 
             value:
-              skill.element === "none" ? (
+              skill.element.length === 0 ? (
                 "-"
               ) : (
-                <span className="flex items-center">
-                  <FaCircleDot className={`${bg} mr-1`} />
-                  {elementMap[skill.element].name}
+                <span className="flex">
+                  {skill.element.map((name, index) => {
+                    const color = elementMap[name].color;
+                    return (
+                      <span className="flex items-center mr-2" key={index}>
+                        <FaCircleDot className={`${color} mr-1`} />
+                        {elementMap[name].name}
+                      </span>
+                    );
+                  })}
                 </span>
               ),
           },
