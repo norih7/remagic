@@ -58,7 +58,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 習得条件1
               </>
             ),
-            value: skill.requirement2 === undefined ? "-" : skill.requirement,
+            value: skill.requirement === undefined ? "-" : skill.requirement,
           },
           {
             label: (
