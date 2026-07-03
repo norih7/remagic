@@ -34,24 +34,27 @@ export default async function HomePage() {
             斬りレベルなどは戦闘中にキャラクターが行った攻撃の種類の回数（リッドは斬る/突く）によって加算されていきます。戦闘中に斬り攻撃ばかりをしていると突きレベルが上がらず、特技を習得できないため注意しましょう。
           </p>
           <p>
-            斬りレベルなどはステータス画面でおおよそ確認できます。Lvは下記のようにゲージ進行で表示されていてMAXはLv30です。（画像は斬Lv30、突Lv28）また戦闘終了後に通常のレベルアップだけではなく斬レベルのレベルアップも表示されます。通常レベルは「LEVEL
+            斬りレベルなどはステータス画面でおおよそ確認できます。Lvは下記のようにゲージ進行で表示されていてMAXはLv30です。（画像は斬Lv30、突Lv28）
+          </p>
+          <Image
+            src="/systems/skill-level-rid.jpg"
+            alt=""
+            width={300}
+            height={200}
+            className="mb-2"
+          />
+          <p>
+            また戦闘終了後に通常のレベルアップだけではなく斬レベルのレベルアップも表示されます。通常レベルは「LEVEL
             UP」、斬りレベルは「SLASH UP」と表示されます。
           </p>
-          <div className="flex justify-between">
-            <Image
-              src="/systems/skill-level-rid.jpg"
-              alt=""
-              width={300}
-              height={200}
-              className=""
-            />
-            <Image
-              src="/systems/skill-level-buttle.jpg"
-              alt=""
-              width={300}
-              height={200}
-            />
-          </div>
+          <Image
+            src="/systems/skill-level-buttle.jpg"
+            alt=""
+            width={300}
+            height={200}
+            className="mb-2"
+          />
+
           <div className="mb-8">
             <GuideList
               items={[
