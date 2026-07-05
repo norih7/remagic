@@ -20,10 +20,7 @@ export default async function HomePage() {
 
       <PageSummary>
         <p>
-          エターニアはシリーズの比較的初期の作品のため、最初から自由に操作キャラクターを動かすことができません（セミオート戦闘）。序盤のレグルス道場でアイテム「マニュアルのしょ」を入手すると戦闘モードでマニュアル操作を選択でき、自由な戦闘を楽しめるようになります。
-        </p>
-        <p>
-          また装備することでバックステップを取れるようになるなど戦闘中に特殊な効果があるアイテムも解説します。
+          エターニアの戦闘時の操作方法について紹介します。マニュアル操作は専用アイテムを取得することで可能となります。また他のシリーズにあるバックステップなどの操作についても解説します。
         </p>
       </PageSummary>
 
@@ -31,29 +28,28 @@ export default async function HomePage() {
         <SectionTitle type="system">
           マニュアル操作（マニュアルのしょ入手）
         </SectionTitle>
-        <Information type="warning">
+        <Information type="warning" title="リマスター版における注意点">
           リマスター版では初期からマニュアル操作ができ、マニュアルのしょが無くなる可能性があります。発売後に検証してページを更新します。
         </Information>
         <div className="mb-4">
-          <h3>発生時期</h3>
-          <p>いつでも</p>
+          <h3>マニュアル操作とセミオート操作</h3>
         </div>
         <div className="mb-4">
-          <h3>入手方法</h3>
+          <h3>「マニュアルのしょ」の入手と設定方法</h3>
           <p>
-            レグルス道場の弟子に話かけ「マニュアル操作で激しく戦いたい」を選択すると入手できます。取得はいつでも可能ですが、ストーリー的にレグルス道場に訪れたときにやっておくのがオススメです。
-          </p>
-        </div>
-        <div className="mb-4">
-          <h3>マニュアル操作への切り替え</h3>
-          <p>
-            設定画面で「マニュアル」、あるいは戦闘中にSELECTボタンを押すことで切替可能。
+            レグルス道場の弟子に話かけ「マニュアル操作で激しく戦いたい」を選択すると入手できます。取得はいつでも可能ですが、ストーリー的にレグルス道場に訪れたときにやっておくのがオススメです。設定画面で「マニュアル」、あるいは戦闘中にSELECTボタンを押すことで切替可能。
           </p>
         </div>
       </section>
       <section>
         <div className="mb-8">
           <SectionTitle type="system">特殊な装備品</SectionTitle>
+          <p>更新中</p>
+        </div>
+      </section>
+      <section>
+        <div className="mb-8">
+          <SectionTitle type="system">晶霊術</SectionTitle>
           <p>更新中</p>
         </div>
       </section>
