@@ -128,8 +128,8 @@ export const subeventLinks = {
 
 export const systemLinks = {
   manual: {
-    title: "マニュアル操作/特殊操作",
-    path: "/systems/manual",
+    title: "戦闘（マニュアル操作/特殊操作）",
+    path: "/systems/buttle",
     desc: "",
   },
   titles: {

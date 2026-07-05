@@ -26,7 +26,7 @@ export async function generateMetadata() {
   return {
     title,
     description:
-      "テイルズオブエターニア攻略サイト。PS版、PSP版、リマスター版に対応しています。",
+      "テイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開！リマスター版にも対応したクリーンな攻略サイトです。",
   };
 }
 

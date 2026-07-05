@@ -24,7 +24,7 @@ export default async function HomePage() {
 
       <section>
         <SectionTitle type="system">エターニアの称号</SectionTitle>
-        <Information type="warning">
+        <Information type="warning" title="リマスター版における注意点">
           リマスター版の事前情報では称号の扱いに変化はなさそうですが、発売後に変更がないかは追って確認します。
         </Information>
         <div className="mb-8">
