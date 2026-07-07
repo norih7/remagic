@@ -12,6 +12,8 @@ export type Item = {
 
 export type LocationItems = {
   locationId: number;
+  locationName: string;
+  itemId: number;
   itemName: string;
   remarks: string;
 };

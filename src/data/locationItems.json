@@ -3,7 +3,7 @@
     "id": 1,
     "locationId": 1,
     "locationName": "ラシュアン",
-    "itemsId": 1,
+    "itemId": 1,
     "itemName": "アップルグミ",
     "remarks": "左上 民家 樽"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "locationId": 1,
     "locationName": "ラシュアン",
-    "itemsId": 1,
+    "itemId": 1,
     "itemName": "アップルグミ",
     "remarks": "民家扉"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "locationId": 1,
     "locationName": "ラシュアン",
-    "itemsId": 1,
+    "itemId": 1,
     "itemName": "アップルグミ",
     "remarks": "リッドの家 B1 蓋が空いている壷"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "locationId": 1,
     "locationName": "ラシュアン",
-    "itemsId": 2,
+    "itemId": 2,
     "itemName": "500ガルド",
     "remarks": "村長の家 左下の棚"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "locationId": 1,
     "locationName": "ラシュアン",
-    "itemsId": 3,
+    "itemId": 3,
     "itemName": "コレクターずかん",
     "remarks": "村長の家 2F本棚"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "locationId": 3,
     "locationName": "レグルス道場",
-    "itemsId": 4,
+    "itemId": 4,
     "itemName": "なべのふた",
     "remarks": "宿屋2F 右の花瓶"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "locationId": 3,
     "locationName": "レグルス道場",
-    "itemsId": 5,
+    "itemId": 5,
     "itemName": "レザーヘルム",
     "remarks": "道場広間 入口左側にある円柱箱"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "locationId": 3,
     "locationName": "レグルス道場",
-    "itemsId": 1,
+    "itemId": 1,
     "itemName": "アップルグミ",
     "remarks": "道場広間 入口右側にある円柱箱"
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "locationId": 3,
     "locationName": "レグルス道場",
-    "itemsId": 1,
+    "itemId": 1,
     "itemName": "アップルグミ",
     "remarks": "道場広間 左奥にある壷"
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "locationId": 3,
     "locationName": "レグルス道場",
-    "itemsId": 6,
+    "itemId": 6,
     "itemName": "オレンジグミ",
     "remarks": "道場奥 右端の部屋にある壷"
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "locationId": 5,
     "locationName": "ミンツの岩山",
-    "itemsId": 6,
+    "itemId": 6,
     "itemName": "オレンジグミ",
     "remarks": ""
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "locationId": 5,
     "locationName": "ミンツの岩山",
-    "itemsId": 7,
+    "itemId": 7,
     "itemName": "サーベル",
     "remarks": ""
   },
@@ -99,7 +99,7 @@
     "id": 13,
     "locationId": 5,
     "locationName": "ミンツの岩山",
-    "itemsId": 1,
+    "itemId": 1,
     "itemName": "アップルグミ",
     "remarks": ""
   },
@@ -107,7 +107,7 @@
     "id": 14,
     "locationId": 5,
     "locationName": "ミンツの岩山",
-    "itemsId": 8,
+    "itemId": 8,
     "itemName": "ポールアクス",
     "remarks": ""
   },
@@ -115,7 +115,7 @@
     "id": 15,
     "locationId": 5,
     "locationName": "ミンツの岩山",
-    "itemsId": 9,
+    "itemId": 9,
     "itemName": "600ガルド",
     "remarks": ""
   },
@@ -123,7 +123,7 @@
     "id": 16,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 10,
+    "itemId": 10,
     "itemName": "パナシーアボトル",
     "remarks": ""
   },
@@ -131,7 +131,7 @@
     "id": 17,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 11,
+    "itemId": 11,
     "itemName": "プロテクター",
     "remarks": ""
   },
@@ -139,7 +139,7 @@
     "id": 18,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 12,
+    "itemId": 12,
     "itemName": "チェインアームズ",
     "remarks": ""
   },
@@ -147,7 +147,7 @@
     "id": 19,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 13,
+    "itemId": 13,
     "itemName": "バトルアクス",
     "remarks": ""
   },
@@ -155,7 +155,7 @@
     "id": 20,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 6,
+    "itemId": 6,
     "itemName": "オレンジグミ",
     "remarks": ""
   },
@@ -163,7 +163,7 @@
     "id": 21,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 14,
+    "itemId": 14,
     "itemName": "バックラー",
     "remarks": ""
   },
@@ -171,7 +171,7 @@
     "id": 22,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 15,
+    "itemId": 15,
     "itemName": "ライフボトル",
     "remarks": "潮が満ちてくると取得可能"
   },
@@ -179,7 +179,7 @@
     "id": 23,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 16,
+    "itemId": 16,
     "itemName": "サークレット",
     "remarks": "潮が満ちてくると取得可能"
   },
@@ -187,7 +187,7 @@
     "id": 24,
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "itemsId": 17,
+    "itemId": 17,
     "itemName": "レイピア",
     "remarks": "満潮で取得可能"
   },
@@ -195,7 +195,7 @@
     "id": 25,
     "locationId": 8,
     "locationName": "木陰の村モルル",
-    "itemsId": 18,
+    "itemId": 18,
     "itemName": "ホーリィボトル",
     "remarks": "村の食品店 奥にある樽"
   },
@@ -203,7 +203,7 @@
     "id": 26,
     "locationId": 8,
     "locationName": "木陰の村モルル",
-    "itemsId": 19,
+    "itemId": 19,
     "itemName": "インフェリマップ",
     "remarks": ""
   },
@@ -211,7 +211,7 @@
     "id": 27,
     "locationId": 8,
     "locationName": "木陰の村モルル",
-    "itemsId": 20,
+    "itemId": 20,
     "itemName": "モンスター図鑑",
     "remarks": ""
   },
@@ -219,7 +219,7 @@
     "id": 28,
     "locationId": 8,
     "locationName": "木陰の村モルル",
-    "itemsId": 21,
+    "itemId": 21,
     "itemName": "ナイツサーベル",
     "remarks": ""
   },
@@ -227,7 +227,7 @@
     "id": 29,
     "locationId": 8,
     "locationName": "木陰の村モルル",
-    "itemsId": 22,
+    "itemId": 22,
     "itemName": "ピヨピヨW",
     "remarks": ""
   },
@@ -235,7 +235,7 @@
     "id": 30,
     "locationId": 8,
     "locationName": "木陰の村モルル",
-    "itemsId": 23,
+    "itemId": 23,
     "itemName": "アイアンサレット",
     "remarks": ""
   },
@@ -243,7 +243,7 @@
     "id": 31,
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "itemsId": 24,
+    "itemId": 24,
     "itemName": "ポイズンチェック",
     "remarks": ""
   },
@@ -251,7 +251,7 @@
     "id": 32,
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "itemsId": 25,
+    "itemId": 25,
     "itemName": "シルククローク",
     "remarks": ""
   },
@@ -259,7 +259,7 @@
     "id": 33,
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "itemsId": 26,
+    "itemId": 26,
     "itemName": "フェザーローブ",
     "remarks": ""
   },
@@ -267,7 +267,7 @@
     "id": 34,
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "itemsId": 27,
+    "itemId": 27,
     "itemName": "アイアンリスト",
     "remarks": ""
   },
@@ -275,7 +275,7 @@
     "id": 35,
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "itemsId": 28,
+    "itemId": 28,
     "itemName": "ミックスグミ",
     "remarks": ""
   },
@@ -283,7 +283,7 @@
     "id": 36,
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "itemsId": 28,
+    "itemId": 28,
     "itemName": "ミックスグミ",
     "remarks": ""
   },
@@ -291,7 +291,7 @@
     "id": 37,
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "itemsId": 29,
+    "itemId": 29,
     "itemName": "アップルシールド",
     "remarks": ""
   },
@@ -299,7 +299,7 @@
     "id": 38,
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "itemsId": 30,
+    "itemId": 30,
     "itemName": "チンクエデア",
     "remarks": "滝のフロア右下の茂みの隠し"
   },
@@ -307,7 +307,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 31,
+    "itemId": 31,
     "itemName": "アイアンアームズ",
     "remarks": ""
   },
@@ -315,7 +315,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 28,
+    "itemId": 28,
     "itemName": "ミックスグミ",
     "remarks": ""
   },
@@ -323,7 +323,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 27,
+    "itemId": 27,
     "itemName": "アイアンリスト",
     "remarks": ""
   },
@@ -331,7 +331,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 33,
+    "itemId": 33,
     "itemName": "ミスティローブ",
     "remarks": ""
   },
@@ -339,7 +339,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 25,
+    "itemId": 25,
     "itemName": "シルククローク",
     "remarks": ""
   },
@@ -347,7 +347,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 18,
+    "itemId": 18,
     "itemName": "ホーリィボトル",
     "remarks": ""
   },
@@ -355,7 +355,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 35,
+    "itemId": 35,
     "itemName": "リキュールボトル",
     "remarks": ""
   },
@@ -363,7 +363,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 36,
+    "itemId": 36,
     "itemName": "パイングミ",
     "remarks": ""
   },
@@ -371,7 +371,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 37,
+    "itemId": 37,
     "itemName": "リバースドール",
     "remarks": ""
   },
@@ -379,7 +379,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 38,
+    "itemId": 38,
     "itemName": "レモングミ",
     "remarks": ""
   },
@@ -387,7 +387,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 39,
+    "itemId": 39,
     "itemName": "すいしょうせき",
     "remarks": ""
   },
@@ -395,7 +395,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 40,
+    "itemId": 40,
     "itemName": "スペクタクルス",
     "remarks": ""
   },
@@ -403,7 +403,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 41,
+    "itemId": 41,
     "itemName": "765ガルド",
     "remarks": ""
   },
@@ -411,7 +411,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 42,
+    "itemId": 42,
     "itemName": "りょくしょうせき",
     "remarks": ""
   },
@@ -419,7 +419,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 6,
+    "itemId": 6,
     "itemName": "オレンジグミ",
     "remarks": ""
   },
@@ -427,7 +427,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 43,
+    "itemId": 43,
     "itemName": "ルーンボトル",
     "remarks": ""
   },
@@ -435,7 +435,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 44,
+    "itemId": 44,
     "itemName": "バスタードソード",
     "remarks": ""
   },
@@ -443,7 +443,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 45,
+    "itemId": 45,
     "itemName": "チャームボトル",
     "remarks": ""
   },
@@ -451,7 +451,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 6,
+    "itemId": 6,
     "itemName": "オレンジグミ",
     "remarks": ""
   },
@@ -459,7 +459,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 1,
+    "itemId": 1,
     "itemName": "アップルグミ",
     "remarks": ""
   },
@@ -467,7 +467,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 46,
+    "itemId": 46,
     "itemName": "ミラクルグミ",
     "remarks": ""
   },
@@ -475,7 +475,7 @@
     "id": "",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "itemsId": 10,
+    "itemId": 10,
     "itemName": "パナシーアボトル",
     "remarks": ""
   },
@@ -483,7 +483,7 @@
     "id": "",
     "locationId": 14,
     "locationName": "商業の町バロール",
-    "itemsId": 18,
+    "itemId": 18,
     "itemName": "ホーリィボトル",
     "remarks": "食料屋にある蓋がしてある壷"
   },
@@ -491,7 +491,7 @@
     "id": "",
     "locationId": 14,
     "locationName": "商業の町バロール",
-    "itemsId": 47,
+    "itemId": 47,
     "itemName": "シャムシール",
     "remarks": "武器屋 左奥にある先の宝箱"
   },
@@ -499,7 +499,7 @@
     "id": "",
     "locationId": 14,
     "locationName": "商業の町バロール",
-    "itemsId": 48,
+    "itemId": 48,
     "itemName": "エリクシール",
     "remarks": "武器屋 左奥にある先にいる女の人に話しかける"
   },
@@ -507,7 +507,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 49,
+    "itemId": 49,
     "itemName": "ストームシールド",
     "remarks": ""
   },
@@ -515,7 +515,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 28,
+    "itemId": 28,
     "itemName": "ミックスグミ",
     "remarks": ""
   },
@@ -523,7 +523,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 28,
+    "itemId": 28,
     "itemName": "ミックスグミ",
     "remarks": ""
   },
@@ -531,7 +531,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 50,
+    "itemId": 50,
     "itemName": "1800ガルド",
     "remarks": ""
   },
@@ -539,7 +539,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 51,
+    "itemId": 51,
     "itemName": "アサルトダガー",
     "remarks": ""
   },
@@ -547,7 +547,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 52,
+    "itemId": 52,
     "itemName": "メンタルリング",
     "remarks": ""
   },
@@ -555,7 +555,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 6,
+    "itemId": 6,
     "itemName": "オレンジグミ",
     "remarks": ""
   },
@@ -563,7 +563,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 38,
+    "itemId": 38,
     "itemName": "レモングミ",
     "remarks": ""
   },
@@ -571,7 +571,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 53,
+    "itemId": 53,
     "itemName": "ニードルグローブ",
     "remarks": ""
   },
@@ -579,7 +579,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 15,
+    "itemId": 15,
     "itemName": "ライフボトル",
     "remarks": ""
   },
@@ -587,7 +587,7 @@
     "id": "",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "itemsId": 54,
+    "itemId": 54,
     "itemName": "アークウイング",
     "remarks": ""
   },
@@ -595,7 +595,7 @@
     "id": "",
     "locationId": 16,
     "locationName": "熱砂の町 シャンバール",
-    "itemsId": 55,
+    "itemId": 55,
     "itemName": "100G",
     "remarks": "宿屋 テーブルの花瓶"
   },
@@ -603,7 +603,7 @@
     "id": "",
     "locationId": 16,
     "locationName": "熱砂の町 シャンバール",
-    "itemsId": 43,
+    "itemId": 43,
     "itemName": "ルーンボトル",
     "remarks": "アイテム屋にある壷"
   },
@@ -611,7 +611,7 @@
     "id": "",
     "locationId": 16,
     "locationName": "熱砂の町 シャンバール",
-    "itemsId": 56,
+    "itemId": 56,
     "itemName": "エルヴンブーツ",
     "remarks": "砂浜にある宝箱"
   },
@@ -619,7 +619,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 57,
+    "itemId": 57,
     "itemName": "ヴェノム",
     "remarks": ""
   },
@@ -627,7 +627,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 58,
+    "itemId": 58,
     "itemName": "セージ",
     "remarks": ""
   },
@@ -635,7 +635,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 59,
+    "itemId": 59,
     "itemName": "フレアマント",
     "remarks": ""
   },
@@ -643,7 +643,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 15,
+    "itemId": 15,
     "itemName": "ライフボトル",
     "remarks": ""
   },
@@ -651,7 +651,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 60,
+    "itemId": 60,
     "itemName": "ラベンダー",
     "remarks": ""
   },
@@ -659,7 +659,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 61,
+    "itemId": 61,
     "itemName": "クロスヘルム",
     "remarks": ""
   },
@@ -667,7 +667,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 62,
+    "itemId": 62,
     "itemName": "フィートシンボル",
     "remarks": ""
   },
@@ -675,7 +675,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 63,
+    "itemId": 63,
     "itemName": "ブレスレット",
     "remarks": ""
   },
@@ -683,7 +683,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 64,
+    "itemId": 64,
     "itemName": "ブルーリボン",
     "remarks": ""
   },
@@ -691,7 +691,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 54,
+    "itemId": 54,
     "itemName": "アークウイング",
     "remarks": ""
   },
@@ -699,7 +699,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 43,
+    "itemId": 43,
     "itemName": "ルーンボトル",
     "remarks": "ソーサラーリングで入る部屋"
   },
@@ -707,7 +707,7 @@
     "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemsId": 65,
+    "itemId": 65,
     "itemName": "あかのかけら",
     "remarks": "ソーサラーリングで入る部屋"
   },
@@ -715,7 +715,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 66,
+    "itemId": 66,
     "itemName": "クリスタルローブ",
     "remarks": ""
   },
@@ -723,7 +723,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 67,
+    "itemId": 67,
     "itemName": "デュエルヘルム",
     "remarks": ""
   },
@@ -731,7 +731,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 68,
+    "itemId": 68,
     "itemName": "アンクシールド",
     "remarks": ""
   },
@@ -739,7 +739,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 69,
+    "itemId": 69,
     "itemName": "フレアボトル",
     "remarks": ""
   },
@@ -747,7 +747,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 1,
+    "itemId": 1,
     "itemName": "アップルグミ",
     "remarks": ""
   },
@@ -755,7 +755,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 70,
+    "itemId": 70,
     "itemName": "エメラルドリング",
     "remarks": ""
   },
@@ -763,7 +763,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 62,
+    "itemId": 62,
     "itemName": "フィートシンボル",
     "remarks": ""
   },
@@ -771,7 +771,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 6,
+    "itemId": 6,
     "itemName": "オレンジグミ",
     "remarks": ""
   },
@@ -779,7 +779,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 71,
+    "itemId": 71,
     "itemName": "トライデント",
     "remarks": ""
   },
@@ -787,7 +787,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 72,
+    "itemId": 72,
     "itemName": "2600ガルド",
     "remarks": ""
   },
@@ -795,7 +795,7 @@
     "id": "",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "itemsId": 15,
+    "itemId": 15,
     "itemName": "ライフボトル",
     "remarks": ""
   },
@@ -803,7 +803,7 @@
     "id": "",
     "locationId": 19,
     "locationName": "アイメンの町",
-    "itemsId": 6,
+    "itemId": 6,
     "itemName": "オレンジグミ",
     "remarks": "錬金術工房の向かい側にある壷"
   },
@@ -811,7 +811,7 @@
     "id": "",
     "locationId": 19,
     "locationName": "アイメンの町",
-    "itemsId": 28,
+    "itemId": 28,
     "itemName": "ミックスグミ",
     "remarks": "食品を売る人の隣にある壷"
   },
@@ -819,7 +819,7 @@
     "id": "",
     "locationId": 19,
     "locationName": "アイメンの町",
-    "itemsId": 73,
+    "itemId": 73,
     "itemName": "ストライプリボン",
     "remarks": "メルディの家2F 取り付け棚"
   },
@@ -827,7 +827,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 74,
+    "itemId": 74,
     "itemName": "ゴールドブレス",
     "remarks": ""
   },
@@ -835,7 +835,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 75,
+    "itemId": 75,
     "itemName": "セボリー",
     "remarks": ""
   },
@@ -843,7 +843,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 76,
+    "itemId": 76,
     "itemName": "オールディバイト",
     "remarks": ""
   },
@@ -851,7 +851,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 77,
+    "itemId": 77,
     "itemName": "アワーグラス",
     "remarks": ""
   },
@@ -859,7 +859,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 78,
+    "itemId": 78,
     "itemName": "ルビーワンド",
     "remarks": ""
   },
@@ -867,7 +867,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 46,
+    "itemId": 46,
     "itemName": "ミラクルグミ",
     "remarks": ""
   },
@@ -875,7 +875,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 79,
+    "itemId": 79,
     "itemName": "ベルベーヌ",
     "remarks": ""
   },
@@ -883,7 +883,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 43,
+    "itemId": 43,
     "itemName": "ルーンボトル",
     "remarks": ""
   },
@@ -891,7 +891,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 48,
+    "itemId": 48,
     "itemName": "エリクシール",
     "remarks": ""
   },
@@ -899,7 +899,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 36,
+    "itemId": 36,
     "itemName": "パイングミ",
     "remarks": ""
   },
@@ -907,7 +907,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 80,
+    "itemId": 80,
     "itemName": "Rラインシールド",
     "remarks": ""
   },
@@ -915,7 +915,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 38,
+    "itemId": 38,
     "itemName": "レモングミ",
     "remarks": ""
   },
@@ -923,7 +923,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 81,
+    "itemId": 81,
     "itemName": "ノームピック",
     "remarks": ""
   },
@@ -931,7 +931,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 82,
+    "itemId": 82,
     "itemName": "ベアクロー",
     "remarks": ""
   },
@@ -939,7 +939,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 83,
+    "itemId": 83,
     "itemName": "オーガランス",
     "remarks": ""
   },
@@ -947,7 +947,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 84,
+    "itemId": 84,
     "itemName": "ミスリルクレスト",
     "remarks": ""
   },
@@ -955,7 +955,7 @@
     "id": "",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "itemsId": 85,
+    "itemId": 85,
     "itemName": "ラビットシンボル",
     "remarks": ""
   },
@@ -963,7 +963,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 36,
+    "itemId": 36,
     "itemName": "パイングミ",
     "remarks": ""
   },
@@ -971,7 +971,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 86,
+    "itemId": 86,
     "itemName": "ゴーストシェル",
     "remarks": ""
   },
@@ -979,7 +979,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 87,
+    "itemId": 87,
     "itemName": "ミスリルヘルム",
     "remarks": ""
   },
@@ -987,7 +987,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 88,
+    "itemId": 88,
     "itemName": "ソウルイーター",
     "remarks": ""
   },
@@ -995,7 +995,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 89,
+    "itemId": 89,
     "itemName": "ブラッディローブ",
     "remarks": ""
   },
@@ -1003,7 +1003,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 36,
+    "itemId": 36,
     "itemName": "パイングミ",
     "remarks": ""
   },
@@ -1011,7 +1011,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 90,
+    "itemId": 90,
     "itemName": "ブルータリスマン",
     "remarks": ""
   },
@@ -1019,7 +1019,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 91,
+    "itemId": 91,
     "itemName": "みずくも",
     "remarks": ""
   },
@@ -1027,7 +1027,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 70,
+    "itemId": 70,
     "itemName": "エメラルドリング",
     "remarks": ""
   },
@@ -1035,7 +1035,7 @@
     "id": "",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "itemsId": 92,
+    "itemId": 92,
     "itemName": "4000ガルド",
     "remarks": ""
   },
@@ -1043,7 +1043,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 48,
+    "itemId": 48,
     "itemName": "エリクシール",
     "remarks": ""
   },
@@ -1051,7 +1051,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 48,
+    "itemId": 48,
     "itemName": "エリクシール",
     "remarks": ""
   },
@@ -1059,7 +1059,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 93,
+    "itemId": 93,
     "itemName": "アクアマント",
     "remarks": ""
   },
@@ -1067,7 +1067,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 43,
+    "itemId": 43,
     "itemName": "ルーンボトル",
     "remarks": ""
   },
@@ -1075,7 +1075,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 35,
+    "itemId": 35,
     "itemName": "リキュールボトル",
     "remarks": ""
   },
@@ -1083,7 +1083,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 94,
+    "itemId": 94,
     "itemName": "フリーズチェック",
     "remarks": ""
   },
@@ -1091,7 +1091,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 95,
+    "itemId": 95,
     "itemName": "シルバークローク",
     "remarks": ""
   },
@@ -1099,7 +1099,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 15,
+    "itemId": 15,
     "itemName": "ライフボトル",
     "remarks": ""
   },
@@ -1107,7 +1107,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 58,
+    "itemId": 58,
     "itemName": "セージ",
     "remarks": ""
   },
@@ -1115,7 +1115,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 96,
+    "itemId": 96,
     "itemName": "バトルピック",
     "remarks": ""
   },
@@ -1123,7 +1123,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 46,
+    "itemId": 46,
     "itemName": "ミラクルグミ",
     "remarks": ""
   },
@@ -1131,7 +1131,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 35,
+    "itemId": 35,
     "itemName": "リキュールボトル",
     "remarks": ""
   },
@@ -1139,7 +1139,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 76,
+    "itemId": 76,
     "itemName": "オールディバイト",
     "remarks": ""
   },
@@ -1147,7 +1147,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 60,
+    "itemId": 60,
     "itemName": "ラベンダー",
     "remarks": ""
   },
@@ -1155,7 +1155,7 @@
     "id": "",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "itemsId": 77,
+    "itemId": 77,
     "itemName": "アワーグラス",
     "remarks": ""
   },
@@ -1163,15 +1163,15 @@
     "id": "",
     "locationId": 27,
     "locationName": "ティンシア",
-    "itemsId": 43,
+    "itemId": 43,
     "itemName": "ルーンボトル",
-    "remarks": ""
+    "remarks": "アイテム屋 イレーヌの右側にある壺を調べる"
   },
   {
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 97,
+    "itemId": 97,
     "itemName": "パラライチェック",
     "remarks": ""
   },
@@ -1179,7 +1179,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 36,
+    "itemId": 36,
     "itemName": "パイングミ",
     "remarks": ""
   },
@@ -1187,7 +1187,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 98,
+    "itemId": 98,
     "itemName": "ビッグバッグ",
     "remarks": ""
   },
@@ -1195,7 +1195,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 99,
+    "itemId": 99,
     "itemName": "パイレーツハット",
     "remarks": ""
   },
@@ -1203,7 +1203,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 76,
+    "itemId": 76,
     "itemName": "オールディバイト",
     "remarks": ""
   },
@@ -1211,7 +1211,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 36,
+    "itemId": 36,
     "itemName": "パイングミ",
     "remarks": ""
   },
@@ -1219,7 +1219,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 10,
+    "itemId": 10,
     "itemName": "パナシーアボトル",
     "remarks": ""
   },
@@ -1227,7 +1227,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 100,
+    "itemId": 100,
     "itemName": "ボルテックソード",
     "remarks": ""
   },
@@ -1235,7 +1235,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 101,
+    "itemId": 101,
     "itemName": "ピヨハン",
     "remarks": ""
   },
@@ -1243,7 +1243,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 102,
+    "itemId": 102,
     "itemName": "サンダーマント",
     "remarks": ""
   },
@@ -1251,7 +1251,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 43,
+    "itemId": 43,
     "itemName": "ルーンボトル",
     "remarks": ""
   },
@@ -1259,7 +1259,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 103,
+    "itemId": 103,
     "itemName": "レッドセージ",
     "remarks": ""
   },
@@ -1267,7 +1267,7 @@
     "id": "",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "itemsId": 104,
+    "itemId": 104,
     "itemName": "ホーリィスタッフ",
     "remarks": ""
   },
@@ -1275,7 +1275,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 105,
+    "itemId": 105,
     "itemName": "プリティリボン",
     "remarks": ""
   },
@@ -1283,7 +1283,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 106,
+    "itemId": 106,
     "itemName": "ドラゴンベイン",
     "remarks": ""
   },
@@ -1291,7 +1291,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 107,
+    "itemId": 107,
     "itemName": "ドラグナーランス",
     "remarks": ""
   },
@@ -1299,7 +1299,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 108,
+    "itemId": 108,
     "itemName": "レアシールド",
     "remarks": ""
   },
@@ -1307,7 +1307,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 109,
+    "itemId": 109,
     "itemName": "スケールローブ",
     "remarks": ""
   },
@@ -1315,7 +1315,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 110,
+    "itemId": 110,
     "itemName": "ラピスランス",
     "remarks": ""
   },
@@ -1323,7 +1323,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 95,
+    "itemId": 95,
     "itemName": "シルバークローク",
     "remarks": ""
   },
@@ -1331,7 +1331,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 48,
+    "itemId": 48,
     "itemName": "エリクシール",
     "remarks": "フェイクを倒すと入手"
   },
@@ -1339,7 +1339,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 111,
+    "itemId": 111,
     "itemName": "ミスリルアームズ",
     "remarks": ""
   },
@@ -1347,7 +1347,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 112,
+    "itemId": 112,
     "itemName": "シルバープレート",
     "remarks": ""
   },
@@ -1355,7 +1355,7 @@
     "id": "",
     "locationId": 29,
     "locationName": "バリル城",
-    "itemsId": 113,
+    "itemId": 113,
     "itemName": "ブラックオニキス",
     "remarks": ""
   },
@@ -1363,7 +1363,7 @@
     "id": "",
     "locationId": 35,
     "locationName": "レグルスの丘",
-    "itemsId": 115,
+    "itemId": 115,
     "itemName": "ミスリルプレート",
     "remarks": ""
   },
@@ -1371,7 +1371,7 @@
     "id": "",
     "locationId": 35,
     "locationName": "レグルスの丘",
-    "itemsId": 48,
+    "itemId": 48,
     "itemName": "エリクシール",
     "remarks": ""
   },
@@ -1379,7 +1379,7 @@
     "id": "",
     "locationId": 35,
     "locationName": "レグルスの丘",
-    "itemsId": 116,
+    "itemId": 116,
     "itemName": "ミスリルメッシュ",
     "remarks": ""
   },
@@ -1387,7 +1387,7 @@
     "id": "",
     "locationId": 35,
     "locationName": "レグルスの丘",
-    "itemsId": 117,
+    "itemId": 117,
     "itemName": "こくしょうせき",
     "remarks": ""
   },
@@ -1395,7 +1395,7 @@
     "id": "",
     "locationId": 35,
     "locationName": "レグルスの丘",
-    "itemsId": 118,
+    "itemId": 118,
     "itemName": "ししょうせき",
     "remarks": ""
   },
@@ -1403,7 +1403,7 @@
     "id": "",
     "locationId": 35,
     "locationName": "レグルスの丘",
-    "itemsId": 119,
+    "itemId": 119,
     "itemName": "ミスティシンボル",
     "remarks": ""
   },
@@ -1411,7 +1411,7 @@
     "id": "",
     "locationId": 35,
     "locationName": "レグルスの丘",
-    "itemsId": 120,
+    "itemId": 120,
     "itemName": "ミスリルブレス",
     "remarks": ""
   },
@@ -1419,7 +1419,7 @@
     "id": "",
     "locationId": 35,
     "locationName": "レグルスの丘",
-    "itemsId": 121,
+    "itemId": 121,
     "itemName": "ダイヤナックル",
     "remarks": ""
   },
@@ -1427,7 +1427,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 122,
+    "itemId": 122,
     "itemName": "せいりゅうとう",
     "remarks": ""
   },
@@ -1435,7 +1435,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 123,
+    "itemId": 123,
     "itemName": "デモンズシール",
     "remarks": ""
   },
@@ -1443,7 +1443,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 124,
+    "itemId": 124,
     "itemName": "マム・ベイン",
     "remarks": ""
   },
@@ -1451,7 +1451,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 125,
+    "itemId": 125,
     "itemName": "ラックバック",
     "remarks": ""
   },
@@ -1459,7 +1459,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 116,
+    "itemId": 116,
     "itemName": "ミスリルメッシュ",
     "remarks": ""
   },
@@ -1467,7 +1467,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 126,
+    "itemId": 126,
     "itemName": "やみのたま",
     "remarks": ""
   },
@@ -1475,7 +1475,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 48,
+    "itemId": 48,
     "itemName": "エリクシール",
     "remarks": ""
   },
@@ -1483,7 +1483,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 127,
+    "itemId": 127,
     "itemName": "レッドベルベーヌ",
     "remarks": ""
   },
@@ -1491,7 +1491,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 128,
+    "itemId": 128,
     "itemName": "レッドセボリー",
     "remarks": ""
   },
@@ -1499,7 +1499,7 @@
     "id": "",
     "locationId": 37,
     "locationName": "シゼル城",
-    "itemsId": 129,
+    "itemId": 129,
     "itemName": "レッドラベンダー",
     "remarks": ""
   },
@@ -1507,7 +1507,7 @@
     "id": "",
     "locationId": 31,
     "locationName": "アイフリードの洞窟",
-    "itemsId": 114,
+    "itemId": 114,
     "itemName": "フレイムソード",
     "remarks": ""
   },
@@ -1515,7 +1515,7 @@
     "id": "",
     "locationId": 31,
     "locationName": "アイフリードの洞窟",
-    "itemsId": 77,
+    "itemId": 77,
     "itemName": "アワーグラス",
     "remarks": ""
   }
