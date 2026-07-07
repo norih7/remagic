@@ -4,6 +4,7 @@ import { storyLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
 import SectionTitle from "@/components/SectionTitle";
+import Link from "next/link";
 
 // 攻略記事やカテゴリのダミーデータ
 type Link = {
@@ -38,7 +39,7 @@ export default async function HomePage() {
       <main className="space-y-12">
         <h1 className="text-lg font-bold mb-4">このサイトについて</h1>
         <p className="text-slate-1000">
-          RE:MAGICではテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています。リマスター版にも対応予定。シンプルでクリーンなサイトを目指しています。
+          RE:MAGICではリマスター版に対応したテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
         </p>
 
         {/* 2. 注目カテゴリセクション */}
@@ -51,6 +52,18 @@ export default async function HomePage() {
         <section className="">
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
+            <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/07</span>
+              <span>
+                <Link
+                  href="/systems/rune"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  ルーンボトル
+                </Link>
+                をアップデートしアイテム変化のオススメ度をつけました
+              </span>
+            </li>
             <li className="flex gap-4">
               <span className="text-slate-400">2026/06/20</span>
               サイトを公開しました

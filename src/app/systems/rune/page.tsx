@@ -11,7 +11,7 @@ import { getLocationItemsData } from "@/lib/db";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = " ルーンボトルの解説と変化一覧";
+const title = " ルーンボトルの解説とアイテム変化一覧";
 export const metadata = {
   title,
   description:

@@ -82,7 +82,43 @@ export default function SiteLayout({
       </div>
 
       <footer className={styles.footer}>
-        <p className="text-sm">© 2026</p>
+        <div className="max-w-4xl mx-auto">
+          <div className="pb-4">
+            <p className="text-sm leading-relaxed">
+              このサイトは個人で運営するテイルズオブエターニアの攻略ファンサイトです。見やすさと快適さを重視したサイト作りを目指します！
+            </p>
+          </div>
+          {/* <div className="space-y-4">
+            <ul className="flex text-sm">
+              <li>
+                <a
+                  href="/about"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  サイトについて
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  お問い合わせ
+                </a>
+              </li>
+            </ul>
+          </div> */}
+        </div>
+
+        {/* 4. コピーライト＆免責事項 */}
+        <div className="max-w-4xl mx-auto px-6 pt-4 border-t border-gray-200 text-xs space-y-2">
+          <p>© RE:MAGIC</p>
+          <p>
+            当サイトはゲーム会社とは一切関係ありません。
+            <br />
+            当サイト上で使用しているゲームの画像やデータ等の著作権はすべて当該ゲームの権利者に帰属します。
+          </p>
+        </div>
       </footer>
     </>
   );
