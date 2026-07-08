@@ -42,16 +42,16 @@ export const storyLinks = {
 
 export const skillLinks = {
   rid: {
-    title: "リッドの特技",
+    title: "リッドの特技/奥義",
     path: "/skills/rid",
     image: "/link-headers/skills-rid.jpg",
-    desc: "",
+    desc: "リッドの特技と奥義の一覧ページ。必要な習得条件も掲載しています。上位技は気づきにくい習得条件もあるためチェック！",
   },
   farth: {
     title: "ファラの特技",
     path: "/skills/farth",
     image: "/link-headers/skills-farth.jpg",
-    desc: "",
+    desc: "ファラの特技一覧ページ。拳/蹴レベルなどの習得条件も掲載しています。目指せ殺劇舞荒拳の習得！",
   },
   chat: {
     title: "チャットの特技",
@@ -67,7 +67,7 @@ export const skillLinks = {
     title: "晶霊術（メルディ&キール）",
     path: "/skills/magic",
     image: "/link-headers/skills-magic.jpg",
-    desc: "",
+    desc: "晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しています。好きな術を見つけて獲得しましょう！",
   },
 };
 
@@ -148,9 +148,10 @@ export const systemLinks = {
     desc: "",
   },
   rune: {
-    title: "ルーンボトル/変化表",
+    title: "ルーンボトル/変化一覧",
+    image: "/link-headers/systems-rune.jpg",
     path: "/systems/rune",
-    desc: "",
+    desc: "ルーンボトルの説明とアイテム変化一覧をオススメ度評価して紹介します！",
   },
   "tp-reduce": {
     title: "TP減少アクセサリ",

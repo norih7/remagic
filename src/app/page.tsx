@@ -3,6 +3,7 @@ import ContentLinks from "@/components/ContentLinks";
 import { storyLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
+import { skillLinks } from "@/constants";
 import SectionTitle from "@/components/SectionTitle";
 import Link from "next/link";
 
@@ -17,7 +18,8 @@ const featuredLinks: Link[] = [];
 featuredLinks.push(storyLinks["guide3"]);
 featuredLinks.push(storyLinks["guide4"]);
 featuredLinks.push(subeventLinks["skill-chat"]);
-featuredLinks.push(systemLinks["tp-reduce"]);
+featuredLinks.push(systemLinks["rune"]);
+featuredLinks.push(skillLinks["magic"]);
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
