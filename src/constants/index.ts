@@ -75,6 +75,7 @@ export const subeventLinks = {
   lens: {
     title: "レンズ収集",
     path: "/subevents/lens",
+    image: "/link-headers/subevents-lens.jpg",
     desc: "",
   },
   catarine: {
