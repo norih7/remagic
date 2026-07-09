@@ -144,9 +144,10 @@ export const systemLinks = {
   //   desc: "",
   // },
   skill: {
-    title: "特技の習得",
+    title: "特技/術の習得",
     path: "/systems/skill",
-    desc: "",
+    image: "/link-headers/systems-skills.jpg",
+    desc: "特技と晶霊術の習得について説明。なかなか特技や術を覚えられないという方は必見！",
   },
   rune: {
     title: "ルーンボトル/変化一覧",
