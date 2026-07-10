@@ -49,7 +49,7 @@ export default function SiteLayout({
               <a href="/skills">特技/晶霊術</a>
             </li>
             <li className="py-2 pl-4 text-xs">
-              <a href="/systems">システム解説</a>
+              <a href="/systems">システム/データ</a>
             </li>
             <li className="py-2 pl-4 text-xs">
               <a href="/subevents">サブイベント</a>

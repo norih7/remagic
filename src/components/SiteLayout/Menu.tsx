@@ -56,7 +56,7 @@ export default function Menu() {
           </a>
         </li>
       </ul> */}
-      <Category>システム解説</Category>
+      <Category>システム/データ</Category>
       <List links={Object.values(systemLinks)} />
       <Category>サブイベント</Category>
       <List links={Object.values(subeventLinks)} />

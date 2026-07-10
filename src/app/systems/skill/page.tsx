@@ -109,7 +109,7 @@ export default async function HomePage() {
               C.ケイジにある「アイテム」では大晶霊のレベルアップアイテム（「すいしょうせき」のようなアイテム）を利用できます。これらのレベルアップアイテムは料理失敗時に獲得したり、ダンジョン内の宝箱などから入手できます。レベルアップ以外にも活性にも影響します（活性がMAXの10となると戦闘中に大晶霊を召喚できる）
             </p>
             <p>
-              フリンジはメルディとキール側のC.ケイジに大晶霊を振り分け状態をもとに実行され、条件を満たしていれば晶霊術を習得します。大晶霊の組み合わせと必要レベルは晶霊術一覧ページにまとめてあるのでご確認ください！
+              フリンジはメルディとキール側のC.ケイジに大晶霊を振り分け状態をもとに実行され、条件を満たしていれば晶霊術を習得します。例えばイフリートとヴォルトのレベルが高い状態でフリンジを実行するとエクスプロードを習得します。大晶霊の組み合わせと必要レベルは晶霊術一覧ページにまとめてあるのでご確認ください！
             </p>
             <div className="flex flex-col md:flex-row gap-4">
               <Image
@@ -120,12 +120,15 @@ export default async function HomePage() {
                 className="mr-1"
               />
               <Image
-                src="/systems/skill-level-magic-item.jpg"
+                src="/systems/skill-level-magic-fringe.jpg"
                 alt=""
                 width={300}
                 height={200}
               />
             </div>
+            <Information type="warning" title="フリンジの実行忘れに注意">
+              大晶霊の入れ替えが終わってもフリンジを実行しないと術は習得しません。フリンジの実行忘れにはご注意ください。
+            </Information>
           </div>
           <div className="mb-8">
             <GuideList

@@ -7,7 +7,7 @@ import { systemLinks } from "@/constants";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "システム解説";
+const title = "システム/データ";
 export const metadata = {
   title,
   description: "",

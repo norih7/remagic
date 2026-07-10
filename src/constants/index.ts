@@ -3,7 +3,7 @@ export const categoryName = {
   none: "",
   skills: "特技/晶霊術",
   stories: "ストーリーガイド",
-  systems: "システム解説",
+  systems: "システム/データ",
   subevents: "サブイベント",
   extras: "隠しダンジョン",
 };
@@ -130,8 +130,9 @@ export const subeventLinks = {
 export const systemLinks = {
   manual: {
     title: "戦闘（マニュアル操作/特殊操作）",
+    image: "/link-headers/systems-buttle.jpg",
     path: "/systems/buttle",
-    desc: "",
+    desc: "戦闘をより楽しくするためのシステム解説。マニュアル操作とキャラクタ毎の特殊操作について紹介！",
   },
   titles: {
     title: "エターニアの称号",
@@ -161,9 +162,10 @@ export const systemLinks = {
     desc: "戦闘でバンバン特技や晶霊術を利用できるようになるアクセサリを紹介",
   },
   "master-recipe": {
-    title: "マスターレシピ",
+    title: "マスター料理",
+    image: "/link-headers/systems-master-recipe.jpg",
     path: "/systems/master-recipe",
-    desc: "",
+    desc: "隠し要素の特殊な料理を紹介。効果もピカイチなのでぜひ習得しましょう！",
   },
   // "fileld-and-gps": {
   //   title: "特殊なフィールド/GPS",

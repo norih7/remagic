@@ -55,6 +55,18 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/10</span>
+              <span>
+                <Link
+                  href="/systems/buttle"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  戦闘解説
+                </Link>
+                をアップデート 戦闘中の特殊操作を追記しました
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/07/07</span>
               <span>
                 <Link
