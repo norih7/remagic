@@ -2,260 +2,289 @@
   {
     "id": 1,
     "name": "サンドイッチ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "HPを中回復(30%)",
     "description": ""
   },
   {
     "id": 2,
     "name": "オムライス",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "全ステータスの異常回復(戦闘不能も含む)",
     "description": ""
   },
   {
     "id": 3,
     "name": "にくなべ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "攻撃力一時上昇 + HPを小回復(15%)",
     "description": ""
   },
   {
     "id": 4,
     "name": "ハンバーガー",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "HPを小回復(15%)",
     "description": ""
   },
   {
     "id": 5,
     "name": "フルーツジュース",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "TPを小回復(10%)",
     "description": ""
   },
   {
     "id": 6,
     "name": "やさいサラダ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "TPを中回復(20%)",
     "description": ""
   },
   {
     "id": 7,
     "name": "さかななべ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "防御力一時上昇 + HPを小回復(15%)",
     "description": ""
   },
   {
     "id": 8,
     "name": "いかリング",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "解毒効果 + HP小回復(15%)",
     "description": ""
   },
   {
     "id": 9,
     "name": "ステーキ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "麻痺解除 + HP小回復(15%)",
     "description": ""
   },
   {
     "id": 10,
     "name": "グラタン",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "命中率一時上昇 + HPを小回復(15%)",
     "description": ""
   },
   {
     "id": 11,
     "name": "カルボナーラ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "HPを大回復(60%) + TPを大回復(40%)",
     "description": ""
   },
   {
     "id": 12,
     "name": "ザラメライス",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "全ステータスの異常解除(戦闘不能も含む) + HPを大回復(60%)",
     "description": ""
   },
   {
     "id": 13,
     "name": "あまにんどうふ",
-    "type": "",
-    "world": "",
-    "description": ""
-  },
-  {
-    "id": 14,
-    "name": "にがりマーボ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "TPを小回復(10%)",
     "description": ""
   },
   {
     "id": 15,
     "name": "ミツラーメン",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "HPを小回復(15%)",
     "description": ""
   },
   {
     "id": 16,
     "name": "エビチリリリ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "TPを中回復(20%)",
     "description": ""
   },
   {
     "id": 17,
     "name": "おこげサンド",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "HPを中回復(30%)",
     "description": ""
   },
   {
     "id": 18,
     "name": "スイートパフェ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "TPを大回復(60%)",
     "description": ""
   },
   {
     "id": 19,
     "name": "ペスカトーレ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "HPを大回復(60%)",
     "description": ""
   },
   {
     "id": 20,
     "name": "ふわふわケーキ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "TPを大回復(40%)",
     "description": ""
   },
   {
     "id": 21,
     "name": "クリームシチュー",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "inferior",
+    "effect": "全ステータスの異常を回復(戦闘不能も含む) + HPを大回復(60%)",
     "description": ""
   },
   {
     "id": 22,
     "name": "ひやピリちゅうか",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "HPを大回復(60%)",
     "description": ""
   },
   {
     "id": 23,
     "name": "ホットボルシチ",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "衰弱回復 + HPを中回復(30%)",
     "description": ""
   },
   {
     "id": 24,
     "name": "にがりマーボー",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "防御力一時上昇 + TPを小回復(10%)",
     "description": ""
   },
   {
     "id": 25,
     "name": "からおでん",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "攻撃力一時上昇 + TPを小回復(10%)",
     "description": ""
   },
   {
     "id": 26,
     "name": "ぴりじゃが",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "抵抗力一時上昇 + TPを小回復(10%)",
     "description": ""
   },
   {
     "id": 27,
     "name": "しぶずし",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "命中率一時上昇 + TPを小回復(10%)",
     "description": ""
   },
   {
     "id": 28,
     "name": "しゃくねつカレー",
-    "type": "",
-    "world": "",
+    "type": "normal",
+    "world": "celestia",
+    "effect": "HPを大回復(60%) + TPを大回復(40%)",
     "description": ""
   },
   {
     "id": 29,
     "name": "フルーツサンド",
     "type": "master",
-    "world": "",
+    "world": "inferior",
+    "effect": "HPとTPを全回復",
     "description": ""
   },
   {
     "id": 30,
     "name": "えいようドリンク",
     "type": "master",
-    "world": "",
+    "world": "inferior",
+    "effect": "麻痺、毒状態の解除 + TPを全回復",
     "description": ""
   },
   {
     "id": 31,
     "name": "ちからにくうどん",
     "type": "master",
-    "world": "",
+    "world": "inferior",
+    "effect": "凍結状態海保 + HPを全回復",
     "description": ""
   },
   {
     "id": 32,
     "name": "おはこなべ",
     "type": "master",
-    "world": "",
+    "world": "inferior",
+    "effect": "タスクのにく、まぐろ、いか、こんにゃく、だいこん、パープルソディ",
     "description": ""
   },
   {
     "id": 33,
     "name": "ポテトドリア",
     "type": "master",
-    "world": "",
+    "world": "inferior",
+    "effect": "ポテト、ベアのにく、ライス、ミルク、チーズ、パープルソディ",
     "description": ""
   },
   {
     "id": 34,
     "name": "マーボーカレー",
     "type": "master",
-    "world": "",
+    "world": "inferior",
+    "effect": "パーティ全員のTPが1アップ",
     "description": ""
   },
   {
     "id": 35,
     "name": "スープスパ",
     "type": "master",
-    "world": "",
+    "world": "inferior",
+    "effect": "抵抗力と命中力が一時上昇 + HP大回復(60%)",
     "description": ""
   },
   {
     "id": 36,
     "name": "ツナパエリア",
     "type": "master",
-    "world": "",
+    "world": "inferior",
+    "effect": "攻撃力と防御力が一時的に上昇 + HPを大回復(60%)",
     "description": ""
   },
   {
     "id": 37,
     "name": "やみなべ",
     "type": "other",
-    "world": "",
+    "world": "inferior",
+    "effect": "ランダム。マイナス効果がある場合も。",
     "description": ""
   }
 ]

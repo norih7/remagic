@@ -92,7 +92,7 @@ export default async function HomePage() {
               <td>
                 セージ2個、レッドセージ3個、セボリー2個。体力に関わるのはいくつ？
               </td>
-              <td>4</td>
+              <td>5</td>
             </tr>
             <tr>
               <td>2</td>

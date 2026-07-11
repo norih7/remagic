@@ -104,14 +104,6 @@
     "remarks": "図書館に広げてある本"
   },
   {
-    "id": 14,
-    "locationId": 21,
-    "locationName": "ルイシカ",
-    "recipeId": 14,
-    "recipeName": "にがりマーボ",
-    "remarks": "カレノスの家2F 階段手前にある置物"
-  },
-  {
     "id": 15,
     "locationId": 23,
     "locationName": "チャットの小屋",

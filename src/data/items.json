@@ -633,5 +633,170 @@
     "id": 129,
     "name": "レッドラベンダー",
     "type": "weapon"
+  },
+  {
+    "id": 130,
+    "name": "ブレッド",
+    "type": "food"
+  },
+  {
+    "id": 131,
+    "name": "ベアのにく",
+    "type": "food"
+  },
+  {
+    "id": 132,
+    "name": "レタス",
+    "type": "food"
+  },
+  {
+    "id": 133,
+    "name": "チーズ",
+    "type": "food"
+  },
+  {
+    "id": 134,
+    "name": "パスタ",
+    "type": "food"
+  },
+  {
+    "id": 135,
+    "name": "エビ",
+    "type": "food"
+  },
+  {
+    "id": 136,
+    "name": "いか",
+    "type": "food"
+  },
+  {
+    "id": 137,
+    "name": "トマト",
+    "type": "food"
+  },
+  {
+    "id": 138,
+    "name": "キルマフルーツ",
+    "type": "food"
+  },
+  {
+    "id": 139,
+    "name": "レモン",
+    "type": "food"
+  },
+  {
+    "id": 140,
+    "name": "いちご",
+    "type": "food"
+  },
+  {
+    "id": 141,
+    "name": "きゅうり",
+    "type": "food"
+  },
+  {
+    "id": 142,
+    "name": "ミルク",
+    "type": "food"
+  },
+  {
+    "id": 143,
+    "name": "キャベツ",
+    "type": "food"
+  },
+  {
+    "id": 144,
+    "name": "ポテト",
+    "type": "food"
+  },
+  {
+    "id": 145,
+    "name": "にんじん",
+    "type": "food"
+  },
+  {
+    "id": 146,
+    "name": "まぐろ",
+    "type": "food"
+  },
+  {
+    "id": 147,
+    "name": "だいこん",
+    "type": "food"
+  },
+  {
+    "id": 148,
+    "name": "ライス",
+    "type": "food"
+  },
+  {
+    "id": 149,
+    "name": "たまご",
+    "type": "food"
+  },
+  {
+    "id": 150,
+    "name": "たまねぎ",
+    "type": "food"
+  },
+  {
+    "id": 151,
+    "name": "パンヤめん",
+    "type": "food"
+  },
+  {
+    "id": 152,
+    "name": "ホワイトソディ",
+    "type": "food"
+  },
+  {
+    "id": 153,
+    "name": "タスクのにく",
+    "type": "food"
+  },
+  {
+    "id": 154,
+    "name": "ブラックソディ",
+    "type": "food"
+  },
+  {
+    "id": 155,
+    "name": "レッドソディ",
+    "type": "food"
+  },
+  {
+    "id": 156,
+    "name": "アマンゴ",
+    "type": "food"
+  },
+  {
+    "id": 157,
+    "name": "バナナ",
+    "type": "food"
+  },
+  {
+    "id": 158,
+    "name": "キウイ",
+    "type": "food"
+  },
+  {
+    "id": 159,
+    "name": "ビート",
+    "type": "food"
+  },
+  {
+    "id": 160,
+    "name": "とうふ",
+    "type": "food"
+  },
+  {
+    "id": 161,
+    "name": "こんにゃく",
+    "type": "food"
+  },
+  {
+    "id": 162,
+    "name": "パープルソティ",
+    "type": "food"
   }
 ]

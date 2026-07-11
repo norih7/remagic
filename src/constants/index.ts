@@ -161,11 +161,11 @@ export const systemLinks = {
     path: "/systems/tp-reduce",
     desc: "戦闘でバンバン特技や晶霊術を利用できるようになるアクセサリを紹介",
   },
-  "master-recipe": {
-    title: "マスター料理",
-    image: "/link-headers/systems-master-recipe.jpg",
-    path: "/systems/master-recipe",
-    desc: "隠し要素の特殊な料理を紹介。効果もピカイチなのでぜひ習得しましょう！",
+  recipe: {
+    title: "料理一覧/マスター料理",
+    image: "/link-headers/systems-recipe.jpg",
+    path: "/systems/recipe",
+    desc: "料理一覧情報掲載。ワンダーシェフの場所や特殊なマスター料理の解説も！",
   },
   // "fileld-and-gps": {
   //   title: "特殊なフィールド/GPS",
@@ -261,4 +261,16 @@ export const elementMap = {
     name: "-",
     color: "text-gray-800",
   },
+};
+
+export const recipeTypeMap = {
+  normal: "ワンダーシェフ",
+  master: "マスター料理",
+  other: "その他",
+};
+
+export const recipeWorldMap = {
+  inferior: "インフェリア",
+  celestia: "セレスティア",
+  other: "その他",
 };

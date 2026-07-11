@@ -19,6 +19,7 @@ featuredLinks.push(storyLinks["guide3"]);
 featuredLinks.push(storyLinks["guide4"]);
 featuredLinks.push(subeventLinks["skill-chat"]);
 featuredLinks.push(systemLinks["rune"]);
+featuredLinks.push(systemLinks["recipe"]);
 featuredLinks.push(skillLinks["magic"]);
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
