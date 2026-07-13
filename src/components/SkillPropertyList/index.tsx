@@ -133,7 +133,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
 
         const ruby = skill.ruby === undefined ? "" : <>（{skill.ruby}）</>;
         const skillName = (
-          <h3 className="flex items-center">
+          <h3 className="flex items-center text-slate-700">
             {skill.name}
             <span className="text-xs">{ruby}</span>
           </h3>
@@ -148,14 +148,17 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
             </>
           );
         return (
-          <div key={index}>
+          <div
+            key={index}
+            className="mb-4 font-bold border border-slate-300 rounded-lg p-3"
+          >
             {skillName}
-            <div className=" border-gray-300  rounded-lg mb-12">
-              <h4 className="flex items-center text-basic font-bold text-gray-600 border-b border-gray-300 py-1 mb-3">
+            <div className="">
+              <h4 className="flex items-center text-basic font-bold text-gray-600 border-b border-gray-300 py-1 mb-2">
                 <LuTable className="mr-1" />
                 データ
               </h4>
-              <div className="grid grid-cols-2 gap-2 mb-4">
+              <div className="grid grid-cols-2 gap-2 mb-2">
                 {displayItems.map((item, index) => (
                   <div
                     key={index}
@@ -170,11 +173,11 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                   </div>
                 ))}
               </div>
-              <h4 className="flex items-center text-basic font-bold text-gray-600 border-b border-gray-300 py-1 mb-3">
+              <h4 className="flex items-center text-basic font-bold text-gray-600 border-b border-gray-300 py-1 mb-2">
                 <LiaComment className="mr-1" />
                 説明
               </h4>
-              <div className="bg-slate-50 px-3 pt-2 rounded-lg border border-slate-200">
+              <div className="bg-slate-50 px-3 pt-2 rounded-lg border border-slate-200 font-normal">
                 {descripion}
               </div>
             </div>

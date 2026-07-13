@@ -42,7 +42,10 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
           .filter((item) => item.recipeId === recipe.id)
           .map((item, index) => (
             <li key={index}>
-              <a href={`/systems/item/${item.itemId}`} className="mr-3">
+              <a
+                href={`/systems/item/${item.itemId}`}
+                className="px-2 py-1 bg-white hover:bg-blue-100 border border-gray-300 rounded-md text-sm text-gray-700 transition-colors"
+              >
                 {item.ItemName}
               </a>
             </li>
@@ -79,7 +82,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
                 食材
               </>
             ),
-            value: <ul className="flex flex-wrap">{useItems}</ul>,
+            value: <ul className="pt-1 flex flex-wrap gap-2">{useItems}</ul>,
           },
           {
             label: (
@@ -94,16 +97,19 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
               ) : (
                 <>
                   <strong className="flex items-center">
-                    <LuMapPin className="mr-1" />
+                    <LuMapPin className="text-red-600 mr-1" />
                     {location.locationName}
                   </strong>
-                  {location.remarks}
+                  <span className="font-normal">{location.remarks}</span>
                 </>
               ),
           },
         ];
         return (
-          <div key={index} className="mb-12 font-bold">
+          <div
+            key={index}
+            className="mb-4 font-bold border border-slate-300 rounded-lg p-3"
+          >
             <h3>{recipe.name}</h3>
             <div className=" border-gray-300  rounded-lg">
               <div className="bg-slate-50 px-3 pt-2 mb-2 rounded-lg border border-slate-200">
@@ -114,14 +120,8 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
                   </div>
                   <div className="text-slate-700">{recipe.effect}</div>
                 </div>
-                {/* <div className="mb-2">
-                  <div className="mb-1 pt-2 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center">
-                    説明
-                  </div>
-                  {recipe.description}
-                </div> */}
               </div>
-              <div className="grid grid-cols-2 gap-2 mb-4">
+              <div className="grid grid-cols-2 gap-2">
                 {properties.map((item, index) => (
                   <div
                     key={index}
