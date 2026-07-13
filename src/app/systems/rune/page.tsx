@@ -11,13 +11,16 @@ import { getLocationItemsData } from "@/lib/db";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = " ルーンボトルの解説とアイテム変化一覧";
+const title = "ルーンボトルの解説とアイテム変化一覧";
 export const metadata = {
   title,
   description:
     "ルーンボトルの解説と変化一覧を掲載しています！各変化についてオススメ度もあるので参考にしてください！",
 };
 
+const sectionList = {
+  about: "ルーンボトルの説明と入手方法",
+};
 const runeItems = [
   {
     before: "アップルグミ",
@@ -440,8 +443,22 @@ export default async function HomePage() {
       <PageSummary>
         <p>アイテムを別アイテムに変化させるルーンボトルについて説明します。</p>
       </PageSummary>
+      {/* <div className="mb-12">
+        <h4 className="mb-2">目次</h4>
+        <ul className="flex">
+          <li className="bg-gray-200 rounded-lg mr-2 px-3 py-1">
+            ルーンボトルの説明
+          </li>
+          <li className="bg-gray-200 rounded-lg mr-2 px-3 py-1">
+            ルーンボトルの無限購入
+          </li>
+          <li className="bg-gray-200 rounded-lg mr-2 px-3 py-1">
+            ルーンボトルのアイテム変化一覧
+          </li>
+        </ul>
+      </div> */}
       <section className="mb-12">
-        <SectionTitle>ルーンボトルの説明と入手方法</SectionTitle>
+        <SectionTitle data="about">{sectionList.about}</SectionTitle>
         <div className="mb-4">
           <h3>ルーンボトル</h3>
           <p>

@@ -7,6 +7,8 @@ import {
   LuAward,
   LuHexagon,
   LuBookType,
+  LuLink2,
+  LuMapPin,
 } from "react-icons/lu";
 import { useState } from "react";
 import { MdWaterDrop } from "react-icons/md";
@@ -15,7 +17,7 @@ import { TbSquareChevronDownFilled } from "react-icons/tb";
 import { FaCircleDot } from "react-icons/fa6";
 import { recipeTypeMap, recipeWorldMap } from "@/constants";
 import StarRating from "@/components/StarRating";
-import { LuCornerDownRight } from "react-icons/lu";
+import { LuChefHat, LuMap, LuBeef, LuGem } from "react-icons/lu";
 import { LuShoppingBag } from "react-icons/lu";
 import { RecipeItems, Recipes, LocationRecipes } from "@/lib/db";
 
@@ -38,8 +40,13 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
         // 必要アイテムを抽出
         const useItems = recipeItems
           .filter((item) => item.recipeId === recipe.id)
-          .map((item) => item.ItemName)
-          .join("、");
+          .map((item, index) => (
+            <li key={index}>
+              <a href={`/systems/item/${item.itemId}`} className="mr-3">
+                {item.ItemName}
+              </a>
+            </li>
+          ));
 
         // 獲得場所を抽出
         const location = locationRecipes.find(
@@ -50,7 +57,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
           {
             label: (
               <>
-                <LuShoppingBag className="text-lime-600 mr-1" />
+                <LuChefHat className="text-lime-600 mr-1" />
                 種別
               </>
             ),
@@ -59,7 +66,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
           {
             label: (
               <>
-                <LuAward className="text-lime-600 mr-1" />
+                <LuMap className="text-lime-600 mr-1" />
                 世界
               </>
             ),
@@ -68,16 +75,16 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
           {
             label: (
               <>
-                <LuShoppingBag className="text-lime-600 mr-1" />
+                <LuBeef className="text-lime-600 mr-1" />
                 食材
               </>
             ),
-            value: useItems,
+            value: <ul className="flex flex-wrap">{useItems}</ul>,
           },
           {
             label: (
               <>
-                <LuShoppingBag className="text-lime-600 mr-1" />
+                <LuChefHat className="text-lime-600 mr-1" />
                 ワンダーシェフ
               </>
             ),
@@ -86,40 +93,33 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
                 "-"
               ) : (
                 <>
-                  {location.locationName}
-                  <br />
+                  <strong className="flex items-center">
+                    <LuMapPin className="mr-1" />
+                    {location.locationName}
+                  </strong>
                   {location.remarks}
                 </>
               ),
           },
         ];
-
-        // const descripion =
-        //   rune.remarks === undefined ? (
-        //     <p>{rune.description}</p>
-        //   ) : (
-        //     <>
-        //       <p>{rune.remarks}</p>
-        //       <p className="border-t border-gray-200 pt-2">{rune.remarks}</p>
-        //     </>
-        //   );
         return (
-          <div key={index} className="mb-12">
+          <div key={index} className="mb-12 font-bold">
             <h3>{recipe.name}</h3>
-            <div className=" border-gray-300  rounded-lg font-bold">
+            <div className=" border-gray-300  rounded-lg">
               <div className="bg-slate-50 px-3 pt-2 mb-2 rounded-lg border border-slate-200">
                 <div className="mb-2">
-                  <div className="mb-1 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center">
-                    効果と説明
+                  <div className="mb-1 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center border-b border-gray-300 pb-1">
+                    <LuGem className="mr-1" />
+                    料理の効果
                   </div>
-                  {recipe.effect}
+                  <div className="text-slate-700">{recipe.effect}</div>
                 </div>
-                <div className="mb-2">
-                  <div className="mb-1 pt-2 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center border-t border-gray-300">
+                {/* <div className="mb-2">
+                  <div className="mb-1 pt-2 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center">
                     説明
                   </div>
                   {recipe.description}
-                </div>
+                </div> */}
               </div>
               <div className="grid grid-cols-2 gap-2 mb-4">
                 {properties.map((item, index) => (
@@ -127,12 +127,10 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
                     key={index}
                     className="bg-slate-50 px-3 py-2 rounded-lg border border-slate-200"
                   >
-                    <div className="mb-1 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center">
+                    <div className="mb-1 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center border-b border-gray-300 pb-1">
                       {item.label}
                     </div>
-                    <div className="text-sm text-slate-800 font-semibold">
-                      {item.value}
-                    </div>
+                    <div className="text-sm text-slate-700">{item.value}</div>
                   </div>
                 ))}
               </div>

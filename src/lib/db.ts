@@ -1,17 +1,44 @@
 // src/lib/db.ts
+import items from "../data/items.json";
 import locationItemsData from "../data/locationItems.json";
 import locationRecipesData from "../data/locationRecipes.json";
 import locationLensesData from "../data/locationLenses.json";
 import locationSubEventsData from "../data/locationSubEvents.json";
 import recipes from "../data/recipes.json";
 import recipeItems from "../data/recipeItems.json";
-import locationRecipes from "../data/locationRecipes.json";
+import shopItemsData from "../data/shopItems.json";
 
 export type Item = {
+  id: number;
   name: string;
-  shop: string[];
-  location: Location[];
+  type: string;
+  effect: string;
+  isBuy: boolean;
+  isDrop: boolean;
+  buy: number | undefined;
+  sell: number | undefined;
+  description: string;
+  special: string;
 };
+export async function getItemsData(): Promise<Item[]> {
+  // ここで compiledData を一度 unknown にしてから、Item[] にキャストします
+  return items as unknown as Item[];
+}
+
+export type shopItems = {
+  id: number;
+  locationId: number;
+  locationName: string;
+  shopId: number;
+  shopName: string;
+  itemId: number;
+  itemName: string;
+  special: string;
+};
+export async function getShopItemsData(): Promise<shopItems[]> {
+  // ここで compiledData を一度 unknown にしてから、Item[] にキャストします
+  return shopItemsData as unknown as shopItems[];
+}
 
 export type LocationItems = {
   locationId: number;

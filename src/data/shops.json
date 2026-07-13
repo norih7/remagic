@@ -1,6 +1,242 @@
 [
   {
     "id": 1,
-    "name": "ラシュアンのアイテム屋"
+    "name": "旅人の店（武器、防具、道具屋）",
+    "locationId": 1,
+    "locationName": "ラシュアン"
+  },
+  {
+    "id": 2,
+    "name": "豚真珠（道具、食材屋）",
+    "locationId": 3,
+    "locationName": "レグルス道場"
+  },
+  {
+    "id": 3,
+    "name": "百戦百勝（武器屋）",
+    "locationId": 3,
+    "locationName": "レグルス道場"
+  },
+  {
+    "id": 4,
+    "name": "金城鉄壁（防具屋）",
+    "locationId": 3,
+    "locationName": "レグルス道場"
+  },
+  {
+    "id": 5,
+    "name": "お持ち帰りコーナー（食材屋）",
+    "locationId": 4,
+    "locationName": "学問の町ミンツ"
+  },
+  {
+    "id": 6,
+    "name": "購買部（道具屋）",
+    "locationId": 4,
+    "locationName": "学問の町ミンツ"
+  },
+  {
+    "id": 7,
+    "name": "フレッシュマンズ（食材屋）",
+    "locationId": 8,
+    "locationName": "木陰の村モルル"
+  },
+  {
+    "id": 8,
+    "name": "旅人の店（道具屋）",
+    "locationId": 8,
+    "locationName": "木陰の村モルル"
+  },
+  {
+    "id": 9,
+    "name": "武勇伝（武器屋）",
+    "locationId": 11,
+    "locationName": "王都インフェリア"
+  },
+  {
+    "id": 10,
+    "name": "行商人（食材屋）",
+    "locationId": 11,
+    "locationName": "王都インフェリア"
+  },
+  {
+    "id": 11,
+    "name": "太平楽（道具屋）",
+    "locationId": 11,
+    "locationName": "王都インフェリア"
+  },
+  {
+    "id": 12,
+    "name": "不戦勝（防具屋）",
+    "locationId": 11,
+    "locationName": "王都インフェリア"
+  },
+  {
+    "id": 13,
+    "name": "タイガイ（食材屋）",
+    "locationId": 13,
+    "locationName": "バロール港"
+  },
+  {
+    "id": 14,
+    "name": "オオムネ（武器屋）",
+    "locationId": 14,
+    "locationName": "商業の町バロール"
+  },
+  {
+    "id": 15,
+    "name": "アナガチ（アクセサリ屋）",
+    "locationId": 14,
+    "locationName": "商業の町バロール"
+  },
+  {
+    "id": 16,
+    "name": "マッピラ（食材屋）",
+    "locationId": 14,
+    "locationName": "商業の町バロール"
+  },
+  {
+    "id": 17,
+    "name": "ヨシンバ（道具屋）",
+    "locationId": 14,
+    "locationName": "商業の町バロール"
+  },
+  {
+    "id": 19,
+    "name": "シャン食品（食材屋1）",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール"
+  },
+  {
+    "id": 20,
+    "name": "バール食品（食材屋2）",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール"
+  },
+  {
+    "id": 21,
+    "name": "ホットショット（武器屋）",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール"
+  },
+  {
+    "id": 22,
+    "name": "逃げ水（道具屋）",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール"
+  },
+  {
+    "id": 23,
+    "name": "シースルー（防具屋1）",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール"
+  },
+  {
+    "id": 24,
+    "name": "ヒートアップ（防具屋2）",
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール"
+  },
+  {
+    "id": 25,
+    "name": "商人信者（道具屋）",
+    "locationId": 18,
+    "locationName": "霊峰ファロース"
+  },
+  {
+    "id": 26,
+    "name": "バプス：アイメン（武器屋）",
+    "locationId": 19,
+    "locationName": "アイメンの町"
+  },
+  {
+    "id": 27,
+    "name": "エルス：アイメン（道具屋）",
+    "locationId": 19,
+    "locationName": "アイメンの町"
+  },
+  {
+    "id": 28,
+    "name": "フドゥ：アイメン（食材屋）",
+    "locationId": 19,
+    "locationName": "アイメンの町"
+  },
+  {
+    "id": 29,
+    "name": "ティン：ルイシカ（道具屋）",
+    "locationId": 20,
+    "locationName": "ルイシカ駅"
+  },
+  {
+    "id": 30,
+    "name": "エス：ルイシカ（武器、防具屋）",
+    "locationId": 20,
+    "locationName": "ルイシカ駅"
+  },
+  {
+    "id": 31,
+    "name": "フドゥ：ルイシカ（食材屋）",
+    "locationId": 20,
+    "locationName": "ルイシカ駅"
+  },
+  {
+    "id": 32,
+    "name": "ノームのおもちゃ（道具屋）",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑"
+  },
+  {
+    "id": 33,
+    "name": "ノームのおやつ（食材屋）",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑"
+  },
+  {
+    "id": 34,
+    "name": "登山道具屋（解氷後の道具屋1）",
+    "locationId": 24,
+    "locationName": "港町ペイルティ"
+  },
+  {
+    "id": 35,
+    "name": "ティン：ペイルティ（解氷後の道具屋2）",
+    "locationId": 24,
+    "locationName": "港町ペイルティ"
+  },
+  {
+    "id": 36,
+    "name": "エス：ペイルティ（解氷後の武器屋）",
+    "locationId": 24,
+    "locationName": "港町ペイルティ"
+  },
+  {
+    "id": 37,
+    "name": "フア：ペイルティ（解氷後の食材屋）",
+    "locationId": 24,
+    "locationName": "港町ペイルティ"
+  },
+  {
+    "id": 38,
+    "name": "ティン：ティンシア（道具屋）",
+    "locationId": 27,
+    "locationName": "ティンシア"
+  },
+  {
+    "id": 39,
+    "name": "エス：ティンシア（武器屋）",
+    "locationId": 27,
+    "locationName": "ティンシア"
+  },
+  {
+    "id": 40,
+    "name": "フドゥ：ティンシア（食材屋）",
+    "locationId": 27,
+    "locationName": "ティンシア"
+  },
+  {
+    "id": 41,
+    "name": "食材屋",
+    "locationId": 46,
+    "locationName": "ねこにんの里"
   }
 ]

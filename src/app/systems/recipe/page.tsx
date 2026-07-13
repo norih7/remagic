@@ -13,10 +13,11 @@ import Image from "next/image";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "料理一覧/マスター料理";
+const title = "料理レシピ一覧とマスター料理";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "エターニアの料理レシピ一覧データを掲載しています。料理に必要なアイテムの入手場所も詳しく紹介！マスター料理の解説もしています。",
 };
 export default async function HomePage() {
   const recipes = await getRecipesData();
@@ -31,10 +32,10 @@ export default async function HomePage() {
           料理とマスター料理について解説！各種料理の習得条件や必要食材を一覧で掲載し、マスター料理の紹介もしています。マスター料理はメリットしかないためぜひ習得を目指してください。
         </p>
       </PageSummary>
-      <section className="mb-12">
+      {/* <section className="mb-12">
         <SectionTitle>料理と習得方法</SectionTitle>
         <p>準備中</p>
-      </section>
+      </section> */}
       <section className="mb-12">
         <SectionTitle>マスター料理</SectionTitle>
         <p>
@@ -54,7 +55,12 @@ export default async function HomePage() {
         </div>
       </section>
       <section className="mb-12">
-        <SectionTitle>料理/マスター料理一覧</SectionTitle>
+        <SectionTitle>料理一覧データ</SectionTitle>
+        <div className="mb-4">
+          <p>
+            ワンダーシェフから教えてもらえる料理からマスター料理も含めた全料理データを掲載しています。
+          </p>
+        </div>
         <RecipePropertyList
           recipes={recipes}
           recipeItems={recipeItems}

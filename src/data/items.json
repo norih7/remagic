@@ -2,801 +2,2564 @@
   {
     "id": 1,
     "name": "アップルグミ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "HPを30%回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 100,
+    "sell": 50,
+    "special": ""
   },
   {
     "id": 2,
     "name": "500ガルド",
-    "type": "money"
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 3,
     "name": "コレクターずかん",
-    "type": "useItem"
+    "type": "keyItem",
+    "effect": "アイテム図鑑",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 4,
     "name": "なべのふた",
-    "type": "armor"
+    "type": "shield",
+    "effect": "防御+2、火属性軽減+20%",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 100,
+    "sell": 50,
+    "special": ""
   },
   {
     "id": 5,
     "name": "レザーヘルム",
-    "type": "armor"
+    "type": "head",
+    "effect": "防御+1",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 240,
+    "sell": 120,
+    "special": ""
   },
   {
     "id": 6,
     "name": "オレンジグミ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "TPを30%回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 200,
+    "sell": 100,
+    "special": ""
   },
   {
     "id": 7,
     "name": "サーベル",
-    "type": "weapon"
+    "type": "sword",
+    "effect": "斬り+105、突き85、命中+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 260,
+    "special": ""
   },
   {
     "id": 8,
     "name": "ポールアクス",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+120、突き+120、命中-15",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 500,
+    "special": ""
   },
   {
     "id": 9,
     "name": "600ガルド",
-    "type": "money"
+    "type": "money",
+    "effect": "-",
+    "isBuy": "-",
+    "isDrop": "-",
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 10,
     "name": "パナシーアボトル",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "戦闘不能以外のステータス異常を回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 160,
+    "sell": 80,
+    "special": ""
   },
   {
     "id": 11,
     "name": "プロテクター",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御+7",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 780,
+    "special": ""
   },
   {
     "id": 12,
     "name": "チェインアームズ",
-    "type": "armor"
+    "type": "weapon",
+    "effect": "拳+90、蹴+92、命中+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 340,
+    "special": ""
   },
   {
     "id": 13,
     "name": "バトルアクス",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+190、突き+60、命中+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 700,
+    "special": ""
   },
   {
     "id": 14,
     "name": "バックラー",
-    "type": "armor"
+    "type": "shield",
+    "effect": "防御+4、回避+2",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 460,
+    "sell": 230,
+    "special": ""
   },
   {
     "id": 15,
     "name": "ライフボトル",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "戦闘不能を回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 400,
+    "sell": 200,
+    "special": ""
   },
   {
     "id": 16,
     "name": "サークレット",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "防御+1",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 760,
+    "sell": 380,
+    "special": "知力+4"
   },
   {
     "id": 17,
     "name": "レイピア",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+80、突き+140、命中+10",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 400,
+    "special": ""
   },
   {
     "id": 18,
     "name": "ホーリィボトル",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "一定時間敵とのエンカウント率が下がる",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 200,
+    "sell": 100,
+    "special": ""
   },
   {
     "id": 19,
     "name": "インフェリマップ",
-    "type": "keyItem"
+    "type": "keyItem",
+    "effect": "インフェリアのワールドマップ",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 20,
     "name": "モンスター図鑑",
-    "type": "keyItem"
+    "type": "keyItem",
+    "effect": "モンスター図鑑",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 21,
     "name": "ナイツサーベル",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+150、突き+130 ",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1600,
+    "sell": 800,
+    "special": ""
   },
   {
     "id": 22,
     "name": "ピヨピヨW",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "攻撃+100、命中-3",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 660,
+    "special": "幸運+5"
   },
   {
     "id": 23,
     "name": "アイアンサレット",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "防御+3",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 500,
+    "special": ""
   },
   {
     "id": 24,
     "name": "ポイズンチェック",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "毒と衰弱状態を防ぐ",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 6000,
+    "sell": 3000,
+    "special": "水属性耐性+10%"
   },
   {
     "id": 25,
     "name": "シルククローク",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御+10",
+    "isBuy": true,
+    "isDrop": false,
+    "buy": 1840,
+    "sell": 920,
+    "special": "知力+1、幸運+2"
   },
   {
     "id": 26,
     "name": "フェザーローブ",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御+9、回避+3",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1560,
+    "sell": 780,
+    "special": "幸運+2"
   },
   {
     "id": 27,
     "name": "アイアンリスト",
-    "type": "accessory"
+    "type": "body",
+    "effect": "防御+3",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1320,
+    "sell": 660,
+    "special": ""
   },
   {
     "id": 28,
     "name": "ミックスグミ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "HPとTPを30%回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 1000,
+    "sell": 500,
+    "special": ""
   },
   {
     "id": 29,
     "name": "アップルシールド",
-    "type": "armor"
+    "type": "shield",
+    "effect": "防御+0、回避+10",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 400,
+    "special": "幸運+5"
   },
   {
     "id": 30,
     "name": "チンクエデア",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+160、突き+170、命中+30",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 800,
+    "special": "水属性"
   },
   {
     "id": 31,
     "name": "アイアンアームズ",
-    "type": "armor"
+    "type": "weapon",
+    "effect": "拳+180、蹴り+165、命中+2",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 940,
+    "special": ""
   },
   {
     "id": 33,
     "name": "ミスティローブ",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御+14",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1440,
+    "sell": 720,
+    "special": ""
   },
   {
     "id": 35,
     "name": "リキュールボトル",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "攻撃力が20%減少するが毒・マヒ・氷結状態を防ぐ",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 1200,
+    "sell": 600,
+    "special": ""
   },
   {
     "id": 36,
     "name": "パイングミ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "TPを60%回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 3000,
+    "sell": 1500,
+    "special": ""
   },
   {
     "id": 37,
     "name": "リバースドール",
-    "type": "useItem"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 321,
+    "special": "戦闘時に戦闘不能になると自動復活し、壊れる"
   },
   {
     "id": 38,
     "name": "レモングミ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "HPを60%回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 2500,
+    "sell": 1250,
+    "special": ""
   },
   {
     "id": 39,
     "name": "すいしょうせき",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。ウンディーネの活力+2、10%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
   },
   {
     "id": 40,
     "name": "スペクタクルス",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "戦闘中の敵のHPや耐性状況を確認できる",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 50,
+    "sell": 25,
+    "special": ""
   },
   {
     "id": 41,
     "name": "765ガルド",
-    "type": "money"
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 42,
     "name": "りょくしょうせき",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。シルフの活力+2、10%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
   },
   {
     "id": 43,
     "name": "ルーンボトル",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "特定のアイテムを別アイテムへ変化させる",
+    "isBuy": true,
+    "isDrop": false,
+    "buy": 100000,
+    "sell": 2400,
+    "special": ""
   },
   {
     "id": 44,
     "name": "バスタードソード",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+180、突き+175",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1000,
+    "special": ""
   },
   {
     "id": 45,
     "name": "チャームボトル",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "店の中で利用すると、その店の買い物が50%OFFとなる",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
   },
   {
     "id": 46,
     "name": "ミラクルグミ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "HPとTPを60%回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 6000,
+    "sell": 3000,
+    "special": ""
   },
   {
     "id": 47,
     "name": "シャムシール",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+260、突き+200",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 1500,
+    "special": ""
   },
   {
     "id": 48,
     "name": "エリクシール",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "HPとTPを100%回復",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 10000,
+    "special": ""
   },
   {
     "id": 49,
     "name": "ストームシールド",
-    "type": "armor"
+    "type": "shield",
+    "effect": "防御+6、回避+3、風属性耐性+30%",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 400,
+    "special": ""
   },
   {
     "id": 50,
     "name": "1800ガルド",
-    "type": "money"
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 51,
     "name": "アサルトダガー",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+250、突き+260、命中+30",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 1600,
+    "special": "風属性武器 攻撃ヒット時、稀にウインドカッターが発動"
   },
   {
     "id": 52,
     "name": "メンタルリング",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 20000,
+    "special": "戦闘中、4秒毎にTPが1%回復"
   },
   {
     "id": 53,
     "name": "ニードルグローブ",
-    "type": "armor"
+    "type": "weapon",
+    "effect": "拳+210、蹴+180、命中+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 2400,
+    "sell": 1200,
+    "special": ""
   },
   {
     "id": 54,
-    "name": "アークウイング",
-    "type": "weapon"
+    "name": "アークウインド",
+    "type": "weapon",
+    "effect": "斬り+170、突き+320、命中+5",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 1600,
+    "special": "風属性武器 攻撃ヒット時、稀に敵の命中を低下"
   },
   {
     "id": 55,
     "name": "100G",
-    "type": "money"
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 56,
     "name": "エルヴンブーツ",
-    "type": "armor"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 8000,
+    "special": "戦闘中の移動速度が20%アップ"
   },
   {
     "id": 57,
     "name": "ヴェノム",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "拳+240、蹴+215、命中+3",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 2000,
+    "special": "攻撃ヒット時、稀に敵をマヒ状態にする"
   },
   {
     "id": 58,
     "name": "セージ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "HPが5%アップする",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 600,
+    "special": ""
   },
   {
     "id": 59,
     "name": "フレアマント",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "火属性耐性+30%、土属性耐性+30%",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 8000,
+    "special": ""
   },
   {
     "id": 60,
     "name": "ラベンダー",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "力が1アップする",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1000,
+    "special": ""
   },
   {
     "id": 61,
     "name": "クロスヘルム",
-    "type": "armor"
+    "type": "head",
+    "effect": "防御+10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 3600,
+    "sell": 1800,
+    "special": ""
   },
   {
     "id": 62,
     "name": "フィートシンボル",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 10000,
+    "special": "攻撃が10%アップ"
   },
   {
     "id": 63,
     "name": "ブレスレット",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "防御+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 3200,
+    "sell": 1600,
+    "special": ""
   },
   {
     "id": 64,
     "name": "ブルーリボン",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "防御+3",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 2800,
+    "sell": 1400,
+    "special": ""
   },
   {
     "id": 65,
     "name": "あかのかけら",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。イフリートの活力+1、3%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 66,
     "name": "クリスタルローブ",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御12、回避+2",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 4200,
+    "sell": 2100,
+    "special": ""
   },
   {
     "id": 67,
     "name": "デュエルヘルム",
-    "type": "armor"
+    "type": "head",
+    "effect": "防御+14",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 5000,
+    "sell": 2500,
+    "special": ""
   },
   {
     "id": 68,
     "name": "アンクシールド",
-    "type": "armor"
+    "type": "shield",
+    "effect": "防御+10、回避+4",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 5200,
+    "sell": 2600,
+    "special": "戦闘中8秒毎にHPが5%回復"
   },
   {
     "id": 69,
     "name": "フレアボトル",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "戦闘中に使用可能で、使うと防御-20%、攻撃+30%",
+    "isBuy": true,
+    "isDrop": true,
+    "buy": 600,
+    "sell": 300,
+    "special": ""
   },
   {
     "id": 70,
     "name": "エメラルドリング",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 24000,
+    "special": "戦闘、メニューでのTP消費が2/3となる"
   },
   {
     "id": 71,
     "name": "トライデント",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "斬り+240、突き+400",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 6400,
+    "sell": 3200,
+    "special": "水属性"
   },
   {
     "id": 72,
     "name": "2600ガルド",
-    "type": "money"
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 73,
     "name": "ストライプリボン",
-    "type": "money"
+    "type": "head",
+    "effect": "防御+9、回避+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 5200,
+    "sell": 2600,
+    "special": ""
   },
   {
     "id": 74,
     "name": "ゴールドブレス",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "防御+8",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 9600,
+    "sell": 4800,
+    "special": ""
   },
   {
     "id": 75,
     "name": "セボリー",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "TPが5%アップする",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 800,
+    "special": ""
   },
   {
     "id": 76,
     "name": "オールディバイト",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "戦闘中の敵味方全員の受けるダメージを半減する",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 1000,
+    "special": ""
   },
   {
     "id": 77,
     "name": "アワーグラス",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "戦闘中の敵を4秒間停止させる",
+    "isBuy": true,
+    "isDrop": false,
+    "buy": 100000,
+    "sell": 3000,
+    "special": ""
   },
   {
     "id": 78,
     "name": "ルビーワンド",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "攻撃+260",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 7200,
+    "sell": 3600,
+    "special": ""
   },
   {
     "id": 79,
     "name": "ベルベーヌ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "回避+1",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 800,
+    "special": ""
   },
   {
     "id": 80,
     "name": "Rラインシールド",
-    "type": "armor"
+    "type": "shield",
+    "effect": "防御+28、回避+4",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 8000,
+    "special": ""
   },
   {
     "id": 81,
     "name": "ノームピック",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+480、突き+200",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 12400,
+    "sell": 6200,
+    "special": ""
   },
   {
     "id": 82,
     "name": "ベアクロー",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "拳+325、蹴+320、命中+8",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 4800,
+    "special": ""
   },
   {
     "id": 83,
     "name": "オーガランス",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+300、突き+450、命中+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 4800,
+    "special": ""
   },
   {
     "id": 84,
     "name": "ミスリルクレスト",
-    "type": "weapon"
+    "type": "accessory",
+    "effect": "防御+3",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 4000,
+    "special": "知力+12"
   },
   {
     "id": 85,
     "name": "ラビットシンボル",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 10000,
+    "special": "幸運+30"
   },
   {
     "id": 86,
     "name": "ゴーストシェル",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "拳+365、蹴+360",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 5200,
+    "special": "闇属性 攻撃ヒット時に稀に敵を即死させる 闇属性耐性+30%、幸運-10"
   },
   {
     "id": 87,
     "name": "ミスリルヘルム",
-    "type": "armor"
+    "type": "head",
+    "effect": "防御+18",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 4200,
+    "special": "知力+2"
   },
   {
     "id": 88,
     "name": "ソウルイーター",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+490、突き+430、命中-30",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 5600,
+    "special": "攻撃ヒット時に稀に敵を即死させる"
   },
   {
     "id": 89,
     "name": "ブラッディローブ",
-    "type": "armor"
+    "type": "head",
+    "effect": "防御+14、回避+5",
+    "isBuy": true,
+    "isDrop": false,
+    "buy": 8800,
+    "sell": 4400,
+    "special": ""
   },
   {
     "id": 90,
     "name": "ブルータリスマン",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 10000,
+    "special": "防御+10%"
   },
   {
     "id": 91,
-    "name": "みずくも",
-    "type": "weapon"
+    "name": "みずぐも",
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 10000,
+    "special": "水属性耐性+50%"
   },
   {
     "id": 92,
     "name": "4000ガルド",
-    "type": "money"
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 93,
     "name": "アクアマント",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "水属性耐性+30%、氷属性耐性+30%",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 8000,
+    "special": ""
   },
   {
     "id": 94,
     "name": "フリーズチェック",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "氷属性耐性+10%",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": 20000,
+    "sell": 10000,
+    "special": "凍結状態を100%防ぐ"
   },
   {
     "id": 95,
     "name": "シルバークローク",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御+16、回避*7",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 16800,
+    "special": ""
   },
   {
     "id": 96,
     "name": "バトルピック",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+480、突き+200",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 12400,
+    "sell": 6200,
+    "special": ""
   },
   {
     "id": 97,
     "name": "パラライチェック",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "雷属性耐性+10%",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 24000,
+    "sell": 12000,
+    "special": ""
   },
   {
     "id": 98,
     "name": "ビッグバッグ",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "攻撃+480",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 9500,
+    "special": ""
   },
   {
     "id": 99,
     "name": "パイレーツハット",
-    "type": "armor"
+    "type": "head",
+    "effect": "防御+18",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 8700,
+    "special": ""
   },
   {
     "id": 100,
     "name": "ボルテックソード",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+550、突き+565、命中+10",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 20000,
+    "special": "雷属性"
   },
   {
     "id": 101,
     "name": "ピヨハン",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 14000,
+    "special": "戦闘中の気絶状態が1/2となる"
   },
   {
     "id": 102,
     "name": "サンダーマント",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "風属性耐性+30%、雷属性耐性+30%",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 8000,
+    "special": ""
   },
   {
     "id": 103,
     "name": "レッドセージ",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "HPが10%アップする",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1000,
+    "special": ""
   },
   {
     "id": 104,
     "name": "ホーリィスタッフ",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "攻撃+480",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 16800,
+    "special": "光属性 攻撃時に稀にHPが4%回復 幸運+8"
   },
   {
     "id": 105,
     "name": "プリティリボン",
-    "type": "accessory"
+    "type": "head",
+    "effect": "防御+20、回避+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 10000,
+    "special": "幸運+5"
   },
   {
     "id": 106,
     "name": "ドラゴンベイン",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+670、突き+650、命中-30",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 26000,
+    "special": "闇属性"
   },
   {
     "id": 107,
     "name": "ドラグナーランス",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+400、突き+680",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 21000,
+    "special": ""
   },
   {
     "id": 108,
     "name": "レアシールド",
-    "type": "armor"
+    "type": "shield",
+    "effect": "防御+10、回避+28",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 30000,
+    "special": "幸運+5"
   },
   {
     "id": 109,
     "name": "スケールローブ",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御+22",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 18000,
+    "special": "毒と衰弱状態を100%防止"
   },
   {
     "id": 110,
-    "name": "ラピスランス",
-    "type": "armor"
+    "name": "ラピスブレス",
+    "type": "body",
+    "effect": "防御+11",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 16800,
+    "special": "知力+2、幸運+2"
   },
   {
     "id": 111,
     "name": "ミスリルアームズ",
-    "type": "armor"
+    "type": "weapon",
+    "effect": "拳+515、蹴り+530、命中+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 20000,
+    "special": ""
   },
   {
     "id": 112,
     "name": "シルバープレート",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御+28、回避-5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 18000,
+    "special": ""
   },
   {
     "id": 113,
     "name": "ブラックオニキス",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 16000,
+    "special": "HP30%アップ"
   },
   {
     "id": 114,
     "name": "フレイムソード",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+610、突き+605、命中+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 30000,
+    "special": "火属性 攻撃ヒット時に稀にファイアボールが発動"
   },
   {
     "id": 115,
     "name": "ミスリルプレート",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "防御+37、回避-3",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 30000,
+    "special": ""
   },
   {
     "id": 116,
     "name": "ミスリルメッシュ",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "防御+35、回避+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 30000,
+    "special": "知力+2"
   },
   {
     "id": 117,
     "name": "こくしょうせき",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。シャドウの活力+2、10%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
   },
   {
     "id": 118,
     "name": "ししょうせき",
-    "type": "useItem"
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。ヴォルトの活力+2、10%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
   },
   {
     "id": 119,
     "name": "ミスティシンボル",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "詠唱時間が1/2となる",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 30000,
+    "special": ""
   },
   {
     "id": 120,
     "name": "ミスリルブレス",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "防御+22",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 22000,
+    "special": "知力+2"
   },
   {
     "id": 121,
     "name": "ダイヤナックル",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "拳+660、蹴り+635、命中+7",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 70000,
+    "special": ""
   },
   {
     "id": 122,
     "name": "せいりゅうとう",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "斬り+865、突き+840、命中-10",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 75000,
+    "special": "攻撃ヒット時に稀に敵を吹き飛ばす 防御+5"
   },
   {
     "id": 123,
     "name": "デモンズシール",
-    "type": "accessory"
+    "type": "accessory",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 123,
+    "special": "経験値が2倍となるが、異常ステータスが付与される"
   },
   {
     "id": 124,
     "name": "マム・ベイン",
-    "type": "armor"
+    "type": "body",
+    "effect": "防御+42",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 68000,
+    "special": "地雷氷闇の属性耐性+20%"
   },
   {
     "id": 125,
     "name": "ラックバック",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "攻撃+720",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 46000,
+    "special": "幸運+30"
   },
   {
     "id": 126,
     "name": "やみのたま",
-    "type": "keyItem"
+    "type": "keyItem",
+    "effect": "飛行艇の入手に必要なアイテムの1つ",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
   },
   {
     "id": 127,
     "name": "レッドベルベーヌ",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "回避が2アップする",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1450,
+    "special": ""
   },
   {
     "id": 128,
     "name": "レッドセボリー",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "TPガ10%アップする",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1400,
+    "special": ""
   },
   {
     "id": 129,
     "name": "レッドラベンダー",
-    "type": "weapon"
+    "type": "weapon",
+    "effect": "力が2アップする",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1800,
+    "special": ""
   },
   {
     "id": 130,
     "name": "ブレッド",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 131,
     "name": "ベアのにく",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 150,
+    "sell": 75,
+    "special": ""
   },
   {
     "id": 132,
     "name": "レタス",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 133,
     "name": "チーズ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 134,
     "name": "パスタ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 135,
     "name": "エビ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 80,
+    "sell": 40,
+    "special": ""
   },
   {
     "id": 136,
     "name": "いか",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 80,
+    "sell": 40,
+    "special": ""
   },
   {
     "id": 137,
     "name": "トマト",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 80,
+    "sell": 40,
+    "special": ""
   },
   {
     "id": 138,
     "name": "キルマフルーツ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 80,
+    "sell": 40,
+    "special": ""
   },
   {
     "id": 139,
     "name": "レモン",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 140,
     "name": "いちご",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 80,
+    "sell": 40,
+    "special": ""
   },
   {
     "id": 141,
     "name": "きゅうり",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 50,
+    "sell": 25,
+    "special": ""
   },
   {
     "id": 142,
     "name": "ミルク",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 50,
+    "sell": 25,
+    "special": ""
   },
   {
     "id": 143,
     "name": "キャベツ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 144,
     "name": "ポテト",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 50,
+    "sell": 25,
+    "special": ""
   },
   {
     "id": 145,
     "name": "にんじん",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 50,
+    "sell": 25,
+    "special": ""
   },
   {
     "id": 146,
     "name": "まぐろ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 200,
+    "sell": 100,
+    "special": ""
   },
   {
     "id": 147,
     "name": "だいこん",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 148,
     "name": "ライス",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 100,
+    "sell": 50,
+    "special": ""
   },
   {
     "id": 149,
     "name": "たまご",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 50,
+    "sell": 25,
+    "special": ""
   },
   {
     "id": 150,
     "name": "たまねぎ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 50,
+    "sell": 25,
+    "special": ""
   },
   {
     "id": 151,
     "name": "パンヤめん",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 152,
     "name": "ホワイトソディ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 153,
     "name": "タスクのにく",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 150,
+    "sell": 75,
+    "special": ""
   },
   {
     "id": 154,
     "name": "ブラックソディ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 100,
+    "sell": 50,
+    "special": ""
   },
   {
     "id": 155,
     "name": "レッドソディ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 156,
     "name": "アマンゴ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 80,
+    "sell": 40,
+    "special": ""
   },
   {
     "id": 157,
     "name": "バナナ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 50,
+    "sell": 25,
+    "special": ""
   },
   {
     "id": 158,
     "name": "キウイ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 80,
+    "sell": 40,
+    "special": ""
   },
   {
     "id": 159,
     "name": "ビート",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 160,
     "name": "とうふ",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 161,
     "name": "こんにゃく",
-    "type": "food"
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 60,
+    "sell": 30,
+    "special": ""
   },
   {
     "id": 162,
-    "name": "パープルソティ",
-    "type": "food"
+    "name": "パープルソディ",
+    "type": "food",
+    "effect": "料理の食材。購入場所はこのページをチェック！",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 200,
+    "sell": 100,
+    "special": ""
+  },
+  {
+    "id": 163,
+    "name": "ロングソード",
+    "type": "weapon",
+    "effect": "斬り+70、突き+70",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 300,
+    "sell": 150,
+    "special": ""
+  },
+  {
+    "id": 164,
+    "name": "ホイッスル",
+    "type": "weapon",
+    "effect": "攻撃+35",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 300,
+    "sell": 150,
+    "special": ""
+  },
+  {
+    "id": 165,
+    "name": "ソフトレザー",
+    "type": "body",
+    "effect": "防御+2",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 300,
+    "sell": 150,
+    "special": ""
+  },
+  {
+    "id": 166,
+    "name": "クローク",
+    "type": "body",
+    "effect": "防御+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 200,
+    "sell": 100,
+    "special": ""
+  },
+  {
+    "id": 167,
+    "name": "フランシスカ",
+    "type": "weapon",
+    "effect": "斬り+110、突き+70",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 400,
+    "sell": 200,
+    "special": ""
+  },
+  {
+    "id": 168,
+    "name": "ショートスピア",
+    "type": "weapon",
+    "effect": "斬り+50、突き+85",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 300,
+    "sell": 150,
+    "special": ""
+  },
+  {
+    "id": 169,
+    "name": "ショートソード",
+    "type": "weapon",
+    "effect": "斬り+50、斬り+40、命中+30",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 200,
+    "sell": 100,
+    "special": ""
+  },
+  {
+    "id": 170,
+    "name": "パワーアームズ",
+    "type": "weapon",
+    "effect": "拳+67、蹴り+75、命中+3",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 400,
+    "sell": 200,
+    "special": ""
+  },
+  {
+    "id": 171,
+    "name": "ハードレザー",
+    "type": "body",
+    "effect": "防御+4",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 300,
+    "sell": 150,
+    "special": ""
+  },
+  {
+    "id": 172,
+    "name": "ローブ",
+    "type": "body",
+    "effect": "防御+12、回避+11",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 300,
+    "sell": 150,
+    "special": ""
+  },
+  {
+    "id": 173,
+    "name": "リストバンド",
+    "type": "body",
+    "effect": "防御+1",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 240,
+    "sell": 120,
+    "special": ""
+  },
+  {
+    "id": 174,
+    "name": "ウッドシールド",
+    "type": "body",
+    "effect": "防御+3、回避+1",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 200,
+    "sell": 100,
+    "special": ""
+  },
+  {
+    "id": 175,
+    "name": "ロングスピア",
+    "type": "weapon",
+    "effect": "斬り+66、突き+130",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 500,
+    "sell": 250,
+    "special": ""
+  },
+  {
+    "id": 176,
+    "name": "ロッド",
+    "type": "weapon",
+    "effect": "攻撃+40",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 400,
+    "sell": 200,
+    "special": ""
+  },
+  {
+    "id": 177,
+    "name": "リボン",
+    "type": "head",
+    "effect": "防御+2",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 200,
+    "sell": 100,
+    "special": ""
+  },
+  {
+    "id": 178,
+    "name": "マント",
+    "type": "accessory",
+    "effect": "防御+1",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 30,
+    "sell": 15,
+    "special": ""
+  },
+  {
+    "id": 179,
+    "name": "ダークボトル",
+    "type": "useItem",
+    "effect": "敵にエンカウントしやくなる",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 200,
+    "sell": 100,
+    "special": ""
+  },
+  {
+    "id": 180,
+    "name": "ショートランス",
+    "type": "weapon",
+    "effect": "斬り+100、突き+220、命中+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1920,
+    "sell": 960,
+    "special": ""
+  },
+  {
+    "id": 181,
+    "name": "クレセントアクス",
+    "type": "weapon",
+    "effect": "斬り+300、突き+140",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 2200,
+    "sell": 1100,
+    "special": "攻撃ヒット時に稀に敵を吹き飛ばす"
+  },
+  {
+    "id": 182,
+    "name": "ヘビーグレイブ",
+    "type": "weapon",
+    "effect": "斬り+220、突き+220、命中-10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 2000,
+    "sell": 1000,
+    "special": ""
+  },
+  {
+    "id": 183,
+    "name": "ポイズンソーン",
+    "type": "weapon",
+    "effect": "拳+118、蹴り+125、命中+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1440,
+    "sell": 720,
+    "special": "攻撃ヒット時に稀に敵を毒状態にする"
+  },
+  {
+    "id": 184,
+    "name": "ウグイスブエ",
+    "type": "weapon",
+    "effect": "攻撃+160",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1640,
+    "sell": 820,
+    "special": ""
+  },
+  {
+    "id": 185,
+    "name": "チェインメイル",
+    "type": "body",
+    "effect": "防御+10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1900,
+    "sell": 950,
+    "special": ""
+  },
+  {
+    "id": 186,
+    "name": "ホワイトクローク",
+    "type": "body",
+    "effect": "防御+8、回避+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1480,
+    "sell": 740,
+    "special": ""
+  },
+  {
+    "id": 187,
+    "name": "ラウンドシールド",
+    "type": "shield",
+    "effect": "防御+9、回避+3",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1600,
+    "sell": 800,
+    "special": ""
+  },
+  {
+    "id": 188,
+    "name": "レザーマント",
+    "type": "accessory",
+    "effect": "防御+3",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 100,
+    "sell": 50,
+    "special": ""
+  },
+  {
+    "id": 189,
+    "name": "バルチザン",
+    "type": "weapon",
+    "effect": "斬り+155、突き+260、命中+10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 2960,
+    "sell": 1480,
+    "special": ""
+  },
+  {
+    "id": 190,
+    "name": "スティールソード",
+    "type": "weapon",
+    "effect": "斬り+300、突き+240、命中-20",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 2400,
+    "sell": 1200,
+    "special": "回避-2"
+  },
+  {
+    "id": 191,
+    "name": "メイス",
+    "type": "weapon",
+    "effect": "攻撃+110",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1200,
+    "sell": 600,
+    "special": ""
+  },
+  {
+    "id": 192,
+    "name": "アーメットヘルム",
+    "type": "head",
+    "effect": "防御+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 1440,
+    "sell": 720,
+    "special": ""
+  },
+  {
+    "id": 193,
+    "name": "マジックミスト",
+    "type": "accessory",
+    "effect": "戦闘中の逃走速度が50%アップ",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 6000,
+    "sell": 3000,
+    "special": ""
+  },
+  {
+    "id": 194,
+    "name": "キッチンミトン",
+    "type": "shield",
+    "effect": "防御+5、回避+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 3560,
+    "sell": 1780,
+    "special": "火属性耐性+30% 女性のみ装備可能"
+  },
+  {
+    "id": 195,
+    "name": "ダオ・ブレード",
+    "type": "weapon",
+    "effect": "斬り+295、突き+285",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 4400,
+    "sell": 2200,
+    "special": ""
+  },
+  {
+    "id": 196,
+    "name": "ハルバード",
+    "type": "weapon",
+    "effect": "斬り+300、突き+300、命中-5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 3800,
+    "sell": 1900,
+    "special": ""
+  },
+  {
+    "id": 197,
+    "name": "プリティホラガイ",
+    "type": "weapon",
+    "effect": "攻撃+200",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 3160,
+    "sell": 1580,
+    "special": "幸運+8"
+  },
+  {
+    "id": 198,
+    "name": "ジェムロッド",
+    "type": "weapon",
+    "effect": "攻撃+200",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 3200,
+    "sell": 1600,
+    "special": ""
+  },
+  {
+    "id": 199,
+    "name": "リングメイル",
+    "type": "body",
+    "effect": "防御+13",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 3500,
+    "sell": 1750,
+    "special": ""
+  },
+  {
+    "id": 200,
+    "name": "ゴールドクレスト",
+    "type": "head",
+    "effect": "防御+2",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 3560,
+    "sell": 1780,
+    "special": "知力+8"
+  },
+  {
+    "id": 201,
+    "name": "カイトシールド",
+    "type": "shield",
+    "effect": "防御+13、回避+4",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 4000,
+    "sell": 2000,
+    "special": ""
+  },
+  {
+    "id": 202,
+    "name": "ソー・サーベル",
+    "type": "weapon",
+    "effect": "斬り+355、突き+350、命中+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 8000,
+    "sell": 4000,
+    "special": ""
+  },
+  {
+    "id": 203,
+    "name": "ウォーハンマー",
+    "type": "weapon",
+    "effect": "斬り+370、突き+370、命中-10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 9000,
+    "sell": 4500,
+    "special": ""
+  },
+  {
+    "id": 204,
+    "name": "バルディッシュ",
+    "type": "weapon",
+    "effect": "斬り+410、突き+200",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 12400,
+    "sell": 6200,
+    "special": ""
+  },
+  {
+    "id": 205,
+    "name": "グラディウス",
+    "type": "weapon",
+    "effect": "斬り+320、突き+310、命中+20",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 8400,
+    "sell": 4200,
+    "special": ""
+  },
+  {
+    "id": 206,
+    "name": "シルバーナックル",
+    "type": "weapon",
+    "effect": "拳+275、蹴り+255、命中+10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 7600,
+    "sell": 3800,
+    "special": ""
+  },
+  {
+    "id": 207,
+    "name": "スプリントメイル",
+    "type": "body",
+    "effect": "防御+15",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 8000,
+    "sell": 4000,
+    "special": ""
+  },
+  {
+    "id": 208,
+    "name": "アンバークローク",
+    "type": "body",
+    "effect": "防御+10、回避+10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 7800,
+    "sell": 3900,
+    "special": ""
+  },
+  {
+    "id": 209,
+    "name": "ファインシールド",
+    "type": "shield",
+    "effect": "防御+18、回避+8",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 6000,
+    "sell": 3000,
+    "special": ""
+  },
+  {
+    "id": 210,
+    "name": "グレートソード",
+    "type": "weapon",
+    "effect": "斬り+390、突き+370、命中-20",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 6600,
+    "sell": 3300,
+    "special": "回避-3"
+  },
+  {
+    "id": 211,
+    "name": "メモリーW",
+    "type": "weapon",
+    "effect": "攻撃+300",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 8000,
+    "sell": 4000,
+    "special": ""
+  },
+  {
+    "id": 212,
+    "name": "デストロイヤー",
+    "type": "weapon",
+    "effect": "斬り+440、突き+440",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 12000,
+    "sell": 6000,
+    "special": ""
+  },
+  {
+    "id": 213,
+    "name": "デモンジャベリン",
+    "type": "weapon",
+    "effect": "斬り+320、突き+520、命中+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 12000,
+    "sell": 6000,
+    "special": "闇属性"
+  },
+  {
+    "id": 214,
+    "name": "クリスタルシェル",
+    "type": "weapon",
+    "effect": "拳+400、蹴り+420、命中+5",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 12000,
+    "sell": 6000,
+    "special": ""
+  },
+  {
+    "id": 215,
+    "name": "スカルスタッフ",
+    "type": "weapon",
+    "effect": "攻撃+380",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 11200,
+    "sell": 5600,
+    "special": "攻撃ヒット時、稀に敵の幸運を低下させる 知力+5、幸運-10"
+  },
+  {
+    "id": 216,
+    "name": "トートバック",
+    "type": "weapon",
+    "effect": "攻撃+400",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 11800,
+    "sell": 5900,
+    "special": ""
+  },
+  {
+    "id": 217,
+    "name": "プレートメイル",
+    "type": "body",
+    "effect": "防御+18、回避-3",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 12000,
+    "sell": 6000,
+    "special": ""
+  },
+  {
+    "id": 218,
+    "name": "チェックリボン",
+    "type": "head",
+    "effect": "防御+16、回避+10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 10000,
+    "sell": 5000,
+    "special": ""
+  },
+  {
+    "id": 219,
+    "name": "おにぼうちょう",
+    "type": "weapon",
+    "effect": "斬り+500、突き+470",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 20000,
+    "sell": 10000,
+    "special": ""
+  },
+  {
+    "id": 220,
+    "name": "カタール",
+    "type": "weapon",
+    "effect": "斬り+390、突き+450、命中+20",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 17600,
+    "sell": 8800,
+    "special": "回避+2"
+  },
+  {
+    "id": 221,
+    "name": "ドラゴンファング",
+    "type": "weapon",
+    "effect": "拳+470、蹴り+440、命中+10",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 18800,
+    "sell": 9400,
+    "special": ""
+  },
+  {
+    "id": 222,
+    "name": "トツゲキラッパ",
+    "type": "weapon",
+    "effect": "攻撃+460",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 17600,
+    "sell": 8800,
+    "special": "攻撃ヒット時に稀に敵を気絶させる"
+  },
+  {
+    "id": 223,
+    "name": "バトルスーツ",
+    "type": "body",
+    "effect": "防御+22、回避-3",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 16800,
+    "sell": 8400,
+    "special": ""
+  },
+  {
+    "id": 224,
+    "name": "プリティミトン",
+    "type": "shield",
+    "effect": "防御+9、回避+2",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": 14800,
+    "sell": 7400,
+    "special": "幸運+10 ファラ、メルディ、チャットのみ装備可能"
+  },
+  {
+    "id": 225,
+    "name": "エンジェルブレス",
+    "type": "body",
+    "effect": "防御+18",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 22000,
+    "special": "幸運+8"
+  },
+  {
+    "id": 226,
+    "name": "きしょうせき",
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。ノームの活力+2、10%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
+  },
+  {
+    "id": 227,
+    "name": "クリスダガー",
+    "type": "weapon",
+    "effect": "斬り+650、突き+650、命中+30",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 20000,
+    "special": ""
+  },
+  {
+    "id": 228,
+    "name": "せきしょうせき",
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。イフリートの活力+2、10%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
+  },
+  {
+    "id": 229,
+    "name": "テクニカルリング",
+    "type": "accessory",
+    "effect": "",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 230,
+    "name": "はくしょうせき",
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。レムの活力+2、10%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": "",
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
+  },
+  {
+    "id": 231,
+    "name": "ハヌマンシャフト",
+    "type": "",
+    "effect": "",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 232,
+    "name": "ミョルニル",
+    "type": "",
+    "effect": "",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 233,
+    "name": "リフレックス",
+    "type": "",
+    "effect": "",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 234,
+    "name": "レアヘルム",
+    "type": "",
+    "effect": "",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 235,
+    "name": "レジュームリング",
+    "type": "",
+    "effect": "",
+    "isBuy": true,
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
   }
 ]

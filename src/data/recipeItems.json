@@ -753,7 +753,7 @@
     "recipeId": 29,
     "recipeName": "フルーツサンド",
     "itemId": 162,
-    "ItemName": "パープルソティ"
+    "ItemName": "パープルソディ"
   },
   {
     "id": "",
@@ -788,7 +788,7 @@
     "recipeId": 30,
     "recipeName": "えいようドリンク",
     "itemId": 162,
-    "ItemName": "パープルソティ"
+    "ItemName": "パープルソディ"
   },
   {
     "id": "",
@@ -823,7 +823,7 @@
     "recipeId": 31,
     "recipeName": "ちからにくうどん",
     "itemId": 162,
-    "ItemName": "パープルソティ"
+    "ItemName": "パープルソディ"
   },
   {
     "id": "",
@@ -865,7 +865,7 @@
     "recipeId": 32,
     "recipeName": "おはこなべ",
     "itemId": 162,
-    "ItemName": "パープルソティ"
+    "ItemName": "パープルソディ"
   },
   {
     "id": "",
@@ -907,7 +907,7 @@
     "recipeId": 33,
     "recipeName": "ポテトドリア",
     "itemId": 162,
-    "ItemName": "パープルソティ"
+    "ItemName": "パープルソディ"
   },
   {
     "id": "",
@@ -949,7 +949,7 @@
     "recipeId": 34,
     "recipeName": "マーボーカレー",
     "itemId": 162,
-    "ItemName": "パープルソティ"
+    "ItemName": "パープルソディ"
   },
   {
     "id": "",
@@ -984,7 +984,7 @@
     "recipeId": 35,
     "recipeName": "スープスパ",
     "itemId": 162,
-    "ItemName": "パープルソティ"
+    "ItemName": "パープルソディ"
   },
   {
     "id": "",
@@ -1019,6 +1019,6 @@
     "recipeId": 36,
     "recipeName": "ツナパエリア",
     "itemId": 162,
-    "ItemName": "パープルソティ"
+    "ItemName": "パープルソディ"
   }
 ]

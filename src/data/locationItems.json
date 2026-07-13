@@ -588,7 +588,7 @@
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 54,
-    "itemName": "アークウイング",
+    "itemName": "アークウインド",
     "remarks": ""
   },
   {
@@ -692,7 +692,7 @@
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 54,
-    "itemName": "アークウイング",
+    "itemName": "アークウインド",
     "remarks": ""
   },
   {
@@ -1020,7 +1020,7 @@
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 91,
-    "itemName": "みずくも",
+    "itemName": "みずぐも",
     "remarks": ""
   },
   {
@@ -1316,7 +1316,7 @@
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 110,
-    "itemName": "ラピスランス",
+    "itemName": "ラピスブレス",
     "remarks": ""
   },
   {

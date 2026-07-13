@@ -2,21 +2,3501 @@
   {
     "id": 1,
     "shopId": 1,
-    "shopName": "ラシュアンのアイテム屋",
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "shopName": "旅人の店（武器、防具、道具屋）",
     "itemId": 1,
     "itemName": "アップルグミ",
-    "buy": 100,
-    "sell": 50,
     "remarks": ""
   },
   {
     "id": 2,
     "shopId": 1,
-    "shopName": "ラシュアンのアイテム屋",
-    "itemId": 2,
-    "itemName": "500ガルド",
-    "buy": 100,
-    "sell": 50,
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "shopName": "旅人の店（武器、防具、道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 3,
+    "shopId": 1,
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "shopName": "旅人の店（武器、防具、道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 4,
+    "shopId": 1,
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "shopName": "旅人の店（武器、防具、道具屋）",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "remarks": ""
+  },
+  {
+    "id": 5,
+    "shopId": 1,
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "shopName": "旅人の店（武器、防具、道具屋）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 6,
+    "shopId": 1,
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "shopName": "旅人の店（武器、防具、道具屋）",
+    "itemId": 132,
+    "itemName": "レタス",
+    "remarks": ""
+  },
+  {
+    "id": 7,
+    "shopId": 1,
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "shopName": "旅人の店（武器、防具、道具屋）",
+    "itemId": 4,
+    "itemName": "なべのふた",
+    "remarks": ""
+  },
+  {
+    "id": 8,
+    "shopId": 1,
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "shopName": "旅人の店（武器、防具、道具屋）",
+    "itemId": 5,
+    "itemName": "レザーヘルム",
+    "remarks": ""
+  },
+  {
+    "id": 9,
+    "shopId": 2,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "豚真珠（道具、食材屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 10,
+    "shopId": 2,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "豚真珠（道具、食材屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 11,
+    "shopId": 2,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "豚真珠（道具、食材屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 12,
+    "shopId": 2,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "豚真珠（道具、食材屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 13,
+    "shopId": 2,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "豚真珠（道具、食材屋）",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "remarks": ""
+  },
+  {
+    "id": 14,
+    "shopId": 2,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "豚真珠（道具、食材屋）",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "remarks": ""
+  },
+  {
+    "id": 15,
+    "shopId": 2,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "豚真珠（道具、食材屋）",
+    "itemId": 143,
+    "itemName": "キャベツ",
+    "remarks": ""
+  },
+  {
+    "id": 16,
+    "shopId": 3,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "百戦百勝（武器屋）",
+    "itemId": 167,
+    "itemName": "フランシスカ",
+    "remarks": ""
+  },
+  {
+    "id": 17,
+    "shopId": 3,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "百戦百勝（武器屋）",
+    "itemId": 168,
+    "itemName": "ショートスピア",
+    "remarks": ""
+  },
+  {
+    "id": 18,
+    "shopId": 3,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "百戦百勝（武器屋）",
+    "itemId": 169,
+    "itemName": "ショートソード",
+    "remarks": ""
+  },
+  {
+    "id": 19,
+    "shopId": 3,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "百戦百勝（武器屋）",
+    "itemId": 170,
+    "itemName": "パワーアームズ",
+    "remarks": ""
+  },
+  {
+    "id": 20,
+    "shopId": 4,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "金城鉄壁（防具屋）",
+    "itemId": 171,
+    "itemName": "ハードレザー",
+    "remarks": ""
+  },
+  {
+    "id": 21,
+    "shopId": 4,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "金城鉄壁（防具屋）",
+    "itemId": 172,
+    "itemName": "ローブ",
+    "remarks": ""
+  },
+  {
+    "id": 22,
+    "shopId": 4,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "金城鉄壁（防具屋）",
+    "itemId": 173,
+    "itemName": "リストバンド",
+    "remarks": ""
+  },
+  {
+    "id": 23,
+    "shopId": 4,
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "shopName": "金城鉄壁（防具屋）",
+    "itemId": 174,
+    "itemName": "ウッドシールド",
+    "remarks": ""
+  },
+  {
+    "id": 24,
+    "shopId": 5,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "お持ち帰りコーナー（食材屋）",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "remarks": ""
+  },
+  {
+    "id": 25,
+    "shopId": 5,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "お持ち帰りコーナー（食材屋）",
+    "itemId": 148,
+    "itemName": "ライス",
+    "remarks": ""
+  },
+  {
+    "id": 26,
+    "shopId": 5,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "お持ち帰りコーナー（食材屋）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 27,
+    "shopId": 5,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "お持ち帰りコーナー（食材屋）",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "remarks": ""
+  },
+  {
+    "id": 28,
+    "shopId": 5,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "お持ち帰りコーナー（食材屋）",
+    "itemId": 132,
+    "itemName": "レタス",
+    "remarks": ""
+  },
+  {
+    "id": 29,
+    "shopId": 5,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "お持ち帰りコーナー（食材屋）",
+    "itemId": 137,
+    "itemName": "トマト",
+    "remarks": ""
+  },
+  {
+    "id": 30,
+    "shopId": 5,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "お持ち帰りコーナー（食材屋）",
+    "itemId": 150,
+    "itemName": "たまねぎ",
+    "remarks": ""
+  },
+  {
+    "id": 31,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 32,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 33,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 34,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 35,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 36,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 163,
+    "itemName": "ロングソード",
+    "remarks": ""
+  },
+  {
+    "id": 37,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 167,
+    "itemName": "フランシスカ",
+    "remarks": ""
+  },
+  {
+    "id": 38,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 175,
+    "itemName": "ロングスピア",
+    "remarks": ""
+  },
+  {
+    "id": 39,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 176,
+    "itemName": "ロッド",
+    "remarks": ""
+  },
+  {
+    "id": 40,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 177,
+    "itemName": "リボン",
+    "remarks": ""
+  },
+  {
+    "id": 41,
+    "shopId": 6,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "shopName": "購買部（道具屋）",
+    "itemId": 178,
+    "itemName": "マント",
+    "remarks": ""
+  },
+  {
+    "id": 42,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "remarks": ""
+  },
+  {
+    "id": 43,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "remarks": ""
+  },
+  {
+    "id": 44,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 45,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 132,
+    "itemName": "レタス",
+    "remarks": ""
+  },
+  {
+    "id": 46,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 143,
+    "itemName": "キャベツ",
+    "remarks": ""
+  },
+  {
+    "id": 47,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "remarks": ""
+  },
+  {
+    "id": 48,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 141,
+    "itemName": "きゅうり",
+    "remarks": ""
+  },
+  {
+    "id": 49,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 139,
+    "itemName": "レモン",
+    "remarks": ""
+  },
+  {
+    "id": 50,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 140,
+    "itemName": "いちご",
+    "remarks": ""
+  },
+  {
+    "id": 51,
+    "shopId": 7,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "フレッシュマンズ（食材屋）",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "remarks": ""
+  },
+  {
+    "id": 52,
+    "shopId": 8,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "旅人の店（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 53,
+    "shopId": 8,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "旅人の店（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 54,
+    "shopId": 8,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "旅人の店（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 55,
+    "shopId": 8,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "旅人の店（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 56,
+    "shopId": 8,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "旅人の店（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 57,
+    "shopId": 8,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "旅人の店（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 58,
+    "shopId": 8,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "旅人の店（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 59,
+    "shopId": 8,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "shopName": "旅人の店（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 60,
+    "shopId": 9,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "武勇伝（武器屋）",
+    "itemId": 180,
+    "itemName": "ショートランス",
+    "remarks": ""
+  },
+  {
+    "id": 61,
+    "shopId": 9,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "武勇伝（武器屋）",
+    "itemId": 181,
+    "itemName": "クレセントアクス",
+    "remarks": ""
+  },
+  {
+    "id": 62,
+    "shopId": 9,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "武勇伝（武器屋）",
+    "itemId": 182,
+    "itemName": "ヘビーグレイブ",
+    "remarks": ""
+  },
+  {
+    "id": 63,
+    "shopId": 9,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "武勇伝（武器屋）",
+    "itemId": 183,
+    "itemName": "ポイズンソーン",
+    "remarks": ""
+  },
+  {
+    "id": 64,
+    "shopId": 9,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "武勇伝（武器屋）",
+    "itemId": 184,
+    "itemName": "ウグイスブエ",
+    "remarks": ""
+  },
+  {
+    "id": 65,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "remarks": ""
+  },
+  {
+    "id": 66,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 148,
+    "itemName": "ライス",
+    "remarks": ""
+  },
+  {
+    "id": 67,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 68,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 149,
+    "itemName": "たまご",
+    "remarks": ""
+  },
+  {
+    "id": 69,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "remarks": ""
+  },
+  {
+    "id": 70,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 132,
+    "itemName": "レタス",
+    "remarks": ""
+  },
+  {
+    "id": 71,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 137,
+    "itemName": "トマト",
+    "remarks": ""
+  },
+  {
+    "id": 72,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 150,
+    "itemName": "たまねぎ",
+    "remarks": ""
+  },
+  {
+    "id": 73,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 141,
+    "itemName": "きゅうり",
+    "remarks": ""
+  },
+  {
+    "id": 74,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "remarks": ""
+  },
+  {
+    "id": 75,
+    "shopId": 10,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "行商人（食材屋）",
+    "itemId": 139,
+    "itemName": "レモン",
+    "remarks": ""
+  },
+  {
+    "id": 76,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 77,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 78,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 79,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 80,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 81,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 82,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 83,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 84,
+    "shopId": 11,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "太平楽（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 85,
+    "shopId": 12,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "不戦勝（防具屋）",
+    "itemId": 185,
+    "itemName": "チェインメイル",
+    "remarks": ""
+  },
+  {
+    "id": 86,
+    "shopId": 12,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "不戦勝（防具屋）",
+    "itemId": 186,
+    "itemName": "ホワイトクローク",
+    "remarks": ""
+  },
+  {
+    "id": 87,
+    "shopId": 12,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "不戦勝（防具屋）",
+    "itemId": 16,
+    "itemName": "サークレット",
+    "remarks": ""
+  },
+  {
+    "id": 88,
+    "shopId": 12,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "不戦勝（防具屋）",
+    "itemId": 27,
+    "itemName": "アイアンリスト",
+    "remarks": ""
+  },
+  {
+    "id": 89,
+    "shopId": 12,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "不戦勝（防具屋）",
+    "itemId": 187,
+    "itemName": "ラウンドシールド",
+    "remarks": ""
+  },
+  {
+    "id": 90,
+    "shopId": 12,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "shopName": "不戦勝（防具屋）",
+    "itemId": 188,
+    "itemName": "レザーマント",
+    "remarks": ""
+  },
+  {
+    "id": 91,
+    "shopId": 13,
+    "locationId": 13,
+    "locationName": "バロール港",
+    "shopName": "タイガイ（食材屋）",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "remarks": ""
+  },
+  {
+    "id": 92,
+    "shopId": 13,
+    "locationId": 13,
+    "locationName": "バロール港",
+    "shopName": "タイガイ（食材屋）",
+    "itemId": 135,
+    "itemName": "エビ",
+    "remarks": ""
+  },
+  {
+    "id": 93,
+    "shopId": 13,
+    "locationId": 13,
+    "locationName": "バロール港",
+    "shopName": "タイガイ（食材屋）",
+    "itemId": 136,
+    "itemName": "いか",
+    "remarks": ""
+  },
+  {
+    "id": 94,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 189,
+    "itemName": "バルチザン",
+    "remarks": ""
+  },
+  {
+    "id": 95,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 190,
+    "itemName": "スティールソード",
+    "remarks": ""
+  },
+  {
+    "id": 96,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 21,
+    "itemName": "ナイツサーベル",
+    "remarks": ""
+  },
+  {
+    "id": 97,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 53,
+    "itemName": "ニードルグローブ",
+    "remarks": ""
+  },
+  {
+    "id": 98,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 191,
+    "itemName": "メイス",
+    "remarks": ""
+  },
+  {
+    "id": 99,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 184,
+    "itemName": "ウグイスブエ",
+    "remarks": ""
+  },
+  {
+    "id": 100,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 185,
+    "itemName": "チェインメイル",
+    "remarks": ""
+  },
+  {
+    "id": 101,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 33,
+    "itemName": "ミスティローブ",
+    "remarks": ""
+  },
+  {
+    "id": 102,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 192,
+    "itemName": "アーメットヘルム",
+    "remarks": ""
+  },
+  {
+    "id": 103,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 63,
+    "itemName": "ブレスレット",
+    "remarks": ""
+  },
+  {
+    "id": 104,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 14,
+    "itemName": "バックラー",
+    "remarks": ""
+  },
+  {
+    "id": 105,
+    "shopId": 14,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "オオムネ（武器屋）",
+    "itemId": 187,
+    "itemName": "ラウンドシールド",
+    "remarks": ""
+  },
+  {
+    "id": 106,
+    "shopId": 15,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "アナガチ（アクセサリ屋）",
+    "itemId": 193,
+    "itemName": "マジックミスト",
+    "remarks": ""
+  },
+  {
+    "id": 107,
+    "shopId": 15,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "アナガチ（アクセサリ屋）",
+    "itemId": 24,
+    "itemName": "ポイズンチェック",
+    "remarks": ""
+  },
+  {
+    "id": 108,
+    "shopId": 15,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "アナガチ（アクセサリ屋）",
+    "itemId": 97,
+    "itemName": "パラライチェック",
+    "remarks": ""
+  },
+  {
+    "id": 109,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "remarks": ""
+  },
+  {
+    "id": 110,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 134,
+    "itemName": "パスタ",
+    "remarks": ""
+  },
+  {
+    "id": 111,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "remarks": ""
+  },
+  {
+    "id": 112,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "remarks": ""
+  },
+  {
+    "id": 113,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 114,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 143,
+    "itemName": "キャベツ",
+    "remarks": ""
+  },
+  {
+    "id": 115,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "remarks": ""
+  },
+  {
+    "id": 116,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "remarks": ""
+  },
+  {
+    "id": 117,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 139,
+    "itemName": "レモン",
+    "remarks": ""
+  },
+  {
+    "id": 118,
+    "shopId": 16,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "マッピラ（食材屋）",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "remarks": ""
+  },
+  {
+    "id": 119,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 120,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 121,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 122,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 123,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 124,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 125,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": 126,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 127,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 128,
+    "shopId": 17,
+    "locationId": 14,
+    "locationName": "商業の町バロール",
+    "shopName": "ヨシンバ（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 129,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "remarks": ""
+  },
+  {
+    "id": 130,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 134,
+    "itemName": "パスタ",
+    "remarks": ""
+  },
+  {
+    "id": 131,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 148,
+    "itemName": "ライス",
+    "remarks": ""
+  },
+  {
+    "id": 132,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "remarks": ""
+  },
+  {
+    "id": 133,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 135,
+    "itemName": "エビ",
+    "remarks": ""
+  },
+  {
+    "id": 134,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 136,
+    "itemName": "いか",
+    "remarks": ""
+  },
+  {
+    "id": 135,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 136,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 149,
+    "itemName": "たまご",
+    "remarks": ""
+  },
+  {
+    "id": 137,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "remarks": ""
+  },
+  {
+    "id": 138,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "remarks": ""
+  },
+  {
+    "id": 139,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 160,
+    "itemName": "とうふ",
+    "remarks": ""
+  },
+  {
+    "id": 140,
+    "shopId": 19,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シャン食品（食材屋1）",
+    "itemId": 161,
+    "itemName": "こんにゃく",
+    "remarks": ""
+  },
+  {
+    "id": 141,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 132,
+    "itemName": "レタス",
+    "remarks": ""
+  },
+  {
+    "id": 142,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 143,
+    "itemName": "キャベツ",
+    "remarks": ""
+  },
+  {
+    "id": 143,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "remarks": ""
+  },
+  {
+    "id": 144,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 141,
+    "itemName": "きゅうり",
+    "remarks": ""
+  },
+  {
+    "id": 145,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "remarks": ""
+  },
+  {
+    "id": 146,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 150,
+    "itemName": "たまねぎ",
+    "remarks": ""
+  },
+  {
+    "id": 147,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 137,
+    "itemName": "トマト",
+    "remarks": ""
+  },
+  {
+    "id": 148,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 159,
+    "itemName": "ビート",
+    "remarks": ""
+  },
+  {
+    "id": 149,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 147,
+    "itemName": "だいこん",
+    "remarks": ""
+  },
+  {
+    "id": 150,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 139,
+    "itemName": "レモン",
+    "remarks": ""
+  },
+  {
+    "id": 151,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 140,
+    "itemName": "いちご",
+    "remarks": ""
+  },
+  {
+    "id": 152,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "remarks": ""
+  },
+  {
+    "id": 153,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 158,
+    "itemName": "キウイ",
+    "remarks": ""
+  },
+  {
+    "id": 154,
+    "shopId": 20,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "バール食品（食材屋2）",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "remarks": ""
+  },
+  {
+    "id": 155,
+    "shopId": 21,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ホットショット（武器屋）",
+    "itemId": 195,
+    "itemName": "ダオ・ブレード",
+    "remarks": ""
+  },
+  {
+    "id": 156,
+    "shopId": 21,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ホットショット（武器屋）",
+    "itemId": 181,
+    "itemName": "クレセントアクス",
+    "remarks": ""
+  },
+  {
+    "id": 157,
+    "shopId": 21,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ホットショット（武器屋）",
+    "itemId": 196,
+    "itemName": "ハルバード",
+    "remarks": ""
+  },
+  {
+    "id": 158,
+    "shopId": 21,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ホットショット（武器屋）",
+    "itemId": 197,
+    "itemName": "プリティホラガイ",
+    "remarks": ""
+  },
+  {
+    "id": 159,
+    "shopId": 21,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ホットショット（武器屋）",
+    "itemId": 198,
+    "itemName": "ジェムロッド",
+    "remarks": ""
+  },
+  {
+    "id": 160,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 161,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 162,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 163,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 164,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 165,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 166,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": 167,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 168,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 169,
+    "shopId": 22,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "逃げ水（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 170,
+    "shopId": 23,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シースルー（防具屋1）",
+    "itemId": 186,
+    "itemName": "ホワイトクローク",
+    "remarks": ""
+  },
+  {
+    "id": 171,
+    "shopId": 23,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シースルー（防具屋1）",
+    "itemId": 25,
+    "itemName": "シルククローク",
+    "remarks": ""
+  },
+  {
+    "id": 172,
+    "shopId": 23,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シースルー（防具屋1）",
+    "itemId": 26,
+    "itemName": "フェザーローブ",
+    "remarks": ""
+  },
+  {
+    "id": 173,
+    "shopId": 23,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シースルー（防具屋1）",
+    "itemId": 64,
+    "itemName": "ブルーリボン",
+    "remarks": ""
+  },
+  {
+    "id": 174,
+    "shopId": 23,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シースルー（防具屋1）",
+    "itemId": 188,
+    "itemName": "レザーマント",
+    "remarks": ""
+  },
+  {
+    "id": 175,
+    "shopId": 23,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "シースルー（防具屋1）",
+    "itemId": 194,
+    "itemName": "キッチンミトン",
+    "remarks": ""
+  },
+  {
+    "id": 176,
+    "shopId": 24,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ヒートアップ（防具屋2）",
+    "itemId": 199,
+    "itemName": "リングメイル",
+    "remarks": ""
+  },
+  {
+    "id": 177,
+    "shopId": 24,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ヒートアップ（防具屋2）",
+    "itemId": 61,
+    "itemName": "クロスヘルム",
+    "remarks": ""
+  },
+  {
+    "id": 178,
+    "shopId": 24,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ヒートアップ（防具屋2）",
+    "itemId": 200,
+    "itemName": "ゴールドクレスト",
+    "remarks": ""
+  },
+  {
+    "id": 179,
+    "shopId": 24,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "shopName": "ヒートアップ（防具屋2）",
+    "itemId": 201,
+    "itemName": "カイトシールド",
+    "remarks": ""
+  },
+  {
+    "id": 180,
+    "shopId": 25,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "shopName": "商人信者（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 181,
+    "shopId": 25,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "shopName": "商人信者（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 182,
+    "shopId": 25,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "shopName": "商人信者（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 183,
+    "shopId": 25,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "shopName": "商人信者（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 184,
+    "shopId": 25,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "shopName": "商人信者（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 185,
+    "shopId": 25,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "shopName": "商人信者（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 186,
+    "shopId": 25,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "shopName": "商人信者（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 187,
+    "shopId": 25,
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "shopName": "商人信者（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 188,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 202,
+    "itemName": "ソー・サーベル",
+    "remarks": ""
+  },
+  {
+    "id": 189,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 203,
+    "itemName": "ウォーハンマー",
+    "remarks": ""
+  },
+  {
+    "id": 190,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 204,
+    "itemName": "バルディッシュ",
+    "remarks": ""
+  },
+  {
+    "id": 191,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 205,
+    "itemName": "グラディウス",
+    "remarks": ""
+  },
+  {
+    "id": 192,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 206,
+    "itemName": "シルバーナックル",
+    "remarks": ""
+  },
+  {
+    "id": 193,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 78,
+    "itemName": "ルビーワンド",
+    "remarks": ""
+  },
+  {
+    "id": 194,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 207,
+    "itemName": "スプリントメイル",
+    "remarks": ""
+  },
+  {
+    "id": 195,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 208,
+    "itemName": "アンバークローク",
+    "remarks": ""
+  },
+  {
+    "id": 196,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 66,
+    "itemName": "クリスタルローブ",
+    "remarks": ""
+  },
+  {
+    "id": 197,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 67,
+    "itemName": "デュエルヘルム",
+    "remarks": ""
+  },
+  {
+    "id": 198,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 73,
+    "itemName": "ストライプリボン",
+    "remarks": ""
+  },
+  {
+    "id": 199,
+    "shopId": 26,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "バプス：アイメン（武器屋）",
+    "itemId": 209,
+    "itemName": "ファインシールド",
+    "remarks": ""
+  },
+  {
+    "id": 200,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 201,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 202,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 203,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "remarks": ""
+  },
+  {
+    "id": 204,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 205,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 206,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 207,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": 208,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 209,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 210,
+    "shopId": 27,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "エルス：アイメン（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 211,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "remarks": ""
+  },
+  {
+    "id": 212,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 148,
+    "itemName": "ライス",
+    "remarks": ""
+  },
+  {
+    "id": 213,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 214,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "remarks": ""
+  },
+  {
+    "id": 215,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 153,
+    "itemName": "タスクのにく",
+    "remarks": ""
+  },
+  {
+    "id": 216,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 132,
+    "itemName": "レタス",
+    "remarks": ""
+  },
+  {
+    "id": 217,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 143,
+    "itemName": "キャベツ",
+    "remarks": ""
+  },
+  {
+    "id": 218,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 141,
+    "itemName": "きゅうり",
+    "remarks": ""
+  },
+  {
+    "id": 219,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 137,
+    "itemName": "トマト",
+    "remarks": ""
+  },
+  {
+    "id": 220,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "remarks": ""
+  },
+  {
+    "id": 221,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 158,
+    "itemName": "キウイ",
+    "remarks": ""
+  },
+  {
+    "id": 222,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 156,
+    "itemName": "アマンゴ",
+    "remarks": ""
+  },
+  {
+    "id": 223,
+    "shopId": 28,
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "shopName": "フドゥ：アイメン（食材屋）",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "remarks": ""
+  },
+  {
+    "id": 224,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 225,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 226,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 227,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "remarks": ""
+  },
+  {
+    "id": 228,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": 229,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 230,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 231,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 232,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": 233,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 234,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 235,
+    "shopId": 29,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "ティン：ルイシカ（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 236,
+    "shopId": 30,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "エス：ルイシカ（武器、防具屋）",
+    "itemId": 210,
+    "itemName": "グレートソード",
+    "remarks": ""
+  },
+  {
+    "id": 237,
+    "shopId": 30,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "エス：ルイシカ（武器、防具屋）",
+    "itemId": 206,
+    "itemName": "シルバーナックル",
+    "remarks": ""
+  },
+  {
+    "id": 238,
+    "shopId": 30,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "エス：ルイシカ（武器、防具屋）",
+    "itemId": 211,
+    "itemName": "メモリーW",
+    "remarks": ""
+  },
+  {
+    "id": 239,
+    "shopId": 30,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "エス：ルイシカ（武器、防具屋）",
+    "itemId": 207,
+    "itemName": "スプリントメイル",
+    "remarks": ""
+  },
+  {
+    "id": 240,
+    "shopId": 30,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "エス：ルイシカ（武器、防具屋）",
+    "itemId": 208,
+    "itemName": "アンバークローク",
+    "remarks": ""
+  },
+  {
+    "id": 241,
+    "shopId": 30,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "エス：ルイシカ（武器、防具屋）",
+    "itemId": 66,
+    "itemName": "クリスタルローブ",
+    "remarks": ""
+  },
+  {
+    "id": 242,
+    "shopId": 30,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "エス：ルイシカ（武器、防具屋）",
+    "itemId": 67,
+    "itemName": "デュエルヘルム",
+    "remarks": ""
+  },
+  {
+    "id": 243,
+    "shopId": 30,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "エス：ルイシカ（武器、防具屋）",
+    "itemId": 73,
+    "itemName": "ストライプリボン",
+    "remarks": ""
+  },
+  {
+    "id": 244,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 148,
+    "itemName": "ライス",
+    "remarks": ""
+  },
+  {
+    "id": 245,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 153,
+    "itemName": "タスクのにく",
+    "remarks": ""
+  },
+  {
+    "id": 246,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 143,
+    "itemName": "キャベツ",
+    "remarks": ""
+  },
+  {
+    "id": 247,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "remarks": ""
+  },
+  {
+    "id": 248,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 150,
+    "itemName": "たまねぎ",
+    "remarks": ""
+  },
+  {
+    "id": 249,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 137,
+    "itemName": "トマト",
+    "remarks": ""
+  },
+  {
+    "id": 250,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 159,
+    "itemName": "ビート",
+    "remarks": ""
+  },
+  {
+    "id": 251,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 160,
+    "itemName": "とうふ",
+    "remarks": ""
+  },
+  {
+    "id": 252,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 155,
+    "itemName": "レッドソディ",
+    "remarks": ""
+  },
+  {
+    "id": 253,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "remarks": ""
+  },
+  {
+    "id": 254,
+    "shopId": 31,
+    "locationId": 20,
+    "locationName": "ルイシカ駅",
+    "shopName": "フドゥ：ルイシカ（食材屋）",
+    "itemId": 154,
+    "itemName": "ブラックソディ",
+    "remarks": ""
+  },
+  {
+    "id": 255,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 256,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 257,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 258,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "remarks": ""
+  },
+  {
+    "id": 259,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 260,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 261,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 262,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 263,
+    "shopId": 32,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおもちゃ（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 264,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 151,
+    "itemName": "パンヤめん",
+    "remarks": ""
+  },
+  {
+    "id": 265,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 153,
+    "itemName": "タスクのにく",
+    "remarks": ""
+  },
+  {
+    "id": 266,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "remarks": ""
+  },
+  {
+    "id": 267,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "remarks": ""
+  },
+  {
+    "id": 268,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 150,
+    "itemName": "たまねぎ",
+    "remarks": ""
+  },
+  {
+    "id": 269,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 159,
+    "itemName": "ビート",
+    "remarks": ""
+  },
+  {
+    "id": 270,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 156,
+    "itemName": "アマンゴ",
+    "remarks": ""
+  },
+  {
+    "id": 271,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 155,
+    "itemName": "レッドソディ",
+    "remarks": ""
+  },
+  {
+    "id": 272,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "remarks": ""
+  },
+  {
+    "id": 273,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 154,
+    "itemName": "ブラックソディ",
+    "remarks": ""
+  },
+  {
+    "id": 274,
+    "shopId": 33,
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "shopName": "ノームのおやつ（食材屋）",
+    "itemId": 162,
+    "itemName": "パープルソディ",
+    "remarks": ""
+  },
+  {
+    "id": 275,
+    "shopId": 34,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "登山道具屋（解氷後の道具屋1）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 276,
+    "shopId": 34,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "登山道具屋（解氷後の道具屋1）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 277,
+    "shopId": 34,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "登山道具屋（解氷後の道具屋1）",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 278,
+    "shopId": 34,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "登山道具屋（解氷後の道具屋1）",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": 279,
+    "shopId": 34,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "登山道具屋（解氷後の道具屋1）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 280,
+    "shopId": 34,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "登山道具屋（解氷後の道具屋1）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 281,
+    "shopId": 34,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "登山道具屋（解氷後の道具屋1）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 282,
+    "shopId": 34,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "登山道具屋（解氷後の道具屋1）",
+    "itemId": 94,
+    "itemName": "フリーズチェック",
+    "remarks": ""
+  },
+  {
+    "id": 283,
+    "shopId": 35,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "ティン：ペイルティ（解氷後の道具屋2）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 284,
+    "shopId": 35,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "ティン：ペイルティ（解氷後の道具屋2）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 285,
+    "shopId": 35,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "ティン：ペイルティ（解氷後の道具屋2）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 286,
+    "shopId": 35,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "ティン：ペイルティ（解氷後の道具屋2）",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "remarks": ""
+  },
+  {
+    "id": 287,
+    "shopId": 35,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "ティン：ペイルティ（解氷後の道具屋2）",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": 288,
+    "shopId": 35,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "ティン：ペイルティ（解氷後の道具屋2）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 289,
+    "shopId": 35,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "ティン：ペイルティ（解氷後の道具屋2）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 290,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 212,
+    "itemName": "デストロイヤー",
+    "remarks": ""
+  },
+  {
+    "id": 291,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 213,
+    "itemName": "デモンジャベリン",
+    "remarks": ""
+  },
+  {
+    "id": 292,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 71,
+    "itemName": "トライデント",
+    "remarks": ""
+  },
+  {
+    "id": 293,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 214,
+    "itemName": "クリスタルシェル",
+    "remarks": ""
+  },
+  {
+    "id": 294,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 215,
+    "itemName": "スカルスタッフ",
+    "remarks": ""
+  },
+  {
+    "id": 295,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 216,
+    "itemName": "トートバック",
+    "remarks": ""
+  },
+  {
+    "id": 296,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 217,
+    "itemName": "プレートメイル",
+    "remarks": ""
+  },
+  {
+    "id": 297,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 89,
+    "itemName": "ブラッディローブ",
+    "remarks": ""
+  },
+  {
+    "id": 298,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 218,
+    "itemName": "チェックリボン",
+    "remarks": ""
+  },
+  {
+    "id": 299,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 74,
+    "itemName": "ゴールドブレス",
+    "remarks": ""
+  },
+  {
+    "id": 300,
+    "shopId": 36,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "エス：ペイルティ（解氷後の武器屋）",
+    "itemId": 68,
+    "itemName": "アンクシールド",
+    "remarks": ""
+  },
+  {
+    "id": 301,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "remarks": ""
+  },
+  {
+    "id": 302,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 135,
+    "itemName": "エビ",
+    "remarks": ""
+  },
+  {
+    "id": 303,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 136,
+    "itemName": "いか",
+    "remarks": ""
+  },
+  {
+    "id": 304,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 134,
+    "itemName": "パスタ",
+    "remarks": ""
+  },
+  {
+    "id": 305,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 153,
+    "itemName": "タスクのにく",
+    "remarks": ""
+  },
+  {
+    "id": 306,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 307,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 149,
+    "itemName": "たまご",
+    "remarks": ""
+  },
+  {
+    "id": 308,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "remarks": ""
+  },
+  {
+    "id": 309,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 148,
+    "itemName": "ライス",
+    "remarks": ""
+  },
+  {
+    "id": 310,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 151,
+    "itemName": "パンヤめん",
+    "remarks": ""
+  },
+  {
+    "id": 311,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 158,
+    "itemName": "キウイ",
+    "remarks": ""
+  },
+  {
+    "id": 312,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 156,
+    "itemName": "アマンゴ",
+    "remarks": ""
+  },
+  {
+    "id": 313,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 155,
+    "itemName": "レッドソディ",
+    "remarks": ""
+  },
+  {
+    "id": 314,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "remarks": ""
+  },
+  {
+    "id": 315,
+    "shopId": 37,
+    "locationId": 24,
+    "locationName": "港町ペイルティ",
+    "shopName": "フア：ペイルティ（解氷後の食材屋）",
+    "itemId": 154,
+    "itemName": "ブラックソディ",
+    "remarks": ""
+  },
+  {
+    "id": 316,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 317,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "remarks": ""
+  },
+  {
+    "id": 318,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "remarks": ""
+  },
+  {
+    "id": 319,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "remarks": ""
+  },
+  {
+    "id": 320,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "remarks": ""
+  },
+  {
+    "id": 321,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "remarks": ""
+  },
+  {
+    "id": 322,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 323,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "remarks": ""
+  },
+  {
+    "id": 324,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "remarks": ""
+  },
+  {
+    "id": 325,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "remarks": ""
+  },
+  {
+    "id": 326,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "remarks": ""
+  },
+  {
+    "id": 327,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "remarks": ""
+  },
+  {
+    "id": 328,
+    "shopId": 38,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "ティン：ティンシア（道具屋）",
+    "itemId": 40,
+    "itemName": "スペクタクルス",
+    "remarks": ""
+  },
+  {
+    "id": 329,
+    "shopId": 39,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "エス：ティンシア（武器屋）",
+    "itemId": 219,
+    "itemName": "おにぼうちょう",
+    "remarks": ""
+  },
+  {
+    "id": 330,
+    "shopId": 39,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "エス：ティンシア（武器屋）",
+    "itemId": 96,
+    "itemName": "バトルピック",
+    "remarks": ""
+  },
+  {
+    "id": 331,
+    "shopId": 39,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "エス：ティンシア（武器屋）",
+    "itemId": 220,
+    "itemName": "カタール",
+    "remarks": ""
+  },
+  {
+    "id": 332,
+    "shopId": 39,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "エス：ティンシア（武器屋）",
+    "itemId": 221,
+    "itemName": "ドラゴンファング",
+    "remarks": ""
+  },
+  {
+    "id": 333,
+    "shopId": 39,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "エス：ティンシア（武器屋）",
+    "itemId": 222,
+    "itemName": "トツゲキラッパ",
+    "remarks": ""
+  },
+  {
+    "id": 334,
+    "shopId": 39,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "エス：ティンシア（武器屋）",
+    "itemId": 223,
+    "itemName": "バトルスーツ",
+    "remarks": ""
+  },
+  {
+    "id": 335,
+    "shopId": 39,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "エス：ティンシア（武器屋）",
+    "itemId": 224,
+    "itemName": "プリティミトン",
+    "remarks": ""
+  },
+  {
+    "id": 336,
+    "shopId": 39,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "エス：ティンシア（武器屋）",
+    "itemId": 97,
+    "itemName": "パラライチェック",
+    "remarks": ""
+  },
+  {
+    "id": 337,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "remarks": ""
+  },
+  {
+    "id": 338,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 134,
+    "itemName": "パスタ",
+    "remarks": ""
+  },
+  {
+    "id": 339,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 148,
+    "itemName": "ライス",
+    "remarks": ""
+  },
+  {
+    "id": 340,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 153,
+    "itemName": "タスクのにく",
+    "remarks": ""
+  },
+  {
+    "id": 341,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "remarks": ""
+  },
+  {
+    "id": 342,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 149,
+    "itemName": "たまご",
+    "remarks": ""
+  },
+  {
+    "id": 343,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "remarks": ""
+  },
+  {
+    "id": 344,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 151,
+    "itemName": "パンヤめん",
+    "remarks": ""
+  },
+  {
+    "id": 345,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 158,
+    "itemName": "キウイ",
+    "remarks": ""
+  },
+  {
+    "id": 346,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "remarks": ""
+  },
+  {
+    "id": 347,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 156,
+    "itemName": "アマンゴ",
+    "remarks": ""
+  },
+  {
+    "id": 348,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "remarks": ""
+  },
+  {
+    "id": 349,
+    "shopId": 40,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "shopName": "フドゥ：ティンシア（食材屋）",
+    "itemId": 154,
+    "itemName": "ブラックソディ",
+    "remarks": ""
+  },
+  {
+    "id": 350,
+    "shopId": 41,
+    "locationId": 46,
+    "locationName": "ねこにんの里",
+    "shopName": "食材屋",
+    "itemId": 162,
+    "itemName": "パープルソディ",
     "remarks": ""
   }
 ]
