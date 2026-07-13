@@ -45,6 +45,7 @@ export type LocationItems = {
   locationName: string;
   itemId: number;
   itemName: string;
+  itemType: string;
   remarks: string;
 };
 export async function getLocationItemsData(): Promise<LocationItems[]> {
