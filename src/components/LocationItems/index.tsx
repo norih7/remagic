@@ -21,23 +21,17 @@ export default function ChartList(props: Props) {
     item.itemType === "money" ? (
       <li
         key={index}
-        className="bg-gray-50 border border-gray-200 rounded-lg py-2 px-3 transition-colors text-sm"
+        className="bg-white border border-gray-200 rounded-lg px-3 py-2 transition-colors text-sm"
       >
-        {item.itemName}
+        <strong>{item.itemName}</strong>
         <span>{item.remarks}</span>
       </li>
     ) : (
-      <li
-        key={index}
-        className="bg-gray-50 border border-gray-200 rounded-lg py-2 px-3 transition-colors text-sm"
-      >
-        <a
-          href={`/systems/item/${item.itemId}`}
-          className="bg-white border border-sky-200 rounded-sm px-2 py-[2px]"
-        >
-          {item.itemName}
+      <li key={index} className="bg-white border border-sky-200 rounded-md">
+        <a href={`/systems/item/${item.itemId}`} className="block px-3 py-2">
+          <strong>{item.itemName}</strong>
+          <span>{item.remarks}</span>
         </a>
-        <span>{item.remarks}</span>
       </li>
     ),
   );
@@ -45,8 +39,11 @@ export default function ChartList(props: Props) {
     result.length === 0 ? (
       <p className="pt-2">なし</p>
     ) : (
+      // <ul
+      //   className={`${styles.list} grid grid-cols-1 md:grid-cols-2 gap-3 mt-3`}
+      // >
       <ul
-        className={`${styles.list} grid grid-cols-1 md:grid-cols-2 gap-3 mt-3`}
+        className={`${styles.list} grid grid-cols-1 md:grid-cols-2 gap-3 mt-3 bg-gray-50 border border-gray-200 rounded-lg py-3 px-3 transition-colors text-sm`}
       >
         {List}
       </ul>

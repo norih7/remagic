@@ -77,7 +77,7 @@ export const RunePropertyList: React.FC<RunePropertyListProps> = ({
             key={index}
             className="mb-4 font-bold border border-slate-300 rounded-lg p-3 text-slate-700"
           >
-            <h3>{rune.before}</h3>
+            <h3 className="text-[1rem]">{rune.before}</h3>
             <div className=" border-gray-300  rounded-lg font-bold">
               <div className="bg-slate-50 px-3 pt-2 mb-2 rounded-lg border border-slate-200">
                 <div className="mb-2">

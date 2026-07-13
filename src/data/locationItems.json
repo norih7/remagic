@@ -59,7 +59,7 @@
     "locationName": "レグルス道場",
     "itemId": 5,
     "itemName": "レザーヘルム",
-    "itemType": "head",
+    "itemType": "helmet",
     "remarks": "道場広間 入口左側にある円柱箱"
   },
   {
@@ -122,7 +122,7 @@
     "locationName": "ミンツの岩山",
     "itemId": 8,
     "itemName": "ポールアクス",
-    "itemType": "weapon",
+    "itemType": "halbert",
     "remarks": ""
   },
   {
@@ -149,7 +149,7 @@
     "locationName": "望郷の洞窟",
     "itemId": 11,
     "itemName": "プロテクター",
-    "itemType": "body",
+    "itemType": "armor",
     "remarks": ""
   },
   {
@@ -158,7 +158,7 @@
     "locationName": "望郷の洞窟",
     "itemId": 12,
     "itemName": "チェインアームズ",
-    "itemType": "weapon",
+    "itemType": "knuckle",
     "remarks": ""
   },
   {
@@ -167,7 +167,7 @@
     "locationName": "望郷の洞窟",
     "itemId": 13,
     "itemName": "バトルアクス",
-    "itemType": "weapon",
+    "itemType": "ax",
     "remarks": ""
   },
   {
@@ -212,7 +212,7 @@
     "locationName": "望郷の洞窟",
     "itemId": 17,
     "itemName": "レイピア",
-    "itemType": "weapon",
+    "itemType": "sword",
     "remarks": "満潮で取得可能"
   },
   {
@@ -248,7 +248,7 @@
     "locationName": "木陰の村モルル",
     "itemId": 21,
     "itemName": "ナイツサーベル",
-    "itemType": "weapon",
+    "itemType": "sword",
     "remarks": ""
   },
   {
@@ -257,7 +257,7 @@
     "locationName": "木陰の村モルル",
     "itemId": 22,
     "itemName": "ピヨピヨW",
-    "itemType": "weapon",
+    "itemType": "whistle",
     "remarks": ""
   },
   {
@@ -284,7 +284,7 @@
     "locationName": "水晶霊の河",
     "itemId": 25,
     "itemName": "シルククローク",
-    "itemType": "body",
+    "itemType": "cloak",
     "remarks": ""
   },
   {
@@ -293,7 +293,7 @@
     "locationName": "水晶霊の河",
     "itemId": 26,
     "itemName": "フェザーローブ",
-    "itemType": "body",
+    "itemType": "robe",
     "remarks": ""
   },
   {
@@ -302,7 +302,7 @@
     "locationName": "水晶霊の河",
     "itemId": 27,
     "itemName": "アイアンリスト",
-    "itemType": "body",
+    "itemType": "bracelet",
     "remarks": ""
   },
   {
@@ -338,7 +338,7 @@
     "locationName": "水晶霊の河",
     "itemId": 30,
     "itemName": "チンクエデア",
-    "itemType": "weapon",
+    "itemType": "shortSword",
     "remarks": "滝のフロア右下の茂みの隠し"
   },
   {
@@ -347,7 +347,7 @@
     "locationName": "いざないの密林",
     "itemId": 31,
     "itemName": "アイアンアームズ",
-    "itemType": "weapon",
+    "itemType": "knuckle",
     "remarks": ""
   },
   {
@@ -365,7 +365,7 @@
     "locationName": "いざないの密林",
     "itemId": 27,
     "itemName": "アイアンリスト",
-    "itemType": "body",
+    "itemType": "bracelet",
     "remarks": ""
   },
   {
@@ -374,7 +374,7 @@
     "locationName": "いざないの密林",
     "itemId": 33,
     "itemName": "ミスティローブ",
-    "itemType": "body",
+    "itemType": "robe",
     "remarks": ""
   },
   {
@@ -383,7 +383,7 @@
     "locationName": "いざないの密林",
     "itemId": 25,
     "itemName": "シルククローク",
-    "itemType": "body",
+    "itemType": "cloak",
     "remarks": ""
   },
   {
@@ -491,7 +491,7 @@
     "locationName": "いざないの密林",
     "itemId": 44,
     "itemName": "バスタードソード",
-    "itemType": "weapon",
+    "itemType": "greatSword",
     "remarks": ""
   },
   {
@@ -554,7 +554,7 @@
     "locationName": "商業の町バロール",
     "itemId": 47,
     "itemName": "シャムシール",
-    "itemType": "weapon",
+    "itemType": "sword",
     "remarks": "武器屋 左奥にある先の宝箱"
   },
   {
@@ -608,7 +608,7 @@
     "locationName": "風晶霊の空洞",
     "itemId": 51,
     "itemName": "アサルトダガー",
-    "itemType": "weapon",
+    "itemType": "shortSword",
     "remarks": ""
   },
   {
@@ -644,7 +644,7 @@
     "locationName": "風晶霊の空洞",
     "itemId": 53,
     "itemName": "ニードルグローブ",
-    "itemType": "weapon",
+    "itemType": "knuckle",
     "remarks": ""
   },
   {
@@ -662,7 +662,7 @@
     "locationName": "風晶霊の空洞",
     "itemId": 54,
     "itemName": "アークウインド",
-    "itemType": "weapon",
+    "itemType": "spear",
     "remarks": ""
   },
   {
@@ -698,7 +698,7 @@
     "locationName": "火晶霊の谷",
     "itemId": 57,
     "itemName": "ヴェノム",
-    "itemType": "weapon",
+    "itemType": "knuckle",
     "remarks": ""
   },
   {
@@ -743,7 +743,7 @@
     "locationName": "火晶霊の谷",
     "itemId": 61,
     "itemName": "クロスヘルム",
-    "itemType": "head",
+    "itemType": "helmet",
     "remarks": ""
   },
   {
@@ -779,7 +779,7 @@
     "locationName": "火晶霊の谷",
     "itemId": 54,
     "itemName": "アークウインド",
-    "itemType": "weapon",
+    "itemType": "spear",
     "remarks": ""
   },
   {
@@ -806,7 +806,7 @@
     "locationName": "霊峰ファロース",
     "itemId": 66,
     "itemName": "クリスタルローブ",
-    "itemType": "body",
+    "itemType": "robe",
     "remarks": ""
   },
   {
@@ -815,7 +815,7 @@
     "locationName": "霊峰ファロース",
     "itemId": 67,
     "itemName": "デュエルヘルム",
-    "itemType": "head",
+    "itemType": "helmet",
     "remarks": ""
   },
   {
@@ -923,7 +923,7 @@
     "locationName": "アイメンの町",
     "itemId": 73,
     "itemName": "ストライプリボン",
-    "itemType": "head",
+    "itemType": "ribbon",
     "remarks": "メルディの家2F 取り付け棚"
   },
   {
@@ -932,7 +932,7 @@
     "locationName": "地晶霊の廃坑",
     "itemId": 74,
     "itemName": "ゴールドブレス",
-    "itemType": "accessory",
+    "itemType": "bracelet",
     "remarks": ""
   },
   {
@@ -968,7 +968,7 @@
     "locationName": "地晶霊の廃坑",
     "itemId": 78,
     "itemName": "ルビーワンド",
-    "itemType": "weapon",
+    "itemType": "cane",
     "remarks": ""
   },
   {
@@ -1040,7 +1040,7 @@
     "locationName": "地晶霊の廃坑",
     "itemId": 81,
     "itemName": "ノームピック",
-    "itemType": "weapon",
+    "itemType": "shortSword",
     "remarks": ""
   },
   {
@@ -1049,7 +1049,7 @@
     "locationName": "地晶霊の廃坑",
     "itemId": 82,
     "itemName": "ベアクロー",
-    "itemType": "weapon",
+    "itemType": "knuckle",
     "remarks": ""
   },
   {
@@ -1058,7 +1058,7 @@
     "locationName": "地晶霊の廃坑",
     "itemId": 83,
     "itemName": "オーガランス",
-    "itemType": "weapon",
+    "itemType": "spear",
     "remarks": ""
   },
   {
@@ -1103,7 +1103,7 @@
     "locationName": "チャットの小屋",
     "itemId": 87,
     "itemName": "ミスリルヘルム",
-    "itemType": "head",
+    "itemType": "helmet",
     "remarks": ""
   },
   {
@@ -1112,7 +1112,7 @@
     "locationName": "チャットの小屋",
     "itemId": 88,
     "itemName": "ソウルイーター",
-    "itemType": "weapon",
+    "itemType": "greatSword",
     "remarks": ""
   },
   {
@@ -1121,7 +1121,7 @@
     "locationName": "チャットの小屋",
     "itemId": 89,
     "itemName": "ブラッディローブ",
-    "itemType": "head",
+    "itemType": "robe",
     "remarks": ""
   },
   {
@@ -1229,7 +1229,7 @@
     "locationName": "氷晶霊の山",
     "itemId": 95,
     "itemName": "シルバークローク",
-    "itemType": "body",
+    "itemType": "cloak",
     "remarks": ""
   },
   {
@@ -1256,7 +1256,7 @@
     "locationName": "氷晶霊の山",
     "itemId": 96,
     "itemName": "バトルピック",
-    "itemType": "weapon",
+    "itemType": "ax",
     "remarks": ""
   },
   {
@@ -1337,7 +1337,7 @@
     "locationName": "雷晶霊の遺跡",
     "itemId": 98,
     "itemName": "ビッグバッグ",
-    "itemType": "weapon",
+    "itemType": "bag",
     "remarks": ""
   },
   {
@@ -1346,7 +1346,7 @@
     "locationName": "雷晶霊の遺跡",
     "itemId": 99,
     "itemName": "パイレーツハット",
-    "itemType": "head",
+    "itemType": "hat",
     "remarks": ""
   },
   {
@@ -1382,7 +1382,7 @@
     "locationName": "雷晶霊の遺跡",
     "itemId": 100,
     "itemName": "ボルテックソード",
-    "itemType": "weapon",
+    "itemType": "sword",
     "remarks": ""
   },
   {
@@ -1427,7 +1427,7 @@
     "locationName": "雷晶霊の遺跡",
     "itemId": 104,
     "itemName": "ホーリィスタッフ",
-    "itemType": "weapon",
+    "itemType": "cane",
     "remarks": ""
   },
   {
@@ -1436,7 +1436,7 @@
     "locationName": "バリル城",
     "itemId": 105,
     "itemName": "プリティリボン",
-    "itemType": "head",
+    "itemType": "ribbon",
     "remarks": ""
   },
   {
@@ -1445,7 +1445,7 @@
     "locationName": "バリル城",
     "itemId": 106,
     "itemName": "ドラゴンベイン",
-    "itemType": "weapon",
+    "itemType": "greatSword",
     "remarks": ""
   },
   {
@@ -1454,7 +1454,7 @@
     "locationName": "バリル城",
     "itemId": 107,
     "itemName": "ドラグナーランス",
-    "itemType": "weapon",
+    "itemType": "spear",
     "remarks": ""
   },
   {
@@ -1472,7 +1472,7 @@
     "locationName": "バリル城",
     "itemId": 109,
     "itemName": "スケールローブ",
-    "itemType": "body",
+    "itemType": "robe",
     "remarks": ""
   },
   {
@@ -1481,7 +1481,7 @@
     "locationName": "バリル城",
     "itemId": 110,
     "itemName": "ラピスブレス",
-    "itemType": "body",
+    "itemType": "bracelet",
     "remarks": ""
   },
   {
@@ -1490,7 +1490,7 @@
     "locationName": "バリル城",
     "itemId": 95,
     "itemName": "シルバークローク",
-    "itemType": "body",
+    "itemType": "cloak",
     "remarks": ""
   },
   {
@@ -1508,7 +1508,7 @@
     "locationName": "バリル城",
     "itemId": 111,
     "itemName": "ミスリルアームズ",
-    "itemType": "weapon",
+    "itemType": "knuckle",
     "remarks": ""
   },
   {
@@ -1517,7 +1517,7 @@
     "locationName": "バリル城",
     "itemId": 112,
     "itemName": "シルバープレート",
-    "itemType": "body",
+    "itemType": "armor",
     "remarks": ""
   },
   {
@@ -1535,7 +1535,7 @@
     "locationName": "レグルスの丘",
     "itemId": 115,
     "itemName": "ミスリルプレート",
-    "itemType": "weapon",
+    "itemType": "armor",
     "remarks": ""
   },
   {
@@ -1553,7 +1553,7 @@
     "locationName": "レグルスの丘",
     "itemId": 116,
     "itemName": "ミスリルメッシュ",
-    "itemType": "weapon",
+    "itemType": "cloak",
     "remarks": ""
   },
   {
@@ -1598,7 +1598,7 @@
     "locationName": "レグルスの丘",
     "itemId": 121,
     "itemName": "ダイヤナックル",
-    "itemType": "weapon",
+    "itemType": "knuckle",
     "remarks": ""
   },
   {
@@ -1607,7 +1607,7 @@
     "locationName": "シゼル城",
     "itemId": 122,
     "itemName": "せいりゅうとう",
-    "itemType": "weapon",
+    "itemType": "greatSword",
     "remarks": ""
   },
   {
@@ -1625,7 +1625,7 @@
     "locationName": "シゼル城",
     "itemId": 124,
     "itemName": "マム・ベイン",
-    "itemType": "body",
+    "itemType": "armor",
     "remarks": ""
   },
   {
@@ -1634,7 +1634,7 @@
     "locationName": "シゼル城",
     "itemId": 125,
     "itemName": "ラックバック",
-    "itemType": "weapon",
+    "itemType": "bag",
     "remarks": ""
   },
   {
@@ -1643,7 +1643,7 @@
     "locationName": "シゼル城",
     "itemId": 116,
     "itemName": "ミスリルメッシュ",
-    "itemType": "weapon",
+    "itemType": "cloak",
     "remarks": ""
   },
   {
@@ -1670,7 +1670,7 @@
     "locationName": "シゼル城",
     "itemId": 127,
     "itemName": "レッドベルベーヌ",
-    "itemType": "weapon",
+    "itemType": "useItem",
     "remarks": ""
   },
   {
@@ -1679,7 +1679,7 @@
     "locationName": "シゼル城",
     "itemId": 128,
     "itemName": "レッドセボリー",
-    "itemType": "weapon",
+    "itemType": "useItem",
     "remarks": ""
   },
   {
@@ -1688,7 +1688,7 @@
     "locationName": "シゼル城",
     "itemId": 129,
     "itemName": "レッドラベンダー",
-    "itemType": "weapon",
+    "itemType": "useItem",
     "remarks": ""
   },
   {
@@ -1697,7 +1697,7 @@
     "locationName": "アイフリードの洞窟",
     "itemId": 114,
     "itemName": "フレイムソード",
-    "itemType": "weapon",
+    "itemType": "sword",
     "remarks": ""
   },
   {

@@ -15,8 +15,8 @@ export type Item = {
   effect: string;
   isBuy: boolean;
   isDrop: boolean;
-  buy: number | undefined;
-  sell: number | undefined;
+  buy: number | "-";
+  sell: number | "-";
   description: string;
   special: string;
 };

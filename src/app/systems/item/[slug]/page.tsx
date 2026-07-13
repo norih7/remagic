@@ -13,6 +13,7 @@ import {
 import { TbMoneybag } from "react-icons/tb";
 import { Metadata } from "next";
 import SetPageTitle from "@/components/SetPageTitle";
+import { itemTypeMap } from "@/constants";
 
 // 静的生成（SSG）用：全アイテムのIDをURLとして登録する
 export async function generateStaticParams() {
@@ -78,21 +79,26 @@ export default async function ItemDetailPage({
       <li>なし</li>
     );
 
-  const TresureInfo = locationItems
-    .filter((item) => item.itemId === itemId)
-    .map((item, index) => (
-      <li key={index} className={style}>
-        <strong className="flex items-center text-gray-700 ">
-          <LuMapPin className="mr-1" />
-          {item.locationName}
-        </strong>
-        {item.remarks}
-      </li>
-    ));
+  const filterTresureItem = locationItems.filter(
+    (item) => item.itemId === itemId,
+  );
+  const TresureInfo =
+    filterTresureItem.length > 0
+      ? filterTresureItem.map((item, index) => (
+          <li key={index} className={style}>
+            <strong className="flex items-center text-gray-700 ">
+              <LuMapPin className="mr-1" />
+              {item.locationName}
+            </strong>
+            {item.remarks}
+          </li>
+        ))
+      : "なし";
 
   const Supcial = item.special === "" ? "なし" : item.special;
 
   const title = `アイテムデータ: ${item.name}`;
+  const price = item.buy === "-" ? "購入不可" : `${item.buy} ガルド`;
   // 3. 表示処理
   return (
     <section>
@@ -111,14 +117,14 @@ export default async function ItemDetailPage({
             <LuShieldHalf className="mr-1" />
             種別
           </strong>
-          {item.type}
+          {itemTypeMap[item.type as keyof typeof itemTypeMap]}
         </div>
         <div className={style}>
           <strong className={itemDescStyle}>
             <TbMoneybag className="mr-1" />
             購入
           </strong>
-          {item.buy} ガルド
+          {price}
         </div>
         <div className={style}>
           <strong className={itemDescStyle}>

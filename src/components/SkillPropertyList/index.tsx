@@ -133,7 +133,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
 
         const ruby = skill.ruby === undefined ? "" : <>（{skill.ruby}）</>;
         const skillName = (
-          <h3 className="flex items-center text-slate-700">
+          <h3 className="flex items-center text-slate-700 text-[1rem]">
             {skill.name}
             <span className="text-xs">{ruby}</span>
           </h3>
