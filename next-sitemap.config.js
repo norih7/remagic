@@ -1,8 +1,17 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://remagic.brclover.com", // 実際のドメインに合わせてください
+  siteUrl: "https://remagic.brclover.com",
   generateRobotsTxt: false,
-  outDir: "out", // next build 後の出力先に指定
-  // ここで除外設定を行います
-  exclude: ["/items/*"],
+  outDir: "out",
+  exclude: ["/sitemap.xml", "/systems/item/*"], // 除外設定
+
+  // transform関数でpriorityを制御
+  transform: async (config, path) => {
+    return {
+      loc: path,
+      changefreq: config.changefreq,
+      priority: path === "/" ? 1.0 : 0.7,
+      lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+    };
+  },
 };
