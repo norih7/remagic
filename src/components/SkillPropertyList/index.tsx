@@ -7,6 +7,7 @@ import {
   LuAward,
   LuHexagon,
   LuBookType,
+  LuMessageCircleMore,
 } from "react-icons/lu";
 import { useState } from "react";
 import { MdWaterDrop } from "react-icons/md";
@@ -14,6 +15,7 @@ import { LiaComment } from "react-icons/lia";
 import { TbSquareChevronDownFilled } from "react-icons/tb";
 import { FaCircleDot } from "react-icons/fa6";
 import { elementMap } from "@/constants";
+import RoundedItem from "@/components/RoundedItem";
 
 type Element = keyof typeof elementMap;
 
@@ -55,39 +57,19 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
         // const bg = elementMap[skill.element].color;
         const properties = [
           {
-            label: (
-              <>
-                <LuAward className="text-lime-600 mr-1" />
-                習得条件1
-              </>
-            ),
+            label: <>習得条件1</>,
             value: skill.requirement === undefined ? "-" : skill.requirement,
           },
           {
-            label: (
-              <>
-                <LuAward className="text-lime-600 mr-1" />
-                習得条件2
-              </>
-            ),
+            label: <>習得条件2</>,
             value: skill.requirement2 === undefined ? "-" : skill.requirement2,
           },
           {
-            label: (
-              <>
-                <LuBookType className="text-gray-600 mr-1" />
-                種別
-              </>
-            ),
+            label: <>種別</>,
             value: skill.type,
           },
           {
-            label: (
-              <>
-                <LuHexagon className="text-mist-400 mr-1" />
-                属性
-              </>
-            ),
+            label: <>属性</>,
 
             value:
               skill.element.length === 0 ? (
@@ -107,21 +89,11 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
               ),
           },
           {
-            label: (
-              <>
-                <LuZap className="text-yellow-500 mr-1" />
-                消費TP
-              </>
-            ),
+            label: <>消費TP</>,
             value: skill.tp === undefined ? "-" : skill.tp,
           },
           {
-            label: (
-              <>
-                <LuTarget className="text-rose-300 mr-1" />
-                最大HIT数
-              </>
-            ),
+            label: <>最大HIT数</>,
             value: skill.hit === undefined ? "-" : skill.hit,
           },
         ];
@@ -143,44 +115,31 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
             <p>{skill.description}</p>
           ) : (
             <>
-              <p>{skill.description}</p>
-              <p className="border-t border-gray-200 pt-2">{skill.remarks}</p>
+              {skill.description}
+              <br />
+              {skill.remarks}
             </>
           );
+        const DescriptionTitle = (
+          <span className="flex items-center">
+            <LuMessageCircleMore className="mr-1" />
+            説明
+          </span>
+        );
         return (
           <div
             key={index}
-            className="mb-4 font-bold border border-slate-300 rounded-lg p-3"
+            className="mb-4 border border-slate-300 rounded-lg p-3 font-bold"
           >
             {skillName}
-            <div className="">
-              <h4 className="flex items-center text-basic font-bold text-gray-600 border-b border-gray-300 py-1 mb-2">
-                <LuTable className="mr-1" />
-                データ
-              </h4>
-              <div className="grid grid-cols-2 gap-2 mb-2">
-                {displayItems.map((item, index) => (
-                  <div
-                    key={index}
-                    className="bg-slate-50 px-3 py-2 rounded-lg border border-slate-200"
-                  >
-                    <div className="mb-1 text-xs text-slate-500 font-bold uppercase tracking-wider flex items-center">
-                      {item.label}
-                    </div>
-                    <div className="text-sm text-slate-800 font-semibold">
-                      {item.value}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <h4 className="flex items-center text-basic font-bold text-gray-600 border-b border-gray-300 py-1 mb-2">
-                <LiaComment className="mr-1" />
-                説明
-              </h4>
-              <div className="bg-slate-50 px-3 pt-2 rounded-lg border border-slate-200 font-normal">
-                {descripion}
-              </div>
+            <div className="grid grid-cols-2 gap-2 mb-2">
+              {displayItems.map((item, index) => (
+                <RoundedItem title={item.label} key={index}>
+                  {item.value}
+                </RoundedItem>
+              ))}
             </div>
+            <RoundedItem title={DescriptionTitle}>{descripion}</RoundedItem>
           </div>
         );
       })}

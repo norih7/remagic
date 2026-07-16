@@ -25,7 +25,7 @@ const Breadcrumb = (props: Props) => {
           <a href="/">トップ</a>
         </li>
         {parentPage}
-        <li aria-current="page">{pageTitle}</li>
+        {/* <li aria-current="page">{pageTitle}</li> */}
       </ol>
     </nav>
   );
