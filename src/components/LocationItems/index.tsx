@@ -23,7 +23,7 @@ export default function ChartList(props: Props) {
         key={index}
         className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 transition-colors text-sm"
       >
-        <strong>{item.itemName}</strong>
+        <strong className="text-slate-600">{item.itemName}</strong>
         <span>{item.remarks}</span>
       </li>
     ) : (

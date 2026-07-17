@@ -1,27 +1,25 @@
 "use client";
 import styles from "./styles.module.css";
 import { LuChefHat } from "react-icons/lu";
+import type { LocationRecipes } from "@/lib/db";
 
-type Recipe = {
-  locationId: number;
-  recipeName: string;
-  remarks: string;
-};
 type Props = {
-  data: Recipe[];
+  data: LocationRecipes[];
   locationIds: number[];
 };
 
 export default function LocationRecipes(props: Props) {
   const { data, locationIds } = props;
   const result = data.filter((item) => locationIds.includes(item.locationId));
-  const List = result.map((recipe, index) => (
-    <li
-      key={index}
-      className="bg-gray-50 border border-gray-200 rounded-lg p-3 transition-colors"
-    >
-      {recipe.recipeName}
-      <span>{recipe.remarks}</span>
+  const List = result.map((item, index) => (
+    <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
+      <a
+        href={`/systems/recipe/?id=${item.recipeId}`}
+        className="block px-3 py-2"
+      >
+        <strong>{item.recipeName}</strong>
+        <span>{item.remarks}</span>
+      </a>
     </li>
   ));
   const Display =

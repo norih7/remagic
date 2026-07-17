@@ -17,7 +17,7 @@ export const Information: React.FC<InformationProps> = ({
   // 彩度を少し抑えた、読みやすいパステル調の配色
   const styles = isWarning
     ? "bg-amber-50 border-amber-200 text-amber-900"
-    : "bg-blue-50 border-blue-200 text-blue-900";
+    : "bg-sky-50 border-sky-200 text-blue-900";
 
   const icon = isWarning ? (
     <LuTriangleAlert className="text-amber-600 shrink-0" size={20} />
@@ -29,7 +29,7 @@ export const Information: React.FC<InformationProps> = ({
     title === "" ? <></> : <span className="ml-2 font-bold">{title}</span>;
 
   return (
-    <div className={`gap-3 p-4 border rounded-lg ${styles} my-4`}>
+    <div className={`gap-3 px-4 pt-3 pb-4 border rounded-lg ${styles} my-4`}>
       <div className="flex items-center mb-2">
         {icon}
         {infoTitle}

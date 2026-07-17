@@ -91,6 +91,7 @@ export async function getLocationSubEventsData(): Promise<locationSubEvents[]> {
 
 export type Recipes = {
   id: number;
+  recipeId: number;
   name: string;
   type: "normal" | "master";
   world: "inferior" | "celestia" | "other";
