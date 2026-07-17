@@ -28,6 +28,24 @@
   },
   {
     "id": 4,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
+    "eventId": 1,
+    "eventName": "ピエールとカトリーヌ",
+    "eventPath": "/subevents/catarine",
+    "remarks": ""
+  },
+  {
+    "id": 5,
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "eventId": 1,
+    "eventName": "ピエールとカトリーヌ",
+    "eventPath": "/subevents/catarine",
+    "remarks": ""
+  },
+  {
+    "id": 6,
     "locationId": 14,
     "locationName": "商業の町バロール",
     "eventId": 1,
@@ -36,39 +54,21 @@
     "remarks": ""
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "eventId": "",
-    "eventName": "",
-    "eventPath": "",
+    "id": 7,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "eventId": 1,
+    "eventName": "ピエールとカトリーヌ",
+    "eventPath": "/subevents/catarine",
     "remarks": ""
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "eventId": "",
-    "eventName": "",
-    "eventPath": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "eventId": "",
-    "eventName": "",
-    "eventPath": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "eventId": "",
-    "eventName": "",
-    "eventPath": "",
+    "id": 8,
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "eventId": 1,
+    "eventName": "ピエールとカトリーヌ",
+    "eventPath": "/subevents/catarine",
     "remarks": ""
   },
   {

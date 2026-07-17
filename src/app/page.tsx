@@ -59,6 +59,18 @@ export default async function HomePage() {
               <span className="text-slate-400">2026/07/17</span>
               <span>
                 <Link
+                  href="/subevents/catarine"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  カトリーヌの恋愛イベント
+                </Link>
+                をアップデート。レイアウトを修正しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/17</span>
+              <span>
+                <Link
                   href="/subevents/lens"
                   className="hover:text-cyan-400 transition-colors"
                 >
