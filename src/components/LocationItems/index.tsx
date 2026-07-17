@@ -21,13 +21,13 @@ export default function ChartList(props: Props) {
     item.itemType === "money" ? (
       <li
         key={index}
-        className="bg-white border border-gray-200 rounded-lg px-3 py-2 transition-colors text-sm"
+        className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 transition-colors text-sm"
       >
         <strong>{item.itemName}</strong>
         <span>{item.remarks}</span>
       </li>
     ) : (
-      <li key={index} className="bg-white border border-sky-200 rounded-md">
+      <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
         <a href={`/systems/item/${item.itemId}`} className="block px-3 py-2">
           <strong>{item.itemName}</strong>
           <span>{item.remarks}</span>
@@ -43,7 +43,7 @@ export default function ChartList(props: Props) {
       //   className={`${styles.list} grid grid-cols-1 md:grid-cols-2 gap-3 mt-3`}
       // >
       <ul
-        className={`${styles.list} grid grid-cols-1 md:grid-cols-2 gap-3 mt-3 bg-gray-50 border border-gray-200 rounded-lg py-3 px-3 transition-colors text-sm`}
+        className={`${styles.list} grid grid-cols-1 md:grid-cols-2 gap-3 mt-3 transition-colors text-sm`}
       >
         {List}
       </ul>
