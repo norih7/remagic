@@ -1,870 +1,482 @@
 [
   {
     "id": 1,
+    "lensId": 1,
+    "world": "inferior",
     "locationId": 1,
     "locationName": "ラシュアン",
-    "lensId": 1,
-    "remarks": "村 / リッドの家 B1 宝箱"
+    "remarks": "リッドの家 B1 宝箱"
   },
   {
     "id": 2,
+    "lensId": 2,
+    "world": "inferior",
     "locationId": 1,
     "locationName": "ラシュアン",
-    "lensId": 2,
-    "remarks": "村/ 村の入口左側にある風車の扉"
+    "remarks": "村の入口左側にある風車の扉"
   },
   {
     "id": 3,
-    "locationId": 1,
-    "locationName": "ラシュアン",
     "lensId": 3,
-    "remarks": "ラシュアンの森 / メルディの乗ってきた墜落した乗り物を調べる"
+    "world": "inferior",
+    "locationId": 52,
+    "locationName": "ラシュアンの森",
+    "remarks": "メルディの乗ってきた墜落した乗り物を調べる ※シルフ契約以降にラシュアンの森へ移動可能"
   },
   {
     "id": 4,
+    "lensId": 4,
+    "world": "inferior",
     "locationId": 3,
     "locationName": "レグルス道場",
-    "lensId": 4,
-    "remarks": "道場奥 右から2番目の部屋にある丸テーブル"
+    "remarks": "道場奥の右から2番目の部屋にある丸テーブル"
   },
   {
     "id": 5,
+    "lensId": 5,
+    "world": "inferior",
     "locationId": 3,
     "locationName": "レグルス道場",
-    "lensId": 5,
-    "remarks": "道場奥 1番右の部屋にあるピンクの箱"
+    "remarks": "道場奥の1番右の部屋にあるピンクの箱"
   },
   {
     "id": 6,
+    "lensId": 6,
+    "world": "inferior",
     "locationId": 4,
     "locationName": "学問の町ミンツ",
-    "lensId": 6,
-    "remarks": "ミンツの町 / グラウンドに入る前の木影"
+    "remarks": "ミンツの町のグラウンドに入る前の木影"
   },
   {
     "id": 7,
+    "lensId": 7,
+    "world": "inferior",
     "locationId": 4,
     "locationName": "学問の町ミンツ",
-    "lensId": 7,
-    "remarks": "ミンツ大学 / 水晶霊研究室のレバー"
+    "remarks": "ミンツ大学の水晶霊研究室のレバー"
   },
   {
     "id": 8,
+    "lensId": 8,
+    "world": "inferior",
     "locationId": 5,
     "locationName": "ミンツの岩山",
-    "lensId": 8,
-    "remarks": "観測所 / 入口から少し進んだところにある階段を下りた先にある木箱"
+    "remarks": "観測所の階段を下りた先にある木箱"
   },
   {
     "id": 9,
+    "lensId": 9,
+    "world": "inferior",
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "lensId": 9,
     "remarks": "エッグベアの死骸ある場所の奥の部屋にある薪"
   },
   {
     "id": 10,
+    "lensId": 10,
+    "world": "inferior",
     "locationId": 8,
     "locationName": "木陰の村モルル",
-    "lensId": 10,
     "remarks": "マゼットの家1Fにある暖炉"
   },
   {
     "id": 11,
+    "lensId": 11,
+    "world": "inferior",
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "lensId": 11,
     "remarks": "入口マップの木の陰"
   },
   {
     "id": 12,
+    "lensId": 12,
+    "world": "inferior",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "lensId": 12,
     "remarks": "神像後ろにある木の根本"
   },
   {
     "id": 13,
+    "lensId": 13,
+    "world": "inferior",
     "locationId": 11,
     "locationName": "王都インフェリア",
-    "lensId": 13,
     "remarks": "インフェリア城 リッド達が泊まった部屋のタンス"
   },
   {
     "id": 14,
+    "lensId": 14,
+    "world": "inferior",
     "locationId": 11,
     "locationName": "王都インフェリア",
-    "lensId": 14,
     "remarks": "じょうせんパス入手後、天文台「気安く触るなよ...」という男の隣にある本棚"
   },
   {
     "id": 15,
+    "lensId": 15,
+    "world": "inferior",
     "locationId": 11,
     "locationName": "王都インフェリア",
-    "lensId": 15,
     "remarks": "劇場受付の右側にある植物"
   },
   {
     "id": 16,
+    "lensId": 16,
+    "world": "inferior",
     "locationId": 12,
     "locationName": "インフェリア港",
-    "lensId": 16,
     "remarks": "バロール行き乗船場にあるタル"
   },
   {
     "id": 17,
+    "lensId": 17,
+    "world": "inferior",
     "locationId": 13,
     "locationName": "バロール港",
-    "lensId": 17,
     "remarks": "バロール港 船着き場階段下りた先の木箱"
   },
   {
     "id": 18,
+    "lensId": 18,
+    "world": "inferior",
     "locationId": 14,
     "locationName": "商業の町バロール",
-    "lensId": 18,
     "remarks": "宝飾店 アナガチにある金の壷"
   },
   {
     "id": 19,
+    "lensId": 19,
+    "world": "inferior",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "lensId": 19,
     "remarks": "落とし穴のあるフロアの右上のくぼみ"
   },
   {
     "id": 20,
+    "lensId": 20,
+    "world": "inferior",
     "locationId": 16,
     "locationName": "熱砂の町 シャンバール",
-    "lensId": 20,
     "remarks": "広場にある噴水"
   },
   {
     "id": 21,
+    "lensId": 21,
+    "world": "inferior",
     "locationId": 16,
     "locationName": "熱砂の町 シャンバール",
-    "lensId": 21,
     "remarks": "ビストロシャンバール 2階にある観覧席 右側の椅子"
   },
   {
     "id": 22,
+    "lensId": 22,
+    "world": "inferior",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "lensId": 22,
     "remarks": "ソーサラーリングで入る部屋"
   },
   {
     "id": 23,
+    "lensId": 23,
+    "world": "inferior",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "lensId": 23,
-    "remarks": "教会 / 休憩できるベッドがある部屋の左側にあるタンスを調べる"
+    "remarks": "教会の休憩できるベッドがある部屋の左側にあるタンスを調べる"
   },
   {
     "id": 24,
+    "lensId": 24,
+    "world": "inferior",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "lensId": 24,
-    "remarks": "ダンジョン / 頂上にあるセーブポイント右上の岩陰"
+    "remarks": "ダンジョン頂上にあるセーブポイント右上の岩陰"
   },
   {
     "id": 25,
+    "lensId": 25,
+    "world": "celestia",
     "locationId": 50,
     "locationName": "岬の砦",
-    "lensId": 25,
-    "remarks": "峠の砦 / 階段の右上のくぼみ"
+    "remarks": "階段の右上のくぼみ"
   },
   {
     "id": 26,
+    "lensId": 26,
+    "world": "celestia",
     "locationId": 19,
     "locationName": "アイメンの町",
-    "lensId": 26,
     "remarks": "メルディの家1Fにあるガラステーブル"
   },
   {
     "id": 27,
+    "lensId": 27,
+    "world": "celestia",
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
-    "lensId": 27,
     "remarks": "ノームの集落 「ぽや〜ん」というノームの左上を調べる"
   },
   {
     "id": 28,
+    "lensId": 28,
+    "world": "celestia",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "lensId": 28,
     "remarks": "地下4階 左側通路 奥の部屋にある木箱"
   },
   {
     "id": 29,
+    "lensId": 29,
+    "world": "celestia",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "lensId": 29,
     "remarks": "地下1階 右側通路 奥の部屋にあるジャガイモ箱"
   },
   {
     "id": 30,
+    "lensId": 30,
+    "world": "celestia",
     "locationId": 24,
     "locationName": "港町ペイルティ",
-    "lensId": 30,
     "remarks": "港にいるカニ（解凍後）"
   },
   {
     "id": 31,
+    "lensId": 31,
+    "world": "celestia",
     "locationId": 24,
     "locationName": "港町ペイルティ",
-    "lensId": 31,
     "remarks": "青い屋根の屋台の裏側（解凍後）"
   },
   {
     "id": 32,
+    "lensId": 32,
+    "world": "celestia",
     "locationId": 26,
     "locationName": "アイメン（崩壊後）",
-    "lensId": 32,
     "remarks": "武器屋の壊れたショーケース"
   },
   {
     "id": 33,
+    "lensId": 33,
+    "world": "celestia",
     "locationId": 27,
     "locationName": "ティンシア",
-    "lensId": 33,
     "remarks": "ノーム像"
   },
   {
     "id": 34,
+    "lensId": 34,
+    "world": "celestia",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "lensId": 34,
     "remarks": "入ってすぐの石碑"
   },
   {
     "id": 35,
+    "lensId": 35,
+    "world": "celestia",
     "locationId": 29,
     "locationName": "バリル城",
-    "lensId": 35,
     "remarks": "ダンジョン内の宝箱"
   },
   {
     "id": 36,
+    "lensId": 36,
+    "world": "celestia",
     "locationId": 29,
     "locationName": "バリル城",
-    "lensId": 36,
     "remarks": "港にあるタル"
   },
   {
     "id": 37,
+    "lensId": 37,
+    "world": "celestia",
     "locationId": 27,
     "locationName": "ティンシア",
-    "lensId": 37,
     "remarks": "フォッグのいる部屋にある宝箱を調べる"
   },
   {
     "id": 38,
+    "lensId": 38,
+    "world": "celestia",
     "locationId": 31,
     "locationName": "アイフリードの洞窟",
-    "lensId": 38,
     "remarks": "ドッグ入口に積んである木箱を調べる"
   },
   {
     "id": 39,
+    "lensId": 39,
+    "world": "celestia",
     "locationId": 31,
     "locationName": "アイフリードの洞窟",
-    "lensId": 39,
     "remarks": "アイフリードの胸像がある部屋に飾ってある碇を調べる"
   },
   {
     "id": 40,
+    "lensId": 40,
+    "world": "celestia",
     "locationId": 38,
     "locationName": "アイフリードの台座",
-    "lensId": 40,
     "remarks": "アイフリード台座にある機械を調べる"
   },
   {
     "id": 41,
+    "lensId": 41,
+    "world": "inferior",
     "locationId": 30,
     "locationName": "セイファート神殿",
-    "lensId": 41,
     "remarks": "入り口の前にある右下のレンズ球体を調べる"
   },
   {
     "id": 42,
+    "lensId": 42,
+    "world": "inferior",
     "locationId": 39,
     "locationName": "インフェリアマップ GPS（160, 131）",
-    "lensId": 42,
     "remarks": ""
   },
   {
     "id": 43,
+    "lensId": 43,
+    "world": "inferior",
     "locationId": 40,
     "locationName": "インフェリアマップ GPS （14, 74）",
-    "lensId": 43,
     "remarks": ""
   },
   {
     "id": 44,
+    "lensId": 44,
+    "world": "inferior",
     "locationId": 41,
     "locationName": "インフェリアマップ GPS（162, 45）",
-    "lensId": 44,
     "remarks": ""
   },
   {
     "id": 45,
+    "lensId": 45,
+    "world": "inferior",
     "locationId": 47,
     "locationName": "定期連絡船",
-    "lensId": 45,
     "remarks": "商人がいる部屋の壺"
   },
   {
     "id": 46,
+    "lensId": 46,
+    "world": "inferior",
     "locationId": 48,
     "locationName": "アイフリードの墓",
-    "lensId": 46,
     "remarks": "お化け屋敷フロアの賽銭箱"
   },
   {
     "id": 47,
+    "lensId": 47,
+    "world": "celestia",
     "locationId": 42,
     "locationName": "インシーアジト3",
-    "lensId": 47,
     "remarks": "奥の部屋の左下にあるイソギンチャク"
   },
   {
     "id": 48,
+    "lensId": 48,
+    "world": "inferior",
     "locationId": 43,
     "locationName": "晶霊温泉",
-    "lensId": 48,
     "remarks": ""
   },
   {
     "id": 49,
+    "lensId": 49,
+    "world": "inferior",
     "locationId": 43,
     "locationName": "晶霊温泉",
-    "lensId": 49,
     "remarks": ""
   },
   {
     "id": 50,
+    "lensId": 50,
+    "world": "celestia",
     "locationId": 44,
     "locationName": "セレスティアマップ GPS（60, 126）",
-    "lensId": 50,
     "remarks": ""
   },
   {
     "id": 51,
+    "lensId": 51,
+    "world": "celestia",
     "locationId": 45,
     "locationName": "ジイニ",
-    "lensId": 51,
     "remarks": "カジノ"
   },
   {
     "id": 52,
+    "lensId": 52,
+    "world": "celestia",
     "locationId": 45,
     "locationName": "ジイニ",
-    "lensId": 52,
     "remarks": ""
   },
   {
     "id": 53,
+    "lensId": 53,
+    "world": "celestia",
     "locationId": 45,
     "locationName": "ジイニ",
-    "lensId": 53,
     "remarks": ""
   },
   {
     "id": 54,
+    "lensId": 54,
+    "world": "celestia",
     "locationId": 49,
     "locationName": "闇の洞窟",
-    "lensId": 54,
     "remarks": ""
   },
   {
     "id": 55,
+    "lensId": 55,
+    "world": "celestia",
     "locationId": 46,
     "locationName": "ねこにんの里",
-    "lensId": 55,
     "remarks": ""
   },
   {
     "id": 56,
+    "lensId": 56,
+    "world": "celestia",
     "locationId": 46,
     "locationName": "ねこにんの里",
-    "lensId": 56,
     "remarks": ""
   },
   {
     "id": 57,
+    "lensId": 57,
+    "world": "celestia",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "lensId": 57,
     "remarks": "山頂付近の雪崩が起きたあとの雪"
   },
   {
     "id": 58,
+    "lensId": 58,
+    "world": "other",
     "locationId": 51,
     "locationName": "バンエルティア号",
-    "lensId": 58,
     "remarks": ""
   },
   {
     "id": 59,
+    "lensId": 59,
+    "world": "other",
     "locationId": 51,
     "locationName": "バンエルティア号",
-    "lensId": 59,
     "remarks": ""
   },
   {
     "id": 60,
+    "lensId": 60,
+    "world": "other",
     "locationId": 51,
     "locationName": "バンエルティア号",
-    "lensId": 60,
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
-    "remarks": ""
-  },
-  {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "lensId": "",
     "remarks": ""
   }
 ]

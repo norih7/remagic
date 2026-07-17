@@ -66,7 +66,11 @@ export async function getLocationRecipesData(): Promise<LocationRecipes[]> {
 }
 
 export type LocationLenses = {
+  id: number;
+  world: "inferior" | "celestia" | "other";
   locationId: number;
+  locationName: string;
+  lensId: number;
   remarks: string;
 };
 export async function getLocationLensesData(): Promise<LocationLenses[]> {

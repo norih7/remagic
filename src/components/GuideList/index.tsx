@@ -1,6 +1,6 @@
 import styles from "./sytles.module.css";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { LuFile } from "react-icons/lu";
+import { LuFile, LuBookOpen } from "react-icons/lu";
 
 // 型定義をエクスポートしておくと、他のファイルでも使えて便利です
 export interface GuideItem {
@@ -15,26 +15,25 @@ interface GuideListProps {
 
 export const GuideList: React.FC<GuideListProps> = ({ items }) => {
   return (
-    <div className="border border-sky-300 rounded-lg px-3 pt-3 pb-1">
-      <strong
-        className={`pb-2 mb-2 text-base text-gray-700 flex items-center font-bold border-b border-sky-300`}
-      >
-        <LuFile className="mr-1" />
-        ページリンク
-      </strong>
-      <ul className="">
+    <div className="">
+      {/* 左側のラベル部分 */}
+
+      {/* 右側のリスト部分 */}
+      <ul className="space-y-2">
         {items.map((item, index) => (
-          <li key={index} className="mb-2">
+          <li key={index}>
             <a
               href={item.href}
-              className="flex items-center p-2 text-sm text-sky-900 bg-blue-50 border border-sky-300 rounded-lg transition-all duration-200 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-300"
+              className="block p-4 border-2 border-slate-200 rounded-lg hover:border-sky-300 hover:bg-sky-50 transition-all"
             >
-              <MdKeyboardArrowRight className="mr-1" />
-              <span>{item.title}</span>
+              <div className="flex items-center text-sky-800 font-bold">
+                <LuBookOpen className="mr-2" />
+                {item.title}
+              </div>
               {item.description && (
-                <span className="text-sm text-gray-500 mt-1">
+                <p className="text-sm text-slate-500 mt-1 ml-7">
                   {item.description}
-                </span>
+                </p>
               )}
             </a>
           </li>

@@ -1,5 +1,11 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
+import SectionTitle from "@/components/SectionTitle";
+import { getLocationLensesData } from "@/lib/db";
+import RoundedItem from "@/components/RoundedItem";
+import { recipeWorldMap } from "@/constants";
+import Information from "@/components/Information";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -10,59 +16,66 @@ export const metadata = {
   description: "",
 };
 export default async function HomePage() {
+  const lensesData = await getLocationLensesData();
+  const Lenses = lensesData.map((item, index) => (
+    <div className="border border-slate-300 p-3 rounded-md mb-3" key={index}>
+      <h3 className="text-base">
+        No.{item.id}
+        <span className="ml-1">（{recipeWorldMap[item.world]}）</span>
+      </h3>
+      <div className="grid grid-cols-2 gap-3">
+        <RoundedItem title="マップ、ダンジョン">
+          {item.locationName}
+        </RoundedItem>
+        <RoundedItem title="場所">{item.remarks}</RoundedItem>
+      </div>
+    </div>
+  ));
+
   return (
     <article>
       <SetPageTitle title={title} />
+      <PageSummary>
+        町やダンジョンなどで入手することができるレンズの説明とレンズの入手場所一覧データを掲載しています。
+      </PageSummary>
 
-      <h2>概要</h2>
-
-      <ol>
-        <li>
-          町やダンジョンなどの特定のポイントを◯ボタンで調べるとレンズと呼ばれるアイテムを入手することができることがある。これは使うことはできないが、一定枚数以上を集めるとイレーヌという女性から特殊なアイテムをもらうことができるもの。
-        </li>
-        <li>
-          レンズを集めるのは大変だが、もらえるアイテムは貴重なものばかり。全部で60枚あるので頑張って収集していこう。なおすべてのレンズを集めるには飛空挺が必要となる。
-        </li>
-      </ol>
-
-      <h2>イベントの詳細</h2>
-
-      <div className="advice">
-        <div className="topic-block">
-          <h3>レンズの入手場所</h3>
-          <div className="condition">
-            <p>
-              <span className="small-info">発生時期</span>いつでも
-            </p>
-          </div>
-          <p>
-            <a href="/web/20210509173955/http://magic.brush-clover.com/eternia/data-lens.php">
-              レンズの入手場所一覧はデータが多いのでこちらのページにて掲載しています。
-            </a>
-          </p>
+      <section>
+        <SectionTitle>レンズの説明ともらえるアイテム</SectionTitle>
+        <div className="mb-8">
+          町やダンジョンなどの特定の場所を調べるとレンズを入手することがあります。レンズは一定枚数以上を集めると貴重なアイテムをもらうことができるものです。シャンバールにいるイレーヌに話しかけると所持枚数に応じてアイテムがもらえます。なおアイテムをもらってもレンズは消費されません。
         </div>
-      </div>
-
-      <div className="advice">
-        <div className="topic-block">
-          <h3>レンズの交換について</h3>
-          <div className="condition">
-            <p>
-              <span className="small-info">発生時期</span>シャンバールに到着以降
-            </p>
-          </div>
+        <div className="mb-8">
+          <h3>イレーヌの居場所</h3>
           <p>
-            ストーリーを進めていき灼熱の町シャンバールに到着すると道具屋の前に紫色の髪をしたイレーヌという女性がいる。レンズを一定枚数以上もった状態でイレーヌに話しかけることでアイテムをもらうことができる。また、セレスティアの職人の町ティンシアにもイレーヌは登場する。もらえるアイテムに変化はないので近場に立ち寄るといいだろう。
+            レンズ所持数に応じてアイテムをくれるイレーヌは下記の場所にいます。どの場所でももらえるアイテムは変わりませんので現在地の近くを目指しましょう。
           </p>
-          <p>
-            もらえるアイテムは下記のとおり。貴重な装備品目的であれば50枚集めるのを目指してみるのがいい。60枚すべてをコンプリートするのはやり込みの域になる。
-          </p>
-          <h4>もらえるアイテム一覧</h4>
           <table>
             <thead>
               <tr>
-                <th>レンズの枚数</th>
-                <th>もらえるアイテム</th>
+                <th>世界</th>
+                <th>町</th>
+                <th>場所</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>インフェリア</td>
+                <td>シャンバール</td>
+                <td>道具屋の入り口前</td>
+              </tr>
+              <tr>
+                <td>セレスティア</td>
+                <td>ティンシア</td>
+                <td>道具屋の中</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>もらえるアイテム</h3>
+          <table>
+            <thead>
+              <tr>
+                <th className="w-[100px]">レンズ枚数</th>
+                <th className="w-[160px]">もらえるアイテム</th>
                 <th>アイテムの説明</th>
               </tr>
             </thead>
@@ -108,7 +121,12 @@ export default async function HomePage() {
             </tbody>
           </table>
         </div>
-      </div>
+        <SectionTitle>レンズの入手場所一覧（全60枚）</SectionTitle>
+        <Information title="レンズの入手タイミングについて">
+          レンズは期間限定ではなく、いつでも入手可能なので好きなタイミングで集めて大丈夫です
+        </Information>
+        {Lenses}
+      </section>
     </article>
   );
 }

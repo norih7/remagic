@@ -1,307 +1,246 @@
 [
   {
     "id": 1,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 2,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 3,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 3,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 4,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 5,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 6,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 7,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 8,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 9,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 10,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 11,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 12,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 13,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 14,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 15,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 16,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 17,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 18,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 19,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 20,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 21,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 22,
-    "type": "location",
-    "world": "inferior"
+    "type": "location"
   },
   {
     "id": 23,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 24,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 25,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 26,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 27,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 28,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 29,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 30,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 31,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 32,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 33,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 34,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 35,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 36,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 37,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 38,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 39,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 40,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 41,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 42,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 43,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 44,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 45,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 46,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 47,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 48,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 49,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 50,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 51,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 52,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 53,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 54,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 55,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 56,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 57,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 58,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 59,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   },
   {
     "id": 60,
-    "type": "location",
-    "world": "celestia"
+    "type": "location"
   }
 ]
