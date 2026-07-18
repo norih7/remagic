@@ -10,7 +10,11 @@ import { LuFilter, LuX } from "react-icons/lu";
 import { Dispatch, SetStateAction } from "react";
 
 type FilterList = { name: string; id: number };
-type Filter = { id: number | undefined };
+type Filter = {
+  id?: number;
+  category?: string;
+  name?: string;
+};
 
 type Props = {
   list: FilterList[];
