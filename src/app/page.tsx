@@ -59,6 +59,18 @@ export default async function HomePage() {
               <span className="text-slate-400">2026/07/18</span>
               <span>
                 <Link
+                  href="/subevents/syanballoon"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  シャンバルーン
+                </Link>
+                をアップデート。レイアウトを整備し、攻略動画をアップしました。
+              </span>
+            </li>
+            <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/18</span>
+              <span>
+                <Link
                   href="/systems/recipe"
                   className="hover:text-cyan-400 transition-colors"
                 >
@@ -127,7 +139,7 @@ export default async function HomePage() {
                 をアップデート 戦闘中の特殊操作を追記しました
               </span>
             </li>
-            <li className="flex gap-4">
+            {/* <li className="flex gap-4">
               <span className="text-slate-400">2026/07/07</span>
               <span>
                 <Link
@@ -142,7 +154,7 @@ export default async function HomePage() {
             <li className="flex gap-4">
               <span className="text-slate-400">2026/06/20</span>
               サイトを公開しました
-            </li>
+            </li> */}
           </ul>
         </section>
       </main>

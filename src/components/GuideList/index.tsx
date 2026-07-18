@@ -24,7 +24,7 @@ export const GuideList: React.FC<GuideListProps> = ({ items }) => {
           <li key={index}>
             <a
               href={item.href}
-              className="block p-4 border-2 border-slate-200 rounded-lg hover:border-sky-300 hover:bg-sky-50 transition-all"
+              className="block bg-white p-4 border-2 border-slate-200 rounded-lg hover:border-sky-300 hover:bg-sky-50 transition-all"
             >
               <div className="flex items-center text-sky-800 font-bold">
                 <LuBookOpen className="mr-2" />
