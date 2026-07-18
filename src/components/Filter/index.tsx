@@ -43,7 +43,10 @@ export default function RecipeContent({ list, setFilter, filter }: Props) {
             料理フィルタ
           </PopoverTrigger>
 
-          <PopoverContent className="w-[32rem] p-5" align="start">
+          <PopoverContent
+            className="w-[calc(100vw-2rem)] max-w-[32rem] p-5 sm:w-[32rem]"
+            align="start"
+          >
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h4 className="font-semibold text-sm text-slate-900">
