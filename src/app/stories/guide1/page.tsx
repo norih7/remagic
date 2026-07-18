@@ -9,6 +9,7 @@ import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import { getLocationSubEventsData } from "@/lib/db";
 import SectionTitle from "@/components/SectionTitle";
+import Information from "@/components/Information";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,19 +37,22 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle type="flag">1.ラシュアン</SectionTitle>
-        <ol className="mb-5">
+        <ol className="mb-4">
           <li>ストーリーが始まります。</li>
           <li>
-            森を道なりに進んでいくと墜落した物体と少女に遭遇。
+            森を進んでいくと墜落した物体と少女に遭遇。
             <br />
             イベント後に村に戻ると村長の家でボス戦(ヒアデス)。勝利後、少女の言葉を理解できるキールに会うために学問の街ミンツへ向かうことになります。
           </li>
           <li>
             途中、少女の名前が"メルディ"であることが分かります。
             <br />
-            フィールドにでたら村から南にあるラシュアン河の桟橋へと向かいます。川沿いにそって進んでいけばたどり着きます。
+            フィールドに出たら南にあるラシュアン河の桟橋へと向かいます。川沿いにそって進んでいけば辿り着きます。
           </li>
         </ol>
+        <Information type="warning" title="ラシュアンの森のレンズ">
+          ラシュアンの森のメルディがいた落下物にはレンズがあるのですが現時点では森へ入れず入手できません。エラリアルボードを入手してからラシュアンの森へ入ることができるため、後で回収しましょう。
+        </Information>
         <LocationItems data={itemsData} locationIds={[1]} />
         <LocationRecipes data={recipesData} locationIds={[1]} />
         <LocationLenses data={lensesData} locationIds={[1]} />
@@ -61,9 +65,9 @@ export default async function HomePage() {
         </SectionTitle>
         <ol className="mb-5">
           <li>
-            桟橋へ行くとイベントミンツに行くためラシュアン河の桟橋を通り抜けたいが、ガケ崩れのため通れないということを聞きます。この後はミンツに行く方法を聞くためにレグルス道場に向かうことに。
+            桟橋の奥ではガケ崩れのため通れないということを聞き、次はレグルス道場に向かうことに。
             <br />
-            道場はフィールドに戻って西にあります。
+            道場はラシュアンの村から桟橋の途中にあり、フィールドに戻って西にあります。
           </li>
           <li>
             道場の中に入るとモンクとの戦闘。
@@ -71,6 +75,9 @@ export default async function HomePage() {
             戦闘終了後、道場の奥の部屋にいるパウロから水晶霊の力を使って水流の流れを弱めることを聞きます。
           </li>
         </ol>
+        <Information title="マニュアルのしょ">
+          道場では戦闘でマニュアル操作ができるようになるアイテムを入手できます。いつでも入手可能ですがぜひこのタイミングで入手しておきましょう。
+        </Information>
         <LocationItems data={itemsData} locationIds={[2, 3]} />
         <LocationRecipes data={recipesData} locationIds={[2, 3]} />
         <LocationLenses data={lensesData} locationIds={[2, 3]} />
@@ -83,14 +90,14 @@ export default async function HomePage() {
         </SectionTitle>
         <ol>
           <li>
-            ラシュアン河の桟橋に戻るとイベント。水の流れが弱くなり、川下りのミニゲームが発生します。
+            ラシュアン河の桟橋に戻り、橋にいるパウロに話かけるとイベント。水の流れが弱くなり、川下りのミニゲームが発生します。
             <br />
-            成績が良ければアイテムがもらえます。フィールドに出たら南にあるミンツへ行きましょう。
+            ミニゲームの成績が良ければアイテムがもらえます。ゲームが終わり、フィールドに出たら南にあるミンツへ行きましょう。
           </li>
           <li>
             ミンツではキールに会うために、町の西側にある大学へと向かう。
             <br />
-            1F入口から2番目の部屋(光晶霊)に入るとイベント。キールが岩山の観測所にいることを聞きます。
+            1F入口から2番目の部屋(光晶霊)に入るとイベント。キールが岩山の観測所にいることを聞きます。イベントではメルデイが「しょうれいじゅつし？」の称号を入手します。
           </li>
           <li>次はキールに会うために南西にある岩山の観測所へ向かいます。</li>
         </ol>
@@ -103,20 +110,14 @@ export default async function HomePage() {
       <section className="mb-12">
         <SectionTitle type="flag">4.ミンツの岩山〜岩山の観測所</SectionTitle>
         <ol>
+          <li>観測所へ行くために、ミンツの岩山を通っていきます。</li>
           <li>
-            観測所に行くために、ミンツの岩山を通る。頂上を目指して進んでいこう。
+            ダンジョンにある岩は○ボタンを押しながら方向キーを動かすことで、移動させることができます。点滅している岩の場所まで動かすと岩が落ち、無限に沸いてくるモンスターを止めることができる。
+            ただしこの操作は行わなくてもダンジョンはクリアでき、特にアイテムが手に入るわけではありません。
           </li>
           <li>
-            ダンジョンにある岩は○ボタンを押しながら方向キーを動かすことで、移動させることができる。点滅している岩の場所まで動かすと岩が落ち、無限に沸いてくるモンスターを止めることができる。
-            <br />
-            <span className="daiji">
-              ただし行わなくてもダンジョンをクリアでき、特にアイテムが手に入るわけではない。
-            </span>
-          </li>
-          <li>
-            岩山ダンジョンを突破すると一度フィールドに出る。頂上にある観測所に入ろう。
-            <br />
-            観測所に入るとイベント。メルディが伝えたかったことが分かり、キールが仲間になる。
+            岩山ダンジョンを突破すると一度フィールドマップに出るので、そのまま近くの観測所に入ります。観測所ではイベントが発生。メルディが伝えたかったことが分かり、
+            <span className="text-red-600">キールが仲間になる</span>。
           </li>
           <li>
             次はメルディの言葉をさらに理解するため、モルルにいるマゼット博士に会いにいく。モルルは隣の大陸にあり、ミンツから東にある忘郷の洞窟を経由していく。

@@ -61,7 +61,7 @@ export default function RecipeContent({ list, setFilter, filter }: Props) {
                   <li key={item.id}>
                     <button
                       onClick={() => setFilter({ id: item.id })}
-                      className={`text-sm px-3 py-1.5 rounded-full border transition-all ${
+                      className={`text-xs px-1.5 py-1 rounded-full border transition-all ${
                         filter.id === item.id
                           ? "bg-sky-500 text-white border-sky-500 shadow-sm"
                           : "bg-white text-slate-600 border-slate-200 hover:border-sky-300 hover:text-sky-600"

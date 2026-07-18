@@ -56,6 +56,18 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/18</span>
+              <span>
+                <Link
+                  href="/systems/recipe"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  料理一覧/マスター料理
+                </Link>
+                をアップデート。料理名のフィルタ機能を実装しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/07/17</span>
               <span>
                 <Link

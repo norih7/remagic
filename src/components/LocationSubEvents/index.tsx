@@ -18,14 +18,11 @@ export default function ChartList(props: Props) {
   const { data, locationIds } = props;
   const result = data.filter((item) => locationIds.includes(item.locationId));
   const List = result.map((item, index) => (
-    <li
-      key={index}
-      className="flex justify-between items-center bg-gray-50 border border-gray-200 rounded-lg py-2 px-3 transition-colors text-sm"
-    >
-      <Link href={item.eventPath}>
-        {item.eventName}
+    <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
+      <a href={item.eventPath} className="block px-3 py-2">
+        <strong>{item.eventName}</strong>
         <span>{item.remarks}</span>
-      </Link>
+      </a>
     </li>
   ));
   const Display =
