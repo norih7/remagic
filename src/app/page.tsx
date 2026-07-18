@@ -59,6 +59,18 @@ export default async function HomePage() {
               <span className="text-slate-400">2026/07/18</span>
               <span>
                 <Link
+                  href="/subevents/skill-chat"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  チャットの特技習得
+                </Link>
+                をアップデート。レイアウトを整備しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/18</span>
+              <span>
+                <Link
                   href="/subevents/syanballoon"
                   className="hover:text-cyan-400 transition-colors"
                 >

@@ -1,6 +1,11 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
+import SectionTitle from "@/components/SectionTitle";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
+import EventCondition from "@/components/EventCondition";
+import Information from "@/components/Information";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -11,151 +16,178 @@ export const metadata = {
   description: "",
 };
 export default async function HomePage() {
+  const anserStyle =
+    "bg-slate-100 border rounded-md px-3 py-1 font-bold text-slate-600";
+  const questionStyle = "border-b mb-2";
   return (
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
         <p>
-          チャットの特技は最初から習得している技以外はサブイベントにて取得します。サブイベントの種類にはフィールドマップの隠し場所へ行く、すごろくのクリアなどがあります。これらのサブイベントは
-          チャットを仲間に加入している状態でのみ発生します。
+          サブイベントにて習得するチャットの特技についての説明です。サブイベントの種類にはフィールドマップの隠し場所へ行く、すごろくのクリアなどがあります。
         </p>
       </PageSummary>
 
-      <h2>特技習得イベント一覧</h2>
+      <section className="mb-12">
+        <SectionTitle>チャットの特技習得イベント一覧</SectionTitle>
+        <Information title="イベント発生について">
+          チャットを仲間している状態で下記の場所へ行くことでイベントが発生します
+        </Information>
+        <RoundedContainer>
+          <h3>ポイハンの習得</h3>
+          <EventCondition category="period">
+            バンエルティア号を入手以降
+          </EventCondition>
 
-      <div className="advice">
-        <h3>ポイハン</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>バンエルティア号を入手以降</dd>
-          </dl>
-        </nav>
-        <p>
-          セレスティアのGPS(183,130)にある孤島にいくとアイフリードの像が置いてある隠し場所に入ることができ、イベントが発生。チャットが特技「ポイハン」を習得します。
-        </p>
-      </div>
+          <RoundedItem title="説明">
+            セレスティアのGPS(183,130)にある孤島にいくとアイフリードの像が置いてある隠し場所に入ることができ、イベントが発生。チャットが特技「ポイハン」を習得します。
+          </RoundedItem>
+        </RoundedContainer>
 
-      <div className="advice">
-        <h3>コチハン</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>遠征の橋でインフェリアへ戻ってきた後から</dd>
-          </dl>
-        </nav>
-        <p>
-          潜水艇をつかってインフェリア海底のGPS(119,122)にあるアジト2へ入り、宝箱がある部屋にいくとイベントが発生。チャットが特技「コチハン」を習得します。
-        </p>
-      </div>
+        <RoundedContainer>
+          <h3>コチハンの習得</h3>
+          <EventCondition category="period">
+            インフェリアへの帰還以降
+          </EventCondition>
 
-      <div className="advice">
-        <h3>パラライボール</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>飛行艇を入手以降</dd>
-          </dl>
-        </nav>
-        <p>
-          飛行艇をつかってインフェリア地上のGPS(208,108)にある晶霊温泉へ入り、600ガルドを支払って温泉に入るとイベントが発生。チャットが特技「パラライボール」を習得します。
-        </p>
-      </div>
+          <RoundedItem title="説明">
+            潜水艇をつかってインフェリア海底のGPS(119,122)にあるアジト2へ入り、宝箱がある部屋にいくとイベントが発生。チャットが特技「コチハン」を習得します。
+          </RoundedItem>
+        </RoundedContainer>
 
-      <div className="advice">
-        <h3>エターナルスロー</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>アイフリードの隠しアジトをクリア以降</dd>
-          </dl>
-        </nav>
+        <RoundedContainer>
+          <h3>パラライボールの習得</h3>
+          <EventCondition category="period">飛行艇を入手以降</EventCondition>
+
+          <RoundedItem title="説明">
+            飛行艇をつかってインフェリア地上のGPS(208,108)にある晶霊温泉へ入り、600ガルドを支払って温泉に入るとイベントが発生。チャットが特技「パラライボール」を習得します。
+          </RoundedItem>
+        </RoundedContainer>
+
+        <RoundedContainer>
+          <h3>エターナルスローの習得</h3>
+          <EventCondition category="period">
+            アイフリードの隠しアジトをクリア以降
+          </EventCondition>
+
+          <RoundedItem title="説明">
+            ストーリーでアイフリードの隠しアジト
+            GPS(204,98)をクリアして潜水艇を入手以降、チャットの小屋の中を訪れるとチャットが暗算できないイベントが発生。その後、アイフリートの隠しアジトで発生するすごろくゲームのイベントをクリアすると「エターナルスロー」を習得します。
+          </RoundedItem>
+        </RoundedContainer>
+      </section>
+      <section className="mb-12">
+        <SectionTitle>エターナルスロー習得時のクイズ</SectionTitle>
         <p>
-          ストーリーでアイフリードの隠しアジト
-          GPS(204,98)をクリアして潜水艇を入手以降、チャットの小屋の中を訪れるとイベントが発生。アイフリードの隠しアジトで試練が待っていることを知る。
+          エターナルスローの習得はクイズがあり難易度が高いため別途解説します。クイズのは全部で10問あり、内容と正解は以下を参照ください。
         </p>
-        <p>
-          その後アイフリードの隠しアジトへ行くとチャット一人でクイズに答えていくすごろくゲームが始まります。これはクイズの正解となる数値だけすごろくを進むことができるものでゴール先ではチャットが特技「エターナルスロー」を習得します。ここでは戦闘とならないので安心。クイズのは全部で10問あり、内容と正解は以下を参照ください。(クイズの内容はこのサイトの表示用に編集しています。)
-        </p>
-        <h4>クイズの内容と正解</h4>
         <table>
           <thead>
             <tr>
               <th className="w-15">No</th>
               <th>クイズの内容</th>
-              <th className="w-15">正解</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>
-                セージ2個、レッドセージ3個、セボリー2個。体力に関わるのはいくつ？
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q:
+                  セージ2個、レッドセージ3個、セボリー2個。体力に関わるのはいくつ？
+                </p>
+                <span className={anserStyle}>A: 5</span>
               </td>
-              <td>5</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>
-                バナナ2個、キウイ3個、アマンゴ1個、キャベツ3個。果物は全部でいくつ？
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q:
+                  バナナ2個、キウイ3個、アマンゴ1個、キャベツ3個。果物は全部でいくつ？
+                </p>
+                <span className={anserStyle}>A: 6</span>
               </td>
-              <td>6</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>
-                トマト3個、ポテト4個、とうふ5丁。食材の名前に「と(ト)」とついているのはいくつ？
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q:
+                  トマト3個、ポテト4個、とうふ5丁。食材の名前に「と(ト)」とついているのはいくつ？
+                </p>
+                <span className={anserStyle}>A: 4</span>
               </td>
-              <td>4</td>
             </tr>
             <tr>
               <td>4</td>
-              <td>
-                10人の海賊のうちスカープを巻いているのが5人、パイプをふかしているのが6人。スカーフを巻いている海賊の全員はパイプをふかしている。スカーフを巻かず、パイプもふかしていないのは何人？
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q:
+                  10人の海賊のうちスカープを巻いているのが5人、パイプをふかしているのが6人。スカーフを巻いている海賊の全員はパイプをふかしている。スカーフを巻かず、パイプもふかしていないのは何人？
+                </p>
+                <span className={anserStyle}>A: 4</span>
               </td>
-              <td>4</td>
             </tr>
             <tr>
               <td>5</td>
-              <td>前の問題でパイプをふかしているのは何人？</td>
-              <td>6</td>
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q: 前の問題でパイプをふかしているのは何人？
+                </p>
+                <span className={anserStyle}>A: 6</span>
+              </td>
             </tr>
             <tr>
               <td>6</td>
-              <td>
-                アワーグラス3個、なべのふた3個、トートバッグ2個。この中で道具に分類されるのはアイテムの総数はいくつ？
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q:
+                  アワーグラス3個、なべのふた3個、トートバッグ2個。この中で道具に分類されるのはアイテムの総数はいくつ？
+                </p>
+                <span className={anserStyle}>A: 3</span>
               </td>
-              <td>3</td>
             </tr>
             <tr>
               <td>7</td>
-              <td>2 × 3 - 2 + 29 -1 × 29は？</td>
-              <td>4</td>
+              <td className="!text-left">
+                <p className={questionStyle}>Q: 2 × 3 - 2 + 29 -1 × 29は？</p>
+                <span className={anserStyle}>A: 4</span>
+              </td>
             </tr>
             <tr>
               <td>8</td>
-              <td>
-                からおでん1回、おこげサンド4回、あまにんどうふ3回。これだけの料理をするのにレッドソディを何回使った？
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q:
+                  からおでん1回、おこげサンド4回、あまにんどうふ3回。これだけの料理をするのにレッドソディを何回使った？
+                </p>
+                <span className={anserStyle}>A: 1</span>
               </td>
-              <td>1</td>
             </tr>
             <tr>
               <td>9</td>
-              <td>
-                えび3個、ビート5個、キャベツ8個、ポテト7個、レッドソディ8個。この材料でホットボルシチは何回作れる？
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q:
+                  えび3個、ビート5個、キャベツ8個、ポテト7個、レッドソディ8個。この材料でホットボルシチは何回作れる？
+                </p>
+                <span className={anserStyle}>A: 5</span>
               </td>
-              <td>5</td>
             </tr>
             <tr>
               <td>10</td>
-              <td>
-                おじいさん達には子供が4人ずついる。おじいさん達の子供達にも4人ずつ子供がいる。おじいさん達の孫の数は96である。おじいさん達は何人？
+              <td className="!text-left">
+                <p className={questionStyle}>
+                  Q:
+                  おじいさん達には子供が4人ずついる。おじいさん達の子供達にも4人ずつ子供がいる。おじいさん達の孫の数は96である。おじいさん達は何人？
+                </p>
+                <span className={anserStyle}>A: 6</span>
               </td>
-              <td>6</td>
             </tr>
           </tbody>
         </table>
-      </div>
+      </section>
     </article>
   );
 }
