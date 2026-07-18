@@ -25,29 +25,42 @@ import RoundedItem from "@/components/RoundedItem";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Information from "@/components/Information";
+import Filter from "@/components/Filter";
 
 interface RunePropertyListProps {
   recipes: Recipes[];
   recipeItems: RecipeItems[];
   locationRecipes: LocationRecipes[];
 }
+type Filter = {
+  id?: number;
+  category?: string;
+  name?: string;
+};
 
 export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
   recipes,
   recipeItems,
   locationRecipes,
 }) => {
-  const [result, setResult] = useState<Recipes[]>([]);
+  const [list, setList] = useState<Recipes[]>(recipes);
+  const [filter, setFilter] = useState<Filter>({});
   const searchParams = useSearchParams();
   const id = searchParams.get("id"); // '1' が取れる
   useEffect(() => {
-    const recipeId = id ? parseInt(id, 10) : null;
-    const filter = recipeId
-      ? recipes.filter((item) => item.id === recipeId)
-      : recipes;
-    setResult(filter);
+    if (filter.id) {
+      const result = recipes.filter((item) => item.id === filter.id);
+      setList(result);
+    } else {
+      setList(recipes);
+    }
+  }, [filter]);
+
+  useEffect(() => {
+    if (id) {
+      setFilter({ id: Number(id) });
+    }
   }, [id]);
-  // 配列をループして表示する設計にします
   return (
     <>
       <div>
@@ -73,22 +86,10 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
             </Information>
           </div>
         )}
-        {id && (
-          <div className="bg-sky-600 text-white px-4 py-4 rounded-lg flex items-center justify-between mb-4">
-            <div className="flex items-center gap-2">
-              <LuFilter />
-              <span className="font-semibold">フィルタ適用中 (ID: {id})</span>
-            </div>
-            <a
-              href="/systems/recipe"
-              className="!text-white bg-sky-700 px-3 py-1 rounded text-sm font-medium transition"
-            >
-              解除する
-            </a>
-          </div>
-        )}
       </div>
-      {result.map((recipe, index) => {
+      <Filter list={recipes as []} filter={filter} setFilter={setFilter} />
+
+      {list.map((recipe, index) => {
         // 必要アイテムを抽出
         const useItems = recipeItems
           .filter((item) => item.recipeId === recipe.id)
@@ -140,7 +141,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
         return (
           <div
             key={index}
-            className="mb-4 font-bold border border-slate-300 rounded-lg p-3"
+            className="mb-4 font-bold border border-slate-200 rounded-lg p-3 shadow-xs"
           >
             <h3 className="text-[1rem]">{recipe.name}</h3>
             <RoundedItem title="料理の効果" className="mb-2">
