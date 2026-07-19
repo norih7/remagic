@@ -1927,10 +1927,289 @@
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "itemId": "",
-    "itemName": "",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "itemId": 41,
+    "itemName": "765ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "itemId": 248,
+    "itemName": "ドメインチェック",
+    "itemType": "accessory",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "itemId": 249,
+    "itemName": "ホーリィクレスト",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "itemId": 250,
+    "itemName": "セントハルバート",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "itemId": 251,
+    "itemName": "フレアアームズ",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "itemId": 109,
+    "itemName": "スケールローブ",
+    "itemType": "robe",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 252,
+    "itemName": "トゥインクルF",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 101,
+    "itemName": "ピヨハン",
+    "itemType": "accessory",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 253,
+    "itemName": "キューティミトン",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 254,
+    "itemName": "インシーマップ",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 255,
+    "itemName": "レアプレート",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 256,
+    "itemName": "ヴォーパルソード",
+    "itemType": "sword",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 257,
+    "itemName": "14305ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 258,
+    "itemName": "15365ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 259,
+    "itemName": "10655ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "itemId": 260,
+    "itemName": "12245ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 261,
+    "itemName": "キャプテンハット",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 128,
+    "itemName": "レッドセボリー",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 120,
+    "itemName": "ミスリルブレス",
+    "itemType": "accessory",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 262,
+    "itemName": "スターシールド",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 263,
+    "itemName": "13579ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 76,
+    "itemName": "オールディバイト",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 127,
+    "itemName": "レッドベルベーヌ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 264,
+    "itemName": "ムーンローブ",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 265,
+    "itemName": "ロザニアのドレス",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "itemId": 266,
+    "itemName": "ひかりのたま",
+    "itemType": "keyItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "itemId": 267,
+    "itemName": "24424ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "itemId": 268,
+    "itemName": "ゴールデンヘルム",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "itemId": 129,
+    "itemName": "レッドラベンダー",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "itemId": 269,
+    "itemName": "スピリッドローブ",
     "itemType": "",
     "remarks": ""
   },
