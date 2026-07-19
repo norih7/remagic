@@ -1,5 +1,12 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
+import SectionTitle from "@/components/SectionTitle";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
+import EventCondition from "@/components/EventCondition";
+import Information from "@/components/Information";
+import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -13,85 +20,76 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <h2>概要</h2>
+      <PageSummary>
+        サブイベントにて習得するチャットの特技についての説明します。最後のエレメンタルマスターはかなり強い技なのでぜひ習得を目指してください。
+      </PageSummary>
+      <section className="mb-12">
+        <SectionTitle>フォッグの特技習得イベント一覧</SectionTitle>
+        <Information title="イベント発生について">
+          フォッグを仲間している状態で下記の場所へ行くことでイベントが発生します
+        </Information>
+        <RoundedContainer>
+          <h3>エアブレイドの習得</h3>
+          <EventCondition category="period">
+            リッドが「極光壁」習得後
+          </EventCondition>
+          <RoundedItem title="説明">
+            ペイルティの港にいくとピンク色のミアキスが樽の上で眠っている。それを調べるとイベントが発生しフォッグが「エアブレイド」を習得します。
+          </RoundedItem>
+        </RoundedContainer>
 
-      <ol>
-        <li>
-          フォッグの特技は最初から習得している「バーニングフォース」以外はサブイベントにて取得します。サブイベントはセレスティア各地にいるピンクのミアキスと遭遇するというもの。これらのサブイベントは
-          <span className="daiji">フォッグを仲間に加入している状態</span>
-          でのみ発生します。
-        </li>
-      </ol>
+        <RoundedContainer>
+          <h3>アクアスパイラルの習得</h3>
+          <EventCondition category="period">
+            闇の洞窟のダンジョンに入った後から
+          </EventCondition>
+          <RoundedItem title="説明">
+            ティンシアの町にあるノーム銅像の前にいるピンクのミアキスに近づくとイベントが発生してフォッグが「アクアスパイラル」を習得します。
+          </RoundedItem>
+        </RoundedContainer>
 
-      <h2>特技習得イベント一覧</h2>
+        <RoundedContainer>
+          <h3>レイジレーザーの習得</h3>
+          <EventCondition category="period">
+            リッドが「極光剣」を習得後
+          </EventCondition>
+          <RoundedItem title="説明">
+            アイメン近くの岬の砦にいるピンクのミアキスに近づくとイベントが発生してフォッグが「レイジレーザー」を習得します。
+          </RoundedItem>
+        </RoundedContainer>
 
-      <div className="advice">
-        <h3>エアブレイド</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>リッドがセイファート神殿で極光壁を習得後〜</dd>
-          </dl>
-        </nav>
-        <p>
-          ペイルティの港にいくとピンク色のミアキスが樽の上で眠っている。それを調べるとイベントが発生しフォッグが「エアブレイド」を習得する。
-        </p>
-      </div>
+        <RoundedContainer>
+          <h3>ダークレーザーの習得</h3>
+          <EventCondition category="period">
+            レグルスの丘をクリア後
+          </EventCondition>
+          <RoundedItem title="説明">
+            ルイシカの町のがれきに近づくとイベントが発生してフォッグが「ダークレイザー」を習得します。がれきは奥の廃墟フロアではないことに注意。ここには一見ピンク色のミアキスがいませんがイベント中に現れます。
+          </RoundedItem>
+        </RoundedContainer>
 
-      <div className="advice">
-        <h3>アクアスパイラル</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>闇の洞窟のダンジョンに入った後〜</dd>
-          </dl>
-        </nav>
-        <p>
-          ティンシアの町にあるノーム銅像の前にいるピンクのミアキスに近づくとイベントが発生してフォッグが「アクアスパイラル」を習得する。
-        </p>
-      </div>
-
-      <div className="advice">
-        <h3>レイジレーザー</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>セイファート観測所にてリッドが「極光剣」を習得後〜</dd>
-          </dl>
-        </nav>
-        <p>
-          アイメン近くの岬の砦にいるピンクのミアキスに近づくとイベントが発生してフォッグが「レイジレーザー」を習得する。
-        </p>
-      </div>
-
-      <div className="advice">
-        <h3>ダークレーザー</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>レグルスの丘をクリア後〜</dd>
-          </dl>
-        </nav>
-        <p>
-          ルイシカの町のがれきに近づくとイベントが発生してフォッグが「ダークレイザー」を習得する。がれきは奥の廃墟フロアではないことに注意。こには一見ピンク色のミアキスがいないがイベント中に現れることになる。
-        </p>
-      </div>
-
-      <div className="advice">
-        <h3>エレメンタルマスター</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>飛行艇入手後〜</dd>
-          </dl>
-        </nav>
-        <p>
-          <a href="/web/20210509171900/http://magic.brush-clover.com/eternia/subevent-lysithea.php">
-            リシテアイベントで「キャンセラー」をもらっている状態
-          </a>
-          で飛行艇を入手していることが前提条件となる。この状態を満たして夜のジイニのオークション会場前にいくとイベントが発生してフォッグが「エレメンタルマスター」を習得する。
-        </p>
-      </div>
+        <RoundedContainer>
+          <h3>エレメンタルマスターの習得</h3>
+          <EventCondition category="period">飛行艇入手後</EventCondition>
+          <RoundedItem title="説明">
+            <p>
+              リシテアイベントで「キャンセラー」をもらっている＆飛行艇を入手以降のタイミングで夜のジイニのオークション会場前にいくとイベントが発生してフォッグが「エレメンタルマスター」を習得します。
+            </p>
+            <GuideList
+              items={[
+                {
+                  title: "リシテアイベントとキャンセラーの入手",
+                  href: "/subevents/lysithea",
+                },
+                {
+                  title: "飛空挺の入手",
+                  href: "/subevents/flying-boad",
+                },
+              ]}
+            />
+          </RoundedItem>
+        </RoundedContainer>
+      </section>
     </article>
   );
 }

@@ -56,6 +56,32 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/19</span>
+              <span>
+                <Link
+                  href="/subevents/skill-fog"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  フォッグの特技習得
+                </Link>
+                、
+                <Link
+                  href="/subevents/lysithea"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  画家リシテア
+                </Link>
+                、
+                <Link
+                  href="/subevents/flying-boad"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  飛行艇の入手
+                </Link>
+                をアップデート。レイアウトを整備しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/07/18</span>
               <span>
                 <Link

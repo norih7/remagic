@@ -24,7 +24,7 @@ export default async function HomePage() {
       <SetPageTitle title={title} />
       <PageSummary>
         <p>
-          サブイベントにて習得するチャットの特技についての説明です。サブイベントの種類にはフィールドマップの隠し場所へ行く、すごろくのクリアなどがあります。
+          サブイベントにて習得するチャットの特技についての説明します。エターナルスロー習得のクイズ回答一覧も掲載しています。
         </p>
       </PageSummary>
 

@@ -1,5 +1,12 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
+import SectionTitle from "@/components/SectionTitle";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
+import EventCondition from "@/components/EventCondition";
+import Information from "@/components/Information";
+import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -14,95 +21,79 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <h2>概要</h2>
-
-      <ol>
-        <li>
-          <span className="daiji">フォッグを仲間に加入していない状態</span>
-          でセレスティア各地を回ると画家のリシテアが絵を描いているところを遭遇する。(リシテアはフォッグの奥さん)イベントをすべて完了させるとリシテアからフォッグのアクセサリ「キャンセラー」を入手できます。これは強力なアイテムである一方、
-          <a href="/web/20210509170322/http://magic.brush-clover.com/eternia/skill-fog.php">
-            フォッグの特技「エレメンタルマスター」
-          </a>
-          を習得するために必要なアイテムです。
-        </li>
-      </ol>
-
-      <h4>入手アイテム</h4>
-
-      <ul className="item-onecol">
-        <li>キャンセラー</li>
-      </ul>
-
-      <h2>イベント詳細</h2>
-
-      <div className="advice">
-        <h3>イベントの開始 : 解凍後のペイルティでの遭遇</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>氷晶霊の山をクリアしてペイルティが解凍された後〜</dd>
-          </dl>
-        </nav>
+      <PageSummary>
+        セレスティア各地をにいる画家のリシテア（フォッグの妻）との遭遇イベントを説明します。このイベントではフォッグの強力なアクセサリの入手でき、フォッグの「エレメントマスター」の特技習得に関連します。
+      </PageSummary>
+      <section className="mb-12">
+        <SectionTitle>イベント開始</SectionTitle>
+        <Information type="warning" title="注意事項">
+          リシテアはフォッグがパーティに加入していると出現しません。ティンシアのアジトでフォッグを加入/離脱できるのでこのイベント時は離脱させてください。
+        </Information>
+        <RoundedContainer>
+          <h3>解氷後のペイルティでの遭遇</h3>
+          <EventCondition category="period">
+            氷晶霊の山をクリア後
+          </EventCondition>
+          <RoundedItem title="説明">
+            フォッグが仲間にいない状態でペイルティの港にいくと絵を描いている女性がいて近づくとイベントが発生する。このイベントを見ることで以降セレスティア各地でこの女性、リシテアが出現します。
+          </RoundedItem>
+        </RoundedContainer>
+      </section>
+      <section className="mb-12">
+        <SectionTitle>各地での遭遇</SectionTitle>
         <p>
-          フォッグが仲間にいない状態でペイルティの港にいくと絵を描いている女性がいて近づくとイベントが発生する。
-          <span className="daiji">
-            このイベントを見ることで以降セレスティア各地でこの女性、リシテアが出現します。
-          </span>
+          セレスティア各地でリシテアと遭遇します。ここはどの順番で行っても構いません。
         </p>
-      </div>
-
-      <div className="advice">
-        <h3>ティンシアでの遭遇</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>ペイルティでリシテアと遭遇後〜</dd>
-          </dl>
-        </nav>
-        <p>
-          ティンシアの町にあるノーム銅像の前にいるリシテアに話しかけるとイベントが発生する。会話のみのイベント。
-        </p>
-      </div>
-
-      <div className="advice">
-        <h3>岬の砦での遭遇</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>ペイルティでリシテアと遭遇後〜</dd>
-          </dl>
-        </nav>
-        <p>
-          アイメン近くの岬の砦にいるリシテアに話しかけるとイベントが発生する。会話のみのイベント。
-        </p>
-      </div>
-
-      <div className="advice">
-        <h3>ルイシカでの遭遇</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>ペイルティでリシテアと遭遇後〜</dd>
-          </dl>
-        </nav>
-        <p>
-          ルイシカの町
-          奥にある廃墟の前にいるリシテアに話しかけるとイベントが発生する。会話のみのイベント。
-        </p>
-      </div>
-
-      <div className="advice">
-        <h3>イベントの最後 : ジイニでの遭遇</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>ジイニ以外の場所でリシテアと遭遇している</dd>
-          </dl>
-        </nav>
-        <p>
-          ジイニ以外の場所でリシテアと遭遇して会話をした状態で夜のジイニのオークション会場前にいるリシテアに話しかけるとイベントが発生。このイベントではフォッグのアクセサリ「キャンセラー」を習得する。
-        </p>
-      </div>
+        <table>
+          <thead>
+            <tr>
+              <th className="w-[150px]">タウン</th>
+              <th>場所/条件</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ティンシア</td>
+              <td>
+                ティンシアの町にあるノーム銅像の前にいるリシテアに話しかける
+              </td>
+            </tr>
+            <tr>
+              <td>岬の砦</td>
+              <td>
+                岬の砦（※セレスティア突入時の場所）にいるリシテアに話しかける
+              </td>
+            </tr>
+            <tr>
+              <td>ルイシカ</td>
+              <td>奥にある廃墟の前にいるリシテアに話しかけると</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section className="mb-12">
+        <SectionTitle>イベントの最後</SectionTitle>
+        <RoundedContainer>
+          <h3>ジイニでの遭遇</h3>
+          <EventCondition category="period">
+            各地でリシテアと遭遇済み
+          </EventCondition>
+          <RoundedItem title="説明">
+            <p>
+              ジイニ以外の場所でリシテアと遭遇済みの状態で夜のジイニのオークション会場前にいるリシテアに話しかけるとイベントが発生。このイベントではフォッグのアクセサリ「キャンセラー」をもらえます。
+              またこのイベントが終わったらフォッグがエレメントマスターを習得できるようになります。
+            </p>
+            <GuideList
+              items={[
+                {
+                  title: "フォッグの特技習得/エレメントマスターの習得条件",
+                  href: "/subevents/skill-fog",
+                },
+              ]}
+            />
+          </RoundedItem>
+        </RoundedContainer>
+      </section>
     </article>
   );
 }
