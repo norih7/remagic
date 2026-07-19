@@ -2215,11 +2215,164 @@
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "itemId": "",
-    "itemName": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 239,
+    "itemName": "むらさきのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 60,
+    "itemName": "ラベンダー",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 270,
+    "itemName": "ジェットブーツ",
     "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 271,
+    "itemName": "19125ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 245,
+    "itemName": "あおのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 79,
+    "itemName": "ベルベーヌ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 272,
+    "itemName": "BCロッド",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 273,
+    "itemName": "17595ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 58,
+    "itemName": "セージ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 274,
+    "itemName": "ビームシールド",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 75,
+    "itemName": "セボリー",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 237,
+    "itemName": "みずいろのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 275,
+    "itemName": "マグログミ",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 243,
+    "itemName": "きいろのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "itemId": 276,
+    "itemName": "ゴールドアーマー",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 59,
+    "locationName": 59,
+    "itemId": 246,
+    "itemName": "みどりのかけら",
+    "itemType": "useItem",
     "remarks": ""
   }
 ]

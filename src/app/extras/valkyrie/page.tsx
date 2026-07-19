@@ -1,6 +1,10 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
 import Image from "next/image";
+import PageSummary from "@/components/PageSummary";
+import SectionTitle from "@/components/SectionTitle";
+import LocationItems from "@/components/LocationItems";
+import { getLocationItemsData } from "@/lib/db";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -11,40 +15,29 @@ export const metadata = {
   description: "",
 };
 export default async function HomePage() {
+  const itemsData = await getLocationItemsData();
+
   return (
     <article>
       <SetPageTitle title={title} />
-
-      <h2>概要</h2>
-
-      <div className="advice">
-        <h3>きらめきの塔</h3>
-        <nav>
-          <dl>
-            <dt>発生時期</dt>
-            <dd>飛行艇を入手後〜</dd>
-          </dl>
-        </nav>
+      <PageSummary>
+        強力な装備品を入手できる隠しダンジョン「きらめきの塔」について紹介します。
+      </PageSummary>
+      <section className="mb-12">
+        <SectionTitle>きらめきの塔</SectionTitle>
         <p>
           隠しダンジョンの1つ。飛行艇を入手するとインフェリアにあるきらめきの塔に行くことができます。きらめきの塔はナムコの「ワルキューレの伝説」のBMGが流れるダンジョンで、最上階にはボス「ワルキューレ」がいます。
-        </p>
-        <p>
-          <a href="/web/20210509162624/http://magic.brush-clover.com/eternia/subevent-flying-boad.php">
-            飛行艇を入手
-          </a>
-          するとインフェリアのフィールドマップにある「きらめきの塔」GPS (200,
-          200)に入ることができます。ここは岩に囲まれたところなので飛行艇でしか着陸することができません。
+          飛行艇を入手するとインフェリアのフィールドマップにある「きらめきの塔」GPS
+          (200,200)に入ることができます。ここは岩に囲まれたところなので飛行艇でしか着陸することができません。
         </p>
         <p>
           このダンジョンではボス「ワルキューレ」がいて、勝利後はリッドの装備品「S・D」を入手するキーアイテムを入手したり強力な防具を入手することができます。このダンジョンは7階構成となっており、ワルキューレを倒すまではダンジョンを移動していても戦闘が発生しません。ワルキューレを倒したあとから敵と遭遇するようになります。
         </p>
-      </div>
-
-      <h2>ダンジョンの詳細</h2>
-
-      <ol>
-        <li>
-          <h4>1階</h4>
+      </section>
+      <section className="mb-12">
+        <SectionTitle>ダンジョン攻略</SectionTitle>
+        <div className="mb-4">
+          <h3>1階</h3>
           <p>
             星型の三角形のスイッチを特定の以下の順番に踏んでいけば2階へ行くためのワープが起動します。
             <br />
@@ -55,27 +48,27 @@ export default async function HomePage() {
               height={230}
             />
           </p>
-        </li>
-        <li>
-          <h4>2階</h4>
+        </div>
+        <div className="mb-4">
+          <h3>2階</h3>
           <p>
             中央までいくと四方にある球体が光る。その後、光った順番に球体を調べていき全部正解すると次の階へと進めるワープが起動します。失敗すると「ブー」というSE音がなります。
           </p>
           <p>
             合計11回光り、順番は毎回ランダムになるためメモをとったほうがいいです。
           </p>
-        </li>
-        <li>
-          <h4>3階</h4>
+        </div>
+        <div className="mb-4">
+          <h3>3階</h3>
           <p>
             ここでは灯台にソーサラーリングで火を灯せばOKですが、最初の状態では双方の壁から風が吹いているのでフリーズリングで凍らせて風を止める必要があります。
           </p>
           <p>
             2つの灯台に火を灯すと床が出現し、その床で2〜3秒ほど立ち止まると階段があわられて次に進むことができます。
           </p>
-        </li>
-        <li>
-          <h4>4階</h4>
+        </div>
+        <div className="mb-4">
+          <h3>4階</h3>
           <p>
             この階では水晶にソーサラーリングを放ち、すべての水晶に光を灯せばいいが順番が決まっています。
           </p>
@@ -89,21 +82,21 @@ export default async function HomePage() {
               height={396}
             />
           </p>
-        </li>
-        <li>
-          <h4>5階</h4>
+        </div>
+        <div className="mb-4">
+          <h3>5階</h3>
           <p>
             この階では自分が乗って動かす床に連動して動く半透明の床があり、その床で「赤」、「青」、「緑」の光を集める必要があります。半透明の床は自分の操作と鏡写りの状態で動くのでそれを意識しましょう。
           </p>
-        </li>
-        <li>
-          <h4>6階</h4>
+        </div>
+        <div className="mb-4">
+          <h3>6階</h3>
           <p>
             このフロアは色のついた床があり、色によって動くける制約があります。その中で、この階に存在する3つの柱を調べて光を灯すことで次の階に進むことができます。
           </p>
-        </li>
-        <li>
-          <h4>7階</h4>
+        </div>
+        <div className="mb-4">
+          <h3>7階</h3>
           <p>
             最初のフロアを経由してそのままワープ先に行くことができるがここは最初のフロアにある火柱を同じ色にしないと突破できない。7階の火柱はソーサラーリングかフリーズリングを当てることで「赤」「青」「緑」と変化しますが統一する色はどれでもOK。
           </p>
@@ -117,48 +110,28 @@ export default async function HomePage() {
               height={203}
             />
           </p>
-        </li>
-        <li>
-          <h4>最上階</h4>
+        </div>
+        <div className="mb-4">
+          <h3>最上階</h3>
           <p>
             最上階に行くとロードポイントがあり、奥に進むとイベントが発生してリッド一人でボス「ワルキューレ」と戦闘になります。勝利後はワルキューレから見えない鍵を受け取り、奥にある宝箱を入手できるようになります。
           </p>
           <p>
             見えない鍵は「S・D」を入手するためのもの。なお、ワルキューレを倒したあと部屋を出ると1階にたどり着き、これ以降このダンジョンでモンスターと戦闘が発生するようになります。
           </p>
-        </li>
-        <li>
-          <h4>ワルキューレとの戦闘</h4>
+        </div>
+        <div className="mb-4">
+          <h3>ワルキューレとの戦闘</h3>
           <p>BOSS：『ワルキューレ』</p>
           <p>
             リッド一人で戦うこととなります。連続斬りの特技を使ってくるので要注意。列空斬を空中発動できるようにしておいて、回避できるようにしておくのがおすすめ。
           </p>
-        </li>
-      </ol>
-
-      <h4>ダンジョン内のアイテム</h4>
-
-      <ul>
-        <li>むらさきのかけら</li>
-        <li>ラベンダー</li>
-        <li>ジェットブーツ</li>
-        <li>19125ガルド</li>
-        <li>エリクシール</li>
-        <li>あおのかけら</li>
-        <li>ベルベーヌ</li>
-        <li>あおのかけら</li>
-        <li>ルーンボトル</li>
-        <li>BCロッド</li>
-        <li>17595ガルド</li>
-        <li>セージ</li>
-        <li>ビームシールド</li>
-        <li>セボリー</li>
-        <li>みずいろのかけら</li>
-        <li>マグログミ</li>
-        <li>きいろのかけら</li>
-        <li>ゴールドアーマー</li>
-        <li>みどりのかけら</li>
-      </ul>
+        </div>
+        <div className="mb-4">
+          <h3>ダンジョン内の入手アイテム</h3>
+          <LocationItems data={itemsData} locationIds={[59]} />
+        </div>
+      </section>
     </article>
   );
 }

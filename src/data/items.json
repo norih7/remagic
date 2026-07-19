@@ -2935,5 +2935,82 @@
     "buy": "",
     "sell": "",
     "special": ""
+  },
+  {
+    "id": 270,
+    "name": "ジェットブーツ",
+    "type": "",
+    "effect": "",
+    "isBuy": "",
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 271,
+    "name": "19125ガルド",
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
+  },
+  {
+    "id": 272,
+    "name": "BCロッド",
+    "type": "",
+    "effect": "",
+    "isBuy": "",
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 273,
+    "name": "17595ガルド",
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
+  },
+  {
+    "id": 274,
+    "name": "ビームシールド",
+    "type": "",
+    "effect": "",
+    "isBuy": "",
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 275,
+    "name": "マグログミ",
+    "type": "",
+    "effect": "",
+    "isBuy": "",
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 276,
+    "name": "ゴールドアーマー",
+    "type": "",
+    "effect": "",
+    "isBuy": "",
+    "isDrop": "",
+    "buy": "",
+    "sell": "",
+    "special": ""
   }
 ]
