@@ -1708,5 +1708,239 @@
     "itemName": "アワーグラス",
     "itemType": "useItem",
     "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 53,
+    "locationName": "インシーアジト1 GPS (76, 122)",
+    "itemId": 236,
+    "itemName": "12240ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 53,
+    "locationName": "インシーアジト1 GPS (76, 122)",
+    "itemId": 75,
+    "itemName": "セボリー",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 53,
+    "locationName": "インシーアジト1 GPS (76, 122)",
+    "itemId": 237,
+    "itemName": "みずいろのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 53,
+    "locationName": "インシーアジト1 GPS (76, 122)",
+    "itemId": 238,
+    "itemName": "ダイヤブレス",
+    "itemType": "bracelet",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 53,
+    "locationName": "インシーアジト1 GPS (76, 122)",
+    "itemId": 239,
+    "itemName": "むらさきのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 53,
+    "locationName": "インシーアジト1 GPS (76, 122)",
+    "itemId": 240,
+    "itemName": "ホーリィクローク",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 54,
+    "locationName": "インシーアジト2 GPS (119, 233)",
+    "itemId": 65,
+    "itemName": "あかのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 54,
+    "locationName": "インシーアジト2 GPS (119, 233)",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 54,
+    "locationName": "インシーアジト2 GPS (119, 233)",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 54,
+    "locationName": "インシーアジト2 GPS (119, 233)",
+    "itemId": 77,
+    "itemName": "アワーグラス",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 54,
+    "locationName": "インシーアジト2 GPS (119, 233)",
+    "itemId": 58,
+    "itemName": "セージ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 54,
+    "locationName": "インシーアジト2 GPS (119, 233)",
+    "itemId": 241,
+    "itemName": "8415ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 55,
+    "locationName": "インシーアジト3 GPS (142, 1)",
+    "itemId": 242,
+    "itemName": "にんとうちざくら",
+    "itemType": "sword",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 55,
+    "locationName": "インシーアジト3 GPS (142, 1)",
+    "itemId": 243,
+    "itemName": "きいろのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 55,
+    "locationName": "インシーアジト3 GPS (142, 1)",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 55,
+    "locationName": "インシーアジト3 GPS (142, 1)",
+    "itemId": 60,
+    "itemName": "ラベンダー",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 55,
+    "locationName": "インシーアジト3 GPS (142, 1)",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 55,
+    "locationName": "インシーアジト3 GPS (142, 1)",
+    "itemId": 244,
+    "itemName": "10710ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 56,
+    "locationName": "インシーアジト4 GPS (226, 130)",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 56,
+    "locationName": "インシーアジト4 GPS (226, 130)",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 56,
+    "locationName": "インシーアジト4 GPS (226, 130)",
+    "itemId": 247,
+    "itemName": "9945ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 56,
+    "locationName": "インシーアジト4 GPS (226, 130)",
+    "itemId": 245,
+    "itemName": "あおのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 56,
+    "locationName": "インシーアジト4 GPS (226, 130)",
+    "itemId": 79,
+    "itemName": "ベルベーヌ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 56,
+    "locationName": "インシーアジト4 GPS (226, 130)",
+    "itemId": 246,
+    "itemName": "みどりのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemId": "",
+    "itemName": "",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": "",
+    "locationName": "",
+    "itemId": "",
+    "itemName": "",
+    "itemType": "",
+    "remarks": ""
   }
 ]

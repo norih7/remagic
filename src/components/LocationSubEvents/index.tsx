@@ -39,7 +39,7 @@ export default function ChartList(props: Props) {
     <div
       className={`${styles.container} mb-4 border border-gray-300 rounded-lg p-3 md:p-3 bg-white`}
     >
-      <h3 className="pb-1 flex items-center">
+      <h3 className="pb-1 flex items-center !text-sm">
         <LuScroll size={18} className="mr-1" />
         サブイベント
       </h3>

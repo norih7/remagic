@@ -36,7 +36,7 @@ export default function LocationRecipes(props: Props) {
     <div
       className={`${styles.container} mb-4 border border-gray-300 rounded-lg p-3 md:p-3 bg-white`}
     >
-      <h3 className="pb-1 flex items-center">
+      <h3 className="pb-1 flex items-center !text-sm">
         <LuChefHat size={22} className="pr-1" />
         レシピ
       </h3>
