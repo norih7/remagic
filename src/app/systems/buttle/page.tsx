@@ -5,6 +5,7 @@ import EventCondition from "@/components/EventCondition";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import Tag from "@/components/Tag";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -63,6 +64,7 @@ export default async function HomePage() {
         </div>
         <div className="mb-4">
           <h3>「マニュアルのしょ」の入手と設定方法</h3>
+          <ResponsiveImage src="/systems/buttle-manual.jpg" />
           <p>
             マニュアル操作を行うためには「マニュアルのしょ」の入手が必要で、レグルス道場の弟子に話かけ「マニュアル操作で激しく戦いたい」を選択すると入手できます。取得はいつでも可能ですが、ストーリー的にレグルス道場に訪れたときにやっておくのがオススメです。設定画面で「マニュアル」、あるいは戦闘中にSELECTボタンを押すことで切替可能です。
           </p>

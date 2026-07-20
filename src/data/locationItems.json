@@ -491,7 +491,7 @@
     "locationName": "いざないの密林",
     "itemId": 44,
     "itemName": "バスタードソード",
-    "itemType": "greatSword",
+    "itemType": "sword",
     "remarks": ""
   },
   {
@@ -1949,7 +1949,7 @@
     "locationName": "闇の洞窟",
     "itemId": 249,
     "itemName": "ホーリィクレスト",
-    "itemType": "",
+    "itemType": "circlet",
     "remarks": ""
   },
   {
@@ -1958,7 +1958,7 @@
     "locationName": "闇の洞窟",
     "itemId": 250,
     "itemName": "セントハルバート",
-    "itemType": "",
+    "itemType": "halbert",
     "remarks": ""
   },
   {
@@ -1967,7 +1967,7 @@
     "locationName": "闇の洞窟",
     "itemId": 251,
     "itemName": "フレアアームズ",
-    "itemType": "",
+    "itemType": "knuckle",
     "remarks": ""
   },
   {
@@ -1985,7 +1985,7 @@
     "locationName": "沈没船",
     "itemId": 252,
     "itemName": "トゥインクルF",
-    "itemType": "",
+    "itemType": "whistle",
     "remarks": ""
   },
   {
@@ -2003,7 +2003,7 @@
     "locationName": "沈没船",
     "itemId": 253,
     "itemName": "キューティミトン",
-    "itemType": "",
+    "itemType": "bracelet",
     "remarks": ""
   },
   {
@@ -2021,7 +2021,7 @@
     "locationName": "沈没船",
     "itemId": 254,
     "itemName": "インシーマップ",
-    "itemType": "",
+    "itemType": "keyItem",
     "remarks": ""
   },
   {
@@ -2030,7 +2030,7 @@
     "locationName": "沈没船",
     "itemId": 255,
     "itemName": "レアプレート",
-    "itemType": "",
+    "itemType": "armor",
     "remarks": ""
   },
   {
@@ -2084,7 +2084,7 @@
     "locationName": "アイフリードの墓",
     "itemId": 261,
     "itemName": "キャプテンハット",
-    "itemType": "",
+    "itemType": "hat",
     "remarks": ""
   },
   {
@@ -2111,7 +2111,7 @@
     "locationName": "アイフリードの墓",
     "itemId": 262,
     "itemName": "スターシールド",
-    "itemType": "",
+    "itemType": "shield",
     "remarks": ""
   },
   {
@@ -2156,7 +2156,7 @@
     "locationName": "アイフリードの墓",
     "itemId": 264,
     "itemName": "ムーンローブ",
-    "itemType": "",
+    "itemType": "robe",
     "remarks": ""
   },
   {
@@ -2165,7 +2165,7 @@
     "locationName": "アイフリードの墓",
     "itemId": 265,
     "itemName": "ロザニアのドレス",
-    "itemType": "",
+    "itemType": "keyItem",
     "remarks": ""
   },
   {
@@ -2192,7 +2192,7 @@
     "locationName": "ファロース教会地下",
     "itemId": 268,
     "itemName": "ゴールデンヘルム",
-    "itemType": "",
+    "itemType": "helmet",
     "remarks": ""
   },
   {
@@ -2210,7 +2210,7 @@
     "locationName": "ファロース教会地下",
     "itemId": 269,
     "itemName": "スピリッドローブ",
-    "itemType": "",
+    "itemType": "robe",
     "remarks": ""
   },
   {
@@ -2237,7 +2237,7 @@
     "locationName": "きらめきの塔",
     "itemId": 270,
     "itemName": "ジェットブーツ",
-    "itemType": "",
+    "itemType": "accessory",
     "remarks": ""
   },
   {
@@ -2291,7 +2291,7 @@
     "locationName": "きらめきの塔",
     "itemId": 272,
     "itemName": "BCロッド",
-    "itemType": "",
+    "itemType": "cane",
     "remarks": ""
   },
   {
@@ -2318,7 +2318,7 @@
     "locationName": "きらめきの塔",
     "itemId": 274,
     "itemName": "ビームシールド",
-    "itemType": "",
+    "itemType": "shield",
     "remarks": ""
   },
   {
@@ -2345,7 +2345,7 @@
     "locationName": "きらめきの塔",
     "itemId": 275,
     "itemName": "マグログミ",
-    "itemType": "",
+    "itemType": "useItem",
     "remarks": ""
   },
   {
@@ -2363,7 +2363,7 @@
     "locationName": "きらめきの塔",
     "itemId": 276,
     "itemName": "ゴールドアーマー",
-    "itemType": "",
+    "itemType": "armor",
     "remarks": ""
   },
   {

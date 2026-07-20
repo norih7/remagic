@@ -81,11 +81,13 @@ export const subeventLinks = {
   catarine: {
     title: "カトリーヌの恋愛",
     path: "/subevents/catarine",
+    image: "/link-headers/subevents-catarine.jpg",
     desc: "",
   },
   kremerball: {
     title: "クレーメルボール",
     path: "/subevents/kremerball",
+    image: "/link-headers/subevents-kremerball.jpg",
     desc: "",
   },
   syanballoon: {
