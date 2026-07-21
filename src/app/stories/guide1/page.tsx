@@ -10,6 +10,7 @@ import { getLocationLensesData } from "@/lib/db";
 import { getLocationSubEventsData } from "@/lib/db";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -133,13 +134,26 @@ export default async function HomePage() {
         <SectionTitle type="flag">5.望郷の洞窟</SectionTitle>
         <ol>
           <li>
-            洞窟内では潮の満ち引き状態によってマップや入手できるアイテムが変化します。潮の満ち引きはダンジョン内の移動と共に変化していき、一度ダンジョンから出るとリセットされます。この潮の状態により「ライフボトル」「サークレット」「レイピア」のアイテムを入手できます。レイピアは店で購入不可能なリッドの武器なので取得を推奨します。
+            洞窟内では潮の満ち引き状態によってマップや入手できるアイテムが変化します。潮の満ち引きはダンジョン内の移動と共に変化していき、一度ダンジョンから出るとリセットされます。この潮の状態により「ライフボトル」「サークレット」「レイピア」のアイテムを入手できます。
           </li>
           <li>
-            ダンジョン内の途中ではキャンプイベントがあり、リッドとキール2人でエッグベアとの戦闘になります。洞窟から出ると隣の大陸のフィールドへと辿り着く。
+            ダンジョン内の途中ではキャンプイベントがあり、リッドとキール2人でエッグベアとの戦闘になります。洞窟から出ると隣の大陸のフィールドへ出ます。
           </li>
-          <li>フィルードマップを進んでモルルへ行く。</li>
+          <li>その後、フィルードマップを進んでモルルへ。</li>
         </ol>
+        <div className="mb-4">
+          <h3>潮の満ち引きについて</h3>
+          <ResponsiveImage src="/stories/guide1-oblivion-1.jpg" />
+          <p>
+            ダンジョン内を歩いていると「潮が満ちてきました」などのアナウンスが出ることがあります。潮が満ちてくるとこの画像のように海水が入り込んで、下に落ちていた木が足場となり移動できるようになります。
+          </p>
+        </div>
+        <div className="mb-4">
+          <ResponsiveImage src="/stories/guide1-oblivion-2.jpg" />
+          <p>
+            「潮が満ちてくる」「満潮」状態があり、「満潮」状態となるとレイピアが入手できます。
+          </p>
+        </div>
         <LocationItems data={itemsData} locationIds={[7]} />
         <LocationRecipes data={recipesData} locationIds={[7]} />
         <LocationLenses data={lensesData} locationIds={[7]} />
