@@ -8,6 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/_next/static", "/_next/image"],
       },
       {
         userAgent: "GPTBot",
