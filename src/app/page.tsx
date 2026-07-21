@@ -56,6 +56,18 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/21</span>
+              <span>
+                <Link
+                  href="/stories/guide1"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  ラシュアン〜水晶霊の河
+                </Link>
+                をアップデート。内容加筆しレイアウト修正しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/07/19</span>
               <span>
                 <Link

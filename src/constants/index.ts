@@ -14,6 +14,7 @@ export const storyLinks = {
   guide1: {
     title: "ラシュアン〜水晶霊の河",
     path: "/stories/guide1",
+    image: "/link-headers/stories-guide1.jpg",
     desc: "ストーリー開始から大晶霊ウンディーネのいる水晶霊の河までをガイド",
   },
   guide2: {
