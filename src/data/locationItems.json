@@ -549,6 +549,51 @@
     "remarks": ""
   },
   {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemId": 277,
+    "itemName": "2000ガルド",
+    "itemType": "money",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemId": 278,
+    "itemName": "シャルシーム",
+    "itemType": "sword",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemId": 53,
+    "itemName": "ニードルグローブ",
+    "itemType": "knuckle",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemId": 198,
+    "itemName": "ジェムロッド",
+    "itemType": "cane",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "itemId": 197,
+    "itemName": "プリティホラガイ",
+    "itemType": "whistle",
+    "remarks": ""
+  },
+  {
     "id": 62,
     "locationId": 14,
     "locationName": "商業の町バロール",

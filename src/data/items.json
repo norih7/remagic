@@ -3012,5 +3012,27 @@
     "buy": "-",
     "sell": 80000,
     "special": ""
+  },
+  {
+    "id": 277,
+    "name": "2000ガルド",
+    "type": "money",
+    "effect": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": "",
+    "special": ""
+  },
+  {
+    "id": 278,
+    "name": "シャルシーム",
+    "type": "sword",
+    "effect": "斬り+260、突き+200",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 1500,
+    "special": ""
   }
 ]

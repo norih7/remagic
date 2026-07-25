@@ -9,7 +9,10 @@ import { getLocationRecipesData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import SectionTitle from "@/components/SectionTitle";
+import Information from "@/components/Information";
+import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -37,39 +40,69 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle type="flag">1.いざないの密林</SectionTitle>
-        <ol>
-          <li>
+        <div className="mb-4">
+          <p>
             序盤の難関ダンジョンの一つ。
             <br />
             仕掛けが多く、長期滞在のダンジョンになるためアイテムや食材は多めに用意して挑みましょう。
             <br />
             ダンジョンの難易度は高いですが「ルーンボトル」と「リバースドール」を入手して、セフィラを入手しておきましょう。
-          </li>
-          <li>
+          </p>
+          <p>
             このダンジョンは前半と後半に別れており、前半は石像が5体置いてあるフロアにある「逆しまのもの向きあわば真の道開かれん」というキーワードに基づいて謎解きを行う。
-          </li>
-          <li>
-            前半ダンジョンでは「破壊」「混沌」「秩序」「創造」といった4つの石像が置かれており、石像を調べることで向きを変更できる。この向きを逆しまにすればよく、「破壊と創造」「秩序と混沌」というように反対の意味になるように石像を向かい合わせる。石像の場所と向きは下記のマップを参照。
-            <br />
+          </p>
+        </div>
+        <div className="mb-4">
+          <h3>前半: 石像の仕掛け</h3>
+          <ResponsiveImage src="/stories/guide2-jungle-1.jpg" />
+          <p>
+            前半はキャンプイベントを目指します。最初は川のエリアまで移動できない状態ですが、石像の位置を正しく変えると通路が開放されます。まずは石像が5体いる部屋を目指し、画像にあるヒントを得ましょう。前半マップと各種石像の場所は下記を参照ください。
+          </p>
+          <div className="mb-4">
             <Image src="/maps/izanai_01.jpg" alt="" width={480} height={420} />
-            謎解きに成功すると「ドンッ」と音がなり、川を渡ってキャンプイベントの場所まで移動できるようになる。
-          </li>
-          <li>
-            キャンプイベントから先は後半ダンジョンになる。
-            <br />
-            後半ではダンジョンの呪いの源である、5体のモンスターを倒すことが目的になる。
-            <br />
-            モンスターはランダム出現ではなく、後半ダンジョンの行き止まりに存在している。全員倒すと出口が開け、ダンジョンを出ることができる。
-          </li>
-          <li>フィールドに出たら王都インフェリアに向かおう。</li>
-        </ol>
+          </div>
+          <ResponsiveImage src="/stories/guide2-jungle-2.jpg" />
+          <p>
+            川を通るためには「破壊」「混沌」「秩序」「創造」それぞれのの石像を調べ、「破壊と創造」「秩序と混沌」というように反対の意味になるように石像を向かい合わせます。マップを参照に「→」「←」の位置に合わせればOKです。謎解きに成功すると「ドンッ」と音がなり、川を渡ってキャンプイベントの場所まで移動できるようになります。
+          </p>
+          <Information title="隠し宝箱">
+            <ResponsiveImage src="/stories/guide2-jungle-3.jpg" />
+            <p>
+              それぞれの石像の向きをすべて「↓」へして5体の石像がある部屋に行くと隠し宝箱が出現します。（この仕掛けは特にドンと音はしない）「シャルシーム」など強力な武器が入手でき、これらの武器はのちにバロールで入手可能ですがこの時点で入手しておくとダンジョンの攻略が楽になります。
+            </p>
+          </Information>
+          <Information type="warning" title="隠し宝箱の注意点">
+            <p>
+              隠し宝箱の入手タイミングには注意が必要です。もし一度石像を逆さまにして川を通れるようになっていた場合、この宝箱のために石像の向き変えると川が再び通行止めになっています。川を通れる状態はずっと続くのではなく、あくまで石像の位置が正しい間だけです。もし逆さまの謎解きをしたあとに隠し宝箱を入手した場合はもう一度逆さまの謎解きをしなければいけないという点にご注意ください。
+            </p>
+          </Information>
+        </div>
+        <div className="mb-4">
+          <h3>後半: 5体のジャグラー討伐</h3>
+          <p>
+            キャンプイベントから先は後半ダンジョンになります。
+            後半はダンジョンに存在する5体のモンスターを倒すことで出口が開放される仕掛けとなっています。ダンジョン内の探索は必要ですが前半に比べて簡単です。
+          </p>
+          <ResponsiveImage src="/stories/guide2-jungle-4.jpg" />
+          <p>
+            モンスターはランダム出現ではなく、マップ上に敵シンボルとして存在しています。全員倒すと出口が開け、ダンジョンを出ることができます。
+            フィールドに出たら王都インフェリアに向かいましょう。
+          </p>
+          <Information type="warning" title="ルーンボトルの入手">
+            後半マップには「ルーンボトル」が入った宝箱があるので必ず入手しておきましょう。ルーンボトルは貴重なアイテムでこのダンジョンで入手できる「リバースドール」に使うことで「セフィラ」に変化します。セフィラは装備していると獲得ガルドが2倍になるアクセサリで非常におすすめです。
+          </Information>
+        </div>
+        <div className="mb-4">
+          <GuideList
+            items={[
+              {
+                title: "ルーンボトルやセフィラについての解説",
+                href: "/systems/rune",
+              },
+            ]}
+          ></GuideList>
+        </div>
 
-        <h4>お得な情報</h4>
-        <ul className="mb-8">
-          <li>
-            <a href="/systems/rune">セフィラの入手</a>
-          </li>
-        </ul>
         <LocationItems data={itemsData} locationIds={[10]} />
         <LocationRecipes data={recipesData} locationIds={[10]} />
         <LocationLenses data={lensesData} locationIds={[10]} />
