@@ -594,6 +594,51 @@
     "remarks": ""
   },
   {
+    "id": "",
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "itemType": "useItem",
+    "remarks": "武器屋の入り口付近にある植木"
+  },
+  {
+    "id": "",
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "itemId": 79,
+    "itemName": "ベルベーヌ",
+    "itemType": "useItem",
+    "remarks": "ホテルインフェリア 2Fにある花瓶"
+  },
+  {
+    "id": "",
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "itemType": "useItem",
+    "remarks": "インフェリア城 東館牢屋の上の階にある壺"
+  },
+  {
+    "id": "",
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "itemType": "useItem",
+    "remarks": "インフェリア城 西館兵士の待機場にある木箱"
+  },
+  {
+    "id": "",
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "itemType": "useItem",
+    "remarks": "インフェリア城 料理場にある果物のカゴ"
+  },
+  {
     "id": 62,
     "locationId": 14,
     "locationName": "商業の町バロール",

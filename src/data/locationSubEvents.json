@@ -9,15 +9,6 @@
     "remarks": ""
   },
   {
-    "id": 2,
-    "locationId": 4,
-    "locationName": "学問の町ミンツ",
-    "eventId": 2,
-    "eventName": "テイルズクイズ",
-    "eventPath": "/path/to",
-    "remarks": ""
-  },
-  {
     "id": 3,
     "locationId": 4,
     "locationName": "学問の町ミンツ",
@@ -46,15 +37,24 @@
   },
   {
     "id": 6,
+    "locationId": 13,
+    "locationName": "バロール港",
+    "eventId": 1,
+    "eventName": "ピエールとカトリーヌ",
+    "eventPath": "/subevents/catarine",
+    "remarks": "インフェリアとバロールの定期連絡船（有料）でイベント 見逃しやすいので注意"
+  },
+  {
+    "id": 7,
     "locationId": 14,
     "locationName": "商業の町バロール",
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": ""
+    "remarks": "バロールの町で発生するイベント"
   },
   {
-    "id": 7,
+    "id": 8,
     "locationId": 16,
     "locationName": "熱砂の町 シャンバール",
     "eventId": 1,
@@ -63,7 +63,7 @@
     "remarks": ""
   },
   {
-    "id": 8,
+    "id": 9,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "eventId": 1,

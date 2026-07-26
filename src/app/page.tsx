@@ -64,6 +64,18 @@ export default async function HomePage() {
                 >
                   いざないの密林〜霊峰ファロース
                 </Link>
+                をアップデート。バロールまでの攻略情報を加筆しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/25</span>
+              <span>
+                <Link
+                  href="/stories/guide2"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  いざないの密林〜霊峰ファロース
+                </Link>
                 をアップデート。いざないの密林の攻略情報を加筆しました。
               </span>
             </li>
