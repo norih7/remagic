@@ -876,9 +876,9 @@
     "id": 88,
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "itemId": 54,
-    "itemName": "アークウインド",
-    "itemType": "spear",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "itemType": "useItem",
     "remarks": ""
   },
   {

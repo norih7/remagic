@@ -20,6 +20,7 @@ export const storyLinks = {
   guide2: {
     title: "いざないの密林〜ファロース",
     path: "/stories/guide2",
+    image: "/link-headers/stories-guide2.jpg",
     desc: "序盤の難所いざないの密林の攻略情報をチェック",
   },
   guide3: {
