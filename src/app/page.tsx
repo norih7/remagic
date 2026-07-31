@@ -56,6 +56,19 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/07/31</span>
+              <span>
+                <Link
+                  href="/subevents/beppo"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  ベッポとのかくれんぼ
+                </Link>
+                を新規作成。
+              </span>
+            </li>
+
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/07/28</span>
               <span>
                 <Link

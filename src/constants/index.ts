@@ -92,6 +92,11 @@ export const subeventLinks = {
     image: "/link-headers/subevents-kremerball.jpg",
     desc: "",
   },
+  beppo: {
+    title: "ベッポとのかくれんぼ",
+    path: "/subevents/beppo",
+    desc: "",
+  },
   syanballoon: {
     title: "シャンバルーン",
     path: "/subevents/syanballoon",
