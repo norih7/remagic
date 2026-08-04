@@ -24,7 +24,7 @@ export const storyLinks = {
     desc: "序盤の難所いざないの密林の攻略情報をチェック",
   },
   guide3: {
-    title: "アイメン〜チャットの小屋",
+    title: "セレスティア〜チャットの小屋",
     path: "/stories/guide3",
     image: "/link-headers/stories-guide3.jpg",
     desc: "セレスティア突入後のストーリーガイド 難易度の高いチャットの小屋も解説",

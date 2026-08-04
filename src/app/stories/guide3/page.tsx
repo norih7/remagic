@@ -10,11 +10,13 @@ import { getLocationLensesData } from "@/lib/db";
 import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
 import SectionTitle from "@/components/SectionTitle";
+import Information from "@/components/Information";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "アイメン〜チャットの小屋";
+const title = "セレスティア突入〜チャットの小屋";
 export const metadata = {
   title,
   description: "",
@@ -35,108 +37,159 @@ export default async function HomePage() {
         </p>
       </PageSummary>
       <section className="mb-12">
-        <SectionTitle type="flag">1.アイメンの町〜アイメン駅</SectionTitle>
-        <ol>
-          <li>
-            セレスティアでは「岬の砦」に到着している。フィールドに出て近くにあるアイメンの町に入るとイベント。
-            <br />
-            メルディの家で一泊後、戻ってきていないメルディとキールを探しに図書館へ向かう。
-          </li>
-          <li>
-            図書館は給水タンクの斜め向かい側の通路から入っていける。場所が少し見えづらいため下記を参考にどうぞ。
-            <br />
-            <img src="/maps/imen_map.jpg" alt="" width={488} height={355} />
-          </li>
-          <li>
-            図書館で2人と合流後、晶霊技師「ガレノス」に会うためにルイシカへ向かうことになる。
-            <br />
-            フィールドに出て東にあるアイメン駅へ向かおう。
-          </li>
-          <li>
-            アイメン駅では機関車を動かすための、クレーメル機関が無いため運行できないと聞く。
-            <br />
-            お使いになるが再びアイメンの町へ戻り、武器屋にあるクレーメル機関をもらってこよう。
-          </li>
-          <li>
-            機関車に乗り込むとミニゲームが発生。
-            <br />
-            このミニゲームで全て手紙を届けることができるとメルディの称号が手に入る。
-          </li>
-          <li>ルイシカ駅をおりたら、ルイシカの町へ向かおう。</li>
-        </ol>
-        <LocationItems data={itemsData} locationIds={[50, 19, 20]} />
-        <LocationRecipes data={recipesData} locationIds={[50, 19, 20]} />
-        <LocationLenses data={lensesData} locationIds={[50, 19, 20]} />
-        <LocationSubEvents data={subEventData} locationIds={[50, 19, 20]} />
+        <SectionTitle type="flag">1.岬の砦〜アイメン駅</SectionTitle>
+        <div className="mb-8">
+          <h3>峠の砦</h3>
+          <ol>
+            <li>
+              セレスティアの「岬の砦」に到着します。ここではレンズがあるのでぜひ入手しておきましょう。次の目的地はメルディの故郷であるアイメンで、フィールドに出てすぐのところにあります。
+            </li>
+          </ol>
+          <LocationLenses data={lensesData} locationIds={[50]} />
+        </div>
+        <div className="mb-8">
+          <h3>アイメンの町</h3>
+          <ol>
+            <li>
+              アイメンの町に入るとイベントがありメルディの家へ向かいます。その後、休憩しているファラを残してアイメンの町を探索します。武器屋、道具屋、給水タンクと回ります。
+              <br />
+              最後にメルディの家で一泊後、戻ってきていないメルディとキールを探しに図書館へ向かう。
+            </li>
+            <li>
+              図書館は給水タンクの斜め向かい側の通路から入っていけますが場所が少し見えづらいため下記を参考にどうぞ。
+              <br />
+              <img src="/maps/imen_map.jpg" alt="" width={488} height={355} />
+            </li>
+            <li>
+              図書館で2人と合流後、晶霊技師「ガレノス」に会うためにルイシカへ向かうことになる。
+              <br />
+              フィールドに出て東にあるアイメン駅へ向かいましょう。
+            </li>
+          </ol>
+          <LocationItems data={itemsData} locationIds={[19, 20]} />
+          <LocationRecipes data={recipesData} locationIds={[19, 20]} />
+          <LocationLenses data={lensesData} locationIds={[19, 20]} />
+          <LocationSubEvents data={subEventData} locationIds={[19, 20]} />
+        </div>
+        <div className="mb-8">
+          <h3>アイメン駅</h3>
+          <ol>
+            <li>
+              アイメン駅では機関車を動かすための「クレーメル機関」が無いため運行できないと聞きます。
+              お使いになりますが再びアイメンの町へ戻り、武器屋にいけばクレーメル機関を2000ガルドで購入できます。
+            </li>
+            <li>
+              機関車に乗り込むとミニゲームが発生。このミニゲームでは全て手紙を届けることができるとメルディの称号が手に入りますが特にアイテムの入手はありません。
+            </li>
+            <li>ルイシカ駅をおりたら、ルイシカの町へ向かいます。</li>
+          </ol>
+          <LocationItems data={itemsData} locationIds={[20]} />
+          <LocationRecipes data={recipesData} locationIds={[20]} />
+          <LocationLenses data={lensesData} locationIds={[20]} />
+          <LocationSubEvents data={subEventData} locationIds={[20]} />
+        </div>
       </section>
 
       <section className="mb-12">
         <SectionTitle type="flag">2.ルイシカ〜廃坑駅</SectionTitle>
-        <ol>
-          <li>
-            ルイシカでは奥の研究室(ガレノスの家)の地下へ行くとイベント。
-            <br />
-            一連のイベントでバリルの存在や極光の話を聞いたら、フィールドに出てルイシカ駅へ向かおう。
-          </li>
-          <li>
-            港町ペイルティに向かうためには廃坑を通っていく必要があり、ルイシカ駅から路線が出ている。
-          </li>
-          <li>
-            ルイシカ駅では「廃坑駅」を選択する。廃坑へ向かう途中にはミニゲームがある。
-            <br />
-            ミニゲームでは敵に追いつかれる度に下記モンスターと戦闘になる。一定時間が立てばゲームは終了する。
-            <br />
-            <br />
-            フライングソール HP:3800(NORMAL) 耐:火、雷 弱:光
-            <br />
-            ハードホーン HP:6200(NORMAL) 耐:地、雷 弱:水
-          </li>
-          <li>廃坑駅に到着後は、先にある廃坑ダンジョンをクリアしよう。</li>
-        </ol>
-        <LocationItems data={itemsData} locationIds={[21]} />
-        <LocationRecipes data={recipesData} locationIds={[21]} />
-        <LocationLenses data={lensesData} locationIds={[21]} />
-        <LocationSubEvents data={subEventData} locationIds={[21]} />
+        <div className="mb-8">
+          <h3>ルイシカ</h3>
+          <ol>
+            <li>
+              ルイシカでは奥の研究室(ガレノスの家)の地下へ行くとイベント。
+              一連のイベントでバリルの存在や極光の話を聞いたら、次の目的地「廃坑駅」へ向かうため再びルイシカ駅へ向かいます。
+              <Information
+                type="warning"
+                title="ワンダーシェフはガレノスと会ってから"
+              >
+                ルイシカにあるワンダーシェフのオブジェはガレノスと会ってから登場します。はじめてルイシカへ訪れた時には何もない状態なので、廃坑駅へ向かう際に回収しましょう。
+              </Information>
+            </li>
+          </ol>
+          <LocationItems data={itemsData} locationIds={[21]} />
+          <LocationRecipes data={recipesData} locationIds={[21]} />
+          <LocationLenses data={lensesData} locationIds={[21]} />
+          <LocationSubEvents data={subEventData} locationIds={[21]} />
+        </div>
+        <div className="mb-8">
+          <h3>廃坑駅への出発</h3>
+          <ol>
+            <li>
+              ルイシカ駅の駅員に話しかけると新しく「廃坑駅」を選択できるようになっています。
+              廃坑駅へ到着するまでにはミニゲームとなり、一定時間経過すると終了します。ミニゲームは線路を追いかけてくる敵を爆弾で撃墜するもの。敵に追いつかれると敵と戦闘となります。敵を全員撃墜するとリッドの称号がもらえます。
+            </li>
+            <li>
+              <h4>追いつかれると戦闘となる敵</h4>
+              ・フライングソール HP:3800(NORMAL) 耐:火、雷 弱:光
+              <br />
+              ・ハードホーン HP:6200(NORMAL) 耐:地、雷 弱:水
+            </li>
+          </ol>
+          <LocationItems data={itemsData} locationIds={[20]} />
+          <LocationRecipes data={recipesData} locationIds={[20]} />
+          <LocationLenses data={lensesData} locationIds={[20]} />
+          <LocationSubEvents data={subEventData} locationIds={[20]} />
+        </div>
       </section>
 
       <section className="mb-12">
         <SectionTitle type="flag">3.地晶霊の廃坑</SectionTitle>
-        <ol>
-          <li>
-            <h4>地晶霊の廃坑 前半マップ</h4>
-            「！」の部分はセレスティア七代秘宝の「コルレーンのつぼ」があり、スコップを持っていれば入手可能。
-            <br />
-            <Image src="/maps/mine_map.jpg" alt="" width={524} height={524} />
-          </li>
-          <li>
-            このダンジョンは前半・後半(リフト起動後の下層)と別れており、前半は入口近くの休憩所にあるロッカーから道具を取り出しながら進んでいく必要がある。前半は下記のような手順で進めていく。
-            <br />
-            <br />
-            1.「ダイナマイト」で塞いでいる岩を爆破
-            <br />
-            2.「ダイナマイト」でリフト通路を塞いでいる岩を爆破
-            <br />
-            3.「鍵」でリフトを起動して下層へと下りる
-            <br />
-            ※「スコップ」はクリアには必要はないが通路の確保に使える。またコルレーンのつぼを入手するためにも必要。
-          </li>
-          <li>
-            リフトを起動して下層に行くとキャンプイベントが発生してミニゲーム「ウィス」を行うことになる。
-            <br />
-            終了後には入手でき、以後いつでも楽しめる。
-          </li>
-          <li>
-            下層では岩の爆破の必要があるが、ベルトコンベアの近くにダイナマイトがあるため休憩室に戻る必要は無い。土砂で塞がっている道があるが、開通しなくてもクリアすることができる。
-          </li>
-          <li>
-            奥に行くと「ノームの集落」があり、そこを進んだ先でボス「ノーム」との戦闘になる。
-            <br />
-            勝利後には地の大晶霊ノームと契約する。
-          </li>
-          <li>
-            ノームの集落を出たらノームが出口を案内してくれる。フィールドに出たら大陸の先端にある小屋を目指そう。
-          </li>
-        </ol>
+        <div className="mb-8">
+          <p>
+            このダンジョンは前半・後半(リフト起動後の下層)と別れており、前半は入口近くの休憩所にあるロッカーから道具を取り出しながら障害物を除去しながら進んでいく必要があります。主に使うのは「ダイナマイト」と「鍵」で、「スコップ」クリアに必須ではありませんが通路のショートカットや「コレルーンの壺」を入手するために使います。
+          </p>
+          <ResponsiveImage src="/stories/guide3-mine-break-room.jpg" />
+        </div>
+        <div className="mb-8">
+          <h3>地晶霊の廃坑 前半</h3>
+          <ol>
+            <li>
+              <Image src="/maps/mine_map.jpg" alt="" width={524} height={524} />
+              <Information title="コレルーンの壺">
+                「！」の部分はセレスティア七代秘宝の「コルレーンのつぼ」があり、スコップを持っていれば入手可能。
+              </Information>
+            </li>
+            <li>
+              前半は以下の手順で進行します。
+              <br />
+              1.「ダイナマイト」で塞いでいる岩を爆破
+              <br />
+              2.「ダイナマイト」でリフト通路を塞いでいる岩を爆破
+              <br />
+              3.「鍵」でリフトを起動して下層へと下りる
+              <br />
+              ※「スコップ」はクリアには必要はないが通路の確保に使える。またコルレーンのつぼを入手するためにも必要。
+            </li>
+            <li>
+              <Information type="warning" title="ダンジョン内のレバー">
+                <p>
+                  ダンジョン内には複数のレバーがあり、調べるとコンベアから宝箱が運ばれてきます。「オールディバイト」などの貴重なものがありますがモンスター「フェイク」も存在します。フェイクはかなりの強敵で、アイテムドロップもライフボトルをドロップするだけなので逃げることを推奨します。
+                </p>
+                <ResponsiveImage src="/stories/guide3-mine-fake.jpg" />
+              </Information>
+            </li>
+          </ol>
+        </div>
+        <div className="mb-8">
+          <h3>地晶霊の廃坑 後半</h3>
+          <ol>
+            <li>
+              リフトを起動して下層に行くとキャンプイベントが発生してミニゲーム「ウィス」を行います。
+              終了後にはウィスを入手でき、いつでも楽しめるようになります。
+            </li>
+            <li>
+              <ResponsiveImage src="/stories/guide3-mine-dynamite.jpg" />
+              下層では岩の爆破の必要ですが、ベルトコンベアの近くにダイナマイトがあるため休憩室に戻る必要はありません。土砂で塞がっている道もありますが、開通しなくても迂回すればアイテム回収が可能でクリアにも必要ありません。
+            </li>
+            <li>
+              奥に行くと「ノームの集落」があります。小さいノームたちは敵ではなく話かけることでアイテム購入や完全回復ができます。進んだ先ではボス「ノーム」との戦闘になり、
+              勝利後には地の大晶霊ノームと契約できます。
+            </li>
+            <li>
+              ノームの集落を出たらノームが出口を案内してくれます。フィールドに出たら大陸の先端にある小屋を目指します。
+            </li>
+          </ol>
+        </div>
         <div className="boss-advice margin-bottom-small mb-8">
           <h4>BOSS：『ノーム』HP：16160(NORML) 耐性:地 弱点:風</h4>
           <p>
