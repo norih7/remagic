@@ -2,6 +2,7 @@
 module.exports = {
   siteUrl: "https://remagic.brclover.com",
   generateRobotsTxt: false,
+  generateLastmod: false,
   outDir: "out",
   exclude: ["/sitemap.xml", "/systems/item/*"],
 
