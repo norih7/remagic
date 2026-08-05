@@ -56,6 +56,18 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/08/05</span>
+              <span>
+                <Link
+                  href="/stories/guide3"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  セレスティア突入〜チャットの小屋
+                </Link>
+                をアップデート。ページ全体を書き直しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/07/31</span>
               <span>
                 <Link

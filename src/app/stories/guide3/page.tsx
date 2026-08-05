@@ -12,6 +12,8 @@ import Image from "next/image";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -204,128 +206,100 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle type="flag">4.チャットの小屋</SectionTitle>
-        <ol>
-          <li>
-            小屋の中にあるリビングに行くとイベントが発生し、ダンジョンへと移動する。
+        <div className="mb-8">
+          <ResponsiveImage src="/stories/guide3-chat-contraption.jpg" />
+          <p>
+            小屋の中にあるリビングに行くとイベントが発生し、地下のダンジョンへと移動します。
             <br />
-            このダンジョンは8階構成になっていて、各階毎に仕掛けがある。共通しているのは
+            このダンジョンは8階構成になっていて、各階では
             <span className="daiji">
-              各階で「アヒルのおもちゃ」「ゼンマイ」を入手して、中央の水路にあるスイッチを押す
+              「アヒルのおもちゃ」「ゼンマイ」を入手して、中央の水路にあるスイッチを押す
             </span>
-            ということだ。
-          </li>
-          <li>
-            ちなみにリッド達が眠っていた部屋は休憩室にもなっていて、ソファーを調べると休むことができる。
-            <br />
-            また限定的だがグミなどのアイテムを購入することができる。
-          </li>
-          <li>
-            <h4>地下8階</h4>
-            このフロアの仕掛け : ルーレットであてた先の部屋からゼンマイを入手。
-            <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>キーアイテムの種類</th>
-                  <th>入手場所、方法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>アヒルのおもちゃ</td>
-                  <td>右側通路 奥の部屋にあるアヒルのおもちゃを調べる。</td>
-                </tr>
-                <tr>
-                  <td>ゼンマイ</td>
-                  <td>ルーレットの部屋、左下の部屋で入手。</td>
-                </tr>
-              </tbody>
-            </table>
-            左側通路
-            奥の部屋にある機械を調べると4つの矢印がある部屋の仕掛けが動く。この部屋で5つのポールを調べるとルーレットが周り、止まった部屋に入ることができる。ここで左下の部屋に入るとゼンマイを入手できる。
-          </li>
-          <li>
-            <h4>地下7階</h4>
-            このフロアの仕掛け :
-            扉の前に立っている石像を倒してアイテムを入手する。
-            <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>キーアイテムの種類</th>
-                  <th>入手場所、方法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>アヒルのおもちゃ</td>
-                  <td>左側通路の扉を塞いでいる石像を倒す。</td>
-                </tr>
-                <tr>
-                  <td>ゼンマイ</td>
-                  <td>右側通路の扉を塞いでいる石像を倒す。</td>
-                </tr>
-              </tbody>
-            </table>
-            このフロアは石像を倒して壊すとアイテムが出てくる。うまく裏側の部屋に回り込み、内側から扉を空けてやればいい。
-          </li>
-          <li>
-            <h4>地下6階</h4>
-            このフロアの仕掛け :
-            扉に貼られている紙をソーサラーリングで燃やして扉を出現させる。
-            <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>キーアイテムの種類</th>
-                  <th>入手場所、方法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>アヒルのおもちゃ</td>
-                  <td>右側通路側。</td>
-                </tr>
-                <tr>
-                  <td>ゼンマイ</td>
-                  <td>左側通路奥の部屋。</td>
-                </tr>
-              </tbody>
-            </table>
-            左側通路
-            手前の部屋にある機械を調べるとフロアに風が吹いてくる。この状態になると各所にある張り紙がヒラヒラする場所があり、これをソーサラーリングで燃やすことで扉が出現する。
-          </li>
-          <li>
-            <h4>地下5階</h4>
-            このフロアの仕掛け : 出題されるクイズに正解してアイテムを入手する。
-            <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>キーアイテムの種類</th>
-                  <th>入手場所、方法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>アヒルのおもちゃ</td>
-                  <td>左側通路側 奥の部屋のクイズに正解する。</td>
-                </tr>
-                <tr>
-                  <td>ゼンマイ</td>
-                  <td>
-                    左側通路側
-                    手前の部屋側から入った奥の部屋でクイズに正解する。
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            「？」がある部屋の中央に行くと下記クイズが出題され、正解すると()内のアイテムが出現する。
-            <br />
+            という仕掛けがあります
+          </p>
+          <p>
+            リッド達が眠っていた部屋は休憩室にもなっていて、ソファーを調べるとHP/TPが完全回復するので活用しましょう。
+            また壁の時計を調べるとグミなどのアイテムを購入することができます。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>地下8階</h3>
+          <p>
+            このフロアの仕掛け : ルーレットが止まった先の部屋からゼンマイを入手
+          </p>
+          <RoundedContainer>
+            <RoundedItem title="アヒルのおもちゃ" className="mb-3">
+              右側通路の奥の部屋にそのまま置いてある
+            </RoundedItem>
+            <RoundedItem title="ゼンマイ">
+              ルーレットの部屋で左下の部屋へ進むと入手
+            </RoundedItem>
+          </RoundedContainer>
+          <p>
+            アヒルのおもちゃは右側の奥の部屋で簡単に手に入ります。ゼンマイを入手するためにはまず左側通路の奥の部屋にある機械を調べ、以降の仕掛けが動くようにします（重要）。その後、右側通路の手前の部屋を進んでいくとルーレットの部屋に辿りつきます。ここでは5つのポールをすべて灯すとルーレットが動作して止まった部屋に入れる仕掛けがあり、ルーレットで左の部屋に入るとゼンマイを入手できます。
+          </p>
+          <ResponsiveImage src="/stories/guide3-chat-8.jpg" />
+          <p>
+            ルーレットは部屋を出ずとも何度もやり直せるので左の部屋だけ目指しましょう。それ以外の部屋はハズレで、右側の部屋では「パナシーアボトル」が手に入りますが労力には見合わない場合がほとんどです。
+          </p>
+          <p>
+            アヒルとゼンマイが揃ったら中央の水路を調べ、奥のスイッチを押して上の階へ進みます。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>地下7階</h3>
+          <p>
+            このフロアの仕掛け: 部屋を出ることで石像を倒してアイテムを入手する
+          </p>
+          <RoundedContainer>
+            <RoundedItem title="アヒルのおもちゃ" className="mb-3">
+              左側通路の扉を塞いでいる石像を倒す
+            </RoundedItem>
+            <RoundedItem title="ゼンマイ">
+              右側通路の扉を塞いでいる石像を倒す
+            </RoundedItem>
+          </RoundedContainer>
+          <p>
+            このフロアは石像を倒して壊すとアヒルとゼンマイが出てきます。うまく裏側の部屋に回り込み、扉を空けて石像を倒すように移動します。左側通路の部屋から迂回して右側通路へ出ることができ、扉を開いて石像を倒すとゼンマイを入手できます。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>地下6階</h3>
+          <p>
+            このフロアの仕掛け:
+            扉に貼られている紙をソーサラーリングで燃やして隠し通路を出現させる
+          </p>
+          <RoundedContainer>
+            <RoundedItem title="アヒルのおもちゃ" className="mb-3">
+              左側通路の奥の部屋にある隠し通路
+            </RoundedItem>
+            <RoundedItem title="ゼンマイ">
+              右側通路の手前の部屋を進んだところにある隠し通路
+            </RoundedItem>
+          </RoundedContainer>
+          <ResponsiveImage src="/stories/guide3-chat-6.jpg" />
+          <p>
+            左側通路の手前の部屋にある機械を調べるとフロアに風が吹いてきます。この状態では張り紙がヒラヒラするようになり、紙をソーサラーリングで燃やすと隠し通路出現します。ただしダミーでソーサラーリングを撃っても何も反応しないところがあります。粘っても何もないため反応がなければすぐ次へ行きましょう。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>地下5階</h3>
+          <p>
+            このフロアの仕掛け: 出題されるクイズに正解してアイテムを入手する。
+          </p>
+          <RoundedContainer>
+            <RoundedItem title="アヒルのおもちゃ" className="mb-3">
+              左側通路の奥の部屋でクイズに正解する
+            </RoundedItem>
+            <RoundedItem title="ゼンマイ">
+              左側通路側の手前の部屋でクイズに正解する
+            </RoundedItem>
+          </RoundedContainer>
+          <p>
+            「？」がある部屋の中央に行くと下記クイズが出題され、正解すると()内のアイテムが出現します。クイズは時間制限があり、時間内に回答できなかったり間違えると敵と戦闘になります。
+          </p>
+          <h4>クイズ一覧</h4>
+          <p>
             ・「あかちゃんがかけて大人がかけないものは？」→よだれかけ」(ミックスグミ)
             <br />
             ・「きれいにすればするほど汚くなるのは？」→「ぞうきん」(パイングミ)
@@ -336,151 +310,130 @@ export default async function HomePage() {
             <span className="daiji">アヒル</span>)<br />
             ・「板の上に止まるほうちょうは？」→「ほうちょう」(
             <span className="daiji">ネジ</span>)
-          </li>
-          <li>
-            <h4>地下4階</h4>
-            このフロアの仕掛け: 機械を調べ隠し通路へ入ってアイテムを入手する。
-            <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>キーアイテムの種類</th>
-                  <th>入手場所、方法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>アヒルのおもちゃ</td>
-                  <td>左側通路側 奥の部屋。</td>
-                </tr>
-                <tr>
-                  <td>ゼンマイ</td>
-                  <td>右側通路側 奥の部屋。</td>
-                </tr>
-              </tbody>
-            </table>
-          </li>
-          <li>
-            <h4>地下3階</h4>
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>地下4階</h3>
+          <p>
+            このフロアの仕掛け: 機械にある隠し通路へ入ってアイテムを入手する
+          </p>
+          <RoundedContainer>
+            <RoundedItem title="アヒルのおもちゃ" className="mb-3">
+              左側通路側 奥の部屋の隠し通路
+            </RoundedItem>
+            <RoundedItem title="ゼンマイ">
+              右側通路側 奥の部屋の隠し通路
+            </RoundedItem>
+          </RoundedContainer>
+          <p>
+            このフロアはシンプルに左右それぞれの奥の部屋にある機械に近づくと隠し通路が出現するのでそのまま奥に進みましょう。4階にはレンズがあるため回収しておきましょう。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>地下3階</h3>
+          <p>
             このフロアの仕掛け:
             スイッチの上に石像を移動して動く床の方向を変更することで部屋に入る。
+          </p>
+          <RoundedContainer>
+            <RoundedItem title="アヒルのおもちゃ" className="mb-3">
+              左側通路の奥の部屋
+            </RoundedItem>
+            <RoundedItem title="ゼンマイ">
+              左側通路の手前の部屋（仕掛けなし）
+            </RoundedItem>
+          </RoundedContainer>
+          <ResponsiveImage src="/stories/guide3-chat-3.jpg" />
+          <p>
+            ゼンマイは仕掛けなしで入手可能です。アヒルのおもちゃは画像の位置までに移動して、通路側に操作キーを押しながら進んでいきましょう。
+          </p>
+          <Information type="warning" title="みずぐもの入手">
+            3回では水属性攻撃を50%軽減させる「みずぐも」が入手できます。少しややこしい仕掛けがありますが、強力なアイテムなのでぜひ入手しておきましょう。入手方法:
+            左側通路の入り口から3番目の部屋で石像をスイッチの上まで移動。これにより右側通路のコンベアの向きが変わり、奥の部屋でみずぐもを入手。みずぐも入手後はその部屋の石像をスイッチの上まで移動して再度コンベアの向きを戻します。
+          </Information>
+        </div>
+        <div className="mb-8">
+          <h3>地下2階</h3>
+          <p>このフロアの仕掛け: 壁掛け絵画の向きを変更する。</p>
+          <RoundedContainer>
+            <RoundedItem title="アヒルのおもちゃ" className="mb-3">
+              左側通路の奥の部屋
+            </RoundedItem>
+            <RoundedItem title="ゼンマイ">右側通路の奥の部屋</RoundedItem>
+          </RoundedContainer>
+          <p>
+            キーアイテムの「アヒルのおもちゃ」と「ゼンマイ」は左右それぞれの奥の部屋で簡単に手に入りますが、上の階に行くためには別の仕掛けを解く必要があります。仕掛けを解かないと階段で滑り、上の階へいけません。
             <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>キーアイテムの種類</th>
-                  <th>入手場所、方法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>アヒルのおもちゃ</td>
-                  <td>左側通路側 奥の部屋の石像前。</td>
-                </tr>
-                <tr>
-                  <td>ゼンマイ</td>
-                  <td>右側通路側 手前の部屋。(仕掛け後開く)</td>
-                </tr>
-              </tbody>
-            </table>
-          </li>
-          <li>
-            <h4>地下2階</h4>
-            このフロアの仕掛け : 壁掛け絵画の向きを変更する。
-            <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>キーアイテムの種類</th>
-                  <th>入手場所、方法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>アヒルのおもちゃ</td>
-                  <td>左側通路側 奥の部屋。</td>
-                </tr>
-                <tr>
-                  <td>ゼンマイ</td>
-                  <td>右側通路側 奥の部屋。</td>
-                </tr>
-              </tbody>
-            </table>
-            キーアイテムの「アヒルのおもちゃ」と「ゼンマイ」は簡単に手に入るが、上の階に行くためには別の仕掛けを解かなければならない。(階段で滑るため)
-            <br />
-            この部屋には同じ絵柄の壁掛け絵画が3セットあり、調べると回転する絵画を下記の位置に会わせればよい。ちなみに調べても動かない絵画は正しい向きを表している。
-            <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>絵画の種類</th>
-                  <th>絵画の方向</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>ルーティ(黒髪ショートカット女性)</td>
-                  <td>→</td>
-                </tr>
-                <tr>
-                  <td>フィリア(緑髪ロングヘアー女性)</td>
-                  <td>↓</td>
-                </tr>
-                <tr>
-                  <td>スタン(金髪男性)</td>
-                  <td>←</td>
-                </tr>
-              </tbody>
-            </table>
-          </li>
-          <li>
-            <h4>地下1階</h4>
-            このフロアの仕掛け : 2つの仕掛け。
-            <br />
-            <br />
-            <table>
-              <thead>
-                <tr>
-                  <th>キーアイテムの種類</th>
-                  <th>入手場所、方法</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>アヒルのおもちゃ</td>
-                  <td>右側通路側 奥の部屋。</td>
-                </tr>
-                <tr>
-                  <td>ゼンマイ</td>
-                  <td>左側通路側 奥の部屋。</td>
-                </tr>
-              </tbody>
-            </table>
-            右側通路側の奥にある部屋ではタルを動かしてアヒルのおもちゃを入手する。
-            <br />
-            分かりにくいがアヒルのおもちゃの前にもタルがあり、これをずらさないと入手できないので注意。
-            <br />
-            左側通路側の奥にある部屋では散らかっている本を拾って、本棚に戻してやると隠し扉が開く。
-            <br />
-            本棚は細かく調べないと戻せないので注意。
-          </li>
-          <li>
-            地下1階の仕掛けを解いて水路のスイッチを押すと、出口にモンスターが待ち構えるようになり、近づくとボス「ガーディアント」と戦闘になる。
-            <br />
-            勝利後、地下1階の出口を抜けるとイベント。チャットの子分になる選択をしておこう。
-          </li>
-          <li>
-            これ以降から海賊船「バンエルティア号」を扱えるようになる。氷晶霊の手がかりを得るために、北西にあるペイルティへ向かおう。
-          </li>
-        </ol>
-        <div className="boss-advice margin-bottom-small">
-          <h4>
-            BOSS：『ガーディアント』HP：30000(NORML) 耐性:雷 弱点:水、火、氷
-          </h4>
+            仕掛けはこの階にある絵を正しい向きへ回転させることで、絵画を下記の位置に会わせれば滑る階段が解除されます。ちなみに調べても動かない絵画は正しい向きを表しています。
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <RoundedItem title="ルーティ(黒髪女性)" className="mb-3">
+              <div className="bg-slate-600 text-white rounded-sm text-center mb-1 font-black">
+                →
+              </div>
+              <Image
+                src="/stories/guide3-chat-rutee.jpg"
+                width="145"
+                height="220"
+                alt=""
+              />
+            </RoundedItem>
+            <RoundedItem title="スタン(金髪男性)" className="mb-3">
+              <div className="bg-slate-600 text-white rounded-sm text-center mb-1 font-black">
+                ←
+              </div>
+              <Image
+                src="/stories/guide3-chat-stun.jpg"
+                width="145"
+                height="220"
+                alt=""
+              />
+            </RoundedItem>
+            <RoundedItem title="フィリア(緑髪女性)" className="mb-3">
+              <div className="bg-slate-600 text-white rounded-sm text-center mb-1 font-black">
+                ↓
+              </div>
+              <Image
+                src="/stories/guide3-chat-philia.jpg"
+                width="145"
+                height="220"
+                alt=""
+              />
+            </RoundedItem>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h3>地下1階</h3>
+          <p>このフロアの仕掛け: それぞれ異なる仕掛けを解く</p>
+          <RoundedContainer>
+            <RoundedItem title="アヒルのおもちゃ" className="mb-3">
+              右側通路の奥の部屋にあるタルを移動して入手
+            </RoundedItem>
+            <RoundedItem title="ゼンマイ">
+              左側通路の奥の部屋の仕掛けを解く
+            </RoundedItem>
+          </RoundedContainer>
+          <ResponsiveImage src="/stories/guide3-chat-1.jpg" />
+          <p>
+            右側通路側の奥にある部屋ではタルを動かしてアヒルのおもちゃを入手します。
+            分かりにくいですががアヒルのおもちゃの前にもタルがあり、これをずらさないと入手できないので注意。画像のように部屋全体のタルを移動して移動経路を確保しましょう。
+          </p>
+          <p>
+            左側通路側の奥にある部屋では散らかっている本を拾い、本棚に戻してやると隠し扉が開きます。一度に全部本を拾ってから本棚に向かい⚪︎ボタンを押して戻していけばいいのですが、左右の本棚の移動など細かく調べる必要があります。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>最後のスイッチとボス戦</h3>
+          地下1階の仕掛けを解いて水路のスイッチを押すと、出口にモンスターが待ち構えるようになり、近づくとボス「ガーディアント」と戦闘になります。
+          勝利後は上の階へ行き、ダンジョンを抜けるとイベント。イベントではチャットの子分になる選択をしておきましょう。
+          その後バンエルティア号のイベントも進み、北西にあるペイルティへ到着します。
+        </div>
+        <div className="mb-8">
+          <div className="boss-advice margin-bottom-small">
+            <h4>
+              BOSS：『ガーディアント』HP：30000(NORML) 耐性:雷 弱点:水、火、氷
+            </h4>
+          </div>
         </div>
         <LocationItems data={itemsData} locationIds={[23]} />
         <LocationRecipes data={recipesData} locationIds={[23]} />
