@@ -10,6 +10,8 @@ import { getLocationLensesData } from "@/lib/db";
 import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
 import SectionTitle from "@/components/SectionTitle";
+import Information from "@/components/Information";
+import CardList from "@/components/CardLIst";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,15 +40,34 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle type="flag">1.港町ペイルティ</SectionTitle>
-        <ol>
-          <li>氷晶霊の山に入るため防寒服を調達しに行くことになる。</li>
-          <li>
-            リッドがメンバーの服を選ぶことになり、次の組み合わせを選ぶまで続くこととなる。
-            <br />
-            メルディ：ケープ、ファラ：ポンチョ、キール：オーバーマント
-          </li>
-          <li>支度が整ったならフィールドに出て氷晶霊の山に向かおう。</li>
-        </ol>
+        <Information type="warning" title="ペイルティでの準備は必須">
+          目的地はペイルティから離れた「氷晶霊の山」ですが、ペイルティで防寒具を揃えていないとダンジョンへ侵入できません。またダンジョンに挑む前にペイルティの道具屋で「フリーズチェック」を1つ購入しておくのもおすすめです。20000ガルドと高いですが戦闘中の凍結を防止してくれます。氷晶霊の山でも1つ入手できますが最終的にはリッド、ファラ2人に装備させるのがおすすめです。
+        </Information>
+        <div className="mb-8">
+          <h3>防寒具選び</h3>
+          <p>
+            まず宿屋（赤い屋根のピンクの煙の建物）の中にいるピンク色の髪の男に話しかけることでイベントが進行していきます。
+            その後、服屋へ向かうと店の前で先ほどの男と遭遇し、店の中で防寒具探しを行うことになります。
+          </p>
+          <p>
+            リッドがメンバーの服を選び、次の組み合わせに辿り着くまで服選びをすることになります。
+          </p>
+          <CardList
+            list={[
+              "メルディ：ケープ",
+              "ファラ：ポンチョ",
+              "キール：オーバーマント",
+            ]}
+          />
+        </div>
+        <div className="mb-8">
+          <p>
+            防寒具やアイテム補充の支度が整ったならフィールドに出て氷晶霊の山に向かいましょう。
+          </p>
+          <Information type="warning" title="町にあるワンダーシェフやレシピ">
+            凍結状態のペイルティでは一部の料理しか手に入らず、氷晶霊の山をクリアして凍結解除されるとすべて入手できるようになります。凍結解除後のペイルティには必ず戻ってくるため、このタイミングですべて回収するのがおすすめです。
+          </Information>
+        </div>
         <LocationItems data={itemsData} locationIds={[24]} />
         <LocationRecipes data={recipesData} locationIds={[24]} />
         <LocationLenses data={lensesData} locationIds={[24]} />
