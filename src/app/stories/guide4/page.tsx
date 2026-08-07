@@ -12,6 +12,7 @@ import Image from "next/image";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import CardList from "@/components/CardLIst";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -76,28 +77,28 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle type="flag">2.氷晶霊の山</SectionTitle>
-        <ol>
-          <li>
-            <h4>氷晶霊の山 全体マップ</h4>
-            <Image
-              src="/maps/hyousyourei_map.jpg"
-              alt=""
-              width={482}
-              height={600}
-            />
-          </li>
-          <li>
-            このダンジョンでは氷が道を邪魔している箇所があるがそこはソーサラーリングを打つことで溶けて通れるようなる。
-          </li>
-          <li>奥へと進んでいき、木箱から「トトのアブラ」を入手する。</li>
-          <li>
-            トトのアブラを持っている状態で赤い氷の柱を調べることで、氷が溶けて通れるようになる。
-            <br />
-            奥へ進んでいくとボス「セルシウス」と戦闘となる。
-            <br />
-            勝利後はバンエルティア号でアイメンの町へ向かおう。
-          </li>
-        </ol>
+        <div className="mb-8">
+          <h3>氷晶霊の山のマップ</h3>
+          <Image
+            src="/maps/hyousyourei_map.jpg"
+            alt=""
+            width={482}
+            height={600}
+          />
+          <p>
+            後述する「氷の柱」以外に特に難しい仕掛けはありませんが、ダンジョン内には隠れた通路（交差している下の通路）を通る必要があります。また氷が道を邪魔している箇所はソーサラーリングを打つことで溶けて通れるようになります。（氷の中から敵が出てくることもあります）
+          </p>
+          <Information type="warning" title="ダンジョン内のレンズ入手">
+            <ResponsiveImage src="/stories/guide4-iced-mountain-lens.jpg" />
+            ダンジョン内にはレンズが1枚ありますが、入手するためには仕掛けがあります。この画像のポイントまでいくと雪が崩れて落下します。
+          </Information>
+        </div>
+        <div className="mb-8">
+          <h3>「氷の柱」の仕掛けとボス戦</h3>
+          <p>
+            奥へと進んでいくと、木箱から「トトのアブラ」を入手します。これは赤い氷の柱を溶かすために必要なものです。氷の柱を溶かし、奥に進むとボス「セルシウス」と戦闘となり、勝利後は「フリーズリング」を入手します。ダンジョンを戻り、ペイルティへ向かいましょう。
+          </p>
+        </div>
         <div className="boss-advice margin-bottom-small mb-8">
           <h4>BOSS：『セルシウス』HP：33333(NORML)</h4>
           <p>弱点は火。</p>
