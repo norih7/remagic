@@ -13,5 +13,15 @@
     "id": 3,
     "name": "クレーメルボール",
     "path": "/subevents/kremerball"
+  },
+  {
+    "id": 4,
+    "name": "放浪の画家リシテア",
+    "path": "/subevents/lysithea"
+  },
+  {
+    "id": 5,
+    "name": "レンズ交換",
+    "path": "/subevents/lens"
   }
 ]

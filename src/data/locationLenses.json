@@ -235,17 +235,17 @@
     "id": 30,
     "lensId": 30,
     "world": "celestia",
-    "locationId": 24,
-    "locationName": "港町ペイルティ",
-    "remarks": "港にいるカニ（解凍後）"
+    "locationId": 60,
+    "locationName": "港町ペイルティ（氷解後）",
+    "remarks": "港にいるカニ（氷解後）"
   },
   {
     "id": 31,
     "lensId": 31,
     "world": "celestia",
-    "locationId": 24,
-    "locationName": "港町ペイルティ",
-    "remarks": "青い屋根の屋台の裏側（解凍後）"
+    "locationId": 60,
+    "locationName": "港町ペイルティ（氷解後）",
+    "remarks": "青い屋根の屋台の裏側（氷解後）"
   },
   {
     "id": 32,

@@ -40,7 +40,7 @@ export default async function HomePage() {
     <div style={{ padding: "0px" }}>
       <SetPageTitle title={subTitle} />
       <main className="space-y-12">
-        <h1 className="text-lg font-bold mb-4">このサイトについて</h1>
+        <h1 className="text-lg font-bold mb-4">テイルズオブエターニア攻略</h1>
         <p className="text-slate-1000">
           RE:MAGICではリマスター版に対応したテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
         </p>
@@ -55,6 +55,18 @@ export default async function HomePage() {
         <section className="">
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
+            <li className="flex gap-4">
+              <span className="text-slate-400">2026/08/09</span>
+              <span>
+                <Link
+                  href="/stories/guide4"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  ペイルティ〜バリル城
+                </Link>
+                をアップデート。雷晶霊の遺跡までの内容を書き直しました。
+              </span>
+            </li>
             <li className="flex gap-4">
               <span className="text-slate-400">2026/08/05</span>
               <span>

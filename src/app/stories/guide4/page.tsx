@@ -66,7 +66,7 @@ export default async function HomePage() {
             防寒具やアイテム補充の支度が整ったならフィールドに出て氷晶霊の山に向かいましょう。
           </p>
           <Information type="warning" title="町にあるワンダーシェフやレシピ">
-            凍結状態のペイルティでは一部の料理しか手に入らず、氷晶霊の山をクリアして凍結解除されるとすべて入手できるようになります。凍結解除後のペイルティには必ず戻ってくるため、このタイミングですべて回収するのがおすすめです。
+            凍結状態のペイルティでは一部の料理しか手に入らず、氷晶霊の山をクリアしてから再度訪れるとすべて入手できるようになります。氷晶霊の山クリア後はペイルティには必ず戻ってくるため、このタイミングですべて回収するのがおすすめです。
           </Information>
         </div>
         <LocationItems data={itemsData} locationIds={[24]} />
@@ -110,16 +110,26 @@ export default async function HomePage() {
       </section>
 
       <section className="mb-12">
-        <SectionTitle type="flag">3.アイメン(崩壊)</SectionTitle>
-        <ol>
-          <li>アイメンに入るとイベント。</li>
-          <li>
-            図書館に行くとボス「ヒアデス」との戦闘。
-            <br />
-            勝利後はバンエルティア号でティンシアへ向かおう。
-          </li>
-        </ol>
-
+        <SectionTitle type="flag">3.ペイルティ〜アイメン(崩壊)</SectionTitle>
+        <div className="mb-8">
+          <h3>ペイルティ</h3>
+          <p>
+            セルシウスと契約後にペイルティに戻ると氷が溶け宿屋に泊まるイベントが発生します。イベントでは「セレスティマップ」を入手し、イベント後はアイメンへ向かうことになります。ここから自分でバンエルティア号をフィールドマップで操作できるようになります。このイベントでもらったセレスティマップは貴重品にあるのでフィールドマップで迷ったら使いましょう。
+          </p>
+          <p>
+            もとに戻ったペイルティでは新しくワンダーシェフやレンズの入手、サブイベントの発生があるので回収しておくことを推奨します。
+          </p>
+          <LocationItems data={itemsData} locationIds={[60]} />
+          <LocationRecipes data={recipesData} locationIds={[60]} />
+          <LocationLenses data={lensesData} locationIds={[60]} />
+          <LocationSubEvents data={subEventData} locationIds={[60]} />
+        </div>
+        <div className="mb-8">
+          <h3>アイメン（崩壊）</h3>
+          <p>
+            アイメンに入るとイベント。崩壊している町を探索しながら目的地の図書館へ向かいます。図書館ではボス「ヒアデス」との戦闘。勝利後はフィールドマップに出て、再びバンエルティア号に乗ってティンシアを目指します。
+          </p>
+        </div>
         <div className="boss-advice margin-bottom-small mb-8">
           <h4>BOSS：『ヒアデス』HP：45000(NORML)</h4>
           <p>弱点は光。</p>
@@ -132,49 +142,80 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle type="flag">4.ティンシア</SectionTitle>
-        <ol>
-          <li>バンエルティア号に乗って雷晶霊の遺跡へ向かおう。</li>
-        </ol>
-        <LocationItems data={itemsData} locationIds={[27]} />
-        <LocationRecipes data={recipesData} locationIds={[27]} />
-        <LocationLenses data={lensesData} locationIds={[27]} />
-        <LocationSubEvents data={subEventData} locationIds={[27]} />
+        <div className="mb-8">
+          <p>
+            ティンシアの目的はバリル討伐のため自由軍シルエシカのボスに会うこと。シルエシカのアジトは町を右奥に進んだ、船の中にあります。
+          </p>
+          <p>
+            シルエシカのアジトではイベントが進行し、最後は一時的にキールと別れ、代わりにシルエシカのボス「フォッグ」がパーティに加入します。その後はフィールドに出て「雷晶霊の遺跡」へ向かいます。
+          </p>
+          <Information title="ティンシアの町探索">
+            ティンシアにはレンズやTPを60%回復してくれる「スイートパフェ」のレシピが入手できます。アイテム屋にはイレーヌもいるためレンズ報酬も入手できます。レンズはこの時点で30枚入手できるので土雷氷ダメージを40%軽減する「セレスティマント」をもらうことも可能です。
+          </Information>
+          <LocationItems data={itemsData} locationIds={[27]} />
+          <LocationRecipes data={recipesData} locationIds={[27]} />
+          <LocationLenses data={lensesData} locationIds={[27]} />
+          <LocationSubEvents data={subEventData} locationIds={[27]} />
+        </div>
       </section>
 
       <section className="mb-12">
         <SectionTitle type="flag">5.雷晶霊の遺跡</SectionTitle>
-        <ol>
-          <li>
-            <h4>雷晶霊の遺跡 全体マップ</h4>
+        <div className="mb-8">
+          <h3>雷晶霊の遺跡の概要と全体マップ</h3>
+          <Image src="/maps/kaminari_map.jpg" alt="" width={650} height={666} />
+          <p>
+            仕掛けが多く、大晶霊「ヴォルト」のところまで辿り着くのに中々根気のいるダンジョン。入り口すぐのビリビリと電流が流れている箇所は触れるとHPにダメージを受けるので気をつけましょう。また早速セルシウスからもらったフリーズリングを使う仕掛けもあります。ダンジョン攻略の時間も長めなのでティンシアやペイルティで回復アイテム補給や、TP回復の料理食材の購入をして挑みましょう。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>数字のスイッチの部屋</h3>
+          <p>
+            マップの「！」の部屋では3つのスイッチを踏んで特定の数に揃えれば扉が開くという仕掛けがあります。
+          </p>
+          <Information type="warning" title="赤い扉は必須ではない">
+            赤い扉は解除しなくてもクリア可能です。白い扉からも動く床の部屋にたどり着き、奥のキャンプ地へ行くことができます。赤い扉はアイテムの取り逃がしなど、再びダンジョンを訪れた時の最短距離という扱いです。
+          </Information>
+        </div>
+        <div className="mb-8">
+          <h3>ヒューズの入手と動く床</h3>
+          <h4 className="mb-2">（1）青の扉を進んでヒューズを入手</h4>
+          <div className="mb-4">
             <Image
-              src="/maps/kaminari_map.jpg"
+              src="/stories/guide4-volt-fuse.jpg"
+              width={300}
+              height={118}
               alt=""
-              width={650}
-              height={666}
             />
-          </li>
-          <li>
-            ボスのヴォルトのところまで辿り着くのに中々根気のいるダンジョン。ビリビリと電流が流れている箇所は触れるとHPにダメージを受けるので気をつけましょう。途中の障害物である水晶はフリーズリングを放てば破壊可能です。
-          </li>
-          <li>
-            マップの「！」のところは石盤に書かれていた「3つの星つかまば彩られしひとすじの光とならん」という箇所。これは3つのスイッチを踏んで特定の数に揃えれば扉が開くという仕掛け。
-          </li>
-          <li>
-            ダンジョンを攻略するためにまずは「ヒューズ」が必要となるので、仕掛けの部屋では「青の扉」へと進みヒューズを入手しましょう。途中にあるスイッチ(マップで青色で表示)は踏んでおかないとソケットのある部屋がロックされていて入れない。
-          </li>
-          <li>
-            ヒューズを手に入れたら「白の扉」へと進み、ヒューズを窪みにセットしましょう。これで動く床の部屋の仕掛けが動作を始めます。
-          </li>
-          <li>
-            仕掛けが動作している状態で「赤の扉」に入ると奥へ進めるようになる。この部屋では敵とのエンカウントは無いがHPが1になっていることがあるので注意。
-          </li>
-          <li>
-            キャンプより先は「電気パズル」を進むとヴォルトがいるが、最初では電源装置が起動していないため動作しない。そのため電源装置を調べ、必要な「制御玉」を入手する必要がある。
-          </li>
-          <li>
-            制御玉を入手するには色の付いた石を踏み、床のスイッチを動作させる必要がある。これは扉と反転するものであるのでうまく考えながら切り替えよう。
-          </li>
-          <li>
+          </div>
+          <p>
+            ダンジョンを攻略では「ヒューズ」を入手が必要となります。ヒューズは青い扉の先にあるため、仕掛けの部屋で「6、5、3」のスイッチを踏んで右側の「青の扉」を開放します。扉の先ではマップの矢印のように進み、途中にあるスイッチ（マップの青色箇所）を踏んで進みます。ヒューズのある部屋は閉じていますが、このスイッチを2つ踏むことで開放されます。
+          </p>
+          <h4 className="mb-2">（2）白の扉を進んでヒューズをセット</h4>
+          <ResponsiveImage src="/stories/guide4-volt-freeze.jpg" />
+          <p>
+            ヒューズを手に入れたら再度数字の仕掛けの部屋へ戻り、「11、2、4」のスイッチを踏み左側の「白の扉」を開放します。奥の電流で進めないフロアでは、炎柱にフリーズリングを打つことで（L1ボタン）電流が解除され奥へ進めます。電流の奥の部屋では窪みにヒューズをセットでき、これで動く床の部屋の仕掛けが動作を始めます。
+          </p>
+          <h4 className="mb-2">（3）動く床でキャンプ場へ</h4>
+          <ResponsiveImage src="/stories/guide4-volt-tile.jpg" />
+          <p>
+            動く床はいろんな順番で奥までたどり着くことができます。一例として、この画像のように1〜4の順で進めば奥のキャンプ場へたどり着きます。ここで電流にあたるとHPに大きなダメージを受け、3回あたるとHPが1になるので注意です。奥のキャンプ場では必ず休憩しておきましょう。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>キャンプ以降</h3>
+          <h4 className="mb-2">（1）電源装置を調べる</h4>
+          <ResponsiveImage src="/stories/guide4-volt-power.jpg" />
+          <p>
+            後半の最後の仕掛けは「電気パズル」ですがいきなり向かうと電気が通っていないためまずは電流を流す必要があります。キャンプ場から上へ進行し、電源装置の部屋で装置を調べてこの画像のイベントを発生させます。このイベントを見なければ装置の起動に必要な「制御玉」を入手できないので注意です。
+          </p>
+          <h4 className="mb-2">（2）制御玉の入手</h4>
+          <ResponsiveImage src="/stories/guide4-volt-switch2.jpg" />
+          <p>
+            制御玉を入手するには色の付いた石を踏み、床のスイッチを動作させる必要があります。これは扉と反転するもの。最短でクリアするなら画像のように「緑色」のスイッチだけ踏み、下の扉から回っていきます。制御玉は制御装置のイベントを見た状態で光っている箇所を調べると入手できます。
+          </p>
+          <h4 className="mb-2">（3）電気パズル</h4>
+          <p>
             電源装置を起動したあとの電流パズルの部屋は以下の順番通りに1、2、3と踏んでいけば正解に辿り着けます。
             <br />
             <Image
@@ -183,14 +224,30 @@ export default async function HomePage() {
               width={350}
               height={203}
             />
-          </li>
-          <li>
-            奥の部屋まで辿り着くとボス「ヴォルト」と戦闘。勝利後にはヴォルトが暴走し、これを止めるにはスロットで「STOP!!」と揃えてやればいい。その後は光の大水霊レムが現れ、リッドの装備品「エクスカリバー」を入手する。ティンシアへ戻ろう。
-          </li>
-        </ol>
-        <div className="boss-advice margin-bottom-small mb-8">
-          <h4>BOSS：『ヴォルト』HP：54321(NORML)</h4>
-          <p>弱点は水。</p>
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>ヴォルトとの戦闘</h3>
+          <p>奥の部屋まで辿り着くとボス「ヴォルト」と戦闘。</p>
+          <ResponsiveImage src="/stories/guide4-volt-slot1.jpg" />
+          <p>
+            勝利後にはヴォルトが暴走し、これを止めるためスロットでヴォルトの喋っている内容を揃える必要があります。これは難しいのですが下記のように順番を把握し、目的の2つ前くらいでボタンを押す（押し目）ように意識してやってください。
+          </p>
+          <div className="mb-4">
+            <Image
+              src="/stories/guide4-volt-slot2.jpg"
+              alt=""
+              width={500}
+              height={203}
+            />
+          </div>
+          <p>
+            スロットの仕掛けを解くと光の大水霊レムが現れ、リッドの装備品「エクスカリバー」を入手します。最後はダンジョンを脱出し、ティンシアへ戻りましょう。
+          </p>
+          <div className="boss-advice margin-bottom-small mb-8">
+            <h4>BOSS：『ヴォルト』HP：54321(NORML)</h4>
+            <p>弱点は水。</p>
+          </div>
         </div>
         <LocationItems data={itemsData} locationIds={[28]} />
         <LocationRecipes data={recipesData} locationIds={[28]} />

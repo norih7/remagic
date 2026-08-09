@@ -161,8 +161,8 @@
   },
   {
     "id": 22,
-    "locationId": 24,
-    "locationName": "港町ペイルティ",
+    "locationId": 60,
+    "locationName": "港町ペイルティ（氷解後）",
     "recipeId": 22,
     "recipeName": "ひやピリちゅうか",
     "remarks": "解凍後の港にいる修行僧"
@@ -173,7 +173,7 @@
     "locationName": "ルイシカ",
     "recipeId": 23,
     "recipeName": "ホットボルシチ",
-    "remarks": "ルイシカ / 入ってから2つめのフロア左奥のがれき"
+    "remarks": "入ってから2つめのフロア左奥のタンス"
   },
   {
     "id": 24,
@@ -181,7 +181,7 @@
     "locationName": "ルイシカ",
     "recipeId": 24,
     "recipeName": "にがりマーボー",
-    "remarks": "ルイシカ / 奥の廃墟2階 階段手前にある置物"
+    "remarks": "奥の廃墟2階 階段手前にある置物"
   },
   {
     "id": 25,

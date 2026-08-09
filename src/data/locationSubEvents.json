@@ -72,30 +72,30 @@
     "remarks": ""
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "eventId": "",
-    "eventName": "",
-    "eventPath": "",
+    "id": 10,
+    "locationId": 60,
+    "locationName": "港町ペイルティ（氷解後）",
+    "eventId": 4,
+    "eventName": "放浪の画家リシテア",
+    "eventPath": "/subevents/lysithea",
     "remarks": ""
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "eventId": "",
-    "eventName": "",
-    "eventPath": "",
+    "id": 11,
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "eventId": 5,
+    "eventName": "レンズ交換",
+    "eventPath": "/subevents/lens",
     "remarks": ""
   },
   {
-    "id": "",
-    "locationId": "",
-    "locationName": "",
-    "eventId": "",
-    "eventName": "",
-    "eventPath": "",
+    "id": 12,
+    "locationId": 16,
+    "locationName": "熱砂の町 シャンバール",
+    "eventId": 5,
+    "eventName": "レンズ交換",
+    "eventPath": "/subevents/lens",
     "remarks": ""
   },
   {
