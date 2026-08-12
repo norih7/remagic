@@ -92,6 +92,11 @@ export const subeventLinks = {
     image: "/link-headers/subevents-kremerball.jpg",
     desc: "",
   },
+  // "clip-spirits": {
+  //   title: "クリップソード",
+  //   path: "/subevents/clip-sword",
+  //   desc: "",
+  // },
   beppo: {
     title: "ベッポとのかくれんぼ",
     path: "/subevents/beppo",
@@ -134,11 +139,16 @@ export const subeventLinks = {
     path: "/subevents/secret-spirits",
     desc: "",
   },
+  // a: {
+  //   title: "闘技場",
+  //   path: "/subevents/a",
+  //   desc: "",
+  // },
 };
 
 export const systemLinks = {
   manual: {
-    title: "戦闘（マニュアル操作/特殊操作）",
+    title: "戦闘マニュアル操作/特殊操作",
     image: "/link-headers/systems-buttle.jpg",
     path: "/systems/buttle",
     desc: "戦闘をより楽しくするためのシステム解説。マニュアル操作とキャラクタ毎の特殊操作について紹介！",
@@ -176,13 +186,20 @@ export const systemLinks = {
     path: "/systems/recipe",
     desc: "料理一覧情報掲載。ワンダーシェフの場所や特殊なマスター料理の解説も！",
   },
-  // "fileld-and-gps": {
-  //   title: "特殊なフィールド/GPS",
-  //   path: "/systems/fileld-and-gps",
-  //   desc: "",
+  // "item-list": {
+  //   title: "アイテム一覧",
+  //   path: "/systems/item-list",
+  // },
+  // "enemy-list": {
+  //   title: "モンスター一覧",
+  //   path: "/systems/enemy-list",
+  // },
+  // "world-map": {
+  //   title: "ワールドマップ",
+  //   path: "/systems/world-map",
   // },
   // "status-up": {
-  //   title: "特殊なステータスアップ",
+  //   title: "ステータスアップ薬草",
   //   path: "/systems/status-up",
   //   desc: "",
   // },
@@ -191,9 +208,24 @@ export const systemLinks = {
   //   path: "/systems/special-skill",
   //   desc: "",
   // },
+  // "blue-earth": {
+  //   title: "ブルーアース",
+  //   path: "/systems/blue-earth",
+  //   desc: "",
+  // },
+  // "level-up": {
+  //   title: "レベル上げ方法",
+  //   path: "/systems/level-up",
+  //   desc: "",
+  // },
 };
 
 export const extraLinks = {
+  // "fileld": {
+  //   title: "フィールドの隠し場所",
+  //   path: "/extras/fileld",
+  //   desc: "",
+  // },
   "dark-cave": {
     title: "闇の洞窟",
     path: "/extras/dark-cave",
@@ -219,6 +251,21 @@ export const extraLinks = {
     path: "/extras/valkyrie",
     desc: "",
   },
+  // jiini: {
+  //   title: "ジイニとオークション",
+  //   path: "/extras/jiini",
+  //   desc: "",
+  // },
+  // towns: {
+  //   title: "ねこにんの里/晶霊温泉",
+  //   path: "/extras/towns",
+  //   desc: "",
+  // },
+  //   valkyrie: {
+  //   title: "ネレイドの迷宮",
+  //   path: "/extras/valkyrie",
+  //   desc: "",
+  // },
 };
 
 export const elementMap = {

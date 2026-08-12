@@ -55,7 +55,7 @@ export default function SiteLayout({
               <a href="/subevents">サブイベント</a>
             </li>
             <li className="py-2 pl-4 text-xs">
-              <a href="/extras">隠しダンジョン</a>
+              <a href="/extras">隠しマップ</a>
             </li>
           </ul>
         </div>

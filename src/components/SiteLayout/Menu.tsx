@@ -60,7 +60,7 @@ export default function Menu() {
       <List links={Object.values(systemLinks)} />
       <Category>サブイベント</Category>
       <List links={Object.values(subeventLinks)} />
-      <Category>隠しダンジョン</Category>
+      <Category>隠しマップ</Category>
       <List links={Object.values(extraLinks)} />
     </nav>
   );
