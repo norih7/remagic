@@ -78,19 +78,19 @@ export const subeventLinks = {
     title: "レンズ収集",
     path: "/subevents/lens",
     image: "/link-headers/subevents-lens.jpg",
-    desc: "",
+    desc: "レンズ収集の解説とレンズの入所場所一覧を掲載しています。ストーリー攻略と合わせてご確認ください。",
   },
   catarine: {
     title: "カトリーヌの恋愛",
     path: "/subevents/catarine",
     image: "/link-headers/subevents-catarine.jpg",
-    desc: "",
+    desc: "ファラの称号を得られるサブイベント。時限イベントで見落としがちなイベントもあるので要チェック！",
   },
   kremerball: {
     title: "クレーメルボール",
     path: "/subevents/kremerball",
     image: "/link-headers/subevents-kremerball.jpg",
-    desc: "",
+    desc: "ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
   },
   // "clip-spirits": {
   //   title: "クリップソード",
@@ -100,12 +100,13 @@ export const subeventLinks = {
   beppo: {
     title: "ベッポとのかくれんぼ",
     path: "/subevents/beppo",
-    desc: "",
+    image: "/link-headers/subevents-beppo.jpg",
+    desc: "ルーンボトルなどを入手できるサブイベント。時間制限があるのでセレスティアへ行く前にチェック。",
   },
   syanballoon: {
     title: "シャンバルーン",
     path: "/subevents/syanballoon",
-    desc: "",
+    desc: "ストーリー後半ではステップリングがもらえるシャンバルーンを解説。",
   },
   "skill-chat": {
     title: "チャット特技習得",
@@ -117,27 +118,28 @@ export const subeventLinks = {
     title: "フォッグ特技習得",
     image: "/link-headers/subevents-skill-fog.jpg",
     path: "/subevents/skill-fog",
-    desc: "",
+    desc: "偶然たどり着くのが難しいフォッグの特技習得場所をチェック",
   },
   lysithea: {
     title: "画家リシテア",
     path: "/subevents/lysithea",
-    desc: "",
+    desc: "フォッグの最強技の習得や強化に関連する画家リシテアのイベントを解説！",
   },
   "flying-boad": {
     title: "飛行艇の入手",
     path: "/subevents/flying-boad",
-    desc: "",
+    desc: "エターニアを最後まで楽しむために入手必須な飛行艇の入手方法を解説！",
   },
   "secret-base": {
-    title: "アイフリートアジト",
+    title: "インフェリアの隠しアジト",
+    image: "/link-headers/subevents-secret-base.jpg",
     path: "/subevents/secret-base",
-    desc: "",
+    desc: "インフェリアにあるアイフリードの隠しアジトを解説。遠征の橋でインフェリアに戻ってきたらすぐに訪れましょう！",
   },
   "secret-spirits": {
     title: "隠し大晶霊",
     path: "/subevents/secret-spirits",
-    desc: "",
+    desc: "ストーリー攻略だけでは契約できない大晶霊を解説。どれも強力な大晶霊です！",
   },
   // a: {
   //   title: "闘技場",

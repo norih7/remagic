@@ -6,6 +6,8 @@ import LocationItems from "@/components/LocationItems";
 import LocationLenses from "@/components/LocationLenses";
 import { getLocationItemsData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
+import EventCondition from "@/components/EventCondition";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -27,12 +29,19 @@ export default async function HomePage() {
       </PageSummary>
       <section className="mb-12">
         <SectionTitle>アイフリードの墓</SectionTitle>
+        <EventCondition category="period">
+          インフェリアへ帰還後から
+        </EventCondition>
         <p>
-          隠しダンジョンの1つ。アイフリードの墓はインフェリアにあり、ここでは飛行艇を入手するために必要な「ひかりのたま」を入手することができます。なおダンジョン内にはボスは登場しません。
+          アイフリードの墓はインフェリアにある隠しダンジョンの1つで、ボスが登場しないダンジョンです。ダンジョンの目的は飛行艇を入手するために必要な「ひかりのたま」を入手することです。
+        </p>
+        <ResponsiveImage src="/extras/secret-aifread-flag.jpg" />
+        <p>
+          アイフリードの墓に入るには遠征の橋にある改造ドックでアイフリード像を調べ、上記ヒントを聞く必要があります。改造ドックはインフェリア/セレスティアの遠征の橋のトラベルメニューから「中継基地へ」「反転ドーム」「改造ドック」の順に選択していけば辿り着きます。
         </p>
         <p>
-          アイフリードの墓のダンジョン探索をするにはまず遠征の橋でインフェリアに戻って来てから、中継基地の改造ドックに行き石像に話しかけて「はるかなる地でわがあしあとを...」という話を聞く。この話を聞いた後でインフェリアのフィールドマップにあるアイフリードの墓
-          GPS(88,64)に入ると、ダンジョン内を探索することが可能となる。聞いていなければダンジョン内を探索することはできないので注意。
+          上記の行動により、インフェリアのフィールドマップ GPS(88,64)
+          にアイフリードの墓が出現します。改造ドックのイベントがないとダンジョンも出現しません。
         </p>
       </section>
       <section className="mb-12">

@@ -117,7 +117,7 @@ export default async function HomePage() {
           </div>
         </RoundedContainer>
         <RoundedContainer>
-          <h3 className="text-[1rem]">2回目 / 制限時間3秒</h3>
+          <h3 className="text-[1rem]">2回目 / 制限時間4秒</h3>
           <div className="flex flex-wrap gap-3">
             <div className="w-[230px] flex-none">
               <GifPlayer

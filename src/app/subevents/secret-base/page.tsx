@@ -9,11 +9,12 @@ import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import { getLocationItemsData } from "@/lib/db";
 import LocationItems from "@/components/LocationItems";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "インフェリアのアイフリードアジト";
+const title = "インフェリアの隠しアジト";
 export const metadata = {
   title,
   description: "",
@@ -37,14 +38,15 @@ export default async function HomePage() {
         <RoundedContainer>
           <h3>インフェリア アジト1</h3>
           <RoundedItem title="場所" className="mb-3">
-            GPS (76, 122)
+            <p>GPS (76, 122)</p>
+            <ResponsiveImage src="/subevents/secret-base-1.jpg" />
           </RoundedItem>
           <LocationItems data={itemsData} locationIds={[53]} />
         </RoundedContainer>
         <RoundedContainer>
           <h3>インフェリア アジト2</h3>
           <RoundedItem title="場所" className="mb-3">
-            GPS (119, 233)
+            GPS (119, 122)
           </RoundedItem>
           <LocationItems data={itemsData} locationIds={[54]} />
         </RoundedContainer>
