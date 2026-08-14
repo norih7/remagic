@@ -178,10 +178,10 @@ export const systemLinks = {
     path: "/systems/rune",
     desc: "ルーンボトルの説明とアイテム変化一覧をオススメ度評価して紹介します！",
   },
-  "tp-reduce": {
-    title: "TP減少アクセサリ",
-    path: "/systems/tp-reduce",
-    desc: "戦闘でバンバン特技や晶霊術を利用できるようになるアクセサリを紹介",
+  "special-effect": {
+    title: "装備品の特殊効果",
+    path: "/systems/special-effect",
+    desc: "特殊効果のある装備品を紹介。TP消費減少や自動回復などおすすめ品も紹介！",
   },
   recipe: {
     title: "料理一覧/マスター料理",
