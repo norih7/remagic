@@ -106,6 +106,7 @@ export const subeventLinks = {
   syanballoon: {
     title: "シャンバルーン",
     path: "/subevents/syanballoon",
+    image: "/link-headers/subevents-syanballoon.jpg",
     desc: "ストーリー後半ではステップリングがもらえるシャンバルーンを解説。",
   },
   "skill-chat": {
@@ -240,6 +241,7 @@ export const extraLinks = {
   },
   aifread: {
     title: "アイフリードの墓",
+    image: "/link-headers/extras-aifread.jpg",
     path: "/extras/aifread",
     desc: "",
   },

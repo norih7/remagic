@@ -8,6 +8,7 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import Image from "next/image";
 import GifPlayer from "@/components/GifPlayer";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -26,6 +27,7 @@ export default async function HomePage() {
       </PageSummary>
       <section className="mb-12">
         <SectionTitle>シャンバルーン</SectionTitle>
+        <ResponsiveImage src="/subevents/syanballoon-location.jpg" />
         <p>
           シャンバールの噴水フロアにいる老人に話しかけることでシャンバルーンに挑戦することができます。シャンバルーンは特殊な戦闘で、リッドが固定配置された風船を割っていくゲームです。合計5回のコースをクリアすることで報酬を得ることができます。
         </p>
