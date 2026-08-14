@@ -4,6 +4,7 @@ import { storyLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
 import { skillLinks } from "@/constants";
+import { extraLinks } from "@/constants";
 import SectionTitle from "@/components/SectionTitle";
 import Link from "next/link";
 
@@ -17,6 +18,8 @@ type Link = {
 const featuredLinks: Link[] = [];
 featuredLinks.push(storyLinks["guide3"]);
 featuredLinks.push(storyLinks["guide4"]);
+featuredLinks.push(extraLinks["aifread"]);
+featuredLinks.push(subeventLinks["secret-base"]);
 featuredLinks.push(subeventLinks["skill-chat"]);
 featuredLinks.push(systemLinks["rune"]);
 featuredLinks.push(systemLinks["recipe"]);

@@ -243,7 +243,7 @@ export const extraLinks = {
     title: "アイフリードの墓",
     image: "/link-headers/extras-aifread.jpg",
     path: "/extras/aifread",
-    desc: "",
+    desc: "飛行艇の入手に必要な隠しダンジョン。優秀な装備品もあるので早めにクリアを目指しましょう！",
   },
   "farosu-underground": {
     title: "ファロース教会地下",
