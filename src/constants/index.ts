@@ -181,7 +181,7 @@ export const systemLinks = {
   "special-effect": {
     title: "装備品の特殊効果",
     path: "/systems/special-effect",
-    desc: "特殊効果のある装備品を紹介。TP消費減少や自動回復などおすすめ品も紹介！",
+    desc: "特殊効果がある装備品を紹介。TP消費減少や自動回復などおすすめ品も紹介！",
   },
   recipe: {
     title: "料理一覧/マスター料理",
@@ -237,7 +237,8 @@ export const extraLinks = {
   "sunken-ship": {
     title: "沈没船",
     path: "/extras/sunken-ship",
-    desc: "",
+    image: "/link-headers/extras-sunken-ship.jpg",
+    desc: "易しい難易度の隠しダンジョン。インフェリア帰還後に立ち寄るのがおすすめです。",
   },
   aifread: {
     title: "アイフリードの墓",
