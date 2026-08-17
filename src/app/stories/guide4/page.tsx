@@ -21,7 +21,8 @@ export const dynamic = "force-static";
 const title = "港町ペイルティ〜バリル城";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。氷晶霊の山、雷晶霊の遺跡、バリル城の攻略法を徹底解説！詳細ダンジョンマップ、レンズ回収、重要イベントの進め方も網羅。難関ボス戦の対策も掲載しています。",
 };
 
 export default async function HomePage() {

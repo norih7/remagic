@@ -13,7 +13,8 @@ export const dynamic = "force-static";
 const title = " チャットの特技習得";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。チャット特技習得イベントまとめ。各特技の習得条件・発生場所と、エターナルスロー習得に必要なクイズの正解一覧をわかりやすく解説します。",
 };
 export default async function HomePage() {
   const anserStyle =

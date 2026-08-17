@@ -21,7 +21,8 @@ export const dynamic = "force-static";
 const title = "いざないの密林〜霊峰ファロース";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。インフェリアから霊峰ファロースまでの攻略ルート、いざないの密林の石像の謎解き、風晶霊の空洞、火晶霊の谷、レンズやアイテムの入手場所を詳細に解説します。",
 };
 
 export default async function HomePage() {

@@ -17,7 +17,8 @@ export const dynamic = "force-static";
 const title = "インフェリアの隠しアジト";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。インフェリアにあるアイフリードの隠しアジト（全4箇所）の攻略情報です。各アジトのGPS座標やマップ画像、セボリーやホーリィクロークなどの入手アイテム一覧を網羅しています。",
 };
 
 export default async function HomePage() {

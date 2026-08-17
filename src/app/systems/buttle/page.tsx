@@ -13,7 +13,8 @@ export const dynamic = "force-static";
 const title = " マニュアル操作/特殊操作";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアの戦闘マニュアル操作および特殊操作を解説。マニュアル操作への切り替え方法（マニュアルのしょ入手）や、おすすめの操作設定、バックステップ、移動速度アップ、晶霊術・特技の詠唱短縮など、戦闘を有利に進めるためのテクニックを網羅しています。",
 };
 export default async function HomePage() {
   return (

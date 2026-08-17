@@ -17,7 +17,7 @@ const title = "料理レシピ一覧とマスター料理";
 export const metadata = {
   title,
   description:
-    "エターニアの料理レシピ一覧データを掲載しています。料理に必要なアイテムの入手場所も詳しく紹介！マスター料理の解説もしています。",
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。料理レシピ一覧とマスター料理を説明。各料理の効果、ワンダーシェフの場所、作成に必要な食材データを網羅。HP・TP回復やステータス強化に役立つマスター料理の習得条件も詳しく解説。",
 };
 export default async function HomePage() {
   const recipes = await getRecipesData();

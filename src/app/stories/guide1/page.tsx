@@ -18,7 +18,8 @@ export const dynamic = "force-static";
 const title = "ラシュアン〜水晶霊の河";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。序盤のラシュアン〜水晶霊の河までのルートを詳細解説！ボス「ウンディーネ」の攻略法や、料理「オムライス」、「マニュアルのしょ」など重要アイテムの入手場所、レンズの取り逃がしチェックリストを掲載しています。",
 };
 
 export default async function HomePage() {

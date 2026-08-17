@@ -21,7 +21,8 @@ export const dynamic = "force-static";
 const title = "セレスティア突入〜チャットの小屋";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。セレスティア突入後の「地晶霊の廃坑」と「チャットの小屋」の攻略法を徹底解説！各階層のギミック解除手順、重要アイテムの入手場所、レンズ回収リストを掲載しています。",
 };
 
 export default async function HomePage() {

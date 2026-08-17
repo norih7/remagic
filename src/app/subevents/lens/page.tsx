@@ -13,7 +13,8 @@ export const dynamic = "force-static";
 const title = "レンズ収集";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。レンズ全60枚の入手場所一覧を徹底解説。シャンバールやティンシアのイレーヌでもらえる豪華報酬リストから、見落としがちなレンズの隠し場所まで網羅。効率的なコンプリートを目指しましょう。",
 };
 export default async function HomePage() {
   const lensesData = await getLocationLensesData();

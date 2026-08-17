@@ -10,7 +10,8 @@ export const dynamic = "force-static";
 const title = "カトリーヌの恋愛イベント";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。ファラの称号「あいのネゴシエーター」が手に入る「カトリーヌの恋愛イベント」の発生場所と全6回の遭遇時期を徹底解説！時限要素やベストエンド（ハッピーエンド）を迎えるための条件をまとめています。",
 };
 
 export default async function HomePage() {

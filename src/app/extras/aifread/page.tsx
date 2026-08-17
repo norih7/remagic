@@ -16,7 +16,8 @@ export const dynamic = "force-static";
 const title = "アイフリードの墓";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。隠しダンジョン「アイフリードの墓」の完全攻略ページ。飛行艇入手の必須アイテム「ひかりのたま」の入手手順や、3つのパーツ（ひげ・帽子・服）の場所、ギミック解除、強力防具「ムーンローブ」を含む入手アイテム情報を分かりやすく解説しています。",
 };
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();

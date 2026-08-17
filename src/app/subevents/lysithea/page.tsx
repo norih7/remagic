@@ -14,7 +14,8 @@ export const dynamic = "force-static";
 const title = "放浪の画家リシテア";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。サブイベント「放浪の画家リシテア」の攻略ページ。ペイルティやセレスティア各地での遭遇場所、発生条件、フォッグのアクセサリ「キャンセラー」の入手法とエレメントマスター習得への流れを解説。",
 };
 
 export default async function HomePage() {

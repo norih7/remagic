@@ -16,7 +16,8 @@ export const dynamic = "force-static";
 const title = "シャンバルーン";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。シャンバルーン攻略情報。リッドの称号「キングあんどバルーン」や貴重な「ステップリング」の入手方法、各難易度の制限時間とおすすめの戦法を詳しく紹介。",
 };
 export default async function HomePage() {
   return (

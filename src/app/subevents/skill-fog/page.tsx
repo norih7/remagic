@@ -14,14 +14,15 @@ export const dynamic = "force-static";
 const title = " フォッグの特技習得";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。フォッグ特技習得イベントまとめ。各特技の発生条件・場所と、強力なエレメンタルマスター習得までの流れを詳しく解説します。",
 };
 export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
-        サブイベントにて習得するチャットの特技についての説明します。最後のエレメンタルマスターはかなり強い技なのでぜひ習得を目指してください。
+        サブイベントにて習得するフォッグの特技についての説明します。最後のエレメンタルマスターはかなり強い技なのでぜひ習得を目指してください。
       </PageSummary>
       <section className="mb-12">
         <SectionTitle>フォッグの特技習得イベント一覧</SectionTitle>

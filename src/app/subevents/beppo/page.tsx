@@ -13,7 +13,8 @@ export const dynamic = "force-static";
 const title = "ベッポとのかくれんぼ";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版対応のテイルズオブエターニア（TOE）攻略。バロールのサブイベント「ベッポとのかくれんぼ」の発生条件と攻略手順を解説。ルーンボトルや、ジイニのオークションで高値になるドエニスのポプリの入手方法、時限要素（セレスティア突入前までの期限）についてまとめています。",
 };
 
 export default async function HomePage() {
