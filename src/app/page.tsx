@@ -43,7 +43,9 @@ export default async function HomePage() {
     <div style={{ padding: "0px" }}>
       <SetPageTitle title={subTitle} />
       <main className="space-y-12">
-        <h1 className="text-lg font-bold mb-4">テイルズオブエターニア攻略</h1>
+        <h2 className="text-lg font-bold mb-2 !border-none">
+          テイルズオブエターニア攻略
+        </h2>
         <p className="text-slate-1000">
           RE:MAGICではリマスター版に対応したテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
         </p>
