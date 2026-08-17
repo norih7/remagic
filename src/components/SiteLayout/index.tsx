@@ -22,7 +22,12 @@ export default function SiteLayout({
           <div className="flex justify-between items-center ">
             <h1 className="text-lg font-bold tracking-tight">
               <a href="/">
-                <Image src="/logo.png" alt="" width={145} height={45} />
+                <Image
+                  src="/logo.png"
+                  alt="RE:MAGIC - テイルズオブエターニア攻略/リマスター対応サイト"
+                  width={145}
+                  height={45}
+                />
               </a>
             </h1>
             <MenuButton />
