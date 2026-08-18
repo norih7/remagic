@@ -11,7 +11,8 @@ export const dynamic = "force-static";
 const title = "ファラの特技";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ファラが習得するすべての特技や回復功を網羅。各種スキルの効果、属性、消費TP、ヒット数に加え、習得に必要な拳・蹴レベルや特定技の使用回数といった詳細な条件を一覧で紹介しています。",
 };
 
 export default async function HomePage() {
@@ -20,7 +21,7 @@ export default async function HomePage() {
       name: "三散華",
       ruby: "さざんか",
       description:
-        "脚の蹴り上げ下ろしによる3連撃。連撃の最後は的を奥に蹴飛ばす。連撃中はスキが多いので命中率が低い場合や硬い的には注意。",
+        "連続の蹴り上げと足払いによる3連撃。ラッシュの締めくくりで標的を奥へと吹き飛ばします。動作中の隙がやや大きいため、相手の命中率が低い状況や硬い敵を相手にする際は注意が必要です。",
       requirement: "拳Lv2/蹴Lv2",
       tp: 6,
       hit: 3,
@@ -31,7 +32,7 @@ export default async function HomePage() {
       name: "連牙弾",
       ruby: "れんがだん",
       description:
-        "連続した拳のパンチを繰り出す。パンチなので攻撃範囲はかなり狭い。",
+        "素早い拳のラッシュを打ち込む近接連打技。手数は多いものの拳による攻撃ゆえに攻撃範囲はやや狭めです。",
       requirement: "拳Lv5/蹴Lv2",
       tp: 8,
       hit: 6,
@@ -42,7 +43,7 @@ export default async function HomePage() {
       name: "飛燕連脚",
       ruby: "ひえんれんきゃく",
       description:
-        "地上からジャンプし、空中で蹴りを繰り出す。非常に使いやすく、途中でキャンセルして空中からの技の連携も可能。",
+        "地表からふわりと飛び上がり、空中から鋭い蹴りを放ちます。非常に使い勝手が良く、モーションの途中でキャンセルして空中からのコンボへスムーズにつなげられる優秀な技です。",
       requirement: "拳Lv4/蹴Lv5",
       tp: 7,
       hit: 3,
@@ -53,7 +54,7 @@ export default async function HomePage() {
       name: "鷹爪蹴撃",
       ruby: "ようそうしゅうげき",
       description:
-        "ジャンプ中の空中から垂直に蹴り下ろして落下する。動作が早いのでこちらも使いやすい。地上では出すことができない。",
+        "空中から真下へ向かって鋭いかかと落としを叩き込みながら急降下します。発生がスピーディで取り回しやすく、地上から直接は発動できない空中専用の特技です。",
       requirement: "拳Lv3/蹴Lv8",
       tp: 8,
       hit: 3,
@@ -64,7 +65,7 @@ export default async function HomePage() {
       name: "臥龍空破",
       ruby: "がりゅうくうは",
       description:
-        "地上から拳のため攻撃を行い、敵を空中に突き上げる攻撃。ファラの突進などの動作があり、使いこなすのはコツが必要。空中コンボにつなげるのにはよい。",
+        "一瞬のタメを作ってから拳に気を纏わせ、敵を盛大に突き上げる風属性の技。ファラ自身が前方へ踏み込むため距離感を掴むのに少しコツが要りますが、空中コンボへの起点として大いに活躍します。",
       requirement: "拳Lv8/蹴Lv4",
       tp: 12,
       hit: 3,
@@ -75,7 +76,7 @@ export default async function HomePage() {
       name: "散華猛襲脚",
       ruby: "さんかもうしゅうきゃく",
       description:
-        "空中でのみ発動できる技。空中から斜めに落下して三散華による蹴り上げ攻撃を行う。",
+        "空中専用の派生技。空から斜め前方へと急降下しながら、「三散華」のモーションによる蹴り上げ連続攻撃を浴びせます。",
       requirement: "拳Lv11/蹴Lv12",
       tp: 12,
       hit: 4,
@@ -85,7 +86,8 @@ export default async function HomePage() {
     {
       name: "双撞掌底破",
       ruby: "ようどうしょうていは",
-      description: "-",
+      description:
+        "両手で強烈な掌底を同時に突き出し、近距離の相手を強かに打ち据える重い一撃。",
       requirement: "拳Lv10/蹴Lv8",
       tp: 12,
       hit: 2,
@@ -96,7 +98,7 @@ export default async function HomePage() {
       name: "飛燕連天脚",
       ruby: "ひえんれんてんきゃく",
       description:
-        "飛燕連脚の昇華技。最後にムーンサルトによる一蹴りが加わっている。習得には「飛燕連脚」の使用が150回以上必要。",
+        "「飛燕連脚」をさらに昇華させた発展技。技の終わりに美しく華麗なムーンサルート（宙返りキック）の追撃が追加されています。習得にはレベル条件に加え、「飛燕連脚」を150回以上使用していることが必須です。",
       requirement: "拳Lv9/蹴Lv18",
       requirement2: "飛燕連脚150回",
       tp: 13,
@@ -107,7 +109,8 @@ export default async function HomePage() {
     {
       name: "八葉連牙",
       ruby: "はちようれんが",
-      description: "習得には「連牙弾」の使用が150回以上必要。",
+      description:
+        "「連牙弾」の性能をさらに高めた上位の連続拳撃。習得には「連牙弾」を150回以上使い込んでいる必要があります。",
       requirement: "拳Lv16/蹴Lv8",
       requirement2: "連牙弾150回",
       tp: 18,
@@ -119,7 +122,7 @@ export default async function HomePage() {
       name: "鷹爪落爆蹴",
       ruby: "ようそうらくばくしゅう",
       description:
-        "習得には「散華猛襲脚」の使用が100回以上、「飛燕連天脚」の使用が100回以上必要。",
+        "高い機動力を誇るダイナミックな蹴り技。習得には規定レベルのほかに、「散華猛襲脚」と「飛燕連天脚」の双方をそれぞれ100回以上使用していることが条件となります。",
       requirement: "拳Lv22/蹴Lv25",
       requirement2: "散華猛襲脚100回/飛燕連天脚100回",
       tp: 20,
@@ -131,7 +134,7 @@ export default async function HomePage() {
       name: "獅子戦吼",
       ruby: "ししせんこう",
       description:
-        "習得には「八葉連牙」の使用が100回以上、「双撞掌底破」の使用が160回以上必要。",
+        "闘気を前方の敵に向けて一気に解き放つお馴染みの強力な奥義。習得条件として、「八葉連牙」を100回以上、「双撞掌底破」を160回以上使い込んでいることが求められます。",
       requirement: "拳Lv22/蹴Lv14",
       requirement2: "八葉連牙100回/双撞掌底破160回",
       tp: 20,
@@ -143,7 +146,7 @@ export default async function HomePage() {
       name: "殺劇舞荒拳",
       ruby: "さつげきぶこうけん",
       description:
-        "習得には「獅子戦吼」の使用が120回以上、「鷹爪落爆蹴」の使用が120回以上必要。",
+        "無数の拳と蹴りで相手を圧倒し、最後は大爆発で締めくくるファラの最高峰奥義。習得にはレベル条件を満たした上で、「獅子戦吼」と「鷹爪落爆蹴」をそれぞれ120回以上使用していることが絶対条件となります。",
       requirement: "拳Lv30/蹴Lv30",
       requirement2: "獅子戦吼120回/鷹爪落爆蹴120回",
       tp: 60,
@@ -155,7 +158,7 @@ export default async function HomePage() {
       name: "治癒功",
       ruby: "ちゆこう",
       description:
-        "ストーリー上で習得(モルルでのイベント)。仲間一人の毒状態を回復する。",
+        "ストーリー進行中のイベント（モルル村での出来事）で自然と習得する気功術。味方単体のHPを優しく癒やします。",
       tp: 8,
       element: [],
       type: "回復",
@@ -164,7 +167,7 @@ export default async function HomePage() {
       name: "解毒功",
       ruby: "げどくこう",
       description:
-        "ストーリー上で習得(モルルでのイベント)。仲間一人の毒状態を回復する。",
+        "同じくモルルでのイベントで習得する気功スキル。仲間1人の厄介な毒状態をきれいに治療します。",
       tp: 8,
       element: [],
       type: "回復",
@@ -173,24 +176,28 @@ export default async function HomePage() {
       name: "回生功",
       ruby: "かいせいこう",
       description:
-        "ストーリー上で習得(ファロース教会でのイベント)。仲間一人の戦闘不能状態を回復する。",
+        "物語の進行上（ファロース教会でのイベント）で習得する重要な回復術。戦闘不能に陥った仲間1人を復活させます。",
       tp: 50,
       element: [],
       type: "回復",
     },
   ] as Skill[];
+
   return (
     <article>
       <SetPageTitle title={title} />
 
       <PageSummary>
         <p>
-          ファラの特技と奥義の一覧ページです。習得に必要な「拳レベル」などの説明、秘奥義の説明は別ページがありますので参照ください。
+          格闘家ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご用意していますのでそちらをご参照ください。
         </p>
         <div className="mb-4">
           <GuideList
             items={[
-              { title: "拳レベル/蹴レベルの説明", href: "/systems/skill" },
+              {
+                title: "拳レベル・蹴レベルシステムの詳細解説",
+                href: "/systems/skill",
+              },
             ]}
           ></GuideList>
         </div>
@@ -204,7 +211,7 @@ export default async function HomePage() {
       </section> */}
 
       <section className="mb-12">
-        <SectionTitle type="skill">ファラの特技</SectionTitle>
+        <SectionTitle type="skill">ファラの特技一覧</SectionTitle>
         <SkillPropertyList skills={skills} />
       </section>
     </article>

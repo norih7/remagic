@@ -11,7 +11,8 @@ export const dynamic = "force-static";
 const title = "チャットの特技";
 export const metadata = {
   title,
-  description: "",
+  description:
+    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。チャットが習得するすべての特技や特殊スキルを網羅。各スキルの効果、属性、消費TP、ヒット数に加え、ピコハンやローバーアイテム、サブイベントによる習得条件などの詳細情報を一覧で紹介しています。",
 };
 
 export default async function HomePage() {
@@ -19,8 +20,8 @@ export default async function HomePage() {
     {
       name: "ピコハン",
       description:
-        "ハンマーを投げて敵を攻撃する特技。命中すると相手が気絶状態になることがあります。",
-      requirement: "チャット加入時に習得済み",
+        "お馴染みのピコピコハンマーを投げて標的を攻撃するチャットの代名詞的な特技。見事命中すると、一定確率で相手を気絶（スタン）状態にさせることができます。",
+      requirement: "チャット加入時に初期習得",
       tp: 12,
       hit: 4,
       element: ["normal"],
@@ -29,8 +30,8 @@ export default async function HomePage() {
     {
       name: "ローバーアイテム",
       description:
-        "飛び道具のワイヤーを敵にぶつけてアイテムを盗むことができる特技。ぶんどる的特技。",
-      requirement: "チャット加入時に習得済み",
+        "射出式のワイヤーを敵めがけて打ち込み、所持しているアイテムを巻き取って盗み出すぶんどり系スキル。敵から貴重な戦利品を獲得したいときに重宝します。",
+      requirement: "チャット加入時に初期習得",
       tp: 15,
       hit: 2,
       element: ["normal"],
@@ -39,8 +40,8 @@ export default async function HomePage() {
     {
       name: "ポイハン",
       description:
-        "毒のついたハンマーを投げる特技。命中すると相手が毒状態になることがあります。",
-      requirement: "サブイベント",
+        "猛毒をたっぷりと染み込ませた特殊なハンマーを投げつける水属性の特技。ヒットした相手を確率で毒状態に陥れます。",
+      requirement: "特定のサブイベントで習得",
       tp: 16,
       hit: 4,
       element: ["water"],
@@ -49,8 +50,8 @@ export default async function HomePage() {
     {
       name: "コチハン",
       description:
-        "凍ったハンマーを投げて敵を攻撃する特技。命中すると敵が凍結状態になることがあります。",
-      requirement: "サブイベント",
+        "カチカチに凍りついた冷たいハンマーを投げつけて攻撃する氷属性の特技。運が良ければ相手を凍結状態にして足止めできます。",
+      requirement: "特定のサブイベントで習得",
       tp: 20,
       hit: 4,
       element: ["ice"],
@@ -59,8 +60,8 @@ export default async function HomePage() {
     {
       name: "パラライボール",
       description:
-        "雷を宿したボールを敵にぶつける特技。命中すると敵が麻痺状態になることがあります。",
-      requirement: "サブイベント",
+        "強力な電撃を宿した特殊なボールを敵へ投げつける雷属性の特技。命中した相手を麻痺させて動きを制限する効果を持ちます。",
+      requirement: "特定のサブイベントで習得",
       tp: 20,
       hit: 3,
       element: ["thunder"],
@@ -69,26 +70,30 @@ export default async function HomePage() {
     {
       name: "エターナルスロー",
       description:
-        "すごいスピードでTPが減っていき、チャットのTPが尽きるか1分間経過するまでハンマーを投げ続けます。パイングミがたくさんあるとかなり強い特技。",
-      requirement: "サブイベント",
+        "凄まじい勢いでTPがぐんぐん減っていく中、チャットが制限時間（最大1分間）またはTPが枯渇するまで延々とハンマーを乱れ投げ続ける豪快な大技。アイテムの「パイングミ」などを大量に用意して維持できれば、非常に高い火力を叩き出せます。",
+      requirement: "特定のサブイベントで習得",
       tp: 60,
       hit: 3,
       element: ["normal"],
       type: "特技",
     },
   ] as Skill[];
+
   return (
     <article>
       <SetPageTitle title={title} />
 
       <PageSummary>
         <p>
-          チャットの特技一覧ページです。習得できるサブイベントは別ページがありますので参照ください。
+          海賊チャットが習得するすべての特技一覧ページです。各スキルをアンロックするために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご用意していますのでそちらをご確認ください。
         </p>
         <div className="mb-4">
           <GuideList
             items={[
-              { title: "チャットの特技習得", href: "/subevents/skill-chat" },
+              {
+                title: "チャットの特技習得サブイベント一覧",
+                href: "/subevents/skill-chat",
+              },
             ]}
           ></GuideList>
         </div>
@@ -102,7 +107,7 @@ export default async function HomePage() {
       </section> */}
 
       <section className="mb-12">
-        <SectionTitle type="skill">チャットの特技</SectionTitle>
+        <SectionTitle type="skill">チャットの特技一覧</SectionTitle>
         <SkillPropertyList skills={skills} />
       </section>
     </article>
