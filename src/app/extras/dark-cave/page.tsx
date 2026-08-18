@@ -6,6 +6,7 @@ import LocationItems from "@/components/LocationItems";
 import LocationLenses from "@/components/LocationLenses";
 import { getLocationItemsData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,13 +31,13 @@ export default async function HomePage() {
         <div className="mb-4">
           <p>
             隠しダンジョンの1つ。闇の洞窟はセレスティアの海中にあり、潜水艇を入手後からダンジョンに挑むことが可能です。ダンジョンの奥には大晶霊「シャドウ」がいて、戦闘勝利後に契約することができます。
-            ダンジョン内の敵には光属性を持つ攻撃が有効で、ストーリーをレグルスの丘クリア後にレムと契約してエクスカリバー入手しているとかなり楽に攻略できます。
+            ダンジョン内の敵には光属性を持つ攻撃が有効で、雷晶霊の遺跡クリア後に入手する「エクスカリバー」を装備している楽に攻略できます。
           </p>
         </div>
-        <h3>イベント発生条件</h3>
+        <h3>闇の洞窟の行き方</h3>
+        <ResponsiveImage src="" />
         <p>
-          闇の洞窟に入るためにはまず潜水艇でセレスティアの海中マップ
-          GPS(168,18)でシャドウに関する会話イベントを発生させる必要があります。
+          闇の洞窟はセレスティアの海底にあります。バリル城を北東に進んだあたりから潜水艇へ切り替えGPS(5,12)あたりへ向かうと闇の洞窟があります。
         </p>
         <p></p>
       </section>
