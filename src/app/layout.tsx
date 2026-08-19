@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   description:
     "テイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開。リマスター版にも対応予定のクリーンな攻略サイトです。",
   metadataBase: new URL("https://remagic.brclover.com"),
+  verification: {
+    google: "F3hRATFrIBis2W1AmH_y0DXoniaXlY9IrUkcQ4eHNVA",
+  },
 };
 
 export default function RootLayout({
