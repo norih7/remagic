@@ -5,17 +5,20 @@ import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
 import { getLocationItemsData } from "@/lib/db";
+import { extraLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "きらめきの塔";
-const description =
-  "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しダンジョン「きらめきの塔」の行き方、1階から7階までの各フロアに用意された多彩な謎解きギミック・パズルの解き方、リッド1人で挑むボス「ワルキューレ」の攻略法や「S・D」入手の鍵に関する情報を網羅して紹介しています。";
-
+const pageKey = "valkyrie";
+const title = extraLinks[pageKey].title;
+const canonical = extraLinks[pageKey].path;
 export const metadata = {
   title,
-  description,
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

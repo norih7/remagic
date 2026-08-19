@@ -4,15 +4,20 @@ import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
 import SkillPropertyList from "@/components/SkillPropertyList";
 import { Skill } from "@/components/SkillPropertyList";
+import { skillLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "ファラの特技";
+const pageKey = "farth";
+const title = skillLinks[pageKey].title;
+const canonical = skillLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ファラが習得するすべての特技や回復功を網羅。各種スキルの効果、属性、消費TP、ヒット数に加え、習得に必要な拳・蹴レベルや特定技の使用回数といった詳細な条件を一覧で紹介しています。",
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

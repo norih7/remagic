@@ -7,14 +7,22 @@ import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "フォッグの特技習得イベント攻略";
-const description =
-  "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。フォッグがサブイベントで習得するすべての特技（エアブレイド、アクアスパイラル、レイジレーザー、ダークレイザー、エレメンタルマスター）の発生条件、場所、強力な最終技習得までの流れを詳しく解説しています。";
-
+const pageKey = "skill-fog";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
+export const metadata = {
+  title,
+  description,
+  alternates: {
+    canonical,
+  },
+};
 export default async function HomePage() {
   return (
     <article>

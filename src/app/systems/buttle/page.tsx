@@ -6,15 +6,20 @@ import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import Tag from "@/components/Tag";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import { systemLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = " マニュアル操作/特殊操作";
+const pageKey = "buttle";
+const title = systemLinks[pageKey].title;
+const canonical = systemLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアの戦闘マニュアル操作および特殊操作を解説。マニュアル操作への切り替え方法（マニュアルのしょ入手）や、おすすめの操作設定、バックステップ、移動速度アップ、晶霊術・特技の詠唱短縮など、戦闘を有利に進めるためのテクニックを網羅しています。",
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 export default async function HomePage() {
   return (

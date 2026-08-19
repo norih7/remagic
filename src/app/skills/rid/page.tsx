@@ -5,15 +5,20 @@ import GuideList from "@/components/GuideList";
 import SkillPropertyList from "@/components/SkillPropertyList";
 import { Skill } from "@/components/SkillPropertyList";
 import Information from "@/components/Information";
+import { skillLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "リッドの特技";
+const pageKey = "rid";
+const title = skillLinks[pageKey].title;
+const canonical = skillLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。リッドが習得するすべての特技と奥義を網羅。各種スキルの効果、属性、消費TP、ヒット数に加え、習得に必要な斬・突レベルや特定技の使用回数といった条件を詳しく一覧で紹介しています。",
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

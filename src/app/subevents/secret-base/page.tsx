@@ -10,17 +10,22 @@ import GuideList from "@/components/GuideList";
 import { getLocationItemsData } from "@/lib/db";
 import LocationItems from "@/components/LocationItems";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "インフェリアの隠しアジト";
+const pageKey = "secret-base";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版対応のテイルズオブエターニア（TOE）攻略。インフェリアにあるアイフリードの隠しアジト（全4箇所）の攻略情報です。各アジトのGPS座標やマップ画像、セボリーやホーリィクロークなどの入手アイテム一覧を網羅しています。",
+  description,
+  alternates: {
+    canonical,
+  },
 };
-
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   return (

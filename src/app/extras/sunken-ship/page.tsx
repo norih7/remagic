@@ -7,17 +7,20 @@ import { getLocationItemsData } from "@/lib/db";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Information from "@/components/Information";
 import EventCondition from "@/components/EventCondition";
+import { extraLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "沈没船";
-const description =
-  "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。インフェリアの隠しダンジョン「沈没船」の行き方、船内の謎解き（隔壁のキー・ポンプ室の鍵・水の放出）、インシーマップの入手法、ボス「セイレーン」の攻略と「みずぐも」の盗み方、入手アイテム情報を網羅して紹介しています。";
-
+const pageKey = "sunken-ship";
+const title = extraLinks[pageKey].title;
+const canonical = extraLinks[pageKey].path;
 export const metadata = {
   title,
-  description,
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

@@ -14,15 +14,21 @@ import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import CardList from "@/components/CardLIst";
+import { storyLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "いざないの密林〜霊峰ファロース";
+const pageKey = "guide2";
+const title = storyLinks[pageKey].title;
+const description = storyLinks[pageKey].seoDesc;
+const canonical = storyLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "テイルズオブエターニア（TOE/リマスター版）攻略。インフェリアから霊峰ファロースまでの攻略ルート、いざないの密林の石像の謎解き、風晶霊の空洞、火晶霊の谷、レンズやアイテムの入手場所を詳細に解説します。",
+  description,
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {
@@ -202,8 +208,8 @@ export default async function HomePage() {
         <p>
           ダンジョンには特に難しい謎解きはありませんが、吹き上げてくる風にタイミングよく乗っかることが必要な場所が多くあります。風の吹上を観察し、慌てないで操作しましょう。
         </p>
+        <ResponsiveImage src="/stories/guide2-wind-cavity-1.jpg" />
         <p>
-          <ResponsiveImage src="/stories/guide2-wind-cavity-1.jpg" />
           途中に大きな通路で風が強い場所があり、そのまま進んでしまうと流されて入口付近に戻されてしいます。この場所では付近にある突起している岩を調べるとレイスがロープをかけてくれ、再度それを調べることで渡ることができます。岩を○ボタンで調べないとロープがかけられないことに注意です。
         </p>
         <p>

@@ -10,14 +10,20 @@ import { getLocationLensesData } from "@/lib/db";
 import { getLocationSubEventsData } from "@/lib/db";
 import Image from "next/image";
 import SectionTitle from "@/components/SectionTitle";
+import { storyLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "セイファート神殿〜シゼル城";
+const pageKey = "guide5";
+const title = storyLinks[pageKey].title;
+const canonical = storyLinks[pageKey].path;
 export const metadata = {
   title,
   description: "",
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

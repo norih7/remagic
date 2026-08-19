@@ -5,15 +5,22 @@ import SectionHeader from "@/components/SectionHeader";
 import GuideList from "@/components/GuideList";
 import Image from "next/image";
 import Information from "@/components/Information";
+import { systemLinks } from "@/constants";
+
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "特技の習得について";
+const pageKey = "skill";
+const title = systemLinks[pageKey].title;
+const canonical = systemLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。リッド・ファラの専用レベル（斬・突・拳・蹴）や技の使用回数、キール・メルディのクレーメルケイジ（フリンジ）による晶霊術習得、チャット・フォッグのサブイベント習得まで、キャラクターごとの多彩なスキル習得システムを徹底解説。",
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
+
 export default async function HomePage() {
   return (
     <article>

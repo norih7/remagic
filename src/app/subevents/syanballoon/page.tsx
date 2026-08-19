@@ -9,15 +9,21 @@ import RoundedItem from "@/components/RoundedItem";
 import Image from "next/image";
 import GifPlayer from "@/components/GifPlayer";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "シャンバルーン";
+const pageKey = "syanballoon";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版対応のテイルズオブエターニア（TOE）攻略。シャンバルーン攻略情報。リッドの称号「キングあんどバルーン」や貴重な「ステップリング」の入手方法、各難易度の制限時間とおすすめの戦法を詳しく紹介。",
+  description,
+  alternates: {
+    canonical,
+  },
 };
 export default async function HomePage() {
   return (

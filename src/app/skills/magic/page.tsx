@@ -4,18 +4,22 @@ import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import SectionTitle from "@/components/SectionTitle";
 import { Skill } from "@/components/SkillPropertyList";
-
 import SkillPropertyList from "@/components/SkillPropertyList";
+import { skillLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "晶霊術（メルディ＆キール）";
+const pageKey = "magic";
+const title = skillLinks[pageKey].title;
+const canonical = skillLinks[pageKey].path;
 export const metadata = {
   title,
   description: "",
+  alternates: {
+    canonical,
+  },
 };
-
 export default async function HomePage() {
   const skills = [
     {

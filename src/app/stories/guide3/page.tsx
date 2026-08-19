@@ -14,15 +14,21 @@ import Information from "@/components/Information";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
+import { storyLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "セレスティア突入〜チャットの小屋";
+const pageKey = "guide3";
+const title = storyLinks[pageKey].title;
+const description = storyLinks[pageKey].seoDesc;
+const canonical = storyLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。セレスティア到着後の「地晶霊の廃坑」や「チャットの小屋」の詳細な攻略法を分かりやすく解説！階層ごとのギミック解除手順や重要アイテム、レンズの回収場所を掲載しています。",
+  description,
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

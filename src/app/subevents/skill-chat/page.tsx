@@ -6,19 +6,22 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "チャットの特技習得イベント攻略";
-const description =
-  "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。チャットが習得するすべての特技（ポイハン、コチハン、パラライボール、エターナルスロー）の発生条件や場所、隠しアジトですごろく後に挑む全10問の難解なクイズの正解一覧をわかりやすく解説しています。";
-
+const pageKey = "skill-chat";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
   description,
+  alternates: {
+    canonical,
+  },
 };
-
 export default async function HomePage() {
   const anserStyle =
     "bg-slate-100 border rounded-md px-3 py-1 font-bold text-slate-600 inline-block mt-1";

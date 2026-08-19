@@ -4,17 +4,21 @@ import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
 import SkillPropertyList from "@/components/SkillPropertyList";
 import { Skill } from "@/components/SkillPropertyList";
+import { skillLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "フォッグの特技";
+const pageKey = "fog";
+const title = skillLinks[pageKey].title;
+const canonical = skillLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。フォッグが操るすべての特技や銃弾スキルを網羅。各スキルの効果、属性、消費TP、ヒット数に加え、キャンセルレベルやサブイベントによる習得手順などの詳細情報を一覧で紹介しています。",
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
-
 export default async function HomePage() {
   const skills = [
     {

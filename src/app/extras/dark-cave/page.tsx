@@ -7,15 +7,20 @@ import LocationLenses from "@/components/LocationLenses";
 import { getLocationItemsData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import { extraLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "闇の洞窟";
+const pageKey = "dark-cave";
+const title = extraLinks[pageKey].title;
+const canonical = extraLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。闇の大晶霊「シャドウ」と契約できる隠しダンジョン「闇の洞窟」の行き方、謎解き・フロア攻略手順、シャドウ戦のボス攻略法やおすすめの戦術、入手できるアイテム・レンズ情報を網羅して紹介しています。",
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

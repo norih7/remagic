@@ -7,17 +7,21 @@ import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "飛行艇の入手方法と改造手順";
-const description =
-  "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。バンエルティア号を飛行艇へと改造するために必要なキーアイテム「やみのたま」「ひかりのたま」の入手法、中継基地の改造ドッグへの行き方、フィールドでの呼び出し方を詳しく解説しています。";
-
+const pageKey = "flying-boad";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
   description,
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

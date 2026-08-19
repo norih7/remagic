@@ -6,15 +6,21 @@ import { getLocationLensesData } from "@/lib/db";
 import RoundedItem from "@/components/RoundedItem";
 import { recipeWorldMap } from "@/constants";
 import Information from "@/components/Information";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "レンズ収集";
+const pageKey = "lens";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版対応のテイルズオブエターニア（TOE）攻略。レンズ全60枚の入手場所一覧を徹底解説。シャンバールやティンシアのイレーヌでもらえる豪華報酬リストから、見落としがちなレンズの隠し場所まで網羅。効率的なコンプリートを目指しましょう。",
+  description,
+  alternates: {
+    canonical,
+  },
 };
 export default async function HomePage() {
   const lensesData = await getLocationLensesData();

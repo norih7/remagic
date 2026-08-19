@@ -7,15 +7,20 @@ import StarRating from "@/components/StarRating";
 import RunePropertyList from "@/components/RunePropertyList";
 import Information from "@/components/Information";
 import { getLocationItemsData } from "@/lib/db";
+import { systemLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "ルーンボトルの解説とアイテム変化一覧";
+const pageKey = "rune";
+const title = systemLinks[pageKey].title;
+const canonical = systemLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版対応のテイルズオブエターニア（TOE）攻略。ルーンボトルの解説と変化一覧を掲載しています！各変化についてオススメ度もあるので参考にしてください！",
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 
 const sectionList = {

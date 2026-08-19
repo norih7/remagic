@@ -9,15 +9,20 @@ import {
 } from "@/lib/db";
 import RecipePropertyList from "@/components/RecipePropertyList";
 import Image from "next/image";
+import { systemLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "料理レシピ一覧とマスター料理";
+const pageKey = "recipe";
+const title = systemLinks[pageKey].title;
+const canonical = systemLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版対応のテイルズオブエターニア（TOE）攻略。料理レシピ一覧とマスター料理を説明。各料理の効果、ワンダーシェフの場所、作成に必要な食材データを網羅。HP・TP回復やステータス強化に役立つマスター料理の習得条件も詳しく解説。",
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 export default async function HomePage() {
   const recipes = await getRecipesData();

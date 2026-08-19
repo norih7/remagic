@@ -7,15 +7,21 @@ import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "放浪の画家リシテア";
+const pageKey = "lysithea";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版対応のテイルズオブエターニア（TOE）攻略。サブイベント「放浪の画家リシテア」の攻略ページ。ペイルティやセレスティア各地での遭遇場所、発生条件、フォッグのアクセサリ「キャンセラー」の入手法とエレメントマスター習得への流れを解説。",
+  description,
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

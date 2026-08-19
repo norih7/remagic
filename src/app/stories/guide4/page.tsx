@@ -14,15 +14,21 @@ import Information from "@/components/Information";
 import CardList from "@/components/CardLIst";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GuideList from "@/components/GuideList";
+import { storyLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "港町ペイルティ〜バリル城";
+const pageKey = "guide4";
+const title = storyLinks[pageKey].title;
+const description = storyLinks[pageKey].seoDesc;
+const canonical = storyLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。氷晶霊の山、雷晶霊の遺跡、バリル城の詳細な攻略法を分かりやすく解説！ダンジョンマップやレンズの回収位置、厄介なボス戦の対策もまとめています。",
+  description,
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

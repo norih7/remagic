@@ -4,17 +4,20 @@ import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
 import { getLocationItemsData } from "@/lib/db";
+import { extraLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "ファロース教会地下";
-const description =
-  "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。元の大晶霊「マクスウェル」と契約できる隠しダンジョン「ファロース教会地下」の行き方、ダンジョン内部の探索、ボス「マクスウェル」の攻略法、貴重なドロップアイテム「フェアリィリング」や入手装備の情報を網羅して紹介しています。";
-
+const pageKey = "farosu-underground";
+const title = extraLinks[pageKey].title;
+const canonical = extraLinks[pageKey].path;
 export const metadata = {
   title,
-  description,
+  description: "",
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {

@@ -4,17 +4,21 @@ import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
 import RoundedItem from "@/components/RoundedItem";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "カトリーヌの恋愛イベント攻略";
-const description =
-  "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ファラの限定称号「あいのネゴシエーター」が手に入る隠しサブイベント「カトリーヌの恋愛イベント」の発生場所、全6回の遭遇時期、時限要素の注意点、そしてハッピーエンドを迎えるための全遭遇条件を詳しく解説しています。";
-
+const pageKey = "catarine";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
   description,
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {
