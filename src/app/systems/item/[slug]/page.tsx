@@ -33,6 +33,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `アイテムデータ - ${item?.name}`;
   return {
     title,
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 
