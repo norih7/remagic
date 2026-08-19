@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: {
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   },
   description:
     "テイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開。リマスター版にも対応予定のクリーンな攻略サイトです。",
+  metadataBase: new URL("https://remagic.brclover.com"),
 };
 
 export default function RootLayout({

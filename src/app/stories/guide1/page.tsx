@@ -11,15 +11,21 @@ import { getLocationSubEventsData } from "@/lib/db";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import { storyLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "ラシュアン〜水晶霊の河";
+const pageKey = "guide1";
+const title = storyLinks[pageKey].title;
+const description = storyLinks[pageKey].seoDesc;
+const canonical = storyLinks[pageKey].path;
 export const metadata = {
   title,
-  description:
-    "リマスター版対応のテイルズオブエターニア（TOE）攻略。ラシュアンから水晶霊の河までの進行ルートを紹介します。レグルス道場や望郷の洞窟、モルルなどの攻略ポイントに加え、ウンディーネ戦のポイント、マニュアルのしょやレンズなどの取り忘れやすいアイテムもまとめています。",
+  description,
+  alternates: {
+    canonical,
+  },
 };
 
 export default async function HomePage() {
