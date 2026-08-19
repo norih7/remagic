@@ -276,7 +276,8 @@ export const extraLinks = {
   "dark-cave": {
     title: "闇の洞窟",
     path: "/extras/dark-cave",
-    desc: "",
+    image: "/link-headers/extras-dark-cave.jpg",
+    desc: "闇の大晶霊シャドウと契約できる隠しダンジョン。潜水艇を入手したら早めに目指すのがおすすめです。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。闇の大晶霊「シャドウ」と契約できる隠しダンジョン「闇の洞窟」の行き方、謎解き・フロア攻略手順、シャドウ戦のボス攻略法やおすすめの戦術、入手できるアイテム・レンズ情報を網羅して紹介しています。",
   },
