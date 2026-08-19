@@ -14,10 +14,11 @@ export const dynamic = "force-static";
 
 const pageKey = "sunken-ship";
 const title = extraLinks[pageKey].title;
+const description = extraLinks[pageKey].seoDesc;
 const canonical = extraLinks[pageKey].path;
 export const metadata = {
   title,
-  description: "",
+  description,
   alternates: {
     canonical,
   },

@@ -16,14 +16,16 @@ export const dynamic = "force-static";
 
 const pageKey = "recipe";
 const title = systemLinks[pageKey].title;
+const description = systemLinks[pageKey].seoDesc;
 const canonical = systemLinks[pageKey].path;
 export const metadata = {
   title,
-  description: "",
+  description,
   alternates: {
     canonical,
   },
 };
+
 export default async function HomePage() {
   const recipes = await getRecipesData();
   const recipeItems = await getRecipeItemsData();

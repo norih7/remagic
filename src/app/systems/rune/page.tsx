@@ -14,10 +14,11 @@ export const dynamic = "force-static";
 
 const pageKey = "rune";
 const title = systemLinks[pageKey].title;
+const description = systemLinks[pageKey].seoDesc;
 const canonical = systemLinks[pageKey].path;
 export const metadata = {
   title,
-  description: "",
+  description,
   alternates: {
     canonical,
   },
