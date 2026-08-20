@@ -161,7 +161,8 @@ export const subeventLinks = {
   },
   "flying-boad": {
     title: "飛行艇の入手",
-    path: "/subevents/flying-boad",
+    path: "/subevents/flying-board",
+    image: "/link-headers/subevents-flying-board.jpg",
     desc: "エターニアを最後まで楽しむために入手必須な飛行艇の入手方法を解説！",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。バンエルティア号を飛行艇へと改造するために必要なキーアイテム「やみのたま」「ひかりのたま」の入手法、中継基地の改造ドッグへの行き方、フィールドでの呼び出し方を詳しく解説しています。",
@@ -176,6 +177,7 @@ export const subeventLinks = {
   },
   "secret-spirits": {
     title: "隠し大晶霊",
+    image: "/link-headers/subevents-secret-spirits.jpg",
     path: "/subevents/secret-spirits",
     desc: "ストーリー攻略だけでは契約できない大晶霊を解説。どれも強力な大晶霊です！",
   },

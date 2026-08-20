@@ -64,6 +64,18 @@ export default async function HomePage() {
               <span className="text-slate-400">2026/08/20</span>
               <span>
                 <Link
+                  href="/subevents/flying-board"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  飛行艇の入手
+                </Link>
+                をアップデート。ページ内に画像を掲載しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
+              <span className="text-slate-400">2026/08/20</span>
+              <span>
+                <Link
                   href="/subevents/lysithea"
                   className="hover:text-cyan-400 transition-colors"
                 >

@@ -10,6 +10,10 @@ const title = "装備品の特殊効果";
 export const metadata = {
   title,
   description: "",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 export default async function HomePage() {
   return (

@@ -12,6 +12,10 @@ const title = "エターニアの称号";
 export const metadata = {
   title,
   description: "",
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 export default async function HomePage() {
   return (
