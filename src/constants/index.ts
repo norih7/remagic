@@ -114,11 +114,11 @@ export const subeventLinks = {
     image: "/link-headers/subevents-kremerball.jpg",
     desc: "ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
   },
-  // "clip-spirits": {
-  //   title: "クリップソード",
-  //   path: "/subevents/clip-sword",
-  //   desc: "",
-  // },
+  "grip-sword": {
+    title: "クリップソード探し",
+    path: "/subevents/grip-sword",
+    desc: "",
+  },
   beppo: {
     title: "ベッポのかくれんぼ",
     path: "/subevents/beppo",

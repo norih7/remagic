@@ -34,6 +34,9 @@ export async function generateMetadata() {
     title,
     description:
       "テイルズオブエターニア（TOE）リマスター版対応の攻略サイト。ストーリー攻略、謎解き、レンズ・アイテム入手場所などを詳細に解説！シンプルで読みやすい攻略サイトです。",
+    alternates: {
+      canonical: "/",
+    },
   };
 }
 
