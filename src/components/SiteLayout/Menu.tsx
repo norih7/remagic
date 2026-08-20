@@ -4,7 +4,7 @@ import { storyLinks } from "@/constants";
 import { skillLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
-import { extraLinks } from "@/constants";
+import { extraLinks, deepLinks } from "@/constants";
 
 type Link = {
   title: string;
@@ -62,6 +62,8 @@ export default function Menu() {
       <List links={Object.values(subeventLinks)} />
       <Category>隠しマップ</Category>
       <List links={Object.values(extraLinks)} />
+      {/* <Category>やりこみ</Category>
+      <List links={Object.values(deepLinks)} /> */}
     </nav>
   );
 }

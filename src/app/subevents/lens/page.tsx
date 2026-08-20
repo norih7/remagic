@@ -129,8 +129,8 @@ export default async function HomePage() {
           </table>
         </div>
         <SectionTitle>レンズの入手場所一覧（全60枚）</SectionTitle>
-        <Information title="レンズの入手タイミングについて">
-          レンズは期間限定ではなく、いつでも入手可能なので好きなタイミングで集めて大丈夫です
+        <Information type="warning" title="レンズの入手タイミングについて">
+          レンズは期間限定ではなく、基本的にはいつでも入手可能なので町やダンジョンで取り逃してもあとで回収可能です。ただしジイニのオークション会場にあるレンズだけ、先に王都インフェリアの闘技場「王国一決定戦」で優勝すると獲得できなくなります。ジイニで先にレンズを獲得しておくことを水晶します。
         </Information>
         {Lenses}
       </section>

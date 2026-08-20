@@ -61,6 +61,18 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/08/20</span>
+              <span>
+                <Link
+                  href="/subevents/lysithea"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  画家リシテア
+                </Link>
+                をアップデート。ページ内に画像を掲載しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/08/19</span>
               <span>
                 <Link
@@ -243,6 +255,7 @@ export default async function HomePage() {
                 をアップデート。レイアウトを整備し、攻略動画をアップしました。
               </span>
             </li>
+            {/* 
             <li className="flex gap-4">
               <span className="text-slate-400">2026/07/18</span>
               <span>
@@ -315,7 +328,7 @@ export default async function HomePage() {
                 をアップデート 戦闘中の特殊操作を追記しました
               </span>
             </li>
-            {/* <li className="flex gap-4">
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/07/07</span>
               <span>
                 <Link

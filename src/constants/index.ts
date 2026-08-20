@@ -154,6 +154,7 @@ export const subeventLinks = {
   lysithea: {
     title: "画家リシテア",
     path: "/subevents/lysithea",
+    image: "/link-headers/subevents-lysithea.jpg",
     desc: "フォッグの最強技の習得や強化に関連する画家リシテアのイベントを解説！",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。サブイベント「放浪の画家リシテア」の攻略ページ。ペイルティやセレスティア各地での遭遇場所、発生条件、フォッグのアクセサリ「キャンセラー」の入手法とエレメントマスター習得への流れを解説。",
@@ -178,7 +179,7 @@ export const subeventLinks = {
     path: "/subevents/secret-spirits",
     desc: "ストーリー攻略だけでは契約できない大晶霊を解説。どれも強力な大晶霊です！",
   },
-  // a: {
+  // coliseum: {
   //   title: "闘技場",
   //   path: "/subevents/a",
   //   desc: "",
@@ -245,11 +246,6 @@ export const systemLinks = {
   //   title: "ワールドマップ",
   //   path: "/systems/world-map",
   // },
-  // "status-up": {
-  //   title: "ステータスアップ薬草",
-  //   path: "/systems/status-up",
-  //   desc: "",
-  // },
   // "special-skill": {
   //   title: "秘奥義/特殊技",
   //   path: "/systems/special-skill",
@@ -258,11 +254,6 @@ export const systemLinks = {
   // "blue-earth": {
   //   title: "ブルーアース",
   //   path: "/systems/blue-earth",
-  //   desc: "",
-  // },
-  // "level-up": {
-  //   title: "レベル上げ方法",
-  //   path: "/systems/level-up",
   //   desc: "",
   // },
 };
@@ -326,6 +317,34 @@ export const extraLinks = {
   //   path: "/extras/valkyrie",
   //   desc: "",
   // },
+};
+
+export const deepLinks = {
+  "level-up": {
+    title: "レベル上げ方法",
+    path: "/depths/level-up",
+    desc: "",
+  },
+  "status-up": {
+    title: "ステータスアップ薬草",
+    path: "/depths/status-up",
+    desc: "",
+  },
+  a: {
+    title: "戦闘ランクマニア/アンノウン",
+    path: "/depths/",
+    desc: "",
+  },
+  b: {
+    title: "アイテム盗み",
+    path: "/depths/",
+    desc: "",
+  },
+  c: {
+    title: "おすすめ装備考察",
+    path: "/depths/",
+    desc: "",
+  },
 };
 
 export const elementMap = {

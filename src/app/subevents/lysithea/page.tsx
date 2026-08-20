@@ -8,6 +8,7 @@ import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import { subeventLinks } from "@/constants";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -41,8 +42,9 @@ export default async function HomePage() {
           <EventCondition category="period">
             氷晶霊の山をクリア後
           </EventCondition>
+          <ResponsiveImage src="/subevents/lysithea-start.jpg" />
           <RoundedItem title="説明">
-            フォッグが仲間にいない状態でペイルティの港にいくと絵を描いている女性がいて近づくとイベントが発生する。このイベントを見ることで以降セレスティア各地でこの女性、リシテアが出現します。
+            フォッグが仲間にいない状態でペイルティの港にいくと絵を描いている女性がいて近づくとイベントが発生。このイベントを見ることで以降セレスティア各地でこの女性、リシテアが出現します。
           </RoundedItem>
         </RoundedContainer>
       </section>
@@ -85,6 +87,7 @@ export default async function HomePage() {
           <EventCondition category="period">
             各地でリシテアと遭遇済み
           </EventCondition>
+          <ResponsiveImage src="/subevents/lysithea-finish.jpg" />
           <RoundedItem title="説明">
             <p>
               ジイニ以外の場所でリシテアと遭遇済みの状態で夜のジイニのオークション会場前にいるリシテアに話しかけるとイベントが発生。このイベントではフォッグのアクセサリ「キャンセラー」をもらえます。
