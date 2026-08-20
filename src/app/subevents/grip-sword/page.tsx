@@ -12,14 +12,19 @@ import { subeventLinks } from "@/constants";
 export const dynamic = "force-static";
 
 const pageKey = "grip-sword";
-const title = subeventLinks[pageKey].title;
-const description = subeventLinks[pageKey].seoDesc;
-const canonical = subeventLinks[pageKey].path;
+const title = "グリップソード";
+// const title = subeventLinks[pageKey].title;
+// const description = subeventLinks[pageKey].seoDesc;
+// const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description,
-  alternates: {
-    canonical,
+  description: "",
+  // alternates: {
+  //   canonical,
+  // },
+  robots: {
+    index: false,
+    follow: true,
   },
 };
 
@@ -36,7 +41,7 @@ export default async function HomePage() {
       </PageSummary>
       <section className="mb-12">
         <SectionTitle>クリップソード探し</SectionTitle>
-        <p>あああ</p>
+        <p>-</p>
       </section>
       <section className="mb-12">
         <SectionTitle>イベントの詳細</SectionTitle>
