@@ -39,7 +39,7 @@ export default async function HomePage() {
       <section className="mb-12">
         <SectionTitle>クリップソード探し</SectionTitle>
         <EventCondition category="period">
-          ストーリーで王都インフェリアに到着後からいつでも発生
+          王都インフェリアに到着後いつでも
         </EventCondition>
         <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
         <p>
