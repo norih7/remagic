@@ -6,6 +6,7 @@ import { useTitle } from "@/context/TitleContext";
 import { useCategory } from "@/hooks/useCategory";
 import Breadcrumb from "@/components/Breadcrumb";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function SiteLayout({
   children,
@@ -14,6 +15,11 @@ export default function SiteLayout({
 }) {
   const { title } = useTitle();
   const category = useCategory();
+  const pathname = usePathname();
+  const topText =
+    pathname === "/" ? (
+      <p className="text-white mb-1 text-sm">RE:MAGIC</p>
+    ) : null;
 
   return (
     <>
@@ -34,14 +40,18 @@ export default function SiteLayout({
           </div>
           <div className="">
             <span className="relative text-xs text-gray-700">
-              テイルズオブエターニアの攻略情報をお届けします
+              リマスターに対応したテイルズオブエターニア攻略ガイド
             </span>
           </div>
         </div>
       </header>
       <div className={styles.pageTitleArea}>
         <div className={`${styles.pageTitleInner} px-4 py-3`}>
-          <h2 className="text-lg font-bold text-gray-800">{title}</h2>
+          <Breadcrumb category={category} pageTitle={title} />
+          {topText}
+          <h2 className="text-lg font-bold text-gray-800 text-white">
+            {title}
+          </h2>
         </div>
       </div>
       <div className={`${styles.shortcutMenu}`}>
@@ -71,8 +81,7 @@ export default function SiteLayout({
           <Menu />
         </aside>
 
-        <main className={`${styles.main} px-4 py-8`}>
-          <Breadcrumb category={category} pageTitle={title} />
+        <main className={`${styles.main} px-6 py-8`}>
           {/* <div
             style={{
               height: "200px",

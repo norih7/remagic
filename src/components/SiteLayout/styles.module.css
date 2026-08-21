@@ -34,9 +34,14 @@
 .headerInner h1 {
 }
 .pageTitleArea {
-  background: #f0ece3;
+  /* background: #f0ece3;
   border-top: 1px solid #e7e1d4;
-  border-bottom: 1px solid #e7e1d4;
+  border-bottom: 1px solid #e7e1d4; */
+  background: #3a434e;
+  padding: 8px 0;
+}
+.pageTitleArea h2 {
+  font-size: 1.2rem;
 }
 .sidebar {
   border-right: 1px solid #e5e7eb;

@@ -1,6 +1,5 @@
 .breadcrumb {
-  font-size: 0.85rem; /* 本文より少し小さく控えめに */
-  color: #666; /* 文字は真っ黒にせずグレーで視覚ノイズを減らす */
+  color: #eee; /* 文字は真っ黒にせずグレーで視覚ノイズを減らす */
 }
 
 .breadcrumb ol {
@@ -23,13 +22,13 @@
 }
 
 .breadcrumb a {
-  color: #666;
+  color: #eee;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .breadcrumb a:hover {
-  color: #3b82f6; /* ホバー時にサイトのテーマカラーへ変化 */
+  color: #87b0f2; /* ホバー時にサイトのテーマカラーへ変化 */
   text-decoration: underline;
 }
 
