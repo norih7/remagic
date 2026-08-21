@@ -19,6 +19,7 @@ const description = subeventLinks[pageKey].seoDesc;
 const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
+  description,
   alternates: {
     canonical,
   },
