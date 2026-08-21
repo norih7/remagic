@@ -117,7 +117,10 @@ export const subeventLinks = {
   "grip-sword": {
     title: "クリップソード探し",
     path: "/subevents/grip-sword",
-    desc: "",
+    image: "/link-headers/subevents-grip-sword.jpg",
+    desc: "アクセサリ「スマッシュマント」を入手できるグリップソード探しを紹介。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。アクセサリ「スマッシュマント」を入手できるグリップソード探しのサブイベントを解説。街の探索場所について画像も掲載しています。",
   },
   beppo: {
     title: "ベッポのかくれんぼ",

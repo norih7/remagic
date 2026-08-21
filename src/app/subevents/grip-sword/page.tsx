@@ -7,24 +7,20 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
+import EventCondition from "@/components/EventCondition";
+import CardList from "@/components/CardLIst";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
 const pageKey = "grip-sword";
-const title = "グリップソード";
-// const title = subeventLinks[pageKey].title;
-// const description = subeventLinks[pageKey].seoDesc;
-// const canonical = subeventLinks[pageKey].path;
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description: "",
-  // alternates: {
-  //   canonical,
-  // },
-  robots: {
-    index: false,
-    follow: true,
+  alternates: {
+    canonical,
   },
 };
 
@@ -41,67 +37,52 @@ export default async function HomePage() {
       </PageSummary>
       <section className="mb-12">
         <SectionTitle>クリップソード探し</SectionTitle>
-        <p>-</p>
+        <EventCondition category="period">
+          ストーリーで王都インフェリアに到着後からいつでも発生
+        </EventCondition>
+        <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
+        <p>
+          王都インフェリアの闘技場の前にいる老人に話しかけると「グリップソード」を探してほしいと頼まれます。グリップソードはインフェリアの街中にあり、簡単に探し出せるのとイベントの最後にはアクセサリ「スマッシュマント」を入手できます。スマッシュマントはアイテムドロップ率をアップする貴重なアイテムなのでぜひ入手してみてください。
+        </p>
       </section>
       <section className="mb-12">
         <SectionTitle>イベントの詳細</SectionTitle>
-        <div className="mb-4">
-          <p>
-            まずはレイス加入後〜セレスティア突入前までにバロールの町に隠れているベッポに話しかけることでイベントがスタートします。
-          </p>
-          <Information
-            type="warning"
-            title="このサブイベント発生のラストチャンス"
-          >
-            <p>
-              ベッポとのかくれんぼはセレスティアへ突入すると発生しなくなります。セレスティア突入前の霊峰ファロースでは別れたファラと合流した直後が、再度バロールに戻って来れるラストチャンスとなります。ファロースから下山するのも大変なので、なるべくならバロール到着時点でこのサブイベントをやっておくことを推奨します。
-            </p>
-          </Information>
-        </div>
+
         <RoundedContainer>
           <h3 className={styles.header}>No1. イベント開始</h3>
-          <ResponsiveImage src="/subevents/beppo-1.jpg" />
+          <ResponsiveImage src="/subevents/grid-sword-start.jpg" />
           <RoundedItem title="説明">
-            噴水のあるエリアのテントに隠れているベッポに話かけるとかくれんぼがスタートします。
+            まずは闘技場前にいる老人に話しかけることでイベントがスタートします。
           </RoundedItem>
         </RoundedContainer>
         <RoundedContainer>
-          <h3 className={styles.header}>No2. アイテム屋のテント</h3>
-          <ResponsiveImage src="/subevents/beppo-2.jpg" />
-          <RoundedItem title="説明">
-            逃げていった方向にあるフロアではアイテム屋のテントに隠れていて、また頭が少しはみ出ています。
+          <h3 className={styles.header}>
+            No2. 街の探索（防具屋前の男性〜闘技場内の兵士）
+          </h3>
+          <ResponsiveImage src="/subevents/grid-sword-search.jpg" />
+          <RoundedItem title="説明" className="mb-4">
+            <p>
+              インフェリアの町では下記の順番でグリップソードを探していきます。
+            </p>
           </RoundedItem>
+          <CardList
+            list={[
+              "(1) 防具屋の前にいる男性に話しかけ、グリップソードの情報を聞く",
+              "(2) 城門前にいる兵士に話しかけ、グリップソードの情報を聞く",
+              "(3) 闘技場にいる兵士に話しかけ、グリップソードを返してもらう",
+            ]}
+          />
         </RoundedContainer>
         <RoundedContainer>
-          <h3 className={styles.header}>No3. 宿屋</h3>
-          <ResponsiveImage src="/subevents/beppo-3.jpg" />
+          <h3 className={styles.header}>No3. イベントの最後</h3>
+          <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
           <RoundedItem title="説明">
-            宿屋の中に入り、右手側の棚のところに隠れています。結構わかりにくいのですが少しだけ頭がはみ出ています。
+            グリップソードを入手してから老人に話しかけるとアクセサリ「スマッシュマント」を入手します。
           </RoundedItem>
+          <Information type="warning" title="機種による違い">
+            イベントの結末はPSP版のものです。PS版では「エタポケ1」を入手し、その後のポケットステーションでのミニゲームをクリアするとスマッシュマントを入手します。（PSP版はポケットステーションがないので手順が省略されている）2026年のリマスター版ではPSP版と同じ結果となる予想です。
+          </Information>
         </RoundedContainer>
-        <RoundedContainer>
-          <h3 className={styles.header}>No4. 町の入り口</h3>
-          <ResponsiveImage src="/subevents/beppo-4.jpg" />
-          <RoundedItem title="説明">
-            町の入り口フロアのテントに移動して隠れています。ここは完全にベッポの姿がないため画像付近を○ボタン連打して歩き回りましょう。
-            その後、おいかけっことなり捕まえるとかくれんぼイベントは終了です。
-          </RoundedItem>
-        </RoundedContainer>
-        <RoundedContainer>
-          <h3 className={styles.header}>No5. 宿屋の前</h3>
-          <ResponsiveImage src="/subevents/beppo-5.jpg" />
-          <RoundedItem title="説明">
-            No4でベッポを見逃したあとに宿屋の前にいくとベッポが立っており、話しかけるとルーンボトルを入手します。ベッポのイベントは一旦はここで終わりで、ストーリー後半になるとまた進行します。
-          </RoundedItem>
-        </RoundedContainer>
-      </section>
-      <section>
-        <SectionTitle>インフェリア帰還後</SectionTitle>
-        <div className="mb-4">
-          <p>
-            ストーリー後半でインフェリア帰還後にベッポを尋ねると「ドニエスのポプリ」をもらえます
-          </p>
-        </div>
       </section>
     </article>
   );
