@@ -219,71 +219,71 @@
     "id": 29,
     "name": "フルーツサンド",
     "type": "master",
-    "world": "inferior",
+    "world": "",
     "effect": "HPとTPを全回復",
-    "description": ""
+    "description": "「サンドイッチ」、「ふわふわケーキ」、「あまにんどうふ」の熟練度MAXで習得"
   },
   {
     "id": 30,
     "name": "えいようドリンク",
     "type": "master",
-    "world": "inferior",
+    "world": "",
     "effect": "麻痺、毒状態の解除 + TPを全回復",
-    "description": ""
+    "description": "「ステーキ」、「フルーツジュース」、「やさいサラダ」の熟練度MAXで習得"
   },
   {
     "id": 31,
     "name": "ちからにくうどん",
     "type": "master",
-    "world": "inferior",
+    "world": "",
     "effect": "凍結状態海保 + HPを全回復",
-    "description": ""
+    "description": "「ハンバーガー」、「ミツラーメン」、「おこげサンド」の熟練度MAXで習得"
   },
   {
     "id": 32,
     "name": "おはこなべ",
     "type": "master",
-    "world": "inferior",
+    "world": "",
     "effect": "タスクのにく、まぐろ、いか、こんにゃく、だいこん、パープルソディ",
-    "description": ""
+    "description": "「にくなべ」、「さかななべ」、「からおでん」の熟練度MAXで習得"
   },
   {
     "id": 33,
     "name": "ポテトドリア",
     "type": "master",
-    "world": "inferior",
+    "world": "",
     "effect": "ポテト、ベアのにく、ライス、ミルク、チーズ、パープルソディ",
-    "description": ""
+    "description": "「ぴりじゃが」、「オムライス」、「グラタン」、「カルボナーラ」の熟練度MAXで習得"
   },
   {
     "id": 34,
     "name": "マーボーカレー",
     "type": "master",
-    "world": "inferior",
+    "world": "",
     "effect": "パーティ全員のTPが1アップ",
-    "description": ""
+    "description": "「ザラメライス」、「にがりマーボー」、「しゃくねつカレー」、「スイートパフェ」の熟練度MAXで習得"
   },
   {
     "id": 35,
     "name": "スープスパ",
     "type": "master",
-    "world": "inferior",
+    "world": "",
     "effect": "抵抗力と命中力が一時上昇 + HP大回復(60%)",
-    "description": ""
+    "description": "「ホットボルシチ」、「ひやピリちゅうか」、「ペスカトーレ」の熟練度MAXで習得"
   },
   {
     "id": 36,
     "name": "ツナパエリア",
     "type": "master",
-    "world": "inferior",
+    "world": "",
     "effect": "攻撃力と防御力が一時的に上昇 + HPを大回復(60%)",
-    "description": ""
+    "description": "「いかリング」、「エビチリリ」、「しぶずし」の熟練度MAXで習得"
   },
   {
     "id": 37,
     "name": "やみなべ",
     "type": "other",
-    "world": "inferior",
+    "world": "",
     "effect": "ランダム。マイナス効果がある場合も。",
     "description": ""
   }

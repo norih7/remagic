@@ -116,7 +116,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
           },
           {
             label: <>世界</>,
-            value: recipeWorldMap[recipe.world],
+            value: recipe.world ? recipeWorldMap[recipe.world] : "-",
           },
           {
             label: <>食材</>,
@@ -138,6 +138,9 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
               ),
           },
         ];
+        const description = recipe.description ? (
+          <div>{recipe.description}</div>
+        ) : null;
         return (
           <div
             key={index}
@@ -146,6 +149,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
             <h3 className="text-[1rem]">{recipe.name}</h3>
             <RoundedItem title="料理の効果" className="mb-2">
               {recipe.effect}
+              {description}
             </RoundedItem>
             <div className="grid grid-cols-2 gap-2">
               {properties.map((item, index) => (

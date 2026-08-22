@@ -6,6 +6,7 @@ import {
   getRecipesData,
   getRecipeItemsData,
   getLocationRecipesData,
+  Item,
 } from "@/lib/db";
 import RecipePropertyList from "@/components/RecipePropertyList";
 import Image from "next/image";
@@ -29,12 +30,8 @@ export const metadata = {
   },
 };
 
-export default async function HomePage() {
-  const itemsData = await getItemsData();
-  const filterData = itemsData.filter(
-    (item) => item.type === "useItem" || item.type === "otherItem",
-  );
-  const list = filterData.map((item, index) => {
+const createList = (arr: Item[]) => {
+  const result = arr.map((item, index) => {
     const { id, name, effect, isBuy, special } = item;
     const shopBuy = isBuy ? "購入可能" : "できない";
     const specialText = special === "" ? "" : <div>特殊: {special}</div>;
@@ -65,6 +62,42 @@ export default async function HomePage() {
       </RoundedContainer>
     );
   });
+  return result;
+};
+
+export default async function HomePage() {
+  const itemsData = await getItemsData();
+  const filterData = itemsData
+    .filter(
+      (item) =>
+        item.type === "sword" ||
+        item.type === "halbert" ||
+        item.type === "knuckle" ||
+        item.type === "ax" ||
+        item.type === "whistle" ||
+        item.type === "shortSword" ||
+        item.type === "spear" ||
+        item.type === "cane" ||
+        item.type === "greatSword" ||
+        item.type === "bag",
+    )
+    .reduce(
+      (acc, item) => {
+        if (acc[item.type]) {
+          acc[item.type].push(item);
+        } else {
+          acc[item.type] = [];
+        }
+
+        return acc;
+      },
+      {} as Record<string, Item[]>,
+    );
+
+  const swordList = createList(filterData.sword);
+  const shortSwordList = createList(filterData.shortSword);
+  const axList = createList(filterData.ax);
+  const halbertList = createList(filterData.halbert);
 
   return (
     <article>
@@ -79,9 +112,22 @@ export default async function HomePage() {
         <p>準備中</p>
       </section> */}
       <section className="mb-12">
-        <SectionTitle>アイテム一覧データ</SectionTitle>
-        <p></p>
-        {list}
+        <div className="mb-8">
+          <SectionTitle>武器: 剣</SectionTitle>
+          {swordList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: 短剣</SectionTitle>
+          {shortSwordList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: 斧</SectionTitle>
+          {axList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: ハルバート</SectionTitle>
+          {halbertList}
+        </div>
       </section>
     </article>
   );

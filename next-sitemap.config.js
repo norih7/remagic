@@ -3,7 +3,12 @@ module.exports = {
   siteUrl: "https://remagic.brclover.com",
   generateRobotsTxt: false,
   outDir: "out",
-  exclude: ["/sitemap.xml", "/systems/item/*", "/robots.txt"],
+  exclude: [
+    "/sitemap.xml",
+    "/systems/item/*",
+    "/robots.txt",
+    "/systems/weapon-data",
+  ],
 
   transform: async (config, path) => {
     return {

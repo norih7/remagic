@@ -51,7 +51,7 @@ export default function SiteLayout({
         <div className={`${styles.pageTitleInner} px-4 py-3`}>
           <Breadcrumb category={category} pageTitle={title} />
           {topText}
-          <h2 className="text-lg font-bold text-slate-800">{title}</h2>
+          <h2 className="text-lg font-bold text-slate-700">{title}</h2>
         </div>
       </div>
       <div className={`${styles.shortcutMenu}`}>
