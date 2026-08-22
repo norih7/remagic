@@ -3,10 +3,12 @@ import Image from "next/image";
 type Props = {
   src: string;
   alt?: string;
+  noSpace?: boolean;
 };
 
 const ResponsiveImage = (props: Props) => {
-  const { src, alt = "" } = props;
+  const { src, alt = "", noSpace = false } = props;
+  const className = noSpace ? "mx-auto" : "mb-4 mx-auto";
   return (
     <div className="bg-gray-900">
       <Image
@@ -20,7 +22,7 @@ const ResponsiveImage = (props: Props) => {
           height: "auto",
           display: "block",
         }}
-        className="mb-4 mx-auto"
+        className={className}
       />
     </div>
   );

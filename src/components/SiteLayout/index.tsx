@@ -98,7 +98,7 @@ export default function SiteLayout({
       <footer className={styles.footer}>
         <div className="max-w-4xl mx-auto">
           <div className="pb-4">
-            <div className="grid grid-cols-3 gap-6 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div className="text-sm rounded-lg">
                 <h4 className="font-bold text-md mb-3">サイト概要</h4>
                 <p className="mb-2">

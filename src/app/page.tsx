@@ -64,6 +64,18 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/08/23</span>
+              <span>
+                <Link
+                  href="/systems/recipe"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  料理一覧/マスター料理
+                </Link>
+                をアップデート。ワンダーシェフの場所の画像を掲載しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/08/21</span>
               <span>
                 <Link

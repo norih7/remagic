@@ -133,7 +133,7 @@
     "locationName": "ティンシア",
     "recipeId": 18,
     "recipeName": "スイートパフェ",
-    "remarks": "ホテルロビーのドラゴン像"
+    "remarks": "ホテルロビーにある鳥の石像"
   },
   {
     "id": 19,
@@ -165,7 +165,7 @@
     "locationName": "港町ペイルティ（氷解後）",
     "recipeId": 22,
     "recipeName": "ひやピリちゅうか",
-    "remarks": "解凍後の港にいる修行僧"
+    "remarks": "解凍後の池に端いるお地蔵様"
   },
   {
     "id": 23,
@@ -173,7 +173,7 @@
     "locationName": "ルイシカ",
     "recipeId": 23,
     "recipeName": "ホットボルシチ",
-    "remarks": "入ってから2つめのフロア左奥のタンス"
+    "remarks": "入ってから2つめのフロアにある倒れたバスケット"
   },
   {
     "id": 24,
@@ -181,7 +181,7 @@
     "locationName": "ルイシカ",
     "recipeId": 24,
     "recipeName": "にがりマーボー",
-    "remarks": "奥の廃墟2階 階段手前にある置物"
+    "remarks": "奥の廃墟2階 寝室ある緑色の置物"
   },
   {
     "id": 25,

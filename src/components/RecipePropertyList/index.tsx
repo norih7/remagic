@@ -26,6 +26,8 @@ import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Information from "@/components/Information";
 import Filter from "@/components/Filter";
+import ResponsiveImage from "@/components/ResponsiveImage";
+import Tag from "@/components/Tag";
 
 interface RunePropertyListProps {
   recipes: Recipes[];
@@ -118,46 +120,47 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
             label: <>世界</>,
             value: recipe.world ? recipeWorldMap[recipe.world] : "-",
           },
-          {
-            label: <>食材</>,
-            value: <ul className="pt-1 flex flex-wrap gap-2">{useItems}</ul>,
-          },
-          {
-            label: <>ワンダーシェフ</>,
-            value:
-              location === undefined ? (
-                "-"
-              ) : (
-                <>
-                  <strong className="flex items-center">
-                    <LuMapPin className="text-red-600 mr-1" />
-                    {location.locationName}
-                  </strong>
-                  <span className="font-normal">{location.remarks}</span>
-                </>
-              ),
-          },
         ];
         const description = recipe.description ? (
           <div>{recipe.description}</div>
         ) : null;
+
+        const hoge =
+          location === undefined ? (
+            "-"
+          ) : (
+            <>
+              <strong className="flex items-center">
+                <LuMapPin className="text-red-600 mr-1" />
+                {location.locationName}
+              </strong>
+              <p className="font-normal">{location.remarks}</p>
+              <ResponsiveImage
+                src={`/systems/recipe-location${recipe.id}.jpg`}
+                noSpace={true}
+              />
+            </>
+          );
         return (
           <div
             key={index}
             className="mb-4 font-bold border border-slate-200 rounded-lg p-3 shadow-xs"
           >
-            <h3 className="text-[1rem]">{recipe.name}</h3>
+            <div className="flex mb-3 items-center">
+              <h3 className="text-[1rem] mr-3 !mb-0 !p-0">{recipe.name}</h3>
+              <div>
+                <Tag>{recipeTypeMap[recipe.type]}</Tag>
+                <Tag>{recipe.world ? recipeWorldMap[recipe.world] : "-"}</Tag>
+              </div>
+            </div>
             <RoundedItem title="料理の効果" className="mb-2">
               {recipe.effect}
               {description}
             </RoundedItem>
-            <div className="grid grid-cols-2 gap-2">
-              {properties.map((item, index) => (
-                <RoundedItem title={item.label} key={index}>
-                  {item.value}
-                </RoundedItem>
-              ))}
-            </div>
+            <RoundedItem title="食材" className="mb-2">
+              <ul className="pt-1 flex flex-wrap gap-2">{useItems}</ul>
+            </RoundedItem>
+            <RoundedItem title="ワンダーシェフ">{hoge}</RoundedItem>
           </div>
         );
       })}
