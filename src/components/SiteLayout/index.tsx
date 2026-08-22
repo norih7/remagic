@@ -19,7 +19,7 @@ export default function SiteLayout({
   const topText =
     pathname === "/" ? (
       <p className="mb-1 text-xs text-gray-100">
-        RE:MAGIC リマスター対応の徹底攻略情報
+        RE:MAGIC リマスター版対応の完全攻略データ
       </p>
     ) : null;
 
