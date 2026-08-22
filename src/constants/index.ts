@@ -200,11 +200,6 @@ export const systemLinks = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアの戦闘マニュアル操作および特殊操作を解説。マニュアル操作への切り替え方法（マニュアルのしょ入手）や、おすすめの操作設定、バックステップ、移動速度アップ、晶霊術・特技の詠唱短縮など、戦闘を有利に進めるためのテクニックを網羅しています。",
   },
-  titles: {
-    title: "エターニアの称号",
-    path: "/systems/titles",
-    desc: "",
-  },
   // "join-chat-and-fog": {
   //   title: "チャットとフォッグの加入",
   //   path: "/systems/join-chat-and-fog",
@@ -226,11 +221,6 @@ export const systemLinks = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。ルーンボトルの解説と変化一覧を掲載しています！各変化についてオススメ度もあるので参考にしてください！",
   },
-  "special-effect": {
-    title: "装備品の特殊効果",
-    path: "/systems/special-effect",
-    desc: "特殊効果がある装備品を紹介。TP消費減少や自動回復などおすすめ品も紹介！",
-  },
   recipe: {
     title: "料理一覧/マスター料理",
     image: "/link-headers/systems-recipe.jpg",
@@ -239,10 +229,24 @@ export const systemLinks = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。料理レシピ一覧とマスター料理を説明。各料理の効果、ワンダーシェフの場所、作成に必要な食材データを網羅。HP・TP回復やステータス強化に役立つマスター料理の習得条件も詳しく解説。",
   },
-  // "item-list": {
-  //   title: "アイテム一覧",
-  //   path: "/systems/item-list",
-  // },
+  "special-effect": {
+    title: "装備品の特殊効果",
+    path: "/systems/special-effect",
+    desc: "特殊効果がある装備品を紹介。TP消費減少や自動回復などおすすめ品も紹介！",
+  },
+  "item-data": {
+    title: "消費アイテム一覧データ",
+    path: "/systems/item-data",
+    desc: "アイテム一覧データを掲載",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。使用アイテム一覧を掲載。",
+  },
+  titles: {
+    title: "エターニアの称号",
+    path: "/systems/titles",
+    desc: "",
+  },
+
   // "enemy-list": {
   //   title: "モンスター一覧",
   //   path: "/systems/enemy-list",

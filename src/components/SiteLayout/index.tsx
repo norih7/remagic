@@ -18,13 +18,15 @@ export default function SiteLayout({
   const pathname = usePathname();
   const topText =
     pathname === "/" ? (
-      <p className="text-white mb-1 text-sm">RE:MAGIC</p>
+      <p className="mb-1 text-xs text-gray-100">
+        RE:MAGIC リマスター対応の徹底攻略情報
+      </p>
     ) : null;
 
   return (
     <>
       <header className={`${styles.header}`}>
-        <div className={`${styles.headerInner} px-4 pb-2 pt-1`}>
+        <div className={`${styles.headerInner} px-4 pb-1 pt-1`}>
           <div className="flex justify-between items-center ">
             <h1 className="text-lg font-bold tracking-tight">
               <a href="/">
@@ -38,7 +40,7 @@ export default function SiteLayout({
             </h1>
             <MenuButton />
           </div>
-          <div className="">
+          <div>
             <span className="relative text-xs text-gray-700">
               リマスターに対応したテイルズオブエターニア攻略ガイド
             </span>
@@ -49,9 +51,7 @@ export default function SiteLayout({
         <div className={`${styles.pageTitleInner} px-4 py-3`}>
           <Breadcrumb category={category} pageTitle={title} />
           {topText}
-          <h2 className="text-lg font-bold text-gray-800 text-white">
-            {title}
-          </h2>
+          <h2 className="text-lg font-bold text-slate-100">{title}</h2>
         </div>
       </div>
       <div className={`${styles.shortcutMenu}`}>
@@ -98,9 +98,38 @@ export default function SiteLayout({
       <footer className={styles.footer}>
         <div className="max-w-4xl mx-auto">
           <div className="pb-4">
-            <p className="text-sm leading-relaxed">
-              このサイトは個人で運営するテイルズオブエターニアの攻略ファンサイトです。見やすさと快適さを重視したサイト作りを目指します！
-            </p>
+            <div className="grid grid-cols-3 gap-6 text-left">
+              <div className="text-sm rounded-lg">
+                <h4 className="font-bold text-md mb-3">サイト概要</h4>
+                <p className="mb-2">
+                  このサイトは個人で運営するテイルズオブエターニアの攻略ファンサイトです。
+                  見やすさと快適さを重視したサイト作りを目指しています。また当サイト上で使用しているゲームの画像やデータ等の著作権はすべて当該ゲームの権利者に帰属します。
+                </p>
+              </div>
+              <div className="text-sm rounded-lg">
+                <h4 className="font-bold text-md mb-3 text-left">運営者情報</h4>
+                <p className="mb-2">
+                  X:{" "}
+                  <a href="https://x.com/remagicd" target="_blank">
+                    あいす @remagicd
+                  </a>
+                </p>
+                <p>
+                  エターニア大好き。エターニアの製作者も大好き。過去にMagicWaveというエターニア攻略サイトを運営。今回リマスター発表を受けてもう一度サイトを作りました。
+                </p>
+              </div>
+              <div className="text-sm rounded-lg">
+                <h4 className="font-bold text-md mb-3 text-left">問い合わせ</h4>
+                <p className="mb-2">
+                  <a href="https://forms.gle/pwHhGryhp9VjncYo7">
+                    問い合わせフォーム
+                  </a>
+                </p>
+                <p className="mb-2">
+                  このサイトに対する問い合わせはXのDMまたは問い合わせフォームからお願いいたします。
+                </p>
+              </div>
+            </div>
           </div>
           {/* <div className="space-y-4">
             <ul className="flex text-sm">
@@ -125,13 +154,8 @@ export default function SiteLayout({
         </div>
 
         {/* 4. コピーライト＆免責事項 */}
-        <div className="max-w-4xl mx-auto px-6 pt-4 border-t border-gray-200 text-xs space-y-2">
+        <div className="max-w-4xl mx-auto px-6 pt-6 border-t border-gray-200 text-xs space-y-2">
           <p>© RE:MAGIC</p>
-          <p>
-            当サイトはゲーム会社とは一切関係ありません。
-            <br />
-            当サイト上で使用しているゲームの画像やデータ等の著作権はすべて当該ゲームの権利者に帰属します。
-          </p>
         </div>
       </footer>
     </>

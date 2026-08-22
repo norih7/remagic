@@ -41,7 +41,7 @@ export async function generateMetadata() {
 }
 
 export default async function HomePage() {
-  const subTitle = "テイルズオブエターニア攻略情報トップ";
+  const subTitle = "エターニア攻略トップ";
   return (
     <div style={{ padding: "0px" }}>
       <SetPageTitle title={subTitle} />

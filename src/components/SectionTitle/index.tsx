@@ -31,7 +31,7 @@ const SectionTitle = (props: Props) => {
   const { children, type = "guide", data = "" } = props;
   return (
     <h2 className="flex items-center mb-4" data-title={data}>
-      {sectionIcons[type]}
+      <LuBookText className="mr-1" />
       {children}
     </h2>
   );

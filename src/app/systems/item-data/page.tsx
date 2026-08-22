@@ -1,0 +1,73 @@
+import { createMetaTitle } from "@/utils";
+import SetPageTitle from "@/components/SetPageTitle";
+import PageSummary from "@/components/PageSummary";
+import SectionTitle from "@/components/SectionTitle";
+import {
+  getRecipesData,
+  getRecipeItemsData,
+  getLocationRecipesData,
+} from "@/lib/db";
+import RecipePropertyList from "@/components/RecipePropertyList";
+import Image from "next/image";
+import { systemLinks } from "@/constants";
+import { getItemsData } from "@/lib/db";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
+
+// 💡 念のため、このページは完全に静的（SSG）であることを明示します
+export const dynamic = "force-static";
+
+const pageKey = "item-data";
+const title = systemLinks[pageKey].title;
+const description = systemLinks[pageKey].seoDesc;
+const canonical = systemLinks[pageKey].path;
+export const metadata = {
+  title,
+  description,
+  alternates: {
+    canonical,
+  },
+};
+
+export default async function HomePage() {
+  const itemsData = await getItemsData();
+  const filterData = itemsData.filter((item) => item.type === "useItem");
+  const list = filterData.map((item, index) => {
+    const { id, name, effect, isBuy } = item;
+    const shopBuy = isBuy ? "購入可能" : "できない";
+    return (
+      <RoundedContainer key={index}>
+        <h3>{name}</h3>
+        <div className="mb-3">
+          <RoundedItem title="効果">{effect}</RoundedItem>
+        </div>
+        <div className="grid grid-cols-2 gap-3">
+          <RoundedItem title="ショップ購入">{shopBuy}</RoundedItem>
+          <RoundedItem title="購入/入手場所">
+            <a href={`/systems/item/${id}`}>{name}の詳細ページ</a>
+          </RoundedItem>
+        </div>
+      </RoundedContainer>
+    );
+  });
+
+  return (
+    <article>
+      <SetPageTitle title={title} />
+      <PageSummary>
+        <p>
+          エターニアの消費アイテム一覧データを掲載しています。購入場所、入手可能ダンジョンなどは詳細ページにて一覧を掲載していますのでぜひご確認ください。
+        </p>
+      </PageSummary>
+      {/* <section className="mb-12">
+        <SectionTitle>料理と習得方法</SectionTitle>
+        <p>準備中</p>
+      </section> */}
+      <section className="mb-12">
+        <SectionTitle>消費アイテム一覧データ</SectionTitle>
+        <p></p>
+        {list}
+      </section>
+    </article>
+  );
+}
