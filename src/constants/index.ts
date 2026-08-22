@@ -235,7 +235,7 @@ export const systemLinks = {
     desc: "特殊効果がある装備品を紹介。TP消費減少や自動回復などおすすめ品も紹介！",
   },
   "item-data": {
-    title: "消費アイテム一覧データ",
+    title: "アイテム一覧データ",
     path: "/systems/item-data",
     desc: "アイテム一覧データを掲載",
     seoDesc:

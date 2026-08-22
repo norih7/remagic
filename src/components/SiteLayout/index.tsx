@@ -18,7 +18,7 @@ export default function SiteLayout({
   const pathname = usePathname();
   const topText =
     pathname === "/" ? (
-      <p className="mb-1 text-xs text-gray-100">
+      <p className="mb-1 text-xs text-slate-800">
         RE:MAGIC リマスター版対応の完全攻略データ
       </p>
     ) : null;
@@ -51,7 +51,7 @@ export default function SiteLayout({
         <div className={`${styles.pageTitleInner} px-4 py-3`}>
           <Breadcrumb category={category} pageTitle={title} />
           {topText}
-          <h2 className="text-lg font-bold text-slate-100">{title}</h2>
+          <h2 className="text-lg font-bold text-slate-800">{title}</h2>
         </div>
       </div>
       <div className={`${styles.shortcutMenu}`}>

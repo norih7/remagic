@@ -31,15 +31,30 @@ export const metadata = {
 
 export default async function HomePage() {
   const itemsData = await getItemsData();
-  const filterData = itemsData.filter((item) => item.type === "useItem");
+  const filterData = itemsData.filter(
+    (item) => item.type === "useItem" || item.type === "otherItem",
+  );
   const list = filterData.map((item, index) => {
-    const { id, name, effect, isBuy } = item;
+    const { id, name, effect, isBuy, special } = item;
     const shopBuy = isBuy ? "購入可能" : "できない";
+    const specialText = special === "" ? "" : <div>特殊: {special}</div>;
     return (
-      <RoundedContainer key={index}>
+      <RoundedContainer key={index} className="font-bold">
         <h3>{name}</h3>
-        <div className="mb-3">
-          <RoundedItem title="効果">{effect}</RoundedItem>
+        <div className="flex mb-3">
+          {/* <div className="flex w-[100px] h-[100px] bg-gray-500 mr-3"></div>
+          <div className="flex-1">
+            <RoundedItem title="効果、特殊効果" className="h-full">
+              {effect}
+              {specialText}
+            </RoundedItem>
+          </div> */}
+          <div className="flex-1">
+            <RoundedItem title="効果、特殊効果" className="h-full">
+              {effect}
+              {specialText}
+            </RoundedItem>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-3">
           <RoundedItem title="ショップ購入">{shopBuy}</RoundedItem>

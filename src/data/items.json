@@ -408,7 +408,7 @@
   },
   {
     "id": 40,
-    "name": "スペクタクルス",
+    "name": "スペクタクルズ",
     "type": "useItem",
     "effect": "戦闘中の敵のHPや耐性状況を確認できる",
     "isBuy": true,
@@ -750,7 +750,7 @@
   {
     "id": 71,
     "name": "トライデント",
-    "type": "useItem",
+    "type": "spear",
     "effect": "斬り+240、突き+400",
     "isBuy": true,
     "isDrop": "",
@@ -2884,7 +2884,7 @@
   {
     "id": 265,
     "name": "ロザニアのドレス",
-    "type": "keyItem",
+    "type": "otherItem",
     "effect": "",
     "isBuy": false,
     "isDrop": false,
@@ -2897,10 +2897,10 @@
     "name": "ひかりのたま",
     "type": "keyItem",
     "effect": "",
-    "isBuy": "",
-    "isDrop": "",
-    "buy": "",
-    "sell": "",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": "-",
     "special": ""
   },
   {
@@ -3022,6 +3022,215 @@
     "isDrop": false,
     "buy": "",
     "sell": "",
+    "special": ""
+  },
+  {
+    "id": 278,
+    "name": "ミラクルチャーム",
+    "type": "useItem",
+    "effect": "ショップで使用するとショップでの買い物が50%オフになる",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 3000,
+    "special": ""
+  },
+  {
+    "id": 279,
+    "name": "くろのかけら",
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。シャドウの活力+1、3%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 500,
+    "special": ""
+  },
+  {
+    "id": 280,
+    "name": "しろのかけら",
+    "type": "useItem",
+    "effect": "C.ケージで利用できるアイテム。レムの活力+1、3%の経験値を獲得。",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "-",
+    "sell": 500,
+    "special": ""
+  },
+  {
+    "id": 281,
+    "name": "うちわ",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 100,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 282,
+    "name": "かこもん",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 100,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 283,
+    "name": "きんのチョーカー",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1200,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 284,
+    "name": "コルレーンのつぼ",
+    "type": "otherItem",
+    "effect": "使用すると闇鍋と同じ効果（HP回復のメリットや状態異常のデメリット）",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 300,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 285,
+    "name": "ドエニスのポプリ",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 800,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 286,
+    "name": "ブッシュベイビー",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1200,
+    "special": ""
+  },
+  {
+    "id": 287,
+    "name": "ボタン",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 80,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 288,
+    "name": "ウインドベル",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 400,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 289,
+    "name": "ウルタスだいほん",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1500,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 290,
+    "name": "おしろい",
+    "type": "otherItem",
+    "effect": "売却専用アイテム",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 200,
+    "special": "ジイニのオークションで高値がつきやすい"
+  },
+  {
+    "id": 291,
+    "name": "シルバーケイジ",
+    "type": "otherItem",
+    "effect": "ストーリー進行で使用",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": "-",
+    "special": ""
+  },
+  {
+    "id": 292,
+    "name": "ふゆトマト",
+    "type": "useItem",
+    "effect": "TPを10%回復（メニューからのみ使用可能）",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 100,
+    "special": ""
+  },
+  {
+    "id": 293,
+    "name": "ほしかわ",
+    "type": "useItem",
+    "effect": "HPとTPを全回復（メニューからのみ使用可能）",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 400,
+    "special": ""
+  },
+  {
+    "id": 294,
+    "name": "ホウテイバンリ",
+    "type": "useItem",
+    "effect": "HPとTPを全回復し、全ステータス異常を回復（メニューからのみ使用可能）",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 1000,
+    "special": ""
+  },
+  {
+    "id": 295,
+    "name": "たきぎむし",
+    "type": "useItem",
+    "effect": "毒、マヒ、衰弱状態を回復する（メニューからのみ使用可能）",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 100,
+    "special": ""
+  },
+  {
+    "id": 296,
+    "name": "やまつの",
+    "type": "useItem",
+    "effect": "戦闘不能状態を回復する（メニューからのみ使用可能）",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "-",
+    "sell": 180,
     "special": ""
   }
 ]

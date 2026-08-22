@@ -116,7 +116,7 @@
     "locationName": "レグルス道場",
     "shopName": "豚真珠（道具、食材屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -346,7 +346,7 @@
     "locationName": "学問の町ミンツ",
     "shopName": "購買部（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -586,7 +586,7 @@
     "locationName": "木陰の村モルル",
     "shopName": "旅人の店（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -836,7 +836,7 @@
     "locationName": "王都インフェリア",
     "shopName": "太平楽（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -1276,7 +1276,7 @@
     "locationName": "商業の町バロール",
     "shopName": "ヨシンバ（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -1686,7 +1686,7 @@
     "locationName": "熱砂の町 シャンバール",
     "shopName": "逃げ水（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -1866,7 +1866,7 @@
     "locationName": "霊峰ファロース",
     "shopName": "商人信者（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -2096,7 +2096,7 @@
     "locationName": "アイメンの町",
     "shopName": "エルス：アイメン（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -2346,7 +2346,7 @@
     "locationName": "ルイシカ駅",
     "shopName": "ティン：ルイシカ（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -2626,7 +2626,7 @@
     "locationName": "地晶霊の廃坑",
     "shopName": "ノームのおもちゃ（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -2806,7 +2806,7 @@
     "locationName": "港町ペイルティ",
     "shopName": "登山道具屋（解氷後の道具屋1）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
@@ -3276,7 +3276,7 @@
     "locationName": "ティンシア",
     "shopName": "ティン：ティンシア（道具屋）",
     "itemId": 40,
-    "itemName": "スペクタクルス",
+    "itemName": "スペクタクルズ",
     "remarks": ""
   },
   {
