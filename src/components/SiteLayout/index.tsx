@@ -115,7 +115,7 @@ export default function SiteLayout({
                   </a>
                 </p>
                 <p>
-                  エターニア大好き。エターニアの製作者も大好き。過去にMagicWaveというエターニア攻略サイトを運営。今回リマスター発表を受けてもう一度サイトを作りました。
+                  エターニア大好き、製作スタッフも大好き！過去にMagicWaveというエターニア攻略サイトを運営しており、今回リマスター発表を受けてもう一度サイトを作りました。
                 </p>
               </div>
               <div className="text-sm rounded-lg">
