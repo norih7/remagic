@@ -333,7 +333,7 @@
     "world": "inferior",
     "locationId": 39,
     "locationName": "インフェリアマップ GPS（160, 131）",
-    "remarks": ""
+    "remarks": "隠しマップにあるアイテム袋から入手"
   },
   {
     "id": 43,
@@ -341,7 +341,7 @@
     "world": "inferior",
     "locationId": 40,
     "locationName": "インフェリアマップ GPS （14, 74）",
-    "remarks": ""
+    "remarks": "隠しマップにあるアイテム袋から入手"
   },
   {
     "id": 44,
@@ -349,7 +349,7 @@
     "world": "inferior",
     "locationId": 41,
     "locationName": "インフェリアマップ GPS（162, 45）",
-    "remarks": ""
+    "remarks": "隠しマップにあるアイテム袋から入手"
   },
   {
     "id": 45,
@@ -381,7 +381,7 @@
     "world": "inferior",
     "locationId": 43,
     "locationName": "晶霊温泉",
-    "remarks": ""
+    "remarks": "入り口の五右衛門風呂を調べる"
   },
   {
     "id": 49,
@@ -389,7 +389,7 @@
     "world": "inferior",
     "locationId": 43,
     "locationName": "晶霊温泉",
-    "remarks": ""
+    "remarks": "男風呂の洗面台を調べる"
   },
   {
     "id": 50,
@@ -397,7 +397,7 @@
     "world": "celestia",
     "locationId": 44,
     "locationName": "セレスティアマップ GPS（60, 126）",
-    "remarks": ""
+    "remarks": "隠しマップにあるアイテム袋から入手"
   },
   {
     "id": 51,
@@ -405,7 +405,7 @@
     "world": "celestia",
     "locationId": 45,
     "locationName": "ジイニ",
-    "remarks": "カジノ"
+    "remarks": "カジノにあるスロットを調べる"
   },
   {
     "id": 52,
@@ -413,7 +413,7 @@
     "world": "celestia",
     "locationId": 45,
     "locationName": "ジイニ",
-    "remarks": ""
+    "remarks": "ダンスホールにあるタルを調べる"
   },
   {
     "id": 53,
@@ -421,7 +421,7 @@
     "world": "celestia",
     "locationId": 45,
     "locationName": "ジイニ",
-    "remarks": ""
+    "remarks": "オークション会場左手にあるカーテンを調べる"
   },
   {
     "id": 54,
@@ -461,7 +461,7 @@
     "world": "other",
     "locationId": 51,
     "locationName": "バンエルティア号",
-    "remarks": ""
+    "remarks": "エンジンの裏側を調べる ※操作キャラが隠れますが印の箇所を連打"
   },
   {
     "id": 59,
@@ -469,7 +469,7 @@
     "world": "other",
     "locationId": 51,
     "locationName": "バンエルティア号",
-    "remarks": ""
+    "remarks": "水色の潜水艇の先端を調べる"
   },
   {
     "id": 60,
@@ -477,6 +477,6 @@
     "world": "other",
     "locationId": 51,
     "locationName": "バンエルティア号",
-    "remarks": ""
+    "remarks": "展望室にあるタルを調べる"
   }
 ]

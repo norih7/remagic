@@ -147,11 +147,10 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
             className="mb-4 font-bold border border-slate-200 rounded-lg p-3 shadow-xs"
           >
             <div className="flex mb-3 items-center">
-              <h3 className="text-[1rem] mr-3 !mb-0 !p-0">{recipe.name}</h3>
               <div>
                 <Tag>{recipeTypeMap[recipe.type]}</Tag>
-                <Tag>{recipe.world ? recipeWorldMap[recipe.world] : "-"}</Tag>
               </div>
+              <h3 className="text-[1rem] mr-3 !mb-0 !p-0">{recipe.name}</h3>
             </div>
             <RoundedItem title="料理の効果" className="mb-2">
               {recipe.effect}
