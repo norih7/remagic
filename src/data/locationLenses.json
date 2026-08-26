@@ -5,7 +5,7 @@
     "world": "inferior",
     "locationId": 1,
     "locationName": "ラシュアン",
-    "remarks": "リッドの家 B1 宝箱"
+    "remarks": "リッドの家 B1 木箱を調べる"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "world": "inferior",
     "locationId": 1,
     "locationName": "ラシュアン",
-    "remarks": "村の入口左側にある風車の扉"
+    "remarks": "村の入口の左側にある風車の扉を調べる"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@
     "world": "inferior",
     "locationId": 3,
     "locationName": "レグルス道場",
-    "remarks": "道場奥の右から2番目の部屋にある丸テーブル"
+    "remarks": "道場奥の右から2番目の部屋にある丸テーブルを調べる"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "world": "inferior",
     "locationId": 3,
     "locationName": "レグルス道場",
-    "remarks": "道場奥の1番右の部屋にあるピンクの箱"
+    "remarks": "道場奥の1番右の部屋にあるピンクの箱を調べる"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "world": "inferior",
     "locationId": 4,
     "locationName": "学問の町ミンツ",
-    "remarks": "ミンツの町のグラウンドに入る前の木影"
+    "remarks": "ミンツの町のグラウンドに入る前の木影を調べる ※完全に隠れているのでマーク箇所を連打"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "world": "inferior",
     "locationId": 4,
     "locationName": "学問の町ミンツ",
-    "remarks": "ミンツ大学の水晶霊研究室のレバー ※キールが仲間になってから入手可能"
+    "remarks": "ミンツ大学の水晶霊研究室のレバーを調べる ※キールが仲間になってから入手可能"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "world": "inferior",
     "locationId": 5,
     "locationName": "ミンツの岩山",
-    "remarks": "観測所の階段を下りた先にある木箱"
+    "remarks": "観測所の階段を下りた先にある木箱を調べる"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "world": "inferior",
     "locationId": 7,
     "locationName": "望郷の洞窟",
-    "remarks": "エッグベアの死骸ある場所の奥の部屋にある薪"
+    "remarks": "エッグベアの死骸ある場所の奥の部屋にある薪を調べる"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "world": "inferior",
     "locationId": 8,
     "locationName": "木陰の村モルル",
-    "remarks": "マゼットの家1Fにある暖炉"
+    "remarks": "マゼットの家1Fにある暖炉を調べる"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "world": "inferior",
     "locationId": 9,
     "locationName": "水晶霊の河",
-    "remarks": "入口マップの木の陰"
+    "remarks": "入口マップの木の陰を調べる ※完全に隠れているのでマーク箇所を連打"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "world": "inferior",
     "locationId": 10,
     "locationName": "いざないの密林",
-    "remarks": "神像後ろにある木の根本"
+    "remarks": "神像後ろにある木の根本を調べる"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "world": "inferior",
     "locationId": 11,
     "locationName": "王都インフェリア",
-    "remarks": "インフェリア城 リッド達が泊まった部屋のタンス"
+    "remarks": "インフェリア城 リッド達が泊まった部屋のタンスを調べる"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "world": "inferior",
     "locationId": 11,
     "locationName": "王都インフェリア",
-    "remarks": "じょうせんパス入手後、天文台「気安く触るなよ...」という男の隣にある本棚"
+    "remarks": "じょうせんパス入手後、天文台「気安く触るなよ...」という男の隣にある本棚を調べる"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "world": "inferior",
     "locationId": 11,
     "locationName": "王都インフェリア",
-    "remarks": "劇場受付の右側にある植物"
+    "remarks": "劇場受付の右側にある植物を調べる"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "world": "inferior",
     "locationId": 12,
     "locationName": "インフェリア港",
-    "remarks": "バロール行き乗船場にあるタル"
+    "remarks": "バロール行き乗船場にあるタルを調べる"
   },
   {
     "id": 17,
@@ -133,15 +133,15 @@
     "world": "inferior",
     "locationId": 13,
     "locationName": "バロール港",
-    "remarks": "バロール港 船着き場階段下りた先の木箱"
+    "remarks": "バロール港 船着き場階段下りた先の木箱を調べる"
   },
   {
     "id": 18,
     "lensId": 18,
     "world": "inferior",
     "locationId": 14,
-    "locationName": "商業の町バロール",
-    "remarks": "宝飾店 アナガチにある金の壷"
+    "locationName": "バロールの町",
+    "remarks": "宝飾店 アナガチにある金の壷を調べる"
   },
   {
     "id": 19,
@@ -149,23 +149,23 @@
     "world": "inferior",
     "locationId": 15,
     "locationName": "風晶霊の空洞",
-    "remarks": "落とし穴のあるフロアの右上のくぼみ"
+    "remarks": "落とし穴のあるフロアの右上を調べる ※完全に隠れているのでマーク箇所を連打"
   },
   {
     "id": 20,
     "lensId": 20,
     "world": "inferior",
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール",
-    "remarks": "広場にある噴水"
+    "locationName": "シャンバール",
+    "remarks": "広場にある噴水を調べる"
   },
   {
     "id": 21,
     "lensId": 21,
     "world": "inferior",
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール",
-    "remarks": "ビストロシャンバール 2階にある観覧席 右側の椅子"
+    "locationName": "シャンバール",
+    "remarks": "ビストロシャンバール 2階にある観覧席 右側の椅子を調べる"
   },
   {
     "id": 22,
@@ -173,7 +173,7 @@
     "world": "inferior",
     "locationId": 17,
     "locationName": "火晶霊の谷",
-    "remarks": "ソーサラーリングで入る部屋"
+    "remarks": "ソーサラーリングで入る部屋で敵を倒すと入手"
   },
   {
     "id": 23,
@@ -189,7 +189,7 @@
     "world": "inferior",
     "locationId": 18,
     "locationName": "霊峰ファロース",
-    "remarks": "ダンジョン頂上にあるセーブポイント右上の岩陰"
+    "remarks": "ダンジョン頂上にあるセーブポイント右上の岩陰を調べる"
   },
   {
     "id": 25,
@@ -197,7 +197,7 @@
     "world": "celestia",
     "locationId": 50,
     "locationName": "岬の砦",
-    "remarks": "入り口から右へ周り、壁が壊れているところまで進んだの奥の茂み（苔）"
+    "remarks": "入り口から右へ周り、壁が壊れているところまで進んだの奥の茂み（苔）を調べる"
   },
   {
     "id": 26,
@@ -205,7 +205,7 @@
     "world": "celestia",
     "locationId": 19,
     "locationName": "アイメンの町",
-    "remarks": "メルディの家1Fにあるガラステーブル"
+    "remarks": "メルディの家1Fにあるガラステーブルを調べる"
   },
   {
     "id": 27,
@@ -221,7 +221,7 @@
     "world": "celestia",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "remarks": "地下4階 左側通路 奥の部屋にある木箱"
+    "remarks": "地下4階 左側通路 奥の部屋にある木箱を調べる"
   },
   {
     "id": 29,
@@ -229,7 +229,7 @@
     "world": "celestia",
     "locationId": 23,
     "locationName": "チャットの小屋",
-    "remarks": "地下1階 右側通路 奥の部屋にあるジャガイモ箱"
+    "remarks": "地下1階 右側通路 奥の部屋にあるジャガイモ箱を調べる"
   },
   {
     "id": 30,
@@ -237,7 +237,7 @@
     "world": "celestia",
     "locationId": 60,
     "locationName": "港町ペイルティ（氷解後）",
-    "remarks": "港にいるカニ（氷解後）"
+    "remarks": "港にいるカニ（氷解後）を調べる"
   },
   {
     "id": 31,
@@ -245,7 +245,7 @@
     "world": "celestia",
     "locationId": 60,
     "locationName": "港町ペイルティ（氷解後）",
-    "remarks": "青い屋根の屋台の裏側（氷解後）"
+    "remarks": "青い屋根の屋台の裏側（氷解後）を調べる"
   },
   {
     "id": 32,
@@ -253,7 +253,7 @@
     "world": "celestia",
     "locationId": 26,
     "locationName": "アイメン（崩壊後）",
-    "remarks": "武器屋の壊れたショーケース"
+    "remarks": "武器屋の壊れたショーケースを調べる"
   },
   {
     "id": 33,
@@ -261,7 +261,7 @@
     "world": "celestia",
     "locationId": 27,
     "locationName": "ティンシア",
-    "remarks": "ノーム像"
+    "remarks": "ノーム像を調べる"
   },
   {
     "id": 34,
@@ -269,7 +269,7 @@
     "world": "celestia",
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
-    "remarks": "入ってすぐの石碑"
+    "remarks": "数値スイッチの部屋の前にある石碑を調べる"
   },
   {
     "id": 35,
@@ -277,7 +277,7 @@
     "world": "celestia",
     "locationId": 29,
     "locationName": "バリル城",
-    "remarks": "ダンジョン内の宝箱"
+    "remarks": "ダンジョン内の宝箱から入手"
   },
   {
     "id": 36,
@@ -285,7 +285,7 @@
     "world": "celestia",
     "locationId": 29,
     "locationName": "バリル城",
-    "remarks": "港にあるタル"
+    "remarks": "港にあるタルを調べる"
   },
   {
     "id": 37,
@@ -332,24 +332,24 @@
     "lensId": 42,
     "world": "inferior",
     "locationId": 39,
-    "locationName": "インフェリアマップ GPS（160, 131）",
-    "remarks": "隠しマップにあるアイテム袋から入手"
+    "locationName": "インフェリアマップ1",
+    "remarks": "インフェリアマップ GPS（160, 131）へ行き、隠しマップにあるア袋から入手"
   },
   {
     "id": 43,
     "lensId": 43,
     "world": "inferior",
     "locationId": 40,
-    "locationName": "インフェリアマップ GPS （14, 74）",
-    "remarks": "隠しマップにあるアイテム袋から入手"
+    "locationName": "インフェリアマップ2",
+    "remarks": "インフェリアマップ GPS （14, 74）へ行き、隠しマップにある袋から入手"
   },
   {
     "id": 44,
     "lensId": 44,
     "world": "inferior",
     "locationId": 41,
-    "locationName": "インフェリアマップ GPS（162, 45）",
-    "remarks": "隠しマップにあるアイテム袋から入手"
+    "locationName": "インフェリアマップ3",
+    "remarks": "インフェリアマップ GPS（162, 45）へ行き、隠しマップにある袋から入手"
   },
   {
     "id": 45,
@@ -357,7 +357,7 @@
     "world": "inferior",
     "locationId": 47,
     "locationName": "定期連絡船",
-    "remarks": "商人がいる部屋の壺"
+    "remarks": "商人がいる部屋の壺を調べる"
   },
   {
     "id": 46,
@@ -365,7 +365,7 @@
     "world": "inferior",
     "locationId": 48,
     "locationName": "アイフリードの墓",
-    "remarks": "お化け屋敷フロアの賽銭箱"
+    "remarks": "お化け屋敷フロアの賽銭箱を調べる"
   },
   {
     "id": 47,
@@ -373,7 +373,7 @@
     "world": "celestia",
     "locationId": 42,
     "locationName": "インシーアジト3",
-    "remarks": "奥の部屋の左下にあるイソギンチャク"
+    "remarks": "奥の部屋の左下にあるイソギンチャクを調べる"
   },
   {
     "id": 48,
@@ -396,8 +396,8 @@
     "lensId": 50,
     "world": "celestia",
     "locationId": 44,
-    "locationName": "セレスティアマップ GPS（60, 126）",
-    "remarks": "隠しマップにあるアイテム袋から入手"
+    "locationName": "セレスティアマップ",
+    "remarks": "セレスティアマップ GPS（60, 126）に入り、隠しマップにあるアイテム袋から入手"
   },
   {
     "id": 51,
@@ -437,7 +437,7 @@
     "world": "celestia",
     "locationId": 46,
     "locationName": "ねこにんの里",
-    "remarks": ""
+    "remarks": "入り口にある民家の地下にある野菜を調べる"
   },
   {
     "id": 56,
@@ -445,7 +445,7 @@
     "world": "celestia",
     "locationId": 46,
     "locationName": "ねこにんの里",
-    "remarks": ""
+    "remarks": "奥にあるピンク色の家の野菜を調べる"
   },
   {
     "id": 57,
@@ -453,7 +453,7 @@
     "world": "celestia",
     "locationId": 25,
     "locationName": "氷晶霊の山",
-    "remarks": "山頂付近の雪崩が起きたあとの雪"
+    "remarks": "雪崩が起きたあとの雪を調べる"
   },
   {
     "id": 58,
@@ -461,7 +461,7 @@
     "world": "other",
     "locationId": 51,
     "locationName": "バンエルティア号",
-    "remarks": "エンジンの裏側を調べる ※操作キャラが隠れますが印の箇所を連打"
+    "remarks": "エンジンの裏側を調べる ※完全に隠れているのでマーク箇所を連打"
   },
   {
     "id": 59,

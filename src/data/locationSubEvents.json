@@ -47,7 +47,7 @@
   {
     "id": 7,
     "locationId": 14,
-    "locationName": "商業の町バロール",
+    "locationName": "バロールの町",
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
@@ -56,7 +56,7 @@
   {
     "id": 8,
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール",
+    "locationName": "シャンバール",
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
@@ -92,7 +92,7 @@
   {
     "id": 12,
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール",
+    "locationName": "シャンバール",
     "eventId": 5,
     "eventName": "レンズ交換",
     "eventPath": "/subevents/lens",

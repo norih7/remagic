@@ -641,7 +641,7 @@
   {
     "id": 62,
     "locationId": 14,
-    "locationName": "商業の町バロール",
+    "locationName": "バロールの町",
     "itemId": 18,
     "itemName": "ホーリィボトル",
     "itemType": "useItem",
@@ -650,7 +650,7 @@
   {
     "id": 63,
     "locationId": 14,
-    "locationName": "商業の町バロール",
+    "locationName": "バロールの町",
     "itemId": 47,
     "itemName": "シャムシール",
     "itemType": "sword",
@@ -659,7 +659,7 @@
   {
     "id": 64,
     "locationId": 14,
-    "locationName": "商業の町バロール",
+    "locationName": "バロールの町",
     "itemId": 48,
     "itemName": "エリクシール",
     "itemType": "useItem",
@@ -767,7 +767,7 @@
   {
     "id": 76,
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール",
+    "locationName": "シャンバール",
     "itemId": 55,
     "itemName": "100G",
     "itemType": "money",
@@ -776,7 +776,7 @@
   {
     "id": 77,
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール",
+    "locationName": "シャンバール",
     "itemId": 43,
     "itemName": "ルーンボトル",
     "itemType": "useItem",
@@ -785,7 +785,7 @@
   {
     "id": 78,
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール",
+    "locationName": "シャンバール",
     "itemId": 56,
     "itemName": "エルヴンブーツ",
     "itemType": "accessory",

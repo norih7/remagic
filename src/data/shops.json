@@ -81,61 +81,61 @@
     "id": 14,
     "name": "オオムネ（武器屋）",
     "locationId": 14,
-    "locationName": "商業の町バロール"
+    "locationName": "バロールの町"
   },
   {
     "id": 15,
     "name": "アナガチ（アクセサリ屋）",
     "locationId": 14,
-    "locationName": "商業の町バロール"
+    "locationName": "バロールの町"
   },
   {
     "id": 16,
     "name": "マッピラ（食材屋）",
     "locationId": 14,
-    "locationName": "商業の町バロール"
+    "locationName": "バロールの町"
   },
   {
     "id": 17,
     "name": "ヨシンバ（道具屋）",
     "locationId": 14,
-    "locationName": "商業の町バロール"
+    "locationName": "バロールの町"
   },
   {
     "id": 19,
     "name": "シャン食品（食材屋1）",
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール"
+    "locationName": "シャンバール"
   },
   {
     "id": 20,
     "name": "バール食品（食材屋2）",
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール"
+    "locationName": "シャンバール"
   },
   {
     "id": 21,
     "name": "ホットショット（武器屋）",
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール"
+    "locationName": "シャンバール"
   },
   {
     "id": 22,
     "name": "逃げ水（道具屋）",
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール"
+    "locationName": "シャンバール"
   },
   {
     "id": 23,
     "name": "シースルー（防具屋1）",
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール"
+    "locationName": "シャンバール"
   },
   {
     "id": 24,
     "name": "ヒートアップ（防具屋2）",
     "locationId": 16,
-    "locationName": "熱砂の町 シャンバール"
+    "locationName": "シャンバール"
   },
   {
     "id": 25,

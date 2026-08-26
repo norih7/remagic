@@ -115,7 +115,7 @@ export const subeventLinks = {
     desc: "ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
   },
   "grip-sword": {
-    title: "クリップソード探し",
+    title: "グリップソード探し",
     path: "/subevents/grip-sword",
     image: "/link-headers/subevents-grip-sword.jpg",
     desc: "アクセサリ「スマッシュマント」を入手できるグリップソード探しを紹介。",
@@ -162,7 +162,7 @@ export const subeventLinks = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。サブイベント「放浪の画家リシテア」の攻略ページ。ペイルティやセレスティア各地での遭遇場所、発生条件、フォッグのアクセサリ「キャンセラー」の入手法とエレメントマスター習得への流れを解説。",
   },
-  "flying-boad": {
+  "flying-board": {
     title: "飛行艇の入手",
     path: "/subevents/flying-board",
     image: "/link-headers/subevents-flying-board.jpg",

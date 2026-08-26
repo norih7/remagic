@@ -13,7 +13,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const pageKey = "flying-boad";
+const pageKey = "flying-board";
 const title = subeventLinks[pageKey].title;
 const description = subeventLinks[pageKey].seoDesc;
 const canonical = subeventLinks[pageKey].path;
