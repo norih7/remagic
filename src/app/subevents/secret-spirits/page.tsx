@@ -7,15 +7,23 @@ import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
+import { subeventLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = " 隠し大晶霊";
+const pageKey = "secret-spirits";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description: "",
+  description,
+  alternates: {
+    canonical,
+  },
 };
+
 export default async function HomePage() {
   return (
     <article>

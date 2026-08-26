@@ -4,14 +4,23 @@ import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import CardList from "@/components/CardLIst";
 import Information from "@/components/Information";
+import { subeventLinks } from "@/constants";
+
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const title = "クレーメルボール";
+const pageKey = "kremerball";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description: "",
+  description,
+  alternates: {
+    canonical,
+  },
 };
+
 export default async function HomePage() {
   return (
     <article>

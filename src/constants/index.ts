@@ -18,6 +18,27 @@ export const categoryLinks = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアのパーティの特技と晶霊術を紹介しています。習得条件や大晶霊の組み合わせをチェック。",
   },
+  systems: {
+    title: "システム/データ",
+    path: "/skills",
+    desc: "エターニアのシステム開設やアイテムなどの一覧データを公開",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアのシステム開設やアイテムなどの一覧データを公開しています。",
+  },
+  subevents: {
+    title: "サブイベント",
+    path: "/subevents",
+    desc: "エターニアのサブイベントの解説。強力なアイテムや装備品、特技の習得などを網羅。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアのサブイベントの解説。強力なアイテムや装備品、特技の習得などを網羅。",
+  },
+  extras: {
+    title: "隠しマップ",
+    path: "/extras",
+    desc: "エターニアの隠しマップの解説。隠しダンジョン、隠しタウン、特殊なフィールドマップを紹介しています。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。隠しダンジョン、隠しタウン、特殊なフィールドマップを紹介しています。",
+  },
 };
 
 export const storyLinks = {
@@ -124,6 +145,8 @@ export const subeventLinks = {
     path: "/subevents/kremerball",
     image: "/link-headers/subevents-kremerball.jpg",
     desc: "ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
   },
   "grip-sword": {
     title: "グリップソード探し",
@@ -194,6 +217,8 @@ export const subeventLinks = {
     image: "/link-headers/subevents-secret-spirits.jpg",
     path: "/subevents/secret-spirits",
     desc: "ストーリー攻略だけでは契約できない大晶霊を解説。どれも強力な大晶霊です！",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。ストーリー攻略だけでは契約できない協力な大晶霊を解説。",
   },
   // coliseum: {
   //   title: "闘技場",
