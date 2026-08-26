@@ -12,9 +12,10 @@ export const dynamic = "force-static";
 const pageKey = "chat";
 const title = skillLinks[pageKey].title;
 const canonical = skillLinks[pageKey].path;
+const description = skillLinks[pageKey].seoDesc;
 export const metadata = {
   title,
-  description: "",
+  description,
   alternates: {
     canonical,
   },
@@ -89,19 +90,19 @@ export default async function HomePage() {
       <SetPageTitle title={title} />
 
       <PageSummary>
-        <p>
-          海賊チャットが習得するすべての特技一覧ページです。各スキルをアンロックするために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご用意していますのでそちらをご確認ください。
-        </p>
-        <div className="mb-4">
-          <GuideList
-            items={[
-              {
-                title: "チャットの特技習得サブイベント一覧",
-                href: "/subevents/skill-chat",
-              },
-            ]}
-          ></GuideList>
+        <div className="mb-2">
+          <p>
+            海賊チャットが習得するすべての特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご用意していますのでそちらをご確認ください。
+          </p>
         </div>
+        <GuideList
+          items={[
+            {
+              title: "チャットの特技習得サブイベント一覧",
+              href: "/subevents/skill-chat",
+            },
+          ]}
+        ></GuideList>
       </PageSummary>
       {/* 
       <section className="mb-12">

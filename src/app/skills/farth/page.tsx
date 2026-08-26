@@ -12,9 +12,10 @@ export const dynamic = "force-static";
 const pageKey = "farth";
 const title = skillLinks[pageKey].title;
 const canonical = skillLinks[pageKey].path;
+const description = skillLinks[pageKey].seoDesc;
 export const metadata = {
   title,
-  description: "",
+  description,
   alternates: {
     canonical,
   },
@@ -193,19 +194,19 @@ export default async function HomePage() {
       <SetPageTitle title={title} />
 
       <PageSummary>
-        <p>
-          格闘家ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご用意していますのでそちらをご参照ください。
-        </p>
-        <div className="mb-4">
-          <GuideList
-            items={[
-              {
-                title: "拳レベル・蹴レベルシステムの詳細解説",
-                href: "/systems/skill",
-              },
-            ]}
-          ></GuideList>
+        <div className="mb-2">
+          <p>
+            格闘家ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご用意していますのでそちらをご参照ください。
+          </p>
         </div>
+        <GuideList
+          items={[
+            {
+              title: "拳レベル・蹴レベルシステムの詳細解説",
+              href: "/systems/skill",
+            },
+          ]}
+        ></GuideList>
       </PageSummary>
       {/* 
       <section className="mb-12">

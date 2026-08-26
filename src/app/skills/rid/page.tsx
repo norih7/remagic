@@ -13,9 +13,10 @@ export const dynamic = "force-static";
 const pageKey = "rid";
 const title = skillLinks[pageKey].title;
 const canonical = skillLinks[pageKey].path;
+const description = skillLinks[pageKey].seoDesc;
 export const metadata = {
   title,
-  description: "",
+  description,
   alternates: {
     canonical,
   },
@@ -311,19 +312,19 @@ export default async function HomePage() {
       <SetPageTitle title={title} />
 
       <PageSummary>
-        <p>
-          主人公リッドが習得するすべての特技と奥義の一覧ページです。スキルの前提となる「斬レベル」や「突レベル」の仕組み、秘奥義に関する詳細な解説は専用の別ページをご用意していますのでそちらをご確認ください。
-        </p>
-        <div className="mb-4">
-          <GuideList
-            items={[
-              {
-                title: "斬レベル・突レベルシステムの詳細解説",
-                href: "/systems/skill",
-              },
-            ]}
-          ></GuideList>
+        <div className="mb-2">
+          <p>
+            主人公リッドが習得するすべての特技と奥義の一覧ページです。スキルの前提となる「斬レベル」や「突レベル」の仕組みの解説は専用の別ページをご用意していますのでそちらをご確認ください。
+          </p>
         </div>
+        <GuideList
+          items={[
+            {
+              title: "斬レベル・突レベルシステムの詳細解説",
+              href: "/systems/skill",
+            },
+          ]}
+        ></GuideList>
       </PageSummary>
 
       {/* <section className="mb-12">

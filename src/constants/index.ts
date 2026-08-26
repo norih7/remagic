@@ -10,6 +10,16 @@ export const categoryName = {
 
 export type CategoryKey = keyof typeof categoryName;
 
+export const categoryLinks = {
+  skills: {
+    title: "特技/晶霊術",
+    path: "/skills",
+    desc: "エターニアのパーティの特技と晶霊術を紹介しています。習得条件や大晶霊の組み合わせをチェック。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアのパーティの特技と晶霊術を紹介しています。習得条件や大晶霊の組み合わせをチェック。",
+  },
+};
+
 export const storyLinks = {
   guide1: {
     title: "ラシュアン〜水晶霊の河",
@@ -87,7 +97,8 @@ export const skillLinks = {
     path: "/skills/magic",
     image: "/link-headers/skills-magic.jpg",
     desc: "晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しています。好きな術を見つけて獲得しましょう！",
-    seoDesc: "",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しています。好きな術を見つけて獲得しましょう！",
   },
 };
 

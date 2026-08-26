@@ -12,13 +12,15 @@ export const dynamic = "force-static";
 const pageKey = "fog";
 const title = skillLinks[pageKey].title;
 const canonical = skillLinks[pageKey].path;
+const description = skillLinks[pageKey].seoDesc;
 export const metadata = {
   title,
-  description: "",
+  description,
   alternates: {
     canonical,
   },
 };
+
 export default async function HomePage() {
   const skills = [
     {
@@ -88,19 +90,19 @@ export default async function HomePage() {
       <SetPageTitle title={title} />
 
       <PageSummary>
-        <p>
-          豪快な銃撃を得意とするフォッグの特技一覧ページです。各スキルをアンロックするために必要なサブイベントの発生手順や詳細情報については、専用の攻略ガイドページをご用意していますのでそちらをご確認ください。
-        </p>
-        <div className="mb-4">
-          <GuideList
-            items={[
-              {
-                title: "フォッグの特技習得サブイベント一覧",
-                href: "/subevents/skill-fog",
-              },
-            ]}
-          ></GuideList>
+        <div className="mb-2">
+          <p>
+            豪快な銃撃を得意とするフォッグの特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細情報については、専用の攻略ガイドページをご用意していますのでそちらをご確認ください。
+          </p>
         </div>
+        <GuideList
+          items={[
+            {
+              title: "フォッグの特技習得サブイベント一覧",
+              href: "/subevents/skill-fog",
+            },
+          ]}
+        ></GuideList>
       </PageSummary>
       {/* 
       <section className="mb-12">

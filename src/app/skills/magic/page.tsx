@@ -13,13 +13,15 @@ export const dynamic = "force-static";
 const pageKey = "magic";
 const title = skillLinks[pageKey].title;
 const canonical = skillLinks[pageKey].path;
+const description = skillLinks[pageKey].seoDesc;
 export const metadata = {
   title,
-  description: "",
+  description,
   alternates: {
     canonical,
   },
 };
+
 export default async function HomePage() {
   const skills = [
     {
