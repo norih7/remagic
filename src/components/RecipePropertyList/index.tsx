@@ -146,18 +146,19 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
             key={index}
             className="mb-4 font-bold border border-slate-200 rounded-lg p-3 shadow-xs"
           >
-            <div className="flex mb-3 items-center">
+            <div className="flex mb-2 items-center">
               {/* <Image
                 src="/icons/recipe-1.jpg"
-                width={35}
-                height={35}
+                width={30}
+                height={30}
                 alt=""
-                className="rounded-md mr-2"
+                className="rounded-sm mr-2"
               /> */}
               <h3 className="text-[1rem] mr-3 !mb-0 !p-0">{recipe.name}</h3>
-              <div>
-                <Tag>{recipeTypeMap[recipe.type]}</Tag>
-              </div>
+            </div>
+            <div className="mb-2">
+              <Tag>{recipeTypeMap[recipe.type]}</Tag>
+              {recipe.world ? <Tag>{recipeWorldMap[recipe.world]}</Tag> : null}
             </div>
             <RoundedItem title="料理の効果" className="mb-2">
               {recipe.effect}

@@ -62,12 +62,12 @@
   font-weight: bold;
 }
 .main h3 {
-  margin-bottom: 8px;
-  /* padding-bottom: 8px; */
+  position: relative;
+  margin-bottom: 12px;
   font-size: 1rem;
   font-weight: bold;
   /* border-left: 4px solid #dcd9c9; */
-  color: #555;
+  color: var(--color-slate-700);
 }
 .main h4 {
   font-weight: bold;

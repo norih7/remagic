@@ -30,7 +30,7 @@ type Props = {
 const SectionTitle = (props: Props) => {
   const { children, type = "guide", data = "" } = props;
   return (
-    <h2 className="flex items-center mb-4" data-title={data}>
+    <h2 className="flex items-center mb-3" data-title={data}>
       <LuBookText className="mr-1" />
       {children}
     </h2>

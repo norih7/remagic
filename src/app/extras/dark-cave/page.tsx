@@ -8,6 +8,7 @@ import { getLocationItemsData } from "@/lib/db";
 import { getLocationLensesData } from "@/lib/db";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { extraLinks } from "@/constants";
+import EventCondition from "@/components/EventCondition";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,6 +40,7 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle>闇の洞窟とは</SectionTitle>
+        <EventCondition category="period">潜水艇入手後から</EventCondition>
         <div className="mb-4">
           <p>
             セレスティアの海中深くに潜む隠しダンジョンのひとつです。物語の進行で「潜水艇」を入手した直後から自由に挑むことが可能です。ダンジョン内に巣食うモンスターたちは総じて光属性が弱点となっており、雷晶霊の遺跡クリア後に入手できる強力な武器「エクスカリバー」などを装備させておくと戦闘を非常にスムーズに進められます。最奥に待つ大晶霊「シャドウ」との戦闘に勝利すれば、晴れて契約を結ぶことができます。

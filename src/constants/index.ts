@@ -102,14 +102,16 @@ export const skillLinks = {
   chat: {
     title: "チャットの特技",
     path: "/skills/chat",
-    desc: "",
+    image: "/link-headers/skills-chat.jpg",
+    desc: "チャットの特技一覧ページ。アイテムを盗むローバーアイテムやサブイベントで取得する特技を説明。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。チャットが習得するすべての特技や特殊スキルを網羅。各スキルの効果、属性、消費TP、ヒット数に加え、ピコハンやローバーアイテム、サブイベントによる習得条件などの詳細情報を一覧で紹介しています。",
   },
   fog: {
     title: "フォッグの特技",
     path: "/skills/fog",
-    desc: "",
+    image: "/link-headers/skills-fog.jpg",
+    desc: "フォッグの特技一覧ページ。各特技のキャンセルレベルや属性も解説。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。フォッグが操るすべての特技や銃弾スキルを網羅。各スキルの効果、属性、消費TP、ヒット数に加え、キャンセルレベルやサブイベントによる習得手順などの詳細情報を一覧で紹介しています。",
   },
@@ -272,10 +274,19 @@ export const systemLinks = {
   },
   "item-data": {
     title: "アイテム一覧データ",
+    image: "/link-headers/systems-item.jpg",
     path: "/systems/item-data",
-    desc: "アイテム一覧データを掲載",
+    desc: "アイテム一覧のデータを掲載",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。使用アイテム一覧を掲載。",
+  },
+  "weapon-data": {
+    title: "武器一覧データ",
+    image: "/link-headers/systems-weapon.jpg",
+    path: "/systems/weapon-data",
+    desc: "武器一覧のデータを掲載",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。武器一覧を掲載。",
   },
   titles: {
     title: "エターニアの称号",
@@ -336,7 +347,8 @@ export const extraLinks = {
   "farosu-underground": {
     title: "ファロース教会地下",
     path: "/extras/farosu-underground",
-    desc: "",
+    image: "/link-headers/extras-farosu.jpg",
+    desc: "大晶霊「マクスウェル」と契約できるファロース教会地下の解説。レベル上げにもおすすめな隠しダンジョンです。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。元の大晶霊「マクスウェル」と契約できる隠しダンジョン「ファロース教会地下」の行き方、ダンジョン内部の探索、ボス「マクスウェル」の攻略法、貴重なドロップアイテム「フェアリィリング」や入手装備の情報を網羅して紹介しています。",
   },

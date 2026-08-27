@@ -17,7 +17,7 @@ const EventCondition = (props: Props) => {
       className={`${styles.condition} mb-3 p-2 flex items-center font-bold text-xs border border-gray-300 rounded-lg`}
     >
       <div
-        className={`${styles.smallInfo} mr-1 flex items-center font-bold text-white bg-mauve-500 border rounded-lg pl-2 pr-3 py-1`}
+        className={`${styles.smallInfo} mr-1 flex items-center font-bold text-white bg-mauve-500 rounded-lg pl-2 pr-3 py-1`}
       >
         <LuMapPinCheckInside className="mr-1" />
         {title}

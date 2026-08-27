@@ -28,13 +28,13 @@ export default async function HomePage() {
   const lensesData = await getLocationLensesData();
   const Lenses = lensesData.map((item, index) => (
     <div className="border border-slate-300 p-3 rounded-md mb-3" key={index}>
-      <div className="flex mb-3 items-center">
+      <div className="mb-2 items-center">
+        <h3 className="text-[1rem] mr-3 !mb-1 !p-0">
+          No.{item.id} {item.locationName}
+        </h3>
         <div className="mr-1">
           <Tag>{recipeWorldMap[item.world]}</Tag>
         </div>
-        <h3 className="text-[1rem] mr-3 !mb-0 !p-0">
-          No.{item.id} {item.locationName}
-        </h3>
       </div>
       <div className="">
         <RoundedItem title="場所">
