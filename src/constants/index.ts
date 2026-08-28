@@ -368,6 +368,7 @@ export const extraLinks = {
     title: "ねこにんの里/晶霊温泉",
     path: "/extras/towns",
     desc: "準備中",
+    seoDesc: "準備中",
   },
   //   valkyrie: {
   //   title: "ネレイドの迷宮",
