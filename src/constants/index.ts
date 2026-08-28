@@ -364,11 +364,11 @@ export const extraLinks = {
   //   path: "/extras/jiini",
   //   desc: "",
   // },
-  // towns: {
-  //   title: "ねこにんの里/晶霊温泉",
-  //   path: "/extras/towns",
-  //   desc: "",
-  // },
+  towns: {
+    title: "ねこにんの里/晶霊温泉",
+    path: "/extras/towns",
+    desc: "",
+  },
   //   valkyrie: {
   //   title: "ネレイドの迷宮",
   //   path: "/extras/valkyrie",
