@@ -367,7 +367,7 @@ export const extraLinks = {
   towns: {
     title: "ねこにんの里/晶霊温泉",
     path: "/extras/towns",
-    desc: "",
+    desc: "準備中",
   },
   //   valkyrie: {
   //   title: "ネレイドの迷宮",
