@@ -343,6 +343,7 @@ export default async function HomePage() {
             src="/stories/guide5-chisel-fire-sample.gif"
             alt="シゼル城 火晶霊の柱攻略動画"
             width={264}
+            height={200}
           />
         </div>
         <div className="mb-4">
