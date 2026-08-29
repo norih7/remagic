@@ -69,7 +69,7 @@ export default async function HomePage() {
               <span className="text-slate-400">2026/08/29</span>
               <span>
                 <Link
-                  href="/stories/guide4"
+                  href="/stories/guide5"
                   className="hover:text-cyan-400 transition-colors"
                 >
                   セイファート神殿〜シゼル城
