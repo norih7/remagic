@@ -226,7 +226,7 @@ export const subeventLinks = {
   },
   // coliseum: {
   //   title: "闘技場",
-  //   path: "/subevents/a",
+  //   path: "/subevents/coliseum",
   //   desc: "",
   // },
 };
@@ -369,8 +369,10 @@ export const extraLinks = {
   towns: {
     title: "ねこにんの里/晶霊温泉",
     path: "/extras/towns",
-    desc: "準備中",
-    seoDesc: "準備中",
+    image: "/link-headers/extras-town.jpg",
+    desc: "飛行艇入手後に行ける隠しタウンの紹介。行きかたやできることをチェックしてください。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しタウン「ねこにんの里」「晶霊温泉」の行き方と攻略情報。タウンへの行き方やマスター料理の食材「パープルソディ」の買い方、チャットの特技の習得方法を分かりやすく解説します。",
   },
   //   valkyrie: {
   //   title: "ネレイドの迷宮",
