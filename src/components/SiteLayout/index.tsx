@@ -39,10 +39,11 @@ export default function SiteLayout({
     extras: "隠しマップ",
   };
   const menu = Object.keys(categoryName).map((key, index) => {
-    const activeClass = key === category ? "border-b-2 border-gray-400" : "";
+    const activeClass =
+      key === category ? "border-b-2 border-gray-400" : "border-transparent";
     return (
       <li
-        className={`ml-4 p-1 text-xs flex items-center ${activeClass}`}
+        className={`inline-flex items-center px- py-1 text-xs whitespace-nowrap ${activeClass}`}
         key={index}
       >
         <LuSquareChevronRight className="mr-1" />
@@ -84,7 +85,7 @@ export default function SiteLayout({
       </div>
       <div className={`${styles.shortcutMenu}`}>
         <div>
-          <ul className="flex flex-wrap py-2">{menu}</ul>
+          <ul className="flex flex-wrap gap-x-4 gap-y-2 py-2 px-4">{menu}</ul>
         </div>
       </div>
       <div className={styles.container}>
