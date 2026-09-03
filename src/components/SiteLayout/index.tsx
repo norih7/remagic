@@ -7,6 +7,14 @@ import { useCategory } from "@/hooks/useCategory";
 import Breadcrumb from "@/components/Breadcrumb";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import {
+  LuBookText,
+  LuHistory,
+  LuInfo,
+  LuSparkles,
+  LuMessageSquareWarning,
+  LuSquareChevronRight,
+} from "react-icons/lu";
 
 export default function SiteLayout({
   children,
@@ -22,6 +30,26 @@ export default function SiteLayout({
         RE:MAGIC リマスター版対応の完全攻略データ
       </p>
     ) : null;
+
+  const categoryName = {
+    stories: "ストーリーガイド",
+    skills: "特技/晶霊術",
+    systems: "システム/データ",
+    subevents: "サブイベント",
+    extras: "隠しマップ",
+  };
+  const menu = Object.keys(categoryName).map((key, index) => {
+    const activeClass = key === category ? "border-b-2 border-gray-400" : "";
+    return (
+      <li
+        className={`ml-4 p-1 text-xs flex items-center ${activeClass}`}
+        key={index}
+      >
+        <LuSquareChevronRight className="mr-1" />
+        <a href={`/${key}`}>{categoryName[key]}</a>
+      </li>
+    );
+  });
 
   return (
     <>
@@ -56,23 +84,7 @@ export default function SiteLayout({
       </div>
       <div className={`${styles.shortcutMenu}`}>
         <div>
-          <ul className="flex flex-wrap">
-            <li className="py-2 pl-4 text-xs">
-              <a href="/stories">ストーリーガイド</a>
-            </li>
-            <li className="py-2 pl-4 text-xs">
-              <a href="/skills">特技/晶霊術</a>
-            </li>
-            <li className="py-2 pl-4 text-xs">
-              <a href="/systems">システム/データ</a>
-            </li>
-            <li className="py-2 pl-4 text-xs">
-              <a href="/subevents">サブイベント</a>
-            </li>
-            <li className="py-2 pl-4 text-xs">
-              <a href="/extras">隠しマップ</a>
-            </li>
-          </ul>
+          <ul className="flex flex-wrap py-2">{menu}</ul>
         </div>
       </div>
       <div className={styles.container}>
