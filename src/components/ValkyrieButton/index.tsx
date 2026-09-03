@@ -6,11 +6,18 @@ type Direction = "up" | "down" | "left" | "right";
 
 const GRAY = "#9ca3af";
 
+const dedaultColor: Record<Direction, string> = {
+  up: "#ccd5cf", // 緑
+  right: "#e0d3d3", // 赤
+  left: "#e2d6dc", // ピンク
+  down: "#ccd4e1", // 青
+};
+
 const activeColor: Record<Direction, string> = {
-  up: "#22c55e", // 緑
-  right: "#ef4444", // 赤
-  left: "#ec4899", // ピンク
-  down: "#3b82f6", // 青
+  up: "#14a248", // 緑
+  right: "#c32020", // 赤
+  left: "#d5207a", // ピンク
+  down: "#1d5bbf", // 青
 };
 
 const positionStyle: Record<Direction, React.CSSProperties> = {
@@ -38,20 +45,33 @@ export default function DirectionalButtons() {
     <div
       style={{
         position: "relative",
-        width: 80,
-        height: 80,
+        width: 70,
+        height: 70,
         margin: "0px auto",
       }}
     >
       {/* 正方形 */}
       <div
         style={{
+          position: "absolute",
+          top: "23px",
           width: "100%",
-          height: "100%",
-          border: "2px solid #d1d5db",
-          borderRadius: 8,
+          height: "25px",
+          // border: "2px solid #d1d5db",
           boxSizing: "border-box",
-          backgroundColor: "#f9fafb",
+          backgroundColor: "#eeeeee",
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          left: "22px",
+          width: "25px",
+          height: "100%",
+          // border: "2px solid #d1d5db",
+
+          boxSizing: "border-box",
+          backgroundColor: "#eeeeee",
         }}
       />
 
@@ -68,11 +88,14 @@ export default function DirectionalButtons() {
             borderRadius: "50%",
             border: "none",
             cursor: "pointer",
-            backgroundColor: active[dir] ? activeColor[dir] : GRAY,
+            backgroundColor: active[dir] ? activeColor[dir] : dedaultColor[dir],
             transition: "background-color 0.15s ease",
             ...positionStyle[dir],
+            color: "#fff",
           }}
-        />
+        >
+          {active[dir] ? "!" : null}
+        </button>
       ))}
     </div>
   );

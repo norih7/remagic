@@ -28,7 +28,7 @@ const Buttons: React.ReactNode[] = [];
 for (let i = 1; i <= 10; i++) {
   Buttons.push(
     <li className="mr-10 mb-10" key={i}>
-      <div className="bg-gray-100 border border-gray-400 mb-5 font-bold text-center">
+      <div className="bg-gray-100 border border-gray-300 mb-5 font-bold text-center text-gray-600 text-xs">
         {i}回目
       </div>
       <ValkyrieButton />
