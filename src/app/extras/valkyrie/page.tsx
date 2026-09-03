@@ -86,7 +86,7 @@ export default async function HomePage() {
           </p>
           <h3>メモ</h3>
           <p>タップすることで記録に残ります</p>
-          <ul className="flex flex-wrap">{Buttons}</ul>
+          <ul className="flex flex-wrap justify-center">{Buttons}</ul>
         </div>
         <div className="mb-4">
           <h3>3階：風を止めて灯台に火を灯す仕掛け</h3>

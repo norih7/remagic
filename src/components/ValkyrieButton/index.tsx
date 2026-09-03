@@ -45,8 +45,8 @@ export default function DirectionalButtons() {
     <div
       style={{
         position: "relative",
-        width: 70,
-        height: 70,
+        width: 50,
+        height: 50,
         margin: "0px auto",
       }}
     >
@@ -54,9 +54,9 @@ export default function DirectionalButtons() {
       <div
         style={{
           position: "absolute",
-          top: "23px",
+          top: "13px",
           width: "100%",
-          height: "25px",
+          height: "24px",
           // border: "2px solid #d1d5db",
           boxSizing: "border-box",
           backgroundColor: "#eeeeee",
@@ -65,11 +65,9 @@ export default function DirectionalButtons() {
       <div
         style={{
           position: "absolute",
-          left: "22px",
-          width: "25px",
+          left: "13px",
+          width: "24px",
           height: "100%",
-          // border: "2px solid #d1d5db",
-
           boxSizing: "border-box",
           backgroundColor: "#eeeeee",
         }}
