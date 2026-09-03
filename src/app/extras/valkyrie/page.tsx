@@ -8,6 +8,7 @@ import { getLocationItemsData } from "@/lib/db";
 import { extraLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import ValkyrieButton from "@/components/ValkyrieButton";
+
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
@@ -23,7 +24,7 @@ export const metadata = {
   },
 };
 
-const Buttons = [];
+const Buttons: React.ReactNode[] = [];
 for (let i = 1; i <= 10; i++) {
   Buttons.push(
     <li className="mr-10 mb-10" key={i}>
