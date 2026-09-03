@@ -31,7 +31,7 @@ export default function SiteLayout({
       </p>
     ) : null;
 
-  const categoryName = {
+  const categoryName: Record<string, string> = {
     stories: "ストーリーガイド",
     skills: "特技/晶霊術",
     systems: "システム/データ",
