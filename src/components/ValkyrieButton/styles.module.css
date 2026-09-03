@@ -1,0 +1,39 @@
+.breadcrumb {
+  color: #eee; /* 文字は真っ黒にせずグレーで視覚ノイズを減らす */
+}
+
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+/* 区切り文字の設定 */
+.breadcrumb li:not(:last-child)::after {
+  content: "›"; /* モダンな矢印記号 */
+  margin: 0 8px;
+  color: #ccc; /* 区切りは薄い色で強調しすぎない */
+}
+
+.breadcrumb a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: #87b0f2; /* ホバー時にサイトのテーマカラーへ変化 */
+  text-decoration: underline;
+}
+
+/* 現在地（最後の要素） */
+.breadcrumb li[aria-current="page"] {
+  color: #333;
+  font-weight: 600; /* 現在地だけ太字にして強調 */
+}

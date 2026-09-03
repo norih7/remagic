@@ -6,7 +6,8 @@ import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
 import { getLocationItemsData } from "@/lib/db";
 import { extraLinks } from "@/constants";
-
+import ResponsiveImage from "@/components/ResponsiveImage";
+import ValkyrieButton from "@/components/ValkyrieButton";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
@@ -21,6 +22,18 @@ export const metadata = {
     canonical,
   },
 };
+
+const Buttons = [];
+for (let i = 1; i <= 10; i++) {
+  Buttons.push(
+    <li className="mr-10 mb-10" key={i}>
+      <div className="bg-gray-100 border border-gray-400 mb-5 font-bold text-center">
+        {i}回目
+      </div>
+      <ValkyrieButton />
+    </li>,
+  );
+}
 
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
@@ -42,7 +55,7 @@ export default async function HomePage() {
           付近）に佇んでおり、飛行艇を使用することで初めて着陸・侵入することが可能です。ダンジョン内では『ワルキューレの伝説』のアレンジBGMが流れるファン必見のスポットとなっています。
         </p>
         <p>
-          最上階には謎の剣士「ワルキューレ」が待ち受けており、勝利すると最強クラスの隠し武器「S.D（ソードダンサー）」を入手するための「見えない鍵」や、数々の強力な装備品を手に入れることができます。なお、この塔は全7階層で構成されていますが、**ワルキューレを撃破するまではフロアを移動しても一切ザコ敵とのエンカウントが発生しない**安全仕様になっています。ボスを倒した帰り道からモンスターが出現するようになる仕様のため、探索自体はじっくり腰を据えて進められます。
+          最上階には謎の剣士「ワルキューレ」が待ち受けており、勝利すると最強クラスの隠し武器「S.D（ソーディアン・ディムロス）」を入手するための「見えない鍵」や、数々の強力な装備品を手に入れることができます。なお、この塔は全7階層で構成されていますが、**ワルキューレを撃破するまではフロアを移動しても一切ザコ敵とのエンカウントが発生しない**安全仕様になっています。ボスを倒した帰り道からモンスターが出現するようになる仕様のため、探索自体はじっくり腰を据えて進められます。
         </p>
       </section>
 
@@ -68,8 +81,11 @@ export default async function HomePage() {
             中央のエリアへ進むと、四方に配置された球体が次々と光り始めます。そのあと、光った通りの正確な順番通りに各球体を調べていき、すべての正解を導き出すと次の階層へのワープが解放されます。途中で順番を間違えると「ブー」というエラー音が鳴り、最初からやり直しになります。
           </p>
           <p>
-            球体は合計11回もの長いパターンでランダムに発光するため、うろ覚えではなく手元にメモを取りながら確実に挑むのがおすすめです。
+            球体は合計10回もの長いパターンでランダムに発光するため、うろ覚えではなく手元にメモを取りながら確実に挑むのがおすすめです。
           </p>
+          <h3>メモ</h3>
+          <p>タップすることで記録に残ります</p>
+          <ul className="flex flex-wrap">{Buttons}</ul>
         </div>
         <div className="mb-4">
           <h3>3階：風を止めて灯台に火を灯す仕掛け</h3>
@@ -82,19 +98,15 @@ export default async function HomePage() {
         </div>
         <div className="mb-4">
           <h3>4階：水晶へのソーサラーリング照射順序</h3>
+          <ResponsiveImage
+            src="/extras/secret-valkyrie-gem.jpg"
+            alt="きらめきの塔 4階の水晶を撃つ順番"
+          />
           <p>
             この階層では、部屋に散らばる水晶に対してソーサラーリングの光弾を放ち、すべての水晶に明かりを灯す必要がありますが、点灯させるための厳格な順番が決められています。
           </p>
           <p>
             正しい手順は下の図を参照してください。なお、ソーサラーリングを撃つ際の細かな立ち位置・キャラクターの向きを微調整する際は、コントローラーの「□ボタン」を押しながら方向キーを入力する微移動テクニックを活用するとスムーズに合わせられます。
-            <br />
-            <Image
-              src="/maps/valkyrie_02.jpg"
-              alt="きらめきの塔 4階の水晶を撃つ順番"
-              width={403}
-              height={396}
-              className="mt-2 mb-2"
-            />
           </p>
         </div>
         <div className="mb-4">
