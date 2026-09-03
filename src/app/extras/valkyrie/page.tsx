@@ -8,6 +8,8 @@ import { getLocationItemsData } from "@/lib/db";
 import { extraLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import ValkyrieButton from "@/components/ValkyrieButton";
+import Information from "@/components/Information";
+import EventCondition from "@/components/EventCondition";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -49,14 +51,20 @@ export default async function HomePage() {
       </PageSummary>
 
       <section className="mb-12">
-        <SectionTitle>きらめきの塔とは</SectionTitle>
+        <SectionTitle>きらめきの塔</SectionTitle>
+        <EventCondition category="period">飛行艇を入手後から</EventCondition>
         <p>
-          物語終盤で「飛行艇」を入手したあとから挑戦できる隠しダンジョンのひとつです。インフェリア大陸の荒涼とした岩山に囲まれたエリア（GPS座標：200,
-          200
-          付近）に佇んでおり、飛行艇を使用することで初めて着陸・侵入することが可能です。ダンジョン内では『ワルキューレの伝説』のアレンジBGMが流れるファン必見のスポットとなっています。
+          物語終盤で「飛行艇」を入手したあとから挑戦できる隠しダンジョンのひとつです。ダンジョン内では『ワルキューレの伝説』のアレンジBGMが流れるファン必見のスポットとなっています。
         </p>
         <p>
-          最上階には謎の剣士「ワルキューレ」が待ち受けており、勝利すると最強クラスの隠し武器「S.D（ソーディアン・ディムロス）」を入手するための「見えない鍵」や、数々の強力な装備品を手に入れることができます。なお、この塔は全7階層で構成されていますが、**ワルキューレを撃破するまではフロアを移動しても一切ザコ敵とのエンカウントが発生しない**安全仕様になっています。ボスを倒した帰り道からモンスターが出現するようになる仕様のため、探索自体はじっくり腰を据えて進められます。
+          最上階には謎の剣士「ワルキューレ」が待ち受けており、勝利すると最強クラスの隠し武器「S.D（ソーディアン・ディムロス）」を入手するための「見えない鍵」や、数々の強力な装備品を手に入れることができます。なお、この塔は全7階層で構成されていますが、ワルキューレを撃破するまではフロアを移動しても一切ザコ敵とのエンカウントが発生しない仕様になっています。ボスを倒したあと再度ダンジョンに入った時から敵が出現するようになる仕様のため、探索自体はじっくり腰を据えて進められます。
+        </p>
+        <h3>きらめきの塔への行き方</h3>
+        <ResponsiveImage src="/extras/secret-valkyrie-location.jpg" />
+
+        <p>
+          ミンツから飛行艇で南にずっとすすんだ岩山に囲まれたエリア（GPS座標：200,
+          200付近）に佇んでおり、飛行艇を使用することで初めて着陸・侵入することが可能です。
         </p>
       </section>
 
@@ -78,18 +86,26 @@ export default async function HomePage() {
         </div>
         <div className="mb-4">
           <h3>2階：光る球体の記憶パズル</h3>
+          <ResponsiveImage src="/extras/secret-valkyrie-2f.jpg" />
           <p>
             中央のエリアへ進むと、四方に配置された球体が次々と光り始めます。そのあと、光った通りの正確な順番通りに各球体を調べていき、すべての正解を導き出すと次の階層へのワープが解放されます。途中で順番を間違えると「ブー」というエラー音が鳴り、最初からやり直しになります。
           </p>
           <p>
             球体は合計10回もの長いパターンでランダムに発光するため、うろ覚えではなく手元にメモを取りながら確実に挑むのがおすすめです。
           </p>
-          <h3>メモ</h3>
-          <p>タップすることで記録に残ります</p>
-          <ul className="flex flex-wrap justify-center">{Buttons}</ul>
+          <Information title="発光の記録">
+            <p>
+              紙やスマホでメモを取るのも大変なので光った色を記録する機能を作りましたのでご利用ください。光った箇所の色をタップすることで記録を残るようにしています。
+            </p>
+            <ul className="flex flex-wrap justify-center pt-4 rounded-sm">
+              {Buttons}
+            </ul>
+          </Information>
         </div>
         <div className="mb-4">
           <h3>3階：風を止めて灯台に火を灯す仕掛け</h3>
+          <ResponsiveImage src="/extras/secret-valkyrie-3f.jpg" />
+
           <p>
             このフロアでは、両側の灯台に「ソーサラーリング」で火を灯すのが目的ですが、初期状態では左右の壁から激しい風が吹きつけていて炎がかき消されてしまいます。あらかじめ「フリーズリング」を壁に向かって撃ち、氷結させて風を完全に止めてからソーサラーリングで点火しましょう。
           </p>
@@ -112,15 +128,19 @@ export default async function HomePage() {
         </div>
         <div className="mb-4">
           <h3>5階：半透明の床と光の回収パズル</h3>
+          <ResponsiveImage src="/extras/secret-valkyrie-5f.jpg" />
           <p>
             自分が乗って動かす足場に完全に連動して動く「半透明の床」を利用し、床のうえで「赤」「青」「緑」の3色の光をすべて集めるフロアです。半透明の床は自分の移動操作に対して鏡写し（反転）の動きをするため、頭の中で軌道をしっかりイメージしながら動かすことが求められます。
           </p>
         </div>
         <div className="mb-4">
           <h3>6階：床のカラー制限と3つの柱の起動</h3>
+          <ResponsiveImage src="/extras/secret-valkyrie-6f-1.jpg" />
+          <ResponsiveImage src="/extras/secret-valkyrie-6f-2.jpg" />
           <p>
             色分けされた特殊な床が敷き詰められており、足場の色によって通行できる制限が設けられています。その複雑な通路を縫うように進みながら、フロア内に点在する3本の柱を調べて光をすべて灯すことで、次の階層への道が開きます。
           </p>
+          <p>上記画像のルートで3つの柱を起動させ次の階へ進むことができます。</p>
         </div>
         <div className="mb-4">
           <h3>7階：火柱の色合わせと床の進行ルート</h3>
@@ -141,6 +161,7 @@ export default async function HomePage() {
         </div>
         <div className="mb-4">
           <h3>最上階のイベントとワルキューレ戦</h3>
+          <ResponsiveImage src="/extras/secret-valkyrie-top.jpg" />
           <p>
             最上階に足を踏み入れるとロードポイントがあり、さらに奥へ進むとイベントが発生して主人公・リッド1人きりでのボス「ワルキューレ」とのタイマン勝負に突入します。見事勝利すると、ワルキューレから最強武器「S.D」の入手に絶対不可欠な「見えない鍵」を受け取ることができ、背後にある宝箱を自由に回収できるようになります。
           </p>

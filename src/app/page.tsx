@@ -16,6 +16,7 @@ type Link = {
   image?: string;
 };
 const featuredLinks: Link[] = [];
+featuredLinks.push(extraLinks["valkyrie"]);
 featuredLinks.push(subeventLinks["lens"]);
 featuredLinks.push(subeventLinks["flying-board"]);
 featuredLinks.push(storyLinks["guide3"]);
@@ -65,6 +66,18 @@ export default async function HomePage() {
         <section className="">
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
+            <li className="flex gap-4">
+              <span className="text-slate-400">2026/09/03</span>
+              <span>
+                <Link
+                  href="/extras/valkyrie"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  きらめきの塔
+                </Link>
+                をアップデート。攻略情報の追記とゲーム画像を追加しました。
+              </span>
+            </li>
             <li className="flex gap-4">
               <span className="text-slate-400">2026/08/30</span>
               <span>
