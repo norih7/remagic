@@ -67,8 +67,8 @@ export default async function HomePage() {
         <ResponsiveImage src="/extras/secret-valkyrie-location.jpg" />
 
         <p>
-          ミンツから飛行艇で南にずっとすすんだ岩山に囲まれたエリア（GPS座標：200,
-          200付近）に佇んでおり、飛行艇を使用することで初めて着陸・侵入することが可能です。
+          インフェリアのミンツから飛行艇で南にずっとすすんだ岩山に囲まれたエリア（GPS座標：107,
+          23付近）に佇んでおり、飛行艇を使用することで初めて着陸・侵入することが可能です。
         </p>
       </section>
 
