@@ -29,7 +29,7 @@ export const metadata = {
 const Buttons: React.ReactNode[] = [];
 for (let i = 1; i <= 10; i++) {
   Buttons.push(
-    <li className="mr-10 mb-10" key={i}>
+    <li className="" key={i}>
       <div className="bg-gray-100 border border-gray-300 mb-5 font-bold text-center text-gray-600 text-xs">
         {i}回目
       </div>
@@ -101,7 +101,7 @@ export default async function HomePage() {
             <p>
               紙やスマホでメモを取るのも大変なので光った色を記録する機能を作りました。四方の球体をタップすることで光った箇所の記録を取ることができます。やり直す場合はページのリロードをお願いします。
             </p>
-            <ul className="flex flex-wrap justify-center pt-4 rounded-sm bg-white border">
+            <ul className="flex flex-wrap justify-center gap-9 py-6 rounded-sm bg-white border">
               {Buttons}
             </ul>
           </Information>
