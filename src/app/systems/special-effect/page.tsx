@@ -43,7 +43,7 @@ export default async function HomePage() {
             <div className="flex items-center">
               <Tag>アクセサリ</Tag>
               <RoundedInlineList title="オススメ度">
-                <StarRating rating="4" />
+                <StarRating rating={4} />
               </RoundedInlineList>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default async function HomePage() {
             <div className="flex items-center">
               <Tag>アクセサリ</Tag>
               <RoundedInlineList title="オススメ度">
-                <StarRating rating="5" />
+                <StarRating rating={5} />
               </RoundedInlineList>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default async function HomePage() {
             <div className="flex items-center">
               <Tag>防具</Tag>
               <RoundedInlineList title="オススメ度">
-                <StarRating rating="5" />
+                <StarRating rating={5} />
               </RoundedInlineList>
             </div>
           </div>
