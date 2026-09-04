@@ -71,6 +71,7 @@
   color: var(--color-slate-700);
 }
 .main h4 {
+  margin-bottom: 3px;
   font-weight: bold;
 }
 .main ul {
