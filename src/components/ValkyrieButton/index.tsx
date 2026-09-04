@@ -45,8 +45,8 @@ export default function DirectionalButtons() {
     <div
       style={{
         position: "relative",
-        width: 50,
-        height: 50,
+        width: 52,
+        height: 52,
         margin: "0px auto",
       }}
     >
@@ -81,8 +81,8 @@ export default function DirectionalButtons() {
           aria-label={dir}
           style={{
             position: "absolute",
-            width: 28,
-            height: 28,
+            width: 24,
+            height: 24,
             borderRadius: "50%",
             border: "none",
             cursor: "pointer",
