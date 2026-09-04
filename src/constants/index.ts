@@ -271,8 +271,11 @@ export const systemLinks = {
   },
   "special-effect": {
     title: "装備品の特殊効果",
+    image: "/link-headers/systems-special-effect.jpg",
     path: "/systems/special-effect",
     desc: "特殊効果がある装備品を紹介。TP消費減少や自動回復などおすすめ品も紹介！",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。特殊効果がある装備品を紹介。TP消費減少や自動回復などおすすめの装備品をピックアップして紹介しています。",
   },
   "item-data": {
     title: "アイテム一覧データ",
