@@ -84,6 +84,10 @@ export default async function HomePage() {
         <div className="mb-4">
           <h3>夜の状態</h3>
           <ResponsiveImage src="/extras/secret-jiini-night.jpg" />
+          <p>
+            夜になるとカジノ、オークション会場、ダンスホールなどがオープンします。フォッグやリシテアのサブイベントの夜のジイニでのみ発生します。
+            ジイニの町のマップは少しわかりづらく町の外へ出ると強制的に夜のジイニが終了するので注意しましょう。
+          </p>
           <Information type="warning" title="最初にジイニを確保することを推奨">
             <ResponsiveImage src="/extras/secret-jiini-rate.jpg" />
             ジイニのカジノには換金場があり、ガルドをジイニに変換できます。しばらく宿に泊まるジイニに困らないように、200ジイニ程度は換金しておきましょう。
@@ -106,8 +110,21 @@ export default async function HomePage() {
           <p>
             アイテム出品後まず初回の値段がつきます。その後、一晩以上空けてから再度ジイニのオークションに訪れると価格が変動する仕組みとなっています。町の中から出ず、宿屋に泊まってオークション会場へ行くのが一番効率よく価格変動できる方法です。
           </p>
+          <ResponsiveImage src="/extras/secret-jiini-about-pull-up.jpg" />
+          <p>
+            出品したアイテムは「最低落札価格を上げる」「様子見する」を選べます。どちらでも一晩空けると価格が変動しますが、最低価格を上げる方が価格上昇率は高いです。ただし買い手がつかなくなる可能性も上がります。
+          </p>
         </div>
-        <h3>オークションで高値がつくアイテム</h3>
+        <h4>いちごの現在値が9ジイニの場合</h4>
+        <div className="mb-8">
+          <CardList
+            list={[
+              "様子見した場合は翌日11ジイニへ上昇",
+              "最低価格を14に引き上げてた場合は翌日39ジイニへ上昇",
+            ]}
+          />
+        </div>
+        <h3>オークションで高値がつくアイテム例</h3>
         <div className="mb-8">
           <CardList
             list={[
