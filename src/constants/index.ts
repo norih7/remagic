@@ -365,11 +365,11 @@ export const extraLinks = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しダンジョン「きらめきの塔」の行き方、1階から7階までの各フロアに用意された多彩な謎解きギミック・パズルの解き方、リッド1人で挑むボス「ワルキューレ」の攻略法や「S・D」入手の鍵に関する情報を網羅して紹介しています。",
   },
-  // jiini: {
-  //   title: "ジイニ",
-  //   path: "/extras/jiini",
-  //   desc: "",
-  // },
+  jiini: {
+    title: "ジイニ",
+    path: "/extras/jiini",
+    desc: "",
+  },
   towns: {
     title: "ねこにんの里/晶霊温泉",
     path: "/extras/towns",
