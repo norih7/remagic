@@ -67,6 +67,18 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/09/05</span>
+              <span>
+                <Link
+                  href="/extras/jiini"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  ジイニ
+                </Link>
+                を公開しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/09/04</span>
               <span>
                 <Link

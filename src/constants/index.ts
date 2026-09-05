@@ -368,7 +368,11 @@ export const extraLinks = {
   jiini: {
     title: "ジイニ",
     path: "/extras/jiini",
-    desc: "",
+    image: "/link-headers/extras-jiini.jpg",
+
+    desc: "オークションのあるジイニの解説。行き方やジイニの仕組み、稼ぎ方など解説しています。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しタウン「ジイニ」への行き方、昼と夜の切り替え方法、効率的なジイニ稼ぎ、定額購入できるアイテムのステップ一覧を徹底解説。",
   },
   towns: {
     title: "ねこにんの里/晶霊温泉",
