@@ -127,7 +127,7 @@
     "effect": "拳+90、蹴+92、命中+5",
     "isBuy": false,
     "isDrop": false,
-    "buy": "-",
+    "buy": "",
     "sell": 340,
     "special": ""
   },
@@ -335,8 +335,8 @@
     "type": "knuckle",
     "effect": "拳+180、蹴り+165、命中+2",
     "isBuy": false,
-    "isDrop": "",
-    "buy": "-",
+    "isDrop": false,
+    "buy": "",
     "sell": 940,
     "special": ""
   },
@@ -555,7 +555,7 @@
     "type": "knuckle",
     "effect": "拳+210、蹴+180、命中+5",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 2400,
     "sell": 1200,
     "special": ""
@@ -600,7 +600,7 @@
     "effect": "拳+240、蹴+215、命中+3",
     "isBuy": false,
     "isDrop": false,
-    "buy": "-",
+    "buy": "",
     "sell": 2000,
     "special": "攻撃ヒット時、稀に敵をマヒ状態にする"
   },
@@ -863,7 +863,7 @@
     "type": "shortSword",
     "effect": "斬り+480、突き+200",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 12400,
     "sell": 6200,
     "special": ""
@@ -875,7 +875,7 @@
     "effect": "拳+325、蹴+320、命中+8",
     "isBuy": false,
     "isDrop": false,
-    "buy": "-",
+    "buy": "",
     "sell": 4800,
     "special": ""
   },
@@ -915,11 +915,11 @@
   {
     "id": 86,
     "name": "ゴーストシェル",
-    "type": "accessory",
+    "type": "knuckle",
     "effect": "拳+365、蹴+360",
     "isBuy": false,
     "isDrop": false,
-    "buy": "-",
+    "buy": "",
     "sell": 5200,
     "special": "闇属性 攻撃ヒット時に稀に敵を即死させる 闇属性耐性+30%、幸運-10"
   },
@@ -1028,7 +1028,7 @@
     "type": "ax",
     "effect": "斬り+480、突き+200",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 12400,
     "sell": 6200,
     "special": ""
@@ -1194,7 +1194,7 @@
     "effect": "拳+515、蹴り+530、命中+5",
     "isBuy": false,
     "isDrop": false,
-    "buy": "-",
+    "buy": "",
     "sell": 20000,
     "special": ""
   },
@@ -1304,7 +1304,7 @@
     "effect": "拳+660、蹴り+635、命中+7",
     "isBuy": false,
     "isDrop": false,
-    "buy": "-",
+    "buy": "",
     "sell": 70000,
     "special": ""
   },
@@ -1809,7 +1809,7 @@
     "type": "ax",
     "effect": "斬り+110、突き+70",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 400,
     "sell": 200,
     "special": ""
@@ -1828,7 +1828,7 @@
   {
     "id": 169,
     "name": "ショートソード",
-    "type": "sword",
+    "type": "shortSword",
     "effect": "斬り+50、斬り+40、命中+30",
     "isBuy": true,
     "isDrop": "",
@@ -1842,7 +1842,7 @@
     "type": "knuckle",
     "effect": "拳+67、蹴り+75、命中+3",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 400,
     "sell": 200,
     "special": ""
@@ -1963,7 +1963,7 @@
     "type": "ax",
     "effect": "斬り+300、突き+140",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 2200,
     "sell": 1100,
     "special": "攻撃ヒット時に稀に敵を吹き飛ばす"
@@ -1985,7 +1985,7 @@
     "type": "knuckle",
     "effect": "拳+118、蹴り+125、命中+5",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 1440,
     "sell": 720,
     "special": "攻撃ヒット時に稀に敵を毒状態にする"
@@ -2059,7 +2059,7 @@
   {
     "id": 190,
     "name": "スティールソード",
-    "type": "shield",
+    "type": "greatSword",
     "effect": "斬り+300、突き+240、命中-20",
     "isBuy": true,
     "isDrop": "",
@@ -2216,7 +2216,7 @@
     "type": "ax",
     "effect": "斬り+410、突き+200",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 12400,
     "sell": 6200,
     "special": ""
@@ -2227,7 +2227,7 @@
     "type": "shortSword",
     "effect": "斬り+320、突き+310、命中+20",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 8400,
     "sell": 4200,
     "special": ""
@@ -2238,7 +2238,7 @@
     "type": "knuckle",
     "effect": "拳+275、蹴り+255、命中+10",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 7600,
     "sell": 3800,
     "special": ""
@@ -2326,7 +2326,7 @@
     "type": "knuckle",
     "effect": "拳+400、蹴り+420、命中+5",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 12000,
     "sell": 6000,
     "special": ""
@@ -2392,7 +2392,7 @@
     "type": "shortSword",
     "effect": "斬り+390、突き+450、命中+20",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 17600,
     "sell": 8800,
     "special": "回避+2"
@@ -2403,7 +2403,7 @@
     "type": "knuckle",
     "effect": "拳+470、蹴り+440、命中+10",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "buy": 18800,
     "sell": 9400,
     "special": ""
@@ -2469,7 +2469,7 @@
     "type": "shortSword",
     "effect": "斬り+650、突き+650、命中+30\nジイニのオークションで購入できる",
     "isBuy": false,
-    "isDrop": "",
+    "isDrop": false,
     "buy": "-",
     "sell": 20000,
     "special": ""
@@ -2734,7 +2734,7 @@
     "effect": "拳+580、蹴り+620、命中7",
     "isBuy": false,
     "isDrop": false,
-    "buy": "-",
+    "buy": "",
     "sell": 33000,
     "special": "火属性 / 攻撃ヒット時に稀にファイアボールが発動する"
   },
@@ -2745,7 +2745,7 @@
     "effect": "攻撃+580",
     "isBuy": false,
     "isDrop": false,
-    "buy": "-",
+    "buy": "",
     "sell": 24000,
     "special": "知力+3、幸運+8"
   },
@@ -3342,5 +3342,170 @@
     "buy": "",
     "sell": 100000,
     "special": "時属性武器\n攻撃ヒット時に稀に敵の詠唱時間を2倍にする"
+  },
+  {
+    "id": 307,
+    "name": "エクスカリバー",
+    "type": "sword",
+    "effect": "斬り+615、突き+590",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 80000,
+    "special": "光属性武器\n攻撃ヒット時に稀にHPが4%回復"
+  },
+  {
+    "id": 308,
+    "name": "ハンドアックス",
+    "type": "ax",
+    "effect": "斬り+75、突き+60",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 160,
+    "special": "リッドの初期装備"
+  },
+  {
+    "id": 309,
+    "name": "ストライクアクス",
+    "type": "ax",
+    "effect": "斬り+680、突き+320、命中-5",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "",
+    "sell": 18000,
+    "special": "雷属性\n攻撃ヒット時に稀に敵をマヒ状態にする"
+  },
+  {
+    "id": 310,
+    "name": "ガイアクリーヴァ",
+    "type": "ax",
+    "effect": "斬り+999、突き+500、命中-5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 84000,
+    "special": "地属性\n攻撃ヒット時に稀に敵の防御力をダウンさせる"
+  },
+  {
+    "id": 311,
+    "name": "コルセスカ",
+    "type": "spear",
+    "effect": "斬り+80、突き+230",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "",
+    "sell": 750,
+    "special": ""
+  },
+  {
+    "id": 312,
+    "name": "フレイムスピア",
+    "type": "spear",
+    "effect": "斬り+500、突き+780",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 32000,
+    "special": "火属性\n攻撃ヒット時に稀にファイアボールが発動"
+  },
+  {
+    "id": 313,
+    "name": "グーングニル",
+    "type": "spear",
+    "effect": "斬り+600、突き+999、命中+5",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 90000,
+    "special": "攻撃ヒット時に稀に敵の防御力を低下"
+  },
+  {
+    "id": 314,
+    "name": "デッキブラシ",
+    "type": "halbert",
+    "effect": "斬り+200、突き+200、命中30",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 200,
+    "special": "風属性"
+  },
+  {
+    "id": 315,
+    "name": "レザーアームズ",
+    "type": "knuckle",
+    "effect": "拳+60、蹴り+68、命中2",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 250,
+    "special": ""
+  },
+  {
+    "id": 316,
+    "name": "ボーンナックル",
+    "type": "knuckle",
+    "effect": "拳+300、蹴り+295、命中2",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "",
+    "sell": 4400,
+    "special": "闇属性\n攻撃ヒット時に稀に敵の幸運をダウンさせる 幸運-6"
+  },
+  {
+    "id": 317,
+    "name": "カイザーナックル",
+    "type": "knuckle",
+    "effect": "拳+760、蹴り+725、命中10",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "",
+    "sell": 72000,
+    "special": ""
+  },
+  {
+    "id": 318,
+    "name": "ゴッドウェポン",
+    "type": "knuckle",
+    "effect": "拳+800、蹴り+805、命中7",
+    "isBuy": false,
+    "isDrop": true,
+    "buy": "",
+    "sell": 88000,
+    "special": "光属性\n攻撃ヒット時に稀にHPガ4%回復する 幸運+10"
+  },
+  {
+    "id": 319,
+    "name": "エターニアM",
+    "type": "whistle",
+    "effect": "攻撃+750",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 38000,
+    "special": "知力+5"
+  },
+  {
+    "id": 320,
+    "name": "インフェリマント",
+    "type": "accessory",
+    "effect": "",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 10000,
+    "special": "水風火ダメージを40%軽減/土雷氷ダメージが40%増加"
+  },
+  {
+    "id": 321,
+    "name": "セレスティマント",
+    "type": "accessory",
+    "effect": "",
+    "isBuy": false,
+    "isDrop": false,
+    "buy": "",
+    "sell": 10000,
+    "special": "土雷氷ダメージを40%軽減/水風火ダメージが40%増加"
   }
 ]

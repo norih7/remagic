@@ -227,7 +227,10 @@ export const subeventLinks = {
   coliseum: {
     title: "闘技場",
     path: "/subevents/coliseum",
-    desc: "",
+    image: "/link-headers/subevents-coliseum.jpg",
+    desc: "王都インフェリアの闘技場を解説。おすすめ装備や各クラスの戦い方などを解説！",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。おすすめ装備や各クラスの戦い方などを解説！",
   },
 };
 

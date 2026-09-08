@@ -9,28 +9,20 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
+import LocationItems from "@/components/LocationItems";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-// const pageKey = "coliseum";
-// const title = subeventLinks[pageKey].title;
-// const description = subeventLinks[pageKey].seoDesc;
-// const canonical = subeventLinks[pageKey].path;
-// export const metadata = {
-//   title,
-//   description,
-//   alternates: {
-//     canonical,
-//   },
-// };
-const title = "闘技場";
+const pageKey = "coliseum";
+const title = subeventLinks[pageKey].title;
+const description = subeventLinks[pageKey].seoDesc;
+const canonical = subeventLinks[pageKey].path;
 export const metadata = {
   title,
-  description: "",
-  robots: {
-    index: false,
-    follow: true,
+  description,
+  alternates: {
+    canonical,
   },
 };
 
@@ -39,6 +31,46 @@ export default async function HomePage() {
     card: "border border-slate-300 rounded-md p-3 mb-3",
     header: "text-[1rem]",
   };
+
+  const data = [
+    {
+      itemId: 305,
+      itemName: "武器: ラストフェンサー",
+      remarks: "物理武器 副次効果もあり基本はこれ",
+    },
+    { itemId: 307, itemName: "武器: エクスカリバー", remarks: "光属性武器" },
+    { itemId: 256, itemName: "武器: ヴォーパルソード", remarks: "水属性武器" },
+    {
+      itemId: 232,
+      itemName: "武器: ミョルニル",
+      remarks: "雷属性武器 攻撃時にライトニング発動することも",
+    },
+    {
+      itemId: 276,
+      itemName: "体: ゴールドアーマー",
+      remarks: "水風火光ダメージを30%軽減",
+    },
+    {
+      itemId: 124,
+      itemName: "体: マム・ベイン",
+      remarks: "地雷氷闇ダメージを20%軽減",
+    },
+    {
+      itemId: 68,
+      itemName: "盾: アンクシールド",
+      remarks: "特殊効果で8秒ごとにHPを5%回復",
+    },
+    {
+      itemId: 320,
+      itemName: "装備: インフェリマント",
+      remarks: "水風火ダメージを40%軽減",
+    },
+    {
+      itemId: 321,
+      itemName: "装備: セレスティマント",
+      remarks: "土雷氷ダメージを40%軽減",
+    },
+  ];
   return (
     <article>
       <SetPageTitle title={title} />
@@ -57,9 +89,28 @@ export default async function HomePage() {
         <p>
           また「世界一決定戦」で初めて優勝すると、テイルズオブファンタジアの「クレス」が参戦するイベントが発生します。クレスは強敵ですが倒すとリッドの最強武器の1つ「エターナルソード」を入手できます。
         </p>
-        <Information type="warning" title="難易度">
-          闘技場は最初に王都インフェリアにきた時から挑戦できますが難易度が高いため初回訪問時ではまずクリアできません。リッドが猛虎連撃破や鳳凰天駆を覚えるあたり（レベル50ほど）で挑戦することを推奨します。
+        <Information type="warning" title="闘技場の難易度について">
+          闘技場は最初に王都インフェリアにきた時から挑戦できますが難易度が高いため初回訪問時ではまずクリアできません。リッドが猛虎連撃破や鳳凰天駆を覚えるあたり（レベル50ほど）で挑戦することを推奨します。クレスはさらにレベルやHPが求められます。
         </Information>
+      </section>
+      <section className="mb-12">
+        <SectionTitle>闘技場で勝つためのポイント</SectionTitle>
+        <h3>敵に合わせて装備品を準備する</h3>
+        <div className="mb-8">
+          <p>
+            闘技場の敵は攻撃属性や弱点がまとまっていることが多いため、装備品で有利に立ち回ることができます。レンズ集めをしておき、耐久アクセサリ「インフェリマント」を入手しておくのがおすすめです。
+          </p>
+          <LocationItems data={data} locationIds={[]} title="おすすめ装備品" />
+        </div>
+        <h3>戦闘中に装備を変更する</h3>
+        <ResponsiveImage src="/subevents/coliseum-change-equip.jpg" />
+        <p>
+          エターニアは戦闘中にペナルティなしで装備変更が可能です。2回戦目は氷属性の「ヴォーパルソード」、3回戦目は光属性の「エクスカリバー」に切り替えるということも可能です。
+        </p>
+        <h3>レベルを上げる</h3>
+        <p>
+          闘技場では負ける場合はレベルが足りていない可能性もあります。また猛虎連撃破や鳳凰天駆の奥義習得やHPは4000以上になってから挑みたいです。何度やっても勝てない、という場合はレベル上げに挑戦しましょう。
+        </p>
       </section>
       <section className="mb-12">
         <SectionTitle>王都一決定戦</SectionTitle>
@@ -186,9 +237,15 @@ export default async function HomePage() {
       </section>
       <section>
         <SectionTitle>クレス乱入</SectionTitle>
+        <ResponsiveImage src="/subevents/coliseum-appear-cless.jpg" />
         <div className="mb-4">
           <p>
             世界一決定戦で優勝するとクレスが乱入してきます。ただし強制的な戦闘ではなく、改めて戦うことも可能です。戦闘難易度「ハード」か「マニア」ではアーチェも参戦するため乱入時は撤退を推奨します。準備を整えた上でクレスに挑みましょう。ちなみにクレスはゲーム内でも屈指の強敵です。わたしも戦闘ランク「ノーマル」にレベル70で挑んで負けました。攻略法を準備中なのでお待ちください。
+          </p>
+          <h3>クレスへの挑戦方法</h3>
+          <ResponsiveImage src="/subevents/coliseum-challenge-cless.jpg" />
+          <p>
+            乱入時の手合わせを辞退したり、クレスとの戦いで負けた場合は闘技場の受付より挑戦できます。
           </p>
         </div>
       </section>

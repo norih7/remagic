@@ -12,11 +12,15 @@ type Item = {
 type Props = {
   data: Item[];
   locationIds: number[];
+  title?: striing;
 };
 
 export default function ChartList(props: Props) {
-  const { data, locationIds } = props;
-  const result = data.filter((item) => locationIds.includes(item.locationId));
+  const { data, locationIds, title = "アイテム" } = props;
+  const result =
+    locationIds.length > 0
+      ? data.filter((item) => locationIds.includes(item.locationId))
+      : data;
   const List = result.map((item, index) =>
     item.itemType === "money" ? (
       <li
@@ -54,7 +58,7 @@ export default function ChartList(props: Props) {
     >
       <h3 className="pb-1 flex items-center !text-sm">
         <LuGift size={18} className="mr-1" />
-        アイテム
+        {title}
       </h3>
       {Display}
     </div>
