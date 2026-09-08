@@ -12,7 +12,7 @@ type Item = {
 type Props = {
   data: Item[];
   locationIds: number[];
-  title?: striing;
+  title?: string;
 };
 
 export default function ChartList(props: Props) {
