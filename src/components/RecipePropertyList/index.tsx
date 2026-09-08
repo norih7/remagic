@@ -65,30 +65,6 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
   }, [id]);
   return (
     <>
-      <div>
-        {id ? null : (
-          <div className="mb-8">
-            <Information title="マスター料理とは">
-              <p>
-                ワンダーシェフから学べる料理には「マスター料理」が存在します。特定の料理で熟練度をMAXにすると、料理実行時に「新しい料理をマスターしました」とアナウンスされ、習得可能です。
-              </p>
-              <p>
-                マスター料理は回復効果量が多いだけでなく、HP/TPの増加など強力な特殊効果を持っているため、積極的に習得しておきましょう。習得条件は「特定のキャラクターの熟練度をMAXにすること」ですが、一度習得すればパーティメンバー全員がその料理を作れるようになります。
-                詳細は以下の料理一覧をチェックしてください。
-              </p>
-              <div className="flex flex-col md:flex-row gap-4">
-                <Image
-                  src="/systems/recipe-master-recipe.jpg"
-                  alt=""
-                  width={300}
-                  height={200}
-                  className="mr-1"
-                />
-              </div>
-            </Information>
-          </div>
-        )}
-      </div>
       <Filter list={recipes as []} filter={filter} setFilter={setFilter} />
 
       {list.map((recipe, index) => {

@@ -337,7 +337,7 @@ export default async function HomePage() {
           <ResponsiveImage src="/stories/guide5-chisel-fire.jpg" />
           <p>
             灯台を調べて放たれた火の玉を、消えないように奥の扉まで導く仕掛けです。灯台をスライドさせるタイミングやルートの調整が求められるため、落ち着いて手順を組み立てましょう。
-            タイミングが難しく、慣れるまで大変なのでよければ下記の参考動画を参考にしてください。
+            タイミングが難しく、慣れるまで大変なのでよければ下記の動画を参考にしてください。
           </p>
           <GifPlayer
             src="/stories/guide5-chisel-fire-sample.gif"

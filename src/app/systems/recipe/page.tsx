@@ -36,7 +36,7 @@ export default async function HomePage() {
       <SetPageTitle title={title} />
       <PageSummary>
         <p>
-          料理一覧データを掲載しています。各料理の習得条件や必要食材をすべて掲載し、マスター料理の解説もしています。マスター料理はメリットしかないためぜひ習得を目指してください。
+          料理一覧データを掲載しています。ワンダーシェフの場所を画像付きで案内し、必要な食材の購入情報などもすべて掲載しています。
         </p>
       </PageSummary>
       {/* <section className="mb-12">
