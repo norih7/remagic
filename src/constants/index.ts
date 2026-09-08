@@ -224,11 +224,11 @@ export const subeventLinks = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。ストーリー攻略だけでは契約できない協力な大晶霊を解説。",
   },
-  // coliseum: {
-  //   title: "闘技場",
-  //   path: "/subevents/coliseum",
-  //   desc: "",
-  // },
+  coliseum: {
+    title: "闘技場",
+    path: "/subevents/coliseum",
+    desc: "",
+  },
 };
 
 export const systemLinks = {
