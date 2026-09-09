@@ -20,7 +20,7 @@ export const categoryLinks = {
   },
   systems: {
     title: "システム/データ",
-    path: "/skills",
+    path: "/systems",
     desc: "エターニアのシステム開設やアイテムなどの一覧データを公開",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアのシステム開設やアイテムなどの一覧データを公開しています。",
