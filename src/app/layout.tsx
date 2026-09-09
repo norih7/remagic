@@ -4,6 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -32,6 +33,9 @@ export default function RootLayout({
           <SiteLayout>{children}</SiteLayout>
         </TitleProvider>
       </body>
+      {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
+      )}
     </html>
   );
 }
