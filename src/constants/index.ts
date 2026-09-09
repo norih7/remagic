@@ -274,7 +274,7 @@ export const systemLinks = {
   },
   "master-recipe": {
     title: "マスター料理",
-    // image: "/link-headers/systems-recipe.jpg",
+    image: "/link-headers/systems-master-recipe.jpg",
     path: "/systems/master-recipe",
     desc: "特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
     seoDesc:
