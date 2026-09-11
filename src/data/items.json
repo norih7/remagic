@@ -6,8 +6,11 @@
     "effect": "HPを30%回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 100,
     "sell": 50,
+    "element": "",
     "special": ""
   },
   {
@@ -17,8 +20,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -28,8 +34,11 @@
     "effect": "アイテム図鑑",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -38,9 +47,12 @@
     "type": "shield",
     "effect": "防御+2、火属性軽減+20%",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 100,
     "sell": 50,
+    "element": "",
     "special": ""
   },
   {
@@ -49,9 +61,12 @@
     "type": "helmet",
     "effect": "防御+1",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 240,
     "sell": 120,
+    "element": "",
     "special": ""
   },
   {
@@ -61,8 +76,11 @@
     "effect": "TPを30%回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -72,8 +90,11 @@
     "effect": "斬り+105、突き85、命中+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 260,
+    "element": "",
     "special": ""
   },
   {
@@ -83,8 +104,11 @@
     "effect": "斬り+120、突き+120、命中-15",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 500,
+    "element": "",
     "special": ""
   },
   {
@@ -92,10 +116,13 @@
     "name": "600ガルド",
     "type": "money",
     "effect": "-",
-    "isBuy": "-",
-    "isDrop": "-",
+    "isBuy": false,
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -105,8 +132,11 @@
     "effect": "戦闘不能以外のステータス異常を回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 160,
     "sell": 80,
+    "element": "",
     "special": ""
   },
   {
@@ -116,8 +146,11 @@
     "effect": "防御+7",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 780,
+    "element": "",
     "special": ""
   },
   {
@@ -127,8 +160,11 @@
     "effect": "拳+90、蹴+92、命中+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 340,
+    "element": "",
     "special": ""
   },
   {
@@ -138,8 +174,11 @@
     "effect": "斬り+190、突き+60、命中+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 700,
+    "element": "",
     "special": ""
   },
   {
@@ -148,9 +187,12 @@
     "type": "shield",
     "effect": "防御+4、回避+2",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 460,
     "sell": 230,
+    "element": "",
     "special": ""
   },
   {
@@ -160,8 +202,11 @@
     "effect": "戦闘不能を回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 400,
     "sell": 200,
+    "element": "",
     "special": ""
   },
   {
@@ -170,9 +215,12 @@
     "type": "accessory",
     "effect": "防御+1",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 760,
     "sell": 380,
+    "element": "",
     "special": "知力+4"
   },
   {
@@ -181,9 +229,12 @@
     "type": "sword",
     "effect": "斬り+80、突き+140、命中+10",
     "isBuy": false,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 400,
+    "element": "",
     "special": ""
   },
   {
@@ -193,8 +244,11 @@
     "effect": "一定時間敵とのエンカウント率が下がる",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -204,8 +258,11 @@
     "effect": "インフェリアのワールドマップ",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -215,8 +272,11 @@
     "effect": "モンスター図鑑",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -225,9 +285,12 @@
     "type": "sword",
     "effect": "斬り+150、突き+130 ",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 1600,
     "sell": 800,
+    "element": "",
     "special": ""
   },
   {
@@ -237,8 +300,11 @@
     "effect": "攻撃+100、命中-3",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 660,
+    "element": "",
     "special": "幸運+5"
   },
   {
@@ -247,9 +313,12 @@
     "type": "accessory",
     "effect": "防御+3",
     "isBuy": false,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 500,
+    "element": "",
     "special": ""
   },
   {
@@ -258,9 +327,12 @@
     "type": "accessory",
     "effect": "毒と衰弱状態を防ぐ",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 6000,
     "sell": 3000,
+    "element": "",
     "special": "水属性耐性+10%"
   },
   {
@@ -270,8 +342,11 @@
     "effect": "防御+10",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 1840,
     "sell": 920,
+    "element": "",
     "special": "知力+1、幸運+2"
   },
   {
@@ -281,8 +356,11 @@
     "effect": "防御+9、回避+3",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": 1560,
     "sell": 780,
+    "element": "",
     "special": "幸運+2"
   },
   {
@@ -292,8 +370,11 @@
     "effect": "防御+3",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": 1320,
     "sell": 660,
+    "element": "",
     "special": ""
   },
   {
@@ -303,8 +384,11 @@
     "effect": "HPとTPを30%回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 1000,
     "sell": 500,
+    "element": "",
     "special": ""
   },
   {
@@ -314,8 +398,11 @@
     "effect": "防御+0、回避+10",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 400,
+    "element": "",
     "special": "幸運+5"
   },
   {
@@ -325,9 +412,12 @@
     "effect": "斬り+160、突き+170、命中+30",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 800,
-    "special": "水属性"
+    "element": "water",
+    "special": "水属性武器"
   },
   {
     "id": 31,
@@ -336,8 +426,11 @@
     "effect": "拳+180、蹴り+165、命中+2",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 940,
+    "element": "",
     "special": ""
   },
   {
@@ -346,9 +439,12 @@
     "type": "robe",
     "effect": "防御+14",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 1440,
     "sell": 720,
+    "element": "",
     "special": ""
   },
   {
@@ -358,8 +454,11 @@
     "effect": "攻撃力が20%減少するが毒・マヒ・氷結状態を防ぐ",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 1200,
     "sell": 600,
+    "element": "",
     "special": ""
   },
   {
@@ -369,8 +468,11 @@
     "effect": "TPを60%回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 3000,
     "sell": 1500,
+    "element": "",
     "special": ""
   },
   {
@@ -380,8 +482,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 321,
+    "element": "",
     "special": "戦闘時に戦闘不能になると自動復活し、壊れる"
   },
   {
@@ -391,8 +496,11 @@
     "effect": "HPを60%回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 2500,
     "sell": 1250,
+    "element": "",
     "special": ""
   },
   {
@@ -402,8 +510,11 @@
     "effect": "C.ケージで利用できるアイテム。ウンディーネの活力+2、10%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -413,8 +524,11 @@
     "effect": "戦闘中の敵のHPや耐性状況を確認できる",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 50,
     "sell": 25,
+    "element": "",
     "special": ""
   },
   {
@@ -424,8 +538,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -435,8 +552,11 @@
     "effect": "C.ケージで利用できるアイテム。シルフの活力+2、10%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -446,8 +566,11 @@
     "effect": "特定のアイテムを別アイテムへ変化させる",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 100000,
     "sell": 2400,
+    "element": "",
     "special": ""
   },
   {
@@ -457,8 +580,11 @@
     "effect": "斬り+180、突き+175",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 1000,
+    "element": "",
     "special": ""
   },
   {
@@ -468,8 +594,11 @@
     "effect": "店の中で利用すると、その店の買い物が50%OFFとなる",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -479,8 +608,11 @@
     "effect": "HPとTPを60%回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 6000,
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -490,8 +622,11 @@
     "effect": "斬り+260、突き+200",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 1500,
+    "element": "",
     "special": ""
   },
   {
@@ -501,8 +636,11 @@
     "effect": "HPとTPを100%回復",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 10000,
+    "element": "",
     "special": ""
   },
   {
@@ -512,8 +650,11 @@
     "effect": "防御+6、回避+3、風属性耐性+30%",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 400,
+    "element": "",
     "special": ""
   },
   {
@@ -523,8 +664,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -534,8 +678,11 @@
     "effect": "斬り+250、突き+260、命中+30",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 1600,
+    "element": "wind",
     "special": "風属性武器 攻撃ヒット時、稀にウインドカッターが発動"
   },
   {
@@ -545,8 +692,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 20000,
+    "element": "",
     "special": "戦闘中、4秒毎にTPが1%回復"
   },
   {
@@ -556,8 +706,11 @@
     "effect": "拳+210、蹴+180、命中+5",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 2400,
     "sell": 1200,
+    "element": "",
     "special": ""
   },
   {
@@ -566,10 +719,13 @@
     "type": "spear",
     "effect": "斬り+170、突き+320、命中+5",
     "isBuy": false,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 1600,
-    "special": "風属性武器 攻撃ヒット時、稀に敵の命中を低下"
+    "element": "wind",
+    "special": "風属性武器\n攻撃ヒット時、稀に敵の命中を低下"
   },
   {
     "id": 55,
@@ -578,8 +734,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -589,8 +748,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 8000,
+    "element": "",
     "special": "戦闘中の移動速度が20%アップ"
   },
   {
@@ -600,8 +762,11 @@
     "effect": "拳+240、蹴+215、命中+3",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 2000,
+    "element": "",
     "special": "攻撃ヒット時、稀に敵をマヒ状態にする"
   },
   {
@@ -611,8 +776,11 @@
     "effect": "HPが5%アップする",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 600,
+    "element": "",
     "special": ""
   },
   {
@@ -622,8 +790,11 @@
     "effect": "火属性耐性+30%、土属性耐性+30%",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 8000,
+    "element": "",
     "special": ""
   },
   {
@@ -633,8 +804,11 @@
     "effect": "力が1アップする",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 1000,
+    "element": "",
     "special": ""
   },
   {
@@ -643,9 +817,12 @@
     "type": "helmet",
     "effect": "防御+10",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 3600,
     "sell": 1800,
+    "element": "",
     "special": ""
   },
   {
@@ -655,8 +832,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 10000,
+    "element": "",
     "special": "攻撃が10%アップ"
   },
   {
@@ -665,9 +845,12 @@
     "type": "accessory",
     "effect": "防御+5",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 3200,
     "sell": 1600,
+    "element": "",
     "special": ""
   },
   {
@@ -676,9 +859,12 @@
     "type": "accessory",
     "effect": "防御+3",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 2800,
     "sell": 1400,
+    "element": "",
     "special": ""
   },
   {
@@ -688,8 +874,11 @@
     "effect": "C.ケージで利用できるアイテム。イフリートの活力+1、3%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -698,9 +887,12 @@
     "type": "robe",
     "effect": "防御12、回避+2",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 4200,
     "sell": 2100,
+    "element": "",
     "special": ""
   },
   {
@@ -709,9 +901,12 @@
     "type": "helmet",
     "effect": "防御+14",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 5000,
     "sell": 2500,
+    "element": "",
     "special": ""
   },
   {
@@ -720,9 +915,12 @@
     "type": "shield",
     "effect": "防御+10、回避+4",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 5200,
     "sell": 2600,
+    "element": "",
     "special": "戦闘中8秒毎にHPが5%回復"
   },
   {
@@ -732,8 +930,11 @@
     "effect": "戦闘中に使用可能で、使うと防御-20%、攻撃+30%",
     "isBuy": true,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 600,
     "sell": 300,
+    "element": "",
     "special": ""
   },
   {
@@ -743,8 +944,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 24000,
+    "element": "",
     "special": "戦闘、メニューでのTP消費が2/3となる"
   },
   {
@@ -754,9 +958,12 @@
     "effect": "斬り+240、突き+400",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": 6400,
     "sell": 3200,
-    "special": "水属性"
+    "element": "water",
+    "special": "水属性武器"
   },
   {
     "id": 72,
@@ -765,8 +972,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -776,8 +986,11 @@
     "effect": "防御+9、回避+5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": 5200,
     "sell": 2600,
+    "element": "",
     "special": ""
   },
   {
@@ -787,8 +1000,11 @@
     "effect": "防御+8",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": 9600,
     "sell": 4800,
+    "element": "",
     "special": ""
   },
   {
@@ -798,8 +1014,11 @@
     "effect": "TPが5%アップする",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 800,
+    "element": "",
     "special": ""
   },
   {
@@ -809,8 +1028,11 @@
     "effect": "戦闘中の敵味方全員の受けるダメージを半減する",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 1000,
+    "element": "",
     "special": ""
   },
   {
@@ -820,8 +1042,11 @@
     "effect": "戦闘中の敵を4秒間停止させる",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 100000,
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -831,8 +1056,11 @@
     "effect": "攻撃+260",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": 7200,
     "sell": 3600,
+    "element": "",
     "special": ""
   },
   {
@@ -842,8 +1070,11 @@
     "effect": "回避+1",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 800,
+    "element": "",
     "special": ""
   },
   {
@@ -853,8 +1084,11 @@
     "effect": "防御+28、回避+4",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 8000,
+    "element": "",
     "special": ""
   },
   {
@@ -864,9 +1098,12 @@
     "effect": "斬り+480、突き+200",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 12400,
     "sell": 6200,
-    "special": ""
+    "element": "earth",
+    "special": "土属性武器"
   },
   {
     "id": 82,
@@ -875,8 +1112,11 @@
     "effect": "拳+325、蹴+320、命中+8",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 4800,
+    "element": "",
     "special": ""
   },
   {
@@ -886,9 +1126,12 @@
     "effect": "斬り+300、突き+450、命中+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 4800,
-    "special": ""
+    "element": "earch",
+    "special": "土属性武器"
   },
   {
     "id": 84,
@@ -897,8 +1140,11 @@
     "effect": "防御+3",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 4000,
+    "element": "",
     "special": "知力+12"
   },
   {
@@ -908,8 +1154,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 10000,
+    "element": "",
     "special": "幸運+30"
   },
   {
@@ -919,9 +1168,12 @@
     "effect": "拳+365、蹴+360",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 5200,
-    "special": "闇属性 攻撃ヒット時に稀に敵を即死させる 闇属性耐性+30%、幸運-10"
+    "element": "dark",
+    "special": "闇属性武器\n攻撃ヒット時に稀に敵を即死させる 闇属性耐性+30%、幸運-10"
   },
   {
     "id": 87,
@@ -930,8 +1182,11 @@
     "effect": "防御+18",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 4200,
+    "element": "",
     "special": "知力+2"
   },
   {
@@ -941,8 +1196,11 @@
     "effect": "斬り+490、突き+430、命中-30",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 5600,
+    "element": "dark",
     "special": "攻撃ヒット時に稀に敵を即死させる"
   },
   {
@@ -952,8 +1210,11 @@
     "effect": "防御+14、回避+5",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 8800,
     "sell": 4400,
+    "element": "",
     "special": ""
   },
   {
@@ -963,8 +1224,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 10000,
+    "element": "",
     "special": "防御+10%"
   },
   {
@@ -974,8 +1238,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 10000,
+    "element": "",
     "special": "水属性耐性+50%"
   },
   {
@@ -985,8 +1252,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -996,8 +1266,11 @@
     "effect": "水属性耐性+30%、氷属性耐性+30%",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 8000,
+    "element": "",
     "special": ""
   },
   {
@@ -1007,8 +1280,11 @@
     "effect": "氷属性耐性+10%",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 20000,
     "sell": 10000,
+    "element": "",
     "special": "凍結状態を100%防ぐ"
   },
   {
@@ -1018,8 +1294,11 @@
     "effect": "防御+16、回避*7",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 16800,
+    "element": "",
     "special": ""
   },
   {
@@ -1029,8 +1308,11 @@
     "effect": "斬り+480、突き+200",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": 12400,
     "sell": 6200,
+    "element": "",
     "special": ""
   },
   {
@@ -1040,8 +1322,11 @@
     "effect": "雷属性耐性+10%",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": 24000,
     "sell": 12000,
+    "element": "",
     "special": ""
   },
   {
@@ -1051,8 +1336,11 @@
     "effect": "攻撃+480",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 9500,
+    "element": "",
     "special": ""
   },
   {
@@ -1062,8 +1350,11 @@
     "effect": "防御+18",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 8700,
+    "element": "",
     "special": ""
   },
   {
@@ -1073,9 +1364,12 @@
     "effect": "斬り+550、突き+565、命中+10",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 20000,
-    "special": "雷属性"
+    "element": "thunder",
+    "special": "雷属性武器"
   },
   {
     "id": 101,
@@ -1084,8 +1378,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 14000,
+    "element": "",
     "special": "戦闘中の気絶状態が1/2となる"
   },
   {
@@ -1095,8 +1392,11 @@
     "effect": "風属性耐性+30%、雷属性耐性+30%",
     "isBuy": false,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 8000,
+    "element": "",
     "special": ""
   },
   {
@@ -1106,8 +1406,11 @@
     "effect": "HPが10%アップする",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 1000,
+    "element": "",
     "special": ""
   },
   {
@@ -1117,9 +1420,12 @@
     "effect": "攻撃+480",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 16800,
-    "special": "光属性 攻撃時に稀にHPが4%回復 幸運+8"
+    "element": "light",
+    "special": "光属性武器\n攻撃時に稀にHPが4%回復 幸運+8"
   },
   {
     "id": 105,
@@ -1128,8 +1434,11 @@
     "effect": "防御+20、回避+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 10000,
+    "element": "",
     "special": "幸運+5"
   },
   {
@@ -1139,9 +1448,12 @@
     "effect": "斬り+670、突き+650、命中-30",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 26000,
-    "special": "闇属性"
+    "element": "dark",
+    "special": "闇属性武器"
   },
   {
     "id": 107,
@@ -1150,8 +1462,11 @@
     "effect": "斬り+400、突き+680",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 21000,
+    "element": "",
     "special": ""
   },
   {
@@ -1161,8 +1476,11 @@
     "effect": "防御+10、回避+28",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 30000,
+    "element": "",
     "special": "幸運+5"
   },
   {
@@ -1172,8 +1490,11 @@
     "effect": "防御+22",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 18000,
+    "element": "",
     "special": "毒と衰弱状態を100%防止"
   },
   {
@@ -1183,8 +1504,11 @@
     "effect": "防御+11",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 16800,
+    "element": "",
     "special": "知力+2、幸運+2"
   },
   {
@@ -1194,8 +1518,11 @@
     "effect": "拳+515、蹴り+530、命中+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 20000,
+    "element": "",
     "special": ""
   },
   {
@@ -1205,8 +1532,11 @@
     "effect": "防御+28、回避-5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 18000,
+    "element": "",
     "special": ""
   },
   {
@@ -1216,8 +1546,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 16000,
+    "element": "",
     "special": "HP30%アップ"
   },
   {
@@ -1227,9 +1560,12 @@
     "effect": "斬り+610、突き+605、命中+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 30000,
-    "special": "火属性 攻撃ヒット時に稀にファイアボールが発動"
+    "element": "fire",
+    "special": "火属性武器\n攻撃ヒット時に稀にファイアボールが発動"
   },
   {
     "id": 115,
@@ -1238,8 +1574,11 @@
     "effect": "防御+37、回避-3",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 30000,
+    "element": "",
     "special": ""
   },
   {
@@ -1249,8 +1588,11 @@
     "effect": "防御+35、回避+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 30000,
+    "element": "",
     "special": "知力+2"
   },
   {
@@ -1260,8 +1602,11 @@
     "effect": "C.ケージで利用できるアイテム。シャドウの活力+2、10%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -1271,8 +1616,11 @@
     "effect": "C.ケージで利用できるアイテム。ヴォルトの活力+2、10%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -1281,9 +1629,12 @@
     "type": "accessory",
     "effect": "詠唱時間が1/2となる",
     "isBuy": false,
-    "isDrop": false,
+    "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 30000,
+    "element": "",
     "special": ""
   },
   {
@@ -1293,8 +1644,11 @@
     "effect": "防御+22",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 22000,
+    "element": "",
     "special": "知力+2"
   },
   {
@@ -1304,8 +1658,11 @@
     "effect": "拳+660、蹴り+635、命中+7",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 70000,
+    "element": "",
     "special": ""
   },
   {
@@ -1315,9 +1672,12 @@
     "effect": "斬り+865、突き+840、命中-10",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 75000,
-    "special": "攻撃ヒット時に稀に敵を吹き飛ばす 防御+5"
+    "element": "water",
+    "special": "水属性武器\n攻撃ヒット時に稀に敵を吹き飛ばす 防御+5"
   },
   {
     "id": 123,
@@ -1326,8 +1686,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 123,
+    "element": "",
     "special": "経験値が2倍となるが、異常ステータスが付与される"
   },
   {
@@ -1337,8 +1700,11 @@
     "effect": "防御+42",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 68000,
+    "element": "",
     "special": "地雷氷闇の属性耐性+20%"
   },
   {
@@ -1348,8 +1714,11 @@
     "effect": "攻撃+720",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 46000,
+    "element": "",
     "special": "幸運+30"
   },
   {
@@ -1359,8 +1728,11 @@
     "effect": "飛行艇の入手に必要なアイテムの1つ",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -1370,8 +1742,11 @@
     "effect": "回避が2アップする",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 1450,
+    "element": "",
     "special": ""
   },
   {
@@ -1381,8 +1756,11 @@
     "effect": "TPが10%アップする",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 1400,
+    "element": "",
     "special": ""
   },
   {
@@ -1392,8 +1770,11 @@
     "effect": "力が2アップする",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 1800,
+    "element": "",
     "special": ""
   },
   {
@@ -1403,8 +1784,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1414,8 +1798,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 150,
     "sell": 75,
+    "element": "",
     "special": ""
   },
   {
@@ -1425,8 +1812,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1436,8 +1826,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1447,8 +1840,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1458,8 +1854,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 80,
     "sell": 40,
+    "element": "",
     "special": ""
   },
   {
@@ -1469,8 +1868,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 80,
     "sell": 40,
+    "element": "",
     "special": ""
   },
   {
@@ -1480,8 +1882,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 80,
     "sell": 40,
+    "element": "",
     "special": ""
   },
   {
@@ -1491,8 +1896,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 80,
     "sell": 40,
+    "element": "",
     "special": ""
   },
   {
@@ -1502,8 +1910,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1513,8 +1924,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 80,
     "sell": 40,
+    "element": "",
     "special": ""
   },
   {
@@ -1524,8 +1938,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 50,
     "sell": 25,
+    "element": "",
     "special": ""
   },
   {
@@ -1535,8 +1952,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 50,
     "sell": 25,
+    "element": "",
     "special": ""
   },
   {
@@ -1546,8 +1966,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1557,8 +1980,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 50,
     "sell": 25,
+    "element": "",
     "special": ""
   },
   {
@@ -1568,8 +1994,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 50,
     "sell": 25,
+    "element": "",
     "special": ""
   },
   {
@@ -1579,8 +2008,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -1590,8 +2022,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1601,8 +2036,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 100,
     "sell": 50,
+    "element": "",
     "special": ""
   },
   {
@@ -1612,8 +2050,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 50,
     "sell": 25,
+    "element": "",
     "special": ""
   },
   {
@@ -1623,8 +2064,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 50,
     "sell": 25,
+    "element": "",
     "special": ""
   },
   {
@@ -1634,8 +2078,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1645,8 +2092,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1656,8 +2106,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 150,
     "sell": 75,
+    "element": "",
     "special": ""
   },
   {
@@ -1667,8 +2120,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 100,
     "sell": 50,
+    "element": "",
     "special": ""
   },
   {
@@ -1678,8 +2134,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1689,8 +2148,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 80,
     "sell": 40,
+    "element": "",
     "special": ""
   },
   {
@@ -1700,8 +2162,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 50,
     "sell": 25,
+    "element": "",
     "special": ""
   },
   {
@@ -1711,8 +2176,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 80,
     "sell": 40,
+    "element": "",
     "special": ""
   },
   {
@@ -1722,8 +2190,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1733,8 +2204,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1744,8 +2218,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 60,
     "sell": 30,
+    "element": "",
     "special": ""
   },
   {
@@ -1755,8 +2232,11 @@
     "effect": "料理の食材。購入場所はこのページをチェック",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -1766,8 +2246,11 @@
     "effect": "斬り+70、突き+70",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 300,
     "sell": 150,
+    "element": "",
     "special": ""
   },
   {
@@ -1777,8 +2260,11 @@
     "effect": "攻撃+35",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 300,
     "sell": 150,
+    "element": "",
     "special": ""
   },
   {
@@ -1788,8 +2274,11 @@
     "effect": "防御+2",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 300,
     "sell": 150,
+    "element": "",
     "special": ""
   },
   {
@@ -1799,8 +2288,11 @@
     "effect": "防御+5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -1810,8 +2302,11 @@
     "effect": "斬り+110、突き+70",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 400,
     "sell": 200,
+    "element": "",
     "special": ""
   },
   {
@@ -1821,8 +2316,11 @@
     "effect": "斬り+50、突き+85",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 300,
     "sell": 150,
+    "element": "",
     "special": ""
   },
   {
@@ -1832,8 +2330,11 @@
     "effect": "斬り+50、斬り+40、命中+30",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -1843,8 +2344,11 @@
     "effect": "拳+67、蹴り+75、命中+3",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 400,
     "sell": 200,
+    "element": "",
     "special": ""
   },
   {
@@ -1854,8 +2358,11 @@
     "effect": "防御+4",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 300,
     "sell": 150,
+    "element": "",
     "special": ""
   },
   {
@@ -1865,8 +2372,11 @@
     "effect": "防御+12、回避+11",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 300,
     "sell": 150,
+    "element": "",
     "special": ""
   },
   {
@@ -1876,8 +2386,11 @@
     "effect": "防御+1",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 240,
     "sell": 120,
+    "element": "",
     "special": ""
   },
   {
@@ -1887,8 +2400,11 @@
     "effect": "防御+3、回避+1",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -1898,8 +2414,11 @@
     "effect": "斬り+66、突き+130",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 500,
     "sell": 250,
+    "element": "",
     "special": ""
   },
   {
@@ -1909,8 +2428,11 @@
     "effect": "攻撃+40",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 400,
     "sell": 200,
+    "element": "",
     "special": ""
   },
   {
@@ -1920,8 +2442,11 @@
     "effect": "防御+2",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -1931,8 +2456,11 @@
     "effect": "防御+1",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 30,
     "sell": 15,
+    "element": "",
     "special": ""
   },
   {
@@ -1942,8 +2470,11 @@
     "effect": "敵にエンカウントしやくなる",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 200,
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -1953,8 +2484,11 @@
     "effect": "斬り+100、突き+220、命中+5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 1920,
     "sell": 960,
+    "element": "",
     "special": ""
   },
   {
@@ -1964,8 +2498,11 @@
     "effect": "斬り+300、突き+140",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 2200,
     "sell": 1100,
+    "element": "",
     "special": "攻撃ヒット時に稀に敵を吹き飛ばす"
   },
   {
@@ -1975,8 +2512,11 @@
     "effect": "斬り+220、突き+220、命中-10",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 2000,
     "sell": 1000,
+    "element": "",
     "special": ""
   },
   {
@@ -1986,8 +2526,11 @@
     "effect": "拳+118、蹴り+125、命中+5",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 1440,
     "sell": 720,
+    "element": "",
     "special": "攻撃ヒット時に稀に敵を毒状態にする"
   },
   {
@@ -1997,8 +2540,11 @@
     "effect": "攻撃+160",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 1640,
     "sell": 820,
+    "element": "",
     "special": ""
   },
   {
@@ -2008,8 +2554,11 @@
     "effect": "防御+10",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 1900,
     "sell": 950,
+    "element": "",
     "special": ""
   },
   {
@@ -2019,8 +2568,11 @@
     "effect": "防御+8、回避+5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 1480,
     "sell": 740,
+    "element": "",
     "special": ""
   },
   {
@@ -2030,8 +2582,11 @@
     "effect": "防御+9、回避+3",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 1600,
     "sell": 800,
+    "element": "",
     "special": ""
   },
   {
@@ -2041,8 +2596,11 @@
     "effect": "防御+3",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 100,
     "sell": 50,
+    "element": "",
     "special": ""
   },
   {
@@ -2052,8 +2610,11 @@
     "effect": "斬り+155、突き+260、命中+10",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 2960,
     "sell": 1480,
+    "element": "",
     "special": ""
   },
   {
@@ -2063,8 +2624,11 @@
     "effect": "斬り+300、突き+240、命中-20",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 2400,
     "sell": 1200,
+    "element": "",
     "special": "回避-2"
   },
   {
@@ -2074,8 +2638,11 @@
     "effect": "攻撃+110",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 1200,
     "sell": 600,
+    "element": "",
     "special": ""
   },
   {
@@ -2085,8 +2652,11 @@
     "effect": "防御+5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 1440,
     "sell": 720,
+    "element": "",
     "special": ""
   },
   {
@@ -2096,8 +2666,11 @@
     "effect": "戦闘中の逃走速度が50%アップ",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 6000,
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -2107,8 +2680,11 @@
     "effect": "防御+5、回避+5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 3560,
     "sell": 1780,
+    "element": "",
     "special": "火属性耐性+30% 女性のみ装備可能"
   },
   {
@@ -2118,8 +2694,11 @@
     "effect": "斬り+295、突き+285",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 4400,
     "sell": 2200,
+    "element": "",
     "special": ""
   },
   {
@@ -2129,8 +2708,11 @@
     "effect": "斬り+300、突き+300、命中-5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 3800,
     "sell": 1900,
+    "element": "",
     "special": ""
   },
   {
@@ -2140,8 +2722,11 @@
     "effect": "攻撃+200",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 3160,
     "sell": 1580,
+    "element": "",
     "special": "幸運+8"
   },
   {
@@ -2151,8 +2736,11 @@
     "effect": "攻撃+200",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 3200,
     "sell": 1600,
+    "element": "",
     "special": ""
   },
   {
@@ -2162,8 +2750,11 @@
     "effect": "防御+13",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 3500,
     "sell": 1750,
+    "element": "",
     "special": ""
   },
   {
@@ -2173,8 +2764,11 @@
     "effect": "防御+2",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 3560,
     "sell": 1780,
+    "element": "",
     "special": "知力+8"
   },
   {
@@ -2184,8 +2778,11 @@
     "effect": "防御+13、回避+4",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": 4000,
     "sell": 2000,
+    "element": "",
     "special": ""
   },
   {
@@ -2195,8 +2792,11 @@
     "effect": "斬り+355、突き+350、命中+5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 8000,
     "sell": 4000,
+    "element": "",
     "special": ""
   },
   {
@@ -2206,8 +2806,11 @@
     "effect": "斬り+370、突き+370、命中-10",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 9000,
     "sell": 4500,
+    "element": "",
     "special": ""
   },
   {
@@ -2217,8 +2820,11 @@
     "effect": "斬り+410、突き+200",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 12400,
     "sell": 6200,
+    "element": "",
     "special": ""
   },
   {
@@ -2228,8 +2834,11 @@
     "effect": "斬り+320、突き+310、命中+20",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 8400,
     "sell": 4200,
+    "element": "",
     "special": ""
   },
   {
@@ -2239,8 +2848,11 @@
     "effect": "拳+275、蹴り+255、命中+10",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 7600,
     "sell": 3800,
+    "element": "",
     "special": ""
   },
   {
@@ -2250,8 +2862,11 @@
     "effect": "防御+15",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 8000,
     "sell": 4000,
+    "element": "",
     "special": ""
   },
   {
@@ -2261,8 +2876,11 @@
     "effect": "防御+10、回避+10",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 7800,
     "sell": 3900,
+    "element": "",
     "special": ""
   },
   {
@@ -2272,8 +2890,11 @@
     "effect": "防御+18、回避+8",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 6000,
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -2283,8 +2904,11 @@
     "effect": "斬り+390、突き+370、命中-20",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 6600,
     "sell": 3300,
+    "element": "",
     "special": "回避-3"
   },
   {
@@ -2294,8 +2918,11 @@
     "effect": "攻撃+300",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 8000,
     "sell": 4000,
+    "element": "",
     "special": ""
   },
   {
@@ -2305,8 +2932,11 @@
     "effect": "斬り+440、突き+440",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 12000,
     "sell": 6000,
+    "element": "",
     "special": ""
   },
   {
@@ -2316,9 +2946,12 @@
     "effect": "斬り+320、突き+520、命中+5",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 12000,
     "sell": 6000,
-    "special": "闇属性"
+    "element": "dark",
+    "special": "闇属性武器"
   },
   {
     "id": 214,
@@ -2327,8 +2960,11 @@
     "effect": "拳+400、蹴り+420、命中+5",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 12000,
     "sell": 6000,
+    "element": "",
     "special": ""
   },
   {
@@ -2338,8 +2974,11 @@
     "effect": "攻撃+380",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 11200,
     "sell": 5600,
+    "element": "",
     "special": "攻撃ヒット時、稀に敵の幸運を低下させる 知力+5、幸運-10"
   },
   {
@@ -2349,8 +2988,11 @@
     "effect": "攻撃+400",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 11800,
     "sell": 5900,
+    "element": "",
     "special": ""
   },
   {
@@ -2360,8 +3002,11 @@
     "effect": "防御+18、回避-3",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 12000,
     "sell": 6000,
+    "element": "",
     "special": ""
   },
   {
@@ -2371,8 +3016,11 @@
     "effect": "防御+16、回避+10",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 10000,
     "sell": 5000,
+    "element": "",
     "special": ""
   },
   {
@@ -2382,8 +3030,11 @@
     "effect": "斬り+500、突き+470",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 20000,
     "sell": 10000,
+    "element": "",
     "special": ""
   },
   {
@@ -2393,8 +3044,11 @@
     "effect": "斬り+390、突き+450、命中+20",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 17600,
     "sell": 8800,
+    "element": "",
     "special": "回避+2"
   },
   {
@@ -2404,8 +3058,11 @@
     "effect": "拳+470、蹴り+440、命中+10",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": 18800,
     "sell": 9400,
+    "element": "",
     "special": ""
   },
   {
@@ -2415,8 +3072,11 @@
     "effect": "攻撃+460",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 17600,
     "sell": 8800,
+    "element": "",
     "special": "攻撃ヒット時に稀に敵を気絶させる"
   },
   {
@@ -2426,8 +3086,11 @@
     "effect": "防御+22、回避-3",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 16800,
     "sell": 8400,
+    "element": "",
     "special": ""
   },
   {
@@ -2437,8 +3100,11 @@
     "effect": "防御+9、回避+2",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": 14800,
     "sell": 7400,
+    "element": "",
     "special": "幸運+10 ファラ、メルディ、チャットのみ装備可能"
   },
   {
@@ -2448,8 +3114,11 @@
     "effect": "防御+18\nジイニのオークションで購入できる",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 22000,
+    "element": "",
     "special": "幸運+8"
   },
   {
@@ -2459,8 +3128,11 @@
     "effect": "C.ケージで利用できるアイテム。ノームの活力+2、10%の経験値を獲得。",
     "isBuy": false,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -2468,10 +3140,13 @@
     "name": "クリスダガー",
     "type": "shortSword",
     "effect": "斬り+650、突き+650、命中+30\nジイニのオークションで購入できる",
-    "isBuy": false,
+    "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 20000,
+    "element": "",
     "special": ""
   },
   {
@@ -2481,8 +3156,11 @@
     "effect": "C.ケージで利用できるアイテム。イフリートの活力+2、10%の経験値を獲得。",
     "isBuy": false,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -2492,8 +3170,11 @@
     "effect": "",
     "isBuy": true,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": true,
     "buy": "",
     "sell": "",
+    "element": "",
     "special": ""
   },
   {
@@ -2503,8 +3184,11 @@
     "effect": "C.ケージで利用できるアイテム。レムの活力+2、10%の経験値を獲得。",
     "isBuy": false,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -2514,8 +3198,11 @@
     "effect": "斬り+790、突き+740、命中-20\nジイニのオークションで購入できる",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 33000,
+    "element": "",
     "special": ""
   },
   {
@@ -2525,9 +3212,12 @@
     "effect": "斬り+510、突き+515、命中-1\nジイニのオークションで購入できる",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 20000,
-    "special": "雷属性 攻撃ヒット時に稀にライトニングの追加効果が発動する"
+    "element": "thunder",
+    "special": "攻撃ヒット時に稀にライトニングの追加効果が発動する"
   },
   {
     "id": 233,
@@ -2536,8 +3226,11 @@
     "effect": "防御+35、回避-3、時属性耐性+50%\nジイニのオークションで購入できる",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 29500,
+    "element": "",
     "special": ""
   },
   {
@@ -2547,8 +3240,11 @@
     "effect": "防御+20\nジイニのオークションで購入できる",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 8000,
+    "element": "",
     "special": "マヒ状態になることを防ぐ"
   },
   {
@@ -2558,8 +3254,11 @@
     "effect": "ジイニのオークションで購入できる",
     "isBuy": true,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 10,
+    "element": "",
     "special": "戦闘中4秒ごとにTPが1%回復、また戦闘中に戦闘不能になると超低確率で復活"
   },
   {
@@ -2569,8 +3268,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2580,8 +3282,11 @@
     "effect": "C.ケージで利用できるアイテム。ウンディーネの活力+1、3%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2591,8 +3296,11 @@
     "effect": "",
     "isBuy": "",
     "isDrop": "",
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": "",
+    "element": "",
     "special": ""
   },
   {
@@ -2602,8 +3310,11 @@
     "effect": "C.ケージで利用できるアイテム。ヴォルトの活力+1、3%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2613,8 +3324,11 @@
     "effect": "防御+25",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 26000,
+    "element": "",
     "special": "戦闘中8秒ごとにHPが5%回復する / 幸運+5"
   },
   {
@@ -2624,8 +3338,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2635,8 +3352,11 @@
     "effect": "斬り+765、突き+720、命中+10",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 64000,
+    "element": "",
     "special": ""
   },
   {
@@ -2646,8 +3366,11 @@
     "effect": "C.ケージで利用できるアイテム。ノームの活力+1、3%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2657,8 +3380,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2668,8 +3394,11 @@
     "effect": "C.ケージで利用できるアイテム。セルシウスの活力+1、3%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2679,8 +3408,11 @@
     "effect": "C.ケージで利用できるアイテム。シルフの活力+1、3%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2690,8 +3422,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2701,8 +3436,11 @@
     "effect": "闇耐性10%アップ",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 18000,
+    "element": "",
     "special": "命中率減少、抵抗力減少、詠唱時間2倍状態を防ぐ"
   },
   {
@@ -2712,8 +3450,11 @@
     "effect": "防御+4",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 28000,
+    "element": "",
     "special": "知力+18、幸運+5"
   },
   {
@@ -2723,8 +3464,11 @@
     "effect": "斬り+630、突き+630",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 30000,
+    "element": "",
     "special": "攻撃ヒット時に稀に敵を凍結状態にする / 幸運+8"
   },
   {
@@ -2734,9 +3478,12 @@
     "effect": "拳+580、蹴り+620、命中7",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 33000,
-    "special": "火属性 / 攻撃ヒット時に稀にファイアボールが発動する"
+    "element": "fire",
+    "special": "火属性武器\n攻撃ヒット時に稀にファイアボールが発動する"
   },
   {
     "id": 252,
@@ -2745,8 +3492,11 @@
     "effect": "攻撃+580",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 24000,
+    "element": "",
     "special": "知力+3、幸運+8"
   },
   {
@@ -2756,8 +3506,11 @@
     "effect": "防御+15、回避+5\n女性専用装備品",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 20000,
+    "element": "",
     "special": "戦闘中8秒ごとにHPガ5%回復 / 幸運+5 / 命中+5"
   },
   {
@@ -2767,8 +3520,11 @@
     "effect": "インフェリアの海底マップ",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2778,8 +3534,11 @@
     "effect": "防御+38、回避-5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 38000,
+    "element": "",
     "special": ""
   },
   {
@@ -2789,8 +3548,11 @@
     "effect": "斬り+735、突き+710",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 60000,
+    "element": "water",
     "special": "水属性武器"
   },
   {
@@ -2800,8 +3562,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2811,8 +3576,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2822,8 +3590,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2833,8 +3604,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2844,8 +3618,11 @@
     "effect": "防御+24、回避+12",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 19800,
+    "element": "",
     "special": ""
   },
   {
@@ -2855,8 +3632,11 @@
     "effect": "防御+30、回避+10、闇属性耐性+30%",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 15000,
+    "element": "",
     "special": ""
   },
   {
@@ -2866,8 +3646,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2877,8 +3660,11 @@
     "effect": "防御+28",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": "TP消費が2/3となる / 知力+3"
   },
   {
@@ -2888,8 +3674,11 @@
     "effect": "",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2899,8 +3688,11 @@
     "effect": "",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2910,8 +3702,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2921,8 +3716,11 @@
     "effect": "防御+24、回避+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 22000,
+    "element": "",
     "special": ""
   },
   {
@@ -2932,8 +3730,11 @@
     "effect": "防御+34、回避+5、全属性耐久+10%",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 70000,
+    "element": "",
     "special": ""
   },
   {
@@ -2943,8 +3744,11 @@
     "effect": "防御+8、回避+8",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 12000,
+    "element": "",
     "special": "戦闘時の移動速度が50%アップ"
   },
   {
@@ -2954,8 +3758,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2965,8 +3772,11 @@
     "effect": "攻撃+740",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 37500,
+    "element": "",
     "special": "攻撃ヒット時に稀にTPが1%回復する"
   },
   {
@@ -2976,8 +3786,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -2987,8 +3800,11 @@
     "effect": "防御+32、回避+12",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 25000,
+    "element": "",
     "special": ""
   },
   {
@@ -2998,8 +3814,11 @@
     "effect": "HPが10%回復し、戦闘中は8秒ごとにHPが5%回復",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 75,
+    "element": "",
     "special": ""
   },
   {
@@ -3009,8 +3828,11 @@
     "effect": "防御+49、火水風光の耐性+30%",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 80000,
+    "element": "",
     "special": ""
   },
   {
@@ -3020,8 +3842,11 @@
     "effect": "-",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": "",
+    "element": "",
     "special": ""
   },
   {
@@ -3031,8 +3856,11 @@
     "effect": "ショップで使用するとショップでの買い物が50%オフになる",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -3042,8 +3870,11 @@
     "effect": "C.ケージで利用できるアイテム。シャドウの活力+1、3%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 500,
+    "element": "",
     "special": ""
   },
   {
@@ -3053,8 +3884,11 @@
     "effect": "C.ケージで利用できるアイテム。レムの活力+1、3%の経験値を獲得。",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 500,
+    "element": "",
     "special": ""
   },
   {
@@ -3064,8 +3898,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 100,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3075,8 +3912,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 100,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3086,8 +3926,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 1200,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3097,8 +3940,11 @@
     "effect": "使用すると闇鍋と同じ効果（HP回復のメリットや状態異常のデメリット）",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 300,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3108,8 +3954,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 800,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3119,8 +3968,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 1200,
+    "element": "",
     "special": ""
   },
   {
@@ -3130,8 +3982,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 80,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3141,8 +3996,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 400,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3152,8 +4010,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 1500,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3163,8 +4024,11 @@
     "effect": "売却専用アイテム",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 200,
+    "element": "",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3174,8 +4038,11 @@
     "effect": "ストーリー進行で使用",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": "-",
+    "element": "",
     "special": ""
   },
   {
@@ -3185,8 +4052,11 @@
     "effect": "TPを10%回復（メニューからのみ使用可能）",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -3196,8 +4066,11 @@
     "effect": "HPとTPを全回復（メニューからのみ使用可能）",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 400,
+    "element": "",
     "special": ""
   },
   {
@@ -3207,8 +4080,11 @@
     "effect": "HPとTPを全回復し、全ステータス異常を回復（メニューからのみ使用可能）",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 1000,
+    "element": "",
     "special": ""
   },
   {
@@ -3218,8 +4094,11 @@
     "effect": "毒、マヒ、衰弱状態を回復する（メニューからのみ使用可能）",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "-",
     "sell": 100,
+    "element": "",
     "special": ""
   },
   {
@@ -3229,8 +4108,11 @@
     "effect": "戦闘不能状態を回復する（メニューからのみ使用可能）",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": 180,
+    "element": "",
     "special": ""
   },
   {
@@ -3240,8 +4122,11 @@
     "effect": "",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "-",
     "sell": "",
+    "element": "",
     "special": ""
   },
   {
@@ -3251,8 +4136,11 @@
     "effect": "",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": "",
+    "element": "",
     "special": ""
   },
   {
@@ -3261,9 +4149,12 @@
     "type": "",
     "effect": "ジイニのオークションで購入できる",
     "isBuy": "",
-    "isDrop": "",
+    "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": "",
+    "element": "",
     "special": ""
   },
   {
@@ -3273,8 +4164,11 @@
     "effect": "C.ケージで利用できるアイテム。セルシウスの活力+2、10%の経験値を獲得。",
     "isBuy": false,
     "isDrop": "",
+    "isTresure": false,
+    "isEvent": false,
     "buy": "-",
     "sell": 3000,
+    "element": "",
     "special": ""
   },
   {
@@ -3284,8 +4178,11 @@
     "effect": "斬り+200、突き320、命中+10",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 1800,
+    "element": "",
     "special": ""
   },
   {
@@ -3295,8 +4192,11 @@
     "effect": "斬り+320、着き+320",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 3000,
+    "element": "fire",
     "special": "火属性武器"
   },
   {
@@ -3306,8 +4206,11 @@
     "effect": "斬り+410、突き+405",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 5000,
+    "element": "earth",
     "special": "土属性武器"
   },
   {
@@ -3317,8 +4220,11 @@
     "effect": "斬り+475、突き+460",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 8000,
+    "element": "ice",
     "special": "氷属性武器"
   },
   {
@@ -3328,8 +4234,11 @@
     "effect": "斬り+765、突き+758、命中+10",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "",
     "sell": 100000,
+    "element": "",
     "special": "攻撃ヒット時に稀にHPが4%回復\n回避+3、地力+2、幸運+5"
   },
   {
@@ -3339,8 +4248,11 @@
     "effect": "斬り+890、突き+850",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "",
     "sell": 100000,
+    "element": "time",
     "special": "時属性武器\n攻撃ヒット時に稀に敵の詠唱時間を2倍にする"
   },
   {
@@ -3350,8 +4262,11 @@
     "effect": "斬り+615、突き+590",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "",
     "sell": 80000,
+    "element": "light",
     "special": "光属性武器\n攻撃ヒット時に稀にHPが4%回復"
   },
   {
@@ -3361,8 +4276,11 @@
     "effect": "斬り+75、突き+60",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 160,
+    "element": "",
     "special": "リッドの初期装備"
   },
   {
@@ -3372,9 +4290,12 @@
     "effect": "斬り+680、突き+320、命中-5",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 18000,
-    "special": "雷属性\n攻撃ヒット時に稀に敵をマヒ状態にする"
+    "element": "thunder",
+    "special": "雷属性武器\n攻撃ヒット時に稀に敵をマヒ状態にする"
   },
   {
     "id": 310,
@@ -3383,9 +4304,12 @@
     "effect": "斬り+999、突き+500、命中-5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 84000,
-    "special": "地属性\n攻撃ヒット時に稀に敵の防御力をダウンさせる"
+    "element": "earth",
+    "special": "地属性武器\n攻撃ヒット時に稀に敵の防御力をダウンさせる"
   },
   {
     "id": 311,
@@ -3394,8 +4318,11 @@
     "effect": "斬り+80、突き+230",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 750,
+    "element": "",
     "special": ""
   },
   {
@@ -3405,9 +4332,12 @@
     "effect": "斬り+500、突き+780",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 32000,
-    "special": "火属性\n攻撃ヒット時に稀にファイアボールが発動"
+    "element": "fire",
+    "special": "火属性武器\n攻撃ヒット時に稀にファイアボールが発動"
   },
   {
     "id": 313,
@@ -3416,8 +4346,11 @@
     "effect": "斬り+600、突き+999、命中+5",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 90000,
+    "element": "",
     "special": "攻撃ヒット時に稀に敵の防御力を低下"
   },
   {
@@ -3427,9 +4360,12 @@
     "effect": "斬り+200、突き+200、命中30",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "",
     "sell": 200,
-    "special": "風属性"
+    "element": "wind",
+    "special": "風属性武器"
   },
   {
     "id": 315,
@@ -3438,8 +4374,11 @@
     "effect": "拳+60、蹴り+68、命中2",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 250,
+    "element": "",
     "special": ""
   },
   {
@@ -3449,9 +4388,12 @@
     "effect": "拳+300、蹴り+295、命中2",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 4400,
-    "special": "闇属性\n攻撃ヒット時に稀に敵の幸運をダウンさせる 幸運-6"
+    "element": "dark",
+    "special": "闇属性武器\n攻撃ヒット時に稀に敵の幸運をダウンさせる 幸運-6"
   },
   {
     "id": 317,
@@ -3460,8 +4402,11 @@
     "effect": "拳+760、蹴り+725、命中10",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 72000,
+    "element": "",
     "special": ""
   },
   {
@@ -3471,9 +4416,12 @@
     "effect": "拳+800、蹴り+805、命中7",
     "isBuy": false,
     "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
     "buy": "",
     "sell": 88000,
-    "special": "光属性\n攻撃ヒット時に稀にHPガ4%回復する 幸運+10"
+    "element": "light",
+    "special": "光属性武器\n攻撃ヒット時に稀にHPガ4%回復する 幸運+10"
   },
   {
     "id": 319,
@@ -3482,9 +4430,12 @@
     "effect": "攻撃+750",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": true,
+    "isEvent": false,
     "buy": "",
     "sell": 38000,
-    "special": "知力+5"
+    "element": "time",
+    "special": "時属性武器\n知力+5"
   },
   {
     "id": 320,
@@ -3493,8 +4444,11 @@
     "effect": "",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "",
     "sell": 10000,
+    "element": "",
     "special": "水風火ダメージを40%軽減/土雷氷ダメージが40%増加"
   },
   {
@@ -3504,8 +4458,53 @@
     "effect": "",
     "isBuy": false,
     "isDrop": false,
+    "isTresure": false,
+    "isEvent": true,
     "buy": "",
     "sell": 10000,
+    "element": "",
     "special": "土雷氷ダメージを40%軽減/水風火ダメージが40%増加"
+  },
+  {
+    "id": 322,
+    "name": "スターメイス",
+    "type": "mace",
+    "effect": "攻撃+650",
+    "isBuy": false,
+    "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
+    "buy": "",
+    "sell": 28000,
+    "element": "origin",
+    "special": "元属性武器\n知力+5、幸運+5"
+  },
+  {
+    "id": 323,
+    "name": "チャットバッグ",
+    "type": "bag",
+    "effect": "攻撃+315",
+    "isBuy": false,
+    "isDrop": false,
+    "isTresure": false,
+    "isEvent": false,
+    "buy": "",
+    "sell": 5400,
+    "element": "",
+    "special": "チャットの初期装備品"
+  },
+  {
+    "id": 324,
+    "name": "ワンダーバッグ",
+    "type": "bag",
+    "effect": "攻撃+780",
+    "isBuy": false,
+    "isDrop": true,
+    "isTresure": false,
+    "isEvent": false,
+    "buy": "",
+    "sell": 58000,
+    "element": "",
+    "special": "攻撃ヒット時に稀にTPが1%回復\n幸運+8"
   }
 ]

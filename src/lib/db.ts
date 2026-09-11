@@ -7,6 +7,7 @@ import locationSubEventsData from "../data/locationSubEvents.json";
 import recipes from "../data/recipes.json";
 import recipeItems from "../data/recipeItems.json";
 import shopItemsData from "../data/shopItems.json";
+import { elementMap } from "@/constants";
 
 export type Item = {
   id: number;
@@ -15,10 +16,13 @@ export type Item = {
   effect: string;
   isBuy: boolean;
   isDrop: boolean;
+  isTresure: boolean;
+  isEvent: boolean;
   buy: number | "-";
   sell: number | "-";
   description: string;
   special: string;
+  element: keyof typeof elementMap;
 };
 export async function getItemsData(): Promise<Item[]> {
   // ここで compiledData を一度 unknown にしてから、Item[] にキャストします

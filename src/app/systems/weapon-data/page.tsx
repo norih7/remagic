@@ -10,10 +10,12 @@ import {
 } from "@/lib/db";
 import RecipePropertyList from "@/components/RecipePropertyList";
 import Image from "next/image";
-import { systemLinks } from "@/constants";
+import { systemLinks, itemTypeMap, elementMap } from "@/constants";
 import { getItemsData } from "@/lib/db";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
+import Tag from "@/components/Tag";
+import Link from "next/link";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,36 +32,55 @@ export const metadata = {
   },
 };
 
+const createTagList = (item: Item) => {
+  const result = [];
+  const { isBuy, isDrop, isTresure, isEvent } = item;
+  if (isBuy) result.push(<Tag key="buy">ショップ購入</Tag>);
+  if (isDrop) result.push(<Tag key="drop">ドロップ</Tag>);
+  if (isTresure) result.push(<Tag key="tresure">宝箱</Tag>);
+  if (isEvent) result.push(<Tag key="event">イベント入手</Tag>);
+  if (result.length === 0) result.push(<Tag key="other">その他</Tag>);
+  return result;
+};
+
 const createList = (arr: Item[]) => {
-  const result = arr.map((item, index) => {
-    const { id, name, effect, isBuy, special } = item;
-    const shopBuy = isBuy ? "購入可能" : "できない";
+  const sort = arr.sort((a, b) => Number(a.sell) - Number(b.sell));
+  const result = sort.map((item, index) => {
+    const { id, name, effect, isBuy, isDrop, special, type } = item;
+    const element = (item.element as string) === "" ? "normal" : item.element;
+    const shopBuy = isBuy ? "購入可能" : "宝箱から入手";
+    const tagList = createTagList(item);
     const specialText = special === "" ? "" : <div>特殊: {special}</div>;
     return (
-      <RoundedContainer key={index} className="font-bold">
-        <h3>{name}</h3>
-        <div className="flex mb-3">
-          {/* <div className="flex w-[100px] h-[100px] bg-gray-500 mr-3"></div>
-          <div className="flex-1">
-            <RoundedItem title="効果、特殊効果" className="h-full">
-              {effect}
-              {specialText}
-            </RoundedItem>
-          </div> */}
-          <div className="flex-1">
-            <RoundedItem title="効果、特殊効果" className="h-full">
-              {effect}
-              {specialText}
-            </RoundedItem>
+      <Link href={`/systems/item/${id}`} key={index} className="group block">
+        <RoundedContainer className="">
+          <div className="flex">
+            <h3 className="text-base font-bold flex-1">{name}</h3>
+            <div>
+              <span
+                className="inline-flex items-center gap-1 rounded-xl bg-blue-100 px-3 py-1
+                   text-xs font-bold text-blue-600 transition
+                   group-hover:bg-blue-500 group-hover:text-white"
+              >
+                詳細を見る
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="grid grid-cols-2 gap-3">
-          <RoundedItem title="ショップ購入">{shopBuy}</RoundedItem>
-          <RoundedItem title="購入/入手場所">
-            <a href={`/systems/item/${id}`}>{name}の詳細ページ</a>
+          <div className="flex flex-wrap mb-3">
+            <Tag element={element}>{elementMap[element].name}属性</Tag>
+            {tagList}
+          </div>
+
+          <RoundedItem title="効果">
+            <div className="flex py-1">
+              <div className="flex-1">
+                {effect}
+                {specialText}
+              </div>
+            </div>
           </RoundedItem>
-        </div>
-      </RoundedContainer>
+        </RoundedContainer>
+      </Link>
     );
   });
   return result;
@@ -79,7 +100,8 @@ export default async function HomePage() {
         item.type === "spear" ||
         item.type === "cane" ||
         item.type === "greatSword" ||
-        item.type === "bag",
+        item.type === "bag" ||
+        item.type === "mace",
     )
     .reduce(
       (acc, item) => {
@@ -87,17 +109,22 @@ export default async function HomePage() {
           acc[item.type].push(item);
         } else {
           acc[item.type] = [];
+          acc[item.type].push(item);
         }
 
         return acc;
       },
       {} as Record<string, Item[]>,
     );
-
   const swordList = createList(filterData.sword);
   const shortSwordList = createList(filterData.shortSword);
   const axList = createList(filterData.ax);
   const halbertList = createList(filterData.halbert);
+  const knuckleList = createList(filterData.knuckle);
+  const whistleList = createList(filterData.whistle);
+  const caneList = createList(filterData.cane);
+  const maceList = createList(filterData.mace);
+  const bagList = createList(filterData.bag);
 
   return (
     <article>
@@ -114,19 +141,48 @@ export default async function HomePage() {
       <section className="mb-12">
         <div className="mb-8">
           <SectionTitle>武器: 剣</SectionTitle>
+          <p>装備可能: リッド</p>
           {swordList}
         </div>
         <div className="mb-8">
           <SectionTitle>武器: 短剣</SectionTitle>
+          <p>装備可能: リッド</p>
           {shortSwordList}
         </div>
         <div className="mb-8">
           <SectionTitle>武器: 斧</SectionTitle>
+          <p>装備可能: リッド</p>
           {axList}
         </div>
         <div className="mb-8">
           <SectionTitle>武器: ハルバート</SectionTitle>
+          <p>装備可能: リッド</p>
           {halbertList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: ナックル</SectionTitle>
+          <p>装備可能: ファラ</p>
+          {knuckleList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: ホイッスル</SectionTitle>
+          <p>装備可能: メルディ</p>
+          {whistleList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: 杖</SectionTitle>
+          <p>装備可能: キール</p>
+          {caneList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: メイス</SectionTitle>
+          <p>装備可能: キール</p>
+          {maceList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: バッグ</SectionTitle>
+          <p>装備可能: チャット</p>
+          {bagList}
         </div>
       </section>
     </article>

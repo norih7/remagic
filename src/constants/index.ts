@@ -432,52 +432,64 @@ export const elementMap = {
   water: {
     name: "水",
     color: "text-sky-400",
+    tagClass: "bg-sky-100 text-sky-700 border-sky-200",
   },
   wind: {
     name: "風",
     color: "text-lime-400",
+    tagClass: "bg-lime-100 text-lime-700 border-lime-200",
   },
   fire: {
     name: "火",
     color: "text-red-400",
+    tagClass: "bg-red-100 text-red-700 border-red-200",
   },
   earth: {
     name: "土",
     color: "text-amber-600",
+    tagClass: "bg-amber-100 text-amber-700 border-amber-200",
   },
   ice: {
     name: "氷",
-    color: "text-slate-300",
+    color: "text-blue-300",
+    tagClass: "bg-slate-100 text-sky-600 border-slate-200",
   },
   light: {
     name: "光",
     color: "text-amber-300",
+    tagClass: "bg-amber-50 text-amber-600 border-amber-100",
   },
   thunder: {
     name: "雷",
     color: "text-yellow-500",
+    tagClass: "bg-yellow-100 text-yellow-700 border-yellow-200",
   },
   dark: {
     name: "闇",
     color: "text-gray-600",
+    tagClass: "bg-gray-200 text-gray-700 border-gray-300",
   },
   origin: {
     name: "元",
     color: "text-mauve-400",
+    tagClass: "bg-mauve-100 text-mauve-700 border-mauve-200",
   },
   time: {
     name: "時",
     color: "text-purple-400",
+    tagClass: "bg-purple-100 text-purple-700 border-purple-200",
   },
   normal: {
-    name: "武器属性",
-    color: "text-mist-400",
+    name: "物理",
+    color: "text-gray-800",
+    tagClass: "bg-gray-100 text-gray-800 border-gray-200",
   },
   none: {
     name: "-",
-    color: "text-gray-800",
+    color: "text-mist-400",
+    tagClass: "bg-orange-100 text-orange-700 border-orange-200",
   },
-};
+} as const;
 
 export const recipeTypeMap = {
   normal: "ワンダーシェフ",
