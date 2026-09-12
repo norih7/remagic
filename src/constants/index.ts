@@ -300,7 +300,14 @@ export const systemLinks = {
     title: "武器一覧データ",
     image: "/link-headers/systems-weapon.jpg",
     path: "/systems/weapon-data",
-    desc: "武器一覧のデータを掲載",
+    desc: "武器一覧データを掲載",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。武器一覧を掲載。",
+  },
+  "defense-data": {
+    title: "防具一覧データ",
+    path: "/systems/defense-data",
+    desc: "防具一覧データを掲載",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。武器一覧を掲載。",
   },

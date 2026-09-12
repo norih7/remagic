@@ -66,11 +66,7 @@ const createList = (arr: Item[]) => {
               </span>
             </div>
           </div>
-          <div className="flex flex-wrap mb-3">
-            {tagList}
-
-            <Tag element={element}>{elementMap[element].name}</Tag>
-          </div>
+          <div className="flex flex-wrap mb-3">{tagList}</div>
 
           <RoundedItem title="効果/説明">
             <div className="flex py-1">
@@ -92,18 +88,15 @@ export default async function HomePage() {
   const filterData = itemsData
     .filter(
       (item) =>
-        item.type === "sword" ||
-        item.type === "halbert" ||
-        item.type === "knuckle" ||
-        item.type === "ax" ||
-        item.type === "whistle" ||
-        item.type === "shortSword" ||
-        item.type === "spear" ||
-        item.type === "cane" ||
-        item.type === "greatSword" ||
-        item.type === "bag" ||
-        item.type === "mace" ||
-        item.type === "gun",
+        item.type === "armor" ||
+        item.type === "cloak" ||
+        item.type === "robe" ||
+        item.type === "shield" ||
+        item.type === "bracelet" ||
+        item.type === "helmet" ||
+        item.type === "ribbon" ||
+        item.type === "circlet" ||
+        item.type === "hat",
     )
     .reduce(
       (acc, item) => {
@@ -118,23 +111,22 @@ export default async function HomePage() {
       },
       {} as Record<string, Item[]>,
     );
-  const swordList = createList(filterData.sword);
-  const shortSwordList = createList(filterData.shortSword);
-  const axList = createList(filterData.ax);
-  const halbertList = createList(filterData.halbert);
-  const knuckleList = createList(filterData.knuckle);
-  const whistleList = createList(filterData.whistle);
-  const caneList = createList(filterData.cane);
-  const maceList = createList(filterData.mace);
-  const bagList = createList(filterData.bag);
-  const gunList = createList(filterData.gun);
+  const armorList = createList(filterData.armor);
+  const cloakList = createList(filterData.cloak);
+  const robeList = createList(filterData.robe);
+  const shieldList = createList(filterData.shield);
+  const braceletList = createList(filterData.bracelet);
+  const helmetList = createList(filterData.helmet);
+  const ribbonList = createList(filterData.ribbon);
+  const circletList = createList(filterData.circlet);
+  const hatList = createList(filterData.hat);
 
   return (
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
         <p>
-          エターニアの武器アイテム一覧データを掲載しています。購入場所、入手可能ダンジョンなどは詳細ページにて一覧を掲載しています。
+          エターニアの防具アイテム一覧データを掲載しています。購入場所、入手可能ダンジョンなどは詳細ページにて一覧を掲載しています。
         </p>
       </PageSummary>
       {/* <section className="mb-12">
@@ -143,54 +135,58 @@ export default async function HomePage() {
       </section> */}
       <section className="mb-12">
         <div className="mb-8">
-          <SectionTitle>武器: 剣</SectionTitle>
+          <SectionTitle>防具: 鎧</SectionTitle>
           <p>装備可能: リッド</p>
-          {swordList}
+          {armorList}
         </div>
+      </section>
+      <section className="mb-12">
         <div className="mb-8">
-          <SectionTitle>武器: 短剣</SectionTitle>
+          <SectionTitle>防具: 盾</SectionTitle>
           <p>装備可能: リッド</p>
-          {shortSwordList}
+          {shieldList}
         </div>
+      </section>
+      <section className="mb-12">
         <div className="mb-8">
-          <SectionTitle>武器: 斧</SectionTitle>
+          <SectionTitle>防具: 兜</SectionTitle>
           <p>装備可能: リッド</p>
-          {axList}
+          {helmetList}
         </div>
+      </section>
+      <section className="mb-12">
         <div className="mb-8">
-          <SectionTitle>武器: ハルバート</SectionTitle>
-          <p>装備可能: リッド</p>
-          {halbertList}
+          <SectionTitle>防具: クローク</SectionTitle>
+          <p>装備可能: ファラ、メルディ、チャット</p>
+          {cloakList}
         </div>
+      </section>
+      <section className="mb-12">
         <div className="mb-8">
-          <SectionTitle>武器: ナックル</SectionTitle>
-          <p>装備可能: ファラ</p>
-          {knuckleList}
+          <SectionTitle>防具: ローブ</SectionTitle>
+          <p>装備可能: キール、フォッグ</p>
+          {robeList}
         </div>
+      </section>
+      <section className="mb-12">
         <div className="mb-8">
-          <SectionTitle>武器: ホイッスル</SectionTitle>
-          <p>装備可能: メルディ</p>
-          {whistleList}
+          <SectionTitle>防具: リボン</SectionTitle>
+          <p>装備可能: ファラ、メルディ</p>
+          {ribbonList}
         </div>
+      </section>
+      <section className="mb-12">
         <div className="mb-8">
-          <SectionTitle>武器: 杖</SectionTitle>
-          <p>装備可能: キール</p>
-          {caneList}
+          <SectionTitle>防具: サークレット</SectionTitle>
+          <p>装備可能: キール ※「クレスのバンダナ」のみリッドが装備可能</p>
+          {circletList}
         </div>
+      </section>
+      <section className="mb-12">
         <div className="mb-8">
-          <SectionTitle>武器: メイス</SectionTitle>
-          <p>装備可能: キール</p>
-          {maceList}
-        </div>
-        <div className="mb-8">
-          <SectionTitle>武器: バッグ</SectionTitle>
+          <SectionTitle>防具: 帽子</SectionTitle>
           <p>装備可能: チャット</p>
-          {bagList}
-        </div>
-        <div className="mb-8">
-          <SectionTitle>武器: 銃</SectionTitle>
-          <p>装備可能: フォッグ</p>
-          {gunList}
+          {hatList}
         </div>
       </section>
     </article>

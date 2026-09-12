@@ -203,7 +203,7 @@
     "locationName": "望郷の洞窟",
     "itemId": 16,
     "itemName": "サークレット",
-    "itemType": "accessory",
+    "itemType": "circlet",
     "remarks": "潮が満ちてくると取得可能"
   },
   {
@@ -266,7 +266,7 @@
     "locationName": "木陰の村モルル",
     "itemId": 23,
     "itemName": "アイアンサレット",
-    "itemType": "accessory",
+    "itemType": "helmet",
     "remarks": ""
   },
   {
@@ -860,7 +860,7 @@
     "locationName": "火晶霊の谷",
     "itemId": 63,
     "itemName": "ブレスレット",
-    "itemType": "accessory",
+    "itemType": "bracelet",
     "remarks": ""
   },
   {
@@ -869,7 +869,7 @@
     "locationName": "火晶霊の谷",
     "itemId": 64,
     "itemName": "ブルーリボン",
-    "itemType": "accessory",
+    "itemType": "ribbon",
     "remarks": ""
   },
   {
@@ -1166,7 +1166,7 @@
     "locationName": "地晶霊の廃坑",
     "itemId": 84,
     "itemName": "ミスリルクレスト",
-    "itemType": "accessory",
+    "itemType": "circlet",
     "remarks": ""
   },
   {
@@ -1697,7 +1697,7 @@
     "locationName": "レグルスの丘",
     "itemId": 120,
     "itemName": "ミスリルブレス",
-    "itemType": "accessory",
+    "itemType": "bracelet",
     "remarks": ""
   },
   {
@@ -1886,7 +1886,7 @@
     "locationName": "インシーアジト1 GPS (76, 122)",
     "itemId": 240,
     "itemName": "ホーリィクローク",
-    "itemType": "",
+    "itemType": "cloak",
     "remarks": ""
   },
   {
@@ -2228,7 +2228,7 @@
     "locationName": "アイフリードの墓",
     "itemId": 120,
     "itemName": "ミスリルブレス",
-    "itemType": "accessory",
+    "itemType": "bracelet",
     "remarks": ""
   },
   {
