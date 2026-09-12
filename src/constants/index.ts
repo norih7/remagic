@@ -309,7 +309,7 @@ export const systemLinks = {
     path: "/systems/defense-data",
     desc: "防具一覧データを掲載",
     seoDesc:
-      "リマスター版対応のテイルズオブエターニア（TOE）攻略。武器一覧を掲載。",
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。防具一覧を掲載。",
   },
   titles: {
     title: "エターニアの称号",
