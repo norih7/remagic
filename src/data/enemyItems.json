@@ -1,0 +1,5915 @@
+[
+  {
+    "id": 1,
+    "enemyId": 0,
+    "enemyName": "バンデット",
+    "type": "drop",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "probability": 30
+  },
+  {
+    "id": 2,
+    "enemyId": 0,
+    "enemyName": "バンデット",
+    "type": "drop",
+    "itemId": 354,
+    "itemName": "シーブスマント",
+    "probability": 12
+  },
+  {
+    "id": 3,
+    "enemyId": 0,
+    "enemyName": "バンデット",
+    "type": "steal",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "probability": 90
+  },
+  {
+    "id": 4,
+    "enemyId": 1,
+    "enemyName": "ストライカー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 5,
+    "enemyId": 1,
+    "enemyName": "ストライカー",
+    "type": "drop",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "probability": 35
+  },
+  {
+    "id": 6,
+    "enemyId": 1,
+    "enemyName": "ストライカー",
+    "type": "steal",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "probability": 90
+  },
+  {
+    "id": 7,
+    "enemyId": 49,
+    "enemyName": "アイスタイガー",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 15
+  },
+  {
+    "id": 8,
+    "enemyId": 49,
+    "enemyName": "アイスタイガー",
+    "type": "drop",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "probability": 10
+  },
+  {
+    "id": 9,
+    "enemyId": 49,
+    "enemyName": "アイスタイガー",
+    "type": "steal",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "probability": 80
+  },
+  {
+    "id": 10,
+    "enemyId": 57,
+    "enemyName": "アーチャー",
+    "type": "drop",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "probability": 35
+  },
+  {
+    "id": 11,
+    "enemyId": 57,
+    "enemyName": "アーチャー",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 50
+  },
+  {
+    "id": 12,
+    "enemyId": 57,
+    "enemyName": "アーチャー",
+    "type": "steal",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "probability": 90
+  },
+  {
+    "id": 13,
+    "enemyId": 60,
+    "enemyName": "アクアスピン",
+    "type": "drop",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "probability": 50
+  },
+  {
+    "id": 14,
+    "enemyId": 60,
+    "enemyName": "アクアスピン",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 15,
+    "enemyId": 192,
+    "enemyName": "アイアンゴーレム",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 7
+  },
+  {
+    "id": 16,
+    "enemyId": 192,
+    "enemyName": "アイアンゴーレム",
+    "type": "drop",
+    "itemId": 332,
+    "itemName": "フィートシールド",
+    "probability": 8
+  },
+  {
+    "id": 17,
+    "enemyId": 192,
+    "enemyName": "アイアンゴーレム",
+    "type": "steal",
+    "itemId": 332,
+    "itemName": "フィートシールド",
+    "probability": 40
+  },
+  {
+    "id": 18,
+    "enemyId": 163,
+    "enemyName": "アックスビーク",
+    "type": "drop",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 20
+  },
+  {
+    "id": 19,
+    "enemyId": 163,
+    "enemyName": "アックスビーク",
+    "type": "drop",
+    "itemId": 58,
+    "itemName": "セージ",
+    "probability": 1
+  },
+  {
+    "id": 20,
+    "enemyId": 163,
+    "enemyName": "アックスビーク",
+    "type": "steal",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 70
+  },
+  {
+    "id": 21,
+    "enemyId": 168,
+    "enemyName": "アイスウォーリア",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 12
+  },
+  {
+    "id": 22,
+    "enemyId": 168,
+    "enemyName": "アイスウォーリア",
+    "type": "drop",
+    "itemId": 304,
+    "itemName": "アイスコフィン",
+    "probability": 4
+  },
+  {
+    "id": 23,
+    "enemyId": 168,
+    "enemyName": "アイスウォーリア",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 40
+  },
+  {
+    "id": 24,
+    "enemyId": 219,
+    "enemyName": "アラーネア",
+    "type": "drop",
+    "itemId": 361,
+    "itemName": "レジストリング",
+    "probability": 20
+  },
+  {
+    "id": 25,
+    "enemyId": 219,
+    "enemyName": "アラーネア",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 10
+  },
+  {
+    "id": 26,
+    "enemyId": 219,
+    "enemyName": "アラーネア",
+    "type": "steal",
+    "itemId": 361,
+    "itemName": "レジストリング",
+    "probability": 30
+  },
+  {
+    "id": 27,
+    "enemyId": 11,
+    "enemyName": "アローテイル",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 28,
+    "enemyId": 11,
+    "enemyName": "アローテイル",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 29,
+    "enemyId": 11,
+    "enemyName": "アローテイル",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 30,
+    "enemyId": 238,
+    "enemyName": "イビルリッパー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 35
+  },
+  {
+    "id": 31,
+    "enemyId": 238,
+    "enemyName": "イビルリッパー",
+    "type": "drop",
+    "itemId": 361,
+    "itemName": "レジストリング",
+    "probability": 5
+  },
+  {
+    "id": 32,
+    "enemyId": 6,
+    "enemyName": "アンカーリザード",
+    "type": "drop",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 12
+  },
+  {
+    "id": 33,
+    "enemyId": 6,
+    "enemyName": "アンカーリザード",
+    "type": "drop",
+    "itemId": 159,
+    "itemName": "ビート",
+    "probability": 35
+  },
+  {
+    "id": 34,
+    "enemyId": 182,
+    "enemyName": "アントラー",
+    "type": "drop",
+    "itemId": 75,
+    "itemName": "セボリー",
+    "probability": 1
+  },
+  {
+    "id": 35,
+    "enemyId": 182,
+    "enemyName": "アントラー",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 8
+  },
+  {
+    "id": 36,
+    "enemyId": 182,
+    "enemyName": "アントラー",
+    "type": "steal",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 80
+  },
+  {
+    "id": 37,
+    "enemyId": 34,
+    "enemyName": "インセクトプラント",
+    "type": "drop",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 25
+  },
+  {
+    "id": 38,
+    "enemyId": 34,
+    "enemyName": "インセクトプラント",
+    "type": "drop",
+    "itemId": 139,
+    "itemName": "レモン",
+    "probability": 10
+  },
+  {
+    "id": 39,
+    "enemyId": 34,
+    "enemyName": "インセクトプラント",
+    "type": "steal",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 80
+  },
+  {
+    "id": 40,
+    "enemyId": 188,
+    "enemyName": "イーヴルスター",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 10
+  },
+  {
+    "id": 41,
+    "enemyId": 188,
+    "enemyName": "イーヴルスター",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 3
+  },
+  {
+    "id": 42,
+    "enemyId": 188,
+    "enemyName": "イーヴルスター",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 43,
+    "enemyId": 97,
+    "enemyName": "インピベル",
+    "type": "drop",
+    "itemId": 136,
+    "itemName": "いか",
+    "probability": 20
+  },
+  {
+    "id": 44,
+    "enemyId": 97,
+    "enemyName": "インピベル",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 12
+  },
+  {
+    "id": 45,
+    "enemyId": 97,
+    "enemyName": "インピベル",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 80
+  },
+  {
+    "id": 46,
+    "enemyId": 19,
+    "enemyName": "インフェリアンガード",
+    "type": "drop",
+    "itemId": 190,
+    "itemName": "スティールソード",
+    "probability": 100
+  },
+  {
+    "id": 47,
+    "enemyId": 178,
+    "enemyName": "ウィルオ・ウィスプ",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 10
+  },
+  {
+    "id": 48,
+    "enemyId": 178,
+    "enemyName": "ウィルオ・ウィスプ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 5
+  },
+  {
+    "id": 49,
+    "enemyId": 178,
+    "enemyName": "ウィルオ・ウィスプ",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 50,
+    "enemyId": 99,
+    "enemyName": "インプルスス",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 51,
+    "enemyId": 99,
+    "enemyName": "インプルスス",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 5
+  },
+  {
+    "id": 52,
+    "enemyId": 99,
+    "enemyName": "インプルスス",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 53,
+    "enemyId": 109,
+    "enemyName": "ヴェノン",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 10
+  },
+  {
+    "id": 54,
+    "enemyId": 109,
+    "enemyName": "ヴェノン",
+    "type": "drop",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 20
+  },
+  {
+    "id": 55,
+    "enemyId": 109,
+    "enemyName": "ヴェノン",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 75
+  },
+  {
+    "id": 56,
+    "enemyId": 133,
+    "enemyName": "ウィザード",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 20
+  },
+  {
+    "id": 57,
+    "enemyId": 133,
+    "enemyName": "ウィザード",
+    "type": "drop",
+    "itemId": 75,
+    "itemName": "セボリー",
+    "probability": 3
+  },
+  {
+    "id": 58,
+    "enemyId": 46,
+    "enemyName": "ヴォルト",
+    "type": "drop",
+    "itemId": 298,
+    "itemName": "ホーリィシンボル",
+    "probability": 100
+  },
+  {
+    "id": 59,
+    "enemyId": 46,
+    "enemyName": "ヴォルト",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 100
+  },
+  {
+    "id": 60,
+    "enemyId": 5,
+    "enemyName": "ウィッチ",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 25
+  },
+  {
+    "id": 61,
+    "enemyId": 5,
+    "enemyName": "ウィッチ",
+    "type": "drop",
+    "itemId": 134,
+    "itemName": "パスタ",
+    "probability": 45
+  },
+  {
+    "id": 62,
+    "enemyId": 5,
+    "enemyName": "ウィッチ",
+    "type": "steal",
+    "itemId": 134,
+    "itemName": "パスタ",
+    "probability": 95
+  },
+  {
+    "id": 63,
+    "enemyId": 50,
+    "enemyName": "ウッズワーム",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 64,
+    "enemyId": 50,
+    "enemyName": "ウッズワーム",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 65,
+    "enemyId": 50,
+    "enemyName": "ウッズワーム",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 80
+  },
+  {
+    "id": 66,
+    "enemyId": 24,
+    "enemyName": "ウンディーネ",
+    "type": "drop",
+    "itemId": 344,
+    "itemName": "タリスマン",
+    "probability": 100
+  },
+  {
+    "id": 67,
+    "enemyId": 24,
+    "enemyName": "ウンディーネ",
+    "type": "drop",
+    "itemId": 362,
+    "itemName": "メンタルバングル",
+    "probability": 100
+  },
+  {
+    "id": 68,
+    "enemyId": 104,
+    "enemyName": "エアスライサー",
+    "type": "drop",
+    "itemId": 155,
+    "itemName": "レッドソディ",
+    "probability": 18
+  },
+  {
+    "id": 69,
+    "enemyId": 104,
+    "enemyName": "エアスライサー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 15
+  },
+  {
+    "id": 70,
+    "enemyId": 104,
+    "enemyName": "エアスライサー",
+    "type": "steal",
+    "itemId": 155,
+    "itemName": "レッドソディ",
+    "probability": 75
+  },
+  {
+    "id": 71,
+    "enemyId": 76,
+    "enemyName": "エッグベア",
+    "type": "drop",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "probability": 40
+  },
+  {
+    "id": 72,
+    "enemyId": 76,
+    "enemyName": "エッグベア",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 73,
+    "enemyId": 106,
+    "enemyName": "エスカルゴ",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 13
+  },
+  {
+    "id": 74,
+    "enemyId": 106,
+    "enemyName": "エスカルゴ",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 7
+  },
+  {
+    "id": 75,
+    "enemyId": 106,
+    "enemyName": "エスカルゴ",
+    "type": "steal",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "probability": 75
+  },
+  {
+    "id": 76,
+    "enemyId": 249,
+    "enemyName": "エレメンタラー",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 100
+  },
+  {
+    "id": 77,
+    "enemyId": 249,
+    "enemyName": "エレメンタラー",
+    "type": "drop",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "probability": 100
+  },
+  {
+    "id": 78,
+    "enemyId": 249,
+    "enemyName": "エレメンタラー",
+    "type": "steal",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 100
+  },
+  {
+    "id": 79,
+    "enemyId": 157,
+    "enemyName": "オークロット",
+    "type": "drop",
+    "itemId": 143,
+    "itemName": "キャベツ",
+    "probability": 35
+  },
+  {
+    "id": 80,
+    "enemyId": 157,
+    "enemyName": "オークロット",
+    "type": "drop",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 25
+  },
+  {
+    "id": 81,
+    "enemyId": 157,
+    "enemyName": "オークロット",
+    "type": "steal",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 80
+  },
+  {
+    "id": 82,
+    "enemyId": 184,
+    "enemyName": "オウフィッシュ",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 83,
+    "enemyId": 184,
+    "enemyName": "オウフィッシュ",
+    "type": "drop",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "probability": 25
+  },
+  {
+    "id": 84,
+    "enemyId": 184,
+    "enemyName": "オウフィッシュ",
+    "type": "steal",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 30
+  },
+  {
+    "id": 85,
+    "enemyId": 45,
+    "enemyName": "オクトスライミー",
+    "type": "drop",
+    "itemId": 136,
+    "itemName": "いか",
+    "probability": 50
+  },
+  {
+    "id": 86,
+    "enemyId": 45,
+    "enemyName": "オクトスライミー",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 80
+  },
+  {
+    "id": 87,
+    "enemyId": 127,
+    "enemyName": "オーガー",
+    "type": "drop",
+    "itemId": 148,
+    "itemName": "ライス",
+    "probability": 25
+  },
+  {
+    "id": 88,
+    "enemyId": 127,
+    "enemyName": "オーガー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 8
+  },
+  {
+    "id": 89,
+    "enemyId": 127,
+    "enemyName": "オーガー",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 75
+  },
+  {
+    "id": 90,
+    "enemyId": 134,
+    "enemyName": "カーヴァードイル",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 20
+  },
+  {
+    "id": 91,
+    "enemyId": 134,
+    "enemyName": "カーヴァードイル",
+    "type": "drop",
+    "itemId": 155,
+    "itemName": "レッドソディ",
+    "probability": 10
+  },
+  {
+    "id": 92,
+    "enemyId": 152,
+    "enemyName": "オークジェリィ",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 22
+  },
+  {
+    "id": 93,
+    "enemyId": 152,
+    "enemyName": "オークジェリィ",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 94,
+    "enemyId": 152,
+    "enemyName": "オークジェリィ",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 70
+  },
+  {
+    "id": 95,
+    "enemyId": 245,
+    "enemyName": "ガーディアント",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 100
+  },
+  {
+    "id": 96,
+    "enemyId": 245,
+    "enemyName": "ガーディアント",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 100
+  },
+  {
+    "id": 97,
+    "enemyId": 246,
+    "enemyName": "ガスクラウド",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 20
+  },
+  {
+    "id": 98,
+    "enemyId": 246,
+    "enemyName": "ガスクラウド",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 5
+  },
+  {
+    "id": 99,
+    "enemyId": 246,
+    "enemyName": "ガスクラウド",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 95
+  },
+  {
+    "id": 100,
+    "enemyId": 202,
+    "enemyName": "ガロー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 10
+  },
+  {
+    "id": 101,
+    "enemyId": 202,
+    "enemyName": "ガロー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 5
+  },
+  {
+    "id": 102,
+    "enemyId": 202,
+    "enemyName": "ガロー",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 103,
+    "enemyId": 166,
+    "enemyName": "カトルボーン",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 104,
+    "enemyId": 166,
+    "enemyName": "カトルボーン",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 105,
+    "enemyId": 166,
+    "enemyName": "カトルボーン",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 106,
+    "enemyId": 253,
+    "enemyName": "ガンナー",
+    "type": "drop",
+    "itemId": 324,
+    "itemName": "ワンダーバッグ",
+    "probability": 4
+  },
+  {
+    "id": 107,
+    "enemyId": 253,
+    "enemyName": "ガンナー",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 15
+  },
+  {
+    "id": 108,
+    "enemyId": 253,
+    "enemyName": "ガンナー",
+    "type": "steal",
+    "itemId": 324,
+    "itemName": "ワンダーバッグ",
+    "probability": 35
+  },
+  {
+    "id": 109,
+    "enemyId": 84,
+    "enemyName": "カルプリット",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 20
+  },
+  {
+    "id": 110,
+    "enemyId": 84,
+    "enemyName": "カルプリット",
+    "type": "drop",
+    "itemId": 213,
+    "itemName": "デモンジャベリン",
+    "probability": 8
+  },
+  {
+    "id": 111,
+    "enemyId": 84,
+    "enemyName": "カルプリット",
+    "type": "steal",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 80
+  },
+  {
+    "id": 112,
+    "enemyId": 20,
+    "enemyName": "カンバラーベア",
+    "type": "drop",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "probability": 50
+  },
+  {
+    "id": 113,
+    "enemyId": 20,
+    "enemyName": "カンバラーベア",
+    "type": "drop",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "probability": 15
+  },
+  {
+    "id": 114,
+    "enemyId": 20,
+    "enemyName": "カンバラーベア",
+    "type": "steal",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "probability": 80
+  },
+  {
+    "id": 115,
+    "enemyId": 210,
+    "enemyName": "ガロウズバード",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 25
+  },
+  {
+    "id": 116,
+    "enemyId": 210,
+    "enemyName": "ガロウズバード",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 6
+  },
+  {
+    "id": 117,
+    "enemyId": 210,
+    "enemyName": "ガロウズバード",
+    "type": "steal",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 90
+  },
+  {
+    "id": 118,
+    "enemyId": 75,
+    "enemyName": "ギタルクル",
+    "type": "drop",
+    "itemId": 162,
+    "itemName": "パープルソディ",
+    "probability": 12
+  },
+  {
+    "id": 119,
+    "enemyId": 75,
+    "enemyName": "ギタルクル",
+    "type": "drop",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "probability": 1
+  },
+  {
+    "id": 120,
+    "enemyId": 29,
+    "enemyName": "キックフロッグ",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 121,
+    "enemyId": 29,
+    "enemyName": "キックフロッグ",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 122,
+    "enemyId": 29,
+    "enemyName": "キックフロッグ",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 123,
+    "enemyId": 39,
+    "enemyName": "キングフロッグ",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 124,
+    "enemyId": 39,
+    "enemyName": "キングフロッグ",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 125,
+    "enemyId": 39,
+    "enemyName": "キングフロッグ",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 50
+  },
+  {
+    "id": 126,
+    "enemyId": 203,
+    "enemyName": "キメラ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 127,
+    "enemyId": 203,
+    "enemyName": "キメラ",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 3
+  },
+  {
+    "id": 128,
+    "enemyId": 203,
+    "enemyName": "キメラ",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 129,
+    "enemyId": 67,
+    "enemyName": "グール",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 12
+  },
+  {
+    "id": 130,
+    "enemyId": 67,
+    "enemyName": "グール",
+    "type": "drop",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "probability": 30
+  },
+  {
+    "id": 131,
+    "enemyId": 67,
+    "enemyName": "グール",
+    "type": "steal",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "probability": 80
+  },
+  {
+    "id": 132,
+    "enemyId": 160,
+    "enemyName": "キャニバラスプラント",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 8
+  },
+  {
+    "id": 133,
+    "enemyId": 160,
+    "enemyName": "キャニバラスプラント",
+    "type": "drop",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 15
+  },
+  {
+    "id": 134,
+    "enemyId": 160,
+    "enemyName": "キャニバラスプラント",
+    "type": "steal",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 80
+  },
+  {
+    "id": 135,
+    "enemyId": 94,
+    "enemyName": "クビトゥム",
+    "type": "drop",
+    "itemId": 161,
+    "itemName": "こんにゃく",
+    "probability": 25
+  },
+  {
+    "id": 136,
+    "enemyId": 94,
+    "enemyName": "クビトゥム",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 13
+  },
+  {
+    "id": 137,
+    "enemyId": 135,
+    "enemyName": "キラービー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 138,
+    "enemyId": 135,
+    "enemyName": "キラービー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 5
+  },
+  {
+    "id": 139,
+    "enemyId": 135,
+    "enemyName": "キラービー",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 140,
+    "enemyId": 170,
+    "enemyName": "クラーケン",
+    "type": "drop",
+    "itemId": 24,
+    "itemName": "ポイズンチェック",
+    "probability": 8
+  },
+  {
+    "id": 141,
+    "enemyId": 170,
+    "enemyName": "クラーケン",
+    "type": "drop",
+    "itemId": 136,
+    "itemName": "いか",
+    "probability": 20
+  },
+  {
+    "id": 142,
+    "enemyId": 170,
+    "enemyName": "クラーケン",
+    "type": "steal",
+    "itemId": 24,
+    "itemName": "ポイズンチェック",
+    "probability": 25
+  },
+  {
+    "id": 143,
+    "enemyId": 81,
+    "enemyName": "グラスホッパー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 144,
+    "enemyId": 81,
+    "enemyName": "グラスホッパー",
+    "type": "drop",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "probability": 25
+  },
+  {
+    "id": 145,
+    "enemyId": 81,
+    "enemyName": "グラスホッパー",
+    "type": "steal",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "probability": 80
+  },
+  {
+    "id": 146,
+    "enemyId": 142,
+    "enemyName": "グリズリー",
+    "type": "drop",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "probability": 38
+  },
+  {
+    "id": 147,
+    "enemyId": 142,
+    "enemyName": "グリズリー",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 5
+  },
+  {
+    "id": 148,
+    "enemyId": 142,
+    "enemyName": "グリズリー",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 149,
+    "enemyId": 52,
+    "enemyName": "クラッシュトータス",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 10
+  },
+  {
+    "id": 150,
+    "enemyId": 52,
+    "enemyName": "クラッシュトータス",
+    "type": "drop",
+    "itemId": 14,
+    "itemName": "バックラー",
+    "probability": 2
+  },
+  {
+    "id": 151,
+    "enemyId": 52,
+    "enemyName": "クラッシュトータス",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 152,
+    "enemyId": 237,
+    "enemyName": "クリミナル",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 25
+  },
+  {
+    "id": 153,
+    "enemyId": 237,
+    "enemyName": "クリミナル",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 20
+  },
+  {
+    "id": 154,
+    "enemyId": 237,
+    "enemyName": "クリミナル",
+    "type": "steal",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "probability": 80
+  },
+  {
+    "id": 155,
+    "enemyId": 148,
+    "enemyName": "グラップラー",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 18
+  },
+  {
+    "id": 156,
+    "enemyId": 148,
+    "enemyName": "グラップラー",
+    "type": "drop",
+    "itemId": 56,
+    "itemName": "エルヴンブーツ",
+    "probability": 2
+  },
+  {
+    "id": 157,
+    "enemyId": 148,
+    "enemyName": "グラップラー",
+    "type": "steal",
+    "itemId": 56,
+    "itemName": "エルヴンブーツ",
+    "probability": 20
+  },
+  {
+    "id": 158,
+    "enemyId": 227,
+    "enemyName": "グレイヴキーパー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 159,
+    "enemyId": 227,
+    "enemyName": "グレイヴキーパー",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 3
+  },
+  {
+    "id": 160,
+    "enemyId": 227,
+    "enemyName": "グレイヴキーパー",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 50
+  },
+  {
+    "id": 161,
+    "enemyId": 79,
+    "enemyName": "グリーンローパー",
+    "type": "drop",
+    "itemId": 132,
+    "itemName": "レタス",
+    "probability": 35
+  },
+  {
+    "id": 162,
+    "enemyId": 79,
+    "enemyName": "グリーンローパー",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 3
+  },
+  {
+    "id": 163,
+    "enemyId": 79,
+    "enemyName": "グリーンローパー",
+    "type": "steal",
+    "itemId": 132,
+    "itemName": "レタス",
+    "probability": 80
+  },
+  {
+    "id": 164,
+    "enemyId": 186,
+    "enemyName": "クレイゴーレム",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 12
+  },
+  {
+    "id": 165,
+    "enemyId": 186,
+    "enemyName": "クレイゴーレム",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 6
+  },
+  {
+    "id": 166,
+    "enemyId": 177,
+    "enemyName": "サロリサ",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 10
+  },
+  {
+    "id": 167,
+    "enemyId": 177,
+    "enemyName": "サロリサ",
+    "type": "steal",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 60
+  },
+  {
+    "id": 168,
+    "enemyId": 195,
+    "enemyName": "ケイブマン",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 20
+  },
+  {
+    "id": 169,
+    "enemyId": 195,
+    "enemyName": "ケイブマン",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 20
+  },
+  {
+    "id": 170,
+    "enemyId": 195,
+    "enemyName": "ケイブマン",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 50
+  },
+  {
+    "id": 171,
+    "enemyId": 194,
+    "enemyName": "サンダーソード",
+    "type": "drop",
+    "itemId": 154,
+    "itemName": "ブラックソディ",
+    "probability": 15
+  },
+  {
+    "id": 172,
+    "enemyId": 194,
+    "enemyName": "サンダーソード",
+    "type": "drop",
+    "itemId": 195,
+    "itemName": "ダオ・ブレード",
+    "probability": 1
+  },
+  {
+    "id": 173,
+    "enemyId": 194,
+    "enemyName": "サンダーソード",
+    "type": "steal",
+    "itemId": 154,
+    "itemName": "ブラックソディ",
+    "probability": 60
+  },
+  {
+    "id": 174,
+    "enemyId": 18,
+    "enemyName": "サイズキャリアー",
+    "type": "drop",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "probability": 20
+  },
+  {
+    "id": 175,
+    "enemyId": 18,
+    "enemyName": "サイズキャリアー",
+    "type": "drop",
+    "itemId": 37,
+    "itemName": "リバースドール",
+    "probability": 10
+  },
+  {
+    "id": 176,
+    "enemyId": 18,
+    "enemyName": "サイズキャリアー",
+    "type": "steal",
+    "itemId": 37,
+    "itemName": "リバースドール",
+    "probability": 40
+  },
+  {
+    "id": 177,
+    "enemyId": 183,
+    "enemyName": "シースピン",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 178,
+    "enemyId": 183,
+    "enemyName": "シースピン",
+    "type": "drop",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "probability": 25
+  },
+  {
+    "id": 179,
+    "enemyId": 183,
+    "enemyName": "シースピン",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 180,
+    "enemyId": 171,
+    "enemyName": "サヴェイジビースト",
+    "type": "drop",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 25
+  },
+  {
+    "id": 181,
+    "enemyId": 171,
+    "enemyName": "サヴェイジビースト",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 18
+  },
+  {
+    "id": 182,
+    "enemyId": 171,
+    "enemyName": "サヴェイジビースト",
+    "type": "steal",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 80
+  },
+  {
+    "id": 183,
+    "enemyId": 30,
+    "enemyName": "シースラッグ",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 10
+  },
+  {
+    "id": 184,
+    "enemyId": 30,
+    "enemyName": "シースラッグ",
+    "type": "drop",
+    "itemId": 141,
+    "itemName": "きゅうり",
+    "probability": 28
+  },
+  {
+    "id": 185,
+    "enemyId": 30,
+    "enemyName": "シースラッグ",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 80
+  },
+  {
+    "id": 186,
+    "enemyId": 64,
+    "enemyName": "シーホース",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 187,
+    "enemyId": 64,
+    "enemyName": "シーホース",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 5
+  },
+  {
+    "id": 188,
+    "enemyId": 64,
+    "enemyName": "シーホース",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 189,
+    "enemyId": 73,
+    "enemyName": "シャドウ",
+    "type": "drop",
+    "itemId": 357,
+    "itemName": "フォースリング",
+    "probability": 100
+  },
+  {
+    "id": 190,
+    "enemyId": 73,
+    "enemyName": "シャドウ",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 100
+  },
+  {
+    "id": 191,
+    "enemyId": 62,
+    "enemyName": "ジェントルマン",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 192,
+    "enemyId": 62,
+    "enemyName": "ジェントルマン",
+    "type": "drop",
+    "itemId": 75,
+    "itemName": "セボリー",
+    "probability": 1
+  },
+  {
+    "id": 193,
+    "enemyId": 62,
+    "enemyName": "ジェントルマン",
+    "type": "steal",
+    "itemId": 75,
+    "itemName": "セボリー",
+    "probability": 5
+  },
+  {
+    "id": 194,
+    "enemyId": 33,
+    "enemyName": "シャドウサーバント",
+    "type": "drop",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "probability": 8
+  },
+  {
+    "id": 195,
+    "enemyId": 33,
+    "enemyName": "シャドウサーバント",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 12
+  },
+  {
+    "id": 196,
+    "enemyId": 33,
+    "enemyName": "シャドウサーバント",
+    "type": "steal",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "probability": 60
+  },
+  {
+    "id": 197,
+    "enemyId": 85,
+    "enemyName": "シゼル",
+    "type": "drop",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "probability": 100
+  },
+  {
+    "id": 198,
+    "enemyId": 85,
+    "enemyName": "シゼル",
+    "type": "drop",
+    "itemId": 76,
+    "itemName": "オールディバイト",
+    "probability": 100
+  },
+  {
+    "id": 199,
+    "enemyId": 247,
+    "enemyName": "ジャングラー",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 20
+  },
+  {
+    "id": 200,
+    "enemyId": 247,
+    "enemyName": "ジャングラー",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 20
+  },
+  {
+    "id": 201,
+    "enemyId": 130,
+    "enemyName": "シャーマン",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 15
+  },
+  {
+    "id": 202,
+    "enemyId": 130,
+    "enemyName": "シャーマン",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 5
+  },
+  {
+    "id": 203,
+    "enemyId": 130,
+    "enemyName": "シャーマン",
+    "type": "steal",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 90
+  },
+  {
+    "id": 204,
+    "enemyId": 250,
+    "enemyName": "シャンバルーン",
+    "type": "drop",
+    "itemId": 133,
+    "itemName": "チーズ",
+    "probability": 1
+  },
+  {
+    "id": 205,
+    "enemyId": 250,
+    "enemyName": "シャンバルーン",
+    "type": "drop",
+    "itemId": 132,
+    "itemName": "レタス",
+    "probability": 1
+  },
+  {
+    "id": 206,
+    "enemyId": 234,
+    "enemyName": "シルエシカへい",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 30
+  },
+  {
+    "id": 207,
+    "enemyId": 234,
+    "enemyName": "シルエシカへい",
+    "type": "drop",
+    "itemId": 151,
+    "itemName": "パンヤめん",
+    "probability": 40
+  },
+  {
+    "id": 208,
+    "enemyId": 234,
+    "enemyName": "シルエシカへい",
+    "type": "steal",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "probability": 100
+  },
+  {
+    "id": 209,
+    "enemyId": 189,
+    "enemyName": "スーパースター",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 10
+  },
+  {
+    "id": 210,
+    "enemyId": 189,
+    "enemyName": "スーパースター",
+    "type": "drop",
+    "itemId": 37,
+    "itemName": "リバースドール",
+    "probability": 10
+  },
+  {
+    "id": 211,
+    "enemyId": 189,
+    "enemyName": "スーパースター",
+    "type": "steal",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 50
+  },
+  {
+    "id": 212,
+    "enemyId": 47,
+    "enemyName": "シルフ",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 100
+  },
+  {
+    "id": 213,
+    "enemyId": 47,
+    "enemyName": "シルフ",
+    "type": "drop",
+    "itemId": 358,
+    "itemName": "プロテクトリング",
+    "probability": 100
+  },
+  {
+    "id": 214,
+    "enemyId": 26,
+    "enemyName": "スカーレットニードル",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 25
+  },
+  {
+    "id": 215,
+    "enemyId": 26,
+    "enemyName": "スカーレットニードル",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 80
+  },
+  {
+    "id": 216,
+    "enemyId": 117,
+    "enemyName": "シルルス",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 18
+  },
+  {
+    "id": 217,
+    "enemyId": 117,
+    "enemyName": "シルルス",
+    "type": "drop",
+    "itemId": 156,
+    "itemName": "アマンゴ",
+    "probability": 10
+  },
+  {
+    "id": 218,
+    "enemyId": 117,
+    "enemyName": "シルルス",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 30
+  },
+  {
+    "id": 219,
+    "enemyId": 87,
+    "enemyName": "スカルウォーリア",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 15
+  },
+  {
+    "id": 220,
+    "enemyId": 87,
+    "enemyName": "スカルウォーリア",
+    "type": "drop",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 10
+  },
+  {
+    "id": 221,
+    "enemyId": 43,
+    "enemyName": "ジン",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 22
+  },
+  {
+    "id": 222,
+    "enemyId": 43,
+    "enemyName": "ジン",
+    "type": "steal",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "probability": 60
+  },
+  {
+    "id": 223,
+    "enemyId": 31,
+    "enemyName": "スケルトン",
+    "type": "drop",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 18
+  },
+  {
+    "id": 224,
+    "enemyId": 31,
+    "enemyName": "スケルトン",
+    "type": "drop",
+    "itemId": 44,
+    "itemName": "バスタードソード",
+    "probability": 3
+  },
+  {
+    "id": 225,
+    "enemyId": 31,
+    "enemyName": "スケルトン",
+    "type": "steal",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 90
+  },
+  {
+    "id": 226,
+    "enemyId": 92,
+    "enemyName": "スコーピオン",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 8
+  },
+  {
+    "id": 227,
+    "enemyId": 92,
+    "enemyName": "スコーピオン",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 75
+  },
+  {
+    "id": 228,
+    "enemyId": 63,
+    "enemyName": "スターフィッシュ",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 10
+  },
+  {
+    "id": 229,
+    "enemyId": 181,
+    "enemyName": "ストロングホーン",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 12
+  },
+  {
+    "id": 230,
+    "enemyId": 181,
+    "enemyName": "ストロングホーン",
+    "type": "drop",
+    "itemId": 224,
+    "itemName": "プリティミトン",
+    "probability": 7
+  },
+  {
+    "id": 231,
+    "enemyId": 137,
+    "enemyName": "スティンガー",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 8
+  },
+  {
+    "id": 232,
+    "enemyId": 137,
+    "enemyName": "スティンガー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 15
+  },
+  {
+    "id": 233,
+    "enemyId": 137,
+    "enemyName": "スティンガー",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 80
+  },
+  {
+    "id": 234,
+    "enemyId": 96,
+    "enemyName": "スノーロブスター",
+    "type": "drop",
+    "itemId": 135,
+    "itemName": "エビ",
+    "probability": 50
+  },
+  {
+    "id": 235,
+    "enemyId": 96,
+    "enemyName": "スノーロブスター",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 236,
+    "enemyId": 96,
+    "enemyName": "スノーロブスター",
+    "type": "steal",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "probability": 70
+  },
+  {
+    "id": 237,
+    "enemyId": 89,
+    "enemyName": "ストームクロウ",
+    "type": "drop",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 35
+  },
+  {
+    "id": 238,
+    "enemyId": 89,
+    "enemyName": "ストームクロウ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 239,
+    "enemyId": 89,
+    "enemyName": "ストームクロウ",
+    "type": "steal",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 75
+  },
+  {
+    "id": 240,
+    "enemyId": 248,
+    "enemyName": "スパイラル",
+    "type": "drop",
+    "itemId": 297,
+    "itemName": "フェアリィリング",
+    "probability": 100
+  },
+  {
+    "id": 241,
+    "enemyId": 248,
+    "enemyName": "スパイラル",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 100
+  },
+  {
+    "id": 242,
+    "enemyId": 176,
+    "enemyName": "スピリウム",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 243,
+    "enemyId": 176,
+    "enemyName": "スピリウム",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 3
+  },
+  {
+    "id": 244,
+    "enemyId": 176,
+    "enemyName": "スピリウム",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 245,
+    "enemyId": 124,
+    "enemyName": "スラッガー",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 5
+  },
+  {
+    "id": 246,
+    "enemyId": 124,
+    "enemyName": "スラッガー",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 3
+  },
+  {
+    "id": 247,
+    "enemyId": 124,
+    "enemyName": "スラッガー",
+    "type": "steal",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 90
+  },
+  {
+    "id": 248,
+    "enemyId": 204,
+    "enemyName": "スピリット",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 249,
+    "enemyId": 204,
+    "enemyName": "スピリット",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 5
+  },
+  {
+    "id": 250,
+    "enemyId": 204,
+    "enemyName": "スピリット",
+    "type": "steal",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 40
+  },
+  {
+    "id": 251,
+    "enemyId": 185,
+    "enemyName": "スワンプシング",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 252,
+    "enemyId": 185,
+    "enemyName": "スワンプシング",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 3
+  },
+  {
+    "id": 253,
+    "enemyId": 185,
+    "enemyName": "スワンプシング",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 254,
+    "enemyId": 16,
+    "enemyName": "スペクター",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 8
+  },
+  {
+    "id": 255,
+    "enemyId": 16,
+    "enemyName": "スペクター",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 8
+  },
+  {
+    "id": 256,
+    "enemyId": 16,
+    "enemyName": "スペクター",
+    "type": "steal",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 90
+  },
+  {
+    "id": 257,
+    "enemyId": 252,
+    "enemyName": "セイレーン",
+    "type": "drop",
+    "itemId": 71,
+    "itemName": "トライデント",
+    "probability": 100
+  },
+  {
+    "id": 258,
+    "enemyId": 252,
+    "enemyName": "セイレーン",
+    "type": "drop",
+    "itemId": 348,
+    "itemName": "セフィラ",
+    "probability": 100
+  },
+  {
+    "id": 259,
+    "enemyId": 252,
+    "enemyName": "セイレーン",
+    "type": "steal",
+    "itemId": 91,
+    "itemName": "みずぐも",
+    "probability": 100
+  },
+  {
+    "id": 260,
+    "enemyId": 28,
+    "enemyName": "スライム",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 261,
+    "enemyId": 28,
+    "enemyName": "スライム",
+    "type": "drop",
+    "itemId": 161,
+    "itemName": "こんにゃく",
+    "probability": 15
+  },
+  {
+    "id": 262,
+    "enemyId": 28,
+    "enemyName": "スライム",
+    "type": "steal",
+    "itemId": 161,
+    "itemName": "こんにゃく",
+    "probability": 90
+  },
+  {
+    "id": 263,
+    "enemyId": 208,
+    "enemyName": "セージ",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 10
+  },
+  {
+    "id": 264,
+    "enemyId": 208,
+    "enemyName": "セージ",
+    "type": "drop",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 3
+  },
+  {
+    "id": 265,
+    "enemyId": 208,
+    "enemyName": "セージ",
+    "type": "steal",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 50
+  },
+  {
+    "id": 266,
+    "enemyId": 3,
+    "enemyName": "ソードソルジャー",
+    "type": "drop",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "probability": 40
+  },
+  {
+    "id": 267,
+    "enemyId": 3,
+    "enemyName": "ソードソルジャー",
+    "type": "drop",
+    "itemId": 163,
+    "itemName": "ロングソード",
+    "probability": 2
+  },
+  {
+    "id": 268,
+    "enemyId": 3,
+    "enemyName": "ソードソルジャー",
+    "type": "steal",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "probability": 95
+  },
+  {
+    "id": 269,
+    "enemyId": 48,
+    "enemyName": "セルシウス",
+    "type": "drop",
+    "itemId": 361,
+    "itemName": "レジストリング",
+    "probability": 100
+  },
+  {
+    "id": 270,
+    "enemyId": 48,
+    "enemyName": "セルシウス",
+    "type": "drop",
+    "itemId": 94,
+    "itemName": "フリーズチェック",
+    "probability": 100
+  },
+  {
+    "id": 271,
+    "enemyId": 69,
+    "enemyName": "ゾンビ",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 20
+  },
+  {
+    "id": 272,
+    "enemyId": 69,
+    "enemyName": "ゾンビ",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 5
+  },
+  {
+    "id": 273,
+    "enemyId": 69,
+    "enemyName": "ゾンビ",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 274,
+    "enemyId": 77,
+    "enemyName": "ソーサラー",
+    "type": "drop",
+    "itemId": 140,
+    "itemName": "いちご",
+    "probability": 40
+  },
+  {
+    "id": 275,
+    "enemyId": 77,
+    "enemyName": "ソーサラー",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 276,
+    "enemyId": 77,
+    "enemyName": "ソーサラー",
+    "type": "steal",
+    "itemId": 140,
+    "itemName": "いちご",
+    "probability": 80
+  },
+  {
+    "id": 277,
+    "enemyId": 159,
+    "enemyName": "ダークディザスター",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 278,
+    "enemyId": 159,
+    "enemyName": "ダークディザスター",
+    "type": "drop",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "probability": 3
+  },
+  {
+    "id": 279,
+    "enemyId": 159,
+    "enemyName": "ダークディザスター",
+    "type": "steal",
+    "itemId": 179,
+    "itemName": "ダークボトル",
+    "probability": 75
+  },
+  {
+    "id": 280,
+    "enemyId": 129,
+    "enemyName": "ソーサレス",
+    "type": "drop",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "probability": 50
+  },
+  {
+    "id": 281,
+    "enemyId": 129,
+    "enemyName": "ソーサレス",
+    "type": "drop",
+    "itemId": 278,
+    "itemName": "ミラクルチャーム",
+    "probability": 15
+  },
+  {
+    "id": 282,
+    "enemyId": 129,
+    "enemyName": "ソーサレス",
+    "type": "steal",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "probability": 75
+  },
+  {
+    "id": 283,
+    "enemyId": 131,
+    "enemyName": "ターミガン",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 20
+  },
+  {
+    "id": 284,
+    "enemyId": 131,
+    "enemyName": "ターミガン",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 13
+  },
+  {
+    "id": 285,
+    "enemyId": 131,
+    "enemyName": "ターミガン",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 70
+  },
+  {
+    "id": 286,
+    "enemyId": 175,
+    "enemyName": "ターンタートル",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 12
+  },
+  {
+    "id": 287,
+    "enemyId": 175,
+    "enemyName": "ターンタートル",
+    "type": "drop",
+    "itemId": 79,
+    "itemName": "ベルベーヌ",
+    "probability": 1
+  },
+  {
+    "id": 288,
+    "enemyId": 175,
+    "enemyName": "ターンタートル",
+    "type": "steal",
+    "itemId": 79,
+    "itemName": "ベルベーヌ",
+    "probability": 8
+  },
+  {
+    "id": 289,
+    "enemyId": 138,
+    "enemyName": "ダイアーウルフ",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 18
+  },
+  {
+    "id": 290,
+    "enemyId": 138,
+    "enemyName": "ダイアーウルフ",
+    "type": "drop",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "probability": 30
+  },
+  {
+    "id": 291,
+    "enemyId": 138,
+    "enemyName": "ダイアーウルフ",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 80
+  },
+  {
+    "id": 292,
+    "enemyId": 140,
+    "enemyName": "デス",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 15
+  },
+  {
+    "id": 293,
+    "enemyId": 140,
+    "enemyName": "デス",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 294,
+    "enemyId": 251,
+    "enemyName": "ダイナソア",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 15
+  },
+  {
+    "id": 295,
+    "enemyId": 251,
+    "enemyName": "ダイナソア",
+    "type": "drop",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "probability": 1
+  },
+  {
+    "id": 296,
+    "enemyId": 251,
+    "enemyName": "ダイナソア",
+    "type": "steal",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "probability": 11
+  },
+  {
+    "id": 297,
+    "enemyId": 215,
+    "enemyName": "デッドリーインセクト",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 10
+  },
+  {
+    "id": 298,
+    "enemyId": 215,
+    "enemyName": "デッドリーインセクト",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 6
+  },
+  {
+    "id": 299,
+    "enemyId": 215,
+    "enemyName": "デッドリーインセクト",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 80
+  },
+  {
+    "id": 300,
+    "enemyId": 218,
+    "enemyName": "タランチュラ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 301,
+    "enemyId": 218,
+    "enemyName": "タランチュラ",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 13
+  },
+  {
+    "id": 302,
+    "enemyId": 218,
+    "enemyName": "タランチュラ",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 303,
+    "enemyId": 144,
+    "enemyName": "テトラタスク",
+    "type": "drop",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "probability": 50
+  },
+  {
+    "id": 304,
+    "enemyId": 144,
+    "enemyName": "テトラタスク",
+    "type": "drop",
+    "itemId": 358,
+    "itemName": "プロテクトリング",
+    "probability": 8
+  },
+  {
+    "id": 305,
+    "enemyId": 144,
+    "enemyName": "テトラタスク",
+    "type": "steal",
+    "itemId": 358,
+    "itemName": "プロテクトリング",
+    "probability": 20
+  },
+  {
+    "id": 306,
+    "enemyId": 125,
+    "enemyName": "デュエリスト",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 307,
+    "enemyId": 125,
+    "enemyName": "デュエリスト",
+    "type": "drop",
+    "itemId": 60,
+    "itemName": "ラベンダー",
+    "probability": 1
+  },
+  {
+    "id": 308,
+    "enemyId": 125,
+    "enemyName": "デュエリスト",
+    "type": "steal",
+    "itemId": 60,
+    "itemName": "ラベンダー",
+    "probability": 20
+  },
+  {
+    "id": 309,
+    "enemyId": 136,
+    "enemyName": "テンタクルプラント",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 8
+  },
+  {
+    "id": 310,
+    "enemyId": 136,
+    "enemyName": "テンタクルプラント",
+    "type": "drop",
+    "itemId": 156,
+    "itemName": "アマンゴ",
+    "probability": 25
+  },
+  {
+    "id": 311,
+    "enemyId": 136,
+    "enemyName": "テンタクルプラント",
+    "type": "steal",
+    "itemId": 156,
+    "itemName": "アマンゴ",
+    "probability": 80
+  },
+  {
+    "id": 312,
+    "enemyId": 113,
+    "enemyName": "テラー",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 10
+  },
+  {
+    "id": 313,
+    "enemyId": 113,
+    "enemyName": "テラー",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 80
+  },
+  {
+    "id": 314,
+    "enemyId": 36,
+    "enemyName": "ドードー",
+    "type": "drop",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 20
+  },
+  {
+    "id": 315,
+    "enemyId": 36,
+    "enemyName": "ドードー",
+    "type": "steal",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 80
+  },
+  {
+    "id": 316,
+    "enemyId": 9,
+    "enemyName": "テラーニードル",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 3
+  },
+  {
+    "id": 317,
+    "enemyId": 98,
+    "enemyName": "トールマン",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 12
+  },
+  {
+    "id": 318,
+    "enemyId": 98,
+    "enemyName": "トールマン",
+    "type": "drop",
+    "itemId": 162,
+    "itemName": "パープルソディ",
+    "probability": 9
+  },
+  {
+    "id": 319,
+    "enemyId": 98,
+    "enemyName": "トールマン",
+    "type": "steal",
+    "itemId": 162,
+    "itemName": "パープルソディ",
+    "probability": 40
+  },
+  {
+    "id": 320,
+    "enemyId": 239,
+    "enemyName": "テリブルテンタクル",
+    "type": "drop",
+    "itemId": 158,
+    "itemName": "キウイ",
+    "probability": 15
+  },
+  {
+    "id": 321,
+    "enemyId": 239,
+    "enemyName": "テリブルテンタクル",
+    "type": "drop",
+    "itemId": 52,
+    "itemName": "メンタルリング",
+    "probability": 5
+  },
+  {
+    "id": 322,
+    "enemyId": 239,
+    "enemyName": "テリブルテンタクル",
+    "type": "steal",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 95
+  },
+  {
+    "id": 323,
+    "enemyId": 187,
+    "enemyName": "トライゴン",
+    "type": "drop",
+    "itemId": 60,
+    "itemName": "ラベンダー",
+    "probability": 11
+  },
+  {
+    "id": 324,
+    "enemyId": 187,
+    "enemyName": "トライゴン",
+    "type": "drop",
+    "itemId": 79,
+    "itemName": "ベルベーヌ",
+    "probability": 11
+  },
+  {
+    "id": 325,
+    "enemyId": 156,
+    "enemyName": "ドラゴントゥース",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 326,
+    "enemyId": 156,
+    "enemyName": "ドラゴントゥース",
+    "type": "drop",
+    "itemId": 358,
+    "itemName": "プロテクトリング",
+    "probability": 10
+  },
+  {
+    "id": 327,
+    "enemyId": 156,
+    "enemyName": "ドラゴントゥース",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 100
+  },
+  {
+    "id": 328,
+    "enemyId": 158,
+    "enemyName": "トレント",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 12
+  },
+  {
+    "id": 329,
+    "enemyId": 158,
+    "enemyName": "トレント",
+    "type": "drop",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 35
+  },
+  {
+    "id": 330,
+    "enemyId": 158,
+    "enemyName": "トレント",
+    "type": "steal",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 80
+  },
+  {
+    "id": 331,
+    "enemyId": 207,
+    "enemyName": "ドルイド",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 332,
+    "enemyId": 207,
+    "enemyName": "ドルイド",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 3
+  },
+  {
+    "id": 333,
+    "enemyId": 207,
+    "enemyName": "ドルイド",
+    "type": "steal",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 50
+  },
+  {
+    "id": 334,
+    "enemyId": 173,
+    "enemyName": "トロピクスワーム",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 335,
+    "enemyId": 173,
+    "enemyName": "トロピクスワーム",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 336,
+    "enemyId": 173,
+    "enemyName": "トロピクスワーム",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 337,
+    "enemyId": 216,
+    "enemyName": "ドレイク",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 13
+  },
+  {
+    "id": 338,
+    "enemyId": 216,
+    "enemyName": "ドレイク",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 5
+  },
+  {
+    "id": 339,
+    "enemyId": 216,
+    "enemyName": "ドレイク",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 80
+  },
+  {
+    "id": 340,
+    "enemyId": 143,
+    "enemyName": "ナイトウィング",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 20
+  },
+  {
+    "id": 341,
+    "enemyId": 143,
+    "enemyName": "ナイトウィング",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 15
+  },
+  {
+    "id": 342,
+    "enemyId": 143,
+    "enemyName": "ナイトウィング",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 343,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 20
+  },
+  {
+    "id": 344,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "drop",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "probability": 12
+  },
+  {
+    "id": 345,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "steal",
+    "itemId": 142,
+    "itemName": "ミルク",
+    "probability": 75
+  },
+  {
+    "id": 346,
+    "enemyId": 17,
+    "enemyName": "ナイトレイド",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 12
+  },
+  {
+    "id": 347,
+    "enemyId": 17,
+    "enemyName": "ナイトレイド",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 5
+  },
+  {
+    "id": 348,
+    "enemyId": 17,
+    "enemyName": "ナイトレイド",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 349,
+    "enemyId": 254,
+    "enemyName": "（ネレイド）",
+    "type": "drop",
+    "itemId": 77,
+    "itemName": "アワーグラス",
+    "probability": 70
+  },
+  {
+    "id": 350,
+    "enemyId": 254,
+    "enemyName": "（ネレイド）",
+    "type": "drop",
+    "itemId": 37,
+    "itemName": "リバースドール",
+    "probability": 70
+  },
+  {
+    "id": 351,
+    "enemyId": 254,
+    "enemyName": "（ネレイド）",
+    "type": "steal",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 20
+  },
+  {
+    "id": 352,
+    "enemyId": 100,
+    "enemyName": "ニードルシェル",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 13
+  },
+  {
+    "id": 353,
+    "enemyId": 100,
+    "enemyName": "ニードルシェル",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 75
+  },
+  {
+    "id": 354,
+    "enemyId": 147,
+    "enemyName": "ノクタールフライ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 15
+  },
+  {
+    "id": 355,
+    "enemyId": 147,
+    "enemyName": "ノクタールフライ",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 356,
+    "enemyId": 147,
+    "enemyName": "ノクタールフライ",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 70
+  },
+  {
+    "id": 357,
+    "enemyId": 68,
+    "enemyName": "ハーピー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 358,
+    "enemyId": 68,
+    "enemyName": "ハーピー",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 10
+  },
+  {
+    "id": 359,
+    "enemyId": 38,
+    "enemyName": "バイオレントバイパー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 10
+  },
+  {
+    "id": 360,
+    "enemyId": 38,
+    "enemyName": "バイオレントバイパー",
+    "type": "drop",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 10
+  },
+  {
+    "id": 361,
+    "enemyId": 38,
+    "enemyName": "バイオレントバイパー",
+    "type": "steal",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 50
+  },
+  {
+    "id": 362,
+    "enemyId": 22,
+    "enemyName": "パースビートル",
+    "type": "drop",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 8
+  },
+  {
+    "id": 363,
+    "enemyId": 22,
+    "enemyName": "パースビートル",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 8
+  },
+  {
+    "id": 364,
+    "enemyId": 22,
+    "enemyName": "パースビートル",
+    "type": "steal",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 50
+  },
+  {
+    "id": 365,
+    "enemyId": 224,
+    "enemyName": "パイレーツ",
+    "type": "drop",
+    "itemId": 136,
+    "itemName": "いか",
+    "probability": 20
+  },
+  {
+    "id": 366,
+    "enemyId": 224,
+    "enemyName": "パイレーツ",
+    "type": "drop",
+    "itemId": 146,
+    "itemName": "まぐろ",
+    "probability": 20
+  },
+  {
+    "id": 367,
+    "enemyId": 224,
+    "enemyName": "パイレーツ",
+    "type": "steal",
+    "itemId": 136,
+    "itemName": "いか",
+    "probability": 80
+  },
+  {
+    "id": 368,
+    "enemyId": 58,
+    "enemyName": "ハードホーン",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 5
+  },
+  {
+    "id": 369,
+    "enemyId": 58,
+    "enemyName": "ハードホーン",
+    "type": "drop",
+    "itemId": 303,
+    "itemName": "アースブレイド",
+    "probability": 4
+  },
+  {
+    "id": 370,
+    "enemyId": 58,
+    "enemyName": "ハードホーン",
+    "type": "steal",
+    "itemId": 303,
+    "itemName": "アースブレイド",
+    "probability": 20
+  },
+  {
+    "id": 371,
+    "enemyId": 198,
+    "enemyName": "バッファロー",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 25
+  },
+  {
+    "id": 372,
+    "enemyId": 198,
+    "enemyName": "バッファロー",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 50
+  },
+  {
+    "id": 373,
+    "enemyId": 23,
+    "enemyName": "バトラー",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 35
+  },
+  {
+    "id": 374,
+    "enemyId": 23,
+    "enemyName": "バトラー",
+    "type": "drop",
+    "itemId": 130,
+    "itemName": "ブレッド",
+    "probability": 35
+  },
+  {
+    "id": 375,
+    "enemyId": 23,
+    "enemyName": "バトラー",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 90
+  },
+  {
+    "id": 376,
+    "enemyId": 179,
+    "enemyName": "ハンター",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 10
+  },
+  {
+    "id": 377,
+    "enemyId": 179,
+    "enemyName": "ハンター",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 5
+  },
+  {
+    "id": 378,
+    "enemyId": 179,
+    "enemyName": "ハンター",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 90
+  },
+  {
+    "id": 379,
+    "enemyId": 108,
+    "enemyName": "バルドヘッド",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 380,
+    "enemyId": 108,
+    "enemyName": "バルドヘッド",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 3
+  },
+  {
+    "id": 381,
+    "enemyId": 108,
+    "enemyName": "バルドヘッド",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 382,
+    "enemyId": 172,
+    "enemyName": "バンダースナッチ",
+    "type": "drop",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 20
+  },
+  {
+    "id": 383,
+    "enemyId": 172,
+    "enemyName": "バンダースナッチ",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 13
+  },
+  {
+    "id": 384,
+    "enemyId": 172,
+    "enemyName": "バンダースナッチ",
+    "type": "steal",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 90
+  },
+  {
+    "id": 385,
+    "enemyId": 161,
+    "enemyName": "パワープラント",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 8
+  },
+  {
+    "id": 386,
+    "enemyId": 161,
+    "enemyName": "パワープラント",
+    "type": "drop",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "probability": 20
+  },
+  {
+    "id": 387,
+    "enemyId": 161,
+    "enemyName": "パワープラント",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 388,
+    "enemyId": 165,
+    "enemyName": "ハンチバック",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 389,
+    "enemyId": 165,
+    "enemyName": "ハンチバック",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 3
+  },
+  {
+    "id": 390,
+    "enemyId": 165,
+    "enemyName": "ハンチバック",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 391,
+    "enemyId": 145,
+    "enemyName": "ハンガーブラット",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 392,
+    "enemyId": 145,
+    "enemyName": "ハンガーブラット",
+    "type": "drop",
+    "itemId": 153,
+    "itemName": "タスクのにく",
+    "probability": 25
+  },
+  {
+    "id": 393,
+    "enemyId": 145,
+    "enemyName": "ハンガーブラット",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 394,
+    "enemyId": 10,
+    "enemyName": "ハンマースロアー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 12
+  },
+  {
+    "id": 395,
+    "enemyId": 10,
+    "enemyName": "ハンマースロアー",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 25
+  },
+  {
+    "id": 396,
+    "enemyId": 10,
+    "enemyName": "ハンマースロアー",
+    "type": "steal",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 90
+  },
+  {
+    "id": 397,
+    "enemyId": 128,
+    "enemyName": "ビーストオーガー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 15
+  },
+  {
+    "id": 398,
+    "enemyId": 128,
+    "enemyName": "ビーストオーガー",
+    "type": "drop",
+    "itemId": 322,
+    "itemName": "スターメイス",
+    "probability": 10
+  },
+  {
+    "id": 399,
+    "enemyId": 128,
+    "enemyName": "ビーストオーガー",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 50
+  },
+  {
+    "id": 400,
+    "enemyId": 225,
+    "enemyName": "ヒアデス",
+    "type": "drop",
+    "itemId": 362,
+    "itemName": "メンタルバングル",
+    "probability": 100
+  },
+  {
+    "id": 401,
+    "enemyId": 225,
+    "enemyName": "ヒアデス",
+    "type": "drop",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 100
+  },
+  {
+    "id": 402,
+    "enemyId": 42,
+    "enemyName": "ビートビースト",
+    "type": "drop",
+    "itemId": 159,
+    "itemName": "ビート",
+    "probability": 25
+  },
+  {
+    "id": 403,
+    "enemyId": 42,
+    "enemyName": "ビートビースト",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 5
+  },
+  {
+    "id": 404,
+    "enemyId": 42,
+    "enemyName": "ビートビースト",
+    "type": "steal",
+    "itemId": 159,
+    "itemName": "ビート",
+    "probability": 80
+  },
+  {
+    "id": 405,
+    "enemyId": 111,
+    "enemyName": "ビッグフット",
+    "type": "drop",
+    "itemId": 58,
+    "itemName": "セージ",
+    "probability": 7
+  },
+  {
+    "id": 406,
+    "enemyId": 111,
+    "enemyName": "ビッグフット",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 407,
+    "enemyId": 126,
+    "enemyName": "ピーケー",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 20
+  },
+  {
+    "id": 408,
+    "enemyId": 126,
+    "enemyName": "ピーケー",
+    "type": "drop",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 13
+  },
+  {
+    "id": 409,
+    "enemyId": 126,
+    "enemyName": "ピーケー",
+    "type": "steal",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 90
+  },
+  {
+    "id": 410,
+    "enemyId": 102,
+    "enemyName": "ファイアウォーリア",
+    "type": "drop",
+    "itemId": 334,
+    "itemName": "カオスシールド",
+    "probability": 12
+  },
+  {
+    "id": 411,
+    "enemyId": 102,
+    "enemyName": "ファイアウォーリア",
+    "type": "drop",
+    "itemId": 155,
+    "itemName": "レッドソディ",
+    "probability": 15
+  },
+  {
+    "id": 412,
+    "enemyId": 102,
+    "enemyName": "ファイアウォーリア",
+    "type": "steal",
+    "itemId": 155,
+    "itemName": "レッドソディ",
+    "probability": 80
+  },
+  {
+    "id": 413,
+    "enemyId": 105,
+    "enemyName": "ファイアフライヤー",
+    "type": "drop",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "probability": 10
+  },
+  {
+    "id": 414,
+    "enemyId": 105,
+    "enemyName": "ファイアフライヤー",
+    "type": "steal",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "probability": 60
+  },
+  {
+    "id": 415,
+    "enemyId": 236,
+    "enemyName": "ファルシアホーンズ",
+    "type": "drop",
+    "itemId": 296,
+    "itemName": "やまつの",
+    "probability": 35
+  },
+  {
+    "id": 416,
+    "enemyId": 236,
+    "enemyName": "ファルシアホーンズ",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 10
+  },
+  {
+    "id": 417,
+    "enemyId": 236,
+    "enemyName": "ファルシアホーンズ",
+    "type": "steal",
+    "itemId": 296,
+    "itemName": "やまつの",
+    "probability": 70
+  },
+  {
+    "id": 418,
+    "enemyId": 78,
+    "enemyName": "ファイアバード",
+    "type": "drop",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 20
+  },
+  {
+    "id": 419,
+    "enemyId": 78,
+    "enemyName": "ファイアバード",
+    "type": "drop",
+    "itemId": 302,
+    "itemName": "フランベルジュ",
+    "probability": 12
+  },
+  {
+    "id": 420,
+    "enemyId": 78,
+    "enemyName": "ファイアバード",
+    "type": "steal",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 95
+  },
+  {
+    "id": 421,
+    "enemyId": 240,
+    "enemyName": "ファンガスネイル",
+    "type": "drop",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "probability": 18
+  },
+  {
+    "id": 422,
+    "enemyId": 240,
+    "enemyName": "ファンガスネイル",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 10
+  },
+  {
+    "id": 423,
+    "enemyId": 240,
+    "enemyName": "ファンガスネイル",
+    "type": "steal",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "probability": 80
+  },
+  {
+    "id": 424,
+    "enemyId": 214,
+    "enemyName": "ファイアバグ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 35
+  },
+  {
+    "id": 425,
+    "enemyId": 214,
+    "enemyName": "ファイアバグ",
+    "type": "drop",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "probability": 5
+  },
+  {
+    "id": 426,
+    "enemyId": 214,
+    "enemyName": "ファイアバグ",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 75
+  },
+  {
+    "id": 427,
+    "enemyId": 118,
+    "enemyName": "ファントム",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 5
+  },
+  {
+    "id": 428,
+    "enemyId": 118,
+    "enemyName": "ファントム",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 3
+  },
+  {
+    "id": 429,
+    "enemyId": 118,
+    "enemyName": "ファントム",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 430,
+    "enemyId": 103,
+    "enemyName": "ファントムナイト",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 15
+  },
+  {
+    "id": 431,
+    "enemyId": 103,
+    "enemyName": "ファントムナイト",
+    "type": "drop",
+    "itemId": 363,
+    "itemName": "オーダーシールド",
+    "probability": 8
+  },
+  {
+    "id": 432,
+    "enemyId": 103,
+    "enemyName": "ファントムナイト",
+    "type": "steal",
+    "itemId": 363,
+    "itemName": "オーダーシールド",
+    "probability": 35
+  },
+  {
+    "id": 433,
+    "enemyId": 95,
+    "enemyName": "フォリクルス",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 15
+  },
+  {
+    "id": 434,
+    "enemyId": 95,
+    "enemyName": "フォリクルス",
+    "type": "drop",
+    "itemId": 309,
+    "itemName": "ストライクアクス",
+    "probability": 12
+  },
+  {
+    "id": 435,
+    "enemyId": 244,
+    "enemyName": "フェイク",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 100
+  },
+  {
+    "id": 436,
+    "enemyId": 244,
+    "enemyName": "フェイク",
+    "type": "steal",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 50
+  },
+  {
+    "id": 437,
+    "enemyId": 150,
+    "enemyName": "フォレストホーク",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 10
+  },
+  {
+    "id": 438,
+    "enemyId": 150,
+    "enemyName": "フォレストホーク",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 5
+  },
+  {
+    "id": 439,
+    "enemyId": 150,
+    "enemyName": "フォレストホーク",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 440,
+    "enemyId": 83,
+    "enemyName": "フェザーマジック",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 441,
+    "enemyId": 83,
+    "enemyName": "フェザーマジック",
+    "type": "drop",
+    "itemId": 210,
+    "itemName": "グレートソード",
+    "probability": 13
+  },
+  {
+    "id": 442,
+    "enemyId": 83,
+    "enemyName": "フェザーマジック",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 443,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "drop",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 5
+  },
+  {
+    "id": 444,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 8
+  },
+  {
+    "id": 445,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "steal",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 35
+  },
+  {
+    "id": 446,
+    "enemyId": 209,
+    "enemyName": "フェニックス",
+    "type": "drop",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "probability": 10
+  },
+  {
+    "id": 447,
+    "enemyId": 209,
+    "enemyName": "フェニックス",
+    "type": "drop",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "probability": 15
+  },
+  {
+    "id": 448,
+    "enemyId": 209,
+    "enemyName": "フェニックス",
+    "type": "steal",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "probability": 80
+  },
+  {
+    "id": 449,
+    "enemyId": 226,
+    "enemyName": "フライングポリープ",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 10
+  },
+  {
+    "id": 450,
+    "enemyId": 226,
+    "enemyName": "フライングポリープ",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 3
+  },
+  {
+    "id": 451,
+    "enemyId": 226,
+    "enemyName": "フライングポリープ",
+    "type": "steal",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 50
+  },
+  {
+    "id": 452,
+    "enemyId": 44,
+    "enemyName": "ブラウンポット",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 15
+  },
+  {
+    "id": 453,
+    "enemyId": 44,
+    "enemyName": "ブラウンポット",
+    "type": "drop",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "probability": 3
+  },
+  {
+    "id": 454,
+    "enemyId": 44,
+    "enemyName": "ブラウンポット",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 80
+  },
+  {
+    "id": 455,
+    "enemyId": 206,
+    "enemyName": "ブリーブ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 35
+  },
+  {
+    "id": 456,
+    "enemyId": 206,
+    "enemyName": "ブリーブ",
+    "type": "drop",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "probability": 1
+  },
+  {
+    "id": 457,
+    "enemyId": 206,
+    "enemyName": "ブリーブ",
+    "type": "steal",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "probability": 20
+  },
+  {
+    "id": 458,
+    "enemyId": 86,
+    "enemyName": "ブラッドサッカー",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 10
+  },
+  {
+    "id": 459,
+    "enemyId": 86,
+    "enemyName": "ブラッドサッカー",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 80
+  },
+  {
+    "id": 460,
+    "enemyId": 213,
+    "enemyName": "ブルーローパー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 461,
+    "enemyId": 213,
+    "enemyName": "ブルーローパー",
+    "type": "drop",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "probability": 15
+  },
+  {
+    "id": 462,
+    "enemyId": 213,
+    "enemyName": "ブルーローパー",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 75
+  },
+  {
+    "id": 463,
+    "enemyId": 37,
+    "enemyName": "ブラッドバイター",
+    "type": "drop",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 35
+  },
+  {
+    "id": 464,
+    "enemyId": 37,
+    "enemyName": "ブラッドバイター",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 15
+  },
+  {
+    "id": 465,
+    "enemyId": 37,
+    "enemyName": "ブラッドバイター",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 40
+  },
+  {
+    "id": 466,
+    "enemyId": 164,
+    "enemyName": "ブルフロッグ",
+    "type": "drop",
+    "itemId": 141,
+    "itemName": "きゅうり",
+    "probability": 25
+  },
+  {
+    "id": 467,
+    "enemyId": 164,
+    "enemyName": "ブルフロッグ",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 468,
+    "enemyId": 164,
+    "enemyName": "ブルフロッグ",
+    "type": "steal",
+    "itemId": 141,
+    "itemName": "きゅうり",
+    "probability": 80
+  },
+  {
+    "id": 469,
+    "enemyId": 199,
+    "enemyName": "ブリーズキーパー",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 10
+  },
+  {
+    "id": 470,
+    "enemyId": 199,
+    "enemyName": "ブリーズキーパー",
+    "type": "steal",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 30
+  },
+  {
+    "id": 471,
+    "enemyId": 151,
+    "enemyName": "プレイリーホーク",
+    "type": "drop",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 40
+  },
+  {
+    "id": 472,
+    "enemyId": 151,
+    "enemyName": "プレイリーホーク",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 35
+  },
+  {
+    "id": 473,
+    "enemyId": 151,
+    "enemyName": "プレイリーホーク",
+    "type": "steal",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 95
+  },
+  {
+    "id": 474,
+    "enemyId": 162,
+    "enemyName": "プローズヘアー",
+    "type": "drop",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 25
+  },
+  {
+    "id": 475,
+    "enemyId": 162,
+    "enemyName": "プローズヘアー",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 5
+  },
+  {
+    "id": 476,
+    "enemyId": 162,
+    "enemyName": "プローズヘアー",
+    "type": "steal",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 80
+  },
+  {
+    "id": 477,
+    "enemyId": 217,
+    "enemyName": "ヘルカイト",
+    "type": "drop",
+    "itemId": 58,
+    "itemName": "セージ",
+    "probability": 10
+  },
+  {
+    "id": 478,
+    "enemyId": 217,
+    "enemyName": "ヘルカイト",
+    "type": "drop",
+    "itemId": 103,
+    "itemName": "レッドセージ",
+    "probability": 8
+  },
+  {
+    "id": 479,
+    "enemyId": 190,
+    "enemyName": "フロートドラゴン",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 10
+  },
+  {
+    "id": 480,
+    "enemyId": 190,
+    "enemyName": "フロートドラゴン",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 5
+  },
+  {
+    "id": 481,
+    "enemyId": 190,
+    "enemyName": "フロートドラゴン",
+    "type": "steal",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 25
+  },
+  {
+    "id": 482,
+    "enemyId": 139,
+    "enemyName": "ヘルハウンド",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 483,
+    "enemyId": 139,
+    "enemyName": "ヘルハウンド",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 484,
+    "enemyId": 139,
+    "enemyName": "ヘルハウンド",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 485,
+    "enemyId": 107,
+    "enemyName": "ヘヴィリフター",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 12
+  },
+  {
+    "id": 486,
+    "enemyId": 107,
+    "enemyName": "ヘヴィリフター",
+    "type": "drop",
+    "itemId": 134,
+    "itemName": "パスタ",
+    "probability": 35
+  },
+  {
+    "id": 487,
+    "enemyId": 107,
+    "enemyName": "ヘヴィリフター",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 75
+  },
+  {
+    "id": 488,
+    "enemyId": 93,
+    "enemyName": "ポアス",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 489,
+    "enemyId": 93,
+    "enemyName": "ポアス",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 490,
+    "enemyId": 21,
+    "enemyName": "ヘビースネーク",
+    "type": "drop",
+    "itemId": 153,
+    "itemName": "タスクのにく",
+    "probability": 20
+  },
+  {
+    "id": 491,
+    "enemyId": 21,
+    "enemyName": "ヘビースネーク",
+    "type": "drop",
+    "itemId": 316,
+    "itemName": "ボーンナックル",
+    "probability": 10
+  },
+  {
+    "id": 492,
+    "enemyId": 21,
+    "enemyName": "ヘビースネーク",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 493,
+    "enemyId": 154,
+    "enemyName": "ポイズントード",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 8
+  },
+  {
+    "id": 494,
+    "enemyId": 154,
+    "enemyName": "ポイズントード",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 5
+  },
+  {
+    "id": 495,
+    "enemyId": 154,
+    "enemyName": "ポイズントード",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 70
+  },
+  {
+    "id": 496,
+    "enemyId": 90,
+    "enemyName": "ホーネット",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 12
+  },
+  {
+    "id": 497,
+    "enemyId": 90,
+    "enemyName": "ホーネット",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 75
+  },
+  {
+    "id": 498,
+    "enemyId": 25,
+    "enemyName": "ボルテック",
+    "type": "drop",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "probability": 12
+  },
+  {
+    "id": 499,
+    "enemyId": 25,
+    "enemyName": "ボルテック",
+    "type": "steal",
+    "itemId": 69,
+    "itemName": "フレアボトル",
+    "probability": 95
+  },
+  {
+    "id": 500,
+    "enemyId": 155,
+    "enemyName": "ボーンナイト",
+    "type": "drop",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "probability": 18
+  },
+  {
+    "id": 501,
+    "enemyId": 155,
+    "enemyName": "ボーンナイト",
+    "type": "drop",
+    "itemId": 301,
+    "itemName": "ニンブルレイピア",
+    "probability": 10
+  },
+  {
+    "id": 502,
+    "enemyId": 155,
+    "enemyName": "ボーンナイト",
+    "type": "steal",
+    "itemId": 301,
+    "itemName": "ニンブルレイピア",
+    "probability": 50
+  },
+  {
+    "id": 503,
+    "enemyId": 12,
+    "enemyName": "マーキングプラント",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 5
+  },
+  {
+    "id": 504,
+    "enemyId": 12,
+    "enemyName": "マーキングプラント",
+    "type": "drop",
+    "itemId": 132,
+    "itemName": "レタス",
+    "probability": 30
+  },
+  {
+    "id": 505,
+    "enemyId": 12,
+    "enemyName": "マーキングプラント",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 95
+  },
+  {
+    "id": 506,
+    "enemyId": 200,
+    "enemyName": "ホムンクルス",
+    "type": "drop",
+    "itemId": 151,
+    "itemName": "パンヤめん",
+    "probability": 15
+  },
+  {
+    "id": 507,
+    "enemyId": 200,
+    "enemyName": "ホムンクルス",
+    "type": "drop",
+    "itemId": 60,
+    "itemName": "ラベンダー",
+    "probability": 1
+  },
+  {
+    "id": 508,
+    "enemyId": 220,
+    "enemyName": "マーダー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 13
+  },
+  {
+    "id": 509,
+    "enemyId": 220,
+    "enemyName": "マーダー",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 10
+  },
+  {
+    "id": 510,
+    "enemyId": 220,
+    "enemyName": "マーダー",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 511,
+    "enemyId": 74,
+    "enemyName": "ポルターガイスト",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 85
+  },
+  {
+    "id": 512,
+    "enemyId": 74,
+    "enemyName": "ポルターガイスト",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 513,
+    "enemyId": 74,
+    "enemyName": "ポルターガイスト",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 514,
+    "enemyId": 53,
+    "enemyName": "マイコニド",
+    "type": "drop",
+    "itemId": 160,
+    "itemName": "とうふ",
+    "probability": 25
+  },
+  {
+    "id": 515,
+    "enemyId": 53,
+    "enemyName": "マイコニド",
+    "type": "drop",
+    "itemId": 311,
+    "itemName": "コルセスカ",
+    "probability": 8
+  },
+  {
+    "id": 516,
+    "enemyId": 53,
+    "enemyName": "マイコニド",
+    "type": "steal",
+    "itemId": 160,
+    "itemName": "とうふ",
+    "probability": 90
+  },
+  {
+    "id": 517,
+    "enemyId": 174,
+    "enemyName": "マウントワーム",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 518,
+    "enemyId": 174,
+    "enemyName": "マウントワーム",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 6
+  },
+  {
+    "id": 519,
+    "enemyId": 174,
+    "enemyName": "マウントワーム",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 520,
+    "enemyId": 61,
+    "enemyName": "マッドマン",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 521,
+    "enemyId": 61,
+    "enemyName": "マッドマン",
+    "type": "drop",
+    "itemId": 144,
+    "itemName": "ポテト",
+    "probability": 25
+  },
+  {
+    "id": 522,
+    "enemyId": 61,
+    "enemyName": "マッドマン",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 523,
+    "enemyId": 55,
+    "enemyName": "マクスウェル",
+    "type": "drop",
+    "itemId": 297,
+    "itemName": "フェアリィリング",
+    "probability": 100
+  },
+  {
+    "id": 524,
+    "enemyId": 55,
+    "enemyName": "マクスウェル",
+    "type": "drop",
+    "itemId": 318,
+    "itemName": "ゴッドウェポン",
+    "probability": 100
+  },
+  {
+    "id": 525,
+    "enemyId": 55,
+    "enemyName": "マクスウェル",
+    "type": "steal",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "probability": 100
+  },
+  {
+    "id": 526,
+    "enemyId": 32,
+    "enemyName": "マホガニー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 8
+  },
+  {
+    "id": 527,
+    "enemyId": 32,
+    "enemyName": "マホガニー",
+    "type": "drop",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 40
+  },
+  {
+    "id": 528,
+    "enemyId": 32,
+    "enemyName": "マホガニー",
+    "type": "steal",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 95
+  },
+  {
+    "id": 529,
+    "enemyId": 114,
+    "enemyName": "マックァツィン",
+    "type": "drop",
+    "itemId": 135,
+    "itemName": "エビ",
+    "probability": 35
+  },
+  {
+    "id": 530,
+    "enemyId": 114,
+    "enemyName": "マックァツィン",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 531,
+    "enemyId": 114,
+    "enemyName": "マックァツィン",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 532,
+    "enemyId": 71,
+    "enemyName": "マンティコア",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 533,
+    "enemyId": 71,
+    "enemyName": "マンティコア",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 10
+  },
+  {
+    "id": 534,
+    "enemyId": 71,
+    "enemyName": "マンティコア",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 535,
+    "enemyId": 15,
+    "enemyName": "マッドイール",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 12
+  },
+  {
+    "id": 536,
+    "enemyId": 15,
+    "enemyName": "マッドイール",
+    "type": "drop",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 25
+  },
+  {
+    "id": 537,
+    "enemyId": 15,
+    "enemyName": "マッドイール",
+    "type": "steal",
+    "itemId": 138,
+    "itemName": "キルマフルーツ",
+    "probability": 80
+  },
+  {
+    "id": 538,
+    "enemyId": 56,
+    "enemyName": "ミスト",
+    "type": "drop",
+    "itemId": 35,
+    "itemName": "リキュールボトル",
+    "probability": 13
+  },
+  {
+    "id": 539,
+    "enemyId": 56,
+    "enemyName": "ミスト",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 25
+  },
+  {
+    "id": 540,
+    "enemyId": 56,
+    "enemyName": "ミスト",
+    "type": "steal",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 90
+  },
+  {
+    "id": 541,
+    "enemyId": 193,
+    "enemyName": "ミスリルゴーレム",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 15
+  },
+  {
+    "id": 542,
+    "enemyId": 193,
+    "enemyName": "ミスリルゴーレム",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 8
+  },
+  {
+    "id": 543,
+    "enemyId": 193,
+    "enemyName": "ミスリルゴーレム",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 90
+  },
+  {
+    "id": 544,
+    "enemyId": 141,
+    "enemyName": "メガデス",
+    "type": "drop",
+    "itemId": 162,
+    "itemName": "パープルソディ",
+    "probability": 4
+  },
+  {
+    "id": 545,
+    "enemyId": 141,
+    "enemyName": "メガデス",
+    "type": "drop",
+    "itemId": 79,
+    "itemName": "ベルベーヌ",
+    "probability": 3
+  },
+  {
+    "id": 546,
+    "enemyId": 141,
+    "enemyName": "メガデス",
+    "type": "steal",
+    "itemId": 162,
+    "itemName": "パープルソディ",
+    "probability": 70
+  },
+  {
+    "id": 547,
+    "enemyId": 54,
+    "enemyName": "ミニコイド",
+    "type": "drop",
+    "itemId": 160,
+    "itemName": "とうふ",
+    "probability": 5
+  },
+  {
+    "id": 548,
+    "enemyId": 54,
+    "enemyName": "ミニコイド",
+    "type": "steal",
+    "itemId": 160,
+    "itemName": "とうふ",
+    "probability": 90
+  },
+  {
+    "id": 549,
+    "enemyId": 149,
+    "enemyName": "メタリカ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 12
+  },
+  {
+    "id": 550,
+    "enemyId": 149,
+    "enemyName": "メタリカ",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 6
+  },
+  {
+    "id": 551,
+    "enemyId": 149,
+    "enemyName": "メタリカ",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 552,
+    "enemyId": 223,
+    "enemyName": "ミラージュナイツ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 18
+  },
+  {
+    "id": 553,
+    "enemyId": 223,
+    "enemyName": "ミラージュナイツ",
+    "type": "drop",
+    "itemId": 101,
+    "itemName": "ピヨハン",
+    "probability": 1
+  },
+  {
+    "id": 554,
+    "enemyId": 223,
+    "enemyName": "ミラージュナイツ",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 95
+  },
+  {
+    "id": 555,
+    "enemyId": 72,
+    "enemyName": "メデューサ",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 18
+  },
+  {
+    "id": 556,
+    "enemyId": 72,
+    "enemyName": "メデューサ",
+    "type": "drop",
+    "itemId": 359,
+    "itemName": "リバヴィウサー",
+    "probability": 1
+  },
+  {
+    "id": 557,
+    "enemyId": 72,
+    "enemyName": "メデューサ",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 90
+  },
+  {
+    "id": 558,
+    "enemyId": 7,
+    "enemyName": "メイジ",
+    "type": "drop",
+    "itemId": 139,
+    "itemName": "レモン",
+    "probability": 35
+  },
+  {
+    "id": 559,
+    "enemyId": 7,
+    "enemyName": "メイジ",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 560,
+    "enemyId": 7,
+    "enemyName": "メイジ",
+    "type": "steal",
+    "itemId": 139,
+    "itemName": "レモン",
+    "probability": 90
+  },
+  {
+    "id": 561,
+    "enemyId": 169,
+    "enemyName": "メルティングポット",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 10
+  },
+  {
+    "id": 562,
+    "enemyId": 169,
+    "enemyName": "メルティングポット",
+    "type": "steal",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 50
+  },
+  {
+    "id": 563,
+    "enemyId": 167,
+    "enemyName": "ラファール",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 8
+  },
+  {
+    "id": 564,
+    "enemyId": 167,
+    "enemyName": "ラファール",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 5
+  },
+  {
+    "id": 565,
+    "enemyId": 167,
+    "enemyName": "ラファール",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 60
+  },
+  {
+    "id": 566,
+    "enemyId": 121,
+    "enemyName": "ラーナ",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 13
+  },
+  {
+    "id": 567,
+    "enemyId": 121,
+    "enemyName": "ラーナ",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 4
+  },
+  {
+    "id": 568,
+    "enemyId": 121,
+    "enemyName": "ラーナ",
+    "type": "steal",
+    "itemId": 157,
+    "itemName": "バナナ",
+    "probability": 80
+  },
+  {
+    "id": 569,
+    "enemyId": 221,
+    "enemyName": "ラミア",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 12
+  },
+  {
+    "id": 570,
+    "enemyId": 221,
+    "enemyName": "ラミア",
+    "type": "drop",
+    "itemId": 79,
+    "itemName": "ベルベーヌ",
+    "probability": 1
+  },
+  {
+    "id": 571,
+    "enemyId": 221,
+    "enemyName": "ラミア",
+    "type": "steal",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 60
+  },
+  {
+    "id": 572,
+    "enemyId": 116,
+    "enemyName": "ラウカマール",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 15
+  },
+  {
+    "id": 573,
+    "enemyId": 116,
+    "enemyName": "ラウカマール",
+    "type": "drop",
+    "itemId": 317,
+    "itemName": "カイザーナックル",
+    "probability": 20
+  },
+  {
+    "id": 574,
+    "enemyId": 116,
+    "enemyName": "ラウカマール",
+    "type": "steal",
+    "itemId": 317,
+    "itemName": "カイザーナックル",
+    "probability": 35
+  },
+  {
+    "id": 575,
+    "enemyId": 91,
+    "enemyName": "リパーシックル",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 576,
+    "enemyId": 91,
+    "enemyName": "リパーシックル",
+    "type": "drop",
+    "itemId": 154,
+    "itemName": "ブラックソディ",
+    "probability": 15
+  },
+  {
+    "id": 577,
+    "enemyId": 91,
+    "enemyName": "リパーシックル",
+    "type": "steal",
+    "itemId": 154,
+    "itemName": "ブラックソディ",
+    "probability": 75
+  },
+  {
+    "id": 578,
+    "enemyId": 35,
+    "enemyName": "ラピットラビット",
+    "type": "drop",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 40
+  },
+  {
+    "id": 579,
+    "enemyId": 35,
+    "enemyName": "ラピットラビット",
+    "type": "drop",
+    "itemId": 85,
+    "itemName": "ラビットシンボル",
+    "probability": 3
+  },
+  {
+    "id": 580,
+    "enemyId": 35,
+    "enemyName": "ラピットラビット",
+    "type": "steal",
+    "itemId": 145,
+    "itemName": "にんじん",
+    "probability": 90
+  },
+  {
+    "id": 581,
+    "enemyId": 66,
+    "enemyName": "リビングソード",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 3
+  },
+  {
+    "id": 582,
+    "enemyId": 66,
+    "enemyName": "リビングソード",
+    "type": "drop",
+    "itemId": 152,
+    "itemName": "ホワイトソディ",
+    "probability": 12
+  },
+  {
+    "id": 583,
+    "enemyId": 66,
+    "enemyName": "リビングソード",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 80
+  },
+  {
+    "id": 584,
+    "enemyId": 132,
+    "enemyName": "レイニーオールド",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 18
+  },
+  {
+    "id": 585,
+    "enemyId": 132,
+    "enemyName": "レイニーオールド",
+    "type": "steal",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 70
+  },
+  {
+    "id": 586,
+    "enemyId": 196,
+    "enemyName": "リビングデッド",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 10
+  },
+  {
+    "id": 587,
+    "enemyId": 196,
+    "enemyName": "リビングデッド",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 3
+  },
+  {
+    "id": 588,
+    "enemyId": 196,
+    "enemyName": "リビングデッド",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 40
+  },
+  {
+    "id": 589,
+    "enemyId": 201,
+    "enemyName": "レヴァント",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 10
+  },
+  {
+    "id": 590,
+    "enemyId": 201,
+    "enemyName": "レヴァント",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 3
+  },
+  {
+    "id": 591,
+    "enemyId": 201,
+    "enemyName": "レヴァント",
+    "type": "steal",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 30
+  },
+  {
+    "id": 592,
+    "enemyId": 123,
+    "enemyName": "ルーター",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 20
+  },
+  {
+    "id": 593,
+    "enemyId": 123,
+    "enemyName": "ルーター",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 13
+  },
+  {
+    "id": 594,
+    "enemyId": 123,
+    "enemyName": "ルーター",
+    "type": "steal",
+    "itemId": 26,
+    "itemName": "フェザーローブ",
+    "probability": 80
+  },
+  {
+    "id": 595,
+    "enemyId": 14,
+    "enemyName": "レッドシザーズ",
+    "type": "drop",
+    "itemId": 135,
+    "itemName": "エビ",
+    "probability": 50
+  },
+  {
+    "id": 596,
+    "enemyId": 14,
+    "enemyName": "レッドシザーズ",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 8
+  },
+  {
+    "id": 597,
+    "enemyId": 14,
+    "enemyName": "レッドシザーズ",
+    "type": "steal",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 95
+  },
+  {
+    "id": 598,
+    "enemyId": 70,
+    "enemyName": "レイシス",
+    "type": "drop",
+    "itemId": 345,
+    "itemName": "ヒールバングル",
+    "probability": 100
+  },
+  {
+    "id": 599,
+    "enemyId": 70,
+    "enemyName": "レイシス",
+    "type": "drop",
+    "itemId": 188,
+    "itemName": "レザーマント",
+    "probability": 100
+  },
+  {
+    "id": 600,
+    "enemyId": 241,
+    "enemyName": "レッドドラゴン",
+    "type": "drop",
+    "itemId": 60,
+    "itemName": "ラベンダー",
+    "probability": 5
+  },
+  {
+    "id": 601,
+    "enemyId": 241,
+    "enemyName": "レッドドラゴン",
+    "type": "steal",
+    "itemId": 60,
+    "itemName": "ラベンダー",
+    "probability": 15
+  },
+  {
+    "id": 602,
+    "enemyId": 153,
+    "enemyName": "レッドプディング",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 20
+  },
+  {
+    "id": 603,
+    "enemyId": 153,
+    "enemyName": "レッドプディング",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 15
+  },
+  {
+    "id": 604,
+    "enemyId": 153,
+    "enemyName": "レッドプディング",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 80
+  },
+  {
+    "id": 605,
+    "enemyId": 120,
+    "enemyName": "レム",
+    "type": "drop",
+    "itemId": 360,
+    "itemName": "リフレクトリング",
+    "probability": 100
+  },
+  {
+    "id": 606,
+    "enemyId": 120,
+    "enemyName": "レム",
+    "type": "drop",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "probability": 100
+  },
+  {
+    "id": 607,
+    "enemyId": 211,
+    "enemyName": "レッドローパー",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 10
+  },
+  {
+    "id": 608,
+    "enemyId": 211,
+    "enemyName": "レッドローパー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 5
+  },
+  {
+    "id": 609,
+    "enemyId": 211,
+    "enemyName": "レッドローパー",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 75
+  },
+  {
+    "id": 610,
+    "enemyId": 180,
+    "enemyName": "レンジャー",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 35
+  },
+  {
+    "id": 611,
+    "enemyId": 180,
+    "enemyName": "レンジャー",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 13
+  },
+  {
+    "id": 612,
+    "enemyId": 180,
+    "enemyName": "レンジャー",
+    "type": "steal",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 80
+  },
+  {
+    "id": 613,
+    "enemyId": 146,
+    "enemyName": "レディバグ",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 15
+  },
+  {
+    "id": 614,
+    "enemyId": 146,
+    "enemyName": "レディバグ",
+    "type": "drop",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 20
+  },
+  {
+    "id": 615,
+    "enemyId": 146,
+    "enemyName": "レディバグ",
+    "type": "steal",
+    "itemId": 137,
+    "itemName": "トマト",
+    "probability": 90
+  },
+  {
+    "id": 616,
+    "enemyId": 122,
+    "enemyName": "ローグ",
+    "type": "drop",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 18
+  },
+  {
+    "id": 617,
+    "enemyId": 122,
+    "enemyName": "ローグ",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 5
+  },
+  {
+    "id": 618,
+    "enemyId": 122,
+    "enemyName": "ローグ",
+    "type": "steal",
+    "itemId": 40,
+    "itemName": "スペクタクルズ",
+    "probability": 90
+  },
+  {
+    "id": 619,
+    "enemyId": 205,
+    "enemyName": "スプティル",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 10
+  },
+  {
+    "id": 620,
+    "enemyId": 205,
+    "enemyName": "スプティル",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 3
+  },
+  {
+    "id": 621,
+    "enemyId": 205,
+    "enemyName": "スプティル",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 60
+  },
+  {
+    "id": 622,
+    "enemyId": 8,
+    "enemyName": "ローラースネイル",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 15
+  },
+  {
+    "id": 623,
+    "enemyId": 8,
+    "enemyName": "ローラースネイル",
+    "type": "drop",
+    "itemId": 18,
+    "itemName": "ホーリィボトル",
+    "probability": 22
+  },
+  {
+    "id": 624,
+    "enemyId": 8,
+    "enemyName": "ローラースネイル",
+    "type": "steal",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 95
+  },
+  {
+    "id": 625,
+    "enemyId": 119,
+    "enemyName": "ロストソウル",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 12
+  },
+  {
+    "id": 626,
+    "enemyId": 119,
+    "enemyName": "ロストソウル",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 6
+  },
+  {
+    "id": 627,
+    "enemyId": 119,
+    "enemyName": "ロストソウル",
+    "type": "steal",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 30
+  },
+  {
+    "id": 628,
+    "enemyId": 197,
+    "enemyName": "ワイト",
+    "type": "drop",
+    "itemId": 134,
+    "itemName": "パスタ",
+    "probability": 15
+  },
+  {
+    "id": 629,
+    "enemyId": 197,
+    "enemyName": "ワイト",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 5
+  },
+  {
+    "id": 630,
+    "enemyId": 27,
+    "enemyName": "ロッキーホーク",
+    "type": "drop",
+    "itemId": 149,
+    "itemName": "たまご",
+    "probability": 30
+  },
+  {
+    "id": 631,
+    "enemyId": 82,
+    "enemyName": "ワイバーン",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 632,
+    "enemyId": 82,
+    "enemyName": "ワイバーン",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 15
+  },
+  {
+    "id": 633,
+    "enemyId": 82,
+    "enemyName": "ワイバーン",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 95
+  },
+  {
+    "id": 634,
+    "enemyId": 65,
+    "enemyName": "ロックゴーレム",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 30
+  },
+  {
+    "id": 635,
+    "enemyId": 65,
+    "enemyName": "ロックゴーレム",
+    "type": "drop",
+    "itemId": 160,
+    "itemName": "とうふ",
+    "probability": 13
+  },
+  {
+    "id": 636,
+    "enemyId": 65,
+    "enemyName": "ロックゴーレム",
+    "type": "steal",
+    "itemId": 160,
+    "itemName": "とうふ",
+    "probability": 80
+  },
+  {
+    "id": 637,
+    "enemyId": 222,
+    "enemyName": "ワーベア",
+    "type": "drop",
+    "itemId": 131,
+    "itemName": "ベアのにく",
+    "probability": 20
+  },
+  {
+    "id": 638,
+    "enemyId": 222,
+    "enemyName": "ワーベア",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 90
+  },
+  {
+    "id": 639,
+    "enemyId": 110,
+    "enemyName": "????　ヒアデス",
+    "type": "drop",
+    "itemId": 15,
+    "itemName": "ライフボトル",
+    "probability": 100
+  },
+  {
+    "id": 640,
+    "enemyId": 110,
+    "enemyName": "????　ヒアデス",
+    "type": "drop",
+    "itemId": 6,
+    "itemName": "オレンジグミ",
+    "probability": 100
+  },
+  {
+    "id": 641,
+    "enemyId": 4,
+    "enemyName": "トロール",
+    "type": "drop",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 15
+  },
+  {
+    "id": 642,
+    "enemyId": 4,
+    "enemyName": "トロール",
+    "type": "drop",
+    "itemId": 75,
+    "itemName": "セボリー",
+    "probability": 1
+  },
+  {
+    "id": 643,
+    "enemyId": 4,
+    "enemyName": "トロール",
+    "type": "steal",
+    "itemId": 1,
+    "itemName": "アップルグミ",
+    "probability": 95
+  },
+  {
+    "id": 644,
+    "enemyId": 112,
+    "enemyName": "ファイアクラウド",
+    "type": "drop",
+    "itemId": 159,
+    "itemName": "ビート",
+    "probability": 20
+  },
+  {
+    "id": 645,
+    "enemyId": 112,
+    "enemyName": "ファイアクラウド",
+    "type": "drop",
+    "itemId": 59,
+    "itemName": "フレアマント",
+    "probability": 2
+  },
+  {
+    "id": 646,
+    "enemyId": 112,
+    "enemyName": "ファイアクラウド",
+    "type": "steal",
+    "itemId": 59,
+    "itemName": "フレアマント",
+    "probability": 35
+  },
+  {
+    "id": 647,
+    "enemyId": 191,
+    "enemyName": "トリトン",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 10
+  },
+  {
+    "id": 648,
+    "enemyId": 191,
+    "enemyName": "トリトン",
+    "type": "drop",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "probability": 5
+  },
+  {
+    "id": 649,
+    "enemyId": 191,
+    "enemyName": "トリトン",
+    "type": "steal",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 30
+  },
+  {
+    "id": 650,
+    "enemyId": 231,
+    "enemyName": "アーチェ",
+    "type": "drop",
+    "itemId": 338,
+    "itemName": "アーチェのリボン",
+    "probability": 100
+  },
+  {
+    "id": 651,
+    "enemyId": 230,
+    "enemyName": "クレス",
+    "type": "drop",
+    "itemId": 340,
+    "itemName": "クレスのバンダナ",
+    "probability": 100
+  },
+  {
+    "id": 652,
+    "enemyId": 212,
+    "enemyName": "ACローパー",
+    "type": "drop",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 35
+  },
+  {
+    "id": 653,
+    "enemyId": 212,
+    "enemyName": "ACローパー",
+    "type": "drop",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "probability": 8
+  },
+  {
+    "id": 654,
+    "enemyId": 212,
+    "enemyName": "ACローパー",
+    "type": "steal",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "probability": 75
+  },
+  {
+    "id": 655,
+    "enemyId": 88,
+    "enemyName": "G・スパイダー",
+    "type": "drop",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 8
+  },
+  {
+    "id": 656,
+    "enemyId": 88,
+    "enemyName": "G・スパイダー",
+    "type": "drop",
+    "itemId": 183,
+    "itemName": "ポイズンソーン",
+    "probability": 10
+  },
+  {
+    "id": 657,
+    "enemyId": 88,
+    "enemyName": "G・スパイダー",
+    "type": "steal",
+    "itemId": 10,
+    "itemName": "パナシーアボトル",
+    "probability": 80
+  }
+]

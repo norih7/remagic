@@ -120,6 +120,7 @@ export default async function HomePage() {
     );
   const swordList = createList(filterData.sword);
   const shortSwordList = createList(filterData.shortSword);
+  const spearList = createList(filterData.spear);
   const axList = createList(filterData.ax);
   const halbertList = createList(filterData.halbert);
   const knuckleList = createList(filterData.knuckle);
@@ -151,6 +152,11 @@ export default async function HomePage() {
           <SectionTitle>武器: 短剣</SectionTitle>
           <p>装備可能: リッド</p>
           {shortSwordList}
+        </div>
+        <div className="mb-8">
+          <SectionTitle>武器: 槍</SectionTitle>
+          <p>装備可能: リッド</p>
+          {spearList}
         </div>
         <div className="mb-8">
           <SectionTitle>武器: 斧</SectionTitle>
