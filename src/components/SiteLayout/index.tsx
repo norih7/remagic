@@ -14,7 +14,10 @@ import {
   LuSparkles,
   LuMessageSquareWarning,
   LuSquareChevronRight,
+  LuMessageCircleMore,
+  LuMessageCircle,
 } from "react-icons/lu";
+import Link from "next/link";
 
 export default function SiteLayout({
   children,
@@ -40,14 +43,14 @@ export default function SiteLayout({
   };
   const menu = Object.keys(categoryName).map((key, index) => {
     const activeClass =
-      key === category ? "border-b-2 border-gray-400" : "border-transparent";
+      key === category ? "border-b-2 border-sky-500" : "border-transparent";
     return (
       <li
-        className={`inline-flex items-center px- py-1 text-xs whitespace-nowrap ${activeClass}`}
+        className={`inline-flex items-center font-bold text-slate-700 py-1 text-xs whitespace-nowrap bg-white hover:text-slate-400 ${activeClass}`}
         key={index}
       >
-        <LuSquareChevronRight className="mr-1" />
-        <a href={`/${key}`}>{categoryName[key]}</a>
+        {/* <LuMessageCircleMore className="mr-0.5 text-gray-500" /> */}
+        <Link href={`/${key}`}>{categoryName[key]}</Link>
       </li>
     );
   });
