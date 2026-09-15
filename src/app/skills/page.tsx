@@ -22,6 +22,12 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
+      <div className="mb-8">
+        <h2 className="text-lg font-bold mb-2 !border-none">特技/晶霊術</h2>
+        <p className="text-slate-1000">
+          リッド・ファラ・チャット・フォッグの特技一覧と習得条件、メルディ&キールの晶霊術とフリンジに必要な組み合わせを解説しています。
+        </p>
+      </div>
       <ContentLinks list={Object.values(skillLinks)} />
     </article>
   );

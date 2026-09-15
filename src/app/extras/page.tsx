@@ -23,6 +23,14 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
+      <div className="mb-8">
+        <h2 className="text-lg font-bold mb-2 !border-none">
+          隠しダンジョン/タウン
+        </h2>
+        <p className="text-slate-1000">
+          闇の洞窟や沈没船、アイフリードの墓、きらめきの塔などの隠しダンジョン、ジイニやねこにんの里といった隠しタウンを解説しています。
+        </p>
+      </div>
       <ContentLinks list={Object.values(extraLinks)} />
     </article>
   );

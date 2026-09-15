@@ -424,29 +424,47 @@ export const extraLinks = {
 export const deepLinks = {
   "level-up": {
     title: "レベル上げ方法",
-    path: "/depths/level-up",
+    path: "/deeps/level-up",
     desc: "",
   },
   "status-up": {
     title: "ステータスアップ薬草",
-    path: "/depths/status-up",
+    path: "/deeps/status-up",
     desc: "",
   },
-  a: {
-    title: "戦闘ランクマニア/アンノウン",
-    path: "/depths/",
-    desc: "",
-  },
-  b: {
+  "rover-item": {
     title: "アイテム盗み",
-    path: "/depths/",
+    path: "/deeps/rover-item",
     desc: "",
   },
-  c: {
+  equipment: {
     title: "おすすめ装備考察",
-    path: "/depths/",
+    path: "/deeps/equipment",
     desc: "",
   },
+};
+
+export const guideLinks = {
+  // remaster: {
+  //   title: "リマスター版の違い",
+  //   path: "/guides/remaster",
+  //   desc: "",
+  // },
+  // first: {
+  //   title: "序盤にやっておきたいこと",
+  //   path: "/guides/first",
+  //   desc: "",
+  // },
+  // missable: {
+  //   title: "取り逃がし要素",
+  //   path: "/guides/missable",
+  //   desc: "",
+  // },
+  // difficult: {
+  //   title: "敵が強いときの方法",
+  //   path: "/guides/difficult",
+  //   desc: "",
+  // },
 };
 
 export const elementMap = {

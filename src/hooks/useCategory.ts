@@ -11,5 +11,6 @@ export function useCategory(): CategoryKey {
   if (segment in categoryName) {
     return segment as CategoryKey;
   }
+
   return "none"; // 存在しないパスの場合は undefined を返す
 }

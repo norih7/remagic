@@ -1,7 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
 import ContentLinks from "@/components/ContentLinks";
-import { skillLinks, categoryLinks } from "@/constants";
+import { guideLinks, categoryLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,7 +30,10 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <p>準備中。リマスター版の違い、効率的な攻略法などを追加予定です。</p>
+      <div className="mb-4">
+        <p>準備中。リマスター版の違い、効率的な攻略法などを追加予定です。</p>
+      </div>
+      <ContentLinks list={Object.values(guideLinks)} />
     </article>
   );
 }
