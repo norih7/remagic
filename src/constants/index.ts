@@ -1,6 +1,7 @@
 export const siteName = "RE:MAGIC";
 export const categoryName = {
   none: "",
+  guides: "プレイガイド",
   skills: "特技/晶霊術",
   stories: "ストーリーガイド",
   systems: "システム/データ",
@@ -44,6 +45,12 @@ export const categoryLinks = {
     title: "やりこみ",
     path: "/deeps",
     desc: "エターニアのやりこみ情報。",
+    seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
+  },
+  guides: {
+    title: "プレイガイド",
+    path: "/guides",
+    desc: "エターニアのプレイガイド。",
     seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
   },
 };

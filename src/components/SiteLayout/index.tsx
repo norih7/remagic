@@ -36,6 +36,7 @@ export default function SiteLayout({
     ) : null;
 
   const categoryName: Record<string, string> = {
+    guides: "プレイガイド",
     stories: "ストーリー",
     skills: "特技/晶霊術",
     systems: "システム/データ",
