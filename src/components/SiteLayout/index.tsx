@@ -16,6 +16,7 @@ import {
   LuSquareChevronRight,
   LuMessageCircleMore,
   LuMessageCircle,
+  LuChevronDown,
 } from "react-icons/lu";
 import Link from "next/link";
 
@@ -35,22 +36,26 @@ export default function SiteLayout({
     ) : null;
 
   const categoryName: Record<string, string> = {
-    stories: "ストーリーガイド",
+    stories: "ストーリー",
     skills: "特技/晶霊術",
     systems: "システム/データ",
     subevents: "サブイベント",
     extras: "隠しマップ",
+    deeps: "やりこみ",
   };
   const menu = Object.keys(categoryName).map((key, index) => {
     const activeClass =
-      key === category ? "border-b-2 border-sky-500" : "border-transparent";
+      key === category
+        ? "border-b-2 border-sky-500"
+        : "border-b-2 border-white";
     return (
       <li
-        className={`inline-flex items-center font-bold text-slate-700 py-1 text-xs whitespace-nowrap bg-white hover:text-slate-400 ${activeClass}`}
+        className={`inline-flex items-center font-bold text-slate-700 pt-1 pb-0.5 text-xs whitespace-nowrap hover:text-slate-400 ${activeClass}`}
         key={index}
       >
         {/* <LuMessageCircleMore className="mr-0.5 text-gray-500" /> */}
         <Link href={`/${key}`}>{categoryName[key]}</Link>
+        {/* <LuChevronDown className="ml-0.5 text-gray-500" /> */}
       </li>
     );
   });
@@ -88,7 +93,7 @@ export default function SiteLayout({
       </div>
       <div className={`${styles.shortcutMenu}`}>
         <div>
-          <ul className="flex flex-wrap gap-x-4 gap-y-2 py-2 px-4">{menu}</ul>
+          <ul className="flex flex-wrap gap-x-4 gap-y-1 py-2 px-4">{menu}</ul>
         </div>
       </div>
       <div className={styles.container}>

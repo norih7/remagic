@@ -6,6 +6,7 @@ export const categoryName = {
   systems: "システム/データ",
   subevents: "サブイベント",
   extras: "隠しマップ",
+  deeps: "やりこみ",
 };
 
 export type CategoryKey = keyof typeof categoryName;
@@ -38,6 +39,12 @@ export const categoryLinks = {
     desc: "エターニアの隠しマップの解説。隠しダンジョン、隠しタウン、特殊なフィールドマップを紹介しています。",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。隠しダンジョン、隠しタウン、特殊なフィールドマップを紹介しています。",
+  },
+  deeps: {
+    title: "やりこみ",
+    path: "/deeps",
+    desc: "エターニアのやりこみ情報。",
+    seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
   },
 };
 
