@@ -34,10 +34,10 @@ export const metadata = {
 
 const createTagList = (item: Item) => {
   const result = [];
-  const { isBuy, isDrop, isTresure, isEvent } = item;
+  const { isBuy, isDrop, isTreasure, isEvent } = item;
   if (isBuy) result.push(<Tag key="buy">ショップ購入</Tag>);
   if (isDrop) result.push(<Tag key="drop">ドロップ</Tag>);
-  if (isTresure) result.push(<Tag key="tresure">宝箱</Tag>);
+  if (isTreasure) result.push(<Tag key="Treasure">宝箱</Tag>);
   if (isEvent) result.push(<Tag key="event">イベント入手</Tag>);
   if (result.length === 0) result.push(<Tag key="other">その他</Tag>);
   return result;

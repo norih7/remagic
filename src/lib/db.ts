@@ -7,7 +7,7 @@ import locationSubEventsData from "../data/locationSubEvents.json";
 import recipes from "../data/recipes.json";
 import recipeItems from "../data/recipeItems.json";
 import shopItemsData from "../data/shopItems.json";
-import ememys from "../data/enemys.json";
+import enemies from "../data/enemies.json";
 import enemyItems from "../data/enemyItems.json";
 
 import { elementMap } from "@/constants";
@@ -19,7 +19,7 @@ export type Item = {
   effect: string;
   isBuy: boolean;
   isDrop: boolean;
-  isTresure: boolean;
+  isTreasure: boolean;
   isEvent: boolean;
   buy: number | "-";
   sell: number | "-";
@@ -121,7 +121,7 @@ export async function getRecipeItemsData(): Promise<RecipeItems[]> {
   return recipeItems as unknown as RecipeItems[];
 }
 
-export type Enemys = {
+export type Enemies = {
   id: number;
   name: string;
   type: number;
@@ -132,9 +132,9 @@ export type Enemys = {
   weak: string;
   resist: string;
 };
-export async function getEnemyData(): Promise<Enemys[]> {
+export async function getEnemyData(): Promise<Enemies[]> {
   // ここで compiledData を一度 unknown にしてから、Enemy[] にキャストします
-  return ememys as unknown as Enemys[];
+  return enemies as unknown as Enemies[];
 }
 
 export type EnemyItems = {

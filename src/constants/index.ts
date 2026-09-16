@@ -2,6 +2,7 @@ type PageLink = {
   title: string;
   path: string;
   desc: string;
+  image?: string;
   seoDesc?: string;
   createdAt?: string; // まだ全項目に付いていないのでオプショナル
   updatedAt?: string;
@@ -60,8 +61,9 @@ export const categoryLinks = {
   guides: {
     title: "プレイガイド",
     path: "/guides",
-    desc: "エターニアのプレイガイド。",
-    seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
+    desc: "エターニアのプレイガイド。リマスター版の違い、効率的な攻略法などを紹介しています。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。リマスター版の違い、効率的な攻略法などを紹介しています。",
   },
 };
 
@@ -330,6 +332,7 @@ export const systemLinks = {
   },
   "defense-data": {
     title: "防具一覧データ",
+    image: "/link-headers/systems-defense.jpg",
     path: "/systems/defense-data",
     desc: "防具一覧データを掲載",
     seoDesc:
@@ -463,6 +466,7 @@ export const guideLinks: Record<string, PageLink> = {
   first: {
     title: "序盤にやっておきたいこと",
     path: "/guides/first",
+    image: "/link-headers/guides-first.jpg",
     desc: "序盤でやっておきたい、戦闘の安定やゲーム効率を上げるためのTipsを紹介しています。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。序盤でやっておきたい、戦闘の安定やゲーム効率を上げるためのTipsを紹介しています。",
@@ -472,9 +476,10 @@ export const guideLinks: Record<string, PageLink> = {
   missable: {
     title: "取り逃がし要素",
     path: "/guides/missable",
-    desc: "",
+    image: "/link-headers/guides-missable.jpg",
+    desc: "レンズ、称号イベント、ベッポのかくれんぼ、アイテム盗みなど取り逃がしやすい要素を解説。",
     seoDesc:
-      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。取り逃がし要素の解説。ストーリー攻略中に見落としがちなサブイベントや称号、レンズ、特技習得などの取り逃がし要素を網羅して紹介しています。",
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。取り逃がし要素の解説。ストーリー攻略中に見落としがちなサブイベントや称号、レンズ、アイテムなどの取り逃がし要素を紹介しています。",
   },
   // difficult: {
   //   title: "敵が強いときの方法",

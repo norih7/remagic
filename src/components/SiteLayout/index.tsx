@@ -48,7 +48,7 @@ export default function SiteLayout({
     const activeClass =
       key === category
         ? "border-b-2 border-sky-500"
-        : "border-b-2 border-white";
+        : "border-b-2 border-transparent";
     return (
       <li
         className={`inline-flex items-center font-bold text-slate-700 pt-1 pb-0.5 text-xs whitespace-nowrap hover:text-slate-400 ${activeClass}`}

@@ -10,19 +10,11 @@ const pageKey = "guides";
 const title = categoryLinks[pageKey].title;
 const canonical = categoryLinks[pageKey].path;
 const description = categoryLinks[pageKey].seoDesc;
-// export const metadata = {
-//   title,
-//   description,
-//   alternates: {
-//     canonical,
-//   },
-// };
 export const metadata = {
   title,
-  description: "",
-  robots: {
-    index: false,
-    follow: true,
+  description,
+  alternates: {
+    canonical,
   },
 };
 
@@ -30,8 +22,11 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <div className="mb-4">
-        <p>準備中。リマスター版の違い、効率的な攻略法などを追加予定です。</p>
+      <div className="mb-8">
+        <h2 className="text-lg font-bold mb-2 !border-none">プレイガイド</h2>
+        <p className="text-slate-1000">
+          リマスター版の違い、効率的な攻略法などを解説しています。
+        </p>
       </div>
       <ContentLinks list={Object.values(guideLinks)} />
     </article>

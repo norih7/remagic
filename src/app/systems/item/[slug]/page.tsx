@@ -86,12 +86,12 @@ export default async function ItemDetailPage({
       <li>なし</li>
     );
 
-  const filterTresureItem = locationItems.filter(
+  const filterTreasureItem = locationItems.filter(
     (item) => item.itemId === itemId,
   );
-  const TresureInfo =
-    filterTresureItem.length > 0
-      ? filterTresureItem.map((item, index) => (
+  const TreasureInfo =
+    filterTreasureItem.length > 0
+      ? filterTreasureItem.map((item, index) => (
           <li key={index} className={style}>
             <strong className="flex items-center text-gray-700 ">
               {item.locationName}
@@ -178,7 +178,7 @@ export default async function ItemDetailPage({
           <LuGift className="mr-1" />
           タウンやダンジョンの宝箱
         </h4>
-        <ul className="grid grid-cols-2 gap-3">{TresureInfo}</ul>
+        <ul className="grid grid-cols-2 gap-3">{TreasureInfo}</ul>
       </div>
       <div className={wrapStyle}>
         <h4 className={headerStyle}>

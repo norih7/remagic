@@ -67,6 +67,32 @@ export default async function HomePage() {
           <SectionTitle type="history">最新更新履歴</SectionTitle>
           <ul className="space-y-2">
             <li className="flex gap-4">
+              <span className="text-slate-400">2026/09/17</span>
+              <span>
+                <Link
+                  href="/guides"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  プレイガイド
+                </Link>
+                、
+                <Link
+                  href="/guides/first"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  序盤にやっておきたいこと
+                </Link>
+                、
+                <Link
+                  href="/guides/missable"
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  取り逃がし要素
+                </Link>
+                を公開しました。
+              </span>
+            </li>
+            <li className="flex gap-4">
               <span className="text-slate-400">2026/09/08</span>
               <span>
                 <Link
