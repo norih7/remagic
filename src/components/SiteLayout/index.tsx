@@ -94,7 +94,7 @@ export default function SiteLayout({
       </div>
       <div className={`${styles.shortcutMenu}`}>
         <div>
-          <ul className="flex flex-wrap gap-x-4 gap-y-1 py-3 px-4">{menu}</ul>
+          <ul className="flex flex-wrap gap-x-4 gap-y-1.5 py-3 px-4">{menu}</ul>
         </div>
       </div>
       <div className={styles.container}>
