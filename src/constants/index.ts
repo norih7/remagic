@@ -450,16 +450,22 @@ export const guideLinks = {
   //   path: "/guides/remaster",
   //   desc: "",
   // },
-  // first: {
-  //   title: "序盤にやっておきたいこと",
-  //   path: "/guides/first",
-  //   desc: "",
-  // },
-  // missable: {
-  //   title: "取り逃がし要素",
-  //   path: "/guides/missable",
-  //   desc: "",
-  // },
+  first: {
+    title: "序盤にやっておきたいこと",
+    path: "/guides/first",
+    desc: "序盤でやっておきたい、戦闘の安定やゲーム効率を上げるためのTipsを紹介しています。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。序盤でやっておきたい、戦闘の安定やゲーム効率を上げるためのTipsを紹介しています。",
+    createdAt: "2026-09-16",
+    updatedAt: "2026-09-16",
+  },
+  missable: {
+    title: "取り逃がし要素",
+    path: "/guides/missable",
+    desc: "",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。取り逃がし要素の解説。ストーリー攻略中に見落としがちなサブイベントや称号、レンズ、特技習得などの取り逃がし要素を網羅して紹介しています。",
+  },
   // difficult: {
   //   title: "敵が強いときの方法",
   //   path: "/guides/difficult",
