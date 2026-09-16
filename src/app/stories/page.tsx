@@ -19,7 +19,7 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
       <div className="mb-8">
-        <h2 className="text-lg font-bold mb-2 !border-none">特技/晶霊術</h2>
+        <h2 className="text-lg font-bold mb-2 !border-none">ストーリー攻略</h2>
         <p className="text-slate-1000">
           ラシュアンから水晶霊の河、セレスティア、バリル城、シゼル城まで、序盤から終盤までのストーリー攻略をマップ付きで解説しています。
         </p>
