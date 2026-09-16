@@ -21,30 +21,33 @@ function escapeXml(str: string) {
 }
 
 export async function GET() {
-  // 複数のLinksオブジェクトを1つの配列にまとめる
   const allLinks = [
     ...Object.values(guideLinks),
     // ...Object.values(storyLinks),
-    // ...Object.values(systemLinks),
-    // ...Object.values(subeventLinks),
   ];
 
-  // createdAtがまだ無いページ(移行前の既存ページなど)は除外
-  const feedItems = allLinks.filter((item) => item.createdAt);
-
-  const sortedItems = feedItems.sort(
-    (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),
+  // createdAtがある項目だけを対象にし、その時点でcreatedAtの存在を型として保証する
+  const feedItems = allLinks.filter(
+    (item): item is typeof item & { createdAt: string } =>
+      Boolean(item.createdAt),
   );
+
+  const sortedItems = feedItems.sort((a, b) => {
+    const dateA = new Date(a.updatedAt ?? a.createdAt).getTime();
+    const dateB = new Date(b.updatedAt ?? b.createdAt).getTime();
+    return dateB - dateA;
+  });
 
   const rssItems = sortedItems
     .map((item) => {
       const link = `${SITE_URL}${item.path}`;
+      const pubDate = new Date(item.updatedAt ?? item.createdAt).toUTCString();
       return `
     <item>
       <title>${escapeXml(item.title)}</title>
       <link>${link}</link>
       <guid>${link}</guid>
-      <pubDate>${new Date(item.updatedAt).toUTCString()}</pubDate>
+      <pubDate>${pubDate}</pubDate>
       ${item.desc ? `<description>${escapeXml(item.desc)}</description>` : ""}
     </item>`;
     })

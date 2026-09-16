@@ -1,4 +1,14 @@
+type PageLink = {
+  title: string;
+  path: string;
+  desc: string;
+  seoDesc?: string;
+  createdAt?: string; // まだ全項目に付いていないのでオプショナル
+  updatedAt?: string;
+};
+
 export const siteName = "RE:MAGIC";
+
 export const categoryName = {
   none: "",
   guides: "プレイガイド",
@@ -444,7 +454,7 @@ export const deepLinks = {
   },
 };
 
-export const guideLinks = {
+export const guideLinks: Record<string, PageLink> = {
   // remaster: {
   //   title: "リマスター版の違い",
   //   path: "/guides/remaster",
