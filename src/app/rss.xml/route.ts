@@ -7,6 +7,7 @@ import {
 export const dynamic = "force-static";
 
 const SITE_URL = "https://remagic.brclover.com";
+const FEED_URL = SITE_URL + "/rss.xml";
 const SITE_TITLE = "RE:MAGIC - テイルズオブエターニア攻略";
 const SITE_DESCRIPTION =
   "テイルズオブエターニア(TOE)リマスター版対応の攻略サイト";
@@ -18,14 +19,6 @@ function escapeXml(str: string) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&apos;");
-}
-
-// 画像の拡張子からMIMEタイプを推測する
-function getMimeType(url: string) {
-  if (url.endsWith(".png")) return "image/png";
-  if (url.endsWith(".webp")) return "image/webp";
-  if (url.endsWith(".gif")) return "image/gif";
-  return "image/jpeg"; // .jpg / .jpeg のデフォルト
 }
 
 export async function GET() {
@@ -51,25 +44,16 @@ export async function GET() {
       const link = SITE_URL + item.path;
       const pubDate = new Date(item.updatedAt ?? item.createdAt).toUTCString();
 
-      // 説明文タグ
       const descriptionTag = item.desc
         ? "<description>" + escapeXml(item.desc) + "</description>"
         : "";
 
-      // バナー画像タグ(絶対URL化)
-      let imageTags = "";
+      // バナー画像タグ(絶対URL化)。lengthを持たないmedia:contentのみ使用
+      let imageTag = "";
       if (item.image) {
         const imageUrl = SITE_URL + item.image;
-        const mimeType = getMimeType(imageUrl);
-        imageTags =
-          '<enclosure url="' +
-          escapeXml(imageUrl) +
-          '" type="' +
-          mimeType +
-          '" />' +
-          '<media:content url="' +
-          escapeXml(imageUrl) +
-          '" medium="image" />';
+        imageTag =
+          '<media:content url="' + escapeXml(imageUrl) + '" medium="image" />';
       }
 
       const parts = [
@@ -81,7 +65,7 @@ export async function GET() {
         "<guid>" + link + "</guid>",
         "<pubDate>" + pubDate + "</pubDate>",
         descriptionTag,
-        imageTags,
+        imageTag,
         "</item>",
       ];
 
@@ -91,7 +75,7 @@ export async function GET() {
 
   const rss =
     '<?xml version="1.0" encoding="UTF-8"?>\n' +
-    '<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">\n' +
+    '<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">\n' +
     "  <channel>\n" +
     "    <title>" +
     escapeXml(SITE_TITLE) +
@@ -99,6 +83,9 @@ export async function GET() {
     "    <link>" +
     SITE_URL +
     "</link>\n" +
+    '    <atom:link href="' +
+    FEED_URL +
+    '" rel="self" type="application/rss+xml" />\n' +
     "    <description>" +
     escapeXml(SITE_DESCRIPTION) +
     "</description>\n" +
@@ -113,6 +100,6 @@ export async function GET() {
     "</rss>";
 
   return new NextResponse(rss, {
-    headers: { "Content-Type": "application/xml; charset=UTF-8" },
+    headers: { "Content-Type": "application/rss+xml; charset=UTF-8" },
   });
 }
