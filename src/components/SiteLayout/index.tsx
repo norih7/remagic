@@ -51,7 +51,7 @@ export default function SiteLayout({
         : "border-b-2 border-transparent";
     return (
       <li
-        className={`inline-flex items-center font-bold text-slate-700 pt-1 pb-0.5 text-xs whitespace-nowrap hover:text-slate-400 ${activeClass}`}
+        className={`inline-flex items-center font-bold text-slate-700 pt-1 pb-0.5 text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
         key={index}
       >
         {/* <LuMessageCircleMore className="mr-0.5 text-gray-500" /> */}

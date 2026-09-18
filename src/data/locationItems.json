@@ -2500,5 +2500,284 @@
     "itemName": "みどりのかけら",
     "itemType": "useItem",
     "remarks": ""
+  },
+  {
+    "id": 269,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 313,
+    "itemName": "グーングニル",
+    "itemType": "spear",
+    "remarks": "1階層のボス初回撃破後"
+  },
+  {
+    "id": 270,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 349,
+    "itemName": "ペルシャブーツ",
+    "itemType": "accessory",
+    "remarks": "1階層のボス初回撃破後"
+  },
+  {
+    "id": 271,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 339,
+    "itemName": "スターサークレット",
+    "itemType": "circlet",
+    "remarks": "2階層のボス初回撃破後"
+  },
+  {
+    "id": 272,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 119,
+    "itemName": "ミスティシンボル",
+    "itemType": "accessory",
+    "remarks": "2階層のボス初回撃破後"
+  },
+  {
+    "id": 273,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 337,
+    "itemName": "スターヘルム",
+    "itemType": "helmet",
+    "remarks": "3階層のボス初回撃破後"
+  },
+  {
+    "id": 274,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 333,
+    "itemName": "Bラインシールド",
+    "itemType": "shield",
+    "remarks": "3階層のボス初回撃破後"
+  },
+  {
+    "id": 275,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 331,
+    "itemName": "スタークローク",
+    "itemType": "cloak",
+    "remarks": "4階層のボス初回撃破後"
+  },
+  {
+    "id": 276,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 335,
+    "itemName": "スターブレス",
+    "itemType": "bracelet",
+    "remarks": "4階層のボス初回撃破後"
+  },
+  {
+    "id": 277,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 310,
+    "itemName": "ガイアクリーヴァ",
+    "itemType": "ax",
+    "remarks": "5階層のボス初回撃破後"
+  },
+  {
+    "id": 278,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 359,
+    "itemName": "リバヴィウサー",
+    "itemType": "accessory",
+    "remarks": "5階層のボス初回撃破後"
+  },
+  {
+    "id": 279,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 347,
+    "itemName": "Hガントレット",
+    "itemType": "accessory",
+    "remarks": "ネレイド撃破後に王座を調べる"
+  },
+  {
+    "id": 280,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 65,
+    "itemName": "あかのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 281,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 237,
+    "itemName": "みずいろのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 282,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 243,
+    "itemName": "きいろのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 283,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 246,
+    "itemName": "みどりのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 284,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 239,
+    "itemName": "むらさきのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 285,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 245,
+    "itemName": "あおのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 286,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 279,
+    "itemName": "くろのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 287,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 280,
+    "itemName": "しろのかけら",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 288,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 228,
+    "itemName": "せきしょうせき",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 289,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 39,
+    "itemName": "すいしょうせき",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 290,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 42,
+    "itemName": "りょくしょうせき",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 291,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 226,
+    "itemName": "きしょうせき",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 292,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 300,
+    "itemName": "せいしょうせき",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 293,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 118,
+    "itemName": "ししょうせき",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 294,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 230,
+    "itemName": "はくしょうせき",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 295,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 117,
+    "itemName": "こくしょうせき",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 296,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 38,
+    "itemName": "レモングミ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 297,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 36,
+    "itemName": "パイングミ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 298,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 46,
+    "itemName": "ミラクルグミ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 299,
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "itemId": 48,
+    "itemName": "エリクシール",
+    "itemType": "useItem",
+    "remarks": ""
   }
 ]

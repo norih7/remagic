@@ -25,11 +25,11 @@ const List = (props: Props) => {
       </a>
     </li>
   ));
-  return <ul className="space-y-1 mb-5">{list}</ul>;
+  return <ul className="space-y-1 mb-6">{list}</ul>;
 };
 
 const Category = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
+  <h3 className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider border-l-6 border-red-300 py-1.5 pl-2">
     {children}
   </h3>
 );

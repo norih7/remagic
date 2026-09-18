@@ -151,6 +151,11 @@ export const skillLinks = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しています。好きな術を見つけて獲得しましょう！",
   },
+  // "special-skill": {
+  //   title: "秘奥義/特殊技",
+  //   path: "/systems/special-skill",
+  //   desc: "",
+  // },
 };
 
 export const subeventLinks = {
@@ -343,24 +348,9 @@ export const systemLinks = {
     path: "/systems/titles",
     desc: "",
   },
-
   // "enemy-list": {
   //   title: "モンスター一覧",
   //   path: "/systems/enemy-list",
-  // },
-  // "world-map": {
-  //   title: "ワールドマップ",
-  //   path: "/systems/world-map",
-  // },
-  // "special-skill": {
-  //   title: "秘奥義/特殊技",
-  //   path: "/systems/special-skill",
-  //   desc: "",
-  // },
-  // "blue-earth": {
-  //   title: "ブルーアース",
-  //   path: "/systems/blue-earth",
-  //   desc: "",
   // },
 };
 
@@ -427,14 +417,21 @@ export const extraLinks = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しタウン「ねこにんの里」「晶霊温泉」の行き方と攻略情報。タウンへの行き方やマスター料理の食材「パープルソディ」の買い方、チャットの特技の習得方法を分かりやすく解説します。",
   },
-  //   valkyrie: {
-  //   title: "ネレイドの迷宮",
-  //   path: "/extras/valkyrie",
-  //   desc: "",
-  // },
+  nereid: {
+    title: "ネレイドの迷宮",
+    path: "/extras/nereid",
+    desc: "準備中です",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。",
+  },
 };
 
 export const deepLinks = {
+  // "blue-earth": {
+  //   title: "ブルーアース",
+  //   path: "/systems/blue-earth",
+  //   desc: "",
+  // },
   "level-up": {
     title: "レベル上げ方法",
     path: "/deeps/level-up",
@@ -483,6 +480,10 @@ export const guideLinks: Record<string, PageLink> = {
     createdAt: "2026-09-17",
     updatedAt: "2026-09-17",
   },
+  // "world-map": {
+  //   title: "ワールドマップ",
+  //   path: "/systems/world-map",
+  // },
   // difficult: {
   //   title: "敵が強いときの方法",
   //   path: "/guides/difficult",
