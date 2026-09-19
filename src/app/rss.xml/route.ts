@@ -1,7 +1,8 @@
 // app/rss.xml/route.ts
 import { NextResponse } from "next/server";
 import {
-  guideLinks /*, storyLinks, systemLinks, subeventLinks */,
+  guideLinks,
+  extraLinks /*, storyLinks, systemLinks, subeventLinks */,
 } from "@/constants";
 
 export const dynamic = "force-static";
@@ -24,6 +25,7 @@ function escapeXml(str: string) {
 export async function GET() {
   const allLinks = [
     ...Object.values(guideLinks),
+    ...Object.values(extraLinks),
     // ...Object.values(storyLinks),
   ];
 

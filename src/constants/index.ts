@@ -23,7 +23,7 @@ export const categoryName = {
 
 export type CategoryKey = keyof typeof categoryName;
 
-export const categoryLinks = {
+export const categoryLinks: Record<string, PageLink> = {
   skills: {
     title: "特技/晶霊術",
     path: "/skills",
@@ -67,7 +67,7 @@ export const categoryLinks = {
   },
 };
 
-export const storyLinks = {
+export const storyLinks: Record<string, PageLink> = {
   guide1: {
     title: "ラシュアン〜水晶霊の河",
     path: "/stories/guide1",
@@ -110,7 +110,7 @@ export const storyLinks = {
   },
 };
 
-export const skillLinks = {
+export const skillLinks: Record<string, PageLink> = {
   rid: {
     title: "リッドの特技/奥義",
     path: "/skills/rid",
@@ -158,7 +158,7 @@ export const skillLinks = {
   // },
 };
 
-export const subeventLinks = {
+export const subeventLinks: Record<string, PageLink> = {
   lens: {
     title: "レンズ収集",
     path: "/subevents/lens",
@@ -265,7 +265,7 @@ export const subeventLinks = {
   },
 };
 
-export const systemLinks = {
+export const systemLinks: Record<string, PageLink> = {
   buttle: {
     title: "戦闘マニュアル操作/特殊操作",
     image: "/link-headers/systems-buttle.jpg",
@@ -354,7 +354,7 @@ export const systemLinks = {
   // },
 };
 
-export const extraLinks = {
+export const extraLinks: Record<string, PageLink> = {
   // "fileld": {
   //   title: "フィールドの隠し場所",
   //   path: "/extras/fileld",
@@ -424,10 +424,12 @@ export const extraLinks = {
     desc: "最難関の隠しダンジョンを解説。事前準備と各階層のボスの攻略法を解説しています。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。2周目以降に挑戦できる隠しダンジョン「ネレイドの迷宮」の攻略情報。1〜5階層はキャラ1人でボス戦に挑むため、事前のレベル上げや装備・C.ケイジの調整が重要です。最深部で待ち受けるネレイドの攻略法や、敗北時の仕様、クリア報酬まで詳しく解説します。",
+    createdAt: "2026-09-19",
+    updatedAt: "2026-09-19",
   },
 };
 
-export const deepLinks = {
+export const deepLinks: Record<string, PageLink> = {
   // "blue-earth": {
   //   title: "ブルーアース",
   //   path: "/systems/blue-earth",
