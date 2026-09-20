@@ -12,6 +12,9 @@ import Information from "@/components/Information";
 import { extraLinks } from "@/constants";
 import CardList from "@/components/CardLIst";
 import GuideList from "@/components/GuideList";
+import RoundedItem from "@/components/RoundedItem";
+import RoundedContainer from "@/components/RoundedContainer";
+import GifPlayer from "@/components/GifPlayer";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,7 +39,7 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
-        ネレイドの迷宮は、2周目以降に挑戦できる全6階層の隠しダンジョンです。ランダムに作成される迷宮を進み、各階層のボスを倒して最深部のネレイドを目指します。探索中の消耗を抑え、1〜5階層の単独ボス戦を突破する準備が重要です。
+        ネレイドの迷宮は全6階層で構成される最高難易度の隠しダンジョンです。ランダムに作成される迷宮を進み、各階層のボスを倒して最深部のネレイドを目指します。探索中の消耗を抑え、1〜5階層の単独ボス戦を突破する準備が重要です。
       </PageSummary>
       <section className="mb-12">
         <SectionTitle>ネレイドの迷宮</SectionTitle>
@@ -44,7 +47,7 @@ export default async function HomePage() {
           シゼル城到着後（機種によって異なる）
         </EventCondition>
         <p>
-          ネレイドの迷宮は、1周目をクリアしたデータで2周目以降に挑戦できる隠しダンジョンです。1〜5階層はキャラクター1人で探索とボス戦に挑み、6階層では自由にパーティを組んでネレイドと戦います。
+          ネレイドの迷宮は高難易度の隠しダンジョンです。1〜5階層はキャラクター1人で探索とボス戦に挑み、6階層では自由にパーティを組んでネレイドと戦います。
         </p>
         <p>
           各階層のボスを倒した時点で、先へ進まずにダンジョンを抜けることもできます。何度でも挑戦できるため、準備が足りないと感じたら無理に最深部まで進まず、一度脱出して態勢を整えましょう。
@@ -53,22 +56,29 @@ export default async function HomePage() {
       <section className="mb-12">
         <SectionTitle>ネレイドの迷宮への行き方</SectionTitle>
         <ResponsiveImage src="/extras/nereid-location.jpg" />
-        <p>
-          2週目の☆がついたセーブデータでストーリーを進行してオルバース界面へ行くとネレイドの迷宮が出現し、ダンジョンへ挑むことができます。ただし実際には2週目のクリアデータがあれば1週目から挑戦可能です。
-        </p>
+        <h3>リマスター版</h3>
+        <h3>PS1版/PSP版</h3>
+        <div className="mb-4">
+          <p>
+            2週目の☆がついたセーブデータでストーリーを進行してオルバース界面へ行くとネレイドの迷宮が出現し、ダンジョンへ挑むことができます。ただし実際には2週目のクリアデータがあれば以下の方法で1週目から挑戦可能です。
+          </p>
+        </div>
         <div className="mb-8">
-          <h4>PS1版の出現条件</h4>
+          <h4>PS1版の特殊な出現方法</h4>
           <p>
             同じメモリカードに2週目の☆がついたセーブデータがあれば、1週目のセーブデータにもネレイドの迷宮が出現します。
           </p>
-          <h4>PSP版の出現条件</h4>
+          <h4>PSP版の特殊な出現方法</h4>
           <p>
-            少し難しいですが可能です。2周目データをロードして「START+SELECT+L+R同時押し」でタイトルに戻ってから1周目のデータをロードすることで出現させることができます。
+            2周目データをロードして「START+SELECT+L+R同時押し」でタイトルに戻ってから1周目のデータをロードすることで出現させることができます。
           </p>
         </div>
       </section>
       <section className="mb-12">
         <SectionTitle>ダンジョンに挑む前に</SectionTitle>
+        <p>
+          エターニアの最高難易度のダンジョンであるため徹底的な準備が必要です。
+        </p>
         <div className="mb-8">
           <h3>(1) 装備品を準備する</h3>
           <p>
@@ -79,26 +89,12 @@ export default async function HomePage() {
           </p>
         </div>
         <div className="mb-8">
-          <h3>(2) C.ケイジの調整</h3>
+          <h3>(2) 特技と術の準備</h3>
           <p>
-            ダンジョン内ではC.ケイジが使えないためダンジョンに入る前にフリンジを調整しておきましょう。特にフリーズランサーとディストーションがおすすめです。
-          </p>
-          <GuideList
-            items={[
-              {
-                title: "晶例術習得",
-                href: "/skills/magic",
-              },
-            ]}
-          />
-        </div>
-        <div className="mb-8">
-          <h3>(3) 習得しておきたい特技</h3>
-          <p>
-            チャットとフォッグの特技を習得させておきましょう。チャットのエターナルスロー、フォッグのアクアスパイラルとエレメントマスターが各階層の攻略で活躍します。
+            ネレイドの迷宮で活躍するチャットとフォッグの特技は必ず習得させておきましょう。チャットのエターナルスロー、フォッグのアクアスパイラルとエレメントマスターが各階層の攻略で活躍します。
           </p>
           <p>
-            術者のフリンジで習得できる術や、リマスター版での下級術連発の可否は要確認です。使用できる術や習得条件を事前に確認してから挑戦してください。
+            またダンジョン内ではC.ケイジが使えないためダンジョンに入る前にフリンジを調整しておきましょう。特にフリーズランサーとディストーションがおすすめです。
           </p>
           <GuideList
             items={[
@@ -110,17 +106,24 @@ export default async function HomePage() {
                 title: "フォッグの特技",
                 href: "/skills/fog",
               },
+              {
+                title: "晶例術習得",
+                href: "/skills/magic",
+              },
             ]}
           />
         </div>
         <div className="mb-8">
-          <h3>(4) 回復アイテムの補充</h3>
+          <h3>(3) 回復アイテムとリバースドールの補充</h3>
           <p>
             探索中はアイテムが使えないため、料理と戦闘中のアイテム使用を前提に準備します。食材はできるだけ多く持ち込み、パイングミなどのTP回復アイテムも用意しておきましょう。
           </p>
+          <p>
+            またラスボス「ネレイド」は即死技を使ってくるためジイニのオークションでリバースドールを15個買っておくと安心です。
+          </p>
         </div>
         <div className="mb-8">
-          <h3>(5) レベル上げと薬草によるHPアップ</h3>
+          <h3>(4) レベル上げと薬草によるHPアップ</h3>
           <p>
             1〜5階層のボス戦はキャラクター1人で挑むため、レベル上げと薬草によるHPアップをしておくと攻略が安定します。特にHPは薬草で最大HPを増やすことで、ボス戦での耐久力が上がります。ネレイドはディストーションを使うためHPは最低5000以上欲しいです。推奨レベルは75以上です。私は80レベルでノーマルをクリアできました。
           </p>
@@ -150,7 +153,9 @@ export default async function HomePage() {
         <div className="mb-8">
           <h3>1階層: エレメンタラー戦</h3>
           <ResponsiveImage src="/extras/nereid-1f-boss.jpg" />
-          <p>選択キャラクタ: チャット</p>
+          <RoundedItem title="選択キャラクタ" className="mb-4">
+            チャット
+          </RoundedItem>
           <p>
             ハーピーをコチハンで撃破したら、エレメンタラーから少し離れた位置でエターナルスローを発動します。発動後は技を出しながら移動できるため、エレメンタラーへ近づいて攻撃を当てましょう。
           </p>
@@ -161,7 +166,9 @@ export default async function HomePage() {
         <div className="mb-8">
           <h3>2階層: エレメンタラー戦</h3>
           <ResponsiveImage src="/extras/nereid-2f-boss.jpg" />
-          <p>選択キャラクタ: キール</p>
+          <RoundedItem title="選択キャラクタ" className="mb-4">
+            キール
+          </RoundedItem>
           <p>
             選択キャラクターにはセルシウスをセットし、フリーズランサーを習得させておくのがおすすめです。ミスティシンボル、エルヴンブーツ、ホーリィクロークも役立ちます。キールは術の詠唱短縮があるため、特に安定しやすいキャラクターです。
           </p>
@@ -177,7 +184,9 @@ export default async function HomePage() {
         </div>
         <div className="mb-8">
           <h3>3階層: エレメンタラー戦</h3>
-          <p>選択キャラクタ: フォッグ</p>
+          <RoundedItem title="選択キャラクタ" className="mb-4">
+            フォッグ
+          </RoundedItem>
           <p>
             フォッグがおすすめです。強力なアクアスパイラルで雑魚敵を倒し、エレメンタラーになったらエレメントマスターを連発して倒しましょう。キャンセルは無理に狙わず、離れてエレメンタルマスターを連発する戦略が安定します。
           </p>
@@ -185,14 +194,24 @@ export default async function HomePage() {
         <div className="mb-8">
           <h3>4階層: リビングアーマー</h3>
           <ResponsiveImage src="/extras/nereid-4f-boss.jpg" />
-          <p>選択キャラクタ: フォッグ</p>
+          <RoundedItem title="選択キャラクタ" className="mb-4">
+            ファラ
+          </RoundedItem>
           <p>
-            ファラがおすすめです。鷹爪落爆蹴、獅子戦吼の連携でダメージを与えましょう。技の連携を切らさず、敵を動かさないことを意識すると安定します。
+            ファラがおすすめです。ジャンプからの鷹爪落爆蹴、獅子戦吼の連携でダメージを与えましょう。技の連携を切らさず、敵を動かさないことを意識すると安定します。
           </p>
+          <GifPlayer
+            src="/extras/nereid-4f-boss-tactics.gif"
+            alt="リビングアーマー攻略法"
+            width={300}
+            height={200}
+          />
         </div>
         <div className="mb-8">
           <h3>5階層: ヒアデス</h3>
-          <p>選択キャラクタ: フォッグ</p>
+          <RoundedItem title="選択キャラクタ" className="mb-4">
+            リッド
+          </RoundedItem>
           <p>
             リッドがおすすめです。鳳凰天駆と秘奥義を連発して、敵に反撃の時間を与えずに撃破しましょう。
           </p>

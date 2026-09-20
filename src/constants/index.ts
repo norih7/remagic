@@ -435,26 +435,28 @@ export const deepLinks: Record<string, PageLink> = {
   //   path: "/systems/blue-earth",
   //   desc: "",
   // },
-  "level-up": {
-    title: "レベル上げ方法",
-    path: "/deeps/level-up",
-    desc: "",
+  // "level-up": {
+  //   title: "レベル上げ方法",
+  //   path: "/deeps/level-up",
+  //   desc: "",
+  // },
+  herb: {
+    title: "ステータスアップ薬草集め",
+    path: "/deeps/herb",
+    desc: "敵からドロップするステータスアップ薬草と、チャットのローバーアイテム盗みを狙える薬草をまとめています。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。敵のドロップとチャットの盗みで入手できるステータスアップ薬草の特集。薬草の効果と優先度を解説しています。",
   },
-  "status-up": {
-    title: "ステータスアップ薬草",
-    path: "/deeps/status-up",
-    desc: "",
-  },
-  "rover-item": {
-    title: "アイテム盗み",
-    path: "/deeps/rover-item",
-    desc: "",
-  },
-  equipment: {
-    title: "おすすめ装備考察",
-    path: "/deeps/equipment",
-    desc: "",
-  },
+  // "rover-item": {
+  //   title: "アイテム盗み",
+  //   path: "/deeps/rover-item",
+  //   desc: "",
+  // },
+  // equipment: {
+  //   title: "おすすめ装備考察",
+  //   path: "/deeps/equipment",
+  //   desc: "",
+  // },
 };
 
 export const guideLinks: Record<string, PageLink> = {

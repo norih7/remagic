@@ -1,7 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import SetPageTitle from "@/components/SetPageTitle";
 import ContentLinks from "@/components/ContentLinks";
-import { skillLinks, categoryLinks } from "@/constants";
+import { deepLinks, categoryLinks } from "@/constants";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,9 +30,10 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <p>
+      <p className="mb-8">
         準備中。ブルーアース、薬草、アイテムドロップ、レベル上げなどを追加予定です。
       </p>
+      <ContentLinks list={Object.values(deepLinks)} />
     </article>
   );
 }
