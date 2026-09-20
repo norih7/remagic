@@ -29,7 +29,7 @@ const List = (props: Props) => {
 };
 
 const Category = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider border-l-6 border-red-300 py-1.5 pl-2">
+  <h3 className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider border-l-6 border-red-300 py-1 pl-2">
     {children}
   </h3>
 );

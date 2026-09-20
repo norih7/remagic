@@ -4,6 +4,8 @@ import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
 import { deepLinks } from "@/constants";
+import RoundedContainer from "@/components/RoundedContainer";
+import GuideList from "@/components/GuideList";
 
 export const dynamic = "force-static";
 
@@ -57,6 +59,22 @@ export default async function HomePage() {
           <p>
             いくつかの敵はステータスアップ薬草を落とします。敵ごとのドロップ率は低めですが、繰り返し戦うことで確保できるので、育成用に連戦をしておくのが効率的です。
           </p>
+          <p>
+            また「スマッシュマント」を装備するとテクニカルスマッシュ発生時にアイテムドロップ率がアップします。アイテムドロップを狙うときは術キャラ（キール、メルディ）以外にスマッシュマントを装備させるようにしましょう。
+          </p>
+          <GuideList
+            items={[
+              {
+                title: "グリップソード探し（スマッシュマント入手）",
+                href: "/subevents/grip-sword",
+              },
+              {
+                title:
+                  "ルーンボトル変化一覧（シーブスマントからのルーンボトル変化）",
+                href: "/systems/rune",
+              },
+            ]}
+          />
         </div>
         <div className="mb-8">
           <h3>盗みで確保する</h3>
@@ -68,7 +86,24 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle>セージ集め</SectionTitle>
-        <p>準備</p>
+        <RoundedContainer>
+          <h3>闘技場の世界一決定戦の周回</h3>
+          <RoundedItem title="概要" className="mb-3">
+            闘技場のヘルカイトは「セージ」「レッドセージ」をドロップします。1周3〜5分ほどでレッドセージも狙えるため効率はかなり高いです。30分でセージが3個以上集まることも。
+          </RoundedItem>
+          <RoundedItem title="効率的な連戦">
+            リッドに「アイスコフィン（氷属性武器）」や「せいりゅうとう（水属性武器）」、「スマッシュマント」を装備して挑みましょう。
+          </RoundedItem>
+        </RoundedContainer>
+        <RoundedContainer>
+          <h3>アックスビーク狩り</h3>
+          <RoundedItem title="概要" className="mb-3">
+            アイフリードの墓周辺のフィールドに出現するアックスビークはセージを1%の確率でドロップします。闘技場と比べて敵が弱めであり、アックスビークの出現率はかなり高いため周回効率はかなり高いです。こちらも30分で3個以上集まることも。
+          </RoundedItem>
+          <RoundedItem title="効率的な連戦">
+            アックスビークが登場したときだけ戦い、それ以外は逃げましょう。スマッシュマント装備したリッドで、鳳凰天駆〜緋凰絶炎衝でノーダメージかつまとめて倒すとテクニカルスマッシュが20%ほどを稼げる場合もあります。テクニカルスマッシュはアイテムドロップ率もアップに繋がるので高得点を狙っていきましょう。
+          </RoundedItem>
+        </RoundedContainer>
       </section>
     </article>
   );
