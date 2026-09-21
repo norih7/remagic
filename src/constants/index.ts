@@ -343,11 +343,11 @@ export const systemLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。防具一覧を掲載。",
   },
-  titles: {
-    title: "エターニアの称号",
-    path: "/systems/titles",
-    desc: "",
-  },
+  // titles: {
+  //   title: "エターニアの称号",
+  //   path: "/systems/titles",
+  //   desc: "",
+  // },
   // "enemy-list": {
   //   title: "モンスター一覧",
   //   path: "/systems/enemy-list",
@@ -598,4 +598,9 @@ export const itemTypeMap = {
   circlet: "サークレット（キールの「頭」装備）",
   hat: "帽子（チャットの「頭」装備）",
   accessory: "アクセサリ",
+};
+
+export const enemyTypeMap = {
+  normal: "通常モンスター",
+  boss: "ボス",
 };

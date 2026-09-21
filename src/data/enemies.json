@@ -607,7 +607,7 @@
   {
     "id": 55,
     "name": "マクスウェル",
-    "type": "normal",
+    "type": "boss",
     "hp": 34000,
     "exp": 34002,
     "gald": 0,
@@ -1020,7 +1020,7 @@
     "gald": 80,
     "attack": "normal",
     "weak": "ice",
-    "resist": ""
+    "resist": "none"
   },
   {
     "id": 93,
@@ -2747,7 +2747,7 @@
     "gald": 12345,
     "attack": "normal",
     "weak": "none",
-    "resist": ""
+    "resist": "none"
   },
   {
     "id": 250,

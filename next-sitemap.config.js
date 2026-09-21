@@ -6,8 +6,8 @@ module.exports = {
   exclude: [
     "/sitemap.xml",
     "/systems/item/*",
+    "/systems/enemy/*",
     "/robots.txt",
-    "/systems/weapon-data",
   ],
 
   transform: async (config, path) => {

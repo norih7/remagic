@@ -9,6 +9,7 @@ import recipeItems from "../data/recipeItems.json";
 import shopItemsData from "../data/shopItems.json";
 import enemies from "../data/enemies.json";
 import enemyItems from "../data/enemyItems.json";
+import enemyLocations from "../data/enemyLocations.json";
 
 import { elementMap } from "@/constants";
 
@@ -124,11 +125,11 @@ export async function getRecipeItemsData(): Promise<RecipeItems[]> {
 export type Enemies = {
   id: number;
   name: string;
-  type: number;
+  type: string;
   hp: number;
   exp: number;
   gald: number;
-  attack: number;
+  attack: keyof typeof elementMap;
   weak: string;
   resist: string;
 };
@@ -149,4 +150,18 @@ export type EnemyItems = {
 export async function getEnemyItemsData(): Promise<EnemyItems[]> {
   // ここで compiledData を一度 unknown にしてから、Enemy[] にキャストします
   return enemyItems as unknown as EnemyItems[];
+}
+
+export type EnemyLocations = {
+  id: number;
+  enemyId: number;
+  enemyName: string;
+  type: string;
+  locationId: number;
+  locationName: string;
+  remarks: string;
+};
+export async function getEnemyLocationsData(): Promise<EnemyLocations[]> {
+  // ここで compiledData を一度 unknown にしてから、Enemy[] にキャストします
+  return enemyLocations as unknown as EnemyLocations[];
 }

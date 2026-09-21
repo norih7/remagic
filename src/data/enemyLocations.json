@@ -1,0 +1,3368 @@
+[
+  {
+    "id": 1,
+    "enemyId": 0,
+    "enemyName": "バンデット",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 2,
+    "enemyId": 1,
+    "enemyName": "ストライカー",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 3,
+    "enemyId": 1,
+    "enemyName": "ストライカー",
+    "type": "field",
+    "locationId": 65,
+    "locationName": "バロールの町周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 4,
+    "enemyId": 49,
+    "enemyName": "アイスタイガー",
+    "type": "dungeon",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "remarks": ""
+  },
+  {
+    "id": 5,
+    "enemyId": 49,
+    "enemyName": "アイスタイガー",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 6,
+    "enemyId": 57,
+    "enemyName": "アーチャー",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 7,
+    "enemyId": 60,
+    "enemyName": "アクアスピン",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "水辺"
+  },
+  {
+    "id": 8,
+    "enemyId": 60,
+    "enemyName": "アクアスピン",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 9,
+    "enemyId": 192,
+    "enemyName": "アイアンゴーレム",
+    "type": "dungeon",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "remarks": ""
+  },
+  {
+    "id": 10,
+    "enemyId": 163,
+    "enemyName": "アックスビーク",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "平原"
+  },
+  {
+    "id": 11,
+    "enemyId": 168,
+    "enemyName": "アイスウォーリア",
+    "type": "dungeon",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "remarks": ""
+  },
+  {
+    "id": 12,
+    "enemyId": 219,
+    "enemyName": "アラーネア",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "森林"
+  },
+  {
+    "id": 13,
+    "enemyId": 11,
+    "enemyName": "アローテイル",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 14,
+    "enemyId": 238,
+    "enemyName": "イビルリッパー",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 15,
+    "enemyId": 6,
+    "enemyName": "アンカーリザード",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 16,
+    "enemyId": 182,
+    "enemyName": "アントラー",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 17,
+    "enemyId": 182,
+    "enemyName": "アントラー",
+    "type": "dungeon",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "remarks": ""
+  },
+  {
+    "id": 18,
+    "enemyId": 51,
+    "enemyName": "イフリート",
+    "type": "dungeon",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "remarks": ""
+  },
+  {
+    "id": 19,
+    "enemyId": 34,
+    "enemyName": "インセクトプラント",
+    "type": "dungeon",
+    "locationId": 68,
+    "locationName": "モルル奥地",
+    "remarks": ""
+  },
+  {
+    "id": 20,
+    "enemyId": 34,
+    "enemyName": "インセクトプラント",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": ""
+  },
+  {
+    "id": 21,
+    "enemyId": 188,
+    "enemyName": "イーヴルスター",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "水辺/夜"
+  },
+  {
+    "id": 22,
+    "enemyId": 188,
+    "enemyName": "イーヴルスター",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 23,
+    "enemyId": 97,
+    "enemyName": "インピベル",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 24,
+    "enemyId": 19,
+    "enemyName": "インフェリアンガード",
+    "type": "town",
+    "locationId": 12,
+    "locationName": "インフェリア港",
+    "remarks": ""
+  },
+  {
+    "id": 25,
+    "enemyId": 178,
+    "enemyName": "ウィルオ・ウィスプ",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 26,
+    "enemyId": 99,
+    "enemyName": "インプルスス",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 27,
+    "enemyId": 109,
+    "enemyName": "ヴェノン",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 28,
+    "enemyId": 46,
+    "enemyName": "ヴォルト",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 29,
+    "enemyId": 5,
+    "enemyName": "ウィッチ",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 30,
+    "enemyId": 50,
+    "enemyName": "ウッズワーム",
+    "type": "dungeon",
+    "locationId": 68,
+    "locationName": "モルル奥地",
+    "remarks": ""
+  },
+  {
+    "id": 31,
+    "enemyId": 50,
+    "enemyName": "ウッズワーム",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 32,
+    "enemyId": 24,
+    "enemyName": "ウンディーネ",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 33,
+    "enemyId": 104,
+    "enemyName": "エアスライサー",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 34,
+    "enemyId": 104,
+    "enemyName": "エアスライサー",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 35,
+    "enemyId": 76,
+    "enemyName": "エッグベア",
+    "type": "dungeon",
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 36,
+    "enemyId": 76,
+    "enemyName": "エッグベア",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 37,
+    "enemyId": 106,
+    "enemyName": "エスカルゴ",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 38,
+    "enemyId": 106,
+    "enemyName": "エスカルゴ",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 39,
+    "enemyId": 106,
+    "enemyName": "エスカルゴ",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 40,
+    "enemyId": 249,
+    "enemyName": "エレメンタラー",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 41,
+    "enemyId": 249,
+    "enemyName": "エレメンタラー",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 42,
+    "enemyId": 101,
+    "enemyName": "エンプティドール",
+    "type": "dungeon",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 43,
+    "enemyId": 157,
+    "enemyName": "オークロット",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 44,
+    "enemyId": 184,
+    "enemyName": "オウフィッシュ",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 45,
+    "enemyId": 184,
+    "enemyName": "オウフィッシュ",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "水辺"
+  },
+  {
+    "id": 46,
+    "enemyId": 45,
+    "enemyName": "オクトスライミー",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "水辺"
+  },
+  {
+    "id": 47,
+    "enemyId": 45,
+    "enemyName": "オクトスライミー",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 48,
+    "enemyId": 127,
+    "enemyName": "オーガー",
+    "type": "dungeon",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "remarks": ""
+  },
+  {
+    "id": 49,
+    "enemyId": 127,
+    "enemyName": "オーガー",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 50,
+    "enemyId": 134,
+    "enemyName": "カーヴァードイル",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 51,
+    "enemyId": 134,
+    "enemyName": "カーヴァードイル",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 52,
+    "enemyId": 152,
+    "enemyName": "オークジェリィ",
+    "type": "dungeon",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "remarks": ""
+  },
+  {
+    "id": 53,
+    "enemyId": 245,
+    "enemyName": "ガーディアント",
+    "type": "dungeon",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "remarks": ""
+  },
+  {
+    "id": 54,
+    "enemyId": 246,
+    "enemyName": "ガスクラウド",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 55,
+    "enemyId": 202,
+    "enemyName": "ガロー",
+    "type": "dungeon",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "remarks": ""
+  },
+  {
+    "id": 56,
+    "enemyId": 166,
+    "enemyName": "カトルボーン",
+    "type": "dungeon",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 57,
+    "enemyId": 253,
+    "enemyName": "ガンナー",
+    "type": "dungeon",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "remarks": ""
+  },
+  {
+    "id": 58,
+    "enemyId": 84,
+    "enemyName": "カルプリット",
+    "type": "dungeon",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "remarks": ""
+  },
+  {
+    "id": 59,
+    "enemyId": 20,
+    "enemyName": "カンバラーベア",
+    "type": "dungeon",
+    "locationId": 52,
+    "locationName": "ラシュアンの森",
+    "remarks": ""
+  },
+  {
+    "id": 60,
+    "enemyId": 20,
+    "enemyName": "カンバラーベア",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 61,
+    "enemyId": 210,
+    "enemyName": "ガロウズバード",
+    "type": "dungeon",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "remarks": ""
+  },
+  {
+    "id": 62,
+    "enemyId": 210,
+    "enemyName": "ガロウズバード",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 63,
+    "enemyId": 75,
+    "enemyName": "ギタルクル",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 64,
+    "enemyId": 29,
+    "enemyName": "キックフロッグ",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 65,
+    "enemyId": 39,
+    "enemyName": "キングフロッグ",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 66,
+    "enemyId": 203,
+    "enemyName": "キメラ",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": ""
+  },
+  {
+    "id": 67,
+    "enemyId": 67,
+    "enemyName": "グール",
+    "type": "dungeon",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "remarks": ""
+  },
+  {
+    "id": 68,
+    "enemyId": 67,
+    "enemyName": "グール",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 69,
+    "enemyId": 160,
+    "enemyName": "キャニバラスプラント",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "森林"
+  },
+  {
+    "id": 70,
+    "enemyId": 94,
+    "enemyName": "クビトゥム",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 71,
+    "enemyId": 135,
+    "enemyName": "キラービー",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": "森林"
+  },
+  {
+    "id": 72,
+    "enemyId": 135,
+    "enemyName": "キラービー",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠/夜"
+  },
+  {
+    "id": 73,
+    "enemyId": 170,
+    "enemyName": "クラーケン",
+    "type": "dungeon",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "remarks": ""
+  },
+  {
+    "id": 74,
+    "enemyId": 81,
+    "enemyName": "グラスホッパー",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 75,
+    "enemyId": 81,
+    "enemyName": "グラスホッパー",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 76,
+    "enemyId": 81,
+    "enemyName": "グラスホッパー",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 77,
+    "enemyId": 81,
+    "enemyName": "グラスホッパー",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 78,
+    "enemyId": 142,
+    "enemyName": "グリズリー",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 79,
+    "enemyId": 142,
+    "enemyName": "グリズリー",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "森林"
+  },
+  {
+    "id": 80,
+    "enemyId": 52,
+    "enemyName": "クラッシュトータス",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 81,
+    "enemyId": 52,
+    "enemyName": "クラッシュトータス",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 82,
+    "enemyId": 237,
+    "enemyName": "クリミナル",
+    "type": "dungeon",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "remarks": ""
+  },
+  {
+    "id": 83,
+    "enemyId": 148,
+    "enemyName": "グラップラー",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": "平原"
+  },
+  {
+    "id": 84,
+    "enemyId": 227,
+    "enemyName": "グレイヴキーパー",
+    "type": "dungeon",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 85,
+    "enemyId": 79,
+    "enemyName": "グリーンローパー",
+    "type": "dungeon",
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 86,
+    "enemyId": 186,
+    "enemyName": "クレイゴーレム",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 87,
+    "enemyId": 177,
+    "enemyName": "サロリサ",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 88,
+    "enemyId": 195,
+    "enemyName": "ケイブマン",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 89,
+    "enemyId": 194,
+    "enemyName": "サンダーソード",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 90,
+    "enemyId": 18,
+    "enemyName": "サイズキャリアー",
+    "type": "dungeon",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "remarks": ""
+  },
+  {
+    "id": 91,
+    "enemyId": 183,
+    "enemyName": "シースピン",
+    "type": "dungeon",
+    "locationId": 31,
+    "locationName": "アイフリードの洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 92,
+    "enemyId": 183,
+    "enemyName": "シースピン",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 93,
+    "enemyId": 171,
+    "enemyName": "サヴェイジビースト",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 94,
+    "enemyId": 30,
+    "enemyName": "シースラッグ",
+    "type": "dungeon",
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 95,
+    "enemyId": 30,
+    "enemyName": "シースラッグ",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 96,
+    "enemyId": 64,
+    "enemyName": "シーホース",
+    "type": "dungeon",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": ""
+  },
+  {
+    "id": 97,
+    "enemyId": 64,
+    "enemyName": "シーホース",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "水辺"
+  },
+  {
+    "id": 98,
+    "enemyId": 64,
+    "enemyName": "シーホース",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 99,
+    "enemyId": 73,
+    "enemyName": "シャドウ",
+    "type": "dungeon",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 100,
+    "enemyId": 62,
+    "enemyName": "ジェントルマン",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 101,
+    "enemyId": 62,
+    "enemyName": "ジェントルマン",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 102,
+    "enemyId": 62,
+    "enemyName": "ジェントルマン",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 103,
+    "enemyId": 33,
+    "enemyName": "シャドウサーバント",
+    "type": "dungeon",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "remarks": ""
+  },
+  {
+    "id": 104,
+    "enemyId": 85,
+    "enemyName": "シゼル",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 105,
+    "enemyId": 247,
+    "enemyName": "ジャングラー",
+    "type": "dungeon",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "remarks": ""
+  },
+  {
+    "id": 106,
+    "enemyId": 130,
+    "enemyName": "シャーマン",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 107,
+    "enemyId": 250,
+    "enemyName": "シャンバルーン",
+    "type": "",
+    "locationId": "",
+    "locationName": "",
+    "remarks": ""
+  },
+  {
+    "id": 108,
+    "enemyId": 234,
+    "enemyName": "シルエシカへい",
+    "type": "town",
+    "locationId": 27,
+    "locationName": "ティンシア",
+    "remarks": ""
+  },
+  {
+    "id": 109,
+    "enemyId": 189,
+    "enemyName": "スーパースター",
+    "type": "dungeon",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "remarks": ""
+  },
+  {
+    "id": 110,
+    "enemyId": 189,
+    "enemyName": "スーパースター",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "水辺/夜"
+  },
+  {
+    "id": 111,
+    "enemyId": 47,
+    "enemyName": "シルフ",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 112,
+    "enemyId": 26,
+    "enemyName": "スカーレットニードル",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠"
+  },
+  {
+    "id": 113,
+    "enemyId": 117,
+    "enemyName": "シルルス",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 114,
+    "enemyId": 87,
+    "enemyName": "スカルウォーリア",
+    "type": "dungeon",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "remarks": ""
+  },
+  {
+    "id": 115,
+    "enemyId": 43,
+    "enemyName": "ジン",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 116,
+    "enemyId": 31,
+    "enemyName": "スケルトン",
+    "type": "dungeon",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "remarks": ""
+  },
+  {
+    "id": 117,
+    "enemyId": 31,
+    "enemyName": "スケルトン",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 118,
+    "enemyId": 31,
+    "enemyName": "スケルトン",
+    "type": "field",
+    "locationId": 65,
+    "locationName": "バロールの町周辺",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 119,
+    "enemyId": 92,
+    "enemyName": "スコーピオン",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 120,
+    "enemyId": 92,
+    "enemyName": "スコーピオン",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠"
+  },
+  {
+    "id": 121,
+    "enemyId": 63,
+    "enemyName": "スターフィッシュ",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 122,
+    "enemyId": 63,
+    "enemyName": "スターフィッシュ",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 123,
+    "enemyId": 181,
+    "enemyName": "ストロングホーン",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 124,
+    "enemyId": 137,
+    "enemyName": "スティンガー",
+    "type": "dungeon",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "remarks": ""
+  },
+  {
+    "id": 125,
+    "enemyId": 96,
+    "enemyName": "スノーロブスター",
+    "type": "dungeon",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "remarks": ""
+  },
+  {
+    "id": 126,
+    "enemyId": 96,
+    "enemyName": "スノーロブスター",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 127,
+    "enemyId": 89,
+    "enemyName": "ストームクロウ",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 128,
+    "enemyId": 89,
+    "enemyName": "ストームクロウ",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "平原"
+  },
+  {
+    "id": 129,
+    "enemyId": 89,
+    "enemyName": "ストームクロウ",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "森林"
+  },
+  {
+    "id": 130,
+    "enemyId": 248,
+    "enemyName": "スパイラル",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 131,
+    "enemyId": 176,
+    "enemyName": "スピリウム",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 132,
+    "enemyId": 124,
+    "enemyName": "スラッガー",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "平原"
+  },
+  {
+    "id": 133,
+    "enemyId": 124,
+    "enemyName": "スラッガー",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 134,
+    "enemyId": 204,
+    "enemyName": "スピリット",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 135,
+    "enemyId": 204,
+    "enemyName": "スピリット",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 136,
+    "enemyId": 204,
+    "enemyName": "スピリット",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 137,
+    "enemyId": 185,
+    "enemyName": "スワンプシング",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 138,
+    "enemyId": 16,
+    "enemyName": "スペクター",
+    "type": "dungeon",
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 139,
+    "enemyId": 16,
+    "enemyName": "スペクター",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "森林/夜限定"
+  },
+  {
+    "id": 140,
+    "enemyId": 16,
+    "enemyName": "スペクター",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 141,
+    "enemyId": 16,
+    "enemyName": "スペクター",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 142,
+    "enemyId": 16,
+    "enemyName": "スペクター",
+    "type": "field",
+    "locationId": 65,
+    "locationName": "バロールの町周辺",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 143,
+    "enemyId": 252,
+    "enemyName": "セイレーン",
+    "type": "dungeon",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "remarks": ""
+  },
+  {
+    "id": 144,
+    "enemyId": 28,
+    "enemyName": "スライム",
+    "type": "dungeon",
+    "locationId": 52,
+    "locationName": "ラシュアンの森",
+    "remarks": ""
+  },
+  {
+    "id": 145,
+    "enemyId": 28,
+    "enemyName": "スライム",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 146,
+    "enemyId": 208,
+    "enemyName": "セージ",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 147,
+    "enemyId": 3,
+    "enemyName": "ソードソルジャー",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 148,
+    "enemyId": 115,
+    "enemyName": "ゼクンドゥス",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 149,
+    "enemyId": 48,
+    "enemyName": "セルシウス",
+    "type": "dungeon",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "remarks": ""
+  },
+  {
+    "id": 150,
+    "enemyId": 69,
+    "enemyName": "ゾンビ",
+    "type": "dungeon",
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 151,
+    "enemyId": 69,
+    "enemyName": "ゾンビ",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 152,
+    "enemyId": 77,
+    "enemyName": "ソーサラー",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 153,
+    "enemyId": 159,
+    "enemyName": "ダークディザスター",
+    "type": "dungeon",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 154,
+    "enemyId": 129,
+    "enemyName": "ソーサレス",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 155,
+    "enemyId": 129,
+    "enemyName": "ソーサレス",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "平原"
+  },
+  {
+    "id": 156,
+    "enemyId": 129,
+    "enemyName": "ソーサレス",
+    "type": "field",
+    "locationId": 65,
+    "locationName": "バロールの町周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 157,
+    "enemyId": 131,
+    "enemyName": "ターミガン",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 158,
+    "enemyId": 175,
+    "enemyName": "ターンタートル",
+    "type": "dungeon",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "remarks": ""
+  },
+  {
+    "id": 159,
+    "enemyId": 138,
+    "enemyName": "ダイアーウルフ",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 160,
+    "enemyId": 140,
+    "enemyName": "デス",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 161,
+    "enemyId": 251,
+    "enemyName": "ダイナソア",
+    "type": "dungeon",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "remarks": ""
+  },
+  {
+    "id": 162,
+    "enemyId": 215,
+    "enemyName": "デッドリーインセクト",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 163,
+    "enemyId": 218,
+    "enemyName": "タランチュラ",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 164,
+    "enemyId": 144,
+    "enemyName": "テトラタスク",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 165,
+    "enemyId": 125,
+    "enemyName": "デュエリスト",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 166,
+    "enemyId": 136,
+    "enemyName": "テンタクルプラント",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": ""
+  },
+  {
+    "id": 167,
+    "enemyId": 136,
+    "enemyName": "テンタクルプラント",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 168,
+    "enemyId": 136,
+    "enemyName": "テンタクルプラント",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 169,
+    "enemyId": 113,
+    "enemyName": "テラー",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 170,
+    "enemyId": 113,
+    "enemyName": "テラー",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 171,
+    "enemyId": 113,
+    "enemyName": "テラー",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 172,
+    "enemyId": 36,
+    "enemyName": "ドードー",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠"
+  },
+  {
+    "id": 173,
+    "enemyId": 9,
+    "enemyName": "テラーニードル",
+    "type": "dungeon",
+    "locationId": 68,
+    "locationName": "モルル奥地",
+    "remarks": ""
+  },
+  {
+    "id": 174,
+    "enemyId": 9,
+    "enemyName": "テラーニードル",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 175,
+    "enemyId": 9,
+    "enemyName": "テラーニードル",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 176,
+    "enemyId": 98,
+    "enemyName": "トールマン",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 177,
+    "enemyId": 239,
+    "enemyName": "テリブルテンタクル",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 178,
+    "enemyId": 187,
+    "enemyName": "トライゴン",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 179,
+    "enemyId": 156,
+    "enemyName": "ドラゴントゥース",
+    "type": "dungeon",
+    "locationId": 31,
+    "locationName": "アイフリードの洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 180,
+    "enemyId": 158,
+    "enemyName": "トレント",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "森林"
+  },
+  {
+    "id": 181,
+    "enemyId": 207,
+    "enemyName": "ドルイド",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 182,
+    "enemyId": 207,
+    "enemyName": "ドルイド",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 183,
+    "enemyId": 207,
+    "enemyName": "ドルイド",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠/夜"
+  },
+  {
+    "id": 184,
+    "enemyId": 173,
+    "enemyName": "トロピクスワーム",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 185,
+    "enemyId": 216,
+    "enemyName": "ドレイク",
+    "type": "dungeon",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "remarks": ""
+  },
+  {
+    "id": 186,
+    "enemyId": 143,
+    "enemyName": "ナイトウィング",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 187,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 188,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 189,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 190,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 191,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 192,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 193,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 194,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 195,
+    "enemyId": 2,
+    "enemyName": "ナイトフライヤー",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 196,
+    "enemyId": 17,
+    "enemyName": "ナイトレイド",
+    "type": "dungeon",
+    "locationId": 52,
+    "locationName": "ラシュアンの森",
+    "remarks": ""
+  },
+  {
+    "id": 197,
+    "enemyId": 17,
+    "enemyName": "ナイトレイド",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 198,
+    "enemyId": 254,
+    "enemyName": "（ネレイド）",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 199,
+    "enemyId": 59,
+    "enemyName": "ノーム",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 200,
+    "enemyId": 100,
+    "enemyName": "ニードルシェル",
+    "type": "dungeon",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "remarks": ""
+  },
+  {
+    "id": 201,
+    "enemyId": 147,
+    "enemyName": "ノクタールフライ",
+    "type": "dungeon",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "remarks": ""
+  },
+  {
+    "id": 202,
+    "enemyId": 68,
+    "enemyName": "ハーピー",
+    "type": "dungeon",
+    "locationId": 5,
+    "locationName": "ミンツの岩山",
+    "remarks": ""
+  },
+  {
+    "id": 203,
+    "enemyId": 68,
+    "enemyName": "ハーピー",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 204,
+    "enemyId": 38,
+    "enemyName": "バイオレントバイパー",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": ""
+  },
+  {
+    "id": 205,
+    "enemyId": 22,
+    "enemyName": "パースビートル",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 206,
+    "enemyId": 22,
+    "enemyName": "パースビートル",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 207,
+    "enemyId": 224,
+    "enemyName": "パイレーツ",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "浜辺"
+  },
+  {
+    "id": 208,
+    "enemyId": 58,
+    "enemyName": "ハードホーン",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 209,
+    "enemyId": 198,
+    "enemyName": "バッファロー",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 210,
+    "enemyId": 23,
+    "enemyName": "バトラー",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "平原"
+  },
+  {
+    "id": 211,
+    "enemyId": 23,
+    "enemyName": "バトラー",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 212,
+    "enemyId": 23,
+    "enemyName": "バトラー",
+    "type": "field",
+    "locationId": 65,
+    "locationName": "バロールの町周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 213,
+    "enemyId": 179,
+    "enemyName": "ハンター",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 214,
+    "enemyId": 179,
+    "enemyName": "ハンター",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠"
+  },
+  {
+    "id": 215,
+    "enemyId": 108,
+    "enemyName": "バルドヘッド",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 216,
+    "enemyId": 172,
+    "enemyName": "バンダースナッチ",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 217,
+    "enemyId": 161,
+    "enemyName": "パワープラント",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 218,
+    "enemyId": 165,
+    "enemyName": "ハンチバック",
+    "type": "dungeon",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "remarks": ""
+  },
+  {
+    "id": 219,
+    "enemyId": 145,
+    "enemyName": "ハンガーブラット",
+    "type": "dungeon",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 220,
+    "enemyId": 10,
+    "enemyName": "ハンマースロアー",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 221,
+    "enemyId": 10,
+    "enemyName": "ハンマースロアー",
+    "type": "field",
+    "locationId": 65,
+    "locationName": "バロールの町周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 222,
+    "enemyId": 128,
+    "enemyName": "ビーストオーガー",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 223,
+    "enemyId": 225,
+    "enemyName": "ヒアデス",
+    "type": "town",
+    "locationId": 26,
+    "locationName": "アイメン（崩壊後）",
+    "remarks": ""
+  },
+  {
+    "id": 224,
+    "enemyId": 233,
+    "enemyName": "ヒアデス",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 225,
+    "enemyId": 42,
+    "enemyName": "ビートビースト",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 226,
+    "enemyId": 42,
+    "enemyName": "ビートビースト",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 227,
+    "enemyId": 111,
+    "enemyName": "ビッグフット",
+    "type": "dungeon",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "remarks": ""
+  },
+  {
+    "id": 228,
+    "enemyId": 126,
+    "enemyName": "ピーケー",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 229,
+    "enemyId": 229,
+    "enemyName": "ビリアルへい",
+    "type": "dungeon",
+    "locationId": 36,
+    "locationName": "セイファート観測所",
+    "remarks": ""
+  },
+  {
+    "id": 230,
+    "enemyId": 102,
+    "enemyName": "ファイアウォーリア",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 231,
+    "enemyId": 105,
+    "enemyName": "ファイアフライヤー",
+    "type": "dungeon",
+    "locationId": 49,
+    "locationName": "闇の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 232,
+    "enemyId": 236,
+    "enemyName": "ファルシアホーンズ",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": ""
+  },
+  {
+    "id": 233,
+    "enemyId": 78,
+    "enemyName": "ファイアバード",
+    "type": "dungeon",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "remarks": ""
+  },
+  {
+    "id": 234,
+    "enemyId": 78,
+    "enemyName": "ファイアバード",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 235,
+    "enemyId": 240,
+    "enemyName": "ファンガスネイル",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 236,
+    "enemyId": 214,
+    "enemyName": "ファイアバグ",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 237,
+    "enemyId": 118,
+    "enemyName": "ファントム",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 238,
+    "enemyId": 118,
+    "enemyName": "ファントム",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 239,
+    "enemyId": 103,
+    "enemyName": "ファントムナイト",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 240,
+    "enemyId": 95,
+    "enemyName": "フォリクルス",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 241,
+    "enemyId": 244,
+    "enemyName": "フェイク",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 242,
+    "enemyId": 244,
+    "enemyName": "フェイク",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 243,
+    "enemyId": 244,
+    "enemyName": "フェイク",
+    "type": "dungeon",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "remarks": ""
+  },
+  {
+    "id": 244,
+    "enemyId": 150,
+    "enemyName": "フォレストホーク",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 245,
+    "enemyId": 150,
+    "enemyName": "フォレストホーク",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 246,
+    "enemyId": 150,
+    "enemyName": "フォレストホーク",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "浜辺/夜"
+  },
+  {
+    "id": 247,
+    "enemyId": 83,
+    "enemyName": "フェザーマジック",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": "平原"
+  },
+  {
+    "id": 248,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "dungeon",
+    "locationId": 25,
+    "locationName": "氷晶霊の山",
+    "remarks": ""
+  },
+  {
+    "id": 249,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 250,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 251,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 252,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 253,
+    "enemyId": 13,
+    "enemyName": "フライングソール",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 254,
+    "enemyId": 209,
+    "enemyName": "フェニックス",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 255,
+    "enemyId": 226,
+    "enemyName": "フライングポリープ",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 256,
+    "enemyId": 44,
+    "enemyName": "ブラウンポット",
+    "type": "dungeon",
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 257,
+    "enemyId": 206,
+    "enemyName": "ブリーブ",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 258,
+    "enemyId": 86,
+    "enemyName": "ブラッドサッカー",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 259,
+    "enemyId": 213,
+    "enemyName": "ブルーローパー",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 260,
+    "enemyId": 213,
+    "enemyName": "ブルーローパー",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 261,
+    "enemyId": 37,
+    "enemyName": "ブラッドバイター",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 262,
+    "enemyId": 37,
+    "enemyName": "ブラッドバイター",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "森林"
+  },
+  {
+    "id": 263,
+    "enemyId": 164,
+    "enemyName": "ブルフロッグ",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 264,
+    "enemyId": 164,
+    "enemyName": "ブルフロッグ",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "水辺"
+  },
+  {
+    "id": 265,
+    "enemyId": 199,
+    "enemyName": "ブリーズキーパー",
+    "type": "dungeon",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "remarks": ""
+  },
+  {
+    "id": 266,
+    "enemyId": 151,
+    "enemyName": "プレイリーホーク",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": ""
+  },
+  {
+    "id": 267,
+    "enemyId": 151,
+    "enemyName": "プレイリーホーク",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 268,
+    "enemyId": 151,
+    "enemyName": "プレイリーホーク",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠"
+  },
+  {
+    "id": 269,
+    "enemyId": 151,
+    "enemyName": "プレイリーホーク",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 270,
+    "enemyId": 162,
+    "enemyName": "プローズヘアー",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": ""
+  },
+  {
+    "id": 271,
+    "enemyId": 162,
+    "enemyName": "プローズヘアー",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 272,
+    "enemyId": 217,
+    "enemyName": "ヘルカイト",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 273,
+    "enemyId": 190,
+    "enemyName": "フロートドラゴン",
+    "type": "dungeon",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "remarks": ""
+  },
+  {
+    "id": 274,
+    "enemyId": 139,
+    "enemyName": "ヘルハウンド",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": "平原"
+  },
+  {
+    "id": 275,
+    "enemyId": 107,
+    "enemyName": "ヘヴィリフター",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 276,
+    "enemyId": 107,
+    "enemyName": "ヘヴィリフター",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "平原"
+  },
+  {
+    "id": 277,
+    "enemyId": 107,
+    "enemyName": "ヘヴィリフター",
+    "type": "field",
+    "locationId": 65,
+    "locationName": "バロールの町周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 278,
+    "enemyId": 93,
+    "enemyName": "ポアス",
+    "type": "dungeon",
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 279,
+    "enemyId": 93,
+    "enemyName": "ポアス",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "森林/夜限定"
+  },
+  {
+    "id": 280,
+    "enemyId": 93,
+    "enemyName": "ポアス",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 281,
+    "enemyId": 21,
+    "enemyName": "ヘビースネーク",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 282,
+    "enemyId": 21,
+    "enemyName": "ヘビースネーク",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 283,
+    "enemyId": 154,
+    "enemyName": "ポイズントード",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 284,
+    "enemyId": 154,
+    "enemyName": "ポイズントード",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 285,
+    "enemyId": 154,
+    "enemyName": "ポイズントード",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "水辺"
+  },
+  {
+    "id": 286,
+    "enemyId": 90,
+    "enemyName": "ホーネット",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 287,
+    "enemyId": 90,
+    "enemyName": "ホーネット",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "森林"
+  },
+  {
+    "id": 288,
+    "enemyId": 90,
+    "enemyName": "ホーネット",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 289,
+    "enemyId": 90,
+    "enemyName": "ホーネット",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠"
+  },
+  {
+    "id": 290,
+    "enemyId": 25,
+    "enemyName": "ボルテック",
+    "type": "dungeon",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "remarks": ""
+  },
+  {
+    "id": 291,
+    "enemyId": 25,
+    "enemyName": "ボルテック",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 292,
+    "enemyId": 25,
+    "enemyName": "ボルテック",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 293,
+    "enemyId": 155,
+    "enemyName": "ボーンナイト",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 294,
+    "enemyId": 155,
+    "enemyName": "ボーンナイト",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 295,
+    "enemyId": 12,
+    "enemyName": "マーキングプラント",
+    "type": "dungeon",
+    "locationId": 68,
+    "locationName": "モルル奥地",
+    "remarks": ""
+  },
+  {
+    "id": 296,
+    "enemyId": 12,
+    "enemyName": "マーキングプラント",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 297,
+    "enemyId": 200,
+    "enemyName": "ホムンクルス",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 298,
+    "enemyId": 220,
+    "enemyName": "マーダー",
+    "type": "dungeon",
+    "locationId": 23,
+    "locationName": "チャットの小屋",
+    "remarks": ""
+  },
+  {
+    "id": 299,
+    "enemyId": 74,
+    "enemyName": "ポルターガイスト",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 300,
+    "enemyId": 74,
+    "enemyName": "ポルターガイスト",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 301,
+    "enemyId": 53,
+    "enemyName": "マイコニド",
+    "type": "dungeon",
+    "locationId": 68,
+    "locationName": "モルル奥地",
+    "remarks": ""
+  },
+  {
+    "id": 302,
+    "enemyId": 53,
+    "enemyName": "マイコニド",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 303,
+    "enemyId": 174,
+    "enemyName": "マウントワーム",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "平原"
+  },
+  {
+    "id": 304,
+    "enemyId": 61,
+    "enemyName": "マッドマン",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 305,
+    "enemyId": 55,
+    "enemyName": "マクスウェル",
+    "type": "dungeon",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "remarks": ""
+  },
+  {
+    "id": 306,
+    "enemyId": 32,
+    "enemyName": "マホガニー",
+    "type": "dungeon",
+    "locationId": 68,
+    "locationName": "モルル奥地",
+    "remarks": ""
+  },
+  {
+    "id": 307,
+    "enemyId": 32,
+    "enemyName": "マホガニー",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 308,
+    "enemyId": 114,
+    "enemyName": "マックァツィン",
+    "type": "dungeon",
+    "locationId": 57,
+    "locationName": "沈没船",
+    "remarks": ""
+  },
+  {
+    "id": 309,
+    "enemyId": 71,
+    "enemyName": "マンティコア",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 310,
+    "enemyId": 15,
+    "enemyName": "マッドイール",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 311,
+    "enemyId": 15,
+    "enemyName": "マッドイール",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "浜辺"
+  },
+  {
+    "id": 312,
+    "enemyId": 56,
+    "enemyName": "ミスト",
+    "type": "dungeon",
+    "locationId": 28,
+    "locationName": "雷晶霊の遺跡",
+    "remarks": ""
+  },
+  {
+    "id": 313,
+    "enemyId": 56,
+    "enemyName": "ミスト",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 314,
+    "enemyId": 193,
+    "enemyName": "ミスリルゴーレム",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 315,
+    "enemyId": 141,
+    "enemyName": "メガデス",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 316,
+    "enemyId": 54,
+    "enemyName": "ミニコイド",
+    "type": "dungeon",
+    "locationId": 68,
+    "locationName": "モルル奥地",
+    "remarks": ""
+  },
+  {
+    "id": 317,
+    "enemyId": 54,
+    "enemyName": "ミニコイド",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 318,
+    "enemyId": 149,
+    "enemyName": "メタリカ",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 319,
+    "enemyId": 223,
+    "enemyName": "ミラージュナイツ",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 320,
+    "enemyId": 72,
+    "enemyName": "メデューサ",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 321,
+    "enemyId": 7,
+    "enemyName": "メイジ",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 322,
+    "enemyId": 7,
+    "enemyName": "メイジ",
+    "type": "field",
+    "locationId": 65,
+    "locationName": "バロールの町周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 323,
+    "enemyId": 41,
+    "enemyName": "モンク",
+    "type": "town",
+    "locationId": 3,
+    "locationName": "レグルス道場",
+    "remarks": ""
+  },
+  {
+    "id": 324,
+    "enemyId": 169,
+    "enemyName": "メルティングポット",
+    "type": "dungeon",
+    "locationId": 15,
+    "locationName": "風晶霊の空洞",
+    "remarks": ""
+  },
+  {
+    "id": 325,
+    "enemyId": 167,
+    "enemyName": "ラファール",
+    "type": "dungeon",
+    "locationId": 17,
+    "locationName": "火晶霊の谷",
+    "remarks": ""
+  },
+  {
+    "id": 326,
+    "enemyId": 121,
+    "enemyName": "ラーナ",
+    "type": "field",
+    "locationId": 72,
+    "locationName": "ティンシア周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 327,
+    "enemyId": 221,
+    "enemyName": "ラミア",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 328,
+    "enemyId": 116,
+    "enemyName": "ラウカマール",
+    "type": "dungeon",
+    "locationId": 37,
+    "locationName": "シゼル城",
+    "remarks": ""
+  },
+  {
+    "id": 329,
+    "enemyId": 91,
+    "enemyName": "リパーシックル",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 330,
+    "enemyId": 91,
+    "enemyName": "リパーシックル",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 331,
+    "enemyId": 91,
+    "enemyName": "リパーシックル",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 332,
+    "enemyId": 91,
+    "enemyName": "リパーシックル",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 333,
+    "enemyId": 91,
+    "enemyName": "リパーシックル",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "森林"
+  },
+  {
+    "id": 334,
+    "enemyId": 35,
+    "enemyName": "ラピットラビット",
+    "type": "field",
+    "locationId": 69,
+    "locationName": "アイメン周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 335,
+    "enemyId": 35,
+    "enemyName": "ラピットラビット",
+    "type": "field",
+    "locationId": 71,
+    "locationName": "ペイルティ周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 336,
+    "enemyId": 66,
+    "enemyName": "リビングソード",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 337,
+    "enemyId": 228,
+    "enemyName": "リビングアーマー",
+    "type": "dungeon",
+    "locationId": 61,
+    "locationName": "ネレイドの迷宮",
+    "remarks": ""
+  },
+  {
+    "id": 338,
+    "enemyId": 132,
+    "enemyName": "レイニーオールド",
+    "type": "dungeon",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "remarks": ""
+  },
+  {
+    "id": 339,
+    "enemyId": 196,
+    "enemyName": "リビングデッド",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 340,
+    "enemyId": 196,
+    "enemyName": "リビングデッド",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 341,
+    "enemyId": 201,
+    "enemyName": "レヴァント",
+    "type": "dungeon",
+    "locationId": 48,
+    "locationName": "アイフリードの墓",
+    "remarks": ""
+  },
+  {
+    "id": 342,
+    "enemyId": 123,
+    "enemyName": "ルーター",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 343,
+    "enemyId": 14,
+    "enemyName": "レッドシザーズ",
+    "type": "dungeon",
+    "locationId": 7,
+    "locationName": "望郷の洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 344,
+    "enemyId": 14,
+    "enemyName": "レッドシザーズ",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 345,
+    "enemyId": 70,
+    "enemyName": "レイシス",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": ""
+  },
+  {
+    "id": 346,
+    "enemyId": 241,
+    "enemyName": "レッドドラゴン",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 347,
+    "enemyId": 153,
+    "enemyName": "レッドプディング",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 348,
+    "enemyId": 120,
+    "enemyName": "レム",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 349,
+    "enemyId": 211,
+    "enemyName": "レッドローパー",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 350,
+    "enemyId": 211,
+    "enemyName": "レッドローパー",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "水辺"
+  },
+  {
+    "id": 351,
+    "enemyId": 180,
+    "enemyName": "レンジャー",
+    "type": "dungeon",
+    "locationId": 35,
+    "locationName": "レグルスの丘",
+    "remarks": ""
+  },
+  {
+    "id": 352,
+    "enemyId": 146,
+    "enemyName": "レディバグ",
+    "type": "dungeon",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "remarks": ""
+  },
+  {
+    "id": 353,
+    "enemyId": 122,
+    "enemyName": "ローグ",
+    "type": "field",
+    "locationId": 64,
+    "locationName": "バロールの大陸（バロールの町以外）",
+    "remarks": "平原"
+  },
+  {
+    "id": 354,
+    "enemyId": 122,
+    "enemyName": "ローグ",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "平原"
+  },
+  {
+    "id": 355,
+    "enemyId": 122,
+    "enemyName": "ローグ",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "砂漠"
+  },
+  {
+    "id": 356,
+    "enemyId": 205,
+    "enemyName": "スプティル",
+    "type": "field",
+    "locationId": 70,
+    "locationName": "ルイシカ周辺",
+    "remarks": "平原"
+  },
+  {
+    "id": 357,
+    "enemyId": 8,
+    "enemyName": "ローラースネイル",
+    "type": "dungeon",
+    "locationId": 22,
+    "locationName": "地晶霊の廃坑",
+    "remarks": ""
+  },
+  {
+    "id": 358,
+    "enemyId": 119,
+    "enemyName": "ロストソウル",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "平原/夜"
+  },
+  {
+    "id": 359,
+    "enemyId": 119,
+    "enemyName": "ロストソウル",
+    "type": "field",
+    "locationId": 67,
+    "locationName": "ファロース大陸",
+    "remarks": "森林/夜"
+  },
+  {
+    "id": 360,
+    "enemyId": 197,
+    "enemyName": "ワイト",
+    "type": "dungeon",
+    "locationId": 29,
+    "locationName": "バリル城",
+    "remarks": ""
+  },
+  {
+    "id": 361,
+    "enemyId": 27,
+    "enemyName": "ロッキーホーク",
+    "type": "dungeon",
+    "locationId": 52,
+    "locationName": "ラシュアンの森",
+    "remarks": ""
+  },
+  {
+    "id": 362,
+    "enemyId": 27,
+    "enemyName": "ロッキーホーク",
+    "type": "field",
+    "locationId": 62,
+    "locationName": "ラシュアン〜ミンツの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 363,
+    "enemyId": 82,
+    "enemyName": "ワイバーン",
+    "type": "dungeon",
+    "locationId": 18,
+    "locationName": "霊峰ファロース",
+    "remarks": "森林"
+  },
+  {
+    "id": 364,
+    "enemyId": 65,
+    "enemyName": "ロックゴーレム",
+    "type": "dungeon",
+    "locationId": 5,
+    "locationName": "ミンツの岩山",
+    "remarks": ""
+  },
+  {
+    "id": 365,
+    "enemyId": 222,
+    "enemyName": "ワーベア",
+    "type": "dungeon",
+    "locationId": 9,
+    "locationName": "水晶霊の河",
+    "remarks": ""
+  },
+  {
+    "id": 366,
+    "enemyId": 222,
+    "enemyName": "ワーベア",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 367,
+    "enemyId": 110,
+    "enemyName": "????　ヒアデス",
+    "type": "town",
+    "locationId": 1,
+    "locationName": "ラシュアン",
+    "remarks": ""
+  },
+  {
+    "id": 368,
+    "enemyId": 40,
+    "enemyName": "ワルキューレ",
+    "type": "dungeon",
+    "locationId": 59,
+    "locationName": "きらめきの塔",
+    "remarks": ""
+  },
+  {
+    "id": 369,
+    "enemyId": 4,
+    "enemyName": "トロール",
+    "type": "dungeon",
+    "locationId": 10,
+    "locationName": "いざないの密林",
+    "remarks": ""
+  },
+  {
+    "id": 370,
+    "enemyId": 4,
+    "enemyName": "トロール",
+    "type": "field",
+    "locationId": 63,
+    "locationName": "モルル〜王都インフェリアの大陸",
+    "remarks": "森林"
+  },
+  {
+    "id": 371,
+    "enemyId": 112,
+    "enemyName": "ファイアクラウド",
+    "type": "dungeon",
+    "locationId": 58,
+    "locationName": "ファロース教会地下",
+    "remarks": ""
+  },
+  {
+    "id": 372,
+    "enemyId": 191,
+    "enemyName": "トリトン",
+    "type": "dungeon",
+    "locationId": 31,
+    "locationName": "アイフリードの洞窟",
+    "remarks": ""
+  },
+  {
+    "id": 373,
+    "enemyId": 191,
+    "enemyName": "トリトン",
+    "type": "field",
+    "locationId": 73,
+    "locationName": "アイフリードの墓、きらめきの塔周辺の島々",
+    "remarks": "水辺"
+  },
+  {
+    "id": 374,
+    "enemyId": 88,
+    "enemyName": "G・スパイダー",
+    "type": "field",
+    "locationId": 66,
+    "locationName": "シャンバールの大陸",
+    "remarks": "森林/夜"
+  }
+]
