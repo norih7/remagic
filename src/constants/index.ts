@@ -443,6 +443,7 @@ export const deepLinks: Record<string, PageLink> = {
   herb: {
     title: "ステータスアップ薬草集め",
     path: "/deeps/herb",
+    image: "/link-headers/deeps-herb.jpg",
     desc: "敵からドロップするステータスアップ薬草と、チャットのローバーアイテム盗みを狙える薬草をまとめています。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。敵のドロップとチャットの盗みで入手できるステータスアップ薬草の特集。薬草の効果と優先度を解説しています。",

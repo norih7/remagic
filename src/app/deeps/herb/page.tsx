@@ -6,6 +6,7 @@ import RoundedItem from "@/components/RoundedItem";
 import { deepLinks } from "@/constants";
 import RoundedContainer from "@/components/RoundedContainer";
 import GuideList from "@/components/GuideList";
+import Tag from "@/components/Tag";
 
 export const dynamic = "force-static";
 
@@ -60,7 +61,7 @@ export default async function HomePage() {
             いくつかの敵はステータスアップ薬草を落とします。敵ごとのドロップ率は低めですが、繰り返し戦うことで確保できるので、育成用に連戦をしておくのが効率的です。
           </p>
           <p>
-            また「スマッシュマント」を装備するとテクニカルスマッシュ発生時にアイテムドロップ率がアップします。アイテムドロップを狙うときは術キャラ（キール、メルディ）以外にスマッシュマントを装備させるようにしましょう。
+            また「スマッシュマント」を装備するとテクニカルスマッシュ発生時にアイテムドロップ率がアップします。アイテムドロップを狙うときは術キャラ（キール、メルディ）以外にスマッシュマントを装備させるようにしましょう。フリンジで晶霊術の特殊効果「+アイテムゲッター」も習得しておくことでさらにドロップ率はアップします。
           </p>
           <GuideList
             items={[
@@ -72,6 +73,10 @@ export default async function HomePage() {
                 title:
                   "ルーンボトル変化一覧（シーブスマントからのルーンボトル変化）",
                 href: "/systems/rune",
+              },
+              {
+                title: "晶霊術一覧（+アイテムゲッターのフリンジ条件）",
+                href: "/skills/magic",
               },
             ]}
           />
@@ -86,22 +91,54 @@ export default async function HomePage() {
 
       <section className="mb-12">
         <SectionTitle>セージ集め</SectionTitle>
+        <div className="mb-3">
+          <GuideList
+            items={[{ title: "セージの詳細", href: "/systems/item/58" }]}
+          />
+        </div>
         <RoundedContainer>
-          <h3>闘技場の世界一決定戦の周回</h3>
+          <div className="mb-3">
+            <h3>闘技場の世界一決定戦の周回</h3>
+            <Tag>後半おすすめ</Tag>
+          </div>
           <RoundedItem title="概要" className="mb-3">
-            闘技場のヘルカイトは「セージ」「レッドセージ」をドロップします。1周3〜5分ほどでレッドセージも狙えるため効率はかなり高いです。30分でセージが3個以上集まることも。
+            闘技場のヘルカイトは「セージ」「レッドセージ」をドロップします。1周3〜5分ほどでレッドセージも狙えるため効率はかなり高いです。30分でセージが3個以上集まることも。1回戦目のウィザードからは副産物でセボリーのドロップも狙えます。
           </RoundedItem>
           <RoundedItem title="効率的な連戦">
             リッドに「アイスコフィン（氷属性武器）」や「せいりゅうとう（水属性武器）」、「スマッシュマント」を装備して挑みましょう。
           </RoundedItem>
         </RoundedContainer>
         <RoundedContainer>
-          <h3>アックスビーク狩り</h3>
+          <div className="mb-3">
+            <h3>アックスビーク狩り</h3>
+            <Tag>後半おすすめ</Tag>
+          </div>
           <RoundedItem title="概要" className="mb-3">
             アイフリードの墓周辺のフィールドに出現するアックスビークはセージを1%の確率でドロップします。闘技場と比べて敵が弱めであり、アックスビークの出現率はかなり高いため周回効率はかなり高いです。こちらも30分で3個以上集まることも。
           </RoundedItem>
           <RoundedItem title="効率的な連戦">
             アックスビークが登場したときだけ戦い、それ以外は逃げましょう。スマッシュマント装備したリッドで、鳳凰天駆〜緋凰絶炎衝でノーダメージかつまとめて倒すとテクニカルスマッシュが20%ほどを稼げる場合もあります。テクニカルスマッシュはアイテムドロップ率もアップに繋がるので高得点を狙っていきましょう。
+          </RoundedItem>
+        </RoundedContainer>
+      </section>
+
+      <section className="mb-12">
+        <SectionTitle>セボリー集め</SectionTitle>
+        <div className="mb-3">
+          <GuideList
+            items={[{ title: "セボリーの詳細", href: "/systems/item/75" }]}
+          />
+        </div>
+        <RoundedContainer>
+          <div className="mb-3">
+            <h3>ジェントルマン狩り</h3>
+            <Tag>中盤おすすめ</Tag>
+          </div>
+          <RoundedItem title="概要" className="mb-3">
+            ティンシア〜雷晶霊の遺跡にかけてのフィールドマップで出現する「ジェントルマン」は1%でセボリーを落とし、5%でセボリーを盗めます。ストーリー中盤のティンシア到着後から可能です。
+          </RoundedItem>
+          <RoundedItem title="効率的な連戦">
+            パーティに号令「まもりをかためろ」で待機させ、ショートカットでチャットのローバーアイテムで盗みチャレンジ。リッドには虎牙連斬、空破絶掌撃の連携でテクニカルスマッシュを稼ぎましょう。盗みとドロップ両方狙えますが、どちらか片方やるのでもいいです。
           </RoundedItem>
         </RoundedContainer>
       </section>
