@@ -22,7 +22,6 @@ export default async function HomePage() {
   return (
     <article>
       <SetPageTitle title={title} />
-      <p className="mb-8">準備中。</p>
       <div className="mb-8">
         <h2 className="text-lg font-bold mb-2 !border-none">やりこみ</h2>
         <p className="text-slate-1000">
