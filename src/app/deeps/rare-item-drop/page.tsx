@@ -19,7 +19,7 @@ const pageKey = "item-drop";
 const title = deepLinks[pageKey].title;
 const description =
   deepLinks[pageKey].seoDesc ??
-  "アイテムドロップで入手できるおすすめのアイテムや装備品の一覧。序盤・中盤・終盤でおすすめの収集目標と狙い方をまとめています。";
+  "アイテムドロップで入手できるレアなアイテムや装備品を紹介しています。";
 const canonical = deepLinks[pageKey].path;
 
 export const metadata = {
@@ -90,11 +90,11 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
-        エターニアでは、購入や宝箱では手に入らない武器や防具があり、敵のドロップでしか入手できないものも少なくありません。収集の優先順位を意識して、序盤・中盤・終盤で効率よく強化していくのが安定したプレイにつながります。
+        敵がドロップするアイテムでもレアなアイテムや装備品を紹介します。どれも何らかの使い道があったりします。
       </PageSummary>
 
       <section className="mb-12">
-        <SectionTitle>おすすめのドロップアイテム</SectionTitle>
+        <SectionTitle>レアドロップアイテム</SectionTitle>
         <div className="mb-6">
           <RoundedContainer>
             <div className="mb-3">
@@ -204,11 +204,6 @@ export default async function HomePage() {
           </RoundedItem>
         </RoundedContainer>
       </section> */}
-
-      <section className="mb-12">
-        <SectionTitle>ドロップアイテム一覧</SectionTitle>
-        {test}
-      </section>
     </article>
   );
 }

@@ -343,6 +343,13 @@ export const systemLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。防具一覧を掲載。",
   },
+  "item-drop": {
+    title: "アイテムドロップ一覧データ",
+    path: "/systems/item-drop",
+    desc: "アイテムドロップ一覧データを掲載",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。アイテムドロップ一覧データを掲載。",
+  },
   // titles: {
   //   title: "エターニアの称号",
   //   path: "/systems/titles",
@@ -449,9 +456,11 @@ export const deepLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。敵のドロップとチャットの盗みで入手できるステータスアップ薬草の特集。薬草の効果と優先度を解説しています。",
   },
   "item-drop": {
-    title: "アイテムドロップ",
-    path: "/deeps/item-drop",
-    desc: "アイテムドロップの一覧データとおすすめアイテム・装備を紹介。ドロップでしか入手できないアイテムをチェック。",
+    title: "レアアイテムドロップ",
+    path: "/deeps/rare-item-drop",
+    desc: "アイテムドロップのレアアイテム・装備を紹介。ドロップでしか入手できないアイテムをチェック。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。アイテムドロップで入手できるレアなアイテムや装備品を紹介しています。",
   },
   // equipment: {
   //   title: "おすすめ装備考察",

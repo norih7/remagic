@@ -1,0 +1,15 @@
+fix
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: nori <nori@norinoMacBook-Air.local>
+#
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   functions/_middleware.js
+#	modified:   next-env.d.ts
+#	new file:   src/app/deeps/item-drop/page.tsx
+#	modified:   src/constants/index.ts
+#
