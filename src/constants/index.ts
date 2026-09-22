@@ -455,7 +455,7 @@ export const deepLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。敵のドロップとチャットの盗みで入手できるステータスアップ薬草の特集。薬草の効果と優先度を解説しています。",
   },
-  "item-drop": {
+  "rare-item-drop": {
     title: "レアアイテムドロップ",
     path: "/deeps/rare-item-drop",
     desc: "アイテムドロップのレアアイテム・装備を紹介。ドロップでしか入手できないアイテムをチェック。",

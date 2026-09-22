@@ -15,11 +15,9 @@ import {
 export const dynamic = "force-static";
 import Link from "next/link";
 
-const pageKey = "item-drop";
+const pageKey = "rare-item-drop";
 const title = deepLinks[pageKey].title;
-const description =
-  deepLinks[pageKey].seoDesc ??
-  "アイテムドロップで入手できるレアなアイテムや装備品を紹介しています。";
+const description = deepLinks[pageKey].seoDesc;
 const canonical = deepLinks[pageKey].path;
 
 export const metadata = {
@@ -90,7 +88,7 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
-        敵がドロップするアイテムでもレアなアイテムや装備品を紹介します。どれも何らかの使い道があったりします。
+        敵がドロップするアイテムでもレアなアイテムや装備品を紹介します。どれも何らかの使い道があったり、強力な装備なのでコンプリートを目指しましょう。
       </PageSummary>
 
       <section className="mb-12">

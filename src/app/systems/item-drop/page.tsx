@@ -3,7 +3,7 @@ import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
-import { deepLinks } from "@/constants";
+import { systemLinks } from "@/constants";
 import RoundedContainer from "@/components/RoundedContainer";
 import GuideList from "@/components/GuideList";
 import Tag from "@/components/Tag";
@@ -16,9 +16,9 @@ export const dynamic = "force-static";
 import Link from "next/link";
 
 const pageKey = "item-drop";
-const title = deepLinks[pageKey].title;
-const description = deepLinks[pageKey].seoDesc ?? "";
-const canonical = deepLinks[pageKey].path;
+const title = systemLinks[pageKey].title;
+const description = systemLinks[pageKey].seoDesc;
+const canonical = systemLinks[pageKey].path;
 
 export const metadata = {
   title,
