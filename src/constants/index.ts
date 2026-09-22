@@ -448,13 +448,18 @@ export const deepLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。敵のドロップとチャットの盗みで入手できるステータスアップ薬草の特集。薬草の効果と優先度を解説しています。",
   },
-  // "rover-item": {
-  //   title: "アイテム盗み",
-  //   path: "/deeps/rover-item",
+  "item-drop": {
+    title: "アイテムドロップ",
+    path: "/deeps/item-drop",
+    desc: "アイテムドロップの一覧データとおすすめアイテム・装備を紹介。ドロップでしか入手できないアイテムをチェック。",
+  },
+  // equipment: {
+  //   title: "おすすめ装備考察",
+  //   path: "/deeps/equipment",
   //   desc: "",
   // },
   // equipment: {
-  //   title: "おすすめ装備考察",
+  //   title: "火龍炎舞",
   //   path: "/deeps/equipment",
   //   desc: "",
   // },
