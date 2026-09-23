@@ -1,9 +1,20 @@
+// Google Search Console確認ファイル一覧(パス → 中身)
+const GOOGLE_VERIFICATIONS = {
+  "/google14bc5ea00ba111ac.html":
+    "google-site-verification: google14bc5ea00ba111ac.html",
+  // 他にも確認ファイルが増えたらここに追加
+};
+
 export async function onRequest(context) {
   const url = new URL(context.request.url);
 
-  // Google Search Console確認ファイルだけは、自動リダイレクトを一切経由せず直接ファイルを返す
-  if (/^\/google[a-z0-9]+\.html$/i.test(url.pathname)) {
-    return context.env.ASSETS.fetch(context.request);
+  // Google確認ファイルはASSETSを経由させず直接返す(ASSETS.fetchはリダイレクトルールを再適用してしまうため)
+  const verificationBody = GOOGLE_VERIFICATIONS[url.pathname];
+  if (verificationBody !== undefined) {
+    return new Response(verificationBody, {
+      status: 200,
+      headers: { "Content-Type": "text/html; charset=utf-8" },
+    });
   }
 
   if (url.hostname === "remagic.pages.dev") {
