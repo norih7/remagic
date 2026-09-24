@@ -63,387 +63,400 @@ export default async function HomePage() {
         </section>
 
         {/* 3. 更新履歴セクション */}
-        <section className="">
+        <section>
           <SectionTitle type="history">最新更新履歴</SectionTitle>
-          <ul className="space-y-2">
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/09/21</span>
-              <span>
-                <Link
-                  href="/deeps/herb"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ステータスアップ薬草集め
-                </Link>
-                を公開しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/09/19</span>
-              <span>
-                <Link
-                  href="/extras/nereid"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ネレイドの迷宮
-                </Link>
-                を公開しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/09/17</span>
-              <span>
-                <Link
-                  href="/guides"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  プレイガイド
-                </Link>
-                、
-                <Link
-                  href="/guides/first"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  序盤にやっておきたいこと
-                </Link>
-                、
-                <Link
-                  href="/guides/missable"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  取り逃がし要素
-                </Link>
-                を公開しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/09/08</span>
-              <span>
-                <Link
-                  href="/subevents/coliseum"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  闘技場
-                </Link>
-                を公開しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/09/05</span>
-              <span>
-                <Link
-                  href="/extras/jiini"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ジイニ
-                </Link>
-                を公開しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/09/04</span>
-              <span>
-                <Link
-                  href="/systems/special-effect"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  装備品の特殊効果
-                </Link>
-                をアップデート。内容を書き直しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/09/03</span>
-              <span>
-                <Link
-                  href="/extras/valkyrie"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  きらめきの塔
-                </Link>
-                をアップデート。攻略情報の追記とゲーム画像を追加しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/30</span>
-              <span>
-                <Link
-                  href="/extras/towns"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ねこにんの里/晶霊温泉
-                </Link>
-                を新規作成しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/29</span>
-              <span>
-                <Link
-                  href="/stories/guide5"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  セイファート神殿〜シゼル城
-                </Link>
-                をアップデート。エンディングまでの内容を書き直しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/27</span>
-              <span>
-                <Link
-                  href="/extras/farosu-underground"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ファロース教会地下
-                </Link>
-                をアップデート。ゲーム画像を追加しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/26</span>
-              <span>
-                <Link
-                  href="/subevents/lens"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  レンズ収集
-                </Link>
-                をアップデート。レンズ入手場所の画像をすべて掲載しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/23</span>
-              <span>
-                <Link
-                  href="/systems/recipe"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  料理一覧/マスター料理
-                </Link>
-                をアップデート。ワンダーシェフの場所の画像を掲載しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/21</span>
-              <span>
-                <Link
-                  href="/subevents/grip-sword"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  グリップソード探し
-                </Link>
-                を公開しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/20</span>
-              <span>
-                <Link
-                  href="/subevents/flying-board"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  飛行艇の入手
-                </Link>
-                をアップデート。ページ内に画像を掲載しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/20</span>
-              <span>
-                <Link
-                  href="/subevents/lysithea"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  画家リシテア
-                </Link>
-                をアップデート。ページ内に画像を掲載しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/19</span>
-              <span>
-                <Link
-                  href="/extras/dark-cave"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  闇の洞窟
-                </Link>
-                をアップデート。内容を書き直しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/16</span>
-              <span>
-                <Link
-                  href="/extras/sunken-ship"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  沈没船
-                </Link>
-                をアップデート。内容を書き直しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/14</span>
-              <span>
-                <Link
-                  href="/extras/aifread"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  アイフリードの墓
-                </Link>
-                をアップデート。内容を書き直しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/12</span>
-              <span>
-                <Link
-                  href="/stories/guide4"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ペイルティ〜バリル城
-                </Link>
-                をアップデート。バリル城までの内容を書き直しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/09</span>
-              <span>
-                <Link
-                  href="/stories/guide4"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ペイルティ〜バリル城
-                </Link>
-                をアップデート。雷晶霊の遺跡までの内容を書き直しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/08/05</span>
-              <span>
-                <Link
-                  href="/stories/guide3"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  セレスティア突入〜チャットの小屋
-                </Link>
-                をアップデート。ページ全体を書き直しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/07/31</span>
-              <span>
-                <Link
-                  href="/subevents/beppo"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ベッポとのかくれんぼ
-                </Link>
-                を新規作成。
-              </span>
-            </li>
+          <div className="w-full">
+            <ul className="space-y-2 max-h-[300px] overflow-y-auto pr-2">
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/09/24</span>
+                <span>
+                  <Link
+                    href="/systems/item-drop"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    アイテムドロップ一覧データ
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/09/21</span>
+                <span>
+                  <Link
+                    href="/deeps/herb"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ステータスアップ薬草集め
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/09/19</span>
+                <span>
+                  <Link
+                    href="/extras/nereid"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ネレイドの迷宮
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/09/17</span>
+                <span>
+                  <Link
+                    href="/guides"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    プレイガイド
+                  </Link>
+                  、
+                  <Link
+                    href="/guides/first"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    序盤にやっておきたいこと
+                  </Link>
+                  、
+                  <Link
+                    href="/guides/missable"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    取り逃がし要素
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/09/08</span>
+                <span>
+                  <Link
+                    href="/subevents/coliseum"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    闘技場
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/09/05</span>
+                <span>
+                  <Link
+                    href="/extras/jiini"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ジイニ
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/09/04</span>
+                <span>
+                  <Link
+                    href="/systems/special-effect"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    装備品の特殊効果
+                  </Link>
+                  をアップデート。内容を書き直しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/09/03</span>
+                <span>
+                  <Link
+                    href="/extras/valkyrie"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    きらめきの塔
+                  </Link>
+                  をアップデート。攻略情報の追記とゲーム画像を追加しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/30</span>
+                <span>
+                  <Link
+                    href="/extras/towns"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ねこにんの里/晶霊温泉
+                  </Link>
+                  を新規作成しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/29</span>
+                <span>
+                  <Link
+                    href="/stories/guide5"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    セイファート神殿〜シゼル城
+                  </Link>
+                  をアップデート。エンディングまでの内容を書き直しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/27</span>
+                <span>
+                  <Link
+                    href="/extras/farosu-underground"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ファロース教会地下
+                  </Link>
+                  をアップデート。ゲーム画像を追加しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/26</span>
+                <span>
+                  <Link
+                    href="/subevents/lens"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    レンズ収集
+                  </Link>
+                  をアップデート。レンズ入手場所の画像をすべて掲載しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/23</span>
+                <span>
+                  <Link
+                    href="/systems/recipe"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    料理一覧/マスター料理
+                  </Link>
+                  をアップデート。ワンダーシェフの場所の画像を掲載しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/21</span>
+                <span>
+                  <Link
+                    href="/subevents/grip-sword"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    グリップソード探し
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/20</span>
+                <span>
+                  <Link
+                    href="/subevents/flying-board"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    飛行艇の入手
+                  </Link>
+                  をアップデート。ページ内に画像を掲載しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/20</span>
+                <span>
+                  <Link
+                    href="/subevents/lysithea"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    画家リシテア
+                  </Link>
+                  をアップデート。ページ内に画像を掲載しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/19</span>
+                <span>
+                  <Link
+                    href="/extras/dark-cave"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    闇の洞窟
+                  </Link>
+                  をアップデート。内容を書き直しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/16</span>
+                <span>
+                  <Link
+                    href="/extras/sunken-ship"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    沈没船
+                  </Link>
+                  をアップデート。内容を書き直しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/14</span>
+                <span>
+                  <Link
+                    href="/extras/aifread"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    アイフリードの墓
+                  </Link>
+                  をアップデート。内容を書き直しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/12</span>
+                <span>
+                  <Link
+                    href="/stories/guide4"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ペイルティ〜バリル城
+                  </Link>
+                  をアップデート。バリル城までの内容を書き直しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/09</span>
+                <span>
+                  <Link
+                    href="/stories/guide4"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ペイルティ〜バリル城
+                  </Link>
+                  をアップデート。雷晶霊の遺跡までの内容を書き直しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/08/05</span>
+                <span>
+                  <Link
+                    href="/stories/guide3"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    セレスティア突入〜チャットの小屋
+                  </Link>
+                  をアップデート。ページ全体を書き直しました。
+                </span>
+              </li>
+              {/* 
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/07/31</span>
+                <span>
+                  <Link
+                    href="/subevents/beppo"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ベッポとのかくれんぼ
+                  </Link>
+                  を新規作成。
+                </span>
+              </li>
 
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/07/28</span>
-              <span>
-                <Link
-                  href="/stories/guide2"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  いざないの密林〜霊峰ファロース
-                </Link>
-                をアップデート。火晶霊の谷までの攻略情報を加筆しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/07/25</span>
-              <span>
-                <Link
-                  href="/stories/guide2"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  いざないの密林〜霊峰ファロース
-                </Link>
-                をアップデート。バロールまでの攻略情報を加筆しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/07/25</span>
-              <span>
-                <Link
-                  href="/stories/guide2"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  いざないの密林〜霊峰ファロース
-                </Link>
-                をアップデート。いざないの密林の攻略情報を加筆しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/07/21</span>
-              <span>
-                <Link
-                  href="/stories/guide1"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  ラシュアン〜水晶霊の河
-                </Link>
-                をアップデート。内容加筆しレイアウト修正しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/07/19</span>
-              <span>
-                <Link
-                  href="/subevents/skill-fog"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  フォッグの特技習得
-                </Link>
-                、
-                <Link
-                  href="/subevents/lysithea"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  画家リシテア
-                </Link>
-                、
-                <Link
-                  href="/subevents/flying-boad"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  飛行艇の入手
-                </Link>
-                をアップデート。レイアウトを整備しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/07/18</span>
-              <span>
-                <Link
-                  href="/subevents/skill-chat"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  チャットの特技習得
-                </Link>
-                をアップデート。レイアウトを整備しました。
-              </span>
-            </li>
-            <li className="flex gap-4">
-              <span className="text-slate-400">2026/07/18</span>
-              <span>
-                <Link
-                  href="/subevents/syanballoon"
-                  className="hover:text-cyan-400 transition-colors"
-                >
-                  シャンバルーン
-                </Link>
-                をアップデート。レイアウトを整備し、攻略動画をアップしました。
-              </span>
-            </li>
-            {/* 
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/07/28</span>
+                <span>
+                  <Link
+                    href="/stories/guide2"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    いざないの密林〜霊峰ファロース
+                  </Link>
+                  をアップデート。火晶霊の谷までの攻略情報を加筆しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/07/25</span>
+                <span>
+                  <Link
+                    href="/stories/guide2"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    いざないの密林〜霊峰ファロース
+                  </Link>
+                  をアップデート。バロールまでの攻略情報を加筆しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/07/25</span>
+                <span>
+                  <Link
+                    href="/stories/guide2"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    いざないの密林〜霊峰ファロース
+                  </Link>
+                  をアップデート。いざないの密林の攻略情報を加筆しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/07/21</span>
+                <span>
+                  <Link
+                    href="/stories/guide1"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ラシュアン〜水晶霊の河
+                  </Link>
+                  をアップデート。内容加筆しレイアウト修正しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/07/19</span>
+                <span>
+                  <Link
+                    href="/subevents/skill-fog"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    フォッグの特技習得
+                  </Link>
+                  、
+                  <Link
+                    href="/subevents/lysithea"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    画家リシテア
+                  </Link>
+                  、
+                  <Link
+                    href="/subevents/flying-boad"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    飛行艇の入手
+                  </Link>
+                  をアップデート。レイアウトを整備しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/07/18</span>
+                <span>
+                  <Link
+                    href="/subevents/skill-chat"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    チャットの特技習得
+                  </Link>
+                  をアップデート。レイアウトを整備しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/07/18</span>
+                <span>
+                  <Link
+                    href="/subevents/syanballoon"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    シャンバルーン
+                  </Link>
+                  をアップデート。レイアウトを整備し、攻略動画をアップしました。
+                </span>
+              </li>
             <li className="flex gap-4">
               <span className="text-slate-400">2026/07/18</span>
               <span>
@@ -532,7 +545,8 @@ export default async function HomePage() {
               <span className="text-slate-400">2026/06/20</span>
               サイトを公開しました
             </li> */}
-          </ul>
+            </ul>
+          </div>
         </section>
       </main>
     </div>

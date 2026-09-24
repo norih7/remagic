@@ -3,7 +3,7 @@ import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
-import { systemLinks } from "@/constants";
+import { systemLinks, itemTypeMap } from "@/constants";
 import RoundedContainer from "@/components/RoundedContainer";
 import GuideList from "@/components/GuideList";
 import Tag from "@/components/Tag";
@@ -55,13 +55,13 @@ export default async function HomePage() {
 
     return acc;
   }, {});
-  const test = Object.keys(result).map((key, index) => {
+  const itemDropList = Object.keys(result).map((key, index) => {
     const itemId = Number(key);
     const data = result[itemId];
     const enemies = [...data.enemysMap.values()].map((enemy, enemyIndex) => (
       <Link
         href={`/systems/enemy/${enemy.enemyId}`}
-        className="text-xs font-bold inline-block bg-white p-1 border border-gray-500 rounded-md"
+        className="text-xs font-bold inline-block bg-white py-1 px-2 border border-gray-300 rounded-md"
         key={enemyIndex}
       >
         {enemy.enemyName}
@@ -70,14 +70,19 @@ export default async function HomePage() {
     const item = items.find((item) => item.id === itemId);
     return (
       <RoundedContainer key={index}>
-        <h3>{data.itemName}</h3>
+        <div className="mb-3">
+          <h3>{data.itemName}</h3>
+          <Tag>
+            {item && itemTypeMap[item.type as keyof typeof itemTypeMap]}
+          </Tag>
+        </div>
         <div className="text-xs grid grid-cols-1 gap-3">
           <RoundedItem title="説明">
             {item && item.effect}
             {item && item.special}
           </RoundedItem>
           <RoundedItem title="ドロップ">
-            <div className="flex flex-wrap gap-2">{enemies}</div>
+            <div className="flex flex-wrap gap-2 pt-1">{enemies}</div>
           </RoundedItem>
         </div>
       </RoundedContainer>
@@ -88,12 +93,12 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
-        エターニアでは、購入や宝箱では手に入らない武器や防具があり、敵のドロップでしか入手できないものも少なくありません。収集の優先順位を意識して、序盤・中盤・終盤で効率よく強化していくのが安定したプレイにつながります。
+        エターニアの敵がドロップするアイテム（消費アイテム、装備品）の一覧ページです。
       </PageSummary>
 
       <section className="mb-12">
         <SectionTitle>ドロップアイテム一覧</SectionTitle>
-        {test}
+        {itemDropList}
       </section>
     </article>
   );

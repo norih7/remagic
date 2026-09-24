@@ -345,6 +345,7 @@ export const systemLinks: Record<string, PageLink> = {
   },
   "item-drop": {
     title: "アイテムドロップ一覧データ",
+    image: "/link-headers/systems-item-drop.jpg",
     path: "/systems/item-drop",
     desc: "アイテムドロップ一覧データを掲載",
     seoDesc:
@@ -612,6 +613,7 @@ export const itemTypeMap = {
   circlet: "サークレット（キールの「頭」装備）",
   hat: "帽子（チャットの「頭」装備）",
   accessory: "アクセサリ",
+  food: "食材",
 };
 
 export const enemyTypeMap = {
