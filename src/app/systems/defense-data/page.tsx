@@ -177,6 +177,13 @@ export default async function HomePage() {
       </section>
       <section className="mb-12">
         <div className="mb-8">
+          <SectionTitle>防具: ブレスレット</SectionTitle>
+          <p>装備可能: ファラ、メルディ、チャット、フォッグ</p>
+          {braceletList}
+        </div>
+      </section>
+      <section className="mb-12">
+        <div className="mb-8">
           <SectionTitle>防具: サークレット</SectionTitle>
           <p>装備可能: キール ※「クレスのバンダナ」のみリッドが装備可能</p>
           {circletList}

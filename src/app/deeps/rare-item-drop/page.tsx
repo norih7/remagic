@@ -116,7 +116,7 @@ export default async function HomePage() {
           <div className="mb-3">
             <h3>カオスシールド</h3>
             <Tag>防具</Tag>
-            <Tag>リッドの最強盾</Tag>
+            <Tag>リッドの最強盾の1つ</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
             カオスシールドは防御+40とリッドの盾で一番数値が高いです。特殊効果などで他の盾を装備することもありますが防御力最強の盾はドロップで入手します。
@@ -151,10 +151,29 @@ export default async function HomePage() {
             />
           </RoundedItem>
         </RoundedContainer>
+
+        <RoundedContainer>
+          <div className="mb-3">
+            <h3>アイスコフィン</h3>
+            <Tag>武器</Tag>
+            <Tag>リッドの最強武器の1つ</Tag>
+          </div>
+          <RoundedItem title="特徴" className="mb-3">
+            リッドの氷属性武器として最強クラスの剣。闘技場の世界一決定戦の最適解装備としてアイスコフィンが挙がります。中盤では必ずドロップさせるようにしましょう。
+          </RoundedItem>
+          <RoundedItem title="狙い方">
+            <p>氷晶霊の山に出現するアイスウォーリアを周回しましょう。</p>
+            <GuideList
+              items={[
+                { title: "アイスウォーリア", href: "/systems/enemy/168" },
+              ]}
+            />
+          </RoundedItem>
+        </RoundedContainer>
       </section>
 
       <section className="mb-12">
-        <SectionTitle>序盤おすすめ</SectionTitle>
+        <SectionTitle>特殊効果</SectionTitle>
         <RoundedContainer>
           <div className="mb-3">
             <h3>シーブスマント</h3>
@@ -211,7 +230,10 @@ export default async function HomePage() {
             />
           </RoundedItem>
         </RoundedContainer>
+      </section>
 
+      <section className="mb-12">
+        <SectionTitle>序盤おすすめ</SectionTitle>
         <RoundedContainer>
           <div className="mb-3">
             <h3>バスタードソード</h3>
@@ -291,7 +313,7 @@ export default async function HomePage() {
             <Tag>武器</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
-            -
+            リッドの地属性武器として強力な剣。地属性武器最強はガイアクリーヴァですが入手難易度が高いため、中盤でアースブレイドは確保しておけば長く使えます。
           </RoundedItem>
           <RoundedItem title="狙い方">
             <p>地晶霊の廃坑に出現するハードホーンを周回しましょう。</p>
@@ -303,32 +325,16 @@ export default async function HomePage() {
 
         <RoundedContainer>
           <div className="mb-3">
-            <h3>アイスコフィン</h3>
-            <Tag>武器</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            -
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>氷晶霊の山に出現するアイスウォーリアを周回しましょう。</p>
-            <GuideList
-              items={[
-                { title: "アイスウォーリア", href: "/systems/enemy/168" },
-              ]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
-
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>プリティミトン</h3>
+            <h3>ラブリィミトン</h3>
             <Tag>防具</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
-            -
+            女性キャラ専用の体防具。防御力の効果はそこそこですが、光と闇の耐性+20%が強力で特にラスボスやネレイドの迷宮で活躍します。中盤の最後、バリル城で入手可能。
           </RoundedItem>
           <RoundedItem title="狙い方">
-            <p>バリル城に出現するストロングホーンを周回しましょう。</p>
+            <p>
+              バリル城に出現するストロングホーンを周回しましょう。最大確保は3つ。
+            </p>
             <GuideList
               items={[
                 { title: "ストロングホーン", href: "/systems/enemy/181" },
