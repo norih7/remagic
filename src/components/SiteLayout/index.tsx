@@ -17,6 +17,11 @@ import {
   LuMessageCircleMore,
   LuMessageCircle,
   LuChevronDown,
+  LuMapPinCheckInside,
+  LuChartGantt,
+  LuFlag,
+  LuLightbulb,
+  LuAward,
 } from "react-icons/lu";
 import Link from "next/link";
 
@@ -49,14 +54,33 @@ export default function SiteLayout({
       key === category
         ? "border-b-2 border-sky-500"
         : "border-b-2 border-transparent";
+
+    let icon = <LuMessageCircleMore />;
+    if (key === "guides") {
+      icon = <LuFlag className="mr-0.5" />;
+    }
+    if (key === "stories") {
+      icon = <LuMapPinCheckInside className="mr-0.5" />;
+    }
+    if (key === "systems") {
+      icon = <LuChartGantt className="mr-0.5" />;
+    }
+    if (key === "skills") {
+      icon = <LuSparkles className="mr-0.5" />;
+    }
+    if (key === "extras") {
+      icon = <LuLightbulb className="mr-0.5" />;
+    }
+    if (key === "deeps") {
+      icon = <LuAward className="mr-0.5" />;
+    }
     return (
       <li
         className={`inline-flex items-center font-bold text-slate-700 pt-1 pb-0.5 text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
         key={index}
       >
-        {/* <LuMessageCircleMore className="mr-0.5 text-gray-500" /> */}
+        {/* {icon} */}
         <Link href={`/${key}`}>{categoryName[key]}</Link>
-        {/* <LuChevronDown className="ml-0.5 text-gray-500" /> */}
       </li>
     );
   });

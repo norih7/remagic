@@ -129,7 +129,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
         return (
           <div
             key={index}
-            className="mb-4 border border-slate-300 rounded-lg p-3 font-bold"
+            className="mb-4 border border-slate-300 rounded-lg p-3"
           >
             {skillName}
             <div className="grid grid-cols-2 gap-2 mb-2">

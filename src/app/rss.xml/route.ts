@@ -2,7 +2,8 @@
 import { NextResponse } from "next/server";
 import {
   guideLinks,
-  extraLinks /*, storyLinks, systemLinks, subeventLinks */,
+  extraLinks,
+  deepLinks /*, storyLinks, systemLinks, subeventLinks */,
 } from "@/constants";
 
 export const dynamic = "force-static";
@@ -26,6 +27,7 @@ export async function GET() {
   const allLinks = [
     ...Object.values(guideLinks),
     ...Object.values(extraLinks),
+    ...Object.values(deepLinks),
     // ...Object.values(storyLinks),
   ];
 

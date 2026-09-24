@@ -75,7 +75,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
             <li key={index}>
               <a
                 href={`/systems/item/${item.itemId}`}
-                className="px-2 py-1 bg-white hover:bg-blue-100 border border-gray-300 rounded-md text-sm text-gray-700 transition-colors"
+                className="px-2 py-1 bg-white hover:bg-blue-100 border border-gray-300 rounded-md text-sm text-gray-700 transition-colors font-bold"
               >
                 {item.ItemName}
               </a>
@@ -120,7 +120,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
         return (
           <div
             key={index}
-            className="mb-4 font-bold border border-slate-200 rounded-lg p-3 shadow-xs"
+            className="mb-4 border border-slate-200 rounded-lg p-3 shadow-xs"
           >
             <div className="flex mb-2 items-center">
               {/* <Image

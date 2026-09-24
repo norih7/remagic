@@ -343,6 +343,14 @@ export const systemLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。防具一覧を掲載。",
   },
+  "accessory-data": {
+    title: "アクセサリ一覧データ",
+    // image: "/link-headers/systems-defense.jpg",
+    path: "/systems/accessory-data",
+    desc: "アクセサリ一覧データを掲載",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。アクセサリ一覧を掲載。",
+  },
   "item-drop": {
     title: "アイテムドロップ一覧データ",
     image: "/link-headers/systems-item-drop.jpg",
@@ -459,9 +467,12 @@ export const deepLinks: Record<string, PageLink> = {
   "rare-item-drop": {
     title: "レアアイテムドロップ",
     path: "/deeps/rare-item-drop",
+    image: "/link-headers/deeps-rare-item-drop.jpg",
     desc: "アイテムドロップのレアアイテム・装備を紹介。ドロップでしか入手できないアイテムをチェック。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。アイテムドロップで入手できるレアなアイテムや装備品を紹介しています。",
+    createdAt: "2026-09-24",
+    updatedAt: "2026-09-24",
   },
   // equipment: {
   //   title: "おすすめ装備考察",
