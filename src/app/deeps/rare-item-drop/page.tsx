@@ -136,20 +136,18 @@ export default async function HomePage() {
         <RoundedContainer>
           <div className="mb-3">
             <h3>リバヴィウサー</h3>
-            <Tag>防具</Tag>
-            <Tag>リッドの最強盾</Tag>
+            <Tag>アクセサリ</Tag>
+            <Tag>唯一無二の性能</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
-            カオスシールドは防御+40とリッドの盾で一番数値が高いです。特殊効果などで他の盾を装備することもありますが防御力最強の盾はドロップで入手します。
+            ダメージを受けるタイミングで□ボタンを押すとさらにダメージを軽減させる効果のアクセサリ。□+↓でバックステップもできるようになります。
           </RoundedItem>
           <RoundedItem title="狙い方">
             <p>
-              ラストダンジョン「シゼル城」で出現するファイアウォーリアを周回しましょう。アイテムドロップ率は12%と割と高めです。
+              アイフリードの墓やきらめきの塔で出現するメデューサを周回しましょう。アイテムドロップ率は1%なので。
             </p>
             <GuideList
-              items={[
-                { title: "ファイアウォーリア", href: "/systems/enemy/102" },
-              ]}
+              items={[{ title: "メデューサ", href: "/systems/enemy/72" }]}
             />
           </RoundedItem>
         </RoundedContainer>
@@ -234,7 +232,7 @@ export default async function HomePage() {
         <RoundedContainer>
           <div className="mb-3">
             <h3>ニンブルレイピア</h3>
-            <Tag>アクセサリ</Tag>
+            <Tag>武器</Tag>
             <Tag>序盤で入手可能</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
@@ -251,7 +249,7 @@ export default async function HomePage() {
         <RoundedContainer>
           <div className="mb-3">
             <h3>フランベルジュ</h3>
-            <Tag>アクセサリ</Tag>
+            <Tag>武器</Tag>
             <Tag>序盤で入手可能</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
@@ -286,12 +284,11 @@ export default async function HomePage() {
       </section>
 
       <section className="mb-12">
-        <SectionTitle>中盤</SectionTitle>
+        <SectionTitle>中盤おすすめ</SectionTitle>
         <RoundedContainer>
           <div className="mb-3">
             <h3>アースブレイド</h3>
-            <Tag>アクセサリ</Tag>
-            <Tag>序盤で入手可能</Tag>
+            <Tag>武器</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
             -
@@ -307,8 +304,7 @@ export default async function HomePage() {
         <RoundedContainer>
           <div className="mb-3">
             <h3>アイスコフィン</h3>
-            <Tag>アクセサリ</Tag>
-            <Tag>序盤で入手可能</Tag>
+            <Tag>武器</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
             -
@@ -326,8 +322,7 @@ export default async function HomePage() {
         <RoundedContainer>
           <div className="mb-3">
             <h3>プリティミトン</h3>
-            <Tag>アクセサリ</Tag>
-            <Tag>序盤で入手可能</Tag>
+            <Tag>防具</Tag>
           </div>
           <RoundedItem title="特徴" className="mb-3">
             -
