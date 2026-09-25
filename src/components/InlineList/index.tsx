@@ -4,12 +4,12 @@ type Props = {
   children: React.ReactNode;
 };
 
-const RoundedInlineList = (props: Props) => {
+const InlineList = (props: Props) => {
   const { title, type = "default", children } = props;
   const paddingType = type === "wide" ? "py-2" : "py-1";
   return (
     <dl
-      className={`border border-slate-300 font-bold px-3 ${paddingType} rounded-lg text-center flex items-center text-xs text-gray-700`}
+      className={`borde border-slate-300 font-bold px-3 ${paddingType} rounded-xs text-center flex flex-wrap items-center text-xs text-gray-700`}
     >
       <dt className="mr-2 text-slate-700">{title}</dt>
       <dd>{children}</dd>
@@ -17,4 +17,4 @@ const RoundedInlineList = (props: Props) => {
   );
 };
 
-export default RoundedInlineList;
+export default InlineList;

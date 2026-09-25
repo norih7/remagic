@@ -20,7 +20,7 @@ import Link from "next/link";
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const pageKey = "item-data";
+const pageKey = "defense-data";
 const title = systemLinks[pageKey].title;
 const description = systemLinks[pageKey].seoDesc;
 const canonical = systemLinks[pageKey].path;

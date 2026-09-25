@@ -16,11 +16,13 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import Tag from "@/components/Tag";
 import Link from "next/link";
+import InlineList from "@/components/InlineList";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
-const pageKey = "item-data";
+const pageKey = "weapon-data";
 const title = systemLinks[pageKey].title;
 const description = systemLinks[pageKey].seoDesc;
 const canonical = systemLinks[pageKey].path;
@@ -35,11 +37,11 @@ export const metadata = {
 const createTagList = (item: Item) => {
   const result = [];
   const { isBuy, isDrop, isTreasure, isEvent } = item;
-  if (isBuy) result.push(<Tag key="buy">ショップ購入</Tag>);
-  if (isDrop) result.push(<Tag key="drop">ドロップ</Tag>);
-  if (isTreasure) result.push(<Tag key="Treasure">宝箱</Tag>);
-  if (isEvent) result.push(<Tag key="event">イベント入手</Tag>);
-  if (result.length === 0) result.push(<Tag key="other">その他</Tag>);
+  if (isBuy) result.push("ショップ購入");
+  if (isDrop) result.push("ドロップ");
+  if (isTreasure) result.push("宝箱");
+  if (isEvent) result.push("イベント入手");
+  if (result.length === 0) result.push("その他");
   return result;
 };
 
@@ -55,7 +57,10 @@ const createList = (arr: Item[]) => {
       <Link href={`/systems/item/${id}`} key={index} className="group block">
         <RoundedContainer className="">
           <div className="flex">
-            <h3 className="text-base font-bold flex-1">{name}</h3>
+            <h3 className="text-base font-bold flex-1">
+              {name}&nbsp;
+              <Tag element={element}>{elementMap[element].name}</Tag>
+            </h3>
             <div>
               <span
                 className="inline-flex items-center gap-1 rounded-xl bg-slate-200 px-3 py-1
@@ -66,10 +71,10 @@ const createList = (arr: Item[]) => {
               </span>
             </div>
           </div>
-          <div className="flex flex-wrap mb-3">
-            {tagList}
-
-            <Tag element={element}>{elementMap[element].name}</Tag>
+          <div className="flex flex-wrap items-center gap-1 mb-2">
+            <RoundedInlineList title="入手">
+              <div className="">{tagList.join("/")}</div>
+            </RoundedInlineList>
           </div>
 
           <RoundedItem title="効果/説明">

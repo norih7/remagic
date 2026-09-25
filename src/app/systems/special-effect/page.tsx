@@ -54,9 +54,9 @@ export default async function HomePage() {
             </div>
             <div>
               <h4>エメラルドリング</h4>
-              <div className="flex items-center">
-                <Tag>アクセサリ</Tag>
-                <RoundedInlineList title="オススメ度">
+              <div className="flex items-center gap-1">
+                <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
+                <RoundedInlineList title="評価">
                   <StarRating rating={4} />
                 </RoundedInlineList>
               </div>
@@ -85,9 +85,9 @@ export default async function HomePage() {
             </div>
             <div>
               <h4>フェアリィリング</h4>
-              <div className="flex items-center">
-                <Tag>アクセサリ</Tag>
-                <RoundedInlineList title="オススメ度">
+              <div className="flex items-center gap-1">
+                <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
+                <RoundedInlineList title="評価">
                   <StarRating rating={5} />
                 </RoundedInlineList>
               </div>
@@ -117,9 +117,9 @@ export default async function HomePage() {
             </div>
             <div>
               <h4>ムーンローブ</h4>
-              <div className="flex items-center">
-                <Tag>防具</Tag>
-                <RoundedInlineList title="オススメ度">
+              <div className="flex items-center gap-1">
+                <RoundedInlineList title="種別">防具</RoundedInlineList>
+                <RoundedInlineList title="評価">
                   <StarRating rating={5} />
                 </RoundedInlineList>
               </div>
@@ -161,9 +161,9 @@ export default async function HomePage() {
             </div>
             <div>
               <h4>アンクシールド</h4>
-              <div className="flex items-center">
-                <Tag>防具</Tag>
-                <RoundedInlineList title="オススメ度">
+              <div className="flex items-center gap-1">
+                <RoundedInlineList title="種別">防具</RoundedInlineList>
+                <RoundedInlineList title="評価">
                   <StarRating rating={4} />
                 </RoundedInlineList>
               </div>
@@ -192,9 +192,9 @@ export default async function HomePage() {
             </div>
             <div>
               <h4>ホーリィシンボル</h4>
-              <div className="flex items-center">
-                <Tag>アクセサリ</Tag>
-                <RoundedInlineList title="オススメ度">
+              <div className="flex items-center gap-1">
+                <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
+                <RoundedInlineList title="評価">
                   <StarRating rating={3} />
                 </RoundedInlineList>
               </div>
@@ -224,9 +224,9 @@ export default async function HomePage() {
             </div>
             <div>
               <h4>ホーリィクローク</h4>
-              <div className="flex items-center">
-                <Tag>防具</Tag>
-                <RoundedInlineList title="オススメ度">
+              <div className="flex items-center gap-1">
+                <RoundedInlineList title="種別">防具</RoundedInlineList>
+                <RoundedInlineList title="評価">
                   <StarRating rating={5} />
                 </RoundedInlineList>
               </div>
@@ -263,9 +263,9 @@ export default async function HomePage() {
             </div>
             <div>
               <h4>キューティミトン</h4>
-              <div className="flex items-center">
-                <Tag>防具</Tag>
-                <RoundedInlineList title="オススメ度">
+              <div className="flex items-center gap-1">
+                <RoundedInlineList title="種別">防具</RoundedInlineList>
+                <RoundedInlineList title="評価">
                   <StarRating rating={5} />
                 </RoundedInlineList>
               </div>

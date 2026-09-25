@@ -4,7 +4,8 @@ import { storyLinks } from "@/constants";
 import { skillLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
-import { extraLinks, deepLinks } from "@/constants";
+import { extraLinks, deepLinks, guideLinks } from "@/constants";
+import { LuMessageCircleMore, LuChevronDown } from "react-icons/lu";
 
 type Link = {
   title: string;
@@ -29,7 +30,13 @@ const List = (props: Props) => {
 };
 
 const Category = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider pb-1">
+  <h3 className="flex items-center mb-1 text-sm font-semibold text-black-400 uppercase tracking-wider pb-1">
+    <div
+      className=" text-center rounded-sm mr-1"
+      // style={{ background: "#cfa157", padding: "3px 2px 3px 4px" }}
+    >
+      <LuMessageCircleMore />
+    </div>
     {children}
   </h3>
 );
@@ -37,7 +44,9 @@ const Category = ({ children }: { children: React.ReactNode }) => (
 export default function Menu() {
   return (
     <nav className={`${styles.menu} px-4 py-8`}>
-      <Category>ストーリーガイド</Category>
+      <Category>プレイガイド</Category>
+      <List links={Object.values(guideLinks)} />
+      <Category>ストーリー攻略</Category>
       <List links={Object.values(storyLinks)} />
       <Category>特技/晶霊術</Category>
       <List links={Object.values(skillLinks)} />
@@ -62,8 +71,8 @@ export default function Menu() {
       <List links={Object.values(subeventLinks)} />
       <Category>隠しマップ</Category>
       <List links={Object.values(extraLinks)} />
-      {/* <Category>やりこみ</Category>
-      <List links={Object.values(deepLinks)} /> */}
+      <Category>やりこみ</Category>
+      <List links={Object.values(deepLinks)} />
     </nav>
   );
 }
