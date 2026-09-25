@@ -151,11 +151,11 @@ export const skillLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しています。好きな術を見つけて獲得しましょう！",
   },
-  // "special-skill": {
-  //   title: "秘奥義/特殊技",
-  //   path: "/systems/special-skill",
-  //   desc: "",
-  // },
+  "special-skill": {
+    title: "秘奥義/特殊技",
+    path: "/skills/special-skill",
+    desc: "準備中",
+  },
 };
 
 export const subeventLinks: Record<string, PageLink> = {
@@ -345,7 +345,7 @@ export const systemLinks: Record<string, PageLink> = {
   },
   "accessory-data": {
     title: "アクセサリ一覧データ",
-    // image: "/link-headers/systems-defense.jpg",
+    image: "/link-headers/systems-accessory.jpg",
     path: "/systems/accessory-data",
     desc: "アクセサリ一覧データを掲載",
     seoDesc:
@@ -364,10 +364,14 @@ export const systemLinks: Record<string, PageLink> = {
   //   path: "/systems/titles",
   //   desc: "",
   // },
-  // "enemy-list": {
-  //   title: "モンスター一覧",
-  //   path: "/systems/enemy-list",
-  // },
+  "enemy-data": {
+    title: "モンスター一覧データ",
+    path: "/systems/enemy-data",
+    image: "/link-headers/systems-enemy.jpg",
+    desc: "モンスター一覧一覧データを掲載",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。モンスター一覧データを掲載。",
+  },
 };
 
 export const extraLinks: Record<string, PageLink> = {
@@ -512,6 +516,13 @@ export const guideLinks: Record<string, PageLink> = {
     createdAt: "2026-09-17",
     updatedAt: "2026-09-17",
   },
+  // "boss-battle": {
+  //   title: "ボス戦のコツ",
+  //   path: "/guides/boss-battle",
+  //   desc: "",
+  //   seoDesc:
+  //     "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。",
+  // },
   // "world-map": {
   //   title: "ワールドマップ",
   //   path: "/systems/world-map",
