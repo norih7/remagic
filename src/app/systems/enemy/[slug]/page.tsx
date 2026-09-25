@@ -144,13 +144,19 @@ export default async function ItemDetailPage({
           <RoundedItem title="経験値">{enemy.exp}</RoundedItem>
           <RoundedItem title="獲得ガルド">{enemy.gald}</RoundedItem>
           <RoundedItem title="攻撃属性">
-            <Tag element={enemy.attack}>{elementMap[enemy.attack].name}</Tag>
+            <div className="flex flex-wrap gap-2">
+              <Tag element={enemy.attack}>{elementMap[enemy.attack].name}</Tag>
+            </div>
           </RoundedItem>
           <RoundedItem title="弱点属性">
-            {convertElementMap(enemy.weak)}
+            <div className="flex flex-wrap gap-2">
+              {convertElementMap(enemy.weak)}
+            </div>
           </RoundedItem>
           <RoundedItem title="攻撃耐性">
-            {convertElementMap(enemy.resist)}
+            <div className="flex flex-wrap gap-2">
+              {convertElementMap(enemy.resist)}
+            </div>
           </RoundedItem>
         </div>
       </RoundedContainer>

@@ -323,7 +323,7 @@ export const systemLinks: Record<string, PageLink> = {
     title: "アイテム一覧データ",
     image: "/link-headers/systems-item.jpg",
     path: "/systems/item-data",
-    desc: "アイテム一覧のデータを掲載",
+    desc: "アイテムデータ一覧を掲載",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。使用アイテム一覧を掲載。",
   },
@@ -331,7 +331,7 @@ export const systemLinks: Record<string, PageLink> = {
     title: "武器データ一覧",
     image: "/link-headers/systems-weapon.jpg",
     path: "/systems/weapon-data",
-    desc: "武器一覧データを掲載",
+    desc: "武器データ一覧を掲載",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。武器一覧を掲載。",
   },
@@ -339,7 +339,7 @@ export const systemLinks: Record<string, PageLink> = {
     title: "防具データ一覧",
     image: "/link-headers/systems-defense.jpg",
     path: "/systems/defense-data",
-    desc: "防具一覧データを掲載",
+    desc: "防具データ一覧を掲載",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。防具一覧を掲載。",
   },
@@ -347,7 +347,7 @@ export const systemLinks: Record<string, PageLink> = {
     title: "アクセサリデータ一覧",
     image: "/link-headers/systems-accessory.jpg",
     path: "/systems/accessory-data",
-    desc: "アクセサリ一覧データを掲載",
+    desc: "アクセサリデータ一覧を掲載",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。アクセサリ一覧を掲載。",
   },
@@ -355,7 +355,7 @@ export const systemLinks: Record<string, PageLink> = {
     title: "アイテムドロップデータ一覧",
     image: "/link-headers/systems-item-drop.jpg",
     path: "/systems/item-drop",
-    desc: "アイテムドロップ一覧データを掲載",
+    desc: "アイテムドロップデータ一覧を掲載",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。アイテムドロップ一覧データを掲載。",
   },
@@ -368,7 +368,7 @@ export const systemLinks: Record<string, PageLink> = {
     title: "モンスターデータ一覧",
     path: "/systems/enemy-data",
     image: "/link-headers/systems-enemy.jpg",
-    desc: "モンスター一覧一覧データを掲載",
+    desc: "モンスターデータ一覧を掲載",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。モンスター一覧データを掲載。",
   },

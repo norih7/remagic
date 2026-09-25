@@ -12,7 +12,7 @@ const RoundedItem = (props: Props) => {
 
   const Title =
     title === "" ? null : (
-      <strong className="mb-1 text-slate-900 font-bold uppercase tracking-wider flex items-center border-b border-gray-300 pb-1">
+      <strong className="mb-2 text-slate-900 font-bold uppercase tracking-wider flex items-center border-b border-gray-300 pb-1">
         {title}
       </strong>
     );
