@@ -9,11 +9,10 @@ type Props = {
 
 const Elements = (props: Props) => {
   const { list } = props;
-  const result = list.map((item, index) => {
-    // const { tagClass } = elementMap[item];
+  const result = list.map((element, index) => {
     return (
-      <Tag element={item} key={index}>
-        {elementMap[item].name}
+      <Tag element={element} key={index}>
+        {elementMap[element].name}
       </Tag>
     );
   });

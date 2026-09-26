@@ -10,7 +10,7 @@
     "isEvent": false,
     "buy": 100,
     "sell": 50,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -24,7 +24,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 0,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -38,22 +38,22 @@
     "isEvent": true,
     "buy": 0,
     "sell": 0,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
     "id": 4,
     "name": "なべのふた",
     "type": "shield",
-    "effect": "防御+2、火属性軽減+20%",
+    "effect": "防御+2",
     "isBuy": true,
     "isDrop": false,
     "isTreasure": true,
     "isEvent": false,
     "buy": 100,
     "sell": 50,
-    "element": "",
-    "special": ""
+    "element": "fire",
+    "special": "火属性軽減+20%"
   },
   {
     "id": 5,
@@ -66,7 +66,7 @@
     "isEvent": false,
     "buy": 240,
     "sell": 120,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -80,7 +80,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -94,7 +94,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 260,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -108,7 +108,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -122,7 +122,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 0,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -136,7 +136,7 @@
     "isEvent": false,
     "buy": 160,
     "sell": 80,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -150,7 +150,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 780,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -164,7 +164,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 340,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -178,7 +178,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 700,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -192,7 +192,7 @@
     "isEvent": false,
     "buy": 460,
     "sell": 230,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -206,7 +206,7 @@
     "isEvent": false,
     "buy": 400,
     "sell": 200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -220,7 +220,7 @@
     "isEvent": false,
     "buy": 760,
     "sell": 380,
-    "element": "",
+    "element": "none",
     "special": "知力+4"
   },
   {
@@ -234,7 +234,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -248,7 +248,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -262,7 +262,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -276,7 +276,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -290,7 +290,7 @@
     "isEvent": false,
     "buy": 1600,
     "sell": 800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -304,7 +304,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 660,
-    "element": "",
+    "element": "none",
     "special": "幸運+5"
   },
   {
@@ -318,7 +318,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -332,7 +332,7 @@
     "isEvent": false,
     "buy": 6000,
     "sell": 3000,
-    "element": "",
+    "element": "water",
     "special": "水属性耐性+10%"
   },
   {
@@ -346,7 +346,7 @@
     "isEvent": false,
     "buy": 1840,
     "sell": 920,
-    "element": "",
+    "element": "none",
     "special": "知力+1、幸運+2"
   },
   {
@@ -360,7 +360,7 @@
     "isEvent": false,
     "buy": 1560,
     "sell": 780,
-    "element": "",
+    "element": "none",
     "special": "幸運+2"
   },
   {
@@ -374,7 +374,7 @@
     "isEvent": false,
     "buy": 1320,
     "sell": 660,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -388,7 +388,7 @@
     "isEvent": false,
     "buy": 1000,
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -402,7 +402,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 400,
-    "element": "",
+    "element": "none",
     "special": "幸運+5"
   },
   {
@@ -430,7 +430,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 940,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -444,7 +444,7 @@
     "isEvent": false,
     "buy": 1440,
     "sell": 720,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -458,7 +458,7 @@
     "isEvent": false,
     "buy": 1200,
     "sell": 600,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -472,7 +472,7 @@
     "isEvent": false,
     "buy": 3000,
     "sell": 1500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -486,7 +486,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 321,
-    "element": "",
+    "element": "none",
     "special": "戦闘時に戦闘不能になると自動復活し、壊れる"
   },
   {
@@ -500,7 +500,7 @@
     "isEvent": false,
     "buy": 2500,
     "sell": 1250,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -514,7 +514,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -528,7 +528,7 @@
     "isEvent": false,
     "buy": 50,
     "sell": 25,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -542,7 +542,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -556,7 +556,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -570,7 +570,7 @@
     "isEvent": false,
     "buy": 100000,
     "sell": 2400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -584,7 +584,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 1000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -598,7 +598,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -612,7 +612,7 @@
     "isEvent": false,
     "buy": 6000,
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -626,7 +626,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 1500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -640,22 +640,22 @@
     "isEvent": false,
     "buy": "-",
     "sell": 10000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
     "id": 49,
     "name": "ストームシールド",
     "type": "shield",
-    "effect": "防御+6、回避+3、風属性耐性+30%",
+    "effect": "防御+6、回避+3",
     "isBuy": false,
     "isDrop": false,
     "isTreasure": true,
     "isEvent": false,
     "buy": "-",
     "sell": 400,
-    "element": "",
-    "special": "闇属性耐性+30%"
+    "element": "wind",
+    "special": "風属性耐性+30%"
   },
   {
     "id": 50,
@@ -668,7 +668,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -696,7 +696,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 20000,
-    "element": "",
+    "element": "none",
     "special": "戦闘中、4秒毎にTPが1%回復"
   },
   {
@@ -710,7 +710,7 @@
     "isEvent": false,
     "buy": 2400,
     "sell": 1200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -738,7 +738,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -752,7 +752,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 8000,
-    "element": "",
+    "element": "none",
     "special": "戦闘中の移動速度が20%アップ"
   },
   {
@@ -766,7 +766,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 2000,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時、稀に敵をマヒ状態にする"
   },
   {
@@ -780,22 +780,22 @@
     "isEvent": false,
     "buy": "-",
     "sell": 600,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
     "id": 59,
     "name": "フレアマント",
     "type": "accessory",
-    "effect": "火属性耐性+30%、土属性耐性+30%",
+    "effect": "-",
     "isBuy": false,
     "isDrop": true,
     "isTreasure": true,
     "isEvent": false,
     "buy": "-",
     "sell": 8000,
-    "element": "",
-    "special": ""
+    "element": "fire, earth",
+    "special": "火属性耐性+30%、土属性耐性+30%"
   },
   {
     "id": 60,
@@ -808,7 +808,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -822,7 +822,7 @@
     "isEvent": false,
     "buy": 3600,
     "sell": 1800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -836,7 +836,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 10000,
-    "element": "",
+    "element": "none",
     "special": "攻撃が10%アップ"
   },
   {
@@ -850,7 +850,7 @@
     "isEvent": false,
     "buy": 3200,
     "sell": 1600,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -864,7 +864,7 @@
     "isEvent": false,
     "buy": 2800,
     "sell": 1400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -878,7 +878,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -892,7 +892,7 @@
     "isEvent": false,
     "buy": 4200,
     "sell": 2100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -906,7 +906,7 @@
     "isEvent": false,
     "buy": 5000,
     "sell": 2500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -920,7 +920,7 @@
     "isEvent": false,
     "buy": 5200,
     "sell": 2600,
-    "element": "",
+    "element": "none",
     "special": "戦闘中8秒毎にHPが5%回復"
   },
   {
@@ -934,7 +934,7 @@
     "isEvent": false,
     "buy": 600,
     "sell": 300,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -948,7 +948,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 24000,
-    "element": "",
+    "element": "none",
     "special": "戦闘、メニューでのTP消費が2/3となる"
   },
   {
@@ -976,7 +976,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -990,7 +990,7 @@
     "isEvent": false,
     "buy": 5200,
     "sell": 2600,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1004,7 +1004,7 @@
     "isEvent": false,
     "buy": 9600,
     "sell": 4800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1018,7 +1018,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1032,7 +1032,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1046,7 +1046,7 @@
     "isEvent": false,
     "buy": 100000,
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1060,7 +1060,7 @@
     "isEvent": false,
     "buy": 7200,
     "sell": 3600,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1074,7 +1074,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1088,7 +1088,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 8000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1116,7 +1116,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 4800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1144,7 +1144,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 4000,
-    "element": "",
+    "element": "none",
     "special": "知力+12"
   },
   {
@@ -1158,7 +1158,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 10000,
-    "element": "",
+    "element": "none",
     "special": "幸運+30"
   },
   {
@@ -1186,7 +1186,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 4200,
-    "element": "",
+    "element": "none",
     "special": "知力+2"
   },
   {
@@ -1214,7 +1214,7 @@
     "isEvent": false,
     "buy": 8800,
     "sell": 4400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1228,7 +1228,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 10000,
-    "element": "",
+    "element": "none",
     "special": "防御+10%"
   },
   {
@@ -1242,7 +1242,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 10000,
-    "element": "",
+    "element": "water",
     "special": "水属性耐性+50%"
   },
   {
@@ -1256,36 +1256,36 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
     "id": 93,
     "name": "アクアマント",
     "type": "accessory",
-    "effect": "水属性耐性+30%、氷属性耐性+30%",
+    "effect": "-",
     "isBuy": false,
     "isDrop": false,
     "isTreasure": true,
     "isEvent": false,
     "buy": "-",
     "sell": 8000,
-    "element": "",
-    "special": ""
+    "element": "water, ice",
+    "special": "水属性耐性+30%、氷属性耐性+30%"
   },
   {
     "id": 94,
     "name": "フリーズチェック",
     "type": "accessory",
-    "effect": "氷属性耐性+10%",
+    "effect": "-",
     "isBuy": false,
     "isDrop": false,
     "isTreasure": true,
     "isEvent": false,
     "buy": 20000,
     "sell": 10000,
-    "element": "",
-    "special": "凍結状態を100%防ぐ"
+    "element": "ice",
+    "special": "凍結状態を100%防ぐ\n氷属性耐性+10%"
   },
   {
     "id": 95,
@@ -1298,7 +1298,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 16800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1312,22 +1312,22 @@
     "isEvent": false,
     "buy": 12400,
     "sell": 6200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
     "id": 97,
     "name": "パラライチェック",
     "type": "accessory",
-    "effect": "雷属性耐性+10%",
+    "effect": "-",
     "isBuy": true,
-    "isDrop": "",
+    "isDrop": false,
     "isTreasure": true,
     "isEvent": false,
     "buy": 24000,
     "sell": 12000,
-    "element": "",
-    "special": ""
+    "element": "thunder",
+    "special": "マヒを100%防ぐ\n雷属性耐性+10%"
   },
   {
     "id": 98,
@@ -1340,7 +1340,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 9500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1354,7 +1354,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 8700,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1382,22 +1382,22 @@
     "isEvent": false,
     "buy": "-",
     "sell": 14000,
-    "element": "",
+    "element": "none",
     "special": "戦闘中の気絶状態が1/2となる"
   },
   {
     "id": 102,
     "name": "サンダーマント",
     "type": "accessory",
-    "effect": "風属性耐性+30%、雷属性耐性+30%",
+    "effect": "-",
     "isBuy": false,
-    "isDrop": "",
+    "isDrop": false,
     "isTreasure": true,
     "isEvent": false,
     "buy": "-",
     "sell": 8000,
-    "element": "",
-    "special": ""
+    "element": "thunder, wind",
+    "special": "雷属性耐性+30%、風属性耐性+30%"
   },
   {
     "id": 103,
@@ -1410,7 +1410,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1438,7 +1438,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 10000,
-    "element": "",
+    "element": "none",
     "special": "幸運+5"
   },
   {
@@ -1466,7 +1466,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 21000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1480,7 +1480,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": "幸運+5"
   },
   {
@@ -1494,7 +1494,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 18000,
-    "element": "",
+    "element": "none",
     "special": "毒と衰弱状態を100%防止"
   },
   {
@@ -1508,7 +1508,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 16800,
-    "element": "",
+    "element": "none",
     "special": "知力+2、幸運+2"
   },
   {
@@ -1522,7 +1522,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 20000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1536,7 +1536,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 18000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1550,7 +1550,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 16000,
-    "element": "",
+    "element": "none",
     "special": "HP30%アップ"
   },
   {
@@ -1578,7 +1578,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1592,7 +1592,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": "知力+2"
   },
   {
@@ -1606,7 +1606,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1620,7 +1620,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1629,12 +1629,12 @@
     "type": "accessory",
     "effect": "詠唱時間が1/2となる",
     "isBuy": false,
-    "isDrop": true,
+    "isDrop": false,
     "isTreasure": true,
     "isEvent": false,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1648,7 +1648,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 22000,
-    "element": "",
+    "element": "none",
     "special": "知力+2"
   },
   {
@@ -1662,7 +1662,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 70000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1690,7 +1690,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 123,
-    "element": "",
+    "element": "none",
     "special": "経験値が2倍となるが、異常ステータスが付与される"
   },
   {
@@ -1704,7 +1704,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 68000,
-    "element": "",
+    "element": "earth, thunder, ice, dark",
     "special": "地雷氷闇の属性耐性+20%"
   },
   {
@@ -1718,7 +1718,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 46000,
-    "element": "",
+    "element": "none",
     "special": "幸運+30"
   },
   {
@@ -1732,7 +1732,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1746,7 +1746,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1450,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1760,7 +1760,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1774,7 +1774,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1788,7 +1788,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1802,7 +1802,7 @@
     "isEvent": false,
     "buy": 150,
     "sell": 75,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1816,7 +1816,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1830,7 +1830,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1844,7 +1844,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1858,7 +1858,7 @@
     "isEvent": false,
     "buy": 80,
     "sell": 40,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1872,7 +1872,7 @@
     "isEvent": false,
     "buy": 80,
     "sell": 40,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1886,7 +1886,7 @@
     "isEvent": false,
     "buy": 80,
     "sell": 40,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1900,7 +1900,7 @@
     "isEvent": false,
     "buy": 80,
     "sell": 40,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1914,7 +1914,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1928,7 +1928,7 @@
     "isEvent": false,
     "buy": 80,
     "sell": 40,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1942,7 +1942,7 @@
     "isEvent": false,
     "buy": 50,
     "sell": 25,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1956,7 +1956,7 @@
     "isEvent": false,
     "buy": 50,
     "sell": 25,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1970,7 +1970,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1984,7 +1984,7 @@
     "isEvent": false,
     "buy": 50,
     "sell": 25,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -1998,7 +1998,7 @@
     "isEvent": false,
     "buy": 50,
     "sell": 25,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2012,7 +2012,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2026,7 +2026,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2040,7 +2040,7 @@
     "isEvent": false,
     "buy": 100,
     "sell": 50,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2054,7 +2054,7 @@
     "isEvent": false,
     "buy": 50,
     "sell": 25,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2068,7 +2068,7 @@
     "isEvent": false,
     "buy": 50,
     "sell": 25,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2082,7 +2082,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2096,7 +2096,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2110,7 +2110,7 @@
     "isEvent": false,
     "buy": 150,
     "sell": 75,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2124,7 +2124,7 @@
     "isEvent": false,
     "buy": 100,
     "sell": 50,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2138,7 +2138,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2152,7 +2152,7 @@
     "isEvent": false,
     "buy": 80,
     "sell": 40,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2166,7 +2166,7 @@
     "isEvent": false,
     "buy": 50,
     "sell": 25,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2180,7 +2180,7 @@
     "isEvent": false,
     "buy": 80,
     "sell": 40,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2194,7 +2194,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2208,7 +2208,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2222,7 +2222,7 @@
     "isEvent": false,
     "buy": 60,
     "sell": 30,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2236,7 +2236,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2250,7 +2250,7 @@
     "isEvent": false,
     "buy": 300,
     "sell": 150,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2264,7 +2264,7 @@
     "isEvent": false,
     "buy": 300,
     "sell": 150,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2278,7 +2278,7 @@
     "isEvent": false,
     "buy": 300,
     "sell": 150,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2292,7 +2292,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2306,7 +2306,7 @@
     "isEvent": false,
     "buy": 400,
     "sell": 200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2320,7 +2320,7 @@
     "isEvent": false,
     "buy": 300,
     "sell": 150,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2334,7 +2334,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2348,7 +2348,7 @@
     "isEvent": false,
     "buy": 400,
     "sell": 200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2362,7 +2362,7 @@
     "isEvent": false,
     "buy": 300,
     "sell": 150,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2376,7 +2376,7 @@
     "isEvent": false,
     "buy": 300,
     "sell": 150,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2390,7 +2390,7 @@
     "isEvent": false,
     "buy": 240,
     "sell": 120,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2404,7 +2404,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2418,7 +2418,7 @@
     "isEvent": false,
     "buy": 500,
     "sell": 250,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2432,7 +2432,7 @@
     "isEvent": false,
     "buy": 400,
     "sell": 200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2446,7 +2446,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2460,7 +2460,7 @@
     "isEvent": false,
     "buy": 30,
     "sell": 15,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2474,7 +2474,7 @@
     "isEvent": false,
     "buy": 200,
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2488,7 +2488,7 @@
     "isEvent": false,
     "buy": 1920,
     "sell": 960,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2502,7 +2502,7 @@
     "isEvent": false,
     "buy": 2200,
     "sell": 1100,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時に稀に敵を吹き飛ばす"
   },
   {
@@ -2516,7 +2516,7 @@
     "isEvent": false,
     "buy": 2000,
     "sell": 1000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2530,7 +2530,7 @@
     "isEvent": false,
     "buy": 1440,
     "sell": 720,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時に稀に敵を毒状態にする"
   },
   {
@@ -2544,7 +2544,7 @@
     "isEvent": false,
     "buy": 1640,
     "sell": 820,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2558,7 +2558,7 @@
     "isEvent": false,
     "buy": 1900,
     "sell": 950,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2572,7 +2572,7 @@
     "isEvent": false,
     "buy": 1480,
     "sell": 740,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2586,7 +2586,7 @@
     "isEvent": false,
     "buy": 1600,
     "sell": 800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2600,7 +2600,7 @@
     "isEvent": false,
     "buy": 100,
     "sell": 50,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2614,7 +2614,7 @@
     "isEvent": false,
     "buy": 2960,
     "sell": 1480,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2628,7 +2628,7 @@
     "isEvent": false,
     "buy": 2400,
     "sell": 1200,
-    "element": "",
+    "element": "none",
     "special": "回避-2"
   },
   {
@@ -2642,7 +2642,7 @@
     "isEvent": false,
     "buy": 1200,
     "sell": 600,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2656,7 +2656,7 @@
     "isEvent": false,
     "buy": 1440,
     "sell": 720,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2670,7 +2670,7 @@
     "isEvent": false,
     "buy": 6000,
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2684,7 +2684,7 @@
     "isEvent": false,
     "buy": 3560,
     "sell": 1780,
-    "element": "",
+    "element": "fire",
     "special": "火属性耐性+30%"
   },
   {
@@ -2698,7 +2698,7 @@
     "isEvent": false,
     "buy": 4400,
     "sell": 2200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2712,7 +2712,7 @@
     "isEvent": false,
     "buy": 3800,
     "sell": 1900,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2726,7 +2726,7 @@
     "isEvent": false,
     "buy": 3160,
     "sell": 1580,
-    "element": "",
+    "element": "none",
     "special": "幸運+8"
   },
   {
@@ -2740,7 +2740,7 @@
     "isEvent": false,
     "buy": 3200,
     "sell": 1600,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2754,7 +2754,7 @@
     "isEvent": false,
     "buy": 3500,
     "sell": 1750,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2768,7 +2768,7 @@
     "isEvent": false,
     "buy": 3560,
     "sell": 1780,
-    "element": "",
+    "element": "none",
     "special": "知力+8"
   },
   {
@@ -2782,7 +2782,7 @@
     "isEvent": false,
     "buy": 4000,
     "sell": 2000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2796,7 +2796,7 @@
     "isEvent": false,
     "buy": 8000,
     "sell": 4000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2810,7 +2810,7 @@
     "isEvent": false,
     "buy": 9000,
     "sell": 4500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2824,7 +2824,7 @@
     "isEvent": false,
     "buy": 12400,
     "sell": 6200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2838,7 +2838,7 @@
     "isEvent": false,
     "buy": 8400,
     "sell": 4200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2852,7 +2852,7 @@
     "isEvent": false,
     "buy": 7600,
     "sell": 3800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2866,7 +2866,7 @@
     "isEvent": false,
     "buy": 8000,
     "sell": 4000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2880,7 +2880,7 @@
     "isEvent": false,
     "buy": 7800,
     "sell": 3900,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2894,7 +2894,7 @@
     "isEvent": false,
     "buy": 6000,
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2908,7 +2908,7 @@
     "isEvent": false,
     "buy": 6600,
     "sell": 3300,
-    "element": "",
+    "element": "none",
     "special": "回避-3"
   },
   {
@@ -2922,7 +2922,7 @@
     "isEvent": false,
     "buy": 8000,
     "sell": 4000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2936,7 +2936,7 @@
     "isEvent": false,
     "buy": 12000,
     "sell": 6000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2964,7 +2964,7 @@
     "isEvent": false,
     "buy": 12000,
     "sell": 6000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -2978,7 +2978,7 @@
     "isEvent": false,
     "buy": 11200,
     "sell": 5600,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時、稀に敵の幸運を低下させる 知力+5、幸運-10"
   },
   {
@@ -2992,7 +2992,7 @@
     "isEvent": false,
     "buy": 11800,
     "sell": 5900,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3006,7 +3006,7 @@
     "isEvent": false,
     "buy": 12000,
     "sell": 6000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3020,7 +3020,7 @@
     "isEvent": false,
     "buy": 10000,
     "sell": 5000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3034,7 +3034,7 @@
     "isEvent": false,
     "buy": 20000,
     "sell": 10000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3048,7 +3048,7 @@
     "isEvent": false,
     "buy": 17600,
     "sell": 8800,
-    "element": "",
+    "element": "none",
     "special": "回避+2"
   },
   {
@@ -3062,7 +3062,7 @@
     "isEvent": false,
     "buy": 18800,
     "sell": 9400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3076,7 +3076,7 @@
     "isEvent": false,
     "buy": 17600,
     "sell": 8800,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時に稀に敵を気絶させる"
   },
   {
@@ -3090,7 +3090,7 @@
     "isEvent": false,
     "buy": 16800,
     "sell": 8400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3104,7 +3104,7 @@
     "isEvent": false,
     "buy": 14800,
     "sell": 7400,
-    "element": "",
+    "element": "none",
     "special": "幸運+10 ファラ、メルディ、チャットのみ装備可能"
   },
   {
@@ -3118,7 +3118,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 22000,
-    "element": "",
+    "element": "none",
     "special": "幸運+8"
   },
   {
@@ -3132,7 +3132,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3146,7 +3146,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 20000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3160,7 +3160,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3174,7 +3174,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 6000,
-    "element": "",
+    "element": "none",
     "special": "メルディがガード中にクイッキーが攻撃できる"
   },
   {
@@ -3188,7 +3188,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3202,7 +3202,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 33000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3216,7 +3216,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 20000,
-    "element": "thunder",
+    "element": "none",
     "special": "攻撃ヒット時に稀にライトニングの追加効果が発動する"
   },
   {
@@ -3230,7 +3230,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 29500,
-    "element": "",
+    "element": "none",
     "special": "時属性耐性+50%"
   },
   {
@@ -3244,7 +3244,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 8000,
-    "element": "",
+    "element": "none",
     "special": "マヒ状態になることを防ぐ"
   },
   {
@@ -3258,7 +3258,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 10,
-    "element": "",
+    "element": "none",
     "special": "戦闘中4秒ごとにTPが1%回復、また戦闘中に戦闘不能になると超低確率で復活"
   },
   {
@@ -3272,7 +3272,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3286,7 +3286,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3300,7 +3300,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 18000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3314,7 +3314,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3328,7 +3328,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 26000,
-    "element": "",
+    "element": "none",
     "special": "戦闘中8秒ごとにHPが5%回復する / 幸運+5"
   },
   {
@@ -3342,7 +3342,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3356,7 +3356,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 64000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3370,7 +3370,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3384,7 +3384,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3398,7 +3398,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3412,7 +3412,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3426,22 +3426,22 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
     "id": 248,
     "name": "ドメインチェック",
     "type": "accessory",
-    "effect": "闇耐性10%アップ",
+    "effect": "-",
     "isBuy": false,
     "isDrop": false,
     "isTreasure": true,
     "isEvent": false,
     "buy": "-",
     "sell": 18000,
-    "element": "",
-    "special": "命中率減少、抵抗力減少、詠唱時間2倍状態を防ぐ"
+    "element": "dark",
+    "special": "命中率減少、抵抗力減少、詠唱時間2倍状態を防ぐ\n闇耐性10%アップ"
   },
   {
     "id": 249,
@@ -3454,7 +3454,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 28000,
-    "element": "",
+    "element": "none",
     "special": "知力+18、幸運+5"
   },
   {
@@ -3468,7 +3468,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時に稀に敵を凍結状態にする / 幸運+8"
   },
   {
@@ -3496,7 +3496,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 24000,
-    "element": "",
+    "element": "none",
     "special": "知力+3、幸運+8"
   },
   {
@@ -3510,7 +3510,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 20000,
-    "element": "",
+    "element": "none",
     "special": "戦闘中8秒ごとにHPが5%回復 / 幸運+5 / 命中+5"
   },
   {
@@ -3524,7 +3524,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3538,7 +3538,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 38000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3566,7 +3566,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3580,7 +3580,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3594,7 +3594,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3608,7 +3608,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3622,7 +3622,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 19800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3636,7 +3636,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 15000,
-    "element": "",
+    "element": "dark",
     "special": "闇属性耐性+30%"
   },
   {
@@ -3650,7 +3650,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3664,7 +3664,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": "TP消費が2/3となる、知力+3"
   },
   {
@@ -3678,7 +3678,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3692,7 +3692,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3706,7 +3706,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3720,7 +3720,7 @@
     "isEvent": false,
     "buy": 0,
     "sell": 22000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3734,7 +3734,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 70000,
-    "element": "",
+    "element": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time",
     "special": "全属性耐久+10%"
   },
   {
@@ -3748,7 +3748,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 12000,
-    "element": "",
+    "element": "none",
     "special": "戦闘時の移動速度が50%アップ"
   },
   {
@@ -3762,7 +3762,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3776,7 +3776,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 37500,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時に稀にTPが1%回復する"
   },
   {
@@ -3790,7 +3790,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3804,7 +3804,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 25000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3818,7 +3818,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 75,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3832,7 +3832,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 80000,
-    "element": "",
+    "element": "fire, water, wind, light",
     "special": "火水風光の耐性+30%"
   },
   {
@@ -3846,7 +3846,7 @@
     "isEvent": false,
     "buy": "",
     "sell": "",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3860,7 +3860,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3874,7 +3874,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3888,7 +3888,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 500,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3902,7 +3902,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3916,7 +3916,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3930,7 +3930,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 1200,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3944,7 +3944,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 300,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3958,7 +3958,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 800,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -3972,7 +3972,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 1200,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -3986,7 +3986,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 80,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -4000,7 +4000,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 400,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -4014,7 +4014,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1500,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -4028,7 +4028,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 200,
-    "element": "",
+    "element": "none",
     "special": "ジイニのオークションで高値がつきやすい"
   },
   {
@@ -4042,7 +4042,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": "-",
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4056,7 +4056,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4070,7 +4070,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4084,7 +4084,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 1000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4098,7 +4098,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 100,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4112,7 +4112,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 180,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4126,7 +4126,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 48000,
-    "element": "",
+    "element": "none",
     "special": "消費TPが1/2となる メニューの回復術も対象"
   },
   {
@@ -4140,7 +4140,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 20000,
-    "element": "",
+    "element": "none",
     "special": "戦闘中8秒ごとにHPが5%回復する"
   },
   {
@@ -4154,7 +4154,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 26000,
-    "element": "",
+    "element": "none",
     "special": "知力+3"
   },
   {
@@ -4168,7 +4168,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 3000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4182,7 +4182,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 1800,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4238,7 +4238,7 @@
     "isEvent": true,
     "buy": "",
     "sell": 100000,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時に稀にHPが4%回復\n回避+3、地力+2、幸運+5"
   },
   {
@@ -4280,7 +4280,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 160,
-    "element": "",
+    "element": "none",
     "special": "リッドの初期装備"
   },
   {
@@ -4322,7 +4322,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 750,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4350,7 +4350,7 @@
     "isEvent": true,
     "buy": "",
     "sell": 90000,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時に稀に敵の防御力を低下"
   },
   {
@@ -4378,7 +4378,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 250,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4406,7 +4406,7 @@
     "isEvent": false,
     "buy": "",
     "sell": 72000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4448,7 +4448,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 10000,
-    "element": "",
+    "element": "water, wind, fire",
     "special": "水風火ダメージを40%軽減/土雷氷ダメージが40%増加"
   },
   {
@@ -4462,7 +4462,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 10000,
-    "element": "",
+    "element": "earth, thunder, ice",
     "special": "土雷氷ダメージを40%軽減/水風火ダメージが40%増加"
   },
   {
@@ -4490,7 +4490,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 5400,
-    "element": "",
+    "element": "none",
     "special": "チャットの初期装備品"
   },
   {
@@ -4504,7 +4504,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 58000,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時に稀にTPが1%回復\n幸運+8"
   },
   {
@@ -4518,7 +4518,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 11000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4546,7 +4546,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 20000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4560,7 +4560,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 26000,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時、稀に敵を吹き飛ばす"
   },
   {
@@ -4574,7 +4574,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 32000,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時、稀に敵の防御を低下させる"
   },
   {
@@ -4588,7 +4588,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 74000,
-    "element": "",
+    "element": "none",
     "special": "攻撃ヒット時、稀に敵を気絶させる"
   },
   {
@@ -4602,7 +4602,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 72000,
-    "element": "",
+    "element": "none",
     "special": "地力+3、時耐性+10%"
   },
   {
@@ -4616,7 +4616,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1200,
-    "element": "",
+    "element": "fire",
     "special": "火属性耐性+30%"
   },
   {
@@ -4630,7 +4630,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 25000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4644,21 +4644,21 @@
     "isEvent": false,
     "buy": "-",
     "sell": 20000,
-    "element": "",
+    "element": "none",
     "special": "幸運-5"
   },
   {
     "id": 335,
     "name": "スターブレス",
     "type": "bracelet",
-    "effect": "防御+336",
+    "effect": "防御+26",
     "isBuy": false,
     "isDrop": false,
     "isTreasure": false,
     "isEvent": true,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4672,7 +4672,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 17000,
-    "element": "",
+    "element": "light, dark",
     "special": "光、闇耐性+20%、幸運+5"
   },
   {
@@ -4686,7 +4686,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 32000,
-    "element": "",
+    "element": "none",
     "special": "幸運+2"
   },
   {
@@ -4700,7 +4700,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 1000,
-    "element": "",
+    "element": "fire, wind, water, earth",
     "special": "幸運+30\n火風水土耐性+10%"
   },
   {
@@ -4714,7 +4714,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 32000,
-    "element": "",
+    "element": "none",
     "special": "知力+24"
   },
   {
@@ -4728,7 +4728,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 1000,
-    "element": "",
+    "element": "none",
     "special": "命中+10、時耐性+20%"
   },
   {
@@ -4742,7 +4742,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 4400,
-    "element": "",
+    "element": "none",
     "special": ""
   },
   {
@@ -4756,7 +4756,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": "フォッグの特技がキャンセルできるようになる"
   },
   {
@@ -4770,7 +4770,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 6000,
-    "element": "",
+    "element": "none",
     "special": "特技や奥義をコマンドで出せるようになる"
   },
   {
@@ -4784,7 +4784,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 8000,
-    "element": "",
+    "element": "none",
     "special": "防御力が5%アップ"
   },
   {
@@ -4798,7 +4798,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 12000,
-    "element": "",
+    "element": "none",
     "special": "敵を倒すとHPが5%回復する"
   },
   {
@@ -4812,7 +4812,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 25000,
-    "element": "",
+    "element": "none",
     "special": "攻撃を受けると稀にピコハンが発動する"
   },
   {
@@ -4826,7 +4826,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 30000,
-    "element": "",
+    "element": "none",
     "special": "斬り+10、突き+10、命中+10"
   },
   {
@@ -4835,12 +4835,12 @@
     "type": "accessory",
     "effect": "-",
     "isBuy": false,
-    "isDrop": false,
+    "isDrop": true,
     "isTreasure": false,
     "isEvent": false,
     "buy": "-",
     "sell": 16500,
-    "element": "",
+    "element": "none",
     "special": "戦闘終了後の獲得ガルドが2倍になる"
   },
   {
@@ -4854,7 +4854,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 38000,
-    "element": "",
+    "element": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time",
     "special": "全属性耐性+30%"
   },
   {
@@ -4868,7 +4868,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 18000,
-    "element": "",
+    "element": "none",
     "special": "TPが30%増加する"
   },
   {
@@ -4882,7 +4882,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 26000,
-    "element": "",
+    "element": "none",
     "special": "攻撃+300、防御-200、回避-20、命中+20"
   },
   {
@@ -4896,7 +4896,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 40000,
-    "element": "",
+    "element": "none",
     "special": "すべての異常状態を防ぐ"
   },
   {
@@ -4910,7 +4910,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 100000,
-    "element": "",
+    "element": "none",
     "special": "攻撃が必ず命中する（連続ヒットは除く）"
   },
   {
@@ -4924,7 +4924,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 1200,
-    "element": "",
+    "element": "none",
     "special": "防御+5、回避+5"
   },
   {
@@ -4938,7 +4938,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 8000,
-    "element": "",
+    "element": "none",
     "special": "戦闘中のテクニカルスマッシュに+6%のボーナス加算（重複可能）\nアイテムドロップ率アップ"
   },
   {
@@ -4952,7 +4952,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 6000,
-    "element": "",
+    "element": "none",
     "special": "戦闘中にバックステップと受け身が取れるようになる"
   },
   {
@@ -4966,7 +4966,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 24000,
-    "element": "",
+    "element": "none",
     "special": "攻撃力+20"
   },
   {
@@ -4980,7 +4980,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 8000,
-    "element": "",
+    "element": "normal",
     "special": "物理攻撃耐性+10%"
   },
   {
@@ -4994,7 +4994,7 @@
     "isEvent": true,
     "buy": "-",
     "sell": 32000,
-    "element": "",
+    "element": "none",
     "special": "敵の攻撃を受ける瞬間に□でガードすればさらにダメージを軽減する"
   },
   {
@@ -5008,7 +5008,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 24000,
-    "element": "",
+    "element": "fire, water, thunder, ice, wind, earth, light, dark, origin, time",
     "special": "物理以外の属性攻撃の耐性+20%"
   },
   {
@@ -5022,7 +5022,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 14000,
-    "element": "",
+    "element": "fire, water, thunder, ice, wind, earth, light, dark, origin, time",
     "special": "物理以外の属性攻撃の耐性+10%"
   },
   {
@@ -5036,7 +5036,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 12000,
-    "element": "",
+    "element": "none",
     "special": "敵を倒した時にTPが3%回復"
   },
   {
@@ -5050,7 +5050,7 @@
     "isEvent": false,
     "buy": "-",
     "sell": 9000,
-    "element": "",
+    "element": "none",
     "special": ""
   }
 ]
