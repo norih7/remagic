@@ -76,7 +76,7 @@ export default function SiteLayout({
     }
     return (
       <li
-        className={`inline-flex items-center font-bold text-slate-700 pt-1 pb-0.5 text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
+        className={`inline-flex font-bold text-slate-700 pt-1 pb-0.5 text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
         key={index}
       >
         {/* {icon} */}

@@ -34,7 +34,9 @@ const ItemList = (props: Props) => {
     const elementList = element
       .replace(/\s+/g, "")
       .split(",") as (keyof typeof elementMap)[];
-
+    const elements = elementList.includes("none") ? null : (
+      <Elements list={elementList} />
+    );
     return (
       <Link href={`/systems/item/${id}`} key={index} className="group block">
         <RoundedContainer className="">
@@ -54,7 +56,7 @@ const ItemList = (props: Props) => {
             <RoundedInlineList title="入手">
               <div className="">{tagList.join("/")}</div>
             </RoundedInlineList>
-            <Elements list={elementList} />
+            {elements}
           </div>
 
           <RoundedItem title="効果/説明">

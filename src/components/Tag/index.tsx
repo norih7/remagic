@@ -9,7 +9,7 @@ type Props = {
 const Tag = (props: Props) => {
   const { children, element = "none", tail = "" } = props;
   const { tagClass } = elementMap[element];
-  return element === "none" ? null : (
+  return (
     <span
       className={`mr-1 px-2 py-1 border rounded-xs text-xs font-bold ${tagClass}`}
     >

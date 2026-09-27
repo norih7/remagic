@@ -152,9 +152,12 @@ export const skillLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しています。好きな術を見つけて獲得しましょう！",
   },
   "special-skill": {
-    title: "秘奥義/特殊技",
+    title: "秘奥義",
     path: "/skills/special-skill",
-    desc: "準備中",
+    image: "/link-headers/skills-special-skill.jpg",
+    desc: "リッドとファラが使える秘奥義について解説",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。リッドとファラが使える秘奥義について解説",
   },
 };
 
