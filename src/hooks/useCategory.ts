@@ -12,5 +12,9 @@ export function useCategory(): CategoryKey {
     return segment as CategoryKey;
   }
 
+  if (segment === "") {
+    return "/" as CategoryKey;
+  }
+
   return "none"; // 存在しないパスの場合は undefined を返す
 }

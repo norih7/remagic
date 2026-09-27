@@ -23,7 +23,9 @@ import {
   LuLightbulb,
   LuAward,
 } from "react-icons/lu";
+import { RiHomeSmileFill } from "react-icons/ri";
 import Link from "next/link";
+import { ReactNode } from "react";
 
 export default function SiteLayout({
   children,
@@ -40,7 +42,17 @@ export default function SiteLayout({
       </p>
     ) : null;
 
-  const categoryName: Record<string, string> = {
+  const test =
+    pathname === "/" ? (
+      <p className="mb-1 text-xs text-slate-800">
+        RE:MAGIC リマスター版対応の完全攻略データ
+      </p>
+    ) : (
+      <Breadcrumb category={category} pageTitle={title} />
+    );
+
+  const categoryName: Record<string, string | ReactNode> = {
+    "/": "トップページ",
     guides: "プレイガイド",
     stories: "ストーリー",
     skills: "特技/晶霊術",
@@ -49,6 +61,7 @@ export default function SiteLayout({
     extras: "隠しマップ",
     deeps: "やりこみ",
   };
+
   const menu = Object.keys(categoryName).map((key, index) => {
     const activeClass =
       key === category
@@ -76,7 +89,7 @@ export default function SiteLayout({
     }
     return (
       <li
-        className={`inline-flex font-bold text-slate-700 pt-1 pb-0.5 text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
+        className={`inline-flex items-center font-bold text-slate-700 pt-1 pb-1 text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
         key={index}
       >
         {/* {icon} */}
@@ -111,8 +124,7 @@ export default function SiteLayout({
       </header>
       <div className={styles.pageTitleArea}>
         <div className={`${styles.pageTitleInner} px-4 py-3`}>
-          <Breadcrumb category={category} pageTitle={title} />
-          {topText}
+          {test}
           <h2 className="text-lg font-bold text-slate-700">{title}</h2>
         </div>
       </div>

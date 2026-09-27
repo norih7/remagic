@@ -494,11 +494,13 @@ export const deepLinks: Record<string, PageLink> = {
 };
 
 export const guideLinks: Record<string, PageLink> = {
-  // remaster: {
-  //   title: "リマスター版の違い",
-  //   path: "/guides/remaster",
-  //   desc: "",
-  // },
+  remaster: {
+    title: "リマスター版の違い",
+    path: "/guides/remaster",
+    desc: "準備中",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。",
+  },
   first: {
     title: "序盤にやっておきたいこと",
     path: "/guides/first",
