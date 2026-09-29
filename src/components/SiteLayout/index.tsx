@@ -88,12 +88,18 @@ export default function SiteLayout({
       icon = <LuAward className="mr-0.5" />;
     }
     return (
+      // <li
+      //   className={`font-bold text-slate-700 pt-1 pb-1 text-center text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
+      //   key={index}
+      // >
       <li
-        className={`inline-flex items-center font-bold text-slate-700 pt-1 pb-1 text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
+        className={`pt-1 pb-0.5 text-center text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 w-auto ${activeClass}`}
         key={index}
       >
         {/* {icon} */}
-        <Link href={`/${key}`}>{categoryName[key]}</Link>
+        <Link href={`/${key}`} className="block">
+          {categoryName[key]}
+        </Link>
       </li>
     );
   });
@@ -128,9 +134,13 @@ export default function SiteLayout({
           <h2 className="text-lg font-bold text-slate-700">{title}</h2>
         </div>
       </div>
-      <div className={`${styles.shortcutMenu}`}>
+      <div className={`${styles.shortcutMenu} shadow-2xs`}>
         <div>
-          <ul className="flex flex-wrap gap-x-4 gap-y-1.5 py-3 px-4">{menu}</ul>
+          {/* <ul className="flex flex-wrap gap-x-4 gap-y-1.5 py-3 px-4">{menu}</ul> */}
+          {/* <ul className="grid grid-cols-4 md:grid-cols-8 py-2 px-4">{menu}</ul> */}
+          <ul className="grid grid-cols-4 md:flex md:flex-wrap gap-x-4 gap-y-1 px-4 py-2 font-bold text-slate-600">
+            {menu}
+          </ul>
         </div>
       </div>
       <div className={styles.container}>
@@ -139,7 +149,7 @@ export default function SiteLayout({
           <Menu />
         </aside>
 
-        <main className={`${styles.main} px-6 py-8`}>
+        <main className={`${styles.main} px-6 py-`}>
           {/* <div
             style={{
               height: "200px",

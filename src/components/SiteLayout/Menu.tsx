@@ -32,10 +32,10 @@ const List = (props: Props) => {
 const Category = ({ children }: { children: React.ReactNode }) => (
   <h3 className="flex items-center mb-1 text-sm font-semibold text-black-400 uppercase tracking-wider pb-1">
     <div
-      className=" text-center rounded-sm mr-1"
+      className="text-center mr-1"
       // style={{ background: "#cfa157", padding: "3px 2px 3px 4px" }}
     >
-      <LuMessageCircleMore />
+      <LuMessageCircleMore className="text-taupe-500" />
     </div>
     {children}
   </h3>
@@ -43,7 +43,7 @@ const Category = ({ children }: { children: React.ReactNode }) => (
 
 export default function Menu() {
   return (
-    <nav className={`${styles.menu} px-4 py-8`}>
+    <nav className={`${styles.menu} px-4`}>
       <Category>プレイガイド</Category>
       <List links={Object.values(guideLinks)} />
       <Category>ストーリー攻略</Category>
