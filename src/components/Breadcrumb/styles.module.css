@@ -18,7 +18,7 @@
 .breadcrumb li:not(:last-child)::after {
   content: "›"; /* モダンな矢印記号 */
   margin: 0 8px;
-  color: #ccc; /* 区切りは薄い色で強調しすぎない */
+  color: #333;
 }
 
 .breadcrumb a {

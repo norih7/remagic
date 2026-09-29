@@ -18,7 +18,7 @@ const RoundedItem = (props: Props) => {
     );
   return (
     <div
-      className={`${className} bg-slate-50 rounded-lg border border-slate-200 text-xs px-3 py-2`}
+      className={`${className} bg-slate-50 rounded-lg border border-slate-300 text-xs px-3 py-2`}
     >
       {Title}
       <div className="text-slate-900">{children}</div>

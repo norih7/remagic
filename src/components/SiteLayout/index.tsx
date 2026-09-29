@@ -56,7 +56,7 @@ export default function SiteLayout({
     guides: "プレイガイド",
     stories: "ストーリー",
     skills: "特技/晶霊術",
-    systems: "システム/データ",
+    systems: "各種データ",
     subevents: "サブイベント",
     extras: "隠しマップ",
     deeps: "やりこみ",
