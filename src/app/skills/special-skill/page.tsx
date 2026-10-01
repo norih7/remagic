@@ -11,6 +11,7 @@ import Tag from "@/components/Tag";
 import Elements from "@/components/Elements";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -176,7 +177,7 @@ export default async function HomePage() {
         </div>
       </section> */}
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="skill">リッドの秘奥義一覧</SectionTitle>
         {/* <div className="mb-8">
           <p>
@@ -185,12 +186,12 @@ export default async function HomePage() {
           </p>
         </div> */}
         {ridList}
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="skill">ファラの秘奥義一覧</SectionTitle>
         {farthList}
-      </section>
+      </Section>
       {/* <section className="mb-12">
         <SectionTitle type="skill">ファラの秘奥義一覧</SectionTitle>
         {farthList}

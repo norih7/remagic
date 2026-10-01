@@ -18,6 +18,7 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import Tag from "@/components/Tag";
 import Link from "next/link";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -133,10 +134,10 @@ export default async function HomePage() {
         <SectionTitle>料理と習得方法</SectionTitle>
         <p>準備中</p>
       </section> */}
-      <section className="mb-12">
+      <Section>
         <SectionTitle>モンスター一覧データ</SectionTitle>
         {list}
-      </section>
+      </Section>
     </article>
   );
 }

@@ -5,6 +5,7 @@ import { Item } from "@/lib/db";
 import { systemLinks } from "@/constants";
 import { getItemsData } from "@/lib/db";
 import ItemList from "@/components/ItemList";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -59,18 +60,18 @@ export default async function HomePage() {
         <SectionTitle>料理と習得方法</SectionTitle>
         <p>準備中</p>
       </section> */}
-      <section className="mb-12">
+      <Section>
         <SectionTitle>消費アイテム一覧データ</SectionTitle>
         <ItemList data={filterData.useItem} />
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>食材一覧データ</SectionTitle>
         <ItemList data={filterData.food} />
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>その他アイテムデータ</SectionTitle>
         <ItemList data={filterData.otherItem} />
-      </section>
+      </Section>
     </article>
   );
 }

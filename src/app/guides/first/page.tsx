@@ -4,6 +4,7 @@ import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
 import { guideLinks } from "@/constants";
 import GuideList from "@/components/GuideList";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,7 +31,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">1. 戦闘のマニュアル操作</SectionTitle>
         <p>
           エターニアの戦闘は攻撃やジャンプを自分のタイミングで選べる「マニュアル操作」がおすすめです。マニュアル操作は最序盤に訪れるレグルス道場で「マニュアルのしょ」を入手することで選択できるようになります。ただしストーリー上必ず入手できるのではなく特定のキャラクタに話しかけることが必要です。
@@ -46,9 +47,9 @@ export default async function HomePage() {
             },
           ]}
         />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">2. 特技習得を意識する</SectionTitle>
         <p>
           リッドとファラはキャラクタのレベルだけではなく専用の斬り/突きレベルで特技や奥義を習得します。リッドの最強奥義「鳳凰天駆」は突きレベルを高くしないといけないので、戦闘で突き攻撃も意識していきましょう。また斬り/突きだけではなく特技の使用回数も必要となることが多いため特技の習得を意識しながら日々の戦闘を進めてください。
@@ -69,9 +70,9 @@ export default async function HomePage() {
             },
           ]}
         />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">
           3. ストーリー攻略時に料理とレンズも回収する
         </SectionTitle>
@@ -86,9 +87,9 @@ export default async function HomePage() {
             },
           ]}
         />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">4. オート料理を活用</SectionTitle>
         <p>
           料理にはオート料理があり戦闘のたびに回復や状態回復を手間なく行えます。また料理には熟練度があり、オート料理でも熟練度アップが可能です。熟練度を上げていくことで成功率が100%となったりマスター料理の習得にも発展します。
@@ -108,9 +109,9 @@ export default async function HomePage() {
             },
           ]}
         />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">
           5. スマッシュマントを早期入手してアイテムドロップを有利に
         </SectionTitle>
@@ -135,9 +136,9 @@ export default async function HomePage() {
             },
           ]}
         />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">
           6. いざないの密林でセフィラを入手
         </SectionTitle>
@@ -159,7 +160,7 @@ export default async function HomePage() {
             },
           ]}
         />
-      </section>
+      </Section>
     </article>
   );
 }

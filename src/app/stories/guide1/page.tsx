@@ -12,6 +12,7 @@ import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { storyLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -43,7 +44,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">1.ラシュアン</SectionTitle>
         <p>物語はラシュアンから始まります。</p>
         <p>
@@ -63,9 +64,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[1]} />
         <LocationLenses data={lensesData} locationIds={[1]} />
         <LocationSubEvents data={subEventData} locationIds={[1]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">
           2.ラシュアン河の桟橋〜レグルス道場
         </SectionTitle>
@@ -86,9 +87,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[2, 3]} />
         <LocationLenses data={lensesData} locationIds={[2, 3]} />
         <LocationSubEvents data={subEventData} locationIds={[2, 3]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">
           3.ラシュアン河の桟橋(2回目)〜学問の町ミンツ
         </SectionTitle>
@@ -111,9 +112,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[4]} />
         <LocationLenses data={lensesData} locationIds={[4]} />
         <LocationSubEvents data={subEventData} locationIds={[4]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">4.ミンツの岩山〜岩山の観測所</SectionTitle>
         <p>
           岩山の観測所へ向かうには、まずミンツの岩山を抜ける必要があります。
@@ -136,9 +137,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[5]} />
         <LocationLenses data={lensesData} locationIds={[5]} />
         <LocationSubEvents data={subEventData} locationIds={[5]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">5.望郷の洞窟</SectionTitle>
         <p>
           望郷の洞窟では、内部の潮の状態によって通れる場所や回収できるアイテムが変わります。潮はダンジョンを移動することで変化し、外へ出ると最初の状態に戻ります。
@@ -172,9 +173,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[7]} />
         <LocationLenses data={lensesData} locationIds={[7]} />
         <LocationSubEvents data={subEventData} locationIds={[7]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">6.木陰の村モルル</SectionTitle>
         <p>
           モルルでは、道をそのまま進んで頂上にあるマゼットの家を訪ねます。
@@ -202,9 +203,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[8]} />
         <LocationLenses data={lensesData} locationIds={[8]} />
         <LocationSubEvents data={subEventData} locationIds={[8]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">7.水晶霊の河</SectionTitle>
         <p>
           ここまでのダンジョンと比べて探索に時間がかかるため、入る前に回復アイテムや料理を十分に用意しておきましょう。
@@ -260,7 +261,7 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[9]} />
         <LocationLenses data={lensesData} locationIds={[9]} />
         <LocationSubEvents data={subEventData} locationIds={[9]} />
-      </section>
+      </Section>
     </article>
   );
 }

@@ -14,6 +14,7 @@ import {
 } from "@/lib/db";
 export const dynamic = "force-static";
 import Link from "next/link";
+import Section from "@/components/Section";
 
 const pageKey = "item-drop";
 const title = systemLinks[pageKey].title;
@@ -96,10 +97,10 @@ export default async function HomePage() {
         エターニアの敵がドロップするアイテム（消費アイテム、装備品）の一覧ページです。
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ドロップアイテム一覧</SectionTitle>
         {itemDropList}
-      </section>
+      </Section>
     </article>
   );
 }

@@ -15,6 +15,7 @@ import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import CardList from "@/components/CardLIst";
 import { storyLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -46,7 +47,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">1.いざないの密林</SectionTitle>
         <div className="mb-4">
           <p>
@@ -115,9 +116,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[10]} />
         <LocationLenses data={lensesData} locationIds={[10]} />
         <LocationSubEvents data={subEventData} locationIds={[10]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">2.王都インフェリア</SectionTitle>
         <p>
           町の奥にあるインフェリア城へ行くとイベント。その後も天文台、教会、インフェリア城とイベントが進行します。
@@ -146,9 +147,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[11]} />
         <LocationLenses data={lensesData} locationIds={[11]} />
         <LocationSubEvents data={subEventData} locationIds={[11]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">3.インフェリア港</SectionTitle>
         <Information type="warning" title="注意事項">
           インフェリア港で出航しようとするとキールとしばらくパーティから離脱します。致命的な取り逃し要素はありませんがキャンプのチャットをコンプリートしたい人はご注意ください。
@@ -163,9 +164,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[12]} />
         <LocationLenses data={lensesData} locationIds={[12]} />
         <LocationSubEvents data={subEventData} locationIds={[12]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">4.バロール港〜商業の町バロール</SectionTitle>
         <div className="mb-8">
           <h3>バロール港</h3>
@@ -201,9 +202,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[13, 14]} />
         <LocationLenses data={lensesData} locationIds={[13, 14]} />
         <LocationSubEvents data={subEventData} locationIds={[13, 14]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">5.風晶霊の空洞</SectionTitle>
         <p>
           ダンジョンには特に難しい謎解きはありませんが、吹き上げてくる風にタイミングよく乗っかることが必要な場所が多くあります。風の吹上を観察し、慌てないで操作しましょう。
@@ -229,9 +230,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[15]} />
         <LocationLenses data={lensesData} locationIds={[15]} />
         <LocationSubEvents data={subEventData} locationIds={[15]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">6.熱砂の町 シャンバール</SectionTitle>
         <p>
           シャンバールは砂漠の真ん中にある町。火の大晶霊のいる「火晶霊の谷」をクリアするためにこの町で休憩をしたり、アイテムの補充をするようにしましょう。ショップで購入できるアイタムとしてはファラとメルディが装備できる「キッチンミトン」は火属性耐性+30%なので次のダンジョン攻略に特におすすめです！準備ができたら砂漠奥地にある「火晶霊の谷」へ向かいましょう。
@@ -260,9 +261,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[16]} />
         <LocationLenses data={lensesData} locationIds={[16]} />
         <LocationSubEvents data={subEventData} locationIds={[16]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">7.火晶霊の谷</SectionTitle>
         <p>
           ダンジョン内では灼熱のためウンディーネのサポートを受けて進んでいきます。ウンディーネのHPが0になるとサポートがなくなり、常時灼熱のダメージう受けることになります。一度ダンジョンから出ればHPは満タンとなるので、アイテム回収などでHPが危なくなったら無理せず引き返しましょう。
@@ -290,9 +291,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[17]} />
         <LocationLenses data={lensesData} locationIds={[17]} />
         <LocationSubEvents data={subEventData} locationIds={[17]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">8.霊峰ファロース</SectionTitle>
         <p>
           ファロースはエアリアルボードで向かう必要がありマップ中央下の孤島にあります。
@@ -361,7 +362,7 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[18]} />
         <LocationLenses data={lensesData} locationIds={[18]} />
         <LocationSubEvents data={subEventData} locationIds={[18]} />
-      </section>
+      </Section>
     </article>
   );
 }

@@ -14,6 +14,7 @@ import { storyLinks } from "@/constants";
 import Information from "@/components/Information";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -46,7 +47,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">1.セイファート神殿</SectionTitle>
         <div className="mb-4">
           <p>
@@ -60,9 +61,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[30]} />
         <LocationLenses data={lensesData} locationIds={[30]} />
         <LocationSubEvents data={subEventData} locationIds={[30]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">2.チャットの小屋</SectionTitle>
         <div className="mb-4">
           <p>
@@ -77,9 +78,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[0]} />
         <LocationLenses data={lensesData} locationIds={[0]} />
         <LocationSubEvents data={subEventData} locationIds={[0]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">3.アイフリードの洞窟</SectionTitle>
         <div className="mb-4">
           <p>
@@ -97,9 +98,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[31]} />
         <LocationLenses data={lensesData} locationIds={[31]} />
         <LocationSubEvents data={subEventData} locationIds={[31]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">4.海底のアジト探し</SectionTitle>
         <div>
           <p>
@@ -154,9 +155,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[0]} />
         <LocationLenses data={lensesData} locationIds={[38]} />
         <LocationSubEvents data={subEventData} locationIds={[0]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">5.セイファート庭園</SectionTitle>
         <div className="mb-4">
           <p>インフェリアの海中（GPS座標：169, 18）に位置しています。</p>
@@ -168,9 +169,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[33]} />
         <LocationLenses data={lensesData} locationIds={[33]} />
         <LocationSubEvents data={subEventData} locationIds={[33]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">
           6.インフェリア城〜セイファートリング
         </SectionTitle>
@@ -196,9 +197,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[34]} />
         <LocationLenses data={lensesData} locationIds={[34]} />
         <LocationSubEvents data={subEventData} locationIds={[34]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">7.ティンシア〜バリル城</SectionTitle>
         <div className="mb-4">
           <p>
@@ -221,9 +222,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[0]} />
         <LocationLenses data={lensesData} locationIds={[0]} />
         <LocationSubEvents data={subEventData} locationIds={[0]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">8.レグルスの丘</SectionTitle>
         <div className="mb-4">
           <p>
@@ -243,9 +244,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[35]} />
         <LocationLenses data={lensesData} locationIds={[35]} />
         <LocationSubEvents data={subEventData} locationIds={[35]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">9.バリル城〜セイファート観測所</SectionTitle>
         <div className="mb-4">
           <p>
@@ -260,9 +261,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[36]} />
         <LocationLenses data={lensesData} locationIds={[36]} />
         <LocationSubEvents data={subEventData} locationIds={[36]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">10.シゼル城</SectionTitle>
         <p>
           いよいよラストダンジョンです。マップ自体はコンパクトですが仕掛けが複雑なため、アイテムを十分に買い揃えてから挑みましょう。
@@ -395,7 +396,7 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[37]} />
         <LocationLenses data={lensesData} locationIds={[37]} />
         <LocationSubEvents data={subEventData} locationIds={[37]} />
-      </section>
+      </Section>
     </article>
   );
 }

@@ -7,6 +7,7 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -34,14 +35,14 @@ export default async function HomePage() {
       <PageSummary>
         アイテム「ルーンボトル」と「ドエニスのポプリ」を入手できるベッポとのかくれんぼについて解説。イベントはセレスティアへ行く前までにやっておく時間制限があります。
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ベッポのかくれんぼ</SectionTitle>
         <p>
           バロールの露天で遭遇した盗賊少年ベッポとかくれんぼするサブイベントが発生します。このイベントでは貴重なルーンボトルを入手でき、ストーリー後半ではドエニスのポプリを入手できます。
           ドエニスのポプリはジイニのオークションで高値で取引されるアイテム。このイベントの発生には時間制限があり、レイス加入〜セレスティアへ渡る前までにかくれんぼをしておかないとドエニスのポプリは手に入らないため注意してください。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>イベントの詳細</SectionTitle>
         <div className="mb-4">
           <p>
@@ -92,7 +93,7 @@ export default async function HomePage() {
             No4でベッポを見逃したあとに宿屋の前にいくとベッポが立っており、話しかけるとルーンボトルを入手します。ベッポのイベントは一旦はここで終わりで、ストーリー後半になるとまた進行します。
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
       <section>
         <SectionTitle>インフェリア帰還後</SectionTitle>
         <div className="mb-4">

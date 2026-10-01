@@ -10,6 +10,7 @@ import Image from "next/image";
 import GifPlayer from "@/components/GifPlayer";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,7 +33,7 @@ export default async function HomePage() {
       <PageSummary>
         シャンバールで行なわれているミニゲーム「シャンバルーン」についての説明です。このイベントではリッドの称号や特殊なアイテムを入手できます。
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>シャンバルーン</SectionTitle>
         <ResponsiveImage src="/subevents/syanballoon-location.jpg" />
         <p>
@@ -93,8 +94,8 @@ export default async function HomePage() {
         <p>
           難易度2を2回以上クリアした状態で近くにいるアイちゃんに話しかけるとアイテム「うちわ」を入手できます。これは使用不可能なアイテムでジイニのカジノで高く売れるもの。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>難易度2の攻略</SectionTitle>
         <Information type="warning" title="難易度2のシャンバルーンに挑む前に">
           <p>
@@ -189,7 +190,7 @@ export default async function HomePage() {
             </div>
           </div>
         </RoundedContainer>
-      </section>
+      </Section>
     </article>
   );
 }

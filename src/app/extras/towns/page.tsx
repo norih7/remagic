@@ -8,6 +8,7 @@ import { extraLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,7 +37,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ねこにんの里/晶霊温泉</SectionTitle>
         <EventCondition category="period">飛行艇を入手後から</EventCondition>
         <div className="mb-4">
@@ -51,9 +52,9 @@ export default async function HomePage() {
             "晶霊温泉: チャットの特技習得サブイベントなど",
           ]}
         />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ねこにんの里</SectionTitle>
         <div className="mb-4">
           <p>
@@ -78,9 +79,9 @@ export default async function HomePage() {
             貴重な食材である「パープルソディ」は入り口付近の青色のねこにんから購入できます。パープルソディはマスター料理で必ず使う食材で、他にはノームの集落でしか購入できません。購入場所としてぜひ覚えておいてください。
           </p>
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>晶霊温泉</SectionTitle>
         <div className="mb-4">
           <p>
@@ -107,7 +108,7 @@ export default async function HomePage() {
           <h3>おまけ: 入浴</h3>
           <p>準備中</p>
         </div> */}
-      </section>
+      </Section>
     </article>
   );
 }

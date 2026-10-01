@@ -6,6 +6,7 @@ import GuideList from "@/components/GuideList";
 import Image from "next/image";
 import Information from "@/components/Information";
 import { systemLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -34,7 +35,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="system">
           リッドおよびファラの特技習得システム
         </SectionTitle>
@@ -96,9 +97,9 @@ export default async function HomePage() {
             />
           </Information>
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="system">
           キールおよびメルディの晶霊術習得システム
         </SectionTitle>
@@ -158,9 +159,9 @@ export default async function HomePage() {
             />
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="system">
           チャットおよびフォッグの特技習得システム
         </SectionTitle>
@@ -191,7 +192,7 @@ export default async function HomePage() {
             ]}
           />
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

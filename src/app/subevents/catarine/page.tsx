@@ -5,6 +5,7 @@ import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
 import RoundedItem from "@/components/RoundedItem";
 import { subeventLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -46,14 +47,14 @@ export default async function HomePage() {
         </div>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>カトリーヌの恋愛イベントの概要</SectionTitle>
         <p>
           インフェリア各地を巡るピンク髪の女性「カトリーヌ」を追うサブイベントです。ストーリーの進行に合わせてどれだけ彼女に遭遇したかの回数によって最終的な結末が大きく変化し、すべてのイベント（全6回）を目撃してハッピーエンドを迎えることで、ファラの称号「あいのネゴシエーター」を獲得できます。
         </p>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>全6回の遭遇場所と発生時期一覧</SectionTitle>
         <p className="mb-4">
           イベントはそれぞれの期間（ストーリーの区切り）を過ぎてしまうと二度と見られなくなります。こまめに各地を訪れてカトリーヌを探しましょう。
@@ -130,7 +131,7 @@ export default async function HomePage() {
             </RoundedItem>
           </div>
         </div>
-      </section>
+      </Section>
 
       <section>
         <SectionTitle>イベントの結末と報酬</SectionTitle>

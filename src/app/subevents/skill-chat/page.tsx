@@ -7,6 +7,7 @@ import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import { subeventLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,7 +37,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>チャットの特技習得イベント一覧</SectionTitle>
         <Information title="サブイベント発生の前提条件">
           チャットをパーティーメンバーに加えた状態で、以下の各地のスポットへ向かうことでイベントが進行・発生します。
@@ -87,9 +88,9 @@ export default async function HomePage() {
             98）をクリアして潜水艇を手に入れた後、チャットの小屋の中を訪れるとチャットが暗算に苦戦するイベントが発生します。その後、アイフリードの隠しアジト内で挑戦できる「すごろくゲーム」のイベントを無事にクリアすると、最高峰の大技「エターナルスロー」を習得できます。
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>エターナルスロー習得時のクイズ正解一覧</SectionTitle>
         <p>
           アイフリードの隠しアジトでのイベント中に出題されるクイズは、ひっかけ問題が多く非常に難易度が高いため、ここで全10問の正確な内容と正解を確認しておきましょう。
@@ -206,7 +207,7 @@ export default async function HomePage() {
             </tbody>
           </table>
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

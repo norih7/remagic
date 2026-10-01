@@ -10,6 +10,7 @@ import EventCondition from "@/components/EventCondition";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Information from "@/components/Information";
 import { extraLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,7 +37,8 @@ export default async function HomePage() {
       <PageSummary>
         飛行艇の入手に欠かせないキーアイテム「ひかりのたま」が手に入る、インフェリアの隠しダンジョン「アイフリードの墓」の攻略情報をまとめました。
       </PageSummary>
-      <section className="mb-12">
+
+      <Section>
         <SectionTitle>アイフリードの墓</SectionTitle>
         <EventCondition category="period">
           インフェリアへ帰還後から
@@ -52,8 +54,8 @@ export default async function HomePage() {
           この手順を踏むことで、インフェリアのフィールドマップ座標 GPS(88,64)
           にアイフリードの墓が出現します。フラグを立てておかないとダンジョン自体が現れないため注意しましょう。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>ダンジョン攻略</SectionTitle>
         <div className="mb-8">
           <h3>ダンジョン概要</h3>
@@ -122,7 +124,7 @@ export default async function HomePage() {
           <LocationItems data={itemsData} locationIds={[48]} />
           <LocationLenses data={lensesData} locationIds={[48]} />
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

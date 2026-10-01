@@ -130,7 +130,7 @@ export const RecipePropertyList: React.FC<RunePropertyListProps> = ({
                 alt=""
                 className="rounded-sm mr-2"
               /> */}
-              <h3 className="text-[1rem] mr-3 !mb-0 !p-0">{recipe.name}</h3>
+              <h3 className="text-[1rem] !mb-0">{recipe.name}</h3>
             </div>
             <div className="mb-2">
               <Tag>{recipeTypeMap[recipe.type]}</Tag>

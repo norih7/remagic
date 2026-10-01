@@ -15,6 +15,7 @@ import CardList from "@/components/CardLIst";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GuideList from "@/components/GuideList";
 import { storyLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -47,7 +48,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">1.港町ペイルティ</SectionTitle>
         <Information type="warning" title="ペイルティでの準備は必須">
           次の目的地である「氷晶霊の山」へ進むには、ペイルティできちんと防寒具を購入しておく必要があります。また、道具屋で販売されている「フリーズチェック」をあらかじめ1つ（可能ならリッド・ファラ用に2つ）購入しておくのが強くおすすめ。20000ガルドと高価ですが、戦闘中の凍結を完全に防いでくれるため非常に重宝します。
@@ -84,9 +85,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[24]} />
         <LocationLenses data={lensesData} locationIds={[24]} />
         <LocationSubEvents data={subEventData} locationIds={[24]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">2.氷晶霊の山</SectionTitle>
         <div className="mb-8">
           <h3>氷晶霊の山のマップ</h3>
@@ -118,9 +119,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[25]} />
         <LocationLenses data={lensesData} locationIds={[25]} />
         <LocationSubEvents data={subEventData} locationIds={[25]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">3.ペイルティ〜アイメン（崩壊）</SectionTitle>
         <div className="mb-8">
           <h3>ペイルティの復興</h3>
@@ -149,9 +150,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[26]} />
         <LocationLenses data={lensesData} locationIds={[26]} />
         <LocationSubEvents data={subEventData} locationIds={[26]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">4.ティンシア</SectionTitle>
         <div className="mb-8">
           <p>
@@ -168,9 +169,9 @@ export default async function HomePage() {
           <LocationLenses data={lensesData} locationIds={[27]} />
           <LocationSubEvents data={subEventData} locationIds={[27]} />
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">5.雷晶霊の遺跡</SectionTitle>
         <div className="mb-8">
           <h3>雷晶霊の遺跡の概要と全体マップ</h3>
@@ -269,9 +270,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[28]} />
         <LocationLenses data={lensesData} locationIds={[28]} />
         <LocationSubEvents data={subEventData} locationIds={[28]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">
           6.ティンシア〜バリル城突入の準備
         </SectionTitle>
@@ -289,9 +290,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[0]} />
         <LocationLenses data={lensesData} locationIds={[0]} />
         <LocationSubEvents data={subEventData} locationIds={[0]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">7.バリル城</SectionTitle>
         <div className="mb-8">
           <h3>バリル城の全体マップと構造</h3>
@@ -373,9 +374,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[29]} />
         <LocationLenses data={lensesData} locationIds={[29]} />
         <LocationSubEvents data={subEventData} locationIds={[29]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">バリル城クリア後の流れ</SectionTitle>
         <div className="mb-8">
           <h3>ガレノスとシルエシカの合流</h3>
@@ -409,7 +410,7 @@ export default async function HomePage() {
             ティンシアを出港するとフィールドマップでイベントが起き、セイファートキーが示す新たな目的地が判明します。次の舞台はペイルティの南にある「セイファート神殿」。バンエルティア号で向かいましょう。
           </p>
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

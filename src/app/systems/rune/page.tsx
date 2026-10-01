@@ -8,6 +8,7 @@ import RunePropertyList from "@/components/RunePropertyList";
 import Information from "@/components/Information";
 import { getLocationItemsData } from "@/lib/db";
 import { systemLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -463,7 +464,7 @@ export default async function HomePage() {
           </li>
         </ul>
       </div> */}
-      <section className="mb-12">
+      <Section>
         <SectionTitle data="about">ルーンボトル活用ガイド</SectionTitle>
         <div className="mb-4">
           <p>
@@ -506,8 +507,8 @@ export default async function HomePage() {
           </table>
         </div>
         <div className="mb-8"></div>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>ルーンボトルの購入方法</SectionTitle>
         <EventCondition category="period">ティンシア到着後以降</EventCondition>
         <p>
@@ -516,7 +517,7 @@ export default async function HomePage() {
         <p>
           ティンシアの船具屋では「販売室」の改造(購入)が可能になり、バンエルティア号内の販売室にある自販機ではルーンボトルを購入することができるます。なお販売価格は「100000」ガルドとかなり高額。
         </p>
-      </section>
+      </Section>
 
       <section>
         <SectionTitle>ルーンボトルの変化一覧</SectionTitle>

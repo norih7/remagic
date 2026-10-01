@@ -4,6 +4,7 @@ import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
 import GuideList from "@/components/GuideList";
 import { guideLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -42,7 +43,7 @@ export default async function HomePage() {
         </Information>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>レンズ</SectionTitle>
         <p>
           レンズは町やダンジョンで入手でき、60枚集めるとシャンバールまたはティンシアのイレーヌから最後の報酬としてリッドの称号「レンズハンター」をもらえます。通常のレンズは後から回収できますが、ジイニのオークション会場にあるレンズだけは取り逃しに注意が必要です。
@@ -59,9 +60,9 @@ export default async function HomePage() {
             items={[{ title: "レンズ収集", href: "/subevents/lens" }]}
           />
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>カトリーヌの恋愛</SectionTitle>
         <p>
           カトリーヌに全6回遭遇すると、ファラの称号「あいのネゴシエーター」を入手できます。ミンツ、モルル、インフェリア港、バロール、シャンバール、レグルス道場の順にイベントを確認しましょう。
@@ -78,9 +79,9 @@ export default async function HomePage() {
             items={[{ title: "カトリーヌの恋愛", href: "/subevents/catarine" }]}
           />
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ベッポのかくれんぼ</SectionTitle>
         <p>
           バロールで発生するベッポとのかくれんぼでは、ルーンボトルを入手できます。ストーリー後半にもう一度訪れると売却専用アイテムの「ドエニスのポプリ」ももらえるため、セレスティアへ渡る前にイベントを終わらせておきましょう。ドエニスのポプリはジイニのオークションで高値がつきやすいアイテムです。
@@ -97,9 +98,9 @@ export default async function HomePage() {
             items={[{ title: "ベッポのかくれんぼ", href: "/subevents/beppo" }]}
           />
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>沈没船のセイレーンのアイテム盗み</SectionTitle>
         <p>
           沈没船のボス「セイレーン」から、チャットの特技「ローバーアイテム」でアクセサリ「みずぐも」を盗めます。みずぐもは水属性ダメージを50%軽減するアイテム。チャットの小屋の宝箱から1つ入手できますが、2個目が欲しい場合はセイレーンを狙いましょう。
@@ -116,7 +117,7 @@ export default async function HomePage() {
             items={[{ title: "沈没船", href: "/extras/sunken-ship" }]}
           />
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

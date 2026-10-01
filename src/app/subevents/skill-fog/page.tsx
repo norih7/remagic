@@ -8,6 +8,7 @@ import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import { subeventLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,7 +34,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>フォッグの特技習得イベント一覧</SectionTitle>
         <Information title="サブイベント発生の前提条件">
           フォッグをパーティーメンバーに加えた状態で、以下の各地のスポットへ向かうことでイベントが進行・発生します。
@@ -104,7 +105,7 @@ export default async function HomePage() {
             </div>
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
     </article>
   );
 }

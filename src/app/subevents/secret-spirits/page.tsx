@@ -8,6 +8,7 @@ import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import { subeventLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,7 +34,7 @@ export default async function HomePage() {
         エターニアにはサブイベントにて契約できる大晶霊が存在します。強力な晶霊術のフリンジが可能となるので是非とも契約を目指しましょう。
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>隠し大晶霊一覧</SectionTitle>
         <RoundedContainer>
           <h3>闇の大晶霊 シャドウ</h3>
@@ -92,7 +93,7 @@ export default async function HomePage() {
             />
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
     </article>
   );
 }

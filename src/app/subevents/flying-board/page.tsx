@@ -9,6 +9,7 @@ import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import { subeventLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -35,7 +36,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>飛行艇改造の概要</SectionTitle>
         <ResponsiveImage src="/subevents/flying-board-field.jpg" />
         <p>
@@ -43,9 +44,9 @@ export default async function HomePage() {
           <strong>「やみのたま」</strong>と<strong>「ひかりのたま」</strong>
           を集める必要があります。ただし、「やみのたま」が最後の決戦の舞台となるシゼル城にあるため、飛行艇が本格的に完成・利用可能になるのはゲームの最終盤となります。
         </p>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>キーアイテムの入手方法</SectionTitle>
         <div className="mb-8">
           <h3>1. やみのたまの入手</h3>
@@ -109,9 +110,9 @@ export default async function HomePage() {
             />
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>飛行艇の完成と操作方法</SectionTitle>
         <ResponsiveImage src="/subevents/flying-board-set.jpg" />
         <p>
@@ -121,7 +122,7 @@ export default async function HomePage() {
           飛行艇は、フィールドマップ上で<strong>「□ボタン」</strong>
           を押すことでいつでも空から呼び出すことができます。これまで着陸できえなかった険しい岩山や高所エリアにもアクセスできるようになるため、世界中を飛び回って未開の隠し要素をくまなく探索してみましょう！
         </p>
-      </section>
+      </Section>
     </article>
   );
 }

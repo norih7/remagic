@@ -7,6 +7,7 @@ import Information from "@/components/Information";
 import Tag from "@/components/Tag";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { systemLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -34,7 +35,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="system">
           マニュアル操作（マニュアルのしょ入手）
         </SectionTitle>
@@ -77,7 +78,7 @@ export default async function HomePage() {
             マニュアル操作を行うためには「マニュアルのしょ」の入手が必要で、レグルス道場の弟子に話かけ「マニュアル操作で激しく戦いたい」を選択すると入手できます。取得はいつでも可能ですが、ストーリー的にレグルス道場に訪れたときにやっておくのがオススメです。設定画面で「マニュアル」、あるいは戦闘中にSELECTボタンを押すことで切替可能です。
           </p>
         </div>
-      </section>
+      </Section>
       <section>
         <SectionTitle type="system">戦闘中の特殊操作</SectionTitle>
         <div className="mb-8">

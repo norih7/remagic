@@ -15,6 +15,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import { storyLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -45,7 +46,7 @@ export default async function HomePage() {
           セレスティアへ到着した後のストーリーを徹底攻略！「地晶霊の廃坑」や「チャットの小屋」といった難易度の高いダンジョンが連続するため、本記事のマップや攻略手順を参考に進めていきましょう。
         </p>
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">1.岬の砦〜アイメン駅</SectionTitle>
         <div className="mb-8">
           <h3>岬の砦</h3>
@@ -102,9 +103,9 @@ export default async function HomePage() {
           <LocationLenses data={lensesData} locationIds={[20]} />
           <LocationSubEvents data={subEventData} locationIds={[20]} />
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">2.ルイシカ〜廃坑駅</SectionTitle>
         <div className="mb-8">
           <h3>ルイシカ</h3>
@@ -144,9 +145,9 @@ export default async function HomePage() {
           <LocationLenses data={lensesData} locationIds={[20]} />
           <LocationSubEvents data={subEventData} locationIds={[20]} />
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">3.地晶霊の廃坑</SectionTitle>
         <div className="mb-8">
           <p>
@@ -221,9 +222,9 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[22]} />
         <LocationLenses data={lensesData} locationIds={[22]} />
         <LocationSubEvents data={subEventData} locationIds={[22]} />
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="flag">4.チャットの小屋</SectionTitle>
         <div className="mb-8">
           <ResponsiveImage src="/stories/guide3-chat-contraption.jpg" />
@@ -455,7 +456,7 @@ export default async function HomePage() {
         <LocationRecipes data={recipesData} locationIds={[23]} />
         <LocationLenses data={lensesData} locationIds={[23]} />
         <LocationSubEvents data={subEventData} locationIds={[23]} />
-      </section>
+      </Section>
     </article>
   );
 }

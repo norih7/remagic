@@ -9,6 +9,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,7 +37,7 @@ export default async function HomePage() {
       <PageSummary>
         アイテム「スマッシュマント」を入手できるグリップソート探しについて解説。イベントには時間制限がありませんが、スマッシュマントは非常に有用なアクセサリなので王都インフェリア到着後すぐにやっておくことを推奨します。
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>クリップソード探し</SectionTitle>
         <EventCondition category="period">
           王都インフェリアに到着後いつでも
@@ -45,8 +46,8 @@ export default async function HomePage() {
         <p>
           王都インフェリアの闘技場の前にいる老人に話しかけると「グリップソード」を探してほしいと頼まれます。グリップソードはインフェリアの街中にあり、簡単に探し出せるのとイベントの最後にはアクセサリ「スマッシュマント」を入手できます。スマッシュマントはアイテムドロップ率をアップする貴重なアイテムなのでぜひ入手してみてください。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>イベントの詳細</SectionTitle>
 
         <RoundedContainer>
@@ -84,7 +85,7 @@ export default async function HomePage() {
             イベントの結末はPSP版のものです。PS版では「エタポケ1」を入手し、その後のポケットステーションでのミニゲームをクリアするとスマッシュマントを入手します。（PSP版はポケットステーションがないので手順が省略されている）2026年のリマスター版ではPSP版と同じ結果となる予想です。
           </Information>
         </RoundedContainer>
-      </section>
+      </Section>
     </article>
   );
 }

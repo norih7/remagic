@@ -12,6 +12,7 @@ import Image from "next/image";
 import { deepLinks } from "@/constants";
 import Information from "@/components/Information";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -44,7 +45,7 @@ export default async function HomePage() {
         <SectionTitle>料理と習得方法</SectionTitle>
         <p>準備中</p>
       </section> */}
-      <section className="mb-12">
+      <Section>
         <SectionTitle>マスター料理とは</SectionTitle>
         <div className="mb-4">
           <p>
@@ -59,31 +60,31 @@ export default async function HomePage() {
           マスター料理は「1人のキャラクターがベースとなる料理の熟練度をすべてMAXにすること」で習得します。一度習得すればパーティメンバー全員がその料理を作れるようになります。
           料理を実行して条件を満たすと「新しい料理をマスターしました」とアナウンスされ、マスター料理を習得します。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>特殊な食材「パープルソディ」</SectionTitle>
         <p>
           マスター料理では食材の1つとして「パープルソディ」が使われますあります。パープルソディはセレスティアで入手可能な食材で、町などで入手できず「ノームの集落」と「ねこにんの里」の2箇所でのみ入手できます。
         </p>
         <h3>ノームの里</h3>
         <h3>ねこにんの里</h3>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>おすすめマスター料理</SectionTitle>
         <h3>マーボーカレー</h3>
         <ResponsiveImage src="/systems/master-recipe-mabo-curry.jpg" />
         <p>
           なんといってもパーティ全員のTPを+1してくれる特殊効果が魅力的。効果量は少なく見えますが、パーティ全員に効果があるため強力です。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>マスター料理一覧データ</SectionTitle>
         <RecipePropertyList
           recipes={masterRecipes}
           recipeItems={recipeItems}
           locationRecipes={locationRecipes}
         />
-      </section>
+      </Section>
     </article>
   );
 }

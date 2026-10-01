@@ -5,6 +5,7 @@ import SectionTitle from "@/components/SectionTitle";
 import CardList from "@/components/CardLIst";
 import Information from "@/components/Information";
 import { subeventLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -31,7 +32,7 @@ export default async function HomePage() {
           このミニゲームで得られるのはリッドの称号のみです。特別なアイテムなどは何もないため称号にこだわりのない方はスキップしても問題ありません。
         </Information>
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>クレーメルボール</SectionTitle>
         <div className="mb-8">
           <p>
@@ -74,7 +75,7 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </section>
+      </Section>
     </article>
   );
 }

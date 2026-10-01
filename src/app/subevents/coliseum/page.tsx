@@ -10,6 +10,7 @@ import { subeventLinks } from "@/constants";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
 import LocationItems from "@/components/LocationItems";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -103,7 +104,7 @@ export default async function HomePage() {
       <PageSummary>
         王都インフェリアで開催されている闘技場について解説します。
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>闘技場</SectionTitle>
         <EventCondition category="period">
           王都インフェリアに到着後いつでも
@@ -118,8 +119,8 @@ export default async function HomePage() {
         <Information type="warning" title="闘技場の難易度について">
           闘技場は最初に王都インフェリアにきた時から挑戦できますが難易度が高いため初回訪問時ではまずクリアできません。リッドが猛虎連撃破や鳳凰天駆を覚えるあたり（レベル50ほど）で挑戦することを推奨します。クレスはさらにレベルやHPが求められます。
         </Information>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>闘技場で勝つためのポイント</SectionTitle>
         <h3>敵に合わせて装備品を準備する</h3>
         <div className="mb-8">
@@ -137,8 +138,8 @@ export default async function HomePage() {
         <p>
           闘技場では負ける場合はレベルが足りていない可能性もあります。また猛虎連撃破や鳳凰天駆の奥義習得やHPは4000以上になってから挑みたいです。何度やっても勝てない、という場合はレベル上げに挑戦しましょう。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>王都一決定戦</SectionTitle>
         <div className="mb-4">
           <CardList
@@ -178,8 +179,8 @@ export default async function HomePage() {
             空に浮いている「ファイアクラウド」を先に倒しましょう。烈空斬などで攻撃を当て、虎牙蓮斬や猛虎連撃破で隙を与えずダメージを与えていきましょう。
           </RoundedItem>
         </RoundedContainer>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>王国一決定戦</SectionTitle>
         <div className="mb-4">
           <CardList
@@ -219,8 +220,8 @@ export default async function HomePage() {
             敵はすべて光属性攻撃の弱点を持つので「エクスカリバー」装備に切り替えて戦うのが有効。カタツムリのような「デリブルテンタクル」から優先して攻撃していき影を移動する「イビルリッパー」は深追いせずあとで倒す作戦が有効です。
           </RoundedItem>
         </RoundedContainer>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>世界一決定戦</SectionTitle>
         <div className="mb-4">
           <CardList
@@ -260,7 +261,7 @@ export default async function HomePage() {
             2回戦目と同じで火属性耐久や氷属性武器が有効。レッドドラゴンは正面から挑むとダメージが大きいので、後ろから回り込んで猛虎連撃破などでダメージを与えましょう。
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
       <section>
         <SectionTitle>クレス乱入</SectionTitle>
         <ResponsiveImage src="/subevents/coliseum-appear-cless.jpg" />

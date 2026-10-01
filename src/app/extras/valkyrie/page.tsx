@@ -10,6 +10,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import ValkyrieButton from "@/components/ValkyrieButton";
 import Information from "@/components/Information";
 import EventCondition from "@/components/EventCondition";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -50,7 +51,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>きらめきの塔</SectionTitle>
         <EventCondition category="period">飛行艇を入手後から</EventCondition>
         <p>
@@ -70,9 +71,9 @@ export default async function HomePage() {
           インフェリアのミンツから飛行艇で南にずっとすすんだ岩山に囲まれたエリア（GPS座標：107,
           23付近）に佇んでおり、飛行艇を使用することで初めて着陸・侵入することが可能です。
         </p>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ダンジョンフロア別攻略・謎解き手順</SectionTitle>
         <div className="mb-4">
           <h3>1階：星型スイッチの踏破ギミック</h3>
@@ -186,7 +187,7 @@ export default async function HomePage() {
           <h3>ダンジョン内で入手できるアイテム一覧</h3>
           <LocationItems data={itemsData} locationIds={[59]} />
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

@@ -9,6 +9,7 @@ import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import { subeventLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,7 +33,7 @@ export default async function HomePage() {
       <PageSummary>
         セレスティア各地をにいる画家のリシテア（フォッグの妻）との遭遇イベントを説明します。このイベントではフォッグの強力なアクセサリの入手でき、フォッグの「エレメントマスター」の特技習得に関連します。
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>イベント開始</SectionTitle>
         <Information type="warning" title="注意事項">
           リシテアはフォッグがパーティに加入していると出現しません。ティンシアのアジトでフォッグを加入/離脱できるのでこのイベント時は離脱させてください。
@@ -47,8 +48,8 @@ export default async function HomePage() {
             フォッグが仲間にいない状態でペイルティの港にいくと絵を描いている女性がいて近づくとイベントが発生。このイベントを見ることで以降セレスティア各地でこの女性、リシテアが出現します。
           </RoundedItem>
         </RoundedContainer>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>各地での遭遇</SectionTitle>
         <p>
           セレスティア各地でリシテアと遭遇します。ここはどの順番で行っても構いません。
@@ -79,8 +80,8 @@ export default async function HomePage() {
             </tr>
           </tbody>
         </table>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>イベントの最後</SectionTitle>
         <RoundedContainer>
           <h3>ジイニでの遭遇</h3>
@@ -103,7 +104,7 @@ export default async function HomePage() {
             />
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
     </article>
   );
 }

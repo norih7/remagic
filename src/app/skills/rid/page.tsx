@@ -6,6 +6,7 @@ import SkillPropertyList from "@/components/SkillPropertyList";
 import { Skill } from "@/components/SkillPropertyList";
 import Information from "@/components/Information";
 import { skillLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -331,10 +332,10 @@ export default async function HomePage() {
         <SectionTitle type="data">おすすめ特技/奥義</SectionTitle>
       </section> */}
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle type="skill">リッドの特技/奥義一覧</SectionTitle>
         <SkillPropertyList skills={skills} />
-      </section>
+      </Section>
     </article>
   );
 }

@@ -7,6 +7,7 @@ import { getLocationItemsData } from "@/lib/db";
 import { extraLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import EventCondition from "@/components/EventCondition";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -35,7 +36,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ファロース教会地下とは</SectionTitle>
         <EventCondition category="period">
           インフェリアへ帰還後から挑戦可能
@@ -56,9 +57,9 @@ export default async function HomePage() {
             110）の建物内へ入り、司祭の後ろ側へ回り込むことでイベントが発生します。イベントによって教会の壁が崩れ、その隠された裏口からファロース教会地下へと進めるようになります。
           </p>
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ダンジョン攻略と探索手順</SectionTitle>
         <div className="mb-4">
           <p>
@@ -75,14 +76,14 @@ export default async function HomePage() {
             <strong>BOSS：『マクスウェル』</strong>
           </p>
           <p>
-            マクスウェルのHP自体は34,000とそこまで高くありませんが、とにかく圧倒的な防御力を誇ります。さらに晶霊術の詠唱スピードも非常に速く、大火力の術を連発してくるため、前衛のリッドやファラが通常攻撃や特技を絶えず叩き込んで相手の詠唱を確実に阻止することを最優先に立ち回りましょう。光属性の攻撃が弱点となっているため、リッドに「エクスカリバー」などの光属性武器を装備させて挑むのがベストです。遠征の橋から戻ってきてすぐのタイミングでも挑戦可能ですが、当時の適正レベルで勝つのが厳しいと感じた場合は、一度レベルを60前後までしっかりと上げてから挑むのが無難です。
+            マクスウェルのHP自体は34,000とそこまで高くありませんが、とにかく圧倒的な防御力を誇ります。さらに晶霊術の詠唱スピードも非常に速く、大火力の術を連発してくるため、前衛のリッドやファラが通常攻撃や特技を絶えず叩き込んで相手の詠唱を確実に阻止することを最優先に立ち回りましょう。光属性の攻撃が弱点となっているため、リッドに「エクスカリバー」などの光属性武器を装備させて挑むのがベストです。遠征の橋から戻ってきてすぐのタイミングでも挑戦可能ですが、当時の適正レベルで勝つのが厳しいと感じた場合は、一度レベルを60近くまでしっかりと上げてから挑むのが無難です。
           </p>
         </div>
         <div className="mb-4">
           <h3>ダンジョン内で入手できるアイテム一覧</h3>
           <LocationItems data={itemsData} locationIds={[58]} />
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

@@ -9,6 +9,7 @@ import { getLocationLensesData } from "@/lib/db";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { extraLinks } from "@/constants";
 import EventCondition from "@/components/EventCondition";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,7 +39,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>闇の洞窟とは</SectionTitle>
         <EventCondition category="period">潜水艇入手後から</EventCondition>
         <div className="mb-4">
@@ -54,9 +55,9 @@ export default async function HomePage() {
           付近へアプローチすると、ダンジョンの入り口を発見・進入することができます。
         </p>
         <p></p>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ダンジョン攻略手順</SectionTitle>
         <div className="mb-4">
           <h3>シンボルエネミーが徘徊するフロア</h3>
@@ -90,7 +91,7 @@ export default async function HomePage() {
           <LocationItems data={itemsData} locationIds={[49]} />
           <LocationLenses data={lensesData} locationIds={[49]} />
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

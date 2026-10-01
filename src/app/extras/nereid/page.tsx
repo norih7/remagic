@@ -15,6 +15,7 @@ import GuideList from "@/components/GuideList";
 import RoundedItem from "@/components/RoundedItem";
 import RoundedContainer from "@/components/RoundedContainer";
 import GifPlayer from "@/components/GifPlayer";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -41,7 +42,7 @@ export default async function HomePage() {
       <PageSummary>
         ネレイドの迷宮は全6階層で構成される最高難易度の隠しダンジョンです。ランダムに作成される迷宮を進み、各階層のボスを倒して最深部のネレイドを目指します。探索中の消耗を抑え、1〜5階層の単独ボス戦を突破する準備が重要です。
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ネレイドの迷宮</SectionTitle>
         <EventCondition category="period">
           シゼル城到着後（機種によって異なる）
@@ -52,15 +53,20 @@ export default async function HomePage() {
         <p>
           各階層のボスを倒した時点で、先へ進まずにダンジョンを抜けることもできます。何度でも挑戦できるため、準備が足りないと感じたら無理に最深部まで進まず、一度脱出して態勢を整えましょう。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>ネレイドの迷宮への行き方</SectionTitle>
         <ResponsiveImage src="/extras/nereid-location.jpg" />
         <h3>リマスター版</h3>
+        <div className="mb-4">
+          <p>
+            1周目のシゼル城に入ったら開放され、オルバース界面にネレイドの迷宮が出現します。
+          </p>
+        </div>
         <h3>PS1版/PSP版</h3>
         <div className="mb-4">
           <p>
-            2週目の☆がついたセーブデータでストーリーを進行してオルバース界面へ行くとネレイドの迷宮が出現し、ダンジョンへ挑むことができます。ただし実際には2週目のクリアデータがあれば以下の方法で1週目から挑戦可能です。
+            2周目の☆がついたセーブデータでストーリーを進行してオルバース界面へ行くとネレイドの迷宮が出現し、ダンジョンへ挑むことができます。ただし実際には2週目のクリアデータがあれば以下の方法で1週目から挑戦可能です。
           </p>
         </div>
         <div className="mb-8">
@@ -73,8 +79,8 @@ export default async function HomePage() {
             2周目データをロードして「START+SELECT+L+R同時押し」でタイトルに戻ってから1周目のデータをロードすることで出現させることができます。
           </p>
         </div>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>ダンジョンに挑む前に</SectionTitle>
         <p>
           エターニアの最高難易度のダンジョンであるため徹底的な準備が必要です。
@@ -128,8 +134,8 @@ export default async function HomePage() {
             1〜5階層のボス戦はキャラクター1人で挑むため、レベル上げと薬草によるHPアップをしておくと攻略が安定します。特にHPは薬草で最大HPを増やすことで、ボス戦での耐久力が上がります。ネレイドはディストーションを使うためHPは最低5000以上欲しいです。推奨レベルは75以上です。私は80レベルでノーマルをクリアできました。
           </p>
         </div>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>ダンジョン攻略</SectionTitle>
         <Information title="探索中の注意点">
           <p>
@@ -147,8 +153,8 @@ export default async function HomePage() {
             探索中はアイテムを使えませんが、戦闘中は使用できます。敵との戦闘はすべて逃げることを推奨します。無駄な消耗を避けてボス戦に備え、薬草をドロップする敵と戦う場合は料理で回復しましょう。
           </p>
         </div>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>1人で討伐するボス攻略</SectionTitle>
         <div className="mb-8">
           <h3>1階層: エレメンタラー戦</h3>
@@ -216,8 +222,8 @@ export default async function HomePage() {
             リッドがおすすめです。鳳凰天駆と秘奥義を連発して、敵に反撃の時間を与えずに撃破しましょう。
           </p>
         </div>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <SectionTitle>ラスボス攻略</SectionTitle>
         <div className="mb-8">
           <h3>ネレイド戦</h3>
@@ -237,14 +243,14 @@ export default async function HomePage() {
           ネレイド撃破後はキラキラ点滅している椅子を調べると「Hガントレット」を入手できます。これまでのボスと違い直接調べないと入手できないためご注意ください。
           反対方向に進むとダンジョンを脱出でき、ネレイドの迷宮の攻略が完了です。
         </p>
-      </section>
-      <section className="mb-12">
+      </Section>
+      <Section>
         <div className="mb-4">
           <h3>ダンジョン内の入手アイテム</h3>
           <LocationItems data={itemsData} locationIds={[61]} />
           <LocationLenses data={lensesData} locationIds={[61]} />
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

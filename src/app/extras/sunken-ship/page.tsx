@@ -8,6 +8,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import Information from "@/components/Information";
 import EventCondition from "@/components/EventCondition";
 import { extraLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,7 +37,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>沈没船とは</SectionTitle>
         <EventCondition category="period">
           インフェリアへ帰還後から挑戦可能
@@ -47,15 +48,15 @@ export default async function HomePage() {
           </p>
         </div>
         <div className="mb-8">
-          <h3>沈没船への行き方・アクセス</h3>
+          <h3>沈没船への行き方</h3>
           <p>
             「遠征の橋」からイベントを経てインフェリア側へ帰還したあと、インフェリア世界の海底に位置する沈没船（GPS座標：34,
             4 付近）へ潜水艇で向かうことで侵入することができます。
           </p>
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ダンジョン攻略手順</SectionTitle>
         <div className="mb-8">
           <h3>ダンジョン内部の構造と進め方</h3>
@@ -120,7 +121,7 @@ export default async function HomePage() {
           <h3>ダンジョン内で入手できるアイテム一覧</h3>
           <LocationItems data={itemsData} locationIds={[57]} />
         </div>
-      </section>
+      </Section>
     </article>
   );
 }

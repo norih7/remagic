@@ -13,6 +13,7 @@ import Information from "@/components/Information";
 import CardList from "@/components/CardLIst";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -47,7 +48,7 @@ export default async function HomePage() {
         </p>
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ジイニ</SectionTitle>
         <EventCondition category="period">潜水艇入手後から</EventCondition>
         <div className="mb-4">
@@ -69,9 +70,9 @@ export default async function HomePage() {
           飛行艇があれば空中から直接ジイニへ向かうことができます。アイメンから南方向へ進んだGPS(66,
           152)付近にジイニがあります。
         </p>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>ジイニの昼と夜</SectionTitle>
         <div className="mb-4">
           <h3>昼の状態</h3>
@@ -96,9 +97,9 @@ export default async function HomePage() {
             フィールドマップで夜になってからジイニに入ると夜の状態になっています。どうしてもジイニが尽きてしまい、宿泊もできない場合はこの方法を利用してください。
           </Information>
         </div>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>オークションへの出品</SectionTitle>
         <div className="mb-4">
           <p>
@@ -143,9 +144,9 @@ export default async function HomePage() {
             これを繰り返すと効率よくオークション価格を引き上げていくことができます。良い例ですが「うちわ」も30分ほどでこの値段になることもあります。
           </p>
         </Information>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>オークションでのアイテム購入</SectionTitle>
         <ResponsiveImage src="/extras/secret-jiini-buy.jpg" />
         <p>
@@ -263,7 +264,7 @@ export default async function HomePage() {
             </li>
           </ul>
         </RoundedContainer>
-      </section>
+      </Section>
     </article>
   );
 }

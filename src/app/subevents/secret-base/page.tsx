@@ -11,6 +11,7 @@ import { getLocationItemsData } from "@/lib/db";
 import LocationItems from "@/components/LocationItems";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -34,7 +35,7 @@ export default async function HomePage() {
       <PageSummary>
         インフェリアにあるアイフリードの隠しアジトを紹介します。
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>インフェリアのアジト一覧</SectionTitle>
         <div className="mb-4">
           <p>
@@ -70,7 +71,7 @@ export default async function HomePage() {
           </RoundedItem>
           <LocationItems data={itemsData} locationIds={[56]} />
         </RoundedContainer>
-      </section>
+      </Section>
     </article>
   );
 }

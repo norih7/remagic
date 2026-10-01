@@ -1,6 +1,8 @@
 .container h3 {
   border-bottom: 1px solid #dfdcd9;
   font-size: 1.1em;
+  background: none !important;
+  padding-left: 0 !important;
 }
 .list li span {
   display: block;
