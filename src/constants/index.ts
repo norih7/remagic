@@ -476,7 +476,7 @@ export const deepLinks: Record<string, PageLink> = {
   "master-recipe": {
     title: "マスター料理",
     image: "/link-headers/systems-master-recipe.jpg",
-    path: "/systems/master-recipe",
+    path: "/deeps/master-recipe",
     desc: "特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
