@@ -11,6 +11,7 @@ import StarRating from "@/components/StarRating";
 import Image from "next/image";
 import GuideList from "@/components/GuideList";
 import { systemLinks } from "@/constants";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,7 +39,7 @@ export default async function HomePage() {
           例えば防具であればアクセサリの2枠を消費しないため非常に強力な効果となります。
         </p>
       </PageSummary>
-      <section className="mb-12">
+      <Section>
         <SectionTitle>TP減少</SectionTitle>
         <p>装備すると術技の消費TPを「2/3」または「1/2」にする装備品です</p>
         <RoundedContainer>
@@ -53,7 +54,7 @@ export default async function HomePage() {
               />
             </div>
             <div>
-              <h4>エメラルドリング</h4>
+              <h3>エメラルドリング</h3>
               <div className="flex items-center gap-1">
                 <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
                 <RoundedInlineList title="評価">
@@ -84,7 +85,7 @@ export default async function HomePage() {
               />
             </div>
             <div>
-              <h4>フェアリィリング</h4>
+              <h3>フェアリィリング</h3>
               <div className="flex items-center gap-1">
                 <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
                 <RoundedInlineList title="評価">
@@ -116,7 +117,7 @@ export default async function HomePage() {
               />
             </div>
             <div>
-              <h4>ムーンローブ</h4>
+              <h3>ムーンローブ</h3>
               <div className="flex items-center gap-1">
                 <RoundedInlineList title="種別">防具</RoundedInlineList>
                 <RoundedInlineList title="評価">
@@ -142,8 +143,8 @@ export default async function HomePage() {
             ></GuideList>
           </RoundedItem>
         </RoundedContainer>
-      </section>
-      <section>
+      </Section>
+      <Section>
         <SectionTitle>HP自動回復</SectionTitle>
         <p>
           これらの装備品はすべて「戦闘中8秒ごとにHPが5%回復する」効果があります
@@ -160,7 +161,7 @@ export default async function HomePage() {
               />
             </div>
             <div>
-              <h4>アンクシールド</h4>
+              <h3>アンクシールド</h3>
               <div className="flex items-center gap-1">
                 <RoundedInlineList title="種別">防具</RoundedInlineList>
                 <RoundedInlineList title="評価">
@@ -191,7 +192,7 @@ export default async function HomePage() {
               />
             </div>
             <div>
-              <h4>ホーリィシンボル</h4>
+              <h3>ホーリィシンボル</h3>
               <div className="flex items-center gap-1">
                 <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
                 <RoundedInlineList title="評価">
@@ -223,7 +224,7 @@ export default async function HomePage() {
               />
             </div>
             <div>
-              <h4>ホーリィクローク</h4>
+              <h3>ホーリィクローク</h3>
               <div className="flex items-center gap-1">
                 <RoundedInlineList title="種別">防具</RoundedInlineList>
                 <RoundedInlineList title="評価">
@@ -262,7 +263,7 @@ export default async function HomePage() {
               />
             </div>
             <div>
-              <h4>キューティミトン</h4>
+              <h3>キューティミトン</h3>
               <div className="flex items-center gap-1">
                 <RoundedInlineList title="種別">防具</RoundedInlineList>
                 <RoundedInlineList title="評価">
@@ -288,7 +289,7 @@ export default async function HomePage() {
             ></GuideList>
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
     </article>
   );
 }

@@ -23,9 +23,17 @@ export async function onRequest(context) {
       status: 301,
       headers: {
         Location: url.toString(),
-        "X-Robots-Tag": "noindex",
       },
     });
   }
+  // if (url.pathname === "systems/buttle") {
+  //   return new Response(null, {
+  //     status: 301,
+  //     headers: {
+  //       Location: url.toString(),
+  //       "X-Robots-Tag": "noindex",
+  //     },
+  //   });
+  // }
   return context.next();
 }

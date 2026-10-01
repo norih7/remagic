@@ -14,6 +14,7 @@ import {
 } from "@/lib/db";
 export const dynamic = "force-static";
 import Link from "next/link";
+import Section from "@/components/Section";
 
 const pageKey = "rare-item-drop";
 const title = deepLinks[pageKey].title;
@@ -91,7 +92,7 @@ export default async function HomePage() {
         敵がドロップするアイテムでもレアなアイテムや装備品を紹介します。どれも何らかの使い道があったり、強力な装備なのでコンプリートを目指しましょう。
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>最強クラスの装備品</SectionTitle>
         <RoundedContainer>
           <div className="mb-3">
@@ -170,9 +171,9 @@ export default async function HomePage() {
             />
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>特殊効果</SectionTitle>
         <RoundedContainer>
           <div className="mb-3">
@@ -230,9 +231,9 @@ export default async function HomePage() {
             />
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>序盤おすすめ</SectionTitle>
         <RoundedContainer>
           <div className="mb-3">
@@ -303,9 +304,9 @@ export default async function HomePage() {
             />
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <SectionTitle>中盤おすすめ</SectionTitle>
         <RoundedContainer>
           <div className="mb-3">
@@ -342,7 +343,7 @@ export default async function HomePage() {
             />
           </RoundedItem>
         </RoundedContainer>
-      </section>
+      </Section>
       {/* 
       <section className="mb-12">
         <SectionTitle>序盤でおすすめのドロップ専用装備</SectionTitle>
