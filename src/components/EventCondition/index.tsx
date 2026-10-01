@@ -14,7 +14,7 @@ const EventCondition = (props: Props) => {
   const title = list[category];
   return (
     <div
-      className={`${styles.condition} mb-3 p-2 flex items-center font-bold text-xs border-2 border-slate-300 rounded-md`}
+      className={`${styles.condition} mb-3 p-2 flex items-center font-bold text-xs border-1 border-slate-400 rounded-md`}
     >
       <div
         className={`${styles.smallInfo} mr-1 flex items-center font-bold text-white bg-mauve-400 rounded-sm pl-2 pr-3 py-1`}

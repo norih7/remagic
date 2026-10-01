@@ -16,19 +16,11 @@ const pageKey = "remaster";
 const title = guideLinks[pageKey].title;
 const description = guideLinks[pageKey].seoDesc;
 const canonical = guideLinks[pageKey].path;
-// export const metadata = {
-//   title,
-//   description,
-//   alternates: {
-//     canonical,
-//   },
-// };
 export const metadata = {
   title,
-  description: "",
-  robots: {
-    index: false,
-    follow: true,
+  description,
+  alternates: {
+    canonical,
   },
 };
 
@@ -48,9 +40,6 @@ export default function Page() {
         </div>
         <div className="mb-8">
           <h3>アイコンと関連コンテンツ</h3>
-          <Information type="warning" title="アイコンがない要素">
-            レンズやワンダーシェフなどは「オリジナルエターニアで意図的に隠されていた要素」としてアイコンが表示されません。
-          </Information>
           <RoundedItem title="目的地アイコン" className="mb-3">
             <div className="flex gap-x-3">
               <div className="w-[30px]">
@@ -77,15 +66,29 @@ export default function Page() {
             </div>
           </RoundedItem>
           <RoundedItem title="技習得アイコン" className="mb-3">
-            <div className="flex gap-x-3">
+            <div className="flex gap-x-3 mb-3">
               <div className="w-[30px]">
                 <Image src="/icons/skill.png" width={25} height={25} alt="" />
               </div>
-              <p className="flex-1">-</p>
+              <p className="flex-1">
+                主にチャットとフォッグの特技習得に関するイベントが発生する場所にアイコンが表示されます。イベント発生条件は難しいの下記ページを参照ください。
+              </p>
             </div>
+            <GuideList
+              items={[
+                {
+                  title: "チャットの特技習得イベント",
+                  href: "/subevents/skill-chat",
+                },
+                {
+                  title: "フォッグの特技習得イベント",
+                  href: "/subevents/skill-fog",
+                },
+              ]}
+            />
           </RoundedItem>
           <RoundedItem title="砂時計アイコン" className="mb-3">
-            <div className="flex gap-x-3">
+            <div className="flex gap-x-3 mb-3">
               <div className="w-[30px]">
                 <Image
                   src="/icons/time-limit.png"
@@ -94,9 +97,34 @@ export default function Page() {
                   alt=""
                 />
               </div>
-              <p className="flex-1">時限イベント</p>
+              <p className="flex-1">
+                時限イベント発生場所にアイコンが表示されて見逃しが少なくなります。主な時限イベントには以下のものがあります。
+              </p>
             </div>
+            <GuideList
+              items={[
+                {
+                  title: "カトリーヌの恋愛",
+                  href: "/subevents/catarine",
+                },
+                {
+                  title: "ベッポのかくれんぼ",
+                  href: "/subevents/beppo",
+                },
+              ]}
+            />
           </RoundedItem>
+          <Information type="warning" title="アイコンがない要素">
+            <p>
+              レンズやワンダーシェフなどは「オリジナルエターニアで意図的に隠されていた要素」としてアイコンが表示されません。当サイトでは画像付きで全データを公開しています。
+            </p>
+            <GuideList
+              items={[
+                { title: "レンズ一覧", href: "/subevents/lens" },
+                { title: "料理一覧", href: "/systems/recipe" },
+              ]}
+            />
+          </Information>
         </div>
         {/* <div className="mb-8">
           <h3>エンカウントのON／OFF</h3>
@@ -141,7 +169,7 @@ export default function Page() {
         <div className="mb-8">
           <h3>オート戦闘の高速モード</h3>
           <p>
-            オート戦闘時に高速モードを利用できます。戦闘を手早く進めたいときに便利な追加機能です。
+            オート戦闘時に高速モードを利用できます。戦闘を手早く進めたいときに便利な追加機能です。リマスター版に対応した効率的なレベルアップ場所などは後日まとめる予定です。
           </p>
         </div>
         {/* <div className="mb-8">
@@ -173,6 +201,18 @@ export default function Page() {
           エターニアリマスターはPSP版をベースにされていると言及があります。PSPは戦闘やフィールド移動が60fpsで動作します。（PS版は30fps）
           ただしPSP版はドットがボヤけてる欠点があったのですがリマスター版はくっきりさせています。
         </p>
+        <h3>ポケステ要素はない</h3>
+        <p>
+          PS版エターニアにはポケステと連動するサブイベントがありますが、リマスター版ではPSP版と同じくポケステなしでアイテムだけ入手できます。重要なスマッシュマントを簡単に入手できますのでお見逃しなく。
+        </p>
+        <GuideList
+          items={[
+            {
+              title: "グリップソード探し（スマッシュマントの入手）",
+              href: "/subevents/grip-sword",
+            },
+          ]}
+        />
       </Section>
 
       <Section>

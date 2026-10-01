@@ -495,11 +495,12 @@ export const deepLinks: Record<string, PageLink> = {
 
 export const guideLinks: Record<string, PageLink> = {
   remaster: {
-    title: "リマスター版の違い",
+    title: "リマスター版の紹介",
     path: "/guides/remaster",
-    desc: "準備中",
+    image: "/link-headers/guides-remaster.jpg",
+    desc: "エターニア リマスター版の変化点や注意点、関連する攻略情報をまとめています。",
     seoDesc:
-      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。",
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。エターニア リマスター版の変化点や注意点、関連する攻略情報をまとめています。",
   },
   first: {
     title: "序盤にやっておきたいこと",
