@@ -9,6 +9,7 @@ import Information from "@/components/Information";
 import { subeventLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Tag from "@/components/Tag";
+import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -29,7 +30,7 @@ export default async function HomePage() {
   const Lenses = lensesData.map((item, index) => (
     <div className="border border-slate-300 p-3 rounded-md mb-3" key={index}>
       <div className="mb-2 items-center">
-        <h3 className="text-[1rem] mr-3 !mb-1 !p-0">
+        <h3>
           No.{item.id} {item.locationName}
         </h3>
         <div className="mr-1">
@@ -38,7 +39,6 @@ export default async function HomePage() {
       </div>
       <div className="">
         <RoundedItem title="場所">
-          <div className="font-bold">{item.locationName}</div>
           <p>{item.remarks}</p>
           <ResponsiveImage
             src={`/subevents/lens-location${item.id}.jpg`}
@@ -56,7 +56,7 @@ export default async function HomePage() {
         町やダンジョンなどで入手することができるレンズの説明とレンズの入手場所一覧データを掲載しています。
       </PageSummary>
 
-      <section>
+      <Section>
         <SectionTitle>レンズの説明ともらえるアイテム</SectionTitle>
         <div className="mb-8">
           町やダンジョンなどの特定の場所を調べるとレンズを入手することがあります。レンズは一定枚数以上を集めると貴重なアイテムをもらうことができるものです。シャンバールにいるイレーヌに話しかけると所持枚数に応じてアイテムがもらえます。なおアイテムをもらってもレンズは消費されません。
@@ -88,52 +88,80 @@ export default async function HomePage() {
             </tbody>
           </table>
           <h3>もらえるアイテム</h3>
+          <p>
+            インフェリマント、セレスティマント、クローナシンボルが目玉アイテム。マントはデメリットはあるものの、常に装備するのではなく「ボス戦で属性対策をする」という使い方をすれば非常に強力です。クローナシンボルはすべての異常状態を防ぐ最強クラスの装備品。
+          </p>
           <table>
             <thead>
               <tr>
                 <th className="w-[100px]">レンズ枚数</th>
-                <th className="w-[160px]">もらえるアイテム</th>
-                <th>アイテムの説明</th>
+                <th className="">もらえるアイテム</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>10</td>
-                <td>コンボコマンド</td>
-                <td>装備品:戦闘中にコマンド入力ですべての術技を出せる</td>
+                <td>
+                  <p className="text-left">
+                    <strong>コンボコマンド</strong>
+                    <br />
+                    装備品:戦闘中にコマンド入力ですべての術技を出せる
+                  </p>
+                </td>
               </tr>
               <tr>
                 <td>20</td>
-                <td>インフェリマント</td>
                 <td>
-                  装備品:火、水、風 属性の攻撃を40%軽減
-                  <br />
-                  地、雷、氷 属性の攻撃は40%ダメージアップ
+                  <p className="text-left">
+                    <strong>インフェリマント</strong>
+                    <br />
+                    装備品:火、水、風 属性の攻撃を40%軽減
+                    <br />
+                    地、雷、氷 属性の攻撃は40%ダメージアップ
+                  </p>
                 </td>
               </tr>
               <tr>
                 <td>30</td>
-                <td>セレスティマント</td>
                 <td>
-                  装備品:地、雷、氷 属性の攻撃を40%軽減
-                  <br />
-                  火、水、風 属性の攻撃は40%ダメージアップ
+                  <p className="text-left">
+                    <strong>セレスティマント</strong>
+                    <br />
+                    装備品:地、雷、氷 属性の攻撃を40%軽減
+                    <br />
+                    火、水、風 属性の攻撃は40%ダメージアップ
+                  </p>
                 </td>
               </tr>
               <tr>
                 <td>40</td>
-                <td>イクストリーム</td>
-                <td>装備品:攻撃力+200、防御力-200</td>
+                <td>
+                  <p className="text-left">
+                    <strong>イクストリーム</strong>
+                    <br />
+                    装備品:攻撃力+200、防御力-200
+                  </p>
+                </td>
               </tr>
               <tr>
                 <td>50</td>
-                <td>クローナシンボル</td>
-                <td>装備品:すべての異常状態を防止する</td>
+                <td>
+                  <p className="text-left">
+                    <strong>クローナシンボル</strong>
+                    <br />
+                    装備品:すべての異常状態を防止する
+                  </p>
+                </td>
               </tr>
               <tr>
                 <td>60</td>
-                <td>称号「レンズハンター」</td>
-                <td>称号:リッドの称号</td>
+                <td>
+                  <p className="text-left">
+                    <strong>称号「レンズハンター」</strong>
+                    <br />
+                    称号:リッドの称号
+                  </p>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -143,7 +171,7 @@ export default async function HomePage() {
           レンズは期間限定ではなく、基本的にはいつでも入手可能なので町やダンジョンで取り逃してもあとで回収可能です。ただしジイニのオークション会場にあるレンズだけ、先に王都インフェリアの闘技場「王国一決定戦」で優勝すると獲得できなくなります。ジイニで先にレンズを獲得しておくことを推奨します。
         </Information>
         {Lenses}
-      </section>
+      </Section>
     </article>
   );
 }

@@ -306,14 +306,6 @@ export const systemLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。料理レシピ一覧とマスター料理を説明。各料理の効果、ワンダーシェフの場所、作成に必要な食材データを網羅。HP・TP回復やステータス強化に役立つマスター料理の習得条件も詳しく解説。",
   },
-  "master-recipe": {
-    title: "マスター料理",
-    image: "/link-headers/systems-master-recipe.jpg",
-    path: "/systems/master-recipe",
-    desc: "特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
-    seoDesc:
-      "リマスター版対応のテイルズオブエターニア（TOE）攻略。特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
-  },
   "special-effect": {
     title: "装備品の特殊効果",
     image: "/link-headers/systems-special-effect.jpg",
@@ -480,6 +472,14 @@ export const deepLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。アイテムドロップで入手できるレアなアイテムや装備品を紹介しています。",
     createdAt: "2026-09-24",
     updatedAt: "2026-09-24",
+  },
+  "master-recipe": {
+    title: "マスター料理",
+    image: "/link-headers/systems-master-recipe.jpg",
+    path: "/systems/master-recipe",
+    desc: "特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
   },
   // equipment: {
   //   title: "おすすめ装備考察",

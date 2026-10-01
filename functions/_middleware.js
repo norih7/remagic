@@ -26,14 +26,13 @@ export async function onRequest(context) {
       },
     });
   }
-  // if (url.pathname === "systems/buttle") {
-  //   return new Response(null, {
-  //     status: 301,
-  //     headers: {
-  //       Location: url.toString(),
-  //       "X-Robots-Tag": "noindex",
-  //     },
-  //   });
-  // }
+  if (url.pathname === "/systems/master-recipe") {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: "https://remagic.brclover.com/deeps/master-recipe",
+      },
+    });
+  }
   return context.next();
 }
