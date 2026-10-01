@@ -7,6 +7,8 @@ import GuideList from "@/components/GuideList";
 import CardList from "@/components/CardLIst";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
+import Image from "next/image";
+import Section from "@/components/Section";
 
 export const dynamic = "force-static";
 
@@ -35,33 +37,66 @@ export default function Page() {
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
-        <p>
-          テイルズオブエターニアリマスターの変更点やリマスター向け攻略情報をまとめます
-        </p>
+        テイルズオブエターニアリマスターの変更点やリマスター向け攻略情報をまとめます
       </PageSummary>
 
-      <section className="mb-12">
+      <Section>
         <div id="changes" className="scroll-mt-6">
           <SectionTitle type="flag">
-            リマスター版の変更点のピックアップ
+            リマスター版の変更点ピックアップ
           </SectionTitle>
         </div>
-        <Information>
-          <p>
-            発売前に公式ストアで公開されている情報です。設定項目の詳細や各機種での挙動は、発売後に確認でき次第追記します。
-          </p>
-        </Information>
         <div className="mb-8">
-          <h3></h3>
-          <p>
-            目的地アイコンの表示:
-            次に向かう場所を示すアイコンが追加され、ストーリー進行時に目的地を把握しやすくなります。フィールドマップだけではなくダンジョン内でも有効。
-          </p>
-          <p>
-            「★」アイコン:
-            貴重品の入手にアイコン。モンスター図鑑やマニュアルのしょの取り忘れがしにくい。
-          </p>
-          <p>「砂時計」アイコン: 時限イベント</p>
+          <h3>アイコンと関連コンテンツ</h3>
+          <Information type="warning" title="アイコンがない要素">
+            レンズやワンダーシェフなどは「オリジナルエターニアで意図的に隠されていた要素」としてアイコンが表示されません。
+          </Information>
+          <RoundedItem title="目的地アイコン" className="mb-3">
+            <div className="flex gap-x-3">
+              <div className="w-[30px]">
+                <Image src="/icons/goal.png" width={25} height={25} alt="" />
+              </div>
+              <p className="flex-1">
+                次に向かう場所を示すアイコンが追加され、ストーリー進行時に目的地を把握しやすくなります。フィールドマップだけではなくダンジョン内でも有効。
+              </p>
+            </div>
+          </RoundedItem>
+          <RoundedItem title="貴重品アイコン" className="mb-3">
+            <div className="flex gap-x-3">
+              <div className="w-[30px]">
+                <Image
+                  src="/icons/key-item.png"
+                  width={25}
+                  height={25}
+                  alt=""
+                />
+              </div>
+              <p className="flex-1">
+                貴重品の入手にアイコン。モンスター図鑑やマニュアルのしょの取り忘れがしにくい。
+              </p>
+            </div>
+          </RoundedItem>
+          <RoundedItem title="技習得アイコン" className="mb-3">
+            <div className="flex gap-x-3">
+              <div className="w-[30px]">
+                <Image src="/icons/skill.png" width={25} height={25} alt="" />
+              </div>
+              <p className="flex-1">-</p>
+            </div>
+          </RoundedItem>
+          <RoundedItem title="砂時計アイコン" className="mb-3">
+            <div className="flex gap-x-3">
+              <div className="w-[30px]">
+                <Image
+                  src="/icons/time-limit.png"
+                  width={25}
+                  height={25}
+                  alt=""
+                />
+              </div>
+              <p className="flex-1">時限イベント</p>
+            </div>
+          </RoundedItem>
         </div>
         {/* <div className="mb-8">
           <h3>エンカウントのON／OFF</h3>
@@ -75,19 +110,19 @@ export default function Page() {
             初回プレイ時から下記の機能を選択できます。「攻撃熟練度」と「術技使用回数2倍」はONを推奨します。リッドの猛虎連撃破は使用回数を9999にする優先度が高い技です。
           </p>
           <RoundedContainer className="grid grid-cols-2 gap-3">
-            <RoundedItem>獲得経験値: 0〜4倍</RoundedItem>
-            <RoundedItem>獲得ガルド: 0〜4倍</RoundedItem>
-            <RoundedItem>ダメージ: 1、2、5倍</RoundedItem>
-            <RoundedItem>攻撃熟練度: 1、2、4倍</RoundedItem>
-            <RoundedItem>料理熟練度: 1、2、4倍</RoundedItem>
-            <RoundedItem>エンカウント: OFF、LOW、ON</RoundedItem>
-            <RoundedItem>隊列維持: ON、OFF</RoundedItem>
-            <RoundedItem>術技使用回数2倍: ON、OFF</RoundedItem>
-            <RoundedItem>アイテム入手確率2倍: ON、OFF</RoundedItem>
-            <RoundedItem>術技消費TP減少: ON、OFF</RoundedItem>
-            <RoundedItem>デスペナルティの無効化: ON、OFF</RoundedItem>
-            <RoundedItem>キャンプ時にTP回復: ON、OFF</RoundedItem>
-            <RoundedItem>アイテム最大所持数拡張: ON、OFF</RoundedItem>
+            <RoundedItem title="獲得経験値">0〜4倍</RoundedItem>
+            <RoundedItem title="獲得ガルド">0〜4倍</RoundedItem>
+            <RoundedItem title="ダメージ">1、2、5倍</RoundedItem>
+            <RoundedItem title="攻撃熟練度">1、2、4倍</RoundedItem>
+            <RoundedItem title="料理熟練度">1、2、4倍</RoundedItem>
+            <RoundedItem title="エンカウント">OFF、LOW、ON</RoundedItem>
+            <RoundedItem title="隊列維持">ON、OFF</RoundedItem>
+            <RoundedItem title="術技使用回数2倍">ON、OFF</RoundedItem>
+            <RoundedItem title="アイテム入手確率2倍">ON、OFF</RoundedItem>
+            <RoundedItem title="術技消費TP減少">ON、OFF</RoundedItem>
+            <RoundedItem title="デスペナルティの無効化">ON、OFF</RoundedItem>
+            <RoundedItem title="キャンプ時にTP回復">ON、OFF</RoundedItem>
+            <RoundedItem title="アイテム最大所持数拡張">ON、OFF</RoundedItem>
           </RoundedContainer>
         </div>
         <div className="mb-8">
@@ -95,7 +130,7 @@ export default function Page() {
           <RoundedContainer className="grid grid-cols-2 gap-3">
             <RoundedItem>キャラクター情報</RoundedItem>
             <RoundedItem>覚えた術・技</RoundedItem>
-            <RoundedItem>・所持アイテム</RoundedItem>
+            <RoundedItem>所持アイテム</RoundedItem>
             <RoundedItem>レンズ入手状況</RoundedItem>
             <RoundedItem>料理レシピ</RoundedItem>
             <RoundedItem>号令</RoundedItem>
@@ -115,7 +150,7 @@ export default function Page() {
             グラフィックと効果音はモードを切り替えられ、リマスター版の見た目・音とオリジナル版の雰囲気を選んで楽しめます。
           </p>
         </div> */}
-      </section>
+      </Section>
 
       {/* <section className="mb-12">
         <SectionTitle>個人的に嬉しい要素</SectionTitle>
@@ -130,7 +165,7 @@ export default function Page() {
         </p>
       </section> */}
 
-      <section className="mb-12">
+      <Section>
         <div id="comparison" className="scroll-mt-6">
           <SectionTitle type="flag">ベースとなる移植元</SectionTitle>
         </div>
@@ -138,9 +173,9 @@ export default function Page() {
           エターニアリマスターはPSP版をベースにされていると言及があります。PSPは戦闘やフィールド移動が60fpsで動作します。（PS版は30fps）
           ただしPSP版はドットがボヤけてる欠点があったのですがリマスター版はくっきりさせています。
         </p>
-      </section>
+      </Section>
 
-      <section className="mb-12">
+      <Section>
         <div id="guides" className="scroll-mt-6">
           <SectionTitle type="flag">リマスター版の攻略に進む</SectionTitle>
         </div>
@@ -156,48 +191,7 @@ export default function Page() {
             { title: "料理一覧", href: "/systems/recipe" },
           ]}
         />
-      </section>
-
-      <section className="mb-12">
-        <div id="sources" className="scroll-mt-6">
-          <SectionTitle type="flag">公式情報・出典</SectionTitle>
-        </div>
-        <p>
-          発売日・対応機種およびリマスター版の追加機能は、以下の公式情報を参照しています。
-        </p>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>
-            <a
-              className="text-sky-800 underline"
-              href="https://tales-ch.jp/topics/2026/008.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              テイルズチャンネル＋：発売日・対応機種のお知らせ
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-sky-800 underline"
-              href="https://store.steampowered.com/app/3470960/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Steamストア：ゲーム内容・便利機能・開発ベースの記載
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-sky-800 underline"
-              href="https://www.bandainamcoent.com/games/tales-of-eternia-remastered"
-              target="_blank"
-              rel="noreferrer"
-            >
-              バンダイナムコエンターテインメント：公式サイト
-            </a>
-          </li>
-        </ul>
-      </section>
+      </Section>
     </article>
   );
 }

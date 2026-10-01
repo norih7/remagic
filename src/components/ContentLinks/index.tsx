@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./styles.module.css";
 
 type Content = {
   title: string;
@@ -14,7 +15,7 @@ type Props = {
 const ContentLinks = (props: Props) => {
   const { list } = props;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${styles.content}`}>
       {list.map((item) => {
         const Logo = item.image ? (
           <div className="flex justify-center bg-gray-800 mb-2">

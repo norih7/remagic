@@ -22,7 +22,7 @@
 }
 
 .shortcutMenu {
-  border-bottom: 1px solid #e7e1d4;
+  border-bottom: 1px solid #ece8e1;
   margin-bottom: 32px;
 }
 
@@ -50,6 +50,10 @@
 }
 .menu {
 }
+.menu h3 {
+  background: url(/menu-h3.jpg) no-repeat 0 30%;
+  background-size: 6px;
+}
 .menu li {
   margin-bottom: 0;
   padding-left: 0.6em;
@@ -68,9 +72,9 @@
   margin-bottom: 8px;
   font-size: 1rem;
   font-weight: bold;
-  /* border-left: 4px solid #dcd9c9; */
   color: var(--color-slate-700);
 }
+
 .main h4 {
   margin-bottom: 3px;
   font-weight: bold;

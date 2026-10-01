@@ -32,10 +32,10 @@ const List = (props: Props) => {
 const Category = ({ children }: { children: React.ReactNode }) => (
   <h3 className="flex items-center mb-1 text-sm font-semibold text-black-400 uppercase tracking-wider pb-1">
     <div
-      className="text-center mr-1"
+      className="text-center mr-3"
       // style={{ background: "#cfa157", padding: "3px 2px 3px 4px" }}
     >
-      <LuMessageCircleMore className="text-taupe-500" />
+      {/* <LuMessageCircleMore className="text-taupe-500" /> */}
     </div>
     {children}
   </h3>
