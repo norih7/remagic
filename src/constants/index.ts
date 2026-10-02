@@ -170,27 +170,11 @@ export const subeventLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。レンズ全60枚の入手場所一覧を徹底解説。シャンバールやティンシアのイレーヌでもらえる豪華報酬リストから、見落としがちなレンズの隠し場所まで網羅。効率的なコンプリートを目指しましょう。",
   },
-  catarine: {
-    title: "カトリーヌの恋愛",
-    path: "/subevents/catarine",
-    image: "/link-headers/subevents-catarine.jpg",
-    desc: "ファラの称号を得られるサブイベント。時限イベントで見落としがちなイベントもあるので要チェック！",
-    seoDesc:
-      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ファラの限定称号「あいのネゴシエーター」が手に入る隠しサブイベント「カトリーヌの恋愛イベント」の発生場所、全6回の遭遇時期、時限要素の注意点、そしてハッピーエンドを迎えるための全遭遇条件を詳しく解説しています。",
-  },
-  kremerball: {
-    title: "クレーメルボール",
-    path: "/subevents/kremerball",
-    image: "/link-headers/subevents-kremerball.jpg",
-    desc: "ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
-    seoDesc:
-      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
-  },
   "grip-sword": {
     title: "グリップソード探し",
     path: "/subevents/grip-sword",
     image: "/link-headers/subevents-grip-sword.jpg",
-    desc: "アクセサリ「スマッシュマント」を入手できるグリップソード探しを紹介。",
+    desc: "序盤おすすめのサブイベント。アクセサリ「スマッシュマント」を入手できるグリップソード探しを紹介。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。アクセサリ「スマッシュマント」を入手できるグリップソード探しのサブイベントを解説。街の探索場所について画像も掲載しています。",
   },
@@ -201,14 +185,6 @@ export const subeventLinks: Record<string, PageLink> = {
     desc: "ルーンボトルなどを入手できるサブイベント。時間制限があるのでセレスティアへ行く前にチェック。",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。バロールのサブイベント「ベッポとのかくれんぼ」の発生条件と攻略手順を解説。ルーンボトルや、ジイニのオークションで高値になるドエニスのポプリの入手方法、時限要素（セレスティア突入前までの期限）についてまとめています。",
-  },
-  syanballoon: {
-    title: "シャンバルーン",
-    path: "/subevents/syanballoon",
-    image: "/link-headers/subevents-syanballoon.jpg",
-    desc: "ストーリー後半ではステップリングがもらえるシャンバルーンを解説。",
-    seoDesc:
-      "リマスター版対応のテイルズオブエターニア（TOE）攻略。シャンバルーン攻略情報。リッドの称号「キングあんどバルーン」や貴重な「ステップリング」の入手方法、各難易度の制限時間とおすすめの戦法を詳しく紹介。",
   },
   "skill-chat": {
     title: "チャット特技習得",
@@ -266,6 +242,45 @@ export const subeventLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。おすすめ装備や各クラスの戦い方などを解説！",
   },
+  // "last-fencer": {
+  //   title: "ラストフェンサーの入手",
+  //   path: "/subevents/last-fencer",
+  //   image: "/link-headers/subevents-last-fencer.jpg",
+  //   desc: "リッドの最強武器の一つ「ラストフェンサー」を習得するためのサブイベントを解説！",
+  //   seoDesc:
+  //     "リマスター版対応のテイルズオブエターニア（TOE）攻略。リッドの最強技「ラストフェンサー」を習得するためのサブイベントを解説！",
+  // },
+  // "fog-gun": {
+  //   title: "フォッグの武器開発",
+  //   path: "/subevents/fog-gun",
+  //   image: "/link-headers/subevents-last-fencer.jpg",
+  //   desc: "-",
+  //   seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
+  // },
+  catarine: {
+    title: "カトリーヌの恋愛",
+    path: "/subevents/catarine",
+    image: "/link-headers/subevents-catarine.jpg",
+    desc: "ファラの称号を得られるサブイベント。時限イベントで見落としがちなイベントもあるので要チェック！",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ファラの限定称号「あいのネゴシエーター」が手に入る隠しサブイベント「カトリーヌの恋愛イベント」の発生場所、全6回の遭遇時期、時限要素の注意点、そしてハッピーエンドを迎えるための全遭遇条件を詳しく解説しています。",
+  },
+  kremerball: {
+    title: "クレーメルボール",
+    path: "/subevents/kremerball",
+    image: "/link-headers/subevents-kremerball.jpg",
+    desc: "ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
+  },
+  syanballoon: {
+    title: "シャンバルーン",
+    path: "/subevents/syanballoon",
+    image: "/link-headers/subevents-syanballoon.jpg",
+    desc: "ストーリー後半ではステップリングがもらえるシャンバルーンを解説。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。シャンバルーン攻略情報。リッドの称号「キングあんどバルーン」や貴重な「ステップリング」の入手方法、各難易度の制限時間とおすすめの戦法を詳しく紹介。",
+  },
 };
 
 export const systemLinks: Record<string, PageLink> = {
@@ -277,11 +292,6 @@ export const systemLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアの戦闘マニュアル操作および特殊操作を解説。マニュアル操作への切り替え方法（マニュアルのしょ入手）や、おすすめの操作設定、バックステップ、移動速度アップ、晶霊術・特技の詠唱短縮など、戦闘を有利に進めるためのテクニックを網羅しています。",
   },
-  // "join-chat-and-fog": {
-  //   title: "チャットとフォッグの加入",
-  //   path: "/systems/join-chat-and-fog",
-  //   desc: "",
-  // },
   skill: {
     title: "特技/術の習得",
     path: "/systems/skill",
@@ -451,9 +461,9 @@ export const deepLinks: Record<string, PageLink> = {
   //   desc: "",
   // },
   // "level-up": {
-  //   title: "レベル上げ方法",
+  //   title: "レベル上げテクニック",
   //   path: "/deeps/level-up",
-  //   desc: "",
+  //   desc: "下級晶霊術連発、風塵の無限コンボ、オート戦闘",
   // },
   herb: {
     title: "ステータスアップ薬草集め",
@@ -485,12 +495,18 @@ export const deepLinks: Record<string, PageLink> = {
   //   title: "おすすめ装備考察",
   //   path: "/deeps/equipment",
   //   desc: "",
+  //seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
   // },
-  // equipment: {
-  //   title: "火龍炎舞",
-  //   path: "/deeps/equipment",
-  //   desc: "",
-  // },
+  "flame-dance": {
+    title: "火龍炎舞",
+    path: "/deeps/flame-dance",
+    image: "/link-headers/deeps-flame-dance.jpg",
+    desc: "ファラの秘奥義「火龍炎舞」の習得方法や発動方法、連携例などを解説。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。ファラの秘奥義「火龍炎舞」の習得方法や発動方法、連携例などを解説しています！",
+    createdAt: "2026-10-02",
+    updatedAt: "2026-10-02",
+  },
 };
 
 export const guideLinks: Record<string, PageLink> = {
@@ -501,6 +517,8 @@ export const guideLinks: Record<string, PageLink> = {
     desc: "エターニア リマスター版の変化点や注意点、関連する攻略情報をまとめています。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。エターニア リマスター版の変化点や注意点、関連する攻略情報をまとめています。",
+    createdAt: "2026-10-01",
+    updatedAt: "2026-10-01",
   },
   first: {
     title: "序盤にやっておきたいこと",
@@ -522,6 +540,11 @@ export const guideLinks: Record<string, PageLink> = {
     createdAt: "2026-09-17",
     updatedAt: "2026-09-17",
   },
+  // "join-chat-and-fog": {
+  //   title: "チャットとフォッグの加入",
+  //   path: "/systems/join-chat-and-fog",
+  //   desc: "",
+  // },
   // "boss-battle": {
   //   title: "ボス戦のコツ",
   //   path: "/guides/boss-battle",

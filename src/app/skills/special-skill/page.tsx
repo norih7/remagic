@@ -88,9 +88,16 @@ export default async function HomePage() {
       },
       {
         name: "火龍炎舞",
-        description: "別ページで解説予定",
-        requirement: "-",
-        trigger: "",
+        description: (
+          <>
+            <p>火龍炎舞は特殊な秘奥義のため別ページにて解説しています。</p>
+            <GuideList
+              items={[{ title: "火龍炎舞", href: "/deeps/flame-dance" }]}
+            />
+          </>
+        ),
+        requirement: "点穴縛態の習得",
+        trigger: "点穴縛態ヒット後にファラ単独で4連携攻撃をする",
         tp: 0,
         element: ["fire"],
         image: "/skills/special-skill-farth2.jpg",
