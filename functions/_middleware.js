@@ -34,5 +34,13 @@ export async function onRequest(context) {
       },
     });
   }
+  if (url.pathname === "/systems/buttle") {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: "https://remagic.brclover.com/guides/buttle",
+      },
+    });
+  }
   return context.next();
 }

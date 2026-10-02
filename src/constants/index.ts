@@ -284,14 +284,6 @@ export const subeventLinks: Record<string, PageLink> = {
 };
 
 export const systemLinks: Record<string, PageLink> = {
-  buttle: {
-    title: "戦闘マニュアル操作/特殊操作",
-    image: "/link-headers/systems-buttle.jpg",
-    path: "/systems/buttle",
-    desc: "戦闘をより楽しくするためのシステム解説。マニュアル操作とキャラクタ毎の特殊操作について紹介！",
-    seoDesc:
-      "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアの戦闘マニュアル操作および特殊操作を解説。マニュアル操作への切り替え方法（マニュアルのしょ入手）や、おすすめの操作設定、バックステップ、移動速度アップ、晶霊術・特技の詠唱短縮など、戦闘を有利に進めるためのテクニックを網羅しています。",
-  },
   skill: {
     title: "特技/術の習得",
     path: "/systems/skill",
@@ -455,11 +447,11 @@ export const extraLinks: Record<string, PageLink> = {
 };
 
 export const deepLinks: Record<string, PageLink> = {
-  // "blue-earth": {
-  //   title: "ブルーアース",
-  //   path: "/systems/blue-earth",
-  //   desc: "",
-  // },
+  "blue-earth": {
+    title: "ブルーアース",
+    path: "/deeps/blue-earth",
+    desc: "準備中",
+  },
   // "level-up": {
   //   title: "レベル上げテクニック",
   //   path: "/deeps/level-up",
@@ -539,6 +531,14 @@ export const guideLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。取り逃がし要素の解説。ストーリー攻略中に見落としがちなサブイベントや称号、レンズ、アイテムなどの取り逃がし要素を紹介しています。",
     createdAt: "2026-09-17",
     updatedAt: "2026-09-17",
+  },
+  buttle: {
+    title: "戦闘システム解説",
+    image: "/link-headers/systems-buttle.jpg",
+    path: "/guides/buttle",
+    desc: "戦闘をより楽しくするためのシステム解説。マニュアル操作とキャラクタ毎の特殊操作、アイテムドロップについて紹介！",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアの戦闘マニュアル操作および特殊操作を解説。マニュアル操作への切り替え方法（マニュアルのしょ入手）や、おすすめの操作設定、バックステップ、移動速度アップ、晶霊術・特技の詠唱短縮など、戦闘を有利に進めるためのテクニックを網羅しています。",
   },
   // "join-chat-and-fog": {
   //   title: "チャットとフォッグの加入",
