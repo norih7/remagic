@@ -48,8 +48,10 @@ export default async function HomePage() {
               エターニアではデフォルトでセミオート操作による戦闘になっています。マニュアル操作の方が自由にキャラクタを操作できおすすめです。マニュアル操作は後述の「マニュアルのしょ」を入手すると可能になります。
             </p>
           </div>
-          <RoundedContainer className="grid grid-cols-1 gap-3">
-            <h4 className="mb-2">セミオートとマニュアルの説明</h4>
+          <RoundedContainer
+            className="grid grid-cols-1 gap-3"
+            title="セミオートとマニュアルの説明"
+          >
             <RoundedItem title="セミオート">
               歩行、ダッシュ、ガードなど基本的なことはできますが攻撃は敵に自動的に近づいて実行されます。この攻撃の間合いを自由に操作できないことが不自由で、自分でジャンプはできません。
             </RoundedItem>
@@ -119,8 +121,10 @@ export default async function HomePage() {
               ステップリングもリバヴィウサーもバックステップとは別にもう一つ特殊操作が付与されます。効果的にはステップリングの方が使い勝手が良くおすすめです。また例外としてリッドがギルガメッシュ装備をすべて装備状態にするとこれらのアクセサリがなくてもバックステップを取ることができます。ステップリングと同様の効果があり、吹き飛ばし時の受け身が可能です。
             </p>
           </div>
-          <RoundedContainer className="grid grid-cols-1 gap-3">
-            <h4>バックステップ以外の特殊効果</h4>
+          <RoundedContainer
+            className="grid grid-cols-1 gap-3"
+            title="ステップリング、リバヴィウサーの特殊効果"
+          >
             <RoundedItem title="ステップリング/ギルガメッシュ装備">
               敵に吹き飛ばされたとき、着地前に□ボタンを押すとダウン回避
             </RoundedItem>

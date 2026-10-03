@@ -9,7 +9,7 @@ const InlineList = (props: Props) => {
   const paddingType = type === "wide" ? "py-2" : "py-1";
   return (
     <dl
-      className={`borde border-slate-300 font-bold px-3 ${paddingType} rounded-xs text-center flex flex-wrap items-center text-xs text-gray-700`}
+      className={`border border-slate-300 font-bold px-1 ${paddingType} rounded-xs text-center flex flex-wrap items-center text-xs text-gray-700`}
     >
       <dt className="mr-2 text-slate-700">{title}</dt>
       <dd>{children}</dd>

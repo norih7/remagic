@@ -6,18 +6,15 @@ type Props = {
 
 const RoundedInlineList = (props: Props) => {
   const { title, type = "default", children } = props;
-  const paddingType = type === "wide" ? "py-2" : "py-0.5";
+  const paddingType = type === "wide" ? "py-1.5" : "py-0.5";
   return (
     <dl
-      className={`border border-slate-400 px-2 ${paddingType} rounded-xs text-center flex items-center text-xs text-gray-700`}
+      className={`border border-slate-500 ${paddingType} rounded-xs text-center flex items-center text-xs text-gray-700`}
     >
-      <dt
-        className="mr-2 px-1 text-slate-700 border-r border-solid border-slate-600 "
-        style={{ paddingRight: "8px" }}
-      >
+      <dt className="px-2 text-slate-700 border-r border-solid border-slate-600 ">
         {title}
       </dt>
-      <dd>{children}</dd>
+      <dd className="px-2">{children}</dd>
     </dl>
   );
 };
