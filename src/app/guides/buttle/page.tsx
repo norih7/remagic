@@ -93,12 +93,25 @@ export default async function HomePage() {
           </p>
         </div>
         <div className="mb-8">
-          <h3>テクニカルスマッシュの詳細</h3>
+          <h3>テクニカルスマッシュの加算例</h3>
           <RoundedContainer className="grid grid-cols-1 gap-3">
-            <RoundedItem title="チェインスマッシュ">-</RoundedItem>
-            <RoundedItem title="グループスマッシュ">-</RoundedItem>
-            <RoundedItem title="ノーダメージスマッシュ">-</RoundedItem>
-            <RoundedItem title="エフェクティブスマッシュ">-</RoundedItem>
+            <RoundedItem title="チェインスマッシュ">
+              4連携以上の攻撃で倒すとテクニカルスマッシュが発生。
+              <br />
+              4連携: +2%、5連携: +5%、6連携: +8%、7連携: +11%
+            </RoundedItem>
+            <RoundedItem title="グループスマッシュ">
+              複数の敵を1キャラが連携内で倒すとテクニカルスマッシュが発生。
+              <br />
+              2体: +2%、3体: +4%、4体: +6%、5体: +8%、6体: +10%、7体: +12%、8体:
+              +14%
+            </RoundedItem>
+            <RoundedItem title="ノーダメージスマッシュ">
+              対象の敵からダメージを受けずに倒すとテクニカルスマッシュが発生し、+1%の加算。
+            </RoundedItem>
+            <RoundedItem title="エフェクティブスマッシュ">
+              敵の弱点属性を突いて倒すとテクニカルスマッシュが発生。敵の弱点耐性/20のボーナスが加算。敵が火属性弱点100%の場合、水属性でトドメを刺すと+5%の加算。
+            </RoundedItem>
           </RoundedContainer>
         </div>
         <h3>テクニカルスマッシュの数値をアップさせる方法</h3>
@@ -110,7 +123,7 @@ export default async function HomePage() {
             C.ケイジのフリンジで「+アイテムゲッター」を習得すると、テクニカルスマッシュ発生時に+2%のボーナスが加算されます。
           </RoundedItem>
           <RoundedItem title="戦闘ランクによるボーナス">
-            戦闘ランクをハードにすると2%、マニアにすると6%がテクニカルスマッシュ発生時にボーナスとして加算されます。
+            戦闘ランクをハードにすると3%以上のテクニカルスマッシュに+2%の加算、マニアにすると4%以上のテクニカルスマッシュに+6%の加算。
           </RoundedItem>
         </RoundedContainer>
       </Section>
