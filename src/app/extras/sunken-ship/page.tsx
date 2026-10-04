@@ -42,7 +42,7 @@ export default async function HomePage() {
         <EventCondition category="period">
           インフェリアへ帰還後から挑戦可能
         </EventCondition>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             海底に眠る隠しダンジョンのひとつです。ダンジョン内では、インフェリアの海底探索に必須となる専用のマップアイテム「インシーマップ」を入手することができます。最奥にはボスの「セイレーン」が待ち構えていますが、全体の攻略難易度は比較的優しめです。「遠征の橋」を経由してインフェリアへ戻ってきた直後のレベル上げや、手堅い装備・消耗品の回収スポットとして非常に最適です。
           </p>
@@ -68,7 +68,7 @@ export default async function HomePage() {
             ダンジョンの入口から奥へ進むと、上の画像のような複数の通路が交わる分岐部屋にたどり着きます。船内の攻略は基本的に「1〜4」の番号順にルートを選択し、浸水した区画の「水の放出」ギミックを解いていく流れになります。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>1. 隔壁のキーの入手 ＆ 2. ポンプ室の鍵の入手</h3>
           <p>
             まずは「1.
@@ -79,7 +79,7 @@ export default async function HomePage() {
             ポンプ室の鍵の入手」の通路へ向かいます。先ほど手に入れた隔壁のキーを使って扉を開けた先の部屋から、さらに「ポンプ室の鍵」を獲得します。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>3. 水の放出 ＆ 4. 排水後の探索ルート</h3>
           <p>
             「3.
@@ -98,7 +98,7 @@ export default async function HomePage() {
           </p>
         </div>
 
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>ボス「セイレーン」との戦闘攻略</h3>
           <ResponsiveImage
             src="/extras/secret-sunken-ship-boss.jpg"
@@ -117,7 +117,7 @@ export default async function HomePage() {
             セイレーンは火属性が弱点となっています。前衛のリッドが奥義「鳳凰天駆」をすでに習得している場合は、弱点を突きながら大ダメージを奪えるため非常に有効です。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>ダンジョン内で入手できるアイテム一覧</h3>
           <LocationItems data={itemsData} locationIds={[57]} />
         </div>

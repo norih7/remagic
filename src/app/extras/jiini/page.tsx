@@ -51,7 +51,7 @@ export default async function HomePage() {
       <Section>
         <SectionTitle>ジイニ</SectionTitle>
         <EventCondition category="period">潜水艇入手後から</EventCondition>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             潜水艇入手後からセレスティアの隠しタウンであるジイニに行くことができます。ジイニではオークションの開催、フォッグの最強技「エレメントマスター」の習得などさまざまなイベントが発生します。
           </p>
@@ -74,7 +74,7 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>ジイニの昼と夜</SectionTitle>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>昼の状態</h3>
           {/* <ResponsiveImage src="/extras/secret-jiini-first.jpg" /> */}
           <ResponsiveImage src="/extras/secret-jiini-inn.jpg" />
@@ -82,7 +82,7 @@ export default async function HomePage() {
             昼間のジイニは人がいなく店も閉まっていますが、唯一空いている宿屋で宿泊すると夜の状態へと変化します。宿泊には5ジイニが必要で、潜水艇ではじめてジイニにきた時には10ジイニを入手できるのでそれで宿泊しましょう。なお潜水艇によってジイニにきた場合は必ず昼間のジイニとなります。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>夜の状態</h3>
           <ResponsiveImage src="/extras/secret-jiini-night.jpg" />
           <p>
@@ -101,13 +101,13 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>オークションへの出品</SectionTitle>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             オークション会場では所有しているアイテムをオークションに出品できます。ジイニを稼ぐにはこのオークションが圧倒的におすすめです。高値がつくアイテムを出品してジイニを効率的に増やしましょう。
           </p>
         </div>
         <h3>値段決定の仕組み</h3>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             アイテム出品後まず初回の値段がつきます。その後、一晩以上空けてから再度ジイニのオークションに訪れると価格が変動する仕組みとなっています。町の中から出ず、宿屋に泊まってオークション会場へ行くのが一番効率よく価格変動できる方法です。
           </p>

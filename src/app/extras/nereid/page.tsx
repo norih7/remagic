@@ -58,13 +58,13 @@ export default async function HomePage() {
         <SectionTitle>ネレイドの迷宮への行き方</SectionTitle>
         <ResponsiveImage src="/extras/nereid-location.jpg" />
         <h3>リマスター版</h3>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             1周目のシゼル城に入ったら開放され、オルバース界面にネレイドの迷宮が出現します。
           </p>
         </div>
         <h3>PS1版/PSP版</h3>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             2周目の☆がついたセーブデータでストーリーを進行してオルバース界面へ行くとネレイドの迷宮が出現し、ダンジョンへ挑むことができます。ただし実際には2週目のクリアデータがあれば以下の方法で1週目から挑戦可能です。
           </p>

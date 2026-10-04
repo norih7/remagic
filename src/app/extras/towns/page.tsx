@@ -40,7 +40,7 @@ export default async function HomePage() {
       <Section>
         <SectionTitle>ねこにんの里/晶霊温泉</SectionTitle>
         <EventCondition category="period">飛行艇を入手後から</EventCondition>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             インフェリアとセレスティアそれぞれに隠されたタウンがあり、飛行艇を入手後から行くことができます。ねこにんの里はセレスティア、晶霊温泉はインフェリアにあります。サブイベントや貴重な食材購入もできるのでぜひ覚えておいてください。
           </p>
@@ -56,12 +56,12 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>ねこにんの里</SectionTitle>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             セレスティアにある隠しタウン。可愛いねこにんが住んでいる村でマスター料理の共通食材である「パープルソディ」を購入できる場所です。パープルソディを入手できるのはねこにんの里と、ノームの集落の2箇所だけです。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>ねこにんの里への行き方</h3>
           <ResponsiveImage src="/extras/secret-town-nekonin-location.jpg" />
           <p>
@@ -69,7 +69,7 @@ export default async function HomePage() {
             109)にある山に囲まれた場所へ向かいます。上記のように丸い森が「ねこにんの里」です。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>パープルソディの購入</h3>
           <p>
             ねこにんの里は初めて訪れるとリッドたちが夜通しねこにんたちに話をするイベントが発生します。このイベント中は村を探索できず、再度ねこにんの里へ訪れると自由に探索できるようになります。
@@ -83,12 +83,12 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>晶霊温泉</SectionTitle>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             インフェリアにある隠しタウン。温泉があり入浴ができる場所です。ここではアイテムの購入などはありませんがチャットの特技習得などのサブイベントが発生します。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>晶霊温泉への行き方</h3>
           <ResponsiveImage src="/extras/secret-town-onsen-location.jpg" />
           <p>
@@ -96,7 +96,7 @@ export default async function HomePage() {
             106)にある山に囲まれた場所へ向かいます。ゲーム画像にある丸い森が晶霊温泉です。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>チャットの特技「パラライボール」の習得</h3>
           <ResponsiveImage src="/extras/secret-town-onsen-chat.jpg" />
 

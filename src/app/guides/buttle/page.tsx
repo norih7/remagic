@@ -74,7 +74,7 @@ export default async function HomePage() {
               height={18}
               alt="貴重品アイコン"
               className="inline"
-            />{" "}
+            />
             アイコンが表示されたことで見逃しにくいですが、もし見逃していたら早めに入手することを推奨します。
           </Information>
         </div>
@@ -82,7 +82,37 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>テクニカルスマッシュ</SectionTitle>
-        <p>準備中</p>
+        <ResponsiveImage src="/guides/buttle-smash.jpg" />
+        <div className="mb-8">
+          <p>
+            戦闘中に敵を倒したときに画面左上に「TECHNICAL
+            SMASH」が表示される場合があります。これは特定の条件で敵を倒すと発生し、数値分だけアイテムドロップ率がアップする重要なものです。テクニカルスマッシュは画面に一瞬だけ表示される数値で後で見直しはできません。
+          </p>
+          <p>
+            テクニカルスマッシュは倒した敵のアイテムドロップ率に影響します。例えばアックスビークを倒して19%のテクニカルスマッシュが発生すると、本来1%のセージのドロップ率が20%にアップします。
+          </p>
+        </div>
+        <div className="mb-8">
+          <h3>テクニカルスマッシュの詳細</h3>
+          <RoundedContainer className="grid grid-cols-1 gap-3">
+            <RoundedItem title="チェインスマッシュ">-</RoundedItem>
+            <RoundedItem title="グループスマッシュ">-</RoundedItem>
+            <RoundedItem title="ノーダメージスマッシュ">-</RoundedItem>
+            <RoundedItem title="エフェクティブスマッシュ">-</RoundedItem>
+          </RoundedContainer>
+        </div>
+        <h3>テクニカルスマッシュの数値をアップさせる方法</h3>
+        <RoundedContainer className="grid grid-cols-1 gap-3">
+          <RoundedItem title="スマッシュマント">
+            アクセサリの「スマッシュマント」を装備すると、テクニカルスマッシュ発生時に+6%のボーナスが加算されます。
+          </RoundedItem>
+          <RoundedItem title="特殊晶霊術「+アイテムゲッター」">
+            C.ケイジのフリンジで「+アイテムゲッター」を習得すると、テクニカルスマッシュ発生時に+2%のボーナスが加算されます。
+          </RoundedItem>
+          <RoundedItem title="戦闘ランクによるボーナス">
+            戦闘ランクをハードにすると2%、マニアにすると6%がテクニカルスマッシュ発生時にボーナスとして加算されます。
+          </RoundedItem>
+        </RoundedContainer>
       </Section>
 
       <Section>

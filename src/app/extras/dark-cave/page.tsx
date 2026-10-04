@@ -59,7 +59,7 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>ダンジョン攻略手順</SectionTitle>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>シンボルエネミーが徘徊するフロア</h3>
           <p>
             入り口から次のフロアへ進みハシゴを降りていくエリアでは、通常のランダムエンカウントが発生しない代わりに、画面内をうろつく敵の影（シルエット）に触れると「メガデス
@@ -67,14 +67,14 @@ export default async function HomePage() {
             ×2」などの固定パーティーと戦闘になります。もし余計な戦闘を避けて最短ルートで次の階層へ降りたい場合は、ひたすら右側のハシゴやルートを選んで降りていくのがおすすめです。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>セーブポイント周辺のフロア（ギミック）</h3>
           <ResponsiveImage src="/extras/secret-dark-cave-symbol.jpg" />
           <p>
             安全に準備ができるセーブポイントのあるフロアでは、左右両端にある穴へと進み、奥で光を放っている敵のシルエット（シンボル）をそれぞれ撃破していく必要があります。ここに登場する敵は過去に遭遇したおなじみのモンスター構成ですが、倒すと周囲の光が消えていきダンジョン内により深い闇が満ちていきます。シャドウの居場所を出現させるためには、この要領で計4箇所の光をすべて消して洞窟内を暗闇で包み込むことが必須条件となります。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>大晶霊「シャドウ」とのボス戦攻略</h3>
           <ResponsiveImage src="/extras/secret-dark-cave-shadow.jpg" />
           <p>
@@ -86,7 +86,7 @@ export default async function HomePage() {
             シャドウの弱点は光属性です。シャドウは強力な晶霊術を非常に短い詠唱時間で次々と繰り出してしまうため、放置すると危険です。まずは優先的にシャドウ本体を集中攻撃して各個撃破を狙うのが安定します。前衛のファラが奥義「獅子戦吼」を習得済みの場合は、お供のエンプティドールごと巻き込む形で画面端へ押し込み、3体まとめて範囲攻撃に巻き込むと効率よくダメージを与えられます。もし「レム」と未契約の段階で苦戦する場合は、一度ストーリーを進めて光属性の強力な備えを整えてから再挑戦するのも有効です。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>ダンジョン内で入手できるアイテム・レンズ</h3>
           <LocationItems data={itemsData} locationIds={[49]} />
           <LocationLenses data={lensesData} locationIds={[49]} />

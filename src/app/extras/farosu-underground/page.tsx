@@ -41,7 +41,7 @@ export default async function HomePage() {
         <EventCondition category="period">
           インフェリアへ帰還後から挑戦可能
         </EventCondition>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             物語の後半に訪れることができる隠しダンジョンのひとつです。インフェリアの「ファロース教会」の最奥には、強力な大晶霊「マクスウェル」が待ち構えており、激闘を制することで晴れて契約を結ぶことができます。非常に手強い強敵ですが、勝利すれば絶大な見返りを得られます。
           </p>
@@ -61,12 +61,12 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>ダンジョン攻略と探索手順</SectionTitle>
-        <div className="mb-4">
+        <div className="mb-8">
           <p>
             ダンジョン内複雑な謎解きやギミックなどは存在しないため、一本道をしっかりと奥へ進んでいけば迷うことはありません。道中の宝箱には、リッド用の強力な頭防具「ゴールデンヘルム」や、キール用の優秀な体防具「スピリッドローブ」が眠っています。どちらも攻略の大きな助けとなる強力な装備なので、忘れずに回収しておきましょう。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>大晶霊「マクスウェル」との戦闘</h3>
           <ResponsiveImage src="/extras/secret-farosu-boss.jpg" />
           <p>
@@ -79,7 +79,7 @@ export default async function HomePage() {
             マクスウェルのHP自体は34,000とそこまで高くありませんが、とにかく圧倒的な防御力を誇ります。さらに晶霊術の詠唱スピードも非常に速く、大火力の術を連発してくるため、前衛のリッドやファラが通常攻撃や特技を絶えず叩き込んで相手の詠唱を確実に阻止することを最優先に立ち回りましょう。光属性の攻撃が弱点となっているため、リッドに「エクスカリバー」などの光属性武器を装備させて挑むのがベストです。遠征の橋から戻ってきてすぐのタイミングでも挑戦可能ですが、当時の適正レベルで勝つのが厳しいと感じた場合は、一度レベルを60近くまでしっかりと上げてから挑むのが無難です。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>ダンジョン内で入手できるアイテム一覧</h3>
           <LocationItems data={itemsData} locationIds={[58]} />
         </div>

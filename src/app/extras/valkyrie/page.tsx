@@ -75,7 +75,7 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>ダンジョンフロア別攻略・謎解き手順</SectionTitle>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>1階：星型スイッチの踏破ギミック</h3>
           <p>
             フロアにある星型（三角形を組み合わせた形状）の床スイッチを、特定の正しい順番通りに踏んでいくことで、2階へ進むためのワープ装置が起動します。
@@ -89,7 +89,7 @@ export default async function HomePage() {
             />
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>2階：光る球体の記憶パズル</h3>
           <ResponsiveImage src="/extras/secret-valkyrie-2f.jpg" />
           <p>
@@ -107,7 +107,7 @@ export default async function HomePage() {
             </ul>
           </Information>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>3階：風を止めて灯台に火を灯す仕掛け</h3>
           <ResponsiveImage src="/extras/secret-valkyrie-3f.jpg" />
 
@@ -118,7 +118,7 @@ export default async function HomePage() {
             2つの灯台の両方に火を灯すと隠し床が出現します。その出現した床の上で2〜3秒ほどじっと立ち止まっていると、先に進むための階段が現れます。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>4階：水晶へのソーサラーリング照射順序</h3>
           <ResponsiveImage
             src="/extras/secret-valkyrie-gem.jpg"
@@ -131,14 +131,14 @@ export default async function HomePage() {
             正しい手順は下の図を参照してください。なお、ソーサラーリングを撃つ際の細かな立ち位置・キャラクターの向きを微調整する際は、コントローラーの「□ボタン」を押しながら方向キーを入力する微移動テクニックを活用するとスムーズに合わせられます。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>5階：半透明の床と光の回収パズル</h3>
           <ResponsiveImage src="/extras/secret-valkyrie-5f.jpg" />
           <p>
             自分が乗って動かす足場に完全に連動して動く「半透明の床」を利用し、床のうえで「赤」「青」「緑」の3色の光をすべて集めるフロアです。半透明の床は自分の移動操作に対して鏡写し（反転）の動きをするため、頭の中で軌道をしっかりイメージしながら動かすことが求められます。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>6階：床のカラー制限と3つの柱の起動</h3>
           <ResponsiveImage src="/extras/secret-valkyrie-6f-1.jpg" />
           <ResponsiveImage src="/extras/secret-valkyrie-6f-2.jpg" />
@@ -147,7 +147,7 @@ export default async function HomePage() {
           </p>
           <p>上記画像のルートで3つの柱を起動させ次の階へ進むことができます。</p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>7階：火柱の色合わせと床の進行ルート</h3>
           <p>
             最初の小部屋を経由して奥のワープ先へ進む構造ですが、手前のエリアにある火柱をあらかじめ同じ色に統一しておかないと先へ進めません。火柱はソーサラーリングまたはフリーズリングを当てることで「赤」「青」「緑」へと変化させられます（統一する色はどの色でも問題ありません）。
@@ -164,7 +164,7 @@ export default async function HomePage() {
             />
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>最上階のイベントとワルキューレ戦</h3>
           <ResponsiveImage src="/extras/secret-valkyrie-top.jpg" />
           <p>
@@ -174,7 +174,7 @@ export default async function HomePage() {
             なお、ワルキューレを撃破したあとに一度きらめきの塔の外部や別のフロアへ出ると、それ以降はこのダンジョン内で通常のモンスターエンカウントが発生するようになります。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>ボス「ワルキューレ」との戦闘攻略</h3>
           <p>
             <strong>BOSS：『ワルキューレ』</strong>
@@ -183,7 +183,7 @@ export default async function HomePage() {
             リッド単体での1対1バトルとなるため、相手の隙を突く立ち回りが重要になります。ワルキューレは素早い連続斬りの特技を繰り出してくるため非常に強力です。あらかじめリッドの「列空斬」などを空中発動できるようにスキルやリングを調整しておき、相手の猛攻を華麗に飛び越えて回避しつつ、手堅くダメージを重ねていく戦術がおすすめです。
           </p>
         </div>
-        <div className="mb-4">
+        <div className="mb-8">
           <h3>ダンジョン内で入手できるアイテム一覧</h3>
           <LocationItems data={itemsData} locationIds={[59]} />
         </div>
