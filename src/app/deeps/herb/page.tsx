@@ -42,22 +42,29 @@ export default async function HomePage() {
         <h3>代表的な薬草</h3>
         <div className="mb-8">
           <RoundedItem title="セージ/レッドセージ" className="mb-3">
-            効果: HPが5%アップする ※レッドセージは10%
+            効果: HPを5%アップする ※レッドセージは10%
             <br />
             用途: 体力を底上げして長い戦闘に耐える
           </RoundedItem>
-          <RoundedItem title="セボリー" className="mb-3">
+          <RoundedItem title="セボリー/レッドセボリー" className="mb-3">
             <p>
-              効果: TPが5%アップする ※レッドセボリーは10%
+              効果: TPを5%アップする ※レッドセボリーは10%
               <br />
               用途: 特技の連発や術の維持をしやすくする
             </p>
           </RoundedItem>
           <RoundedItem title="ラベンダー/レッドラベンダー" className="mb-3">
             <p>
-              効果: 力が1アップする ※レッドラベンダーは2
+              効果: 力を1アップする ※レッドラベンダーは2
               <br />
-              用途: 物理攻撃寄りの立ち回りを強化する
+              用途: 物理攻撃のダメージを強化する
+            </p>
+          </RoundedItem>
+          <RoundedItem title="ベルベーヌ/レッドベルベーヌ" className="mb-3">
+            <p>
+              効果: 回避を1アップする ※レッドベルベーヌは2
+              <br />
+              用途: 敵からの物理攻撃に対する自動防御確率をアップ
             </p>
           </RoundedItem>
         </div>
