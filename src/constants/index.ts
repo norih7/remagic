@@ -449,8 +449,11 @@ export const extraLinks: Record<string, PageLink> = {
 export const deepLinks: Record<string, PageLink> = {
   "blue-earth": {
     title: "ブルーアース",
+    image: "/link-headers/deeps-blue-earth.jpg",
     path: "/deeps/blue-earth",
-    desc: "準備中",
+    desc: "隠し晶霊術「ブルーアース」の発動条件、必要TP、コマンド手順を解説しています。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠し晶霊術「ブルーアース」の発動条件・必要TP・コマンド手順を解説。経験値10万を獲得できるレベル上げ技を、使える敵「フェイク」の場所とあわせて紹介します。",
   },
   // "level-up": {
   //   title: "レベル上げテクニック",

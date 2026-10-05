@@ -68,6 +68,18 @@ export default async function HomePage() {
           <div className="w-full">
             <ul className="space-y-2 max-h-[300px] overflow-y-auto pr-2">
               <li className="flex gap-4">
+                <span className="text-slate-400">2026/10/05</span>
+                <span>
+                  <Link
+                    href="/deeps/blue-earth"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    ブルーアース
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
                 <span className="text-slate-400">2026/10/02</span>
                 <span>
                   <Link
