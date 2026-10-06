@@ -284,14 +284,6 @@ export const subeventLinks: Record<string, PageLink> = {
 };
 
 export const systemLinks: Record<string, PageLink> = {
-  skill: {
-    title: "特技/術の習得",
-    path: "/systems/skill",
-    image: "/link-headers/systems-skills.jpg",
-    desc: "特技と晶霊術の習得について説明。なかなか特技や術を覚えられないという方は必見！",
-    seoDesc:
-      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。リッド・ファラの専用レベル（斬・突・拳・蹴）や技の使用回数、キール・メルディのクレーメルケイジ（フリンジ）による晶霊術習得、チャット・フォッグのサブイベント習得まで、キャラクターごとの多彩なスキル習得システムを徹底解説。",
-  },
   rune: {
     title: "ルーンボトル/変化一覧",
     image: "/link-headers/systems-rune.jpg",
@@ -454,6 +446,8 @@ export const deepLinks: Record<string, PageLink> = {
     desc: "隠し晶霊術「ブルーアース」の発動条件、必要TP、コマンド手順を解説しています。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠し晶霊術「ブルーアース」の発動条件・必要TP・コマンド手順を解説。経験値10万を獲得できるレベル上げ技を、使える敵「フェイク」の場所とあわせて紹介します。",
+    createdAt: "2026-10-05",
+    updatedAt: "2026-10-05",
   },
   // "level-up": {
   //   title: "レベル上げテクニック",
@@ -485,6 +479,8 @@ export const deepLinks: Record<string, PageLink> = {
     desc: "特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",
+    createdAt: "2026-10-06",
+    updatedAt: "2026-10-06",
   },
   // equipment: {
   //   title: "おすすめ装備考察",
@@ -542,6 +538,14 @@ export const guideLinks: Record<string, PageLink> = {
     desc: "戦闘をより楽しくするためのシステム解説。マニュアル操作とキャラクタ毎の特殊操作、アイテムドロップについて紹介！",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。エターニアの戦闘マニュアル操作および特殊操作を解説。マニュアル操作への切り替え方法（マニュアルのしょ入手）や、おすすめの操作設定、バックステップ、移動速度アップ、晶霊術・特技の詠唱短縮など、戦闘を有利に進めるためのテクニックを網羅しています。",
+  },
+  skill: {
+    title: "特技/術の習得",
+    path: "/guides/skill",
+    image: "/link-headers/systems-skills.jpg",
+    desc: "特技と晶霊術の習得について説明。なかなか特技や術を覚えられないという方は必見！",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。リッド・ファラの専用レベル（斬・突・拳・蹴）や技の使用回数、キール・メルディのクレーメルケイジ（フリンジ）による晶霊術習得、チャット・フォッグのサブイベント習得まで、キャラクターごとの多彩なスキル習得システムを徹底解説。",
   },
   // "join-chat-and-fog": {
   //   title: "チャットとフォッグの加入",

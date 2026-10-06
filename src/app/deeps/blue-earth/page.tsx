@@ -11,6 +11,7 @@ import Section from "@/components/Section";
 import CardList from "@/components/CardLIst";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
+import Image from "next/image";
 
 export const dynamic = "force-static";
 
@@ -31,7 +32,7 @@ export default async function HomePage() {
     <article>
       <SetPageTitle title={title} />
       <PageSummary>
-        隠し晶霊術「ブルーアース」の情報をまとめています。発動コマンドが難しいので、ぜひ手元でこのページ開いて発動させてください。
+        隠し晶霊術「ブルーアース」の情報をまとめています。ブルーアースを発動させるフェイクの場所も掲載。発動コマンドが難しいので、ぜひ手元でこのページ開いてやってください。
       </PageSummary>
 
       <Section>
@@ -46,7 +47,7 @@ export default async function HomePage() {
       </Section>
 
       <Section>
-        <SectionTitle>ブルーアース発動のために必要なこと</SectionTitle>
+        <SectionTitle>ブルーアース発動に必要なこと</SectionTitle>
         <div className="mb-8">
           <h3>前提条件</h3>
           <CardList
@@ -68,6 +69,15 @@ export default async function HomePage() {
             ブルーアースはダメージが大きすぎるため普通の敵は途中で倒してしまいます。地晶霊の廃坑のベルトコンベアから無限に出現するフェイクは耐久性が高く、最後のブルーアースまで発動できます。
           </p>
         </div>
+        <div className="mb-8">
+          <h3>地晶霊の廃坑のフェイクの場所</h3>
+          <p>
+            チャットの小屋側のフィールドマップから地晶霊の廃坑へ入り、下記のように進むとフェイクが無限に出現するベルトコンベアへ辿り着きます。
+          </p>
+          <div className="pt-8">
+            <Image src="/maps/mine-map.jpg" width={700} height={500} alt="" />
+          </div>
+        </div>
       </Section>
 
       <Section>
@@ -77,33 +87,31 @@ export default async function HomePage() {
             条件を満たしたうえで術者（キール/メルディ）を操作キャラにしてマクスウェルを召喚すると特殊演出が起動し、ブルーアースにつながっていきます。
           </p>
           <RoundedContainer className="grid grid-cols-2 gap-3">
-            <RoundedItem title="1. マクスウェル召喚（TP:100）">
+            <RoundedItem title="1. マクスウェル召喚時">
               「← + □」を押し続ける
             </RoundedItem>
-            <RoundedItem title="2. デュアル・ザ・サン (TP:100)">
+            <RoundedItem title="2. デュアル・ザ・サン発動時">
               「×」を押し続ける
             </RoundedItem>
-            <RoundedItem title="3. エタニティ・スォーム (TP:100)">
+            <RoundedItem title="3. エタニティ・スォーム発動時">
               「⚪︎」を押し続ける
             </RoundedItem>
-            <RoundedItem title="4. プリズミックスターズ (TP:100)">
+            <RoundedItem title="4. プリズミックスターズ発動時">
               「△」を押し続ける
             </RoundedItem>
-            <RoundedItem title="5. ブライティスト・ゲート (TP:100)">
+            <RoundedItem title="5. ブライティスト・ゲート発動時">
               「□」を押し続ける
             </RoundedItem>
-            <RoundedItem title="6. エクスプロージョン・ノヴァ (TP:100)">
+            <RoundedItem title="6. エクスプロージョン・ノヴァ発動時">
               「△ + ×」を押し続ける
             </RoundedItem>
-            <RoundedItem title="7. マクスウェル・ロアー (TP:100)">
+            <RoundedItem title="7. マクスウェル・ロアー発動時">
               「⚪︎ + × + □」を押し続ける
             </RoundedItem>
-            <RoundedItem title="8. ディメンジョナル・マテリアル (TP:100)">
+            <RoundedItem title="8. ディメンジョナル・マテリアル発動時">
               「⚪︎ + × + □ + △」を押し続ける
             </RoundedItem>
-            <RoundedItem title="9. ブルー・アース (TP:250)">
-              最後の術
-            </RoundedItem>
+            <RoundedItem title="9. ブルー・アース">最後の術</RoundedItem>
           </RoundedContainer>
         </div>
       </Section>

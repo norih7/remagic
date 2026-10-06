@@ -5,16 +5,16 @@ import SectionHeader from "@/components/SectionHeader";
 import GuideList from "@/components/GuideList";
 import Image from "next/image";
 import Information from "@/components/Information";
-import { systemLinks } from "@/constants";
+import { guideLinks } from "@/constants";
 import Section from "@/components/Section";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
 
 const pageKey = "skill";
-const title = systemLinks[pageKey].title;
-const description = systemLinks[pageKey].seoDesc;
-const canonical = systemLinks[pageKey].path;
+const title = guideLinks[pageKey].title;
+const description = guideLinks[pageKey].seoDesc;
+const canonical = guideLinks[pageKey].path;
 export const metadata = {
   title,
   description,
