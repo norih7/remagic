@@ -81,10 +81,10 @@ export default async function HomePage() {
           <RoundedItem title="説明">
             グリップソードを入手してから老人に話しかけるとアクセサリ「スマッシュマント」を入手します。
           </RoundedItem>
-          <Information type="warning" title="機種による違い">
-            イベントの結末はPSP版のものです。PS版では「エタポケ1」を入手し、その後のポケットステーションでのミニゲームをクリアするとスマッシュマントを入手します。（PSP版はポケットステーションがないので手順が省略されている）2026年のリマスター版ではPSP版と同じ結果となる予想です。
-          </Information>
         </RoundedContainer>
+        <Information type="warning" title="機種による違い">
+          イベントの結末はPSP版のものです。PS版では「エタポケ1」を入手し、その後のポケットステーションでのミニゲームをクリアするとスマッシュマントを入手します。（PSP版はポケットステーションがないので手順が省略されている）2026年のリマスター版ではPSP版と同じ結果となる予想です。
+        </Information>
       </Section>
     </article>
   );

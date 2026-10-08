@@ -37,10 +37,18 @@ export default async function HomePage() {
       </PageSummary>
       <Section>
         <SectionTitle>インフェリアのアジト一覧</SectionTitle>
-        <div className="mb-4">
+        <div className="mb-8">
+          <EventCondition category="period">
+            遠征の橋でインフェリア帰還後
+          </EventCondition>
           <p>
-            インフェリアのアイフリードのアジトはサブイベントで探索は任意ですが、その分レアアイテムがあるためぜひ訪れてみてください。
+            インフェリアのアイフリードのアジトはサブイベントで探索は任意ですが、その分レアアイテムがあるためぜひ訪れてみてください。インフェリア帰還後に強力な「にんとうちざくら」や、HP自動回復の特殊効果のある「ホーリィクローク」が特におすすめです。
           </p>
+          <GuideList
+            items={[
+              { title: "装備品の特殊効果", href: "/systems/special-effect" },
+            ]}
+          />
         </div>
         <RoundedContainer>
           <h3>インフェリア アジト1</h3>

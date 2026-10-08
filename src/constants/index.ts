@@ -258,7 +258,7 @@ export const subeventLinks: Record<string, PageLink> = {
   //   seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
   // },
   treasure: {
-    title: "セレスティア7大秘宝/S・D",
+    title: "セレスティア7大秘宝",
     path: "/subevents/treasure",
     // image: "/link-headers/subevents-last-fencer.jpg",
     desc: "準備中",
@@ -305,7 +305,7 @@ export const systemLinks: Record<string, PageLink> = {
     path: "/systems/recipe",
     desc: "料理レシピ一覧情報を掲載。ワンダーシェフの場所や必要な食材の購入場所もわかりやすく案内！",
     seoDesc:
-      "リマスター版対応のテイルズオブエターニア（TOE）攻略。料理レシピ一覧とマスター料理を説明。各料理の効果、ワンダーシェフの場所、作成に必要な食材データを網羅。HP・TP回復やステータス強化に役立つマスター料理の習得条件も詳しく解説。",
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。料理レシピ一覧を掲載。各料理の効果、ワンダーシェフの場所、作成に必要な食材データを網羅。HP・TP回復やステータス強化に役立つマスター料理の習得条件も詳しく解説。",
   },
   "special-effect": {
     title: "装備品の特殊効果",
@@ -480,7 +480,7 @@ export const deepLinks: Record<string, PageLink> = {
     updatedAt: "2026-09-24",
   },
   "master-recipe": {
-    title: "マスター料理",
+    title: "マスター料理とパープルソディ",
     image: "/link-headers/systems-master-recipe.jpg",
     path: "/deeps/master-recipe",
     desc: "特殊な効果を持つマスター料理について解説。習得条件やおすすめ料理も紹介。",

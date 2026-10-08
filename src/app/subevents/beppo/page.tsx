@@ -8,6 +8,9 @@ import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
+import EventCondition from "@/components/EventCondition";
+import Tag from "@/components/Tag";
+import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -37,6 +40,9 @@ export default async function HomePage() {
       </PageSummary>
       <Section>
         <SectionTitle>ベッポのかくれんぼ</SectionTitle>
+        <EventCondition category="period">
+          <Tag>時限イベント</Tag>バロールの町へ到着後
+        </EventCondition>
         <p>
           バロールの露天で遭遇した盗賊少年ベッポとかくれんぼするサブイベントが発生します。このイベントでは貴重なルーンボトルを入手でき、ストーリー後半ではドエニスのポプリを入手できます。
           ドエニスのポプリはジイニのオークションで高値で取引されるアイテム。このイベントの発生には時間制限があり、レイス加入〜セレスティアへ渡る前までにかくれんぼをしておかないとドエニスのポプリは手に入らないため注意してください。
@@ -97,9 +103,13 @@ export default async function HomePage() {
       <section>
         <SectionTitle>インフェリア帰還後</SectionTitle>
         <div className="mb-4">
+          <ResponsiveImage src="/subevents/beppo-end.jpg" />
           <p>
-            ストーリー後半でインフェリア帰還後にベッポを尋ねると「ドニエスのポプリ」をもらえます
+            ストーリー後半でインフェリア帰還後にベッポを尋ねると「ドニエスのポプリ」をもらえます。これは売却専用アイテムでジイニのオークションへの出品で高値がつきやすいアイテムです。
           </p>
+          <GuideList
+            items={[{ title: "ジイニのオークション", href: "/extras/jiini" }]}
+          />
         </div>
       </section>
     </article>

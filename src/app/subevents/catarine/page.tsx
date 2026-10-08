@@ -6,6 +6,8 @@ import SectionTitle from "@/components/SectionTitle";
 import RoundedItem from "@/components/RoundedItem";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
+import EventCondition from "@/components/EventCondition";
+import Tag from "@/components/Tag";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,22 +38,24 @@ export default async function HomePage() {
           ファラの限定称号<strong>「あいのネゴシエーター」</strong>
           を獲得できる隠しサブイベント「カトリーヌの恋愛イベント」の完全攻略ページです。ゲーム序盤から中盤にかけて非常に厳しい時限要素があり、見逃さずにベストエンドを達成するための全遭遇ポイントを解説します。
         </p>
-        <div className="mt-3">
-          <Information type="warning" title="プレイ時の注意点">
-            このイベントを完全クリアしても強力な武具やストーリー進行に必須のアイテム等は入手できません。あくまでファラの称号収集要素となるため、称号コンプリートにこだわりのない方はスルーしてもゲーム攻略上の支障はありません。また、
-            <strong>
-              一度セレスティア世界へ渡ってしまうと一切発生しなくなる時限イベント
-            </strong>
-            なので注意しましょう。
-          </Information>
-        </div>
       </PageSummary>
 
       <Section>
         <SectionTitle>カトリーヌの恋愛イベントの概要</SectionTitle>
+        <EventCondition category="period">
+          <Tag>時限イベント</Tag>ミンツ到着後から発生
+        </EventCondition>
         <p>
           インフェリア各地を巡るピンク髪の女性「カトリーヌ」を追うサブイベントです。ストーリーの進行に合わせてどれだけ彼女に遭遇したかの回数によって最終的な結末が大きく変化し、すべてのイベント（全6回）を目撃してハッピーエンドを迎えることで、ファラの称号「あいのネゴシエーター」を獲得できます。
         </p>
+
+        <Information type="warning" title="プレイ時の注意点">
+          このイベントを完全クリアしても強力な武具やストーリー進行に必須のアイテム等は入手できません。あくまでファラの称号収集要素となるため、称号コンプリートにこだわりのない方はスルーしてもゲーム攻略上の支障はありません。また、
+          <strong>
+            一度セレスティア世界へ渡ってしまうと一切発生しなくなる時限イベント
+          </strong>
+          なので注意しましょう。
+        </Information>
       </Section>
 
       <Section>
@@ -62,10 +66,10 @@ export default async function HomePage() {
 
         <div className={styles.card}>
           <h3 className={styles.header}>No.1 ミンツの運動場</h3>
+          <EventCondition category="period">
+            ミンツ到着後 〜 モルル到着前まで
+          </EventCondition>
           <div className="mt-2">
-            <RoundedItem title="イベント発生時期" className="mb-2">
-              ミンツ到着後 〜 モルル到着前まで
-            </RoundedItem>
             <RoundedItem title="説明">
               ミンツの運動場前へ行くと、ピンク髪の学生「カトリーヌ」が佇んでいます。彼女がこれから王都へ向かうというイベントを目撃します。
             </RoundedItem>
@@ -74,10 +78,10 @@ export default async function HomePage() {
 
         <div className={styles.card}>
           <h3 className={styles.header}>No.2 モルルの食材屋</h3>
+          <EventCondition category="period">
+            モルル到着後 〜 インフェリア港（定期連絡船乗船）到着前まで
+          </EventCondition>
           <div className="mt-2">
-            <RoundedItem title="イベント発生時期" className="mb-2">
-              モルル到着後 〜 インフェリア港（定期連絡船乗船）到着前まで
-            </RoundedItem>
             <RoundedItem title="説明">
               モルルのツタを登った先にある食材屋さんへ行くと、カトリーヌが老人の娘と人違いをされて足止めされているイベントが発生します。ここでファラが仲裁に入るやり取りを見ます。
             </RoundedItem>
@@ -86,10 +90,10 @@ export default async function HomePage() {
 
         <div className={styles.card}>
           <h3 className={styles.header}>No.3 定期連絡船</h3>
+          <EventCondition category="period">
+            インフェリア港到着後 〜 バロール到着前まで
+          </EventCondition>
           <div className="mt-2">
-            <RoundedItem title="イベント発生時期" className="mb-2">
-              インフェリア港到着後 〜 バロール到着前まで
-            </RoundedItem>
             <RoundedItem title="説明">
               インフェリア港から定期連絡船に乗り込んだ際、船内でカトリーヌが船員に怒られているトラブルのイベントに遭遇します。
             </RoundedItem>
@@ -98,10 +102,10 @@ export default async function HomePage() {
 
         <div className={styles.card}>
           <h3 className={styles.header}>No.4 バロールの本屋</h3>
+          <EventCondition category="period">
+            バロール到着後 〜 シャンバール到着前まで
+          </EventCondition>
           <div className="mt-2">
-            <RoundedItem title="イベント発生時期" className="mb-2">
-              バロール到着後 〜 シャンバール到着前まで
-            </RoundedItem>
             <RoundedItem title="説明">
               バロールの町の本屋さんへ行くと、店内で熱心に本を読み込んでいるカトリーヌに遭遇します。
             </RoundedItem>
@@ -110,10 +114,10 @@ export default async function HomePage() {
 
         <div className={styles.card}>
           <h3 className={styles.header}>No.5 シャンバールの防具屋</h3>
+          <EventCondition category="period">
+            シャンバール到着後 〜 火晶霊の谷到着前まで
+          </EventCondition>
           <div className="mt-2">
-            <RoundedItem title="イベント発生時期" className="mb-2">
-              シャンバール到着後 〜 火晶霊の谷到着前まで
-            </RoundedItem>
             <RoundedItem title="説明">
               シャンバールの防具屋さんへ行くと、店員から高価な服を強く勧められて困惑しているカトリーヌのイベントが発生します。
             </RoundedItem>
@@ -122,10 +126,10 @@ export default async function HomePage() {
 
         <div className={styles.card}>
           <h3 className={styles.header}>No.6 レグルス道場</h3>
+          <EventCondition category="period">
+            火晶霊の谷到着後 〜 セレスティア突入前まで
+          </EventCondition>
           <div className="mt-2">
-            <RoundedItem title="イベント発生時期" className="mb-2">
-              火晶霊の谷到着後 〜 セレスティア突入前まで
-            </RoundedItem>
             <RoundedItem title="説明">
               レグルス道場を訪れると、カトリーヌがモンクたちに囲まれてしまっているイベントを目撃します。
             </RoundedItem>

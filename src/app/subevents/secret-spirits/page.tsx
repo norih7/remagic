@@ -38,9 +38,7 @@ export default async function HomePage() {
         <SectionTitle>隠し大晶霊一覧</SectionTitle>
         <RoundedContainer>
           <h3>闇の大晶霊 シャドウ</h3>
-          <EventCondition category="period">
-            潜水艇が利用可能となってから
-          </EventCondition>
+          <EventCondition category="period">潜水艇入手後</EventCondition>
           <RoundedItem title="説明">
             <div className="mb-3">
               セレスティアの海底にある「闇の洞窟」の奥にはシャドウがいて戦闘勝利後に契約することができます。
@@ -59,7 +57,7 @@ export default async function HomePage() {
         <RoundedContainer>
           <h3>元素の大晶霊 マスクウェル</h3>
           <EventCondition category="period">
-            インフェリア帰還以降
+            遠征の橋でインフェリア帰還後
           </EventCondition>
           <RoundedItem title="説明">
             <div className="mb-3">
@@ -68,7 +66,7 @@ export default async function HomePage() {
             <GuideList
               items={[
                 {
-                  title: "セイファーと教会地下の攻略情報はこちら",
+                  title: "セイファート教会地下の攻略情報はこちら",
                   href: "/extras/farosu-underground",
                 },
               ]}
@@ -78,7 +76,7 @@ export default async function HomePage() {
 
         <RoundedContainer>
           <h3>時の大晶霊 ゼクンドゥス</h3>
-          <EventCondition category="period">シゼル城に到着後〜</EventCondition>
+          <EventCondition category="period">シゼル城に到着後</EventCondition>
           <RoundedItem title="説明">
             <div className="mb-3">
               シゼル城のダンジョン内に時の大晶霊ゼクンドゥスがいて、戦闘することなく契約することができます。
