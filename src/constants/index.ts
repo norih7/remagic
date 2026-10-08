@@ -257,6 +257,13 @@ export const subeventLinks: Record<string, PageLink> = {
   //   desc: "-",
   //   seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
   // },
+  treasure: {
+    title: "セレスティア7大秘宝/S・D",
+    path: "/subevents/treasure",
+    // image: "/link-headers/subevents-last-fencer.jpg",
+    desc: "準備中",
+    seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
+  },
   catarine: {
     title: "カトリーヌの恋愛",
     path: "/subevents/catarine",
@@ -487,6 +494,11 @@ export const deepLinks: Record<string, PageLink> = {
   //   path: "/deeps/equipment",
   //   desc: "",
   //seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
+  // },
+  // "level-up": {
+  //   title: "クレス&アーチェ戦",
+  //   path: "/deeps/level-up",
+  //   desc: "下級晶霊術連発、風塵の無限コンボ、オート戦闘",
   // },
   "flame-dance": {
     title: "火龍炎舞",

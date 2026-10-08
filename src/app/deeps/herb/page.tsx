@@ -39,7 +39,7 @@ export default async function HomePage() {
             「セージ」や「セボリー」などの薬草は使うとステータスが上がります。エターニアではLvアップによるステータス向上は控え目なので、薬草の使用は非常に強力です。長期的な強化を目的とするアイテムなので、育成が進んだ後半ほど価値が出ます。
           </p>
         </div>
-        <h3>代表的な薬草</h3>
+        <h3>薬草の種類と効果</h3>
         <div className="mb-8">
           <RoundedItem title="セージ/レッドセージ" className="mb-3">
             効果: HPを5%アップする ※レッドセージは10%
@@ -108,11 +108,11 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>セージ集め</SectionTitle>
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <GuideList
             items={[{ title: "セージの詳細", href: "/systems/item/58" }]}
           />
-        </div>
+        </div> */}
         <RoundedContainer>
           <div className="mb-3">
             <h3>闘技場の世界一決定戦の周回</h3>
@@ -141,11 +141,11 @@ export default async function HomePage() {
 
       <Section>
         <SectionTitle>セボリー集め</SectionTitle>
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <GuideList
             items={[{ title: "セボリーの詳細", href: "/systems/item/75" }]}
           />
-        </div>
+        </div> */}
         <RoundedContainer>
           <div className="mb-3">
             <h3>ジェントルマン狩り</h3>
@@ -157,6 +157,16 @@ export default async function HomePage() {
           <RoundedItem title="効率的な連戦">
             パーティに号令「まもりをかためろ」で待機させ、ショートカットでチャットのローバーアイテムで盗みチャレンジ。リッドには虎牙連斬、空破絶掌撃の連携でテクニカルスマッシュを稼ぎましょう。盗みとドロップ両方狙えますが、どちらか片方やるのでもいいです。
           </RoundedItem>
+        </RoundedContainer>
+        <RoundedContainer>
+          <div className="mb-3">
+            <h3>トロール狩り</h3>
+            <Tag>序盤おすすめ</Tag>
+          </div>
+          <RoundedItem title="概要" className="mb-3">
+            いざないの密林に出現する「トロール」は1%でセボリーを落とします。ストーリー序盤で薬草集めが可能です。
+          </RoundedItem>
+          <RoundedItem title="効率的な連戦">準備中</RoundedItem>
         </RoundedContainer>
       </Section>
     </article>
