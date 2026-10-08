@@ -8,6 +8,7 @@ import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -69,11 +70,10 @@ export default async function HomePage() {
           <EventCondition category="period">
             ミンツ到着後 〜 モルル到着前まで
           </EventCondition>
-          <div className="mt-2">
-            <RoundedItem title="説明">
-              ミンツの運動場前へ行くと、ピンク髪の学生「カトリーヌ」が佇んでいます。彼女がこれから王都へ向かうというイベントを目撃します。
-            </RoundedItem>
-          </div>
+          <ResponsiveImage src="/subevents/catarine-1.jpg" />
+          <RoundedItem title="説明">
+            ミンツの運動場前へ行くと、ピンク髪の学生「カトリーヌ」が佇んでいます。彼女がこれから王都へ向かうというイベントを目撃します。
+          </RoundedItem>
         </div>
 
         <div className={styles.card}>
@@ -81,11 +81,10 @@ export default async function HomePage() {
           <EventCondition category="period">
             モルル到着後 〜 インフェリア港（定期連絡船乗船）到着前まで
           </EventCondition>
-          <div className="mt-2">
-            <RoundedItem title="説明">
-              モルルのツタを登った先にある食材屋さんへ行くと、カトリーヌが老人の娘と人違いをされて足止めされているイベントが発生します。ここでファラが仲裁に入るやり取りを見ます。
-            </RoundedItem>
-          </div>
+          <ResponsiveImage src="/subevents/catarine-2.jpg" />
+          <RoundedItem title="説明">
+            モルルのツタを登った先にある食材屋さんへ行くと、カトリーヌが老人の娘と人違いをされて足止めされているイベントが発生します。ここでファラが仲裁に入るやり取りを見ます。
+          </RoundedItem>
         </div>
 
         <div className={styles.card}>
@@ -93,11 +92,10 @@ export default async function HomePage() {
           <EventCondition category="period">
             インフェリア港到着後 〜 バロール到着前まで
           </EventCondition>
-          <div className="mt-2">
-            <RoundedItem title="説明">
-              インフェリア港から定期連絡船に乗り込んだ際、船内でカトリーヌが船員に怒られているトラブルのイベントに遭遇します。
-            </RoundedItem>
-          </div>
+          <ResponsiveImage src="/subevents/catarine-3.jpg" />
+          <RoundedItem title="説明">
+            インフェリア港から定期連絡船に乗り込んだ際、船内でカトリーヌが船員に怒られているトラブルのイベントに遭遇します。
+          </RoundedItem>
         </div>
 
         <div className={styles.card}>
@@ -105,11 +103,10 @@ export default async function HomePage() {
           <EventCondition category="period">
             バロール到着後 〜 シャンバール到着前まで
           </EventCondition>
-          <div className="mt-2">
-            <RoundedItem title="説明">
-              バロールの町の本屋さんへ行くと、店内で熱心に本を読み込んでいるカトリーヌに遭遇します。
-            </RoundedItem>
-          </div>
+          <ResponsiveImage src="/subevents/catarine-4.jpg" />
+          <RoundedItem title="説明">
+            バロールの町の本屋さんへ行くと、店内で熱心に本を読み込んでいるカトリーヌに遭遇します。
+          </RoundedItem>
         </div>
 
         <div className={styles.card}>
@@ -117,11 +114,10 @@ export default async function HomePage() {
           <EventCondition category="period">
             シャンバール到着後 〜 火晶霊の谷到着前まで
           </EventCondition>
-          <div className="mt-2">
-            <RoundedItem title="説明">
-              シャンバールの防具屋さんへ行くと、店員から高価な服を強く勧められて困惑しているカトリーヌのイベントが発生します。
-            </RoundedItem>
-          </div>
+          <ResponsiveImage src="/subevents/catarine-5.jpg" />
+          <RoundedItem title="説明">
+            シャンバールの防具屋さんへ行くと、店員から高価な服を強く勧められて困惑しているカトリーヌのイベントが発生します。
+          </RoundedItem>
         </div>
 
         <div className={styles.card}>
@@ -129,16 +125,16 @@ export default async function HomePage() {
           <EventCondition category="period">
             火晶霊の谷到着後 〜 セレスティア突入前まで
           </EventCondition>
-          <div className="mt-2">
-            <RoundedItem title="説明">
-              レグルス道場を訪れると、カトリーヌがモンクたちに囲まれてしまっているイベントを目撃します。
-            </RoundedItem>
-          </div>
+          <ResponsiveImage src="/subevents/catarine-6.jpg" />
+          <RoundedItem title="説明">
+            レグルス道場を訪れると、カトリーヌがモンクたちに囲まれてしまっているイベントを目撃します。
+          </RoundedItem>
         </div>
       </Section>
 
       <section>
         <SectionTitle>イベントの結末と報酬</SectionTitle>
+        <ResponsiveImage src="/subevents/catarine-end.jpg" />
         <p className="mb-4">
           物語が進行してインフェリアへ戻ってきた後（あるいは特定の終盤タイミング）、カトリーヌの居場所を訪ねることでイベントが完結します。これまでの遭遇回数に応じて結果が分かれます。
         </p>
