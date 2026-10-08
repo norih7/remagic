@@ -15,6 +15,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import Section from "@/components/Section";
 import Tag from "@/components/Tag";
 import GuideList from "@/components/GuideList";
+import RoundedContainer from "@/components/RoundedContainer";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -72,16 +73,21 @@ export default async function HomePage() {
         </div>
         <div className="mb-8">
           <div className="mb-3">
-            <h3>ノームの集落</h3>
+            <h3>購入場所1: ノームの集落</h3>
             <Tag>おすすめです</Tag>
           </div>
-          <p>
-            「地晶霊の廃坑」にあるノームの里にいる小さいノームの食材屋でパープルソディを購入できます。チャットの小屋側のフィールドマップから地晶霊の廃坑に入り、下記マップのように進めばすぐノームの集落へ辿り着きます。ここでは一度に15個まとめ買いでき、飛行艇がなくても簡単に訪問できるためパープルソディの購入場所としておすすめです。
-          </p>
+          <div className="mb-4">
+            <ResponsiveImage src="/deeps/master-recipe-mine-shop.jpg" />
+            <p>
+              「地晶霊の廃坑」にあるノームの里にいる小さいノームの食材屋でパープルソディを購入できます。チャットの小屋側のフィールドマップから地晶霊の廃坑に入り、下記マップのように進めばすぐノームの集落へ辿り着きます。ここでは一度に15個まとめ買いでき、飛行艇がなくても簡単に訪問できるためパープルソディの購入場所としておすすめです。
+            </p>
+          </div>
+          <h4>ノームの集落への行き方</h4>
+          <ResponsiveImage src="/deeps/master-recipe-mine.jpg" />
           <ResponsiveImage src="/maps/mine-gnome-map.jpg" />
         </div>
         <div className="mb-8">
-          <h3>ねこにんの里</h3>
+          <h3>購入場所2: ねこにんの里</h3>
           <ResponsiveImage src="/extras/secret-town-nekonin-purple.jpg" />
           <p>
             ねこにんの里の入り口にいるねこにんからパープルソディを購入できます。ただし1個ずつ購入することしかできません。
@@ -93,11 +99,13 @@ export default async function HomePage() {
       </Section>
       <Section>
         <SectionTitle>おすすめマスター料理</SectionTitle>
-        <h3>マーボーカレー</h3>
-        <ResponsiveImage src="/systems/master-recipe-mabo-curry.jpg" />
-        <p>
-          なんといってもパーティ全員のTPを+1してくれる特殊効果が魅力的。効果量は少なく見えますが、パーティ全員に効果があるため強力です。
-        </p>
+        <RoundedContainer>
+          <h3>マーボーカレー</h3>
+          <ResponsiveImage src="/systems/master-recipe-mabo-curry.jpg" />
+          <p>
+            なんといってもパーティ全員のTPを+1してくれる特殊効果が魅力的。効果量は少なく見えますが、パーティ全員に効果があるため強力です。
+          </p>
+        </RoundedContainer>
       </Section>
       <Section>
         <SectionTitle>マスター料理一覧データ</SectionTitle>
