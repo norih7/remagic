@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
@@ -9,6 +8,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -29,9 +29,9 @@ export default async function HomePage() {
   const itemsData = await getLocationItemsData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           隠しタウン「ねこにんの里」と「晶霊温泉」の攻略情報ページです。それぞれのタウンへの行き方、マスター料理の必須食材「パープルソディ」の購入方法、チャットの特技「パラライボール」を習得できる温泉イベントなど、役立つサブイベントの情報をまとめています。
         </p>
@@ -110,5 +110,6 @@ export default async function HomePage() {
         </div> */}
       </Section>
     </article>
+    </Main>
   );
 }

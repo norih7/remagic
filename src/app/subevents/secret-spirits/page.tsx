@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import RoundedContainer from "@/components/RoundedContainer";
@@ -9,6 +8,7 @@ import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -27,10 +27,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         エターニアにはサブイベントにて契約できる大晶霊が存在します。強力な晶霊術のフリンジが可能となるので是非とも契約を目指しましょう。
       </PageSummary>
 
@@ -93,5 +92,6 @@ export default async function HomePage() {
         </RoundedContainer>
       </Section>
     </article>
+    </Main>
   );
 }

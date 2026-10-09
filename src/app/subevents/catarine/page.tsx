@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
@@ -9,6 +8,7 @@ import Section from "@/components/Section";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,153 +32,156 @@ export default async function HomePage() {
   };
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
-        <p>
-          ファラの限定称号<strong>「あいのネゴシエーター」</strong>
-          を獲得できる隠しサブイベント「カトリーヌの恋愛イベント」の完全攻略ページです。ゲーム序盤から中盤にかけて非常に厳しい時限要素があり、見逃さずにベストエンドを達成するための全遭遇ポイントを解説します。
-        </p>
-      </PageSummary>
+    <Main title={title}>
+      <article>
+        <PageSummary>
+          <p>
+            ファラの限定称号<strong>「あいのネゴシエーター」</strong>
+            を獲得できる隠しサブイベント「カトリーヌの恋愛イベント」の完全攻略ページです。ゲーム序盤から中盤にかけて非常に厳しい時限要素があり、見逃さずにベストエンドを達成するための全遭遇ポイントを解説します。
+          </p>
+        </PageSummary>
 
-      <Section>
-        <SectionTitle>カトリーヌの恋愛イベントの概要</SectionTitle>
-        <EventCondition category="period">
-          <Tag>時限イベント</Tag>ミンツ到着後から発生
-        </EventCondition>
-        <p>
-          インフェリア各地を巡るピンク髪の女性「カトリーヌ」を追うサブイベントです。ストーリーの進行に合わせてどれだけ彼女に遭遇したかの回数によって最終的な結末が大きく変化し、すべてのイベント（全6回）を目撃してハッピーエンドを迎えることで、ファラの称号「あいのネゴシエーター」を獲得できます。
-        </p>
-
-        <Information type="warning" title="プレイ時の注意点">
-          このイベントを完全クリアしても強力な武具やストーリー進行に必須のアイテム等は入手できません。あくまでファラの称号収集要素となるため、称号コンプリートにこだわりのない方はスルーしてもゲーム攻略上の支障はありません。また、
-          <strong>
-            一度セレスティア世界へ渡ってしまうと一切発生しなくなる時限イベント
-          </strong>
-          なので注意しましょう。
-        </Information>
-      </Section>
-
-      <Section>
-        <SectionTitle>全6回の遭遇場所と発生時期一覧</SectionTitle>
-        <p className="mb-4">
-          イベントはそれぞれの期間（ストーリーの区切り）を過ぎてしまうと二度と見られなくなります。こまめに各地を訪れてカトリーヌを探しましょう。
-        </p>
-
-        <div className={styles.card}>
-          <h3 className={styles.header}>No.1 ミンツの運動場</h3>
+        <Section>
+          <SectionTitle>カトリーヌの恋愛イベントの概要</SectionTitle>
           <EventCondition category="period">
-            ミンツ到着後 〜 モルル到着前まで
+            <Tag>時限イベント</Tag>ミンツ到着後から発生
           </EventCondition>
-          <ResponsiveImage src="/subevents/catarine-1.jpg" />
-          <RoundedItem title="説明">
-            ミンツの運動場前へ行くと、ピンク髪の学生「カトリーヌ」が佇んでいます。彼女がこれから王都へ向かうというイベントを目撃します。
-          </RoundedItem>
-        </div>
+          <p>
+            インフェリア各地を巡るピンク髪の女性「カトリーヌ」を追うサブイベントです。ストーリーの進行に合わせてどれだけ彼女に遭遇したかの回数によって最終的な結末が大きく変化し、すべてのイベント（全6回）を目撃してハッピーエンドを迎えることで、ファラの称号「あいのネゴシエーター」を獲得できます。
+          </p>
 
-        <div className={styles.card}>
-          <h3 className={styles.header}>No.2 モルルの食材屋</h3>
-          <EventCondition category="period">
-            モルル到着後 〜 インフェリア港（定期連絡船乗船）到着前まで
-          </EventCondition>
-          <ResponsiveImage src="/subevents/catarine-2.jpg" />
-          <RoundedItem title="説明">
-            モルルのツタを登った先にある食材屋さんへ行くと、カトリーヌが老人の娘と人違いをされて足止めされているイベントが発生します。ここでファラが仲裁に入るやり取りを見ます。
-          </RoundedItem>
-        </div>
+          <Information type="warning" title="プレイ時の注意点">
+            このイベントを完全クリアしても強力な武具やストーリー進行に必須のアイテム等は入手できません。あくまでファラの称号収集要素となるため、称号コンプリートにこだわりのない方はスルーしてもゲーム攻略上の支障はありません。また、
+            <strong>
+              一度セレスティア世界へ渡ってしまうと一切発生しなくなる時限イベント
+            </strong>
+            なので注意しましょう。
+          </Information>
+        </Section>
 
-        <div className={styles.card}>
-          <h3 className={styles.header}>No.3 定期連絡船</h3>
-          <EventCondition category="period">
-            インフェリア港到着後 〜 バロール到着前まで
-          </EventCondition>
-          <ResponsiveImage src="/subevents/catarine-3.jpg" />
-          <RoundedItem title="説明">
-            インフェリア港から定期連絡船に乗り込んだ際、船内でカトリーヌが船員に怒られているトラブルのイベントに遭遇します。
-          </RoundedItem>
-        </div>
+        <Section>
+          <SectionTitle>全6回の遭遇場所と発生時期一覧</SectionTitle>
+          <p className="mb-4">
+            イベントはそれぞれの期間（ストーリーの区切り）を過ぎてしまうと二度と見られなくなります。こまめに各地を訪れてカトリーヌを探しましょう。
+          </p>
 
-        <div className={styles.card}>
-          <h3 className={styles.header}>No.4 バロールの本屋</h3>
-          <EventCondition category="period">
-            バロール到着後 〜 シャンバール到着前まで
-          </EventCondition>
-          <ResponsiveImage src="/subevents/catarine-4.jpg" />
-          <RoundedItem title="説明">
-            バロールの町の本屋さんへ行くと、店内で熱心に本を読み込んでいるカトリーヌに遭遇します。
-          </RoundedItem>
-        </div>
+          <div className={styles.card}>
+            <h3 className={styles.header}>No.1 ミンツの運動場</h3>
+            <EventCondition category="period">
+              ミンツ到着後 〜 モルル到着前まで
+            </EventCondition>
+            <ResponsiveImage src="/subevents/catarine-1.jpg" />
+            <RoundedItem title="説明">
+              ミンツの運動場前へ行くと、ピンク髪の学生「カトリーヌ」が佇んでいます。彼女がこれから王都へ向かうというイベントを目撃します。
+            </RoundedItem>
+          </div>
 
-        <div className={styles.card}>
-          <h3 className={styles.header}>No.5 シャンバールの防具屋</h3>
-          <EventCondition category="period">
-            シャンバール到着後 〜 火晶霊の谷到着前まで
-          </EventCondition>
-          <ResponsiveImage src="/subevents/catarine-5.jpg" />
-          <RoundedItem title="説明">
-            シャンバールの防具屋さんへ行くと、店員から高価な服を強く勧められて困惑しているカトリーヌのイベントが発生します。
-          </RoundedItem>
-        </div>
+          <div className={styles.card}>
+            <h3 className={styles.header}>No.2 モルルの食材屋</h3>
+            <EventCondition category="period">
+              モルル到着後 〜 インフェリア港（定期連絡船乗船）到着前まで
+            </EventCondition>
+            <ResponsiveImage src="/subevents/catarine-2.jpg" />
+            <RoundedItem title="説明">
+              モルルのツタを登った先にある食材屋さんへ行くと、カトリーヌが老人の娘と人違いをされて足止めされているイベントが発生します。ここでファラが仲裁に入るやり取りを見ます。
+            </RoundedItem>
+          </div>
 
-        <div className={styles.card}>
-          <h3 className={styles.header}>No.6 レグルス道場</h3>
-          <EventCondition category="period">
-            火晶霊の谷到着後 〜 セレスティア突入前まで
-          </EventCondition>
-          <ResponsiveImage src="/subevents/catarine-6.jpg" />
-          <RoundedItem title="説明">
-            レグルス道場を訪れると、カトリーヌがモンクたちに囲まれてしまっているイベントを目撃します。
-          </RoundedItem>
-        </div>
-      </Section>
+          <div className={styles.card}>
+            <h3 className={styles.header}>No.3 定期連絡船</h3>
+            <EventCondition category="period">
+              インフェリア港到着後 〜 バロール到着前まで
+            </EventCondition>
+            <ResponsiveImage src="/subevents/catarine-3.jpg" />
+            <RoundedItem title="説明">
+              インフェリア港から定期連絡船に乗り込んだ際、船内でカトリーヌが船員に怒られているトラブルのイベントに遭遇します。
+            </RoundedItem>
+          </div>
 
-      <section>
-        <SectionTitle>イベントの結末と報酬</SectionTitle>
-        <ResponsiveImage src="/subevents/catarine-end.jpg" />
-        <p className="mb-4">
-          物語が進行してインフェリアへ戻ってきた後（あるいは特定の終盤タイミング）、カトリーヌの居場所を訪ねることでイベントが完結します。これまでの遭遇回数に応じて結果が分かれます。
-        </p>
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr>
-                <th className="w-40 p-2 border bg-slate-50 text-center">
-                  遭遇回数
-                </th>
-                <th className="p-2 border bg-slate-50 text-left">
-                  結末とカトリーヌの行方
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="p-3 border text-center font-bold">2回以内</td>
-                <td className="p-3 border !text-left">
-                  カトリーヌは国立天文台にいますが、恋人のピエールとは破局してしまっているバッドエンドとなります。
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 border text-center font-bold">3回 〜 5回</td>
-                <td className="p-3 border !text-left">
-                  カトリーヌはバロールの酒屋に滞在するノーマル寄りの結末となります。
-                </td>
-              </tr>
-              <tr>
-                <td className="p-3 border text-center font-bold">
-                  すべて（6回）
-                </td>
-                <td className="p-3 border !text-left">
-                  カトリーヌは国立天文台におり、恋人のピエールとヨリを戻して一緒に働いている
-                  <strong>ハッピーエンド</strong>
-                  を迎えます。さらにイベント報酬として、
-                  <strong>ファラの称号「あいのネゴシエーター」</strong>
-                  が手に入ります！
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </article>
+          <div className={styles.card}>
+            <h3 className={styles.header}>No.4 バロールの本屋</h3>
+            <EventCondition category="period">
+              バロール到着後 〜 シャンバール到着前まで
+            </EventCondition>
+            <ResponsiveImage src="/subevents/catarine-4.jpg" />
+            <RoundedItem title="説明">
+              バロールの町の本屋さんへ行くと、店内で熱心に本を読み込んでいるカトリーヌに遭遇します。
+            </RoundedItem>
+          </div>
+
+          <div className={styles.card}>
+            <h3 className={styles.header}>No.5 シャンバールの防具屋</h3>
+            <EventCondition category="period">
+              シャンバール到着後 〜 火晶霊の谷到着前まで
+            </EventCondition>
+            <ResponsiveImage src="/subevents/catarine-5.jpg" />
+            <RoundedItem title="説明">
+              シャンバールの防具屋さんへ行くと、店員から高価な服を強く勧められて困惑しているカトリーヌのイベントが発生します。
+            </RoundedItem>
+          </div>
+
+          <div className={styles.card}>
+            <h3 className={styles.header}>No.6 レグルス道場</h3>
+            <EventCondition category="period">
+              火晶霊の谷到着後 〜 セレスティア突入前まで
+            </EventCondition>
+            <ResponsiveImage src="/subevents/catarine-6.jpg" />
+            <RoundedItem title="説明">
+              レグルス道場を訪れると、カトリーヌがモンクたちに囲まれてしまっているイベントを目撃します。
+            </RoundedItem>
+          </div>
+        </Section>
+
+        <section>
+          <SectionTitle>イベントの結末と報酬</SectionTitle>
+          <ResponsiveImage src="/subevents/catarine-end.jpg" />
+          <p className="mb-4">
+            物語が進行してインフェリアへ戻ってきた後（あるいは特定の終盤タイミング）、カトリーヌの居場所を訪ねることでイベントが完結します。これまでの遭遇回数に応じて結果が分かれます。
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr>
+                  <th className="w-40 p-2 border bg-slate-50 text-center">
+                    遭遇回数
+                  </th>
+                  <th className="p-2 border bg-slate-50 text-left">
+                    結末とカトリーヌの行方
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="p-3 border text-center font-bold">2回以内</td>
+                  <td className="p-3 border !text-left">
+                    カトリーヌは国立天文台にいますが、恋人のピエールとは破局してしまっているバッドエンドとなります。
+                  </td>
+                </tr>
+                <tr>
+                  <td className="p-3 border text-center font-bold">
+                    3回 〜 5回
+                  </td>
+                  <td className="p-3 border !text-left">
+                    カトリーヌはバロールの酒屋に滞在するノーマル寄りの結末となります。
+                  </td>
+                </tr>
+                <tr>
+                  <td className="p-3 border text-center font-bold">
+                    すべて（6回）
+                  </td>
+                  <td className="p-3 border !text-left">
+                    カトリーヌは国立天文台におり、恋人のピエールとヨリを戻して一緒に働いている
+                    <strong>ハッピーエンド</strong>
+                    を迎えます。さらにイベント報酬として、
+                    <strong>ファラの称号「あいのネゴシエーター」</strong>
+                    が手に入ります！
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </article>
+    </Main>
   );
 }

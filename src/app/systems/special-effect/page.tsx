@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import RoundedContainer from "@/components/RoundedContainer";
@@ -12,6 +11,7 @@ import Image from "next/image";
 import GuideList from "@/components/GuideList";
 import { systemLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,10 +30,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           装備すると特殊効果がある装備品を紹介します。一部の装備品には隠し効果で強力なアクセサリと同じ効果を得ることができるものがあります。
           例えば防具であればアクセサリの2枠を消費しないため非常に強力な効果となります。
@@ -291,5 +290,6 @@ export default async function HomePage() {
         </RoundedContainer>
       </Section>
     </article>
+    </Main>
   );
 }

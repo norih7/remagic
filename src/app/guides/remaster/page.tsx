@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
@@ -9,6 +9,7 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import Image from "next/image";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 export const dynamic = "force-static";
 
@@ -26,9 +27,9 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         テイルズオブエターニアリマスターの変更点やリマスター向け攻略情報をまとめます
       </PageSummary>
 
@@ -233,5 +234,6 @@ export default function Page() {
         />
       </Section>
     </article>
+    </Main>
   );
 }

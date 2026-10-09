@@ -1,7 +1,7 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import Main from "@/components/SiteLayout/Main";
 import {
   getEnemyData,
   getEnemyItemsData,
@@ -123,9 +123,9 @@ export default async function HomePage() {
   const list = createList(enemyData, enemyItemData);
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           エターニアのモンスター覧データを掲載しています。出現場所や耐性などは詳細ページをご確認ください。
         </p>
@@ -139,5 +139,6 @@ export default async function HomePage() {
         {list}
       </Section>
     </article>
+    </Main>
   );
 }

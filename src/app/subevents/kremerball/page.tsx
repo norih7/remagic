@@ -1,11 +1,11 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import CardList from "@/components/CardLIst";
 import Information from "@/components/Information";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -24,9 +24,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         ミンツでプレイできるミニゲーム「クレーメルボール」について解説しています。このイベントをやり込むとリッドの称号を得ることができます。
         <Information type="warning" title="注意点">
           このミニゲームで得られるのはリッドの称号のみです。特別なアイテムなどは何もないため称号にこだわりのない方はスキップしても問題ありません。
@@ -77,5 +77,6 @@ export default async function HomePage() {
         </table>
       </Section>
     </article>
+    </Main>
   );
 }

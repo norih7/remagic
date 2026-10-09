@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -6,6 +6,7 @@ import SkillPropertyList from "@/components/SkillPropertyList";
 import { Skill } from "@/components/SkillPropertyList";
 import { skillLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -87,10 +88,9 @@ export default async function HomePage() {
   ] as Skill[];
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <div className="mb-2">
           <p>
             豪快な銃撃を得意とするフォッグの特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細情報については、専用の攻略ガイドページをご用意していますのでそちらをご確認ください。
@@ -118,5 +118,6 @@ export default async function HomePage() {
         <SkillPropertyList skills={skills} />
       </Section>
     </article>
+    </Main>
   );
 }

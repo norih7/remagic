@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import EventCondition from "@/components/EventCondition";
 import SectionTitle from "@/components/SectionTitle";
@@ -12,6 +11,7 @@ import Image from "next/image";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import GuideList from "@/components/GuideList";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,10 +30,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           エターニアの戦闘システムについて解説します。マニュアル操作をできるようにするイベントや他のシリーズにあるバックステップの操作、アイテムドロップ率がアップするテクニカルスマッシュについて解説しています。
         </p>
@@ -196,5 +195,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

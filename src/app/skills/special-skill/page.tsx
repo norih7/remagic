@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -12,6 +12,7 @@ import Elements from "@/components/Elements";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -166,10 +167,9 @@ export default async function HomePage() {
   });
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <div className="mb-2">
           <p>
             リッドとファラが使える秘奥義の条件や発動方法、特徴をまとめています
@@ -204,5 +204,6 @@ export default async function HomePage() {
         {farthList}
       </section> */}
     </article>
+    </Main>
   );
 }

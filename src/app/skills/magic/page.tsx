@@ -1,11 +1,11 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import SectionTitle from "@/components/SectionTitle";
 import { Skill } from "@/components/SkillPropertyList";
 import SkillPropertyList from "@/components/SkillPropertyList";
 import { skillLinks } from "@/constants";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -535,14 +535,15 @@ export default async function HomePage() {
   ] as Skill[];
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      {/* <h2>おすすめの晶霊術</h2>
+    <Main title={title}>
+      <article>
+{/* <h2>おすすめの晶霊術</h2>
       <div className="advice">
         <p>準備中</p>
       </div> */}
       <SectionTitle type="skill">晶霊術一覧</SectionTitle>
       <SkillPropertyList skills={skills} />
     </article>
+    </Main>
   );
 }

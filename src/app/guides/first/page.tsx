@@ -1,10 +1,11 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
 import { guideLinks } from "@/constants";
 import GuideList from "@/components/GuideList";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -23,9 +24,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           序盤でやっておきたいのは、戦闘の安定と成長のスピードを上げることです。少しの準備で、後半の難所に突入する時点で大きく楽になります。
         </p>
@@ -162,5 +163,6 @@ export default async function HomePage() {
         />
       </Section>
     </article>
+    </Main>
   );
 }

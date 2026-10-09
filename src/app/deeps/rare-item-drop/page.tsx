@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
@@ -7,6 +7,7 @@ import { deepLinks } from "@/constants";
 import RoundedContainer from "@/components/RoundedContainer";
 import GuideList from "@/components/GuideList";
 import Tag from "@/components/Tag";
+import Main from "@/components/SiteLayout/Main";
 import {
   getEnemyItemsData,
   getItemsData,
@@ -86,9 +87,9 @@ export default async function HomePage() {
   });
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         敵がドロップするアイテムでもレアなアイテムや装備品を紹介します。どれも何らかの使い道があったり、強力な装備なのでコンプリートを目指しましょう。
       </PageSummary>
 
@@ -393,5 +394,6 @@ export default async function HomePage() {
         </RoundedContainer>
       </section> */}
     </article>
+    </Main>
   );
 }

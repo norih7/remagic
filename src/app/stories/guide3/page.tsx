@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import LocationItems from "@/components/LocationItems";
 import LocationRecipes from "@/components/LocationRecipes";
@@ -16,6 +16,7 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import { storyLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,9 +40,9 @@ export default async function HomePage() {
   const subEventData = await getLocationSubEventsData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           セレスティアへ到着した後のストーリーを徹底攻略！「地晶霊の廃坑」や「チャットの小屋」といった難易度の高いダンジョンが連続するため、本記事のマップや攻略手順を参考に進めていきましょう。
         </p>
@@ -458,5 +459,6 @@ export default async function HomePage() {
         <LocationSubEvents data={subEventData} locationIds={[23]} />
       </Section>
     </article>
+    </Main>
   );
 }

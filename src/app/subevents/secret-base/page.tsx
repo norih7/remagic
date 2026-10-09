@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import RoundedContainer from "@/components/RoundedContainer";
@@ -12,6 +11,7 @@ import LocationItems from "@/components/LocationItems";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -30,9 +30,9 @@ export const metadata = {
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         インフェリアにあるアイフリードの隠しアジトを紹介します。
       </PageSummary>
       <Section>
@@ -81,5 +81,6 @@ export default async function HomePage() {
         </RoundedContainer>
       </Section>
     </article>
+    </Main>
   );
 }

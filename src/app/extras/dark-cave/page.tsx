@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
@@ -10,6 +9,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import { extraLinks } from "@/constants";
 import EventCondition from "@/components/EventCondition";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -31,9 +31,9 @@ export default async function HomePage() {
   const lensesData = await getLocationLensesData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           闇の大晶霊「シャドウ」と契約を果たすために訪れる隠しダンジョン「闇の洞窟」の攻略情報ページです。ダンジョンへのアクセス方法から、内部でのギミック解除手順、ボス戦の対策、獲得できる貴重なアイテムやチャットレンズのデータを一覧で解説します。
         </p>
@@ -93,5 +93,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

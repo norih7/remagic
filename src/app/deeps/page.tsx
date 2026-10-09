@@ -1,7 +1,7 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import ContentLinks from "@/components/ContentLinks";
 import { deepLinks, categoryLinks } from "@/constants";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -20,9 +20,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <div className="mb-8">
+    <Main title={title}>
+      <article>
+<div className="mb-8">
         <h2 className="text-lg font-bold mb-2 !border-none">やりこみ</h2>
         <p className="text-slate-1000">
           ブルーアース、薬草集め、アイテムドロップ、レベル上げなどのやり込み解説です。
@@ -30,5 +30,6 @@ export default async function HomePage() {
       </div>
       <ContentLinks list={Object.values(deepLinks)} />
     </article>
+    </Main>
   );
 }

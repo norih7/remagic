@@ -1,8 +1,8 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import ContentLinks from "@/components/ContentLinks";
 import { storyLinks } from "@/constants";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -16,9 +16,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <div className="mb-8">
+    <Main title={title}>
+      <article>
+<div className="mb-8">
         <h2 className="text-lg font-bold mb-2 !border-none">ストーリー攻略</h2>
         <p className="text-slate-1000">
           ラシュアンから水晶霊の河、セレスティア、バリル城、シゼル城まで、序盤から終盤までのストーリー攻略をマップ付きで解説しています。
@@ -26,5 +26,6 @@ export default async function HomePage() {
       </div>
       <ContentLinks list={Object.values(storyLinks)} />
     </article>
+    </Main>
   );
 }

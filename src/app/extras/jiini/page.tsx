@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
@@ -14,6 +13,7 @@ import CardList from "@/components/CardLIst";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,9 +40,9 @@ export default async function HomePage() {
     list: "bg-gray-50 border border-gray-200 rounded-lg py-2 px-3 transition-colors text-sm",
   };
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           隠しタウン「ジイニ」の攻略情報について、行き方や昼夜の仕組み、オークションでの効率的なジイニ稼ぎ（アイテム出品・リセット手法）、および購入できるアイテムのステップ一覧を網羅的に解説します。
         </p>
@@ -266,5 +266,6 @@ export default async function HomePage() {
         </RoundedContainer>
       </Section>
     </article>
+    </Main>
   );
 }

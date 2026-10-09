@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import LocationItems from "@/components/LocationItems";
 import LocationRecipes from "@/components/LocationRecipes";
@@ -16,6 +16,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import GuideList from "@/components/GuideList";
 import { storyLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,10 +40,9 @@ export default async function HomePage() {
   const subEventData = await getLocationSubEventsData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           大晶霊セルシウスとの出会いから、物語が急展開を迎えるバリル城までの道のりを完全攻略！難所となる「雷晶霊の遺跡」や「バリル城」は詳細なマップ付きでスムーズな突破をサポートします。
         </p>
@@ -412,5 +412,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

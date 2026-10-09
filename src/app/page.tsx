@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import ContentLinks from "@/components/ContentLinks";
 import { storyLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
@@ -7,6 +7,7 @@ import { skillLinks } from "@/constants";
 import { extraLinks } from "@/constants";
 import SectionTitle from "@/components/SectionTitle";
 import Link from "next/link";
+import Main from "@/components/SiteLayout/Main";
 
 // 攻略記事やカテゴリのダミーデータ
 type Link = {
@@ -46,9 +47,8 @@ export async function generateMetadata() {
 export default async function HomePage() {
   const subTitle = "エターニア攻略トップ";
   return (
-    <div style={{ padding: "0px" }}>
-      <SetPageTitle title={subTitle} />
-      <main className="space-y-12">
+    <Main title={subTitle}>
+      <article className="space-y-12">
         <h2 className="text-lg font-bold mb-2 !border-none">
           テイルズオブエターニア攻略
         </h2>
@@ -608,7 +608,7 @@ export default async function HomePage() {
             </ul>
           </div>
         </section>
-      </main>
-    </div>
+      </article>
+    </Main>
   );
 }

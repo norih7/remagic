@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import { Item } from "@/lib/db";
@@ -6,6 +6,7 @@ import { systemLinks } from "@/constants";
 import { getItemsData } from "@/lib/db";
 import ItemList from "@/components/ItemList";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -52,9 +53,9 @@ export default async function HomePage() {
     );
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           エターニアの防具アイテム一覧データを掲載しています。購入場所、入手可能ダンジョンなどは詳細ページにて一覧を掲載しています。
         </p>
@@ -127,5 +128,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

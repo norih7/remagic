@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
@@ -11,6 +10,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import Information from "@/components/Information";
 import { extraLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,9 +32,9 @@ export default async function HomePage() {
   const lensesData = await getLocationLensesData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         飛行艇の入手に欠かせないキーアイテム「ひかりのたま」が手に入る、インフェリアの隠しダンジョン「アイフリードの墓」の攻略情報をまとめました。
       </PageSummary>
 
@@ -126,5 +126,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

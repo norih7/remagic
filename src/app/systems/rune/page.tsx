@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import EventCondition from "@/components/EventCondition";
 import SectionTitle from "@/components/SectionTitle";
@@ -9,6 +8,7 @@ import Information from "@/components/Information";
 import { getLocationItemsData } from "@/lib/db";
 import { systemLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -445,9 +445,9 @@ export default async function HomePage() {
     });
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>アイテムを別アイテムに変化させるルーンボトルについて説明します。</p>
       </PageSummary>
       {/* <div className="mb-12">
@@ -532,5 +532,6 @@ export default async function HomePage() {
         <RunePropertyList runes={runeItems} />
       </section>
     </article>
+    </Main>
   );
 }

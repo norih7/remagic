@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import RoundedContainer from "@/components/RoundedContainer";
@@ -8,6 +7,7 @@ import EventCondition from "@/components/EventCondition";
 import Information from "@/components/Information";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -29,9 +29,9 @@ export default async function HomePage() {
   const questionStyle = "border-b pb-2 mb-2";
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           チャットがストーリーの裏で習得していく強力な特技の数々と、その習得に必要なサブイベントの発生条件を網羅した解説ページです。後半の難関である「エターナルスロー」習得時に出題される全10問のクイズ正解一覧も掲載しています。
         </p>
@@ -209,5 +209,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

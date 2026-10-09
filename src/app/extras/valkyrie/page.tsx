@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import Image from "next/image";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
@@ -11,6 +10,7 @@ import ValkyrieButton from "@/components/ValkyrieButton";
 import Information from "@/components/Information";
 import EventCondition from "@/components/EventCondition";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -43,9 +43,9 @@ export default async function HomePage() {
   const itemsData = await getLocationItemsData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           ナムコの名作『ワルキューレの伝説』をモチーフにしたBGMが響き渡る隠しダンジョン「きらめきの塔」の攻略情報ページです。飛行艇によるアクセス方法や、各フロアを悩ませる難解な仕掛けの数々、ワルキューレとのタイマン勝負のコツ、入手できる強力な装備やアイテムのデータを徹底解説します。
         </p>
@@ -189,5 +189,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

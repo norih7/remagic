@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
@@ -7,6 +7,7 @@ import { systemLinks, itemTypeMap } from "@/constants";
 import RoundedContainer from "@/components/RoundedContainer";
 import GuideList from "@/components/GuideList";
 import Tag from "@/components/Tag";
+import Main from "@/components/SiteLayout/Main";
 import {
   getEnemyItemsData,
   getItemsData,
@@ -91,9 +92,9 @@ export default async function HomePage() {
   });
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         エターニアの敵がドロップするアイテム（消費アイテム、装備品）の一覧ページです。
       </PageSummary>
 
@@ -102,5 +103,6 @@ export default async function HomePage() {
         {itemDropList}
       </Section>
     </article>
+    </Main>
   );
 }

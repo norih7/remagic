@@ -18,11 +18,11 @@ import {
 } from "react-icons/lu";
 import { TbMoneybag } from "react-icons/tb";
 import { Metadata } from "next";
-import SetPageTitle from "@/components/SetPageTitle";
 import { enemyTypeMap, elementMap } from "@/constants";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import Tag from "@/components/Tag";
+import Main from "@/components/SiteLayout/Main";
 import Link from "next/link";
 
 // 静的生成（SSG）用：全アイテムのIDをURLとして登録する
@@ -132,53 +132,56 @@ export default async function ItemDetailPage({
   const title = `モンスターデータ: ${enemy.name}`;
 
   return (
-    <section>
-      <SetPageTitle title={title} />
-      <div className="mb-3">
-        <SectionTitle>{enemy.name}</SectionTitle>
-        <Tag>{enemyTypeMap[enemy.type as keyof typeof enemyTypeMap]}</Tag>
-      </div>
-      <RoundedContainer>
-        <div className="grid grid-cols-2 gap-3">
-          <RoundedItem title="HP">{enemy.hp}</RoundedItem>
-          <RoundedItem title="経験値">{enemy.exp}</RoundedItem>
-          <RoundedItem title="獲得ガルド">{enemy.gald}</RoundedItem>
-          <RoundedItem title="攻撃属性">
-            <div className="flex flex-wrap gap-2">
-              <Tag element={enemy.attack}>{elementMap[enemy.attack].name}</Tag>
-            </div>
-          </RoundedItem>
-          <RoundedItem title="弱点属性">
-            <div className="flex flex-wrap gap-2">
-              {convertElementMap(enemy.weak)}
-            </div>
-          </RoundedItem>
-          <RoundedItem title="攻撃耐性">
-            <div className="flex flex-wrap gap-2">
-              {convertElementMap(enemy.resist)}
-            </div>
-          </RoundedItem>
+    <Main title={title}>
+      <article>
+        <div className="mb-3">
+          <SectionTitle>{enemy.name}</SectionTitle>
+          <Tag>{enemyTypeMap[enemy.type as keyof typeof enemyTypeMap]}</Tag>
         </div>
-      </RoundedContainer>
+        <RoundedContainer>
+          <div className="grid grid-cols-2 gap-3">
+            <RoundedItem title="HP">{enemy.hp}</RoundedItem>
+            <RoundedItem title="経験値">{enemy.exp}</RoundedItem>
+            <RoundedItem title="獲得ガルド">{enemy.gald}</RoundedItem>
+            <RoundedItem title="攻撃属性">
+              <div className="flex flex-wrap gap-2">
+                <Tag element={enemy.attack}>
+                  {elementMap[enemy.attack].name}
+                </Tag>
+              </div>
+            </RoundedItem>
+            <RoundedItem title="弱点属性">
+              <div className="flex flex-wrap gap-2">
+                {convertElementMap(enemy.weak)}
+              </div>
+            </RoundedItem>
+            <RoundedItem title="攻撃耐性">
+              <div className="flex flex-wrap gap-2">
+                {convertElementMap(enemy.resist)}
+              </div>
+            </RoundedItem>
+          </div>
+        </RoundedContainer>
 
-      <RoundedContainer>
-        <h3 className={headerStyle}>
-          <LuGem className="mr-1" />
-          アイテムドロップ
-        </h3>
-        <ul className="grid grid-cols-2 gap-3">{dropInfo}</ul>
-      </RoundedContainer>
-      <RoundedContainer>
-        <h3 className={headerStyle}>
-          <LuGem className="mr-1" />
-          盗めるアイテム
-        </h3>
-        <ul className="grid grid-cols-2 gap-3">{stealInfo}</ul>
-      </RoundedContainer>
-      <RoundedContainer>
-        <h3 className={headerStyle}>出現場所</h3>
-        <ul className="grid grid-cols-2 gap-3">{locationInfo}</ul>
-      </RoundedContainer>
-    </section>
+        <RoundedContainer>
+          <h3 className={headerStyle}>
+            <LuGem className="mr-1" />
+            アイテムドロップ
+          </h3>
+          <ul className="grid grid-cols-2 gap-3">{dropInfo}</ul>
+        </RoundedContainer>
+        <RoundedContainer>
+          <h3 className={headerStyle}>
+            <LuGem className="mr-1" />
+            盗めるアイテム
+          </h3>
+          <ul className="grid grid-cols-2 gap-3">{stealInfo}</ul>
+        </RoundedContainer>
+        <RoundedContainer>
+          <h3 className={headerStyle}>出現場所</h3>
+          <ul className="grid grid-cols-2 gap-3">{locationInfo}</ul>
+        </RoundedContainer>
+      </article>
+    </Main>
   );
 }

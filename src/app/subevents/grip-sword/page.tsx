@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
@@ -10,6 +9,7 @@ import { subeventLinks } from "@/constants";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,9 +32,9 @@ export default async function HomePage() {
     header: "text-[1rem]",
   };
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         アイテム「スマッシュマント」を入手できるグリップソート探しについて解説。イベントには時間制限がありませんが、スマッシュマントは非常に有用なアクセサリなので王都インフェリア到着後すぐにやっておくことを推奨します。
       </PageSummary>
       <Section>
@@ -87,5 +87,6 @@ export default async function HomePage() {
         </Information>
       </Section>
     </article>
+    </Main>
   );
 }

@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -7,6 +7,7 @@ import { Skill } from "@/components/SkillPropertyList";
 import Information from "@/components/Information";
 import { skillLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -309,10 +310,9 @@ export default async function HomePage() {
   ] as Skill[];
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <div className="mb-2">
           <p>
             主人公リッドが習得するすべての特技と奥義の一覧ページです。スキルの前提となる「斬レベル」や「突レベル」の仕組みの解説は専用の別ページをご用意していますのでそちらをご確認ください。
@@ -337,5 +337,6 @@ export default async function HomePage() {
         <SkillPropertyList skills={skills} />
       </Section>
     </article>
+    </Main>
   );
 }

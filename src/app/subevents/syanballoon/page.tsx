@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
@@ -11,6 +10,7 @@ import GifPlayer from "@/components/GifPlayer";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -28,9 +28,9 @@ export const metadata = {
 };
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         シャンバールで行なわれているミニゲーム「シャンバルーン」についての説明です。このイベントではリッドの称号や特殊なアイテムを入手できます。
       </PageSummary>
       <Section>
@@ -192,5 +192,6 @@ export default async function HomePage() {
         </RoundedContainer>
       </Section>
     </article>
+    </Main>
   );
 }

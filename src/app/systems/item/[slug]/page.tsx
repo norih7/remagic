@@ -17,9 +17,9 @@ import {
 } from "react-icons/lu";
 import { TbMoneybag } from "react-icons/tb";
 import { Metadata } from "next";
-import SetPageTitle from "@/components/SetPageTitle";
 import { itemTypeMap } from "@/constants";
 import RoundedContainer from "@/components/RoundedContainer";
+import Main from "@/components/SiteLayout/Main";
 import Link from "next/link";
 
 // 静的生成（SSG）用：全アイテムのIDをURLとして登録する
@@ -148,64 +148,65 @@ export default async function ItemDetailPage({
       : `${item.buy} ガルド`;
   // 3. 表示処理
   return (
-    <section>
-      <SetPageTitle title={title} />
-      <SectionTitle>{item.name}</SectionTitle>
-      <RoundedContainer>
-        <div className={`${style} font-bold mb-2`}>
-          <strong className={itemDescStyle}>効果</strong>
-          {item.effect}
-        </div>
-        <div className="mb-8 grid grid-cols-2 gap-2 font-bold">
-          <div className={style}>
-            <strong className={itemDescStyle}>種別</strong>
-            {itemTypeMap[item.type as keyof typeof itemTypeMap]}
+    <Main title={title}>
+      <article>
+        <SectionTitle>{item.name}</SectionTitle>
+        <RoundedContainer>
+          <div className={`${style} font-bold mb-2`}>
+            <strong className={itemDescStyle}>効果</strong>
+            {item.effect}
           </div>
-          <div className={style}>
-            <strong className={itemDescStyle}>購入</strong>
-            {price}
+          <div className="mb-8 grid grid-cols-2 gap-2 font-bold">
+            <div className={style}>
+              <strong className={itemDescStyle}>種別</strong>
+              {itemTypeMap[item.type as keyof typeof itemTypeMap]}
+            </div>
+            <div className={style}>
+              <strong className={itemDescStyle}>購入</strong>
+              {price}
+            </div>
+            <div className={style}>
+              <strong className={itemDescStyle}>売却</strong>
+              {item.sell} ガルド
+            </div>
+            <div className={style}>
+              <strong className={itemDescStyle}>特殊効果</strong>
+              {Supcial}
+            </div>
           </div>
-          <div className={style}>
-            <strong className={itemDescStyle}>売却</strong>
-            {item.sell} ガルド
-          </div>
-          <div className={style}>
-            <strong className={itemDescStyle}>特殊効果</strong>
-            {Supcial}
-          </div>
-        </div>
-      </RoundedContainer>
-      <RoundedContainer>
-        <h3 className={headerStyle}>
-          <LuShoppingBag className="mr-1" />
-          購入可能ショップ
-        </h3>
-        <ul className="grid grid-cols-2 gap-3">{ShopInfo}</ul>
-      </RoundedContainer>
+        </RoundedContainer>
+        <RoundedContainer>
+          <h3 className={headerStyle}>
+            <LuShoppingBag className="mr-1" />
+            購入可能ショップ
+          </h3>
+          <ul className="grid grid-cols-2 gap-3">{ShopInfo}</ul>
+        </RoundedContainer>
 
-      <RoundedContainer>
-        <h3 className={headerStyle}>
-          <LuGift className="mr-1" />
-          タウンやダンジョンの宝箱
-        </h3>
-        <ul className="grid grid-cols-2 gap-3">{TreasureInfo}</ul>
-      </RoundedContainer>
+        <RoundedContainer>
+          <h3 className={headerStyle}>
+            <LuGift className="mr-1" />
+            タウンやダンジョンの宝箱
+          </h3>
+          <ul className="grid grid-cols-2 gap-3">{TreasureInfo}</ul>
+        </RoundedContainer>
 
-      <RoundedContainer>
-        <h3 className={headerStyle}>
-          <LuGem className="mr-1" />
-          ドロップするモンスター
-        </h3>
-        <ul className="grid grid-cols-2 gap-3">{dropInfo}</ul>
-      </RoundedContainer>
+        <RoundedContainer>
+          <h3 className={headerStyle}>
+            <LuGem className="mr-1" />
+            ドロップするモンスター
+          </h3>
+          <ul className="grid grid-cols-2 gap-3">{dropInfo}</ul>
+        </RoundedContainer>
 
-      <RoundedContainer>
-        <h3 className={headerStyle}>
-          <LuGem className="mr-1" />
-          盗めるモンスター
-        </h3>
-        <ul className="grid grid-cols-2 gap-3">{stealInfo}</ul>
-      </RoundedContainer>
-    </section>
+        <RoundedContainer>
+          <h3 className={headerStyle}>
+            <LuGem className="mr-1" />
+            盗めるモンスター
+          </h3>
+          <ul className="grid grid-cols-2 gap-3">{stealInfo}</ul>
+        </RoundedContainer>
+      </article>
+    </Main>
   );
 }

@@ -128,40 +128,8 @@ export default function SiteLayout({
           </div>
         </div>
       </header>
-      <div className={styles.pageTitleArea}>
-        <div className={`${styles.pageTitleInner} px-4 py-3`}>
-          {test}
-          <h2 className="text-lg font-bold text-slate-700">{title}</h2>
-        </div>
-      </div>
-      <div className={`${styles.shortcutMenu} shadow-2xs`}>
-        <div>
-          {/* <ul className="flex flex-wrap gap-x-4 gap-y-1.5 py-3 px-4">{menu}</ul> */}
-          {/* <ul className="grid grid-cols-4 md:grid-cols-8 py-2 px-4">{menu}</ul> */}
-          <ul className="grid grid-cols-4 md:flex md:flex-wrap gap-x-4 gap-y-1 px-4 py-2 font-bold text-slate-600">
-            {menu}
-          </ul>
-        </div>
-      </div>
-      <div className={styles.container}>
-        {/* PCのみ表示されるサイドバー */}
-        <aside className={`${styles.sidebar} hidden md:block`}>
-          <Menu />
-        </aside>
 
-        <main className={`${styles.main} px-6 py-`}>
-          {/* <div
-            style={{
-              height: "200px",
-              background: "#333",
-              marginBottom: "30px",
-            }}
-          >
-            Adsense
-          </div> */}
-          {children}
-        </main>
-      </div>
+      {children}
 
       <footer className={styles.footer}>
         <div className="max-w-4xl mx-auto px-4">

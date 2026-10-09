@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
@@ -9,6 +8,7 @@ import Information from "@/components/Information";
 import EventCondition from "@/components/EventCondition";
 import { extraLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -29,9 +29,9 @@ export default async function HomePage() {
   const itemsData = await getLocationItemsData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           インフェリア世界でさまざまな有用アイテムや貴重な重要品を獲得できる隠しダンジョン「沈没船」の攻略情報ページです。ダンジョンへのアクセス方法から、入り組んだ船内のギミック解除手順、ボス「セイレーン」との戦い方、獲得できるアイテム情報を分かりやすく解説します。
         </p>
@@ -123,5 +123,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

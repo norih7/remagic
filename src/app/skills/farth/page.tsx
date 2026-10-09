@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -6,6 +6,7 @@ import SkillPropertyList from "@/components/SkillPropertyList";
 import { Skill } from "@/components/SkillPropertyList";
 import { skillLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -191,10 +192,9 @@ export default async function HomePage() {
   ] as Skill[];
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <div className="mb-2">
           <p>
             格闘家ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご用意していますのでそちらをご参照ください。
@@ -222,5 +222,6 @@ export default async function HomePage() {
         <SkillPropertyList skills={skills} />
       </Section>
     </article>
+    </Main>
   );
 }

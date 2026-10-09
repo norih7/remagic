@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import LocationItems from "@/components/LocationItems";
 import LocationRecipes from "@/components/LocationRecipes";
@@ -15,6 +15,7 @@ import Information from "@/components/Information";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,10 +39,9 @@ export default async function HomePage() {
   const subEventData = await getLocationSubEventsData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           物語の終盤からエンディングまでの流れを丁寧に解説！ラストダンジョンとなる「シゼル城」のマップや仕掛けの攻略手順も詳しく掲載しています。
         </p>
@@ -398,5 +398,6 @@ export default async function HomePage() {
         <LocationSubEvents data={subEventData} locationIds={[37]} />
       </Section>
     </article>
+    </Main>
   );
 }

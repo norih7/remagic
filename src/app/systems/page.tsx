@@ -1,8 +1,8 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import ContentLinks from "@/components/ContentLinks";
 import { systemLinks, categoryLinks } from "@/constants";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -21,9 +21,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <div className="mb-8">
+    <Main title={title}>
+      <article>
+<div className="mb-8">
         <h2 className="text-lg font-bold mb-2 !border-none">
           システム解説/各種データ
         </h2>
@@ -33,5 +33,6 @@ export default async function HomePage() {
       </div>
       <ContentLinks list={Object.values(systemLinks)} />
     </article>
+    </Main>
   );
 }

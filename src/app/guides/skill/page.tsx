@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import SectionHeader from "@/components/SectionHeader";
@@ -7,6 +7,7 @@ import Image from "next/image";
 import Information from "@/components/Information";
 import { guideLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -25,10 +26,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           『テイルズ オブ
           エターニア』における、各種スキルや晶霊術の習得方法について解説します。本作ではキャラクターのレベルアップだけですべての技を覚えるわけではなく、各人固有の育成システムや習得手順が用意されているため、詳細をあらかじめ把握しておきましょう。
@@ -194,5 +194,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
@@ -16,6 +15,7 @@ import RoundedItem from "@/components/RoundedItem";
 import RoundedContainer from "@/components/RoundedContainer";
 import GifPlayer from "@/components/GifPlayer";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -37,9 +37,9 @@ export default async function HomePage() {
   const lensesData = await getLocationLensesData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         ネレイドの迷宮は全6階層で構成される最高難易度の隠しダンジョンです。ランダムに作成される迷宮を進み、各階層のボスを倒して最深部のネレイドを目指します。探索中の消耗を抑え、1〜5階層の単独ボス戦を突破する準備が重要です。
       </PageSummary>
       <Section>
@@ -252,5 +252,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

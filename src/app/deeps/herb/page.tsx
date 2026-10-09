@@ -1,4 +1,4 @@
-import SetPageTitle from "@/components/SetPageTitle";
+
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
@@ -8,6 +8,7 @@ import RoundedContainer from "@/components/RoundedContainer";
 import GuideList from "@/components/GuideList";
 import Tag from "@/components/Tag";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 export const dynamic = "force-static";
 
@@ -26,9 +27,9 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         敵からのドロップやチャットの盗みで手に入るステータスアップ薬草は、レベル上げやボス攻略の途中でかなり重宝します。特にHP、TP、力の延長は、長期戦での安定感を大きく左右します。
       </PageSummary>
 
@@ -170,5 +171,6 @@ export default async function HomePage() {
         </RoundedContainer>
       </Section>
     </article>
+    </Main>
   );
 }

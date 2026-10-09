@@ -1,7 +1,7 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import Main from "@/components/SiteLayout/Main";
 import {
   getRecipesData,
   getRecipeItemsData,
@@ -39,9 +39,9 @@ export default async function HomePage() {
   const locationRecipes = await getLocationRecipesData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>マスター料理の説明と習得方法を解説します。</p>
       </PageSummary>
       {/* <section className="mb-12">
@@ -116,5 +116,6 @@ export default async function HomePage() {
         />
       </Section>
     </article>
+    </Main>
   );
 }

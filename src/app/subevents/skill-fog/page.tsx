@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import RoundedContainer from "@/components/RoundedContainer";
@@ -9,6 +8,7 @@ import Information from "@/components/Information";
 import GuideList from "@/components/GuideList";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -26,9 +26,9 @@ export const metadata = {
 };
 export default async function HomePage() {
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           フォッグが物語の進行に合わせてサブイベントで習得していく、多彩な属性銃弾スキルおよび最終技の習得方法を解説するページです。最大火力を誇る「エレメンタルマスター」の習得を目指してぜひすべてのイベントをクリアしましょう。
         </p>
@@ -107,5 +107,6 @@ export default async function HomePage() {
         </RoundedContainer>
       </Section>
     </article>
+    </Main>
   );
 }

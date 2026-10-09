@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import LocationItems from "@/components/LocationItems";
@@ -8,6 +7,7 @@ import { extraLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import EventCondition from "@/components/EventCondition";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -28,9 +28,9 @@ export default async function HomePage() {
   const itemsData = await getLocationItemsData();
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         <p>
           すべての源たる元の大晶霊「マクスウェル」と契約を果たすために挑む隠しダンジョン「ファロース教会地下」の攻略情報ページです。ダンジョンの開放手順から、強力なボスへの対策、道中で手に入る強力な装備品や超レアなドロップアイテムのデータを解説します。
         </p>
@@ -85,5 +85,6 @@ export default async function HomePage() {
         </div>
       </Section>
     </article>
+    </Main>
   );
 }

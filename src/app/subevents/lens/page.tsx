@@ -1,5 +1,4 @@
 import { createMetaTitle } from "@/utils";
-import SetPageTitle from "@/components/SetPageTitle";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import { getLocationLensesData } from "@/lib/db";
@@ -10,6 +9,7 @@ import { subeventLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Tag from "@/components/Tag";
 import Section from "@/components/Section";
+import Main from "@/components/SiteLayout/Main";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -50,9 +50,9 @@ export default async function HomePage() {
   ));
 
   return (
-    <article>
-      <SetPageTitle title={title} />
-      <PageSummary>
+    <Main title={title}>
+      <article>
+<PageSummary>
         町やダンジョンなどで入手することができるレンズの説明とレンズの入手場所一覧データを掲載しています。
       </PageSummary>
 
@@ -173,5 +173,6 @@ export default async function HomePage() {
         {Lenses}
       </Section>
     </article>
+    </Main>
   );
 }
