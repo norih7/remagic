@@ -264,6 +264,8 @@ export const subeventLinks: Record<string, PageLink> = {
     desc: "セレスティア7大秘宝の入手方法や使い方、特殊なS・Dなどを解説しています。",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。ストーリー後半から収集できるセレスティア7大秘宝をまとめています。各秘宝の入手方法や使い方、特殊なS・Dなどを解説しています。",
+    createdAt: "2026-10-09",
+    updatedAt: "2026-10-09",
   },
   catarine: {
     title: "カトリーヌの恋愛",
