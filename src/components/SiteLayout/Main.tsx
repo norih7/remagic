@@ -45,10 +45,6 @@ const Main = ({ title, children }: Props) => {
         : "border-b-2 border-transparent";
 
     return (
-      // <li
-      //   className={`font-bold text-slate-700 pt-1 pb-1 text-center text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 ${activeClass}`}
-      //   key={index}
-      // >
       <li
         className={`pt-1 pb-0.5 text-center text-xs whitespace-nowrap hover:text-slate-400 !border-b-2 border-gray-300 w-auto ${activeClass}`}
         key={index}
@@ -69,8 +65,6 @@ const Main = ({ title, children }: Props) => {
       </div>
       <div className={`${styles.shortcutMenu} shadow-2xs`}>
         <div>
-          {/* <ul className="flex flex-wrap gap-x-4 gap-y-1.5 py-3 px-4">{menu}</ul> */}
-          {/* <ul className="grid grid-cols-4 md:grid-cols-8 py-2 px-4">{menu}</ul> */}
           <ul className="grid grid-cols-4 md:flex md:flex-wrap gap-x-4 gap-y-1 px-4 py-2 font-bold text-slate-600">
             {menu}
           </ul>
@@ -83,13 +77,7 @@ const Main = ({ title, children }: Props) => {
         </aside>
 
         <main className={`${styles.main} px-6`}>
-          {/* <div
-            style={{
-              height: "200px",
-              background: "#333",
-              marginBottom: "30px",
-            }}
-          >
+          {/* <div className="p-4 bg-gray- border border-gray-400 rounded-xl mb-8">
             Adsense
           </div> */}
           {children}

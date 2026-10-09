@@ -17,7 +17,7 @@ const EventCondition = (props: Props) => {
       className={`${styles.condition} mb-2 pt-2 flex items-center font-bold text-xs border-t-1 border-slate-800`}
     >
       <div
-        className={`${styles.smallInfo} mr-2 flex items-center font-bold text-white bg-mauve-700 rounded-sm px-2 py-1`}
+        className={`${styles.smallInfo} mr-2 flex items-center font-bold text-white bg-mauve-600 rounded-sm px-2 py-1`}
       >
         {title}
       </div>

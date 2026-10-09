@@ -242,21 +242,22 @@ export const subeventLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。おすすめ装備や各クラスの戦い方などを解説！",
   },
-  // "last-fencer": {
-  //   title: "ラストフェンサーの入手",
-  //   path: "/subevents/last-fencer",
-  //   image: "/link-headers/subevents-last-fencer.jpg",
-  //   desc: "リッドの最強武器の一つ「ラストフェンサー」を習得するためのサブイベントを解説！",
-  //   seoDesc:
-  //     "リマスター版対応のテイルズオブエターニア（TOE）攻略。リッドの最強技「ラストフェンサー」を習得するためのサブイベントを解説！",
-  // },
-  // "fog-gun": {
-  //   title: "フォッグの武器開発",
-  //   path: "/subevents/fog-gun",
-  //   image: "/link-headers/subevents-last-fencer.jpg",
-  //   desc: "-",
-  //   seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
-  // },
+  "last-fencer": {
+    title: "ラストフェンサー入手",
+    path: "/subevents/last-fencer",
+    // image: "/link-headers/subevents-last-fencer.jpg",
+    desc: "準備中",
+    // desc: "リッドの最強武器の一つ「ラストフェンサー」を習得するためのサブイベントを解説！",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。リッドの最強武器の一つ「ラストフェンサー」を入手するためのサブイベントを解説！",
+  },
+  "fog-gun": {
+    title: "フォッグの武器開発",
+    path: "/subevents/fog-gun",
+    // image: "/link-headers/subevents-last-fencer.jpg",
+    desc: "準備中",
+    seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
+  },
   treasure: {
     title: "セレスティア7大秘宝",
     path: "/subevents/treasure",
