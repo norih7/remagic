@@ -260,9 +260,10 @@ export const subeventLinks: Record<string, PageLink> = {
   treasure: {
     title: "セレスティア7大秘宝",
     path: "/subevents/treasure",
-    // image: "/link-headers/subevents-last-fencer.jpg",
-    desc: "準備中",
-    seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
+    image: "/link-headers/subevents-tresure.jpg",
+    desc: "セレスティア7大秘宝の入手方法や使い方、特殊なS・Dなどを解説しています。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。ストーリー後半から収集できるセレスティア7大秘宝をまとめています。各秘宝の入手方法や使い方、特殊なS・Dなどを解説しています。",
   },
   catarine: {
     title: "カトリーヌの恋愛",
