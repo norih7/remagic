@@ -32,55 +32,58 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        インフェリアにあるアイフリードの隠しアジトを紹介します。
-      </PageSummary>
-      <Section>
-        <SectionTitle>インフェリアのアジト一覧</SectionTitle>
-        <div className="mb-8">
-          <EventCondition category="period">
-            遠征の橋でインフェリア帰還後
-          </EventCondition>
-          <p>
-            インフェリアのアイフリードのアジトはサブイベントで探索は任意ですが、その分レアアイテムがあるためぜひ訪れてみてください。インフェリア帰還後に強力な「にんとうちざくら」や、HP自動回復の特殊効果のある「ホーリィクローク」が特におすすめです。
-          </p>
-          <GuideList
-            items={[
-              { title: "装備品の特殊効果", href: "/systems/special-effect" },
-            ]}
-          />
-        </div>
-        <RoundedContainer>
-          <h3>インフェリア アジト1</h3>
-          <RoundedItem title="場所" className="mb-3">
-            <p>GPS (76, 122)</p>
+        <PageSummary>
+          インフェリアにあるアイフリードの隠しアジトを紹介します。
+        </PageSummary>
+        <Section>
+          <SectionTitle>インフェリアのアジト一覧</SectionTitle>
+          <div className="mb-8">
+            <EventCondition category="period">
+              遠征の橋でインフェリア帰還後
+            </EventCondition>
+            <p>
+              インフェリアのアイフリードのアジトはサブイベントで探索は任意ですが、その分レアアイテムがあるためぜひ訪れてみてください。インフェリア帰還後に強力な「にんとうちざくら」や、HP自動回復の特殊効果のある「ホーリィクローク」が特におすすめです。
+            </p>
+            <GuideList
+              items={[
+                { title: "装備品の特殊効果", href: "/systems/special-effect" },
+              ]}
+            />
+          </div>
+          <RoundedContainer>
+            <h3>インフェリア アジト1</h3>
             <ResponsiveImage src="/subevents/secret-base-1.jpg" />
-          </RoundedItem>
-          <LocationItems data={itemsData} locationIds={[53]} />
-        </RoundedContainer>
-        <RoundedContainer>
-          <h3>インフェリア アジト2</h3>
-          <RoundedItem title="場所" className="mb-3">
-            GPS (119, 122)
-          </RoundedItem>
-          <LocationItems data={itemsData} locationIds={[54]} />
-        </RoundedContainer>
-        <RoundedContainer>
-          <h3>インフェリア アジト3</h3>
-          <RoundedItem title="場所" className="mb-3">
-            GPS (142, 1)
-          </RoundedItem>
-          <LocationItems data={itemsData} locationIds={[55]} />
-        </RoundedContainer>
-        <RoundedContainer>
-          <h3>インフェリア アジト4</h3>
-          <RoundedItem title="場所" className="mb-3">
-            GPS (226, 130)
-          </RoundedItem>
-          <LocationItems data={itemsData} locationIds={[56]} />
-        </RoundedContainer>
-      </Section>
-    </article>
+            <RoundedItem title="場所" className="mb-3">
+              <p>GPS (76, 123)</p>
+            </RoundedItem>
+            <LocationItems data={itemsData} locationIds={[53]} />
+          </RoundedContainer>
+          <RoundedContainer>
+            <h3>インフェリア アジト2</h3>
+            <ResponsiveImage src="/subevents/secret-base-2.jpg" />
+            <RoundedItem title="場所" className="mb-3">
+              <p>GPS (119, 122)</p>
+            </RoundedItem>
+            <LocationItems data={itemsData} locationIds={[54]} />
+          </RoundedContainer>
+          <RoundedContainer>
+            <h3>インフェリア アジト3</h3>
+            <ResponsiveImage src="/subevents/secret-base-3.jpg" />
+            <RoundedItem title="場所" className="mb-3">
+              GPS (141, 1)
+            </RoundedItem>
+            <LocationItems data={itemsData} locationIds={[55]} />
+          </RoundedContainer>
+          <RoundedContainer>
+            <h3>インフェリア アジト4</h3>
+            <ResponsiveImage src="/subevents/secret-base-4.jpg" />
+            <RoundedItem title="場所" className="mb-3">
+              GPS (226, 130)
+            </RoundedItem>
+            <LocationItems data={itemsData} locationIds={[56]} />
+          </RoundedContainer>
+        </Section>
+      </article>
     </Main>
   );
 }

@@ -14,15 +14,14 @@ const EventCondition = (props: Props) => {
   const title = list[category];
   return (
     <div
-      className={`${styles.condition} mb-3 pt-2 flex items-center font-bold text-xs border-t-1 border-slate-800 rounded-`}
+      className={`${styles.condition} mb-2 pt-2 flex items-center font-bold text-xs border-t-1 border-slate-800`}
     >
       <div
-        className={`${styles.smallInfo} mr-2 flex items-center font-bold text-white bg-mauve-500 rounded-sm pl-2 pr-3 py-1`}
+        className={`${styles.smallInfo} mr-2 flex items-center font-bold text-white bg-mauve-700 rounded-sm px-2 py-1`}
       >
-        <LuMapPinCheckInside className="mr-1" />
         {title}
       </div>
-      {children}
+      <div className="flex-1">{children}</div>
     </div>
   );
 };
