@@ -245,9 +245,8 @@ export const subeventLinks: Record<string, PageLink> = {
   "last-fencer": {
     title: "ラストフェンサー入手",
     path: "/subevents/last-fencer",
-    // image: "/link-headers/subevents-last-fencer.jpg",
-    desc: "準備中",
-    // desc: "リッドの最強武器の一つ「ラストフェンサー」を習得するためのサブイベントを解説！",
+    image: "/link-headers/subevents-last-fencer.jpg",
+    desc: "リッドの最強武器の一つ「ラストフェンサー」を取得するサブイベントを解説！",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。リッドの最強武器の一つ「ラストフェンサー」を入手するためのサブイベントを解説！",
   },
