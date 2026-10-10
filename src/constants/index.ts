@@ -249,13 +249,18 @@ export const subeventLinks: Record<string, PageLink> = {
     desc: "リッドの最強武器の一つ「ラストフェンサー」を取得するサブイベントを解説！",
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。リッドの最強武器の一つ「ラストフェンサー」を入手するためのサブイベントを解説！",
+    createdAt: "2026-10-10",
+    updatedAt: "2026-10-10",
   },
   "fog-gun": {
     title: "フォッグの武器開発",
     path: "/subevents/fog-gun",
-    // image: "/link-headers/subevents-last-fencer.jpg",
-    desc: "準備中",
-    seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
+    image: "/link-headers/subevents-fog-gun.jpg",
+    desc: "ティンシアのアジトで可能なフォッグの武器開発について解説しています。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。ティンシアのアジトで可能なフォッグの武器開発について解説しています。フォッグの最強武器も開発できるのでお見逃しなく。",
+    createdAt: "2026-10-10",
+    updatedAt: "2026-10-10",
   },
   treasure: {
     title: "セレスティア7大秘宝",

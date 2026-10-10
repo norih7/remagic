@@ -70,6 +70,18 @@ export default async function HomePage() {
                 <span className="text-slate-400">2026/10/10</span>
                 <span>
                   <Link
+                    href="/subevents/fog-gun"
+                    className="hover:text-cyan-400 transition-colors"
+                  >
+                    フォッグの武器開発
+                  </Link>
+                  を公開しました。
+                </span>
+              </li>
+              <li className="flex gap-4">
+                <span className="text-slate-400">2026/10/10</span>
+                <span>
+                  <Link
                     href="/subevents/last-fencer"
                     className="hover:text-cyan-400 transition-colors"
                   >
