@@ -8,7 +8,7 @@ export default function MenuButton() {
   return (
     <>
       <button
-        className="md:hidden p-1 text-gray-800 font-bold text-sm bg-gray-800 text-white text-center w-5.5 rounded-sm"
+        className="md:hidden p-1.5 text-gray-800 font-bold text-sm bg-gray-800 text-white text-center w-6.5 rounded-sm"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
