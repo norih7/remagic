@@ -28,12 +28,13 @@ export interface Skill {
   ruby?: string;
   description: string;
   remarks?: string;
-  requirement: string;
+  requirement?: string;
   requirement2?: string;
   tp?: number;
   hit?: number;
   element: Element[];
   type?: string;
+  pair?: string[];
 }
 
 // 修正点: PropertyListProps が Skill[] を受け取るように変更

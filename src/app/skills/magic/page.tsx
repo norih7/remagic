@@ -2,10 +2,13 @@ import { createMetaTitle } from "@/utils";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import SectionTitle from "@/components/SectionTitle";
-import { Skill } from "@/components/SkillPropertyList";
-import SkillPropertyList from "@/components/SkillPropertyList";
-import { skillLinks } from "@/constants";
+import { Skill } from "@/components/MagicPropertyList";
+import MagicPropertyList from "@/components/MagicPropertyList";
+import { skillLinks, elementMap } from "@/constants";
 import Main from "@/components/SiteLayout/Main";
+import Section from "@/components/Section";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -22,8 +25,66 @@ export const metadata = {
   },
 };
 
+// 2. ユーザーのケイジ状態の型定義
+export interface UserCageState {
+  merdy: (string | null)[];
+  kyle: (string | null)[];
+}
+
+// 3. 全体で装備されている属性のリストを取得する関数
+function getEquippedElements(cageState: UserCageState): string[] {
+  const allElements = [...cageState.merdy, ...cageState.kyle].filter(
+    (element): element is string => element !== null,
+  ); // nullを除外しつつ型をstringに絞り込む
+
+  // 重複を除外した配列を返す
+  return Array.from(new Set(allElements));
+}
+
+// 4. フィルタリング関数
+export function filterAvailableSkills(
+  skills: Skill[],
+  cageState: UserCageState,
+): Skill[] {
+  // メルディ側の装備リスト（null除外）
+  const merdyElements = cageState.merdy.filter((e): e is string => e !== null);
+  // キール側の装備リスト（null除外）
+  const kyleElements = cageState.kyle.filter((e): e is string => e !== null);
+
+  return skills.filter((skill) => {
+    const requiredPairs = skill.pair ?? [];
+
+    // pair がない（初期習得など）ものは無条件で表示
+    if (requiredPairs.length === 0) {
+      return true;
+    }
+
+    // --- 【重要】異ケイジ間（分散）の判定ロジック ---
+    // 2属性のフリンジ術の場合（例: "fire" と "water"）
+    if (requiredPairs.length === 2) {
+      const [attr1, attr2] = requiredPairs;
+
+      // パターンA: メルディに attr1、キールに attr2 がある
+      const patternA =
+        merdyElements.includes(attr1) && kyleElements.includes(attr2);
+
+      // パターンB: メルディに attr2、キールに attr1 がある
+      const patternB =
+        merdyElements.includes(attr2) && kyleElements.includes(attr1);
+
+      // ※ どちらのケイジにも同じ属性が重複して入っている場合（片方のケイジ内で完結している場合）は除外したいため、
+      // 「両方のケイジにまたがって存在しているか」を厳密にチェックします。
+      // 例: メルディに water, fire が両方ある場合は、kyle側に片方かないと成立しない
+      return patternA || patternB;
+    }
+
+    // 1属性のみ、または3属性以上の特殊なフリンジがある場合の拡張用（必要に応じて）
+    return false;
+  });
+}
+
 export default async function HomePage() {
-  const skills = [
+  const skills: Skill[] = [
     {
       name: "アクアエッジ",
       description:
@@ -32,6 +93,7 @@ export default async function HomePage() {
       hit: 1,
       element: ["water"],
       type: "攻撃",
+      pair: ["a"],
     },
     {
       name: "スプレッド",
@@ -41,6 +103,7 @@ export default async function HomePage() {
       hit: 3,
       element: ["water"],
       type: "攻撃",
+      pair: ["water"],
     },
     {
       name: "ヒール",
@@ -50,7 +113,9 @@ export default async function HomePage() {
       tp: 16,
       element: [],
       type: "回復",
+      pair: ["water", "wind"],
     },
+
     {
       name: "アシッドレイン",
       description: "雨が当たった敵に対して与えるダメージが一時的に上昇する。",
@@ -59,6 +124,7 @@ export default async function HomePage() {
       tp: 10,
       element: ["water"],
       type: "補助",
+      pair: ["water", "wind"],
     },
     {
       name: "ナース",
@@ -68,6 +134,7 @@ export default async function HomePage() {
       tp: 42,
       element: ["water"],
       type: "回復",
+      pair: ["water", "ice"],
     },
     {
       name: "キュア",
@@ -77,6 +144,7 @@ export default async function HomePage() {
       tp: 32,
       element: ["water"],
       type: "回復",
+      pair: ["water", "origin"],
     },
     {
       name: "リザレクション",
@@ -87,6 +155,7 @@ export default async function HomePage() {
       tp: 60,
       element: ["water"],
       type: "回復",
+      pair: ["water", "light"],
     },
     {
       name: "レイズデッド",
@@ -96,6 +165,7 @@ export default async function HomePage() {
       tp: 90,
       element: ["water"],
       type: "回復",
+      pair: ["water", "time"],
     },
     {
       name: "ウインドカッター",
@@ -105,6 +175,7 @@ export default async function HomePage() {
       element: ["wind"],
       type: "攻撃",
       hit: 2,
+      pair: ["none"],
     },
     {
       name: "エアスラスト",
@@ -115,6 +186,7 @@ export default async function HomePage() {
       element: ["wind"],
       type: "攻撃",
       hit: 8,
+      pair: ["wind"],
     },
     {
       name: "コンセントレート",
@@ -125,6 +197,7 @@ export default async function HomePage() {
       tp: 6,
       element: ["wind"],
       type: "補助",
+      pair: ["wind", "fire"],
     },
     {
       name: "サイクロン",
@@ -136,6 +209,7 @@ export default async function HomePage() {
       element: ["wind"],
       type: "攻撃",
       hit: 16,
+      pair: ["water", "dark"],
     },
     {
       name: "ファイアボール",
@@ -146,6 +220,7 @@ export default async function HomePage() {
       element: ["fire"],
       type: "攻撃",
       hit: 3,
+      pair: ["none"],
     },
     {
       name: "イラプション",
@@ -156,6 +231,7 @@ export default async function HomePage() {
       element: ["fire"],
       type: "攻撃",
       hit: 7,
+      pair: ["fire"],
     },
     {
       name: "シャープネス",
@@ -167,9 +243,10 @@ export default async function HomePage() {
       element: ["fire"],
       type: "補助",
       hit: 7,
+      pair: ["fire", "water"],
     },
     {
-      name: "シャープネス",
+      name: "フレイムウォール",
       description:
         "敵の前に炎の壁を作成して、触れた敵にダメージを与える。1回ダメージを与えたり、他の晶霊術の発動によって壁は消滅する。使い所が難しい。",
       requirement: "イフリートLv12",
@@ -178,6 +255,7 @@ export default async function HomePage() {
       element: ["fire"],
       type: "攻撃",
       hit: 1,
+      pair: ["fire", "earth"],
     },
     {
       name: "エクスプロード",
@@ -189,6 +267,7 @@ export default async function HomePage() {
       element: ["fire"],
       type: "攻撃",
       hit: 4,
+      pair: ["fire", "thunder"],
     },
     {
       name: "グレイブ",
@@ -198,6 +277,7 @@ export default async function HomePage() {
       element: ["earth"],
       type: "攻撃",
       hit: 3,
+      pair: ["none"],
     },
     {
       name: "ロックブレイク",
@@ -207,6 +287,7 @@ export default async function HomePage() {
       element: ["earth"],
       type: "攻撃",
       hit: 6,
+      pair: ["earth"],
     },
     {
       name: "グランドダッシャー",
@@ -217,6 +298,7 @@ export default async function HomePage() {
       element: ["earth"],
       type: "攻撃",
       hit: 5,
+      pair: ["earth", "dark"],
     },
     {
       name: "アイスニードル",
@@ -226,6 +308,7 @@ export default async function HomePage() {
       element: ["ice"],
       type: "攻撃",
       hit: 3,
+      pair: ["none"],
     },
     {
       name: "フリーズランサー",
@@ -235,6 +318,7 @@ export default async function HomePage() {
       element: ["ice"],
       type: "攻撃",
       hit: 4,
+      pair: ["ice"],
     },
     {
       name: "レジスト",
@@ -244,6 +328,7 @@ export default async function HomePage() {
       tp: 6,
       element: ["ice"],
       type: "補助",
+      pair: ["ice", "earth"],
     },
     {
       name: "ブリザード",
@@ -254,6 +339,7 @@ export default async function HomePage() {
       element: ["ice"],
       type: "攻撃",
       hit: 3,
+      pair: ["ice", "wind"],
     },
     {
       name: "アブソリュート",
@@ -264,6 +350,7 @@ export default async function HomePage() {
       element: ["ice"],
       type: "攻撃",
       hit: 3,
+      pair: ["ice", "thunder"],
     },
     {
       name: "ライトニング",
@@ -273,6 +360,7 @@ export default async function HomePage() {
       element: ["thunder"],
       type: "攻撃",
       hit: 1,
+      pair: ["none"],
     },
     {
       name: "サンダーブレード",
@@ -282,6 +370,7 @@ export default async function HomePage() {
       element: ["thunder"],
       type: "攻撃",
       hit: 4,
+      pair: ["thunder"],
     },
     {
       name: "チャージ",
@@ -291,6 +380,7 @@ export default async function HomePage() {
       tp: 100,
       element: ["thunder"],
       type: "補助",
+      pair: ["thunder", "wind"],
     },
     {
       name: "リカバー",
@@ -300,6 +390,7 @@ export default async function HomePage() {
       tp: 10,
       element: ["thunder"],
       type: "回復",
+      pair: ["thunder", "earth"],
     },
     {
       name: "インディグネイション",
@@ -310,6 +401,7 @@ export default async function HomePage() {
       element: ["thunder"],
       type: "攻撃",
       hit: 2,
+      pair: ["thunder", "light"],
     },
     {
       name: "レイ",
@@ -319,6 +411,7 @@ export default async function HomePage() {
       element: ["light"],
       type: "攻撃",
       hit: 7,
+      pair: ["light"],
     },
     {
       name: "ホーリーブレス",
@@ -328,6 +421,7 @@ export default async function HomePage() {
       tp: 8,
       element: ["light"],
       type: "補助",
+      pair: ["light", "fire"],
     },
     {
       name: "ホーリーランス",
@@ -338,6 +432,7 @@ export default async function HomePage() {
       element: ["light"],
       type: "攻撃",
       hit: 9,
+      pair: ["light", "origin"],
     },
     {
       name: "ダークフォース",
@@ -347,6 +442,7 @@ export default async function HomePage() {
       element: ["dark"],
       type: "攻撃",
       hit: 6,
+      pair: ["dark"],
     },
     {
       name: "バリアー",
@@ -356,6 +452,7 @@ export default async function HomePage() {
       tp: 6,
       element: ["dark"],
       type: "補助",
+      pair: ["dark", "thunder"],
     },
     {
       name: "ディープミスト",
@@ -365,6 +462,7 @@ export default async function HomePage() {
       tp: 6,
       element: ["dark"],
       type: "補助",
+      pair: ["dark", "water"],
     },
     {
       name: "ブラッディハウリング",
@@ -375,6 +473,7 @@ export default async function HomePage() {
       element: ["dark"],
       type: "攻撃",
       hit: 4,
+      pair: ["dark", "time"],
     },
     {
       name: "メテオスウォーム",
@@ -384,6 +483,7 @@ export default async function HomePage() {
       element: ["origin"],
       type: "攻撃",
       hit: 7,
+      pair: ["origin"],
     },
     {
       name: "シューティングスター",
@@ -394,6 +494,7 @@ export default async function HomePage() {
       element: ["origin"],
       type: "攻撃",
       hit: 12,
+      pair: ["origin", "time"],
     },
     {
       name: "ディストーション",
@@ -403,6 +504,7 @@ export default async function HomePage() {
       element: ["time"],
       type: "攻撃",
       hit: 12,
+      pair: ["time"],
     },
     {
       name: "スクラグネイション",
@@ -412,6 +514,7 @@ export default async function HomePage() {
       tp: 16,
       element: ["time"],
       type: "補助",
+      pair: ["time", "ice"],
     },
     {
       name: "ディレイ",
@@ -421,6 +524,7 @@ export default async function HomePage() {
       tp: 60,
       element: ["time"],
       type: "補助",
+      pair: ["time", "earth"],
     },
     {
       name: "+メディカルプラス",
@@ -429,6 +533,7 @@ export default async function HomePage() {
       requirement2: "レムLv10",
       element: [],
       type: "特殊",
+      pair: ["wind", "light"],
     },
     {
       name: "+メンタルチャージ",
@@ -437,6 +542,7 @@ export default async function HomePage() {
       requirement2: "シルフLv10",
       element: [],
       type: "特殊",
+      pair: ["earth", "wind"],
     },
     {
       name: "+メディカルプラス",
@@ -445,6 +551,7 @@ export default async function HomePage() {
       requirement2: "レムLv10",
       element: [],
       type: "特殊",
+      pair: ["wind", "light"],
     },
     {
       name: "+フリーズガード",
@@ -454,6 +561,7 @@ export default async function HomePage() {
       requirement2: "イフリートLv10",
       element: [],
       type: "特殊",
+      pair: ["ice", "fire"],
     },
     {
       name: "+パラライガード",
@@ -463,6 +571,7 @@ export default async function HomePage() {
       requirement2: "ウンディーネLv10",
       element: [],
       type: "特殊",
+      pair: ["thunder", "water"],
     },
     {
       name: "+ライフレスキュー",
@@ -472,6 +581,7 @@ export default async function HomePage() {
       requirement2: "レムLv10",
       element: [],
       type: "特殊",
+      pair: ["earth", "light"],
     },
     {
       name: "+アイテムゲッター",
@@ -481,6 +591,7 @@ export default async function HomePage() {
       requirement2: "マクスウェルLv10",
       element: [],
       type: "特殊",
+      pair: ["wind", "origin"],
     },
     {
       name: "+メンタルサプライ",
@@ -490,6 +601,7 @@ export default async function HomePage() {
       requirement2: "マクスウェルLv20",
       element: [],
       type: "特殊",
+      pair: ["earth", "origin"],
     },
     {
       name: "+ヒールウェポン",
@@ -498,6 +610,7 @@ export default async function HomePage() {
       requirement2: "シャドウLv10",
       element: [],
       type: "特殊",
+      pair: ["light", "dark"],
     },
     {
       name: "+ライフアップ",
@@ -506,6 +619,7 @@ export default async function HomePage() {
       requirement2: "セルシウスLv10",
       element: [],
       type: "特殊",
+      pair: ["origin", "ice"],
     },
     {
       name: "+メンタルアップ",
@@ -514,6 +628,7 @@ export default async function HomePage() {
       requirement2: "イフリートLv10",
       element: [],
       type: "特殊",
+      pair: ["time", "fire"],
     },
     {
       name: "+ポイズンガード",
@@ -522,6 +637,7 @@ export default async function HomePage() {
       requirement2: "シャドウLv10",
       element: [],
       type: "特殊",
+      pair: ["origin", "dark"],
     },
     {
       name: "+ドレインガード",
@@ -531,19 +647,95 @@ export default async function HomePage() {
       requirement2: "マクスウェルLv10",
       element: [],
       type: "特殊",
+      pair: ["time", "origin"],
     },
-  ] as Skill[];
+  ];
+
+  const userCageState = {
+    merdy: [
+      "wind", // キールのケイジ 1枠目
+      "earth", // 2枠目
+      "ice", // 3枠目
+      "light",
+      "time",
+    ],
+    kyle: [
+      "water", // メルディのケイジ 1枠目
+      "fire", // 2枠目
+      "thunder", // 3枠目
+      "dark",
+      "origin",
+    ],
+  };
+  const availableSkills = filterAvailableSkills(skills, userCageState);
 
   return (
     <Main title={title}>
       <article>
-{/* <h2>おすすめの晶霊術</h2>
-      <div className="advice">
-        <p>準備中</p>
-      </div> */}
-      <SectionTitle type="skill">晶霊術一覧</SectionTitle>
-      <SkillPropertyList skills={skills} />
-    </article>
+        <Section>
+          <SectionTitle>おすすめ晶霊術とフリンジ</SectionTitle>
+          <div className="mb-8">
+            <h3>おすすめ晶霊術</h3>
+            <RoundedContainer className="grid grid-cols-2 gap-3">
+              <RoundedItem title="フリーズランサー">
+                詠唱時間が短く広範囲の敵にHITし、足止めできる
+              </RoundedItem>
+              <RoundedItem title="ナース">味方全体のHPを40%回復</RoundedItem>
+              <RoundedItem title="グランドダッシャー">
+                広範囲の敵に対してダメージを与え上級術の中で使い勝手が良い
+              </RoundedItem>
+              <RoundedItem title="シューティングスター">
+                広範囲の敵に対してダメージを与える最強クラスの術
+              </RoundedItem>
+              <RoundedItem title="ディストーション">
+                敵1体に5000ダメージ
+              </RoundedItem>
+            </RoundedContainer>
+          </div>
+          <div className="mb-8">
+            <h3>おすすめフリンジ</h3>
+            <p>
+              基本的には知力が晶霊術のダメージに影響するため、知力の高いキールに攻撃術、メルディに回復が扱えるように振り分けすることがおすすめです。
+            </p>
+            <RoundedContainer>
+              <h4>バランス型</h4>
+              <div className="grid grid-cols-2 gap-3 mb-3">
+                <RoundedItem title="メルディ">
+                  <ul>
+                    <li>ウンディーネ</li>
+                    <li>イフリート</li>
+                    <li>ヴォルト</li>
+                    <li>シャドウ</li>
+                    <li>マクスウェル</li>
+                  </ul>
+                </RoundedItem>
+                <RoundedItem title="キール">
+                  <ul>
+                    <li>シルフ</li>
+                    <li>ノーム</li>
+                    <li>セルシウス</li>
+                    <li>レム</li>
+                    <li>ゼクンドゥス</li>
+                  </ul>
+                </RoundedItem>
+              </div>
+              <RoundedItem title="発生する術">
+                ヒール / アシッドレイン / ナース / リザレクション / レイズデッド
+                / コンセントレート / フレイムウォール / グランドダッシャー /
+                アブソリュート / チャージ / リカバー / インディグネイション /
+                ホーリーブレス / ホーリーランス / ブラッディハウリング /
+                シューティングスター / +フリーズガード / +アイテムゲッター /
+                +メンタルサプライ / +ヒールウェポン / +ライフアップ /
+                +メンタルアップ / +ドレインガード +ドレインガード
+              </RoundedItem>
+            </RoundedContainer>
+          </div>
+        </Section>
+        <Section>
+          <SectionTitle type="skill">晶霊術一覧</SectionTitle>
+          <MagicPropertyList skills={skills} />
+        </Section>
+      </article>
     </Main>
   );
 }
