@@ -192,7 +192,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
     <>
       <Expand
         title="フリンジシミュレータ"
-        description="選択した組み合わせによって発生する晶霊術を表示します"
+        description="選択した組み合わせで発生する晶霊術を表示します"
       >
         <>
           {isApplyFilter && (
