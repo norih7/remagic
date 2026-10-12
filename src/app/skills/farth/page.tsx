@@ -1,4 +1,3 @@
-
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -7,6 +6,9 @@ import { Skill } from "@/components/SkillPropertyList";
 import { skillLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
+import Information from "@/components/Information";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -194,34 +196,50 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <div className="mb-2">
-          <p>
-            格闘家ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご用意していますのでそちらをご参照ください。
-          </p>
-        </div>
-        <GuideList
-          items={[
-            {
-              title: "拳レベル・蹴レベルシステムの詳細解説",
-              href: "/systems/skill",
-            },
-          ]}
-        ></GuideList>
-      </PageSummary>
-      {/* 
-      <section className="mb-12">
-        <SectionTitle type="data">おすすめの特技</SectionTitle>
-        <div className="advice">
-          <p>準備中</p>
-        </div>
-      </section> */}
+        <PageSummary>
+          <div className="mb-2">
+            <p>
+              ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご確認ください。
+            </p>
+          </div>
+          <GuideList
+            items={[
+              {
+                title: "拳レベル・蹴レベルシステムの詳細解説",
+                href: "/systems/skill",
+              },
+            ]}
+          ></GuideList>
+        </PageSummary>
 
-      <Section>
-        <SectionTitle type="skill">ファラの特技一覧</SectionTitle>
-        <SkillPropertyList skills={skills} />
-      </Section>
-    </article>
+        <Section>
+          <SectionTitle>おすすめ特技/奥義</SectionTitle>
+          <div className="mb-8">
+            <RoundedContainer className="grid grid-cols-2 gap-3">
+              <RoundedItem title="飛燕連脚">
+                序盤で習得し使い勝手が良い特技。空中に舞っているときに空中技を使うと連携ができベース技として強力です。
+              </RoundedItem>
+              <RoundedItem title="鷹爪蹴撃">
+                飛燕連脚からの連携で空中で繰り出す技。飛燕連脚から鷹爪蹴撃の連携が強力で序盤のおすすめ技です。
+              </RoundedItem>
+              <RoundedItem title="飛燕連天脚">
+                飛燕連脚を強化した技。空中で舞う時間が増えるため空中技への連携がさらに容易になっています。
+              </RoundedItem>
+              <RoundedItem title="鷹爪落爆蹴">
+                飛燕連天脚から鷹爪落爆蹴への連携がとても強力。連携せずジャンプから鷹爪落爆蹴の発動も強力。隠しダンジョンのボスも完封できるほど。
+              </RoundedItem>
+              <RoundedItem title="獅子戦吼">
+                ダメージが大きく、敵を巻き込む範囲も多い強力な奥義。獅子戦吼だけでも強力ですが、秘奥義「獅吼爆砕陣」がさらに強力。
+              </RoundedItem>
+            </RoundedContainer>
+          </div>
+        </Section>
+
+        <Section>
+          <SectionTitle type="skill">ファラの特技一覧</SectionTitle>
+          <SkillPropertyList skills={skills} />
+        </Section>
+      </article>
     </Main>
   );
 }

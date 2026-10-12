@@ -1,4 +1,3 @@
-
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -8,6 +7,8 @@ import Information from "@/components/Information";
 import { skillLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -312,31 +313,67 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <div className="mb-2">
-          <p>
-            主人公リッドが習得するすべての特技と奥義の一覧ページです。スキルの前提となる「斬レベル」や「突レベル」の仕組みの解説は専用の別ページをご用意していますのでそちらをご確認ください。
-          </p>
-        </div>
-        <GuideList
-          items={[
-            {
-              title: "斬レベル・突レベルシステムの詳細解説",
-              href: "/systems/skill",
-            },
-          ]}
-        ></GuideList>
-      </PageSummary>
+        <PageSummary>
+          <div className="mb-2">
+            <p>
+              主人公リッドが習得するすべての特技と奥義の一覧ページです。スキルの前提となる「斬レベル」や「突レベル」の仕組みの解説は専用の別ページをご確認ください。
+            </p>
+          </div>
+          <GuideList
+            items={[
+              {
+                title: "斬レベル・突レベルシステムの詳細解説",
+                href: "/systems/skill",
+              },
+            ]}
+          ></GuideList>
+        </PageSummary>
 
-      {/* <section className="mb-12">
-        <SectionTitle type="data">おすすめ特技/奥義</SectionTitle>
-      </section> */}
+        <Section>
+          <SectionTitle>おすすめ特技/奥義</SectionTitle>
+          <div className="mb-8">
+            <RoundedContainer className="grid grid-cols-2 gap-3">
+              <RoundedItem title="虎牙破斬">
+                序盤で覚える特技なのにとても強力で使いやすい。
+                命中率も高いため当たりやすく、奥義連携の基礎に最適です。
+              </RoundedItem>
+              <RoundedItem title="雷神双破斬">
+                序盤で習得可能で命中力も高い奥義。虎牙破斬から雷神双破斬への奥義連携が安定してダメージを与えやすいです。
+              </RoundedItem>
+              <RoundedItem title="空破絶掌撃">
+                ダメージが強力で命中力が高い奥義。2HITなのが逆に敵を巻き込みやすいです。特にガード多用するボスに有効。
+              </RoundedItem>
+              <RoundedItem title="真空裂斬">
+                100回以上使うと可能となる空中発動が最大の魅力。マニュアル操作必須ですが敵の攻撃、特に術を回避するのに最適な特技です。
+              </RoundedItem>
+              <RoundedItem title="鳳凰天駆">
+                リッドの最強技と言える奥義。空中からの落下中は無敵状態で、秘奥義「緋凰絶炎衝」へ連携するのが非常に強力です。
+              </RoundedItem>
+              <RoundedItem title="猛虎連撃破">
+                隙は大きいですが命中力が高いため意外と敵に当たる奥義。9999回使う価値のある奥義でとにかく使い込めます。
+              </RoundedItem>
+            </RoundedContainer>
+            <Information title="猛虎連撃破の使用回数">
+              <p>
+                猛虎連撃破は秘奥義「龍虎滅牙斬」へ繋げることができます。この秘奥義は猛虎連撃破の使用回数分だけ発動しやすくなるため猛虎連撃破はMAXの9999回使う意味があります。
+              </p>
+              <GuideList
+                items={[
+                  {
+                    title: "秘奥義（龍虎滅牙斬）",
+                    href: "/skills/special-skill",
+                  },
+                ]}
+              />
+            </Information>
+          </div>
+        </Section>
 
-      <Section>
-        <SectionTitle type="skill">リッドの特技/奥義一覧</SectionTitle>
-        <SkillPropertyList skills={skills} />
-      </Section>
-    </article>
+        <Section>
+          <SectionTitle type="skill">リッドの特技/奥義一覧</SectionTitle>
+          <SkillPropertyList skills={skills} />
+        </Section>
+      </article>
     </Main>
   );
 }

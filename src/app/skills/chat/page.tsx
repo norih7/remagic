@@ -1,4 +1,3 @@
-
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -7,6 +6,8 @@ import { Skill } from "@/components/SkillPropertyList";
 import { skillLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -57,8 +58,13 @@ export default async function HomePage() {
     },
     {
       name: "コチハン",
-      description:
-        "カチカチに凍りついた冷たいハンマーを投げつけて攻撃する氷属性の特技。運が良ければ相手を凍結状態にして足止めできます。",
+      description: (
+        <>
+          <p>
+            カチカチに凍りついた冷たいハンマーを投げつけて攻撃する氷属性の特技。運が良ければ相手を凍結状態にして足止めできます。
+          </p>
+        </>
+      ),
       requirement: "特定のサブイベントで習得",
       tp: 20,
       hit: 4,
@@ -90,34 +96,47 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <div className="mb-2">
-          <p>
-            海賊チャットが習得するすべての特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご用意していますのでそちらをご確認ください。
-          </p>
-        </div>
-        <GuideList
-          items={[
-            {
-              title: "チャットの特技習得サブイベント一覧",
-              href: "/subevents/skill-chat",
-            },
-          ]}
-        ></GuideList>
-      </PageSummary>
-      {/* 
-      <section className="mb-12">
-        <SectionTitle type="data">おすすめの特技</SectionTitle>
-        <div className="advice">
-          <p>準備中</p>
-        </div>
-      </section> */}
+        <PageSummary>
+          <div className="mb-2">
+            <p>
+              海賊チャットが習得するすべての特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご確認ください。
+            </p>
+          </div>
+          <GuideList
+            items={[
+              {
+                title: "チャットの特技習得サブイベント一覧",
+                href: "/subevents/skill-chat",
+              },
+            ]}
+          ></GuideList>
+        </PageSummary>
 
-      <Section>
-        <SectionTitle type="skill">チャットの特技一覧</SectionTitle>
-        <SkillPropertyList skills={skills} />
-      </Section>
-    </article>
+        <Section>
+          <SectionTitle>おすすめ特技</SectionTitle>
+          <div className="mb-8">
+            <RoundedContainer className="grid grid-cols-2 gap-3">
+              <RoundedItem title="ローバーアイテム">
+                チャットだけが使える敵からアイテムを盗む技。図鑑コンプリートのためには必須で、セージを落とす敵もいるので活用の場面は多め。
+              </RoundedItem>
+              <RoundedItem title="コチハン">
+                攻撃力が高い攻撃。Lv70ほどになると一発3000以上のダメージを与えることも。凍結効果も強く、凍結した場合は大ダメージを狙えます。
+              </RoundedItem>
+              <RoundedItem title="パラライボール">
+                コチハンよりもさらに攻撃力が高い攻撃。麻痺効果はリッドの風刃縛封を合わせて無限コンボを組むこともできます。
+              </RoundedItem>
+              <RoundedItem title="エターナルスロー">
+                TPの限り攻撃し続ける技。攻撃力もコチハンより高いため敵に攻撃の暇を与えず一方的に攻撃を続けることができます。
+              </RoundedItem>
+            </RoundedContainer>
+          </div>
+        </Section>
+
+        <Section>
+          <SectionTitle type="skill">チャットの特技一覧</SectionTitle>
+          <SkillPropertyList skills={skills} />
+        </Section>
+      </article>
     </Main>
   );
 }
