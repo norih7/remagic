@@ -25,64 +25,6 @@ export const metadata = {
   },
 };
 
-// 2. ユーザーのケイジ状態の型定義
-export interface UserCageState {
-  merdy: (string | null)[];
-  kyle: (string | null)[];
-}
-
-// 3. 全体で装備されている属性のリストを取得する関数
-function getEquippedElements(cageState: UserCageState): string[] {
-  const allElements = [...cageState.merdy, ...cageState.kyle].filter(
-    (element): element is string => element !== null,
-  ); // nullを除外しつつ型をstringに絞り込む
-
-  // 重複を除外した配列を返す
-  return Array.from(new Set(allElements));
-}
-
-// 4. フィルタリング関数
-export function filterAvailableSkills(
-  skills: Skill[],
-  cageState: UserCageState,
-): Skill[] {
-  // メルディ側の装備リスト（null除外）
-  const merdyElements = cageState.merdy.filter((e): e is string => e !== null);
-  // キール側の装備リスト（null除外）
-  const kyleElements = cageState.kyle.filter((e): e is string => e !== null);
-
-  return skills.filter((skill) => {
-    const requiredPairs = skill.pair ?? [];
-
-    // pair がない（初期習得など）ものは無条件で表示
-    if (requiredPairs.length === 0) {
-      return true;
-    }
-
-    // --- 【重要】異ケイジ間（分散）の判定ロジック ---
-    // 2属性のフリンジ術の場合（例: "fire" と "water"）
-    if (requiredPairs.length === 2) {
-      const [attr1, attr2] = requiredPairs;
-
-      // パターンA: メルディに attr1、キールに attr2 がある
-      const patternA =
-        merdyElements.includes(attr1) && kyleElements.includes(attr2);
-
-      // パターンB: メルディに attr2、キールに attr1 がある
-      const patternB =
-        merdyElements.includes(attr2) && kyleElements.includes(attr1);
-
-      // ※ どちらのケイジにも同じ属性が重複して入っている場合（片方のケイジ内で完結している場合）は除外したいため、
-      // 「両方のケイジにまたがって存在しているか」を厳密にチェックします。
-      // 例: メルディに water, fire が両方ある場合は、kyle側に片方かないと成立しない
-      return patternA || patternB;
-    }
-
-    // 1属性のみ、または3属性以上の特殊なフリンジがある場合の拡張用（必要に応じて）
-    return false;
-  });
-}
-
 export default async function HomePage() {
   const skills: Skill[] = [
     {
@@ -124,7 +66,7 @@ export default async function HomePage() {
       tp: 10,
       element: ["water"],
       type: "補助",
-      pair: ["water", "wind"],
+      pair: ["water", "earth"],
     },
     {
       name: "ナース",
@@ -651,24 +593,6 @@ export default async function HomePage() {
     },
   ];
 
-  const userCageState = {
-    merdy: [
-      "wind", // キールのケイジ 1枠目
-      "earth", // 2枠目
-      "ice", // 3枠目
-      "light",
-      "time",
-    ],
-    kyle: [
-      "water", // メルディのケイジ 1枠目
-      "fire", // 2枠目
-      "thunder", // 3枠目
-      "dark",
-      "origin",
-    ],
-  };
-  const availableSkills = filterAvailableSkills(skills, userCageState);
-
   return (
     <Main title={title}>
       <article>
@@ -697,9 +621,8 @@ export default async function HomePage() {
             <p>
               基本的には知力が晶霊術のダメージに影響するため、知力の高いキールに攻撃術、メルディに回復が扱えるように振り分けすることがおすすめです。
             </p>
-            <RoundedContainer>
-              <h4>バランス型</h4>
-              <div className="grid grid-cols-2 gap-3 mb-3">
+            <RoundedContainer title="バランス型">
+              <div className="grid grid-cols-2 gap-3 pt-2 mb-3">
                 <RoundedItem title="メルディ">
                   <ul>
                     <li>ウンディーネ</li>
@@ -719,7 +642,7 @@ export default async function HomePage() {
                   </ul>
                 </RoundedItem>
               </div>
-              <RoundedItem title="発生する術">
+              <RoundedItem title="発生する晶霊術の一例">
                 ヒール / アシッドレイン / ナース / リザレクション / レイズデッド
                 / コンセントレート / フレイムウォール / グランドダッシャー /
                 アブソリュート / チャージ / リカバー / インディグネイション /

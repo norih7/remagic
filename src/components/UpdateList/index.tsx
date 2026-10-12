@@ -3,6 +3,15 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/10/12",
+    update: (
+      <>
+        <Link href="/skills/magic">おすすめ晶霊術とフリンジ</Link>
+        をアップデート。フリンジシミュレータを公開しました。
+      </>
+    ),
+  },
+  {
     date: "2026/10/10",
     update: (
       <>
