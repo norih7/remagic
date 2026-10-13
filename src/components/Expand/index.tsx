@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { FiChevronRight, FiChevronDown } from "react-icons/fi";
 import { LuChevronDown, LuChevronRight } from "react-icons/lu";

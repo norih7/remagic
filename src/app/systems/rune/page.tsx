@@ -9,6 +9,8 @@ import { getLocationItemsData } from "@/lib/db";
 import { systemLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import Expand from "@/components/Expand";
+import CardList from "@/components/CardLIst";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -447,10 +449,12 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <p>アイテムを別アイテムに変化させるルーンボトルについて説明します。</p>
-      </PageSummary>
-      {/* <div className="mb-12">
+        <PageSummary>
+          <p>
+            アイテムを別アイテムに変化させるルーンボトルについて説明します。
+          </p>
+        </PageSummary>
+        {/* <div className="mb-12">
         <h4 className="mb-2">目次</h4>
         <ul className="flex">
           <li className="bg-gray-200 rounded-lg mr-2 px-3 py-1">
@@ -464,74 +468,68 @@ export default async function HomePage() {
           </li>
         </ul>
       </div> */}
-      <Section>
-        <SectionTitle data="about">ルーンボトル活用ガイド</SectionTitle>
-        <div className="mb-4">
+        <Section>
+          <SectionTitle data="about">ルーンボトル活用ガイド</SectionTitle>
+          <div className="mb-4">
+            <p>
+              ルーンボトルはアイテムを変化させる便利なツールですが、必ずしも有利になるとは限りません。効率的な運用を心がけましょう。
+            </p>
+          </div>
+          <div className="mb-8">
+            <h3>活用ポイント</h3>
+            <CardList
+              list={[
+                "性能向上を狙う：元のアイテムより上位の性能へ変化する場合は非常におすすめです。",
+                "相互変換は非推奨：ショップで安価に購入できる「ダークボトル」や「ホーリィボトル」等の相互変換は、ボトルの無駄遣いになりがちです。",
+                "薬草のステータス変換：薬草類はステータスの種類が入れ替わるだけで、性能自体は向上しません。特定のステータスを優先的に伸ばしたい場合に有効です。",
+              ]}
+            />
+          </div>
+          <div className="mb-8">
+            <h3>ダンジョン・マップでのルーンボトル入手</h3>
+            <p>
+              ルーンボトルは通常ストーリー進行では7個程度しか入手できない貴重なアイテムです。のちに無限購入が可能になりますが、それまではオススメ度の高い変化をさせるようにしてください。
+            </p>
+            <Expand title="ルーンボトルの入手場所">
+              <table>
+                <thead>
+                  <tr>
+                    <th>場所</th>
+                    <th>備考</th>
+                  </tr>
+                </thead>
+                <tbody>{rows}</tbody>
+              </table>
+            </Expand>
+          </div>
+          <div className="mb-8"></div>
+        </Section>
+        <Section>
+          <SectionTitle>ルーンボトルの購入方法</SectionTitle>
+          <EventCondition category="period">
+            ティンシア到着後以降
+          </EventCondition>
           <p>
-            ルーンボトルはアイテムを変化させる便利なツールですが、必ずしも有利になるとは限りません。効率的な運用を心がけましょう。
+            基本的にダンジョン内で限られた数しか入手できないルーンボトルですが、ストーリー後半からは無限購入することが可能となります。ティンシア到着後から可能です。
           </p>
-        </div>
-        <div className="mb-8">
-          <h3>活用ポイント</h3>
-          <ul>
-            <li className="mb-2">
-              <strong>性能向上を狙う：</strong>
-              <br />
-              元のアイテムより上位の性能へ変化する場合は非常におすすめです。
-            </li>
-            <li className="mb-2">
-              <strong>相互変換は非推奨：</strong>
-              <br />
-              ショップで安価に購入できる「ダークボトル」や「ホーリィボトル」等の相互変換は、ボトルの無駄遣いになりがちです。
-            </li>
-            <li className="mb-2">
-              <strong>薬草のステータス変換：</strong>
-              <br />
-              薬草類はステータスの種類が入れ替わるだけで、性能自体は向上しません。特定のステータスを優先的に伸ばしたい場合にのみ有効です。
-            </li>
-          </ul>
-        </div>
-        <div className="mb-8">
-          <h3>ダンジョン・マップでのルーンボトル入手</h3>
           <p>
-            ルーンボトルは通常ストーリー進行では7個程度しか入手できない貴重なアイテムです。のちに無限購入が可能になりますが、それまではオススメ度の高い変化をさせるようにしてください。※他にも隠しダンジョンなどで入手できますが現在情報を準備中です。
+            ティンシアの船具屋では「販売室」の改造(購入)が可能になり、バンエルティア号内の販売室にある自販機ではルーンボトルを購入することができるます。なお販売価格は「100000」ガルドとかなり高額。
           </p>
-          <table>
-            <thead>
-              <tr>
-                <th>場所</th>
-                <th>備考</th>
-              </tr>
-            </thead>
-            <tbody>{rows}</tbody>
-          </table>
-        </div>
-        <div className="mb-8"></div>
-      </Section>
-      <Section>
-        <SectionTitle>ルーンボトルの購入方法</SectionTitle>
-        <EventCondition category="period">ティンシア到着後以降</EventCondition>
-        <p>
-          基本的にダンジョン内で限られた数しか入手できないルーンボトルですが、ストーリー後半からは無限購入することが可能となります。ティンシア到着後から可能です。
-        </p>
-        <p>
-          ティンシアの船具屋では「販売室」の改造(購入)が可能になり、バンエルティア号内の販売室にある自販機ではルーンボトルを購入することができるます。なお販売価格は「100000」ガルドとかなり高額。
-        </p>
-      </Section>
+        </Section>
 
-      <section>
-        <SectionTitle>ルーンボトルの変化一覧</SectionTitle>
-        <Information title="オススメ度について">
-          オススメ度は以下の基準としています
-          <ul>
-            <li>1: ショップで購入可能/明らかに劣化</li>
-            <li>3: ルーンボトルを無限購入できる状態で必要ならアリ</li>
-            <li>5: 元アイテムから大幅効果アップ/唯一無二</li>
-          </ul>
-        </Information>
-        <RunePropertyList runes={runeItems} />
-      </section>
-    </article>
+        <Section>
+          <SectionTitle>ルーンボトルの変化一覧</SectionTitle>
+          <Information title="オススメ度について">
+            オススメ度は以下の基準としています
+            <ul>
+              <li>1: ショップで購入可能/明らかに劣化</li>
+              <li>3: ルーンボトルを無限購入できる状態で必要ならアリ</li>
+              <li>5: 元アイテムから大幅効果アップ/唯一無二</li>
+            </ul>
+          </Information>
+          <RunePropertyList runes={runeItems} />
+        </Section>
+      </article>
     </Main>
   );
 }

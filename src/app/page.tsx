@@ -50,6 +50,7 @@ export default async function HomePage() {
     <Main title={subTitle}>
       <article>
         <Search />
+
         <div className="mb-8">
           <h2 className="text-lg font-bold mb-2 !border-none">
             テイルズオブエターニア攻略
@@ -60,7 +61,7 @@ export default async function HomePage() {
         </div>
 
         {/* 2. 注目カテゴリセクション */}
-        <section>
+        <section className="mb-8">
           <SectionTitle>注目コンテンツ</SectionTitle>
           <ContentLinks list={featuredLinks} />
         </section>

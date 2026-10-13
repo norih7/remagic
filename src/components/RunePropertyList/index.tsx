@@ -6,8 +6,10 @@ import {
   LuTarget,
   LuAward,
   LuHexagon,
-  LuBookType,
+  LuArrowRight,
 } from "react-icons/lu";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { MdArrowCircleRight } from "react-icons/md";
 import { useState } from "react";
 import { MdWaterDrop } from "react-icons/md";
 import { LiaComment } from "react-icons/lia";
@@ -45,12 +47,12 @@ export const RunePropertyList: React.FC<RunePropertyListProps> = ({
         // const bg = elementMap[skill.element].color;
         const properties = [
           {
-            label: <>ショップ/敵ドロップ入手</>,
-            value: rune.canBuy ? "可能" : "不可能",
-          },
-          {
             label: <>オススメ度</>,
             value: <StarRating rating={rune.rate} />,
+          },
+          {
+            label: <>ショップ/敵ドロップ入手</>,
+            value: rune.canBuy ? "可能" : "不可能",
           },
         ];
 
@@ -66,26 +68,34 @@ export const RunePropertyList: React.FC<RunePropertyListProps> = ({
         return (
           <div
             key={index}
-            className="mb-4 font-bold border border-slate-300 rounded-lg p-3 text-slate-700"
+            className="mb-4 border border-slate-300 rounded-lg p-3 text-slate-700"
           >
-            <h3 className="text-[1rem]">{rune.before}</h3>
-            <div className=" border-slate-300 rounded-lg font-bold">
-              <RoundedItem title="変化後のアイテム" className="mb-2">
-                <span className="flex items-center">
-                  <LuCornerDownRight className="mr-1" />
-                  {rune.after}
+            <h3 className="text-lg flex items-center font-bold mb-2">
+              {rune.before} <LuArrowRight className="mx-2" /> {rune.after}
+            </h3>
+            {/* <div className="grid grid-cols-2 mb-2 font-bold">
+              <div className="pl-2">
+                <span className="bg-gray-500 py-1 px-3 rounded-xs text-white text-xs">
+                  変化前
                 </span>
-              </RoundedItem>
-              <RoundedItem title="説明" className="mb-2">
-                {rune.description}
-              </RoundedItem>
-              <div className="grid grid-cols-2 gap-2">
+                <div className="text-lg">{rune.before}</div>
+              </div>
+              <div className="pl-2">
+                <span className="bg-lime-600 py-1 px-3 rounded-xs text-white text-xs">
+                  変化後
+                </span>
+                <div className="text-lg">{rune.after}</div>
+              </div>
+            </div> */}
+            <div className=" border-slate-300 rounded-lg">
+              <div className="grid grid-cols-2 gap-2 mb-2">
                 {properties.map((item, index) => (
                   <RoundedItem title={item.label} key={index}>
                     {item.value}
                   </RoundedItem>
                 ))}
               </div>
+              <RoundedItem title="説明">{rune.description}</RoundedItem>
               {/* <h4 className="flex items-center text-basic font-bold text-gray-600 border-b border-gray-300 py-1 mb-3">
                 <LiaComment className="mr-1" />
                 説明
