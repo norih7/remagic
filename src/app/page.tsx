@@ -49,7 +49,8 @@ export default async function HomePage() {
   return (
     <Main title={subTitle}>
       <article>
-        <div className="mb-4">
+        <Search />
+        <div className="mb-8">
           <h2 className="text-lg font-bold mb-2 !border-none">
             テイルズオブエターニア攻略
           </h2>
@@ -57,7 +58,6 @@ export default async function HomePage() {
             RE:MAGICではリマスター版に対応したテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
           </p>
         </div>
-        <Search />
 
         {/* 2. 注目カテゴリセクション */}
         <section>
