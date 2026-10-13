@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap && node scripts/overwrite-404.js",
+    "build": "next build && next-sitemap && node scripts/overwrite-404.js && npx pagefind --site \"out\"",
     "data": "node scripts/fetch-data.js",
     "start": "next start",
     "lint": "eslint",
@@ -39,6 +39,7 @@
     "drizzle-kit": "^0.31.10",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "pagefind": "^1.5.2",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "tsx": "^4.22.4",

@@ -11,6 +11,7 @@ import { usePathname } from "next/navigation";
 import Breadcrumb from "@/components/Breadcrumb";
 import { useCategory } from "@/hooks/useCategory";
 import Menu from "./Menu";
+
 type Props = {
   title: string;
   children: React.ReactNode;
@@ -80,7 +81,7 @@ const Main = ({ title, children }: Props) => {
           {/* <div className="p-4 bg-gray- border border-gray-400 rounded-xl mb-8">
             Adsense
           </div> */}
-          {children}
+          <div data-pagefind-body>{children}</div>
         </main>
       </div>
     </>

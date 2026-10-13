@@ -8,6 +8,7 @@ import SectionTitle from "@/components/SectionTitle";
 import Link from "next/link";
 import Main from "@/components/SiteLayout/Main";
 import UpdateList from "@/components/UpdateList";
+import Search from "@/components/Search";
 
 // 攻略記事やカテゴリのダミーデータ
 type Link = {
@@ -47,13 +48,16 @@ export default async function HomePage() {
   const subTitle = "エターニア攻略トップ";
   return (
     <Main title={subTitle}>
-      <article className="space-y-12">
-        <h2 className="text-lg font-bold mb-2 !border-none">
-          テイルズオブエターニア攻略
-        </h2>
-        <p className="text-slate-1000">
-          RE:MAGICではリマスター版に対応したテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
-        </p>
+      <article>
+        <div className="mb-4">
+          <h2 className="text-lg font-bold mb-2 !border-none">
+            テイルズオブエターニア攻略
+          </h2>
+          <p className="text-slate-1000">
+            RE:MAGICではリマスター版に対応したテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
+          </p>
+        </div>
+        <Search />
 
         {/* 2. 注目カテゴリセクション */}
         <section>

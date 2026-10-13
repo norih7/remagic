@@ -377,3 +377,21 @@ table td {
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+
+.pagefind-ui__search-input {
+  font-size: 0.8rem !important;
+}
+
+.pagefind-ui__result-thumb {
+  display: none !important;
+}
+
+.pagefind-ui__results-area {
+  max-height: 400px !important; /* お好みの高さ */
+  overflow-y: auto !important; /* スクロール有効化 */
+  border: 1px solid #bbb !important; /* 枠線 */
+  border-radius: 8px !important; /* 角丸 */
+  padding: 12px !important; /* 内側余白 */
+  margin-top: 12px !important; /* 検索バーとの間隔 */
+  background-color: #ffffff !important; /* 背景色 */
+}
