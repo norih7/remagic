@@ -16,6 +16,7 @@ import CardList from "@/components/CardLIst";
 import { storyLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import TableOfContents from "@/components/TableOfContents";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -46,6 +47,10 @@ export default async function HomePage() {
             インフェリアからセレスティアの世界へ向かう「霊峰ファロース」までを解説。謎解きが複雑な「いざないの密林」はダンジョンマップ付きで解説！他のダンジョン内にもレンズがあるので取り逃がしがないように確認してください。
           </p>
         </PageSummary>
+
+        <Section>
+          <TableOfContents containerId="main-content" />
+        </Section>
 
         <Section>
           <SectionTitle type="flag">1.いざないの密林</SectionTitle>

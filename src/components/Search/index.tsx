@@ -91,7 +91,7 @@ export default function Search() {
   }, []);
 
   return (
-    <div className="w-full max-w-2xl mx-auto mb-8">
+    <div className="w-full max-w-2xl mx-auto mb-6">
       {/* Pagefind UI が描画されるターゲット要素 */}
       <div id="search" className="pagefind-ui"></div>
 

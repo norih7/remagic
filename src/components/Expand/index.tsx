@@ -23,10 +23,10 @@ const Expand = (props: Props) => {
   );
 
   return (
-    <div className="grid grid-cols-1 mb-4 border border-gray-600 bg-gray-0 rounded-sm px-4 pt-1">
+    <div className="grid grid-cols-1 mb-4 border border-gray-400 bg-gray-0 rounded-sm px-4 pt-1">
       <div
         className={`py-2 cursor-pointer select-none ${
-          isOpen ? "border-b border-gray-600" : ""
+          isOpen ? "border-b border-gray-400" : ""
         }`}
         onClick={toggleOpen}
       >

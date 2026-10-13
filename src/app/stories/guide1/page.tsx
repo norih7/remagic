@@ -13,6 +13,10 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import { storyLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
+import Link from "next/link";
+import TableOfContents from "@/components/TableOfContents";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -45,7 +49,11 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <SectionTitle type="flag">1.ラシュアン</SectionTitle>
+          <TableOfContents />
+        </Section>
+
+        <Section>
+          <SectionTitle>1.ラシュアン</SectionTitle>
           <p>物語はラシュアンから始まります。</p>
           <p>
             森の中を進んでいると、空から落ちてきた物体と一人の少女を発見します。
