@@ -23,6 +23,7 @@ export async function onRequest(context) {
       status: 301,
       headers: {
         Location: url.toString(),
+        "X-Robots-Tag": "noindex",
       },
     });
   }
