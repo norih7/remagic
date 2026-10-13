@@ -1,4 +1,3 @@
-
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -7,6 +6,8 @@ import { Skill } from "@/components/SkillPropertyList";
 import { skillLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import RoundedContainer from "@/components/RoundedContainer";
+import RoundedItem from "@/components/RoundedItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -66,7 +67,7 @@ export default async function HomePage() {
       type: "特技",
     },
     {
-      name: "ダークレイザー",
+      name: "ダークイレイザー",
       description:
         "漆黒の闇を纏った特殊な銃弾を連続発射する闇属性の特技。キャンセルLv2に対応し、多数のヒット数で相手を圧倒します。",
       requirement: "特定のサブイベントで習得",
@@ -90,34 +91,44 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <div className="mb-2">
-          <p>
-            豪快な銃撃を得意とするフォッグの特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細情報については、専用の攻略ガイドページをご用意していますのでそちらをご確認ください。
-          </p>
-        </div>
-        <GuideList
-          items={[
-            {
-              title: "フォッグの特技習得サブイベント一覧",
-              href: "/subevents/skill-fog",
-            },
-          ]}
-        ></GuideList>
-      </PageSummary>
-      {/* 
-      <section className="mb-12">
-        <SectionTitle type="data">おすすめの特技</SectionTitle>
-        <div className="advice">
-          <p>準備中</p>
-        </div>
-      </section> */}
+        <PageSummary>
+          <div className="mb-2">
+            <p>
+              フォッグの特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細情報については、専用のサブイベント解説ページをご確認ください。
+            </p>
+          </div>
+          <GuideList
+            items={[
+              {
+                title: "フォッグの特技習得サブイベント一覧",
+                href: "/subevents/skill-fog",
+              },
+            ]}
+          ></GuideList>
+        </PageSummary>
 
-      <Section>
-        <SectionTitle type="skill">フォッグの特技一覧</SectionTitle>
-        <SkillPropertyList skills={skills} />
-      </Section>
-    </article>
+        <Section>
+          <SectionTitle>おすすめ特技</SectionTitle>
+          <div className="mb-8">
+            <RoundedContainer className="grid grid-cols-2 gap-3">
+              <RoundedItem title="アクアスパイラル">
+                詠唱時間が短いキャンセルLv1の技。攻撃範囲とダメージが大きく、アクアスパイラル連発だけでも敵を薙ぎ倒せます。
+              </RoundedItem>
+              <RoundedItem title="レイジレーザー">
+                ダークイレイザーが使いづらさがあるためキャンセルLv2としてレイジレーザーがおすすめです。
+              </RoundedItem>
+              <RoundedItem title="エレメンタルマスター">
+                画面ほぼ全域に強力な攻撃ができる技。エレメンタルマスター単体で強力ですが、アクアスパイラル、レイジレーザーと連携するとさらに強力。
+              </RoundedItem>
+            </RoundedContainer>
+          </div>
+        </Section>
+
+        <Section>
+          <SectionTitle type="skill">フォッグの特技一覧</SectionTitle>
+          <SkillPropertyList skills={skills} />
+        </Section>
+      </article>
     </Main>
   );
 }

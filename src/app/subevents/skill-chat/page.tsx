@@ -27,7 +27,7 @@ export const metadata = {
 };
 export default async function HomePage() {
   const anserStyle =
-    "bg-slate-100 border rounded-md px-3 py-1 font-bold text-slate-600 inline-block mt-1";
+    "block bg-slate-100 border rounded-md px-3 py-1 font-bold text-slate-600 mt-2";
   const questionStyle = "border-b pb-2 mb-2";
 
   return (
@@ -107,122 +107,38 @@ export default async function HomePage() {
         <Section>
           <SectionTitle>エターナルスロー習得時のクイズ正解一覧</SectionTitle>
           <p>
-            アイフリードの隠しアジトでのイベント中に出題されるクイズは、ひっかけ問題が多く非常に難易度が高いため、ここで全10問の正確な内容と正解を確認しておきましょう。
+            アイフリードの隠しアジトでのイベント中に出題されるクイズはひっかけ問題が多く難易度が高いため、ここで全10問の正確な内容と正解を確認しておきましょう。
           </p>
-          <div className="overflow-x-auto mt-4">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr>
-                  <th className="w-16 p-2 border bg-slate-50 text-center">
-                    No
-                  </th>
-                  <th className="p-2 border bg-slate-50 text-left">
-                    クイズの内容と正解
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="p-3 border text-center font-bold">1</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q:
-                      セージ2個、レッドセージ3個、セボリー2個。体力に関わるのはいくつ？
-                    </p>
-                    <span className={anserStyle}>A: 5</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">2</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q:
-                      バナナ2個、キウイ3個、アマンゴ1個、キャベツ3個。果物は全部でいくつ？
-                    </p>
-                    <span className={anserStyle}>A: 6</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">3</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q:
-                      トマト3個、ポテト4個、とうふ5丁。食材の名前に「と(ト)」とついているのはいくつ？
-                    </p>
-                    <span className={anserStyle}>A: 4</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">4</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q:
-                      10人の海賊のうちスカーフを巻いているのが5人、パイプをふかしているのが6人。スカーフを巻いている海賊の全員はパイプをふかしている。スカーフを巻かず、パイプもふかしていないのは何人？
-                    </p>
-                    <span className={anserStyle}>A: 4</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">5</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q: 前の問題でパイプをふかしているのは何人？
-                    </p>
-                    <span className={anserStyle}>A: 6</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">6</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q:
-                      アワーグラス3個、なべのふた3個、トートバッグ2個。この中で道具に分類されるアイテムの総数はいくつ？
-                    </p>
-                    <span className={anserStyle}>A: 3</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">7</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q: 2 × 3 - 2 + 29 - 1 × 29 は？
-                    </p>
-                    <span className={anserStyle}>A: 4</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">8</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q:
-                      からおでん1回、おこげサンド4回、あまにんどうふ3回。これだけの料理をするのにレッドソディを何回使った？
-                    </p>
-                    <span className={anserStyle}>A: 1</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">9</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q:
-                      えび3個、ビート5個、キャベツ8個、ポテト7個、レッドソディ8個。この材料でホットボルシチは何回作れる？
-                    </p>
-                    <span className={anserStyle}>A: 5</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="p-3 border text-center font-bold">10</td>
-                  <td className="p-3 border !text-left">
-                    <p className={questionStyle}>
-                      Q:
-                      おじいさん達には子供が4人ずついる。おじいさん達の子供達にも4人ずつ子供がいる。おじいさん達の孫の数は96である。おじいさん達は何人？
-                    </p>
-                    <span className={anserStyle}>A: 6</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <RoundedContainer title="1. セージ2個、レッドセージ3個、セボリー2個。体力に関わるのはいくつ？">
+            <span className={anserStyle}>正解: 5</span>
+          </RoundedContainer>
+          <RoundedContainer title="2. バナナ2個、キウイ3個、アマンゴ1個、キャベツ3個。果物は全部でいくつ？">
+            <span className={anserStyle}>正解: 6</span>
+          </RoundedContainer>
+          <RoundedContainer title="3. トマト3個、ポテト4個、とうふ5丁。食材の名前に「と(ト)」とついているのはいくつ？">
+            <span className={anserStyle}>正解: 4</span>
+          </RoundedContainer>
+          <RoundedContainer title="4. 10人の海賊のうちスカーフを巻いているのが5人、パイプをふかしているのが6人。スカーフを巻いている海賊の全員はパイプをふかしている。スカーフを巻かず、パイプもふかしていないのは何人？">
+            <span className={anserStyle}>正解: 4</span>
+          </RoundedContainer>
+          <RoundedContainer title="5. 前の問題でパイプをふかしているのは何人？">
+            <span className={anserStyle}>正解: 6</span>
+          </RoundedContainer>
+          <RoundedContainer title="6. アワーグラス3個、なべのふた3個、トートバッグ2個。この中で道具に分類されるアイテムの総数はいくつ？">
+            <span className={anserStyle}>正解: 3</span>
+          </RoundedContainer>
+          <RoundedContainer title="7. 2 × 3 - 2 + 29 - 1 × 29 は？">
+            <span className={anserStyle}>正解: 4</span>
+          </RoundedContainer>
+          <RoundedContainer title="8. からおでん1回、おこげサンド4回、あまにんどうふ3回。これだけの料理をするのにレッドソディを何回使った？">
+            <span className={anserStyle}>正解: 1</span>
+          </RoundedContainer>
+          <RoundedContainer title="9. えび3個、ビート5個、キャベツ8個、ポテト7個、レッドソディ8個。この材料でホットボルシチは何回作れる？">
+            <span className={anserStyle}>正解: 5</span>
+          </RoundedContainer>
+          <RoundedContainer title="10. おじいさん達には子供が4人ずついる。おじいさん達の子供達にも4人ずつ子供がいる。おじいさん達の孫の数は96である。おじいさん達は何人？">
+            <span className={anserStyle}>正解: 6</span>
+          </RoundedContainer>
         </Section>
       </article>
     </Main>

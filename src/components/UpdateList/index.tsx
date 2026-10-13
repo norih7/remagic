@@ -3,6 +3,15 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/10/13",
+    update: (
+      <>
+        <Link href="/skills">特技/晶霊術</Link>
+        の各ページアップデート。おすすめ技の紹介を追加しました。
+      </>
+    ),
+  },
+  {
     date: "2026/10/12",
     update: (
       <>
