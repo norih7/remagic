@@ -270,18 +270,14 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
             <div className="mb-3">
               {skillName}
               <div className="flex flex-wrap items-center gap-1">
-                <RoundedInlineList title="種別" type="wide">
-                  {skill.type}
-                </RoundedInlineList>
-                <RoundedInlineList title="TP" type="wide">
-                  {skill.tp}
-                </RoundedInlineList>
-                <RoundedInlineList title="HIT" type="wide">
-                  {skill.hit}
-                </RoundedInlineList>
-                <RoundedInlineList title="属性" type="wide">
+                <RoundedInlineList title="種別">{skill.type}</RoundedInlineList>
+                <RoundedInlineList title="TP">{skill.tp}</RoundedInlineList>
+                {skill.hit && (
+                  <RoundedInlineList title="HIT">{skill.hit}</RoundedInlineList>
+                )}
+                <div>
                   <Elements list={skill.element} />
-                </RoundedInlineList>
+                </div>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2 mb-2">

@@ -11,7 +11,7 @@ type Props = {
 const PageSummary = (props: Props) => {
   const { children, title = "", color = "green" } = props;
   return (
-    <div className={`${styles.summary} mb-8 border-b pb-4 border-gray-300`}>
+    <div className={`${styles.summary} mb-12 border-b pb-4 border-gray-300`}>
       <div className="flex items-start gap-x-2">
         <div className="pt-">
           <LuMessageCircleMore size={22} className="text-amber-600" />

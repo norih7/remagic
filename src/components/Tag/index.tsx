@@ -11,7 +11,7 @@ const Tag = (props: Props) => {
   const { tagClass } = elementMap[element];
   return (
     <span
-      className={`mr-1 px-2 py-1 border rounded-xs text-xs font-bold ${tagClass}`}
+      className={`mr-1 px-2 py-[6px] border rounded-xs text-xs font-bold ${tagClass}`}
     >
       {children}
       {tail}

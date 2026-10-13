@@ -9,6 +9,7 @@ import Main from "@/components/SiteLayout/Main";
 import Section from "@/components/Section";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
+import PageSummary from "@/components/PageSummary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -202,7 +203,7 @@ export default async function HomePage() {
     {
       name: "エクスプロード",
       description:
-        "巨大な爆発を発生させて敵にダメージを与える。敵が浮き上がって叩きつけられるとダウン状態となる。後半ではかなりフリンジしやすい強力な術。",
+        "巨大な爆発を発生させて敵にダメージを与える。敵が浮き上がって叩きつけられるとダウン状態となる。隠し大晶霊が不要なため後半ではかなりフリンジしやすい強力な術。",
       requirement: "イフリートLv15",
       requirement2: "ヴォルトLv9",
       tp: 36,
@@ -213,7 +214,7 @@ export default async function HomePage() {
     },
     {
       name: "グレイブ",
-      description: "-",
+      description: "",
       requirement: "メルディ加入時に習得済み",
       tp: 7,
       element: ["earth"],
@@ -223,7 +224,8 @@ export default async function HomePage() {
     },
     {
       name: "ロックブレイク",
-      description: "-",
+      description:
+        "地上から岩を突き出し敵に攻撃する。軽い敵は空中に浮かぶことも。",
       requirement: "ノームLv1",
       tp: 18,
       element: ["earth"],
@@ -233,7 +235,8 @@ export default async function HomePage() {
     },
     {
       name: "グランドダッシャー",
-      description: "-",
+      description:
+        "対象の敵の広範囲に岩の波を発生させてダメージを与える。範囲が広くダメージも大きい。",
       requirement: "ノームLv21",
       requirement2: "シャドウLv10",
       tp: 48,
@@ -254,7 +257,8 @@ export default async function HomePage() {
     },
     {
       name: "フリーズランサー",
-      description: "-",
+      description:
+        "対象の敵の広範囲に鋭利な氷を投げてダメージを与える。詠唱時間が短く、敵の足止めや敵の術発動の邪魔に最適。",
       requirement: "セルシウスLv1",
       tp: 21,
       element: ["ice"],
@@ -264,7 +268,7 @@ export default async function HomePage() {
     },
     {
       name: "レジスト",
-      description: "-",
+      description: "味方単体が術を受けるダメージを30%軽減する",
       requirement: "セルシウスLv10",
       requirement2: "ノームLv7",
       tp: 6,
@@ -274,7 +278,8 @@ export default async function HomePage() {
     },
     {
       name: "ブリザード",
-      description: "-",
+      description:
+        "吹雪を発生させ、敵全体にダメージを与える。稀に凍結状態となることも。ダメージは控えめですが敵全体にダメージを与えることができるのは強み。",
       requirement: "セルシウスLv12",
       requirement2: "シルフLv15",
       tp: 20,
@@ -285,7 +290,8 @@ export default async function HomePage() {
     },
     {
       name: "アブソリュート",
-      description: "-",
+      description:
+        "対象の敵1体を氷結させてダメージを与える。稀に凍結状態となることも。敵単体の上級術ですがダメージは控えめ。",
       requirement: "セルシウスLv14",
       requirement2: "ヴォルトLv12",
       tp: 30,
@@ -306,7 +312,8 @@ export default async function HomePage() {
     },
     {
       name: "サンダーブレード",
-      description: "-",
+      description:
+        "術者の中心に雷の剣で円を描き、当たった敵にダメージを与える。当てるためには敵の近くで発動させる必要があるため使いづらい。",
       requirement: "ヴォルトLv1",
       tp: 24,
       element: ["thunder"],
@@ -316,7 +323,7 @@ export default async function HomePage() {
     },
     {
       name: "チャージ",
-      description: "-",
+      description: "味方1人に術者のTPを100分け与える",
       requirement: "ヴォルトLv5",
       requirement2: "シルフLv13",
       tp: 100,
@@ -326,7 +333,7 @@ export default async function HomePage() {
     },
     {
       name: "リカバー",
-      description: "-",
+      description: "味方1人の異常状態を回復する（戦闘不能は対象外）",
       requirement: "ヴォルトLv6",
       requirement2: "ノームLv11",
       tp: 10,
@@ -336,7 +343,8 @@ export default async function HomePage() {
     },
     {
       name: "インディグネイション",
-      description: "-",
+      description:
+        "選択した敵の周辺に巨大な雷を落としてダメージを与える。周囲の数体ほどは巻き込め、ダメージも大きい。",
       requirement: "ヴォルトLv15",
       requirement2: "レムLv10",
       tp: 52,
@@ -347,7 +355,8 @@ export default async function HomePage() {
     },
     {
       name: "レイ",
-      description: "-",
+      description:
+        "対象の敵の上空から光のビームを発射しダメージを与える。周囲の数体を巻き込んでダメージを与えることが可能。",
       requirement: "レムLv1",
       tp: 30,
       element: ["light"],
@@ -357,7 +366,7 @@ export default async function HomePage() {
     },
     {
       name: "ホーリーブレス",
-      description: "-",
+      description: "味方単体のHPを徐々に回復させる",
       requirement: "レムLv15",
       requirement2: "イフリートLv20",
       tp: 8,
@@ -367,7 +376,8 @@ export default async function HomePage() {
     },
     {
       name: "ホーリーランス",
-      description: "-",
+      description:
+        "対象の敵に光の槍を放ちダメージを与える。ダメージが高く狙い撃ちに適した術です。",
       requirement: "レムLv21",
       requirement2: "マクスウェルLv20",
       tp: 52,
@@ -378,7 +388,8 @@ export default async function HomePage() {
     },
     {
       name: "ダークフォース",
-      description: "-",
+      description:
+        "対象の敵の周辺に闇の波動を発生させてダメージを与える。周囲の数体を巻き込んでダメージを与えることが可能。",
       requirement: "シャドウLv1",
       tp: 32,
       element: ["dark"],
@@ -388,7 +399,7 @@ export default async function HomePage() {
     },
     {
       name: "バリアー",
-      description: "-",
+      description: "味方1人が敵から受けるダメージを20%軽減させる",
       requirement: "シャドウLv5",
       requirement2: "ヴォルトLv10",
       tp: 6,
@@ -398,7 +409,7 @@ export default async function HomePage() {
     },
     {
       name: "ディープミスト",
-      description: "-",
+      description: "対象の敵の命中率を低下させる",
       requirement: "シャドウLv5",
       requirement2: "ウンディーネLv15",
       tp: 6,
@@ -408,7 +419,8 @@ export default async function HomePage() {
     },
     {
       name: "ブラッディハウリング",
-      description: "-",
+      description:
+        "対象の敵の周辺に大きな闇の波動を発生させてダメージを与える。ダークフォースをよりダメージが高く、周囲の数体を巻き込んでダメージを与えることが可能。",
       requirement: "シャドウLv23",
       requirement2: "ゼクンドゥスLv18",
       tp: 72,
@@ -419,7 +431,8 @@ export default async function HomePage() {
     },
     {
       name: "メテオスウォーム",
-      description: "-",
+      description:
+        "対象の敵周辺に隕石を落下させてダメージを与える。広範囲の敵にダメージを与えるが隕石の場所に敵がいなければダメージを与えれないので使いにくい場合も。",
       requirement: "マクスウェルLv1",
       tp: 60,
       element: ["origin"],
@@ -429,7 +442,8 @@ export default async function HomePage() {
     },
     {
       name: "シューティングスター",
-      description: "-",
+      description:
+        "敵全体に流星を当てダメージを与える。画面全体に適用され、ダメージが高いNo1と言っていいほどの強力技。2体の隠し大晶霊が必要なので習得難易度も高いです。",
       requirement: "マクスウェルLv26",
       requirement2: "ゼクンドゥスLv26",
       tp: 80,
@@ -440,7 +454,8 @@ export default async function HomePage() {
     },
     {
       name: "ディストーション",
-      description: "-",
+      description:
+        "対象の敵に固定で5000ダメージを与える。非常に強力でボス戦などで重宝します。術の発動時間が長いため通常弱い敵に使うと戦闘時間が長くなる点だけ注意。",
       requirement: "ゼクンドゥスLv1",
       tp: 64,
       element: ["time"],
@@ -450,7 +465,8 @@ export default async function HomePage() {
     },
     {
       name: "スクラグネイション",
-      description: "-",
+      description:
+        "対象の敵周辺に時空の歪みを発生させ、敵にダメージを与えたときののけぞり時間を伸ばす",
       requirement: "ゼクンドゥスLv5",
       requirement2: "セルシウスLv30",
       tp: 16,
@@ -460,7 +476,8 @@ export default async function HomePage() {
     },
     {
       name: "ディレイ",
-      description: "-",
+      description:
+        "対象の敵周辺に時空の歪みを発生させ、敵の術の詠唱時間を2倍にする",
       requirement: "ゼクンドゥスLv20",
       requirement2: "ノームLv30",
       tp: 60,
@@ -596,6 +613,9 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
+        <PageSummary>
+          エターニアの晶霊術一覧ページです。フリンジのシミュレータでどの組み合わせで術が発生するかを確認することもできます。
+        </PageSummary>
         <Section>
           <SectionTitle>おすすめ晶霊術とフリンジ</SectionTitle>
           <div className="mb-8">
@@ -643,10 +663,9 @@ export default async function HomePage() {
                 </RoundedItem>
               </div>
               <RoundedItem title="発生する晶霊術の一例">
-                ヒール / アシッドレイン / ナース / リザレクション / レイズデッド
-                / コンセントレート / フレイムウォール / グランドダッシャー /
-                アブソリュート / チャージ / リカバー / インディグネイション /
-                ホーリーブレス / ホーリーランス / ブラッディハウリング /
+                ヒール / ナース / リザレクション / レイズデッド/
+                グランドダッシャー / アブソリュート / リカバー /
+                インディグネイション / ホーリーランス / ブラッディハウリング /
                 シューティングスター / +フリーズガード / +アイテムゲッター /
                 +メンタルサプライ / +ヒールウェポン / +ライフアップ /
                 +メンタルアップ / +ドレインガード +ドレインガード
