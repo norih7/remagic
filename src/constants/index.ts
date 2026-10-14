@@ -543,7 +543,7 @@ export const guideLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。序盤でやっておきたい、戦闘の安定やゲーム効率を上げるためのTipsを紹介しています。",
     createdAt: "2026-09-16",
-    updatedAt: "2026-09-17",
+    updatedAt: "2026-10-15",
   },
   missable: {
     title: "取り逃がし要素",
@@ -553,7 +553,7 @@ export const guideLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。取り逃がし要素の解説。ストーリー攻略中に見落としがちなサブイベントや称号、レンズ、アイテムなどの取り逃がし要素を紹介しています。",
     createdAt: "2026-09-17",
-    updatedAt: "2026-09-17",
+    updatedAt: "2026-10-15",
   },
   buttle: {
     title: "戦闘システム解説",

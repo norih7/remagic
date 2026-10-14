@@ -3,6 +3,16 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/10/15",
+    update: (
+      <>
+        <Link href="/guides/first">序盤にやっておきたいこと</Link>、
+        <Link href="/guides/missable">取り逃がし要素</Link>
+        をアップデート。
+      </>
+    ),
+  },
+  {
     date: "2026/10/13",
     update: (
       <>

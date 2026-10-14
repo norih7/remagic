@@ -6,6 +6,7 @@ import GuideList from "@/components/GuideList";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import TableOfContents from "@/components/TableOfContents";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -31,6 +32,10 @@ export default async function HomePage() {
             序盤でやっておきたいのは、戦闘の安定と成長のスピードを上げることです。少しの準備で、後半の難所に突入する時点で大きく楽になります。
           </p>
         </PageSummary>
+
+        <Section>
+          <TableOfContents />
+        </Section>
 
         <Section>
           <SectionTitle type="flag">1. 戦闘のマニュアル操作</SectionTitle>
@@ -78,6 +83,7 @@ export default async function HomePage() {
           <SectionTitle type="flag">
             3. ストーリー攻略時に料理とレンズも回収する
           </SectionTitle>
+          <ResponsiveImage src="/stories/guide1-crystal-river-2.jpg" />
           <p>
             料理もレンズもストーリー攻略中に収集しておくのが効率が良いです。RE:MAGICの攻略チャートでは訪問時に獲得可能な料理とレンズを完全網羅していますのでぜひご確認ください。レンズもシャンバール訪問時には28枚ほどありインフェリマントの交換にも手が届くようになります。
           </p>
@@ -155,6 +161,28 @@ export default async function HomePage() {
               {
                 title: "ルーンボトル変化一覧",
                 href: "/systems/rune",
+              },
+              {
+                title: "いざないの密林の攻略情報",
+                href: "/stories/guide2",
+              },
+            ]}
+          />
+        </Section>
+
+        <Section>
+          <SectionTitle type="flag">7. ファラを操作キャラにする</SectionTitle>
+          <p>
+            ファラの秘奥義「火龍炎舞」を発動させるためにはファラを操作キャラにして累計300回の戦闘で勝利する必要があります。
+          </p>
+          <p>
+            終盤で300回戦闘するのは大変なので、ストーリーの最序盤からファラを操作していけば無理なく300回の戦闘を達成できます。ただしこれはやりこみ要素なので必須ではありません。普通のプレイではリッドを操作することが多いと思いますが、ちょっと違った視点でエターニアをやりたいという方におすすめです。
+          </p>
+          <GuideList
+            items={[
+              {
+                title: "火龍炎舞",
+                href: "/deeps/flame-dance",
               },
               {
                 title: "いざないの密林の攻略情報",
