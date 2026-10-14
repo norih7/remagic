@@ -58,6 +58,7 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle type="flag">2. 特技習得を意識する</SectionTitle>
+          <ResponsiveImage src="/guides/first-skill.jpg" />
           <p>
             リッドとファラはキャラクタのレベルだけではなく専用の斬り/突きレベルで特技や奥義を習得します。リッドの最強奥義「鳳凰天駆」は突きレベルを高くしないといけないので、戦闘で突き攻撃も意識していきましょう。また斬り/突きだけではなく特技の使用回数も必要となることが多いため特技の習得を意識しながら日々の戦闘を進めてください。
           </p>
@@ -99,6 +100,7 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle type="flag">4. オート料理を活用</SectionTitle>
+          <ResponsiveImage src="/guides/first-auto-cook.jpg" />
           <p>
             料理にはオート料理があり戦闘のたびに回復や状態回復を手間なく行えます。また料理には熟練度があり、オート料理でも熟練度アップが可能です。熟練度を上げていくことで成功率が100%となったりマスター料理の習得にも発展します。
           </p>
@@ -123,6 +125,7 @@ export default async function HomePage() {
           <SectionTitle type="flag">
             5. スマッシュマントを早期入手してアイテムドロップを有利に
           </SectionTitle>
+          <ResponsiveImage src="/guides/first-bandit.jpg" />
           <p>
             序盤でスマッシュマントを入手しておくと、敵戦闘の報酬やドロップの取り方がかなり楽になります。特にアイテム集めを重視するプレイでは、ドロップの効率が全体のテンポに直結します。
           </p>
@@ -130,10 +133,14 @@ export default async function HomePage() {
             スマッシュマントは「はやいうちから装備していればどんどん恩恵が大きくなる」タイプの装備です。リッドとファラに装備させて戦闘を繰り返せばアイテムドロップ率アップが狙えます。
           </p>
           <p>
-            ルーンボトル変化のベースとなる「シーブスマント」はミンツ到着前にフィールドの敵からドロップを狙えるので早めに入手しておきましょう。また王都インフェリア到着時には「グリップソード探し」のサブイベントでもスマッシュマントを入手できます。
+            ルーンボトル変化のベースとなる「シーブスマント」はミンツ到着前にフィールドに出現する「バンデット」からドロップを狙えるので早めに入手しておきましょう。また王都インフェリア到着時には「グリップソード探し」のサブイベントでもスマッシュマントを入手できます。
           </p>
           <GuideList
             items={[
+              {
+                title: "モンスターデータ（No0.バンデット）",
+                href: "/systems/enemy/0",
+              },
               {
                 title: "ルーンボトル変化一覧",
                 href: "/systems/rune",
@@ -172,6 +179,7 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle type="flag">7. ファラを操作キャラにする</SectionTitle>
+          <ResponsiveImage src="/guides/first-farth.jpg" />
           <p>
             ファラの秘奥義「火龍炎舞」を発動させるためにはファラを操作キャラにして累計300回の戦闘で勝利する必要があります。
           </p>
