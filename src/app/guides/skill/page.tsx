@@ -1,4 +1,3 @@
-
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import SectionHeader from "@/components/SectionHeader";
@@ -8,6 +7,7 @@ import Information from "@/components/Information";
 import { guideLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -28,96 +28,86 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <p>
-          『テイルズ オブ
-          エターニア』における、各種スキルや晶霊術の習得方法について解説します。本作ではキャラクターのレベルアップだけですべての技を覚えるわけではなく、各人固有の育成システムや習得手順が用意されているため、詳細をあらかじめ把握しておきましょう。
-        </p>
-      </PageSummary>
+        <PageSummary>
+          <p>
+            『テイルズ オブ
+            エターニア』における、各種スキルや晶霊術の習得方法について解説します。本作ではキャラクターのレベルアップだけですべての技を覚えるわけではなく、各人固有の育成システムや習得手順が用意されているため、詳細をあらかじめ把握しておきましょう。
+          </p>
+        </PageSummary>
 
-      <Section>
-        <SectionTitle type="system">
-          リッドおよびファラの特技習得システム
-        </SectionTitle>
-        <div className="mb-8">
-          <h3>専用レベル（斬り・突き / 拳・蹴り）と確認方法</h3>
-          <p>
-            前衛として活躍するリッドとファラには、通常のレベルとは別に専用の熟練ステータス（リッドは「斬り／突き」、ファラは「拳／蹴り」）が設定されており、これが高度な特技や奥義を覚えるための前提条件となります。この専用レベルは、戦闘中に対応した通常攻撃のアクションを繰り返すことで経験値が溜まり上昇していきます。例えば、戦闘で斬撃ばかりを偏って振っていると突きレベルがなかなか上がらず、特定の技が覚えられないといった事態が起きるため意識的に使い分けましょう。
-          </p>
-          <p>
-            現在値は、リッドやファラの個別ステータス画面からおよその伸び具合を確認可能です。レベル表示は専用のゲージ進行形式になっており、最大値はLv30に達します。（添付画像は斬Lv30、突Lv28の状態）
-          </p>
-          <Image
-            src="/systems/skill-level-rid.jpg"
-            alt="リッドの斬り・突きレベル表示画面"
-            width={300}
-            height={200}
-            className="mb-2"
-          />
-          <p>
-            また、戦闘勝利時のリザルト画面でも、通常のレベルアップ表示に加えて専用レベルの成長がテロップで通知されます。通常レベルなら「LEVEL
-            UP」、斬り熟練度なら「SLASH UP」といった表記で知らせてくれます。
-          </p>
-          <Image
-            src="/systems/skill-level-buttle.jpg"
-            alt="戦闘終了時の熟練度アップ表示"
-            width={300}
-            height={200}
-            className="mb-2"
-          />
-        </div>
-        <div className="mb-8">
-          <h3>特定の技の使用回数による条件</h3>
-          <p>
-            「虎牙連斬」のような上位の派生技を習得するためには、ベースとなる「斬り／突き」レベルの基準を満たすだけでなく、「前段階の技（例：虎牙破斬）を150回以上使用していること」といった回数制限もクリアする必要があります。技同士の派生系統を予め頭に入れておけば、無駄のない効率的な回数稼ぎが可能です。各スキルの詳細ページにて、要求される専用レベルや使用回数の目安を網羅していますので合わせてご活用ください。
-          </p>
-          <GuideList
-            items={[
-              {
-                title: "リッドの特技・奥義一覧はこちら",
-                href: "/skills/rid",
-              },
-              {
-                title: "ファラの特技一覧はこちら",
-                href: "/skills/farth",
-              },
-            ]}
-          />
-
-          <Information title="特技画面の「未習得技」に表示される青字のヒントについて">
-            <p>
-              メニューの特技一覧では、まだ覚えていないスキルが青文字で載っていることがあります。これは「習得まであと一歩のところまで迫っている（または主要条件の大部分を満たしている）」状態を示しています。例えば下記の画像のようなケースでは、必要な斬り・突きの数値目標には達しているものの、前提となる「閃空裂破」の累計使用回数が250回に届いていないことを意味しています。
-            </p>
-            <Image
-              src="/systems/skill-level-unreach.jpg"
-              alt="未習得の特技が青字で表示されている画面"
-              width={300}
-              height={200}
-              className="mb-2"
+        <Section>
+          <SectionTitle type="system">リッドとファラの特技習得</SectionTitle>
+          <div className="mb-8">
+            <h3>専用レベルと確認方法</h3>
+            <ResponsiveImage
+              src="/systems/skill-level-rid.jpg"
+              alt="リッドの斬り・突きレベル表示画面"
             />
-          </Information>
-        </div>
-      </Section>
+            <p>
+              リッドとファラには通常のレベルとは別に専用の熟練ステータス（リッドは「斬り/突き」、ファラは「拳/蹴り」）が設定されており、これが特技や奥義を覚えるための条件となります。この専用レベルは戦闘中に通常攻撃と特技を繰り返すことで経験値が溜まり上昇していきます。例えば、戦闘で斬撃ばかりを偏って振っていると突きレベルがなかなか上がらず、特定の技が覚えられないといった事態が起きるため意識的に使い分けましょう。
+            </p>
+            <p>
+              現在値は、リッドやファラの個別ステータス画面からおよその伸び具合を確認可能です。レベル表示は専用のゲージ進行形式になっており、最大値はLv30に達します。（添付画像は斬Lv30、突Lv25の状態）
+            </p>
+          </div>
+          <div className="mb-8">
+            <h4>戦闘終了時のレベルアップ表示</h4>
+            <ResponsiveImage
+              src="/systems/skill-level-buttle.jpg"
+              alt="戦闘終了時の熟練度アップ表示"
+            />
+            <p>
+              戦闘勝利時のリザルト画面では、通常のレベルアップ表示に加えて専用レベルの成長がテロップで通知されます。通常レベルなら「LEVEL
+              UP」、斬り熟練度なら「SLASH UP」といった表記で知らせてくれます。
+            </p>
+          </div>
+          <div className="mb-8">
+            <h3>特定の技の使用回数による条件</h3>
+            <p>
+              「虎牙連斬」のような上位の派生技を習得するためには、ベースとなる「斬り／突き」レベルの基準を満たすだけでなく、「前段階の技（例：虎牙破斬）を150回以上使用していること」といった回数制限もクリアする必要があります。技同士の派生系統を予め頭に入れておけば、無駄のない効率的な回数稼ぎが可能です。各スキルの詳細ページにて、要求される専用レベルや使用回数の目安を網羅していますので合わせてご活用ください。
+            </p>
+            <GuideList
+              items={[
+                {
+                  title: "リッドの特技・奥義一覧はこちら",
+                  href: "/skills/rid",
+                },
+                {
+                  title: "ファラの特技一覧はこちら",
+                  href: "/skills/farth",
+                },
+              ]}
+            />
 
-      <Section>
-        <SectionTitle type="system">
-          キールおよびメルディの晶霊術習得システム
-        </SectionTitle>
-        <div className="mb-8">
-          <h3>晶霊術の習得と大晶霊のレベル仕様</h3>
-          <p>
-            後衛の要であるキールとメルディは、C.ケイジ（クレーメルケイジ）に組み込んだ「フリンジ（組み合せ設定）」を介して新しい晶霊術を次々と習得していきます。フリンジで高位の術を引っ張り出すには、内包させる大晶霊の組み合わせパターンと、それぞれの育成レベルが条件になります。
-          </p>
-          <p>
-            大晶霊たちは戦闘に参加させることで独自の経験値を積み上げてレベルアップしますが、ゲーム中盤以降に新しく契約を結ぶ「レム」などの大晶霊は初期状態のLv0からスタートするため、意識して育成しないとレベルが遅れがちになりやすい点に注意してください。各お供のレベルや蓄積経験値は、C.ケイジメニュー内の「晶霊」項目からいつでもチェックできます。
-          </p>
-          <Image
-            src="/systems/skill-level-magic.jpg"
-            alt="C.ケイジの晶霊ステータスとレベル確認画面"
-            width={300}
-            height={200}
-            className="mb-8"
-          />
+            <Information title="特技画面の「未習得技」に表示される青字のヒントについて">
+              <ResponsiveImage
+                src="/systems/skill-level-unreach.jpg"
+                alt="未習得の特技が青字で表示されている画面"
+              />
+              <p>
+                メニューの特技一覧では、まだ覚えていないスキルが青文字で載っていることがあります。これは「習得まであと一歩のところまで迫っている（または主要条件の大部分を満たしている）」状態を示しています。例えば下記の画像のようなケースでは、必要な斬り・突きの数値目標には達しているものの、前提となる「閃空裂破」の累計使用回数が250回に届いていないことを意味しています。
+              </p>
+            </Information>
+          </div>
+        </Section>
+
+        <Section>
+          <SectionTitle type="system">
+            キールおよびメルディの晶霊術習得システム
+          </SectionTitle>
+          <div className="mb-8">
+            <h3>晶霊術の習得と大晶霊のレベル仕様</h3>
+            <ResponsiveImage
+              src="/systems/skill-level-magic.jpg"
+              alt="C.ケイジの晶霊ステータスとレベル確認画面"
+            />
+            <p>
+              後衛の要であるキールとメルディは、C.ケイジ（クレーメルケイジ）に組み込んだ「フリンジ（組み合せ設定）」を介して新しい晶霊術を次々と習得していきます。フリンジで高位の術を引っ張り出すには、内包させる大晶霊の組み合わせパターンと、それぞれの育成レベルが条件になります。
+            </p>
+            <p>
+              大晶霊たちは戦闘に参加させることで独自の経験値を積み上げてレベルアップしますが、ゲーム中盤以降に新しく契約を結ぶ「レム」などの大晶霊は初期状態のLv0からスタートするため、意識して育成しないとレベルが遅れがちになりやすい点に注意してください。各お供のレベルや蓄積経験値は、C.ケイジメニュー内の「晶霊」項目からいつでもチェックできます。
+            </p>
+          </div>
           <div className="mb-8">
             <h3>育成アイテムの活用とフリンジ実行の重要性</h3>
             <p>
@@ -158,42 +148,41 @@ export default async function HomePage() {
               ]}
             />
           </div>
-        </div>
-      </Section>
+        </Section>
 
-      <Section>
-        <SectionTitle type="system">
-          チャットおよびフォッグの特技習得システム
-        </SectionTitle>
-        <div className="mb-8">
-          <p>
-            チャットとフォッグについては、専用のレベルや回数成長ではなく、世界各地で発生する特定のサブイベントを攻略していくことで強力な特技を次々に覚えていきます。それぞれのスキル性能や発生手順の詳細は、以下の各ガイドページを参照してください。
-          </p>
-        </div>
-        <div className="mb-8">
-          <GuideList
-            items={[
-              {
-                title: "チャットの特技一覧リスト",
-                href: "/skills/chat",
-              },
-              {
-                title: "チャットの特技習得サブイベント攻略",
-                href: "/subevents/skill-chat",
-              },
-              {
-                title: "フォッグの特技一覧リスト",
-                href: "/skills/fog",
-              },
-              {
-                title: "フォッグの特技習得サブイベント攻略",
-                href: "/subevents/skill-fog",
-              },
-            ]}
-          />
-        </div>
-      </Section>
-    </article>
+        <Section>
+          <SectionTitle type="system">
+            チャットおよびフォッグの特技習得システム
+          </SectionTitle>
+          <div className="mb-8">
+            <p>
+              チャットとフォッグについては、専用のレベルや回数成長ではなく、世界各地で発生する特定のサブイベントを攻略していくことで強力な特技を次々に覚えていきます。それぞれのスキル性能や発生手順の詳細は、以下の各ガイドページを参照してください。
+            </p>
+          </div>
+          <div className="mb-8">
+            <GuideList
+              items={[
+                {
+                  title: "チャットの特技一覧リスト",
+                  href: "/skills/chat",
+                },
+                {
+                  title: "チャットの特技習得サブイベント攻略",
+                  href: "/subevents/skill-chat",
+                },
+                {
+                  title: "フォッグの特技一覧リスト",
+                  href: "/skills/fog",
+                },
+                {
+                  title: "フォッグの特技習得サブイベント攻略",
+                  href: "/subevents/skill-fog",
+                },
+              ]}
+            />
+          </div>
+        </Section>
+      </article>
     </Main>
   );
 }
