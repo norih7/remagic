@@ -6,7 +6,7 @@ const update = [
     date: "2026/10/15",
     update: (
       <>
-        <Link href="/stories/chart1">
+        <Link href="/stories/guide2">
           攻略チャート2 いざないの密林〜ファロース
         </Link>
         を修正。リマスター版対応の状態に調整しました。
@@ -17,7 +17,7 @@ const update = [
     date: "2026/10/15",
     update: (
       <>
-        <Link href="/stories/chart1">攻略チャート1 ラシュアン〜水晶霊の河</Link>
+        <Link href="/stories/guide1">攻略チャート1 ラシュアン〜水晶霊の河</Link>
         を修正。リマスター版対応の状態に調整しました。
       </>
     ),
