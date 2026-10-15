@@ -2,12 +2,15 @@
 import Link from "next/link";
 import styles from "./styles.module.css";
 import { LuScroll } from "react-icons/lu";
+import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
+import SkillIcon from "@/components/Icons/SkillIcon";
 
 type Subevent = {
   locationId: number;
   eventName: string;
   eventPath: string;
   remarks: string;
+  type: string;
 };
 type Props = {
   data: Subevent[];
@@ -17,14 +20,20 @@ type Props = {
 export default function ChartList(props: Props) {
   const { data, locationIds } = props;
   const result = data.filter((item) => locationIds.includes(item.locationId));
-  const List = result.map((item, index) => (
-    <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
-      <a href={item.eventPath} className="block px-3 py-2">
-        <strong>{item.eventName}</strong>
-        <span>{item.remarks}</span>
-      </a>
-    </li>
-  ));
+  const List = result.map((item, index) => {
+    const icon = item.type === "time-limit" ? <TimeLimitIcon /> : "";
+    return (
+      <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
+        <a href={item.eventPath} className="block px-3 py-2">
+          <strong>
+            {icon}
+            {item.eventName}
+          </strong>
+          <span>{item.remarks}</span>
+        </a>
+      </li>
+    );
+  });
   const Display =
     result.length === 0 ? (
       <p className="pt-2">なし</p>

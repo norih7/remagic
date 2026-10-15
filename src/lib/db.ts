@@ -91,6 +91,7 @@ export type locationSubEvents = {
   eventName: string;
   eventPath: string;
   remarks: string;
+  type: string;
 };
 export async function getLocationSubEventsData(): Promise<locationSubEvents[]> {
   // ここで compiledData を一度 unknown にしてから、Item[] にキャストします

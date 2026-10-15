@@ -237,13 +237,22 @@
     "id": 27,
     "locationId": 8,
     "locationName": "木陰の村モルル",
+    "itemId": 364,
+    "itemName": "オージェのピアス",
+    "itemType": "keyItem",
+    "remarks": ""
+  },
+  {
+    "id": 28,
+    "locationId": 8,
+    "locationName": "木陰の村モルル",
     "itemId": 20,
     "itemName": "モンスター図鑑",
     "itemType": "keyItem",
     "remarks": ""
   },
   {
-    "id": 28,
+    "id": 29,
     "locationId": 8,
     "locationName": "木陰の村モルル",
     "itemId": 21,
@@ -252,7 +261,7 @@
     "remarks": ""
   },
   {
-    "id": 29,
+    "id": 30,
     "locationId": 8,
     "locationName": "木陰の村モルル",
     "itemId": 22,
@@ -261,7 +270,7 @@
     "remarks": ""
   },
   {
-    "id": 30,
+    "id": 31,
     "locationId": 8,
     "locationName": "木陰の村モルル",
     "itemId": 23,
@@ -270,7 +279,7 @@
     "remarks": ""
   },
   {
-    "id": 31,
+    "id": 32,
     "locationId": 9,
     "locationName": "水晶霊の河",
     "itemId": 24,
@@ -279,7 +288,7 @@
     "remarks": ""
   },
   {
-    "id": 32,
+    "id": 33,
     "locationId": 9,
     "locationName": "水晶霊の河",
     "itemId": 25,
@@ -288,7 +297,7 @@
     "remarks": ""
   },
   {
-    "id": 33,
+    "id": 34,
     "locationId": 9,
     "locationName": "水晶霊の河",
     "itemId": 26,
@@ -297,21 +306,12 @@
     "remarks": ""
   },
   {
-    "id": 34,
+    "id": 35,
     "locationId": 9,
     "locationName": "水晶霊の河",
     "itemId": 27,
     "itemName": "アイアンリスト",
     "itemType": "bracelet",
-    "remarks": ""
-  },
-  {
-    "id": 35,
-    "locationId": 9,
-    "locationName": "水晶霊の河",
-    "itemId": 28,
-    "itemName": "ミックスグミ",
-    "itemType": "useItem",
     "remarks": ""
   },
   {
@@ -327,13 +327,22 @@
     "id": 37,
     "locationId": 9,
     "locationName": "水晶霊の河",
+    "itemId": 28,
+    "itemName": "ミックスグミ",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 38,
+    "locationId": 9,
+    "locationName": "水晶霊の河",
     "itemId": 24,
     "itemName": "ポイズンチェック",
     "itemType": "accessory",
     "remarks": ""
   },
   {
-    "id": 38,
+    "id": 39,
     "locationId": 9,
     "locationName": "水晶霊の河",
     "itemId": 29,
@@ -342,7 +351,7 @@
     "remarks": ""
   },
   {
-    "id": 39,
+    "id": 40,
     "locationId": 9,
     "locationName": "水晶霊の河",
     "itemId": 30,
@@ -351,7 +360,7 @@
     "remarks": "滝のフロア右下の茂みの隠し"
   },
   {
-    "id": 40,
+    "id": 41,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 31,
@@ -360,7 +369,7 @@
     "remarks": ""
   },
   {
-    "id": 41,
+    "id": 42,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 28,
@@ -369,7 +378,7 @@
     "remarks": ""
   },
   {
-    "id": 42,
+    "id": 43,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 27,
@@ -378,7 +387,7 @@
     "remarks": ""
   },
   {
-    "id": 43,
+    "id": 44,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 33,
@@ -387,7 +396,7 @@
     "remarks": ""
   },
   {
-    "id": 44,
+    "id": 45,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 25,
@@ -396,7 +405,7 @@
     "remarks": ""
   },
   {
-    "id": 45,
+    "id": 46,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 18,
@@ -405,7 +414,7 @@
     "remarks": ""
   },
   {
-    "id": 46,
+    "id": 47,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 35,
@@ -414,7 +423,7 @@
     "remarks": ""
   },
   {
-    "id": 47,
+    "id": 48,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 36,
@@ -423,7 +432,7 @@
     "remarks": ""
   },
   {
-    "id": 48,
+    "id": 49,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 37,
@@ -432,7 +441,7 @@
     "remarks": ""
   },
   {
-    "id": 49,
+    "id": 50,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 38,
@@ -441,7 +450,7 @@
     "remarks": ""
   },
   {
-    "id": 50,
+    "id": 51,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 39,
@@ -450,7 +459,7 @@
     "remarks": ""
   },
   {
-    "id": 51,
+    "id": 52,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 40,
@@ -459,7 +468,7 @@
     "remarks": ""
   },
   {
-    "id": 52,
+    "id": 53,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 41,
@@ -468,7 +477,7 @@
     "remarks": ""
   },
   {
-    "id": 53,
+    "id": 54,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 42,
@@ -477,7 +486,7 @@
     "remarks": ""
   },
   {
-    "id": 54,
+    "id": 55,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 6,
@@ -486,7 +495,7 @@
     "remarks": ""
   },
   {
-    "id": 55,
+    "id": 56,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 43,
@@ -495,7 +504,7 @@
     "remarks": ""
   },
   {
-    "id": 56,
+    "id": 57,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 44,
@@ -504,7 +513,7 @@
     "remarks": ""
   },
   {
-    "id": 57,
+    "id": 58,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 45,
@@ -513,7 +522,7 @@
     "remarks": ""
   },
   {
-    "id": 58,
+    "id": 59,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 6,
@@ -522,7 +531,7 @@
     "remarks": ""
   },
   {
-    "id": 59,
+    "id": 60,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 1,
@@ -531,7 +540,7 @@
     "remarks": ""
   },
   {
-    "id": 60,
+    "id": 61,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 46,
@@ -540,7 +549,7 @@
     "remarks": ""
   },
   {
-    "id": 61,
+    "id": 62,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 10,
@@ -549,7 +558,7 @@
     "remarks": ""
   },
   {
-    "id": "",
+    "id": 63,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 277,
@@ -558,7 +567,7 @@
     "remarks": ""
   },
   {
-    "id": "",
+    "id": 64,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 47,
@@ -567,7 +576,7 @@
     "remarks": ""
   },
   {
-    "id": "",
+    "id": 65,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 53,
@@ -576,7 +585,7 @@
     "remarks": ""
   },
   {
-    "id": "",
+    "id": 66,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 198,
@@ -585,7 +594,7 @@
     "remarks": ""
   },
   {
-    "id": "",
+    "id": 67,
     "locationId": 10,
     "locationName": "いざないの密林",
     "itemId": 197,
@@ -594,7 +603,7 @@
     "remarks": ""
   },
   {
-    "id": "",
+    "id": 68,
     "locationId": 11,
     "locationName": "王都インフェリア",
     "itemId": 36,
@@ -603,7 +612,7 @@
     "remarks": "武器屋の入り口付近にある植木"
   },
   {
-    "id": "",
+    "id": 69,
     "locationId": 11,
     "locationName": "王都インフェリア",
     "itemId": 79,
@@ -612,7 +621,7 @@
     "remarks": "ホテルインフェリア 2Fにある花瓶"
   },
   {
-    "id": "",
+    "id": 70,
     "locationId": 11,
     "locationName": "王都インフェリア",
     "itemId": 179,
@@ -621,7 +630,7 @@
     "remarks": "インフェリア城 東館牢屋の上の階にある壺"
   },
   {
-    "id": "",
+    "id": 71,
     "locationId": 11,
     "locationName": "王都インフェリア",
     "itemId": 36,
@@ -630,7 +639,7 @@
     "remarks": "インフェリア城 西館兵士の待機場にある木箱"
   },
   {
-    "id": "",
+    "id": 72,
     "locationId": 11,
     "locationName": "王都インフェリア",
     "itemId": 38,
@@ -639,7 +648,7 @@
     "remarks": "インフェリア城 料理場にある果物のカゴ"
   },
   {
-    "id": 62,
+    "id": 73,
     "locationId": 14,
     "locationName": "バロールの町",
     "itemId": 18,
@@ -648,7 +657,7 @@
     "remarks": "食料屋にある蓋がしてある壷"
   },
   {
-    "id": 63,
+    "id": 74,
     "locationId": 14,
     "locationName": "バロールの町",
     "itemId": 47,
@@ -657,7 +666,7 @@
     "remarks": "武器屋 左奥にある先の宝箱"
   },
   {
-    "id": 64,
+    "id": 75,
     "locationId": 14,
     "locationName": "バロールの町",
     "itemId": 48,
@@ -666,7 +675,7 @@
     "remarks": "武器屋 左奥にある先にいる女の人に話しかける"
   },
   {
-    "id": 65,
+    "id": 76,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 49,
@@ -675,7 +684,7 @@
     "remarks": ""
   },
   {
-    "id": 66,
+    "id": 77,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 28,
@@ -684,7 +693,7 @@
     "remarks": ""
   },
   {
-    "id": 67,
+    "id": 78,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 28,
@@ -693,7 +702,7 @@
     "remarks": ""
   },
   {
-    "id": 68,
+    "id": 79,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 50,
@@ -702,7 +711,7 @@
     "remarks": ""
   },
   {
-    "id": 69,
+    "id": 80,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 51,
@@ -711,7 +720,7 @@
     "remarks": ""
   },
   {
-    "id": 70,
+    "id": 81,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 52,
@@ -720,7 +729,7 @@
     "remarks": ""
   },
   {
-    "id": 71,
+    "id": 82,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 6,
@@ -729,7 +738,7 @@
     "remarks": ""
   },
   {
-    "id": 72,
+    "id": 83,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 38,
@@ -738,7 +747,7 @@
     "remarks": ""
   },
   {
-    "id": 73,
+    "id": 84,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 53,
@@ -747,7 +756,7 @@
     "remarks": ""
   },
   {
-    "id": 74,
+    "id": 85,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 15,
@@ -756,7 +765,7 @@
     "remarks": ""
   },
   {
-    "id": 75,
+    "id": 86,
     "locationId": 15,
     "locationName": "風晶霊の空洞",
     "itemId": 54,
@@ -765,7 +774,7 @@
     "remarks": ""
   },
   {
-    "id": 76,
+    "id": 87,
     "locationId": 16,
     "locationName": "シャンバール",
     "itemId": 55,
@@ -774,7 +783,7 @@
     "remarks": "宿屋 テーブルの花瓶"
   },
   {
-    "id": 77,
+    "id": 88,
     "locationId": 16,
     "locationName": "シャンバール",
     "itemId": 43,
@@ -783,7 +792,7 @@
     "remarks": "アイテム屋にある壷"
   },
   {
-    "id": 78,
+    "id": 89,
     "locationId": 16,
     "locationName": "シャンバール",
     "itemId": 56,
@@ -792,7 +801,7 @@
     "remarks": "砂浜にある宝箱"
   },
   {
-    "id": 79,
+    "id": 90,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 57,
@@ -801,7 +810,7 @@
     "remarks": ""
   },
   {
-    "id": 80,
+    "id": 91,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 58,
@@ -810,7 +819,7 @@
     "remarks": ""
   },
   {
-    "id": 81,
+    "id": 92,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 59,
@@ -819,7 +828,7 @@
     "remarks": ""
   },
   {
-    "id": 82,
+    "id": 93,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 15,
@@ -828,7 +837,7 @@
     "remarks": ""
   },
   {
-    "id": 83,
+    "id": 94,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 60,
@@ -837,7 +846,7 @@
     "remarks": ""
   },
   {
-    "id": 84,
+    "id": 95,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 61,
@@ -846,7 +855,7 @@
     "remarks": ""
   },
   {
-    "id": 85,
+    "id": 96,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 62,
@@ -855,7 +864,7 @@
     "remarks": ""
   },
   {
-    "id": 86,
+    "id": 97,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 63,
@@ -864,7 +873,7 @@
     "remarks": ""
   },
   {
-    "id": 87,
+    "id": 98,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 64,
@@ -873,7 +882,7 @@
     "remarks": ""
   },
   {
-    "id": 88,
+    "id": 99,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 38,
@@ -882,7 +891,7 @@
     "remarks": ""
   },
   {
-    "id": 89,
+    "id": 100,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 43,
@@ -891,7 +900,7 @@
     "remarks": "ソーサラーリングで入る部屋"
   },
   {
-    "id": 90,
+    "id": 101,
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "itemId": 65,
@@ -900,7 +909,7 @@
     "remarks": "ソーサラーリングで入る部屋"
   },
   {
-    "id": 91,
+    "id": 102,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 66,
@@ -909,7 +918,7 @@
     "remarks": ""
   },
   {
-    "id": 92,
+    "id": 103,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 67,
@@ -918,7 +927,7 @@
     "remarks": ""
   },
   {
-    "id": 93,
+    "id": 104,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 68,
@@ -927,7 +936,7 @@
     "remarks": ""
   },
   {
-    "id": 94,
+    "id": 105,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 69,
@@ -936,7 +945,7 @@
     "remarks": ""
   },
   {
-    "id": 95,
+    "id": 106,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 1,
@@ -945,7 +954,7 @@
     "remarks": ""
   },
   {
-    "id": 96,
+    "id": 107,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 70,
@@ -954,7 +963,7 @@
     "remarks": ""
   },
   {
-    "id": 97,
+    "id": 108,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 62,
@@ -963,7 +972,7 @@
     "remarks": ""
   },
   {
-    "id": 98,
+    "id": 109,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 6,
@@ -972,7 +981,7 @@
     "remarks": ""
   },
   {
-    "id": 99,
+    "id": 110,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 71,
@@ -981,7 +990,7 @@
     "remarks": ""
   },
   {
-    "id": 100,
+    "id": 111,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 72,
@@ -990,7 +999,7 @@
     "remarks": ""
   },
   {
-    "id": 101,
+    "id": 112,
     "locationId": 18,
     "locationName": "霊峰ファロース",
     "itemId": 15,
@@ -999,7 +1008,7 @@
     "remarks": ""
   },
   {
-    "id": 102,
+    "id": 113,
     "locationId": 19,
     "locationName": "アイメンの町",
     "itemId": 6,
@@ -1008,7 +1017,7 @@
     "remarks": "錬金術工房の向かい側にある壷"
   },
   {
-    "id": 103,
+    "id": 114,
     "locationId": 19,
     "locationName": "アイメンの町",
     "itemId": 28,
@@ -1017,7 +1026,7 @@
     "remarks": "食品を売る人の隣にある壷"
   },
   {
-    "id": 104,
+    "id": 115,
     "locationId": 19,
     "locationName": "アイメンの町",
     "itemId": 73,
@@ -1026,7 +1035,7 @@
     "remarks": "メルディの家2F 取り付け棚"
   },
   {
-    "id": 105,
+    "id": 116,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 74,
@@ -1035,7 +1044,7 @@
     "remarks": ""
   },
   {
-    "id": 106,
+    "id": 117,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 75,
@@ -1044,7 +1053,7 @@
     "remarks": ""
   },
   {
-    "id": 107,
+    "id": 118,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 76,
@@ -1053,7 +1062,7 @@
     "remarks": ""
   },
   {
-    "id": 108,
+    "id": 119,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 77,
@@ -1062,7 +1071,7 @@
     "remarks": ""
   },
   {
-    "id": 109,
+    "id": 120,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 78,
@@ -1071,7 +1080,7 @@
     "remarks": ""
   },
   {
-    "id": 110,
+    "id": 121,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 46,
@@ -1080,7 +1089,7 @@
     "remarks": ""
   },
   {
-    "id": 111,
+    "id": 122,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 79,
@@ -1089,7 +1098,7 @@
     "remarks": ""
   },
   {
-    "id": 112,
+    "id": 123,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 43,
@@ -1098,7 +1107,7 @@
     "remarks": ""
   },
   {
-    "id": 113,
+    "id": 124,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 48,
@@ -1107,7 +1116,7 @@
     "remarks": ""
   },
   {
-    "id": 114,
+    "id": 125,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 36,
@@ -1116,7 +1125,7 @@
     "remarks": ""
   },
   {
-    "id": 115,
+    "id": 126,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 80,
@@ -1125,7 +1134,7 @@
     "remarks": ""
   },
   {
-    "id": 116,
+    "id": 127,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 38,
@@ -1134,7 +1143,7 @@
     "remarks": ""
   },
   {
-    "id": 117,
+    "id": 128,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 81,
@@ -1143,7 +1152,7 @@
     "remarks": ""
   },
   {
-    "id": 118,
+    "id": 129,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 82,
@@ -1152,7 +1161,7 @@
     "remarks": ""
   },
   {
-    "id": 119,
+    "id": 130,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 83,
@@ -1161,7 +1170,7 @@
     "remarks": ""
   },
   {
-    "id": 120,
+    "id": 131,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 84,
@@ -1170,7 +1179,7 @@
     "remarks": ""
   },
   {
-    "id": 121,
+    "id": 132,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 85,
@@ -1179,7 +1188,7 @@
     "remarks": ""
   },
   {
-    "id": 122,
+    "id": 133,
     "locationId": 22,
     "locationName": "地晶霊の廃坑",
     "itemId": 284,
@@ -1188,7 +1197,7 @@
     "remarks": ""
   },
   {
-    "id": 123,
+    "id": 134,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 36,
@@ -1197,7 +1206,7 @@
     "remarks": ""
   },
   {
-    "id": 124,
+    "id": 135,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 86,
@@ -1206,7 +1215,7 @@
     "remarks": ""
   },
   {
-    "id": 125,
+    "id": 136,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 87,
@@ -1215,7 +1224,7 @@
     "remarks": ""
   },
   {
-    "id": 126,
+    "id": 137,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 88,
@@ -1224,7 +1233,7 @@
     "remarks": ""
   },
   {
-    "id": 127,
+    "id": 138,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 89,
@@ -1233,7 +1242,7 @@
     "remarks": ""
   },
   {
-    "id": 128,
+    "id": 139,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 36,
@@ -1242,7 +1251,7 @@
     "remarks": ""
   },
   {
-    "id": 129,
+    "id": 140,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 90,
@@ -1251,7 +1260,7 @@
     "remarks": ""
   },
   {
-    "id": 130,
+    "id": 141,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 91,
@@ -1260,7 +1269,7 @@
     "remarks": ""
   },
   {
-    "id": 131,
+    "id": 142,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 70,
@@ -1269,7 +1278,7 @@
     "remarks": ""
   },
   {
-    "id": 132,
+    "id": 143,
     "locationId": 23,
     "locationName": "チャットの小屋",
     "itemId": 92,
@@ -1278,7 +1287,7 @@
     "remarks": ""
   },
   {
-    "id": 133,
+    "id": 144,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 48,
@@ -1287,7 +1296,7 @@
     "remarks": ""
   },
   {
-    "id": 134,
+    "id": 145,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 48,
@@ -1296,7 +1305,7 @@
     "remarks": ""
   },
   {
-    "id": 135,
+    "id": 146,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 93,
@@ -1305,7 +1314,7 @@
     "remarks": ""
   },
   {
-    "id": 136,
+    "id": 147,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 43,
@@ -1314,7 +1323,7 @@
     "remarks": ""
   },
   {
-    "id": 137,
+    "id": 148,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 35,
@@ -1323,7 +1332,7 @@
     "remarks": ""
   },
   {
-    "id": 138,
+    "id": 149,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 94,
@@ -1332,7 +1341,7 @@
     "remarks": ""
   },
   {
-    "id": 139,
+    "id": 150,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 95,
@@ -1341,7 +1350,7 @@
     "remarks": ""
   },
   {
-    "id": 140,
+    "id": 151,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 15,
@@ -1350,7 +1359,7 @@
     "remarks": ""
   },
   {
-    "id": 141,
+    "id": 152,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 58,
@@ -1359,7 +1368,7 @@
     "remarks": ""
   },
   {
-    "id": 142,
+    "id": 153,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 96,
@@ -1368,7 +1377,7 @@
     "remarks": ""
   },
   {
-    "id": 143,
+    "id": 154,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 46,
@@ -1377,7 +1386,7 @@
     "remarks": ""
   },
   {
-    "id": 144,
+    "id": 155,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 35,
@@ -1386,7 +1395,7 @@
     "remarks": ""
   },
   {
-    "id": 145,
+    "id": 156,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 76,
@@ -1395,7 +1404,7 @@
     "remarks": ""
   },
   {
-    "id": 146,
+    "id": 157,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 60,
@@ -1404,7 +1413,7 @@
     "remarks": ""
   },
   {
-    "id": 147,
+    "id": 158,
     "locationId": 25,
     "locationName": "氷晶霊の山",
     "itemId": 77,
@@ -1413,7 +1422,7 @@
     "remarks": ""
   },
   {
-    "id": 148,
+    "id": 159,
     "locationId": 27,
     "locationName": "ティンシア",
     "itemId": 43,
@@ -1422,7 +1431,7 @@
     "remarks": "アイテム屋 イレーヌの右側にある壺を調べる"
   },
   {
-    "id": 149,
+    "id": 160,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 97,
@@ -1431,7 +1440,7 @@
     "remarks": ""
   },
   {
-    "id": 150,
+    "id": 161,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 36,
@@ -1440,7 +1449,7 @@
     "remarks": ""
   },
   {
-    "id": 151,
+    "id": 162,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 98,
@@ -1449,7 +1458,7 @@
     "remarks": ""
   },
   {
-    "id": 152,
+    "id": 163,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 99,
@@ -1458,7 +1467,7 @@
     "remarks": ""
   },
   {
-    "id": 153,
+    "id": 164,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 76,
@@ -1467,7 +1476,7 @@
     "remarks": ""
   },
   {
-    "id": 154,
+    "id": 165,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 36,
@@ -1476,7 +1485,7 @@
     "remarks": ""
   },
   {
-    "id": 155,
+    "id": 166,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 10,
@@ -1485,7 +1494,7 @@
     "remarks": ""
   },
   {
-    "id": 156,
+    "id": 167,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 100,
@@ -1494,7 +1503,7 @@
     "remarks": ""
   },
   {
-    "id": 157,
+    "id": 168,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 101,
@@ -1503,7 +1512,7 @@
     "remarks": ""
   },
   {
-    "id": 158,
+    "id": 169,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 102,
@@ -1512,7 +1521,7 @@
     "remarks": ""
   },
   {
-    "id": 159,
+    "id": 170,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 43,
@@ -1521,7 +1530,7 @@
     "remarks": ""
   },
   {
-    "id": 160,
+    "id": 171,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 103,
@@ -1530,7 +1539,7 @@
     "remarks": ""
   },
   {
-    "id": 161,
+    "id": 172,
     "locationId": 28,
     "locationName": "雷晶霊の遺跡",
     "itemId": 104,
@@ -1539,7 +1548,7 @@
     "remarks": ""
   },
   {
-    "id": 162,
+    "id": 173,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 105,
@@ -1548,7 +1557,7 @@
     "remarks": ""
   },
   {
-    "id": 163,
+    "id": 174,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 106,
@@ -1557,7 +1566,7 @@
     "remarks": ""
   },
   {
-    "id": 164,
+    "id": 175,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 107,
@@ -1566,7 +1575,7 @@
     "remarks": ""
   },
   {
-    "id": 165,
+    "id": 176,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 108,
@@ -1575,7 +1584,7 @@
     "remarks": ""
   },
   {
-    "id": 166,
+    "id": 177,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 109,
@@ -1584,7 +1593,7 @@
     "remarks": ""
   },
   {
-    "id": 167,
+    "id": 178,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 110,
@@ -1593,7 +1602,7 @@
     "remarks": ""
   },
   {
-    "id": 168,
+    "id": 179,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 95,
@@ -1602,7 +1611,7 @@
     "remarks": ""
   },
   {
-    "id": 169,
+    "id": 180,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 48,
@@ -1611,7 +1620,7 @@
     "remarks": "フェイクを倒すと入手"
   },
   {
-    "id": 170,
+    "id": 181,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 111,
@@ -1620,7 +1629,7 @@
     "remarks": ""
   },
   {
-    "id": 171,
+    "id": 182,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 112,
@@ -1629,7 +1638,7 @@
     "remarks": ""
   },
   {
-    "id": 172,
+    "id": 183,
     "locationId": 29,
     "locationName": "バリル城",
     "itemId": 113,
@@ -1638,7 +1647,7 @@
     "remarks": ""
   },
   {
-    "id": 173,
+    "id": 184,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 115,
@@ -1647,7 +1656,7 @@
     "remarks": ""
   },
   {
-    "id": 174,
+    "id": 185,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 48,
@@ -1656,7 +1665,7 @@
     "remarks": ""
   },
   {
-    "id": 175,
+    "id": 186,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 116,
@@ -1665,7 +1674,7 @@
     "remarks": ""
   },
   {
-    "id": 176,
+    "id": 187,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 117,
@@ -1674,7 +1683,7 @@
     "remarks": ""
   },
   {
-    "id": 177,
+    "id": 188,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 118,
@@ -1683,7 +1692,7 @@
     "remarks": ""
   },
   {
-    "id": 178,
+    "id": 189,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 119,
@@ -1692,7 +1701,7 @@
     "remarks": ""
   },
   {
-    "id": 179,
+    "id": 190,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 120,
@@ -1701,7 +1710,7 @@
     "remarks": ""
   },
   {
-    "id": 180,
+    "id": 191,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 121,
@@ -1710,7 +1719,7 @@
     "remarks": ""
   },
   {
-    "id": 181,
+    "id": 192,
     "locationId": 35,
     "locationName": "レグルスの丘",
     "itemId": 312,
@@ -1719,7 +1728,7 @@
     "remarks": ""
   },
   {
-    "id": 182,
+    "id": 193,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 122,
@@ -1728,7 +1737,7 @@
     "remarks": ""
   },
   {
-    "id": 183,
+    "id": 194,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 123,
@@ -1737,7 +1746,7 @@
     "remarks": ""
   },
   {
-    "id": 184,
+    "id": 195,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 124,
@@ -1746,7 +1755,7 @@
     "remarks": ""
   },
   {
-    "id": 185,
+    "id": 196,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 125,
@@ -1755,7 +1764,7 @@
     "remarks": ""
   },
   {
-    "id": 186,
+    "id": 197,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 116,
@@ -1764,7 +1773,7 @@
     "remarks": ""
   },
   {
-    "id": 187,
+    "id": 198,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 126,
@@ -1773,7 +1782,7 @@
     "remarks": ""
   },
   {
-    "id": 188,
+    "id": 199,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 48,
@@ -1782,7 +1791,7 @@
     "remarks": ""
   },
   {
-    "id": 189,
+    "id": 200,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 127,
@@ -1791,7 +1800,7 @@
     "remarks": ""
   },
   {
-    "id": 190,
+    "id": 201,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 128,
@@ -1800,7 +1809,7 @@
     "remarks": ""
   },
   {
-    "id": 191,
+    "id": 202,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 129,
@@ -1809,7 +1818,7 @@
     "remarks": ""
   },
   {
-    "id": 192,
+    "id": 203,
     "locationId": 37,
     "locationName": "シゼル城",
     "itemId": 319,
@@ -1818,7 +1827,7 @@
     "remarks": ""
   },
   {
-    "id": 193,
+    "id": 204,
     "locationId": 31,
     "locationName": "アイフリードの洞窟",
     "itemId": 114,
@@ -1827,7 +1836,7 @@
     "remarks": ""
   },
   {
-    "id": 194,
+    "id": 205,
     "locationId": 31,
     "locationName": "アイフリードの洞窟",
     "itemId": 77,
@@ -1836,7 +1845,7 @@
     "remarks": ""
   },
   {
-    "id": 195,
+    "id": 206,
     "locationId": 53,
     "locationName": "インシーアジト1 GPS (76, 122)",
     "itemId": 236,
@@ -1845,7 +1854,7 @@
     "remarks": ""
   },
   {
-    "id": 196,
+    "id": 207,
     "locationId": 53,
     "locationName": "インシーアジト1 GPS (76, 122)",
     "itemId": 75,
@@ -1854,7 +1863,7 @@
     "remarks": ""
   },
   {
-    "id": 197,
+    "id": 208,
     "locationId": 53,
     "locationName": "インシーアジト1 GPS (76, 122)",
     "itemId": 237,
@@ -1863,7 +1872,7 @@
     "remarks": ""
   },
   {
-    "id": 198,
+    "id": 209,
     "locationId": 53,
     "locationName": "インシーアジト1 GPS (76, 122)",
     "itemId": 238,
@@ -1872,7 +1881,7 @@
     "remarks": ""
   },
   {
-    "id": 199,
+    "id": 210,
     "locationId": 53,
     "locationName": "インシーアジト1 GPS (76, 122)",
     "itemId": 239,
@@ -1881,7 +1890,7 @@
     "remarks": ""
   },
   {
-    "id": 200,
+    "id": 211,
     "locationId": 53,
     "locationName": "インシーアジト1 GPS (76, 122)",
     "itemId": 240,
@@ -1890,7 +1899,7 @@
     "remarks": ""
   },
   {
-    "id": 201,
+    "id": 212,
     "locationId": 54,
     "locationName": "インシーアジト2 GPS (119, 233)",
     "itemId": 65,
@@ -1899,7 +1908,7 @@
     "remarks": ""
   },
   {
-    "id": 202,
+    "id": 213,
     "locationId": 54,
     "locationName": "インシーアジト2 GPS (119, 233)",
     "itemId": 43,
@@ -1908,7 +1917,7 @@
     "remarks": ""
   },
   {
-    "id": 203,
+    "id": 214,
     "locationId": 54,
     "locationName": "インシーアジト2 GPS (119, 233)",
     "itemId": 43,
@@ -1917,7 +1926,7 @@
     "remarks": ""
   },
   {
-    "id": 204,
+    "id": 215,
     "locationId": 54,
     "locationName": "インシーアジト2 GPS (119, 233)",
     "itemId": 77,
@@ -1926,7 +1935,7 @@
     "remarks": ""
   },
   {
-    "id": 205,
+    "id": 216,
     "locationId": 54,
     "locationName": "インシーアジト2 GPS (119, 233)",
     "itemId": 58,
@@ -1935,7 +1944,7 @@
     "remarks": ""
   },
   {
-    "id": 206,
+    "id": 217,
     "locationId": 54,
     "locationName": "インシーアジト2 GPS (119, 233)",
     "itemId": 241,
@@ -1944,7 +1953,7 @@
     "remarks": ""
   },
   {
-    "id": 207,
+    "id": 218,
     "locationId": 55,
     "locationName": "インシーアジト3 GPS (142, 1)",
     "itemId": 242,
@@ -1953,7 +1962,7 @@
     "remarks": ""
   },
   {
-    "id": 208,
+    "id": 219,
     "locationId": 55,
     "locationName": "インシーアジト3 GPS (142, 1)",
     "itemId": 243,
@@ -1962,7 +1971,7 @@
     "remarks": ""
   },
   {
-    "id": 209,
+    "id": 220,
     "locationId": 55,
     "locationName": "インシーアジト3 GPS (142, 1)",
     "itemId": 43,
@@ -1971,7 +1980,7 @@
     "remarks": ""
   },
   {
-    "id": 210,
+    "id": 221,
     "locationId": 55,
     "locationName": "インシーアジト3 GPS (142, 1)",
     "itemId": 60,
@@ -1980,7 +1989,7 @@
     "remarks": ""
   },
   {
-    "id": 211,
+    "id": 222,
     "locationId": 55,
     "locationName": "インシーアジト3 GPS (142, 1)",
     "itemId": 43,
@@ -1989,7 +1998,7 @@
     "remarks": ""
   },
   {
-    "id": 212,
+    "id": 223,
     "locationId": 55,
     "locationName": "インシーアジト3 GPS (142, 1)",
     "itemId": 244,
@@ -1998,7 +2007,7 @@
     "remarks": ""
   },
   {
-    "id": 213,
+    "id": 224,
     "locationId": 56,
     "locationName": "インシーアジト4 GPS (226, 130)",
     "itemId": 43,
@@ -2007,7 +2016,7 @@
     "remarks": ""
   },
   {
-    "id": 214,
+    "id": 225,
     "locationId": 56,
     "locationName": "インシーアジト4 GPS (226, 130)",
     "itemId": 48,
@@ -2016,7 +2025,7 @@
     "remarks": ""
   },
   {
-    "id": 215,
+    "id": 226,
     "locationId": 56,
     "locationName": "インシーアジト4 GPS (226, 130)",
     "itemId": 247,
@@ -2025,7 +2034,7 @@
     "remarks": ""
   },
   {
-    "id": 216,
+    "id": 227,
     "locationId": 56,
     "locationName": "インシーアジト4 GPS (226, 130)",
     "itemId": 245,
@@ -2034,7 +2043,7 @@
     "remarks": ""
   },
   {
-    "id": 217,
+    "id": 228,
     "locationId": 56,
     "locationName": "インシーアジト4 GPS (226, 130)",
     "itemId": 79,
@@ -2043,7 +2052,7 @@
     "remarks": ""
   },
   {
-    "id": 218,
+    "id": 229,
     "locationId": 56,
     "locationName": "インシーアジト4 GPS (226, 130)",
     "itemId": 246,
@@ -2052,7 +2061,7 @@
     "remarks": ""
   },
   {
-    "id": 219,
+    "id": 230,
     "locationId": 49,
     "locationName": "闇の洞窟",
     "itemId": 41,
@@ -2061,7 +2070,7 @@
     "remarks": ""
   },
   {
-    "id": 220,
+    "id": 231,
     "locationId": 49,
     "locationName": "闇の洞窟",
     "itemId": 248,
@@ -2070,7 +2079,7 @@
     "remarks": ""
   },
   {
-    "id": 221,
+    "id": 232,
     "locationId": 49,
     "locationName": "闇の洞窟",
     "itemId": 249,
@@ -2079,7 +2088,7 @@
     "remarks": ""
   },
   {
-    "id": 222,
+    "id": 233,
     "locationId": 49,
     "locationName": "闇の洞窟",
     "itemId": 250,
@@ -2088,7 +2097,7 @@
     "remarks": ""
   },
   {
-    "id": 223,
+    "id": 234,
     "locationId": 49,
     "locationName": "闇の洞窟",
     "itemId": 251,
@@ -2097,7 +2106,7 @@
     "remarks": ""
   },
   {
-    "id": 224,
+    "id": 235,
     "locationId": 49,
     "locationName": "闇の洞窟",
     "itemId": 109,
@@ -2106,7 +2115,7 @@
     "remarks": ""
   },
   {
-    "id": 225,
+    "id": 236,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 252,
@@ -2115,7 +2124,7 @@
     "remarks": ""
   },
   {
-    "id": 226,
+    "id": 237,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 101,
@@ -2124,7 +2133,7 @@
     "remarks": ""
   },
   {
-    "id": 227,
+    "id": 238,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 253,
@@ -2133,7 +2142,7 @@
     "remarks": ""
   },
   {
-    "id": 228,
+    "id": 239,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 43,
@@ -2142,7 +2151,7 @@
     "remarks": ""
   },
   {
-    "id": 229,
+    "id": 240,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 254,
@@ -2151,7 +2160,7 @@
     "remarks": ""
   },
   {
-    "id": 230,
+    "id": 241,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 255,
@@ -2160,7 +2169,7 @@
     "remarks": ""
   },
   {
-    "id": 231,
+    "id": 242,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 256,
@@ -2169,7 +2178,7 @@
     "remarks": ""
   },
   {
-    "id": 232,
+    "id": 243,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 257,
@@ -2178,7 +2187,7 @@
     "remarks": ""
   },
   {
-    "id": 233,
+    "id": 244,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 258,
@@ -2187,7 +2196,7 @@
     "remarks": ""
   },
   {
-    "id": 234,
+    "id": 245,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 259,
@@ -2196,7 +2205,7 @@
     "remarks": ""
   },
   {
-    "id": 235,
+    "id": 246,
     "locationId": 57,
     "locationName": "沈没船",
     "itemId": 260,
@@ -2205,7 +2214,7 @@
     "remarks": ""
   },
   {
-    "id": 236,
+    "id": 247,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 261,
@@ -2214,7 +2223,7 @@
     "remarks": ""
   },
   {
-    "id": 237,
+    "id": 248,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 128,
@@ -2223,7 +2232,7 @@
     "remarks": ""
   },
   {
-    "id": 238,
+    "id": 249,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 120,
@@ -2232,7 +2241,7 @@
     "remarks": ""
   },
   {
-    "id": 239,
+    "id": 250,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 262,
@@ -2241,7 +2250,7 @@
     "remarks": ""
   },
   {
-    "id": 240,
+    "id": 251,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 48,
@@ -2250,7 +2259,7 @@
     "remarks": ""
   },
   {
-    "id": 241,
+    "id": 252,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 263,
@@ -2259,7 +2268,7 @@
     "remarks": ""
   },
   {
-    "id": 242,
+    "id": 253,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 76,
@@ -2268,7 +2277,7 @@
     "remarks": ""
   },
   {
-    "id": 243,
+    "id": 254,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 127,
@@ -2277,7 +2286,7 @@
     "remarks": ""
   },
   {
-    "id": 244,
+    "id": 255,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 264,
@@ -2286,7 +2295,7 @@
     "remarks": ""
   },
   {
-    "id": 245,
+    "id": 256,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 265,
@@ -2295,7 +2304,7 @@
     "remarks": ""
   },
   {
-    "id": 246,
+    "id": 257,
     "locationId": 48,
     "locationName": "アイフリードの墓",
     "itemId": 266,
@@ -2304,7 +2313,7 @@
     "remarks": ""
   },
   {
-    "id": 247,
+    "id": 258,
     "locationId": 58,
     "locationName": "ファロース教会地下",
     "itemId": 267,
@@ -2313,7 +2322,7 @@
     "remarks": ""
   },
   {
-    "id": 248,
+    "id": 259,
     "locationId": 58,
     "locationName": "ファロース教会地下",
     "itemId": 268,
@@ -2322,7 +2331,7 @@
     "remarks": ""
   },
   {
-    "id": 249,
+    "id": 260,
     "locationId": 58,
     "locationName": "ファロース教会地下",
     "itemId": 129,
@@ -2331,7 +2340,7 @@
     "remarks": ""
   },
   {
-    "id": 250,
+    "id": 261,
     "locationId": 58,
     "locationName": "ファロース教会地下",
     "itemId": 269,
@@ -2340,7 +2349,7 @@
     "remarks": ""
   },
   {
-    "id": 251,
+    "id": 262,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 239,
@@ -2349,7 +2358,7 @@
     "remarks": ""
   },
   {
-    "id": 252,
+    "id": 263,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 60,
@@ -2358,7 +2367,7 @@
     "remarks": ""
   },
   {
-    "id": 253,
+    "id": 264,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 270,
@@ -2367,7 +2376,7 @@
     "remarks": ""
   },
   {
-    "id": 254,
+    "id": 265,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 271,
@@ -2376,7 +2385,7 @@
     "remarks": ""
   },
   {
-    "id": 255,
+    "id": 266,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 48,
@@ -2385,7 +2394,7 @@
     "remarks": ""
   },
   {
-    "id": 256,
+    "id": 267,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 245,
@@ -2394,7 +2403,7 @@
     "remarks": ""
   },
   {
-    "id": 257,
+    "id": 268,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 79,
@@ -2403,7 +2412,7 @@
     "remarks": ""
   },
   {
-    "id": 258,
+    "id": 269,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 43,
@@ -2412,7 +2421,7 @@
     "remarks": ""
   },
   {
-    "id": 259,
+    "id": 270,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 272,
@@ -2421,7 +2430,7 @@
     "remarks": ""
   },
   {
-    "id": 260,
+    "id": 271,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 273,
@@ -2430,7 +2439,7 @@
     "remarks": ""
   },
   {
-    "id": 261,
+    "id": 272,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 58,
@@ -2439,7 +2448,7 @@
     "remarks": ""
   },
   {
-    "id": 262,
+    "id": 273,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 274,
@@ -2448,7 +2457,7 @@
     "remarks": ""
   },
   {
-    "id": 263,
+    "id": 274,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 75,
@@ -2457,7 +2466,7 @@
     "remarks": ""
   },
   {
-    "id": 264,
+    "id": 275,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 237,
@@ -2466,7 +2475,7 @@
     "remarks": ""
   },
   {
-    "id": 265,
+    "id": 276,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 275,
@@ -2475,7 +2484,7 @@
     "remarks": ""
   },
   {
-    "id": 266,
+    "id": 277,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 243,
@@ -2484,7 +2493,7 @@
     "remarks": ""
   },
   {
-    "id": 267,
+    "id": 278,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 276,
@@ -2493,7 +2502,7 @@
     "remarks": ""
   },
   {
-    "id": 268,
+    "id": 279,
     "locationId": 59,
     "locationName": "きらめきの塔",
     "itemId": 246,
@@ -2502,7 +2511,7 @@
     "remarks": ""
   },
   {
-    "id": 269,
+    "id": 280,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 313,
@@ -2511,7 +2520,7 @@
     "remarks": "1階層のボス初回撃破後"
   },
   {
-    "id": 270,
+    "id": 281,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 349,
@@ -2520,7 +2529,7 @@
     "remarks": "1階層のボス初回撃破後"
   },
   {
-    "id": 271,
+    "id": 282,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 339,
@@ -2529,7 +2538,7 @@
     "remarks": "2階層のボス初回撃破後"
   },
   {
-    "id": 272,
+    "id": 283,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 119,
@@ -2538,7 +2547,7 @@
     "remarks": "2階層のボス初回撃破後"
   },
   {
-    "id": 273,
+    "id": 284,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 337,
@@ -2547,7 +2556,7 @@
     "remarks": "3階層のボス初回撃破後"
   },
   {
-    "id": 274,
+    "id": 285,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 333,
@@ -2556,7 +2565,7 @@
     "remarks": "3階層のボス初回撃破後"
   },
   {
-    "id": 275,
+    "id": 286,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 331,
@@ -2565,7 +2574,7 @@
     "remarks": "4階層のボス初回撃破後"
   },
   {
-    "id": 276,
+    "id": 287,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 335,
@@ -2574,7 +2583,7 @@
     "remarks": "4階層のボス初回撃破後"
   },
   {
-    "id": 277,
+    "id": 288,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 310,
@@ -2583,7 +2592,7 @@
     "remarks": "5階層のボス初回撃破後"
   },
   {
-    "id": 278,
+    "id": 289,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 359,
@@ -2592,7 +2601,7 @@
     "remarks": "5階層のボス初回撃破後"
   },
   {
-    "id": 279,
+    "id": 290,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 347,
@@ -2601,7 +2610,7 @@
     "remarks": "ネレイド撃破後に王座を調べる"
   },
   {
-    "id": 280,
+    "id": 291,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 65,
@@ -2610,7 +2619,7 @@
     "remarks": ""
   },
   {
-    "id": 281,
+    "id": 292,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 237,
@@ -2619,7 +2628,7 @@
     "remarks": ""
   },
   {
-    "id": 282,
+    "id": 293,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 243,
@@ -2628,7 +2637,7 @@
     "remarks": ""
   },
   {
-    "id": 283,
+    "id": 294,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 246,
@@ -2637,7 +2646,7 @@
     "remarks": ""
   },
   {
-    "id": 284,
+    "id": 295,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 239,
@@ -2646,7 +2655,7 @@
     "remarks": ""
   },
   {
-    "id": 285,
+    "id": 296,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 245,
@@ -2655,7 +2664,7 @@
     "remarks": ""
   },
   {
-    "id": 286,
+    "id": 297,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 279,
@@ -2664,7 +2673,7 @@
     "remarks": ""
   },
   {
-    "id": 287,
+    "id": 298,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 280,
@@ -2673,7 +2682,7 @@
     "remarks": ""
   },
   {
-    "id": 288,
+    "id": 299,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 228,
@@ -2682,7 +2691,7 @@
     "remarks": ""
   },
   {
-    "id": 289,
+    "id": 300,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 39,
@@ -2691,7 +2700,7 @@
     "remarks": ""
   },
   {
-    "id": 290,
+    "id": 301,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 42,
@@ -2700,7 +2709,7 @@
     "remarks": ""
   },
   {
-    "id": 291,
+    "id": 302,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 226,
@@ -2709,7 +2718,7 @@
     "remarks": ""
   },
   {
-    "id": 292,
+    "id": 303,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 300,
@@ -2718,7 +2727,7 @@
     "remarks": ""
   },
   {
-    "id": 293,
+    "id": 304,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 118,
@@ -2727,7 +2736,7 @@
     "remarks": ""
   },
   {
-    "id": 294,
+    "id": 305,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 230,
@@ -2736,7 +2745,7 @@
     "remarks": ""
   },
   {
-    "id": 295,
+    "id": 306,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 117,
@@ -2745,7 +2754,7 @@
     "remarks": ""
   },
   {
-    "id": 296,
+    "id": 307,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 38,
@@ -2754,7 +2763,7 @@
     "remarks": ""
   },
   {
-    "id": 297,
+    "id": 308,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 36,
@@ -2763,7 +2772,7 @@
     "remarks": ""
   },
   {
-    "id": 298,
+    "id": 309,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 46,
@@ -2772,7 +2781,7 @@
     "remarks": ""
   },
   {
-    "id": 299,
+    "id": 310,
     "locationId": 61,
     "locationName": "ネレイドの迷宮",
     "itemId": 48,

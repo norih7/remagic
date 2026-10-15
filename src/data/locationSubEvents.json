@@ -6,7 +6,18 @@
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": ""
+    "remarks": "ミンツ到着後 〜 モルル到着前まで",
+    "type": "time-limit"
+  },
+  {
+    "id": 2,
+    "locationId": 4,
+    "locationName": "学問の町ミンツ",
+    "eventId": 2,
+    "eventName": "テイルズクイズ",
+    "eventPath": "/subevents/quiz",
+    "remarks": "",
+    "type": ""
   },
   {
     "id": 3,
@@ -15,7 +26,8 @@
     "eventId": 3,
     "eventName": "クレーメルボール",
     "eventPath": "/subevents/kremerball",
-    "remarks": ""
+    "remarks": "ミンツ到着後 〜 セレスティア到着前まで",
+    "type": "time-limit"
   },
   {
     "id": 4,
@@ -24,7 +36,8 @@
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": ""
+    "remarks": "モルル到着後 〜 インフェリア港（定期連絡船乗船）到着前まで",
+    "type": "time-limit"
   },
   {
     "id": 5,
@@ -33,7 +46,8 @@
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": 6,
@@ -42,7 +56,8 @@
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": "インフェリアとバロールの定期連絡船（有料）でイベント 見逃しやすいので注意"
+    "remarks": "インフェリアとバロールの定期連絡船（有料）でイベント 見逃しやすいので注意",
+    "type": ""
   },
   {
     "id": 7,
@@ -51,7 +66,8 @@
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": "バロールの町で発生するイベント"
+    "remarks": "バロールの町で発生するイベント",
+    "type": ""
   },
   {
     "id": 8,
@@ -60,7 +76,8 @@
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": 9,
@@ -69,7 +86,8 @@
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": 10,
@@ -78,7 +96,8 @@
     "eventId": 4,
     "eventName": "放浪の画家リシテア",
     "eventPath": "/subevents/lysithea",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": 11,
@@ -87,7 +106,8 @@
     "eventId": 5,
     "eventName": "レンズ交換",
     "eventPath": "/subevents/lens",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": 12,
@@ -96,7 +116,8 @@
     "eventId": 5,
     "eventName": "レンズ交換",
     "eventPath": "/subevents/lens",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -105,7 +126,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -114,7 +136,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -123,7 +146,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -132,7 +156,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -141,7 +166,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -150,7 +176,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -159,7 +186,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -168,7 +196,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -177,7 +206,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -186,7 +216,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -195,7 +226,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -204,7 +236,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -213,7 +246,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -222,7 +256,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -231,7 +266,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -240,7 +276,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -249,7 +286,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -258,7 +296,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -267,7 +306,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -276,7 +316,8 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   },
   {
     "id": "",
@@ -285,6 +326,7 @@
     "eventId": "",
     "eventName": "",
     "eventPath": "",
-    "remarks": ""
+    "remarks": "",
+    "type": ""
   }
 ]

@@ -7,7 +7,7 @@ const TimeLimitIcon = () => (
       width={25}
       height={25}
       alt=""
-      className="mr-1"
+      className="mr-1.5 inline-block"
     />
   </>
 );

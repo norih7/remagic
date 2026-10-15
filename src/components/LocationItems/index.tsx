@@ -1,4 +1,5 @@
 "use client";
+import KeyItemIcon from "../Icons/KeyItemIcon";
 import styles from "./styles.module.css";
 import { LuGift } from "react-icons/lu";
 
@@ -33,7 +34,10 @@ export default function ChartList(props: Props) {
     ) : (
       <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
         <a href={`/systems/item/${item.itemId}`} className="block px-3 py-2">
-          <strong>{item.itemName}</strong>
+          <strong>
+            {item.itemType === "keyItem" && <KeyItemIcon />}
+            {item.itemName}
+          </strong>
           <span>{item.remarks}</span>
         </a>
       </li>

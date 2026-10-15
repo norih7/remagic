@@ -7,7 +7,7 @@ const KeyItemIcon = () => (
       width={25}
       height={25}
       alt=""
-      className="mr-1.5"
+      className="inline-block mr-1.5"
     />
   </>
 );

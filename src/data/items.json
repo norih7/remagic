@@ -5052,5 +5052,19 @@
     "sell": 9000,
     "element": "none",
     "special": ""
+  },
+  {
+    "id": 364,
+    "name": "オージェのピアス",
+    "type": "keyItem",
+    "effect": "ストーリー上必ず入手するアイテム。メルディたちセレスティア人と会話ができるようになる貴重品。",
+    "isBuy": false,
+    "isDrop": false,
+    "isTreasure": false,
+    "isEvent": false,
+    "buy": "-",
+    "sell": "-",
+    "element": "none",
+    "special": ""
   }
 ]

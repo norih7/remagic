@@ -18,6 +18,7 @@ import RoundedItem from "@/components/RoundedItem";
 import Link from "next/link";
 import TableOfContents from "@/components/TableOfContents";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
+import KeyItemIcon from "@/components/Icons/KeyItemIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -117,10 +118,12 @@ export default async function HomePage() {
           <p>
             キールを探すため、次はミンツの南西にある岩山の観測所を目指します。
           </p>
-          <Information type="warning" title="ミンツの時限イベント">
+          <Information
+            type="warning"
+            title="クレーメルボールの時限イベントはほどほどに"
+          >
             <TimeLimitIcon />
-            この時点のミンツでは「カトリーヌの恋愛」と「クレーメルボール」の2つの時限イベント{" "}
-            が発生します。クレーメルボールは難しいわりに得られるものが称号のみなので、称号にこだわりがなければスキップしても構いません。
+            この時点のミンツでは「カトリーヌの恋愛」と「クレーメルボール」の2つの時限イベントが発生します。クレーメルボールは難しいわりに得られるものが称号のみなので、称号にこだわりがなければスキップしても構いません。
           </Information>
           <LocationItems data={itemsData} locationIds={[4]} />
           <LocationRecipes data={recipesData} locationIds={[4]} />
@@ -208,8 +211,7 @@ export default async function HomePage() {
             <br />
             イベント後にマゼットの家へ戻ると、さらにイベントが続きます。
             <br />
-            その後マゼットに話しかけると
-            <span className="daiji">モンスター図鑑</span>
+            その後マゼットに話しかけると 貴重品「モンスター図鑑」
             を受け取れます。イベント中に自動でもらえるアイテムではないため、イベント終了後に忘れず話しかけておきましょう。
           </p>
           <p>
@@ -260,7 +262,7 @@ export default async function HomePage() {
               <br />
               特に「チンクエデア」は木の茂みに隠れていて発見しにくいアイテムです。
               <br />
-              水属性の短剣で、火属性の敵に対して有効な武器なので、見つけたら回収しておきましょう。
+              水属性の短剣で、火属性の敵に対して有効な武器なので、見つけたら回収しておきましょう。ただしこの後のウンディーネは水属性に耐性があるため装備しないようには注意しましょう。
             </p>
           </div>
 
