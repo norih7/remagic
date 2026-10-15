@@ -96,18 +96,18 @@
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": "",
-    "type": ""
+    "remarks": "シャンバール到着後 〜 火晶霊の谷到着前まで",
+    "type": "time-limit"
   },
   {
-    "id": 9,
+    "id": "",
     "locationId": 17,
     "locationName": "火晶霊の谷",
     "eventId": 1,
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
-    "remarks": "",
-    "type": ""
+    "remarks": "火晶霊の谷到着後 〜 セレスティア突入前まで（※レグルス道場でイベント発生）",
+    "type": "time-limit"
   },
   {
     "id": 10,
