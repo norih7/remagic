@@ -74,12 +74,7 @@ export default async function HomePage() {
               <li>
                 図書館は給水タンクの斜め向かい側の通路から入れますが、入り口がやや見つけづらいため以下の画像を参考にしてください。
                 <br />
-                <img
-                  src="/maps/imen_map.jpg"
-                  alt="アイメンのマップ"
-                  width={488}
-                  height={355}
-                />
+                <ResponsiveImage src="/stories/guide3-imen-map.jpg" />
               </li>
               <li>
                 図書館で2人と合流した後は、晶霊技師「ガレノス」を訪ねるためルイシカへ向かうことになります。

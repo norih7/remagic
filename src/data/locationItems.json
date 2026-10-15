@@ -2797,5 +2797,14 @@
     "itemName": "エリクシール",
     "itemType": "useItem",
     "remarks": ""
+  },
+  {
+    "id": 311,
+    "locationId": 74,
+    "locationName": "アイメン駅",
+    "itemId": 366,
+    "itemName": "トレインケイジ",
+    "itemType": "keyItem",
+    "remarks": ""
   }
 ]

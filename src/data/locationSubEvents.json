@@ -40,16 +40,6 @@
     "type": "time-limit"
   },
   {
-    "id": 5,
-    "locationId": 11,
-    "locationName": "王都インフェリア",
-    "eventId": 1,
-    "eventName": "ピエールとカトリーヌ",
-    "eventPath": "/subevents/catarine",
-    "remarks": "",
-    "type": ""
-  },
-  {
     "id": 6,
     "locationId": 13,
     "locationName": "バロール港",

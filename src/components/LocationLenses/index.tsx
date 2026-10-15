@@ -1,13 +1,15 @@
 "use client";
 import styles from "./styles.module.css";
 import { LuCircle } from "react-icons/lu";
+import Link from "next/link";
 
-type Recipe = {
+type Lenses = {
   locationId: number;
   remarks: string;
+  lensId: number;
 };
 type Props = {
-  data: Recipe[];
+  data: Lenses[];
   locationIds: number[];
 };
 
@@ -19,7 +21,10 @@ export default function LocationLenses(props: Props) {
       key={index}
       className="bg-gray-50 border border-gray-200 rounded-lg py-2 px-3 transition-colors text-sm"
     >
-      {index + 1}つ目<span>{recipe.remarks}</span>
+      <Link href={`/subevents/lens#${recipe.lensId}`} className="block">
+        <strong>{index + 1}つ目</strong>
+        <span>{recipe.remarks}</span>
+      </Link>
     </li>
   ));
   const Display = List.length === 0 ? <p>なし</p> : List;

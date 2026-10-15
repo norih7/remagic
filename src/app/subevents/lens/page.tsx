@@ -28,27 +28,30 @@ export const metadata = {
 };
 export default async function HomePage() {
   const lensesData = await getLocationLensesData();
-  const Lenses = lensesData.map((item, index) => (
-    <div className="border border-slate-300 p-3 rounded-md mb-3" key={index}>
-      <div className="mb-2 items-center">
-        <h3>
-          No.{item.id} {item.locationName}
-        </h3>
-        <div className="mr-1">
-          <Tag>{recipeWorldMap[item.world]}</Tag>
+  const Lenses = lensesData.map((item, index) => {
+    console.log(item);
+    return (
+      <div className="border border-slate-300 p-3 rounded-md mb-3" key={index}>
+        <div className="mb-2 items-center" id={String(item.lensId)}>
+          <h3>
+            No.{item.id} {item.locationName}
+          </h3>
+          <div className="mr-1">
+            <Tag>{recipeWorldMap[item.world]}</Tag>
+          </div>
+        </div>
+        <div className="">
+          <RoundedItem title="場所">
+            <p>{item.remarks}</p>
+            <ResponsiveImage
+              src={`/subevents/lens-location${item.id}.jpg`}
+              noSpace
+            />
+          </RoundedItem>
         </div>
       </div>
-      <div className="">
-        <RoundedItem title="場所">
-          <p>{item.remarks}</p>
-          <ResponsiveImage
-            src={`/subevents/lens-location${item.id}.jpg`}
-            noSpace
-          />
-        </RoundedItem>
-      </div>
-    </div>
-  ));
+    );
+  });
 
   return (
     <Main title={title}>
