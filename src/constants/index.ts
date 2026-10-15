@@ -151,7 +151,7 @@ export const skillLinks: Record<string, PageLink> = {
     title: "晶霊術（メルディ&キール）",
     path: "/skills/magic",
     image: "/link-headers/skills-magic.jpg",
-    desc: "晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しています。好きな術を見つけて獲得しましょう！",
+    desc: "晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しておりフリンジのシミュレータも公開中。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。晶霊術の一覧ページ。フリンジに必要な組み合わせとレベルも掲載しています。フリンジのシミュレータも公開しています。",
     createdAt: "2026-10-13",

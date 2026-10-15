@@ -51,7 +51,7 @@ export const RunePropertyList: React.FC<RunePropertyListProps> = ({
             value: <StarRating rating={rune.rate} />,
           },
           {
-            label: <>ショップ/敵ドロップ入手</>,
+            label: <>購入/ドロップ</>,
             value: rune.canBuy ? "可能" : "不可能",
           },
         ];

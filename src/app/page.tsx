@@ -3,7 +3,7 @@ import { storyLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
 import { skillLinks } from "@/constants";
-import { extraLinks } from "@/constants";
+import { extraLinks, guideLinks } from "@/constants";
 import SectionTitle from "@/components/SectionTitle";
 import Link from "next/link";
 import Main from "@/components/SiteLayout/Main";
@@ -19,15 +19,19 @@ type Link = {
 };
 const featuredLinks: Link[] = [];
 featuredLinks.push(extraLinks["valkyrie"]);
-featuredLinks.push(subeventLinks["lens"]);
 featuredLinks.push(subeventLinks["flying-board"]);
 featuredLinks.push(storyLinks["guide3"]);
 featuredLinks.push(storyLinks["guide4"]);
 featuredLinks.push(extraLinks["aifread"]);
 featuredLinks.push(subeventLinks["skill-chat"]);
 featuredLinks.push(systemLinks["rune"]);
-featuredLinks.push(systemLinks["recipe"]);
-featuredLinks.push(skillLinks["magic"]);
+
+const fixedLink: Link[] = [];
+fixedLink.push(guideLinks["first"]);
+fixedLink.push(guideLinks["missable"]);
+fixedLink.push(subeventLinks["lens"]);
+fixedLink.push(systemLinks["recipe"]);
+fixedLink.push(skillLinks["magic"]);
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -61,6 +65,11 @@ export default async function HomePage() {
         </div>
 
         {/* 2. 注目カテゴリセクション */}
+        <section className="mb-8">
+          <SectionTitle>リマスター版に向けたガイド</SectionTitle>
+          <ContentLinks list={fixedLink} />
+        </section>
+
         <section className="mb-8">
           <SectionTitle>注目コンテンツ</SectionTitle>
           <ContentLinks list={featuredLinks} />

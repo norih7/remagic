@@ -4,8 +4,8 @@ const TimeLimitIcon = () => (
   <>
     <Image
       src="/icons/time-limit.png"
-      width={25}
-      height={25}
+      width={20}
+      height={20}
       alt=""
       className="mr-1.5 inline-block"
     />

@@ -4,8 +4,8 @@ const SkillIcon = () => (
   <>
     <Image
       src="/icons/skill.png"
-      width={25}
-      height={25}
+      width={20}
+      height={20}
       alt=""
       className="inline-block mr-1.5"
     />
