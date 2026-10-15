@@ -6,6 +6,15 @@ const update = [
     date: "2026/10/15",
     update: (
       <>
+        <Link href="/subevents/quiz">テイルズクイズ</Link>
+        を公開。リマスター版の初級までクイズを掲載しました。
+      </>
+    ),
+  },
+  {
+    date: "2026/10/15",
+    update: (
+      <>
         <Link href="/guides/first">序盤にやっておきたいこと</Link>、
         <Link href="/guides/missable">取り逃がし要素</Link>
         をアップデート。

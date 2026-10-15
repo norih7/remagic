@@ -284,6 +284,16 @@ export const subeventLinks: Record<string, PageLink> = {
     createdAt: "2026-10-08",
     updatedAt: "2026-10-08",
   },
+  quiz: {
+    title: "テイルズクイズ",
+    path: "/subevents/quiz",
+    image: "/link-headers/subevents-quiz.jpg",
+    desc: "ミンツ大学で挑戦できるテイルズクイズについて解説。クイズ一覧と回答を掲載しています。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ミンツ大学で挑戦できるテイルズクイズについて解説。クイズ一覧と回答を掲載しています。",
+    createdAt: "2026-10-15",
+    updatedAt: "2026-10-15",
+  },
   kremerball: {
     title: "クレーメルボール",
     path: "/subevents/kremerball",
