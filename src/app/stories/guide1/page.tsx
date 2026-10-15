@@ -17,6 +17,7 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import Link from "next/link";
 import TableOfContents from "@/components/TableOfContents";
+import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -116,6 +117,11 @@ export default async function HomePage() {
           <p>
             キールを探すため、次はミンツの南西にある岩山の観測所を目指します。
           </p>
+          <Information type="warning" title="ミンツの時限イベント">
+            <TimeLimitIcon />
+            この時点のミンツでは「カトリーヌの恋愛」と「クレーメルボール」の2つの時限イベント{" "}
+            が発生します。クレーメルボールは難しいわりに得られるものが称号のみなので、称号にこだわりがなければスキップしても構いません。
+          </Information>
           <LocationItems data={itemsData} locationIds={[4]} />
           <LocationRecipes data={recipesData} locationIds={[4]} />
           <LocationLenses data={lensesData} locationIds={[4]} />

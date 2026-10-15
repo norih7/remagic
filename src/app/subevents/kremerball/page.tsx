@@ -8,6 +8,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
+import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,7 +33,10 @@ export default async function HomePage() {
           ミンツでプレイできるミニゲーム「クレーメルボール」について解説しています。このイベントをやり込むとリッドの称号を得ることができます。
         </PageSummary>
         <Section>
-          <SectionTitle>クレーメルボール</SectionTitle>
+          <SectionTitle>
+            <TimeLimitIcon />
+            クレーメルボール
+          </SectionTitle>
           <EventCondition category="period">ミンツ到着後</EventCondition>
           <Tag>称号の時限イベント</Tag>
           <Information type="warning" title="注意点">
