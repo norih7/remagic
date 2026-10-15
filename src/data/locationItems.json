@@ -648,6 +648,15 @@
     "remarks": "インフェリア城 料理場にある果物のカゴ"
   },
   {
+    "id": "",
+    "locationId": 11,
+    "locationName": "王都インフェリア",
+    "itemId": 365,
+    "itemName": "じょうせんパス",
+    "itemType": "keyItem",
+    "remarks": ""
+  },
+  {
     "id": 73,
     "locationId": 14,
     "locationName": "バロールの町",

@@ -5066,5 +5066,19 @@
     "sell": "-",
     "element": "none",
     "special": ""
+  },
+  {
+    "id": 365,
+    "name": "じょうせんパス",
+    "type": "keyItem",
+    "effect": "ストーリー上必ず入手するアイテム。インフェリア港〜バロール港の船を自由に行き来できるパス。",
+    "isBuy": false,
+    "isDrop": false,
+    "isTreasure": false,
+    "isEvent": false,
+    "buy": "-",
+    "sell": "-",
+    "element": "none",
+    "special": ""
   }
 ]

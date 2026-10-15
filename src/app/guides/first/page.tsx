@@ -157,6 +157,7 @@ export default async function HomePage() {
           <SectionTitle type="flag">
             6. いざないの密林でセフィラを入手
           </SectionTitle>
+          <ResponsiveImage src="/guides/first-reverse-doll.jpg" />
           <p>
             序盤のいざないの密林では、今後の進行を有利にするための重要な取得ができます。ここで入手できるリバースドールにルーンボトルを使うと、セフィラに変化します。セフィラは装備すると獲得ガルドが2倍になるアクセサリで非常に強力です。
           </p>
