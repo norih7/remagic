@@ -23,5 +23,15 @@
     "id": 5,
     "name": "レンズ交換",
     "path": "/subevents/lens"
+  },
+  {
+    "id": 6,
+    "name": "ベッポのかくれんぼ",
+    "path": "/subevents/beppo"
+  },
+  {
+    "id": 7,
+    "name": "算術勝負",
+    "path": "/subevents/arithmetic"
   }
 ]

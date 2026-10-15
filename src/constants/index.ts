@@ -302,6 +302,16 @@ export const subeventLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
   },
+  arithmetic: {
+    title: "算術勝負",
+    path: "/subevents/arithmetic",
+    image: "/link-headers/subevents-arithmetic.jpg",
+    desc: "バロールの町で挑戦できる算術勝負について解説。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。バロールの町で挑戦できる算術勝負について解説。",
+    createdAt: "2026-10-15",
+    updatedAt: "2026-10-15",
+  },
   syanballoon: {
     title: "シャンバルーン",
     path: "/subevents/syanballoon",

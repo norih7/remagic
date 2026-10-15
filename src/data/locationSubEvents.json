@@ -57,7 +57,7 @@
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
     "remarks": "インフェリアとバロールの定期連絡船（有料）でイベント 見逃しやすいので注意",
-    "type": ""
+    "type": "time-limit"
   },
   {
     "id": 7,
@@ -67,7 +67,27 @@
     "eventName": "ピエールとカトリーヌ",
     "eventPath": "/subevents/catarine",
     "remarks": "バロールの町で発生するイベント",
-    "type": ""
+    "type": "time-limit"
+  },
+  {
+    "id": "",
+    "locationId": 14,
+    "locationName": "バロールの町",
+    "eventId": 6,
+    "eventName": "ベッポのかくれんぼ",
+    "eventPath": "/subevents/beppo",
+    "remarks": "レイス加入後 〜 セレスティア到着前まで",
+    "type": "time-limit"
+  },
+  {
+    "id": "",
+    "locationId": 14,
+    "locationName": "バロールの町",
+    "eventId": 7,
+    "eventName": "算術勝負",
+    "eventPath": "/subevents/arithmetic",
+    "remarks": "バロール到着 〜 セレスティア到着前まで",
+    "type": "time-limit"
   },
   {
     "id": 8,
