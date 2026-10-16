@@ -81,13 +81,13 @@ export default async function HomePage() {
           </RoundedContainer>
 
           <RoundedContainer>
-            <h3>ダークレイザーの習得</h3>
+            <h3>ダークイレイザーの習得</h3>
             <EventCondition category="period">
               レグルスの丘クリア後
             </EventCondition>
             <ResponsiveImage src="/subevents/skill-fog-dark-laser.jpg" />
             <RoundedItem title="発生場所と手順">
-              ルイシカの町にあるがれき付近に近づくとイベントが発生し、フォッグが闇属性の「ダークレイザー」を習得します。なお、ここで目指すがれきは奥側の廃墟フロアではなく手前側にあります。一見すると最初はピンク色のミアキスが姿を見せていませんが、イベントの進行中に突如現れる仕様になっています。
+              ルイシカの町にあるがれき付近に近づくとイベントが発生し、フォッグが闇属性の「ダークイレイザー」を習得します。なお、ここで目指すがれきは奥側の廃墟フロアではなく手前側にあります。一見すると最初はピンク色のミアキスが姿を見せていませんが、イベントの進行中に突如現れる仕様になっています。
             </RoundedItem>
           </RoundedContainer>
 

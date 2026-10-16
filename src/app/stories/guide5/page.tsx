@@ -173,7 +173,7 @@ export default async function HomePage() {
           <LocationItems data={itemsData} locationIds={[0]} />
           <LocationRecipes data={recipesData} locationIds={[0]} />
           <LocationLenses data={lensesData} locationIds={[38]} />
-          <LocationSubEvents data={subEventData} locationIds={[0]} />
+          <LocationSubEvents data={subEventData} locationIds={[32]} />
         </Section>
 
         <Section>
@@ -183,6 +183,48 @@ export default async function HomePage() {
             <p>
               最深部で試練のイベントをクリアすると、リッドが「極光剣」を習得します。庭園から出るとイベントが連鎖し、自動的にインフェリア城へと移動します。
             </p>
+            <Information title="インフェリアに帰還後のサブイベント">
+              <p>
+                インフェリア帰還後には様々なサブイベントが発生します。特に最初はインフェリアの隠しアジトで装備品などを調達するのがおすすめです。探索だけで強力な装備品を入手できます。
+              </p>
+
+              <GuideList
+                items={[
+                  {
+                    title: "インフェリアの隠しアジト",
+                    href: "/subevents/secret-base",
+                  },
+                  {
+                    title: "隠しダンジョン「沈没船」",
+                    href: "/extras/sunken-ship",
+                  },
+                  {
+                    title: "隠しダンジョン「ファロース教会地下」",
+                    href: "/extras/farosu-underground",
+                  },
+                  {
+                    title: "隠しダンジョン「アイフリードの墓」",
+                    href: "/extras/aifread",
+                  },
+                  {
+                    title: "ベッポのかくれんぼの結末",
+                    href: "/subevents/beppo",
+                  },
+                  {
+                    title: "カトリーヌの恋愛の結末",
+                    href: "/subevents/catarine",
+                  },
+                  {
+                    title: "テイルズクイズに中級、上級追加",
+                    href: "/subevents/quiz",
+                  },
+                  {
+                    title: "シャンバルーンの難易度アップ",
+                    href: "/subevents/syanballoon",
+                  },
+                ]}
+              />
+            </Information>
           </div>
           <LocationItems data={itemsData} locationIds={[33]} />
           <LocationRecipes data={recipesData} locationIds={[33]} />
@@ -194,7 +236,7 @@ export default async function HomePage() {
           <SectionTitle type="flag">
             6.インフェリア城〜セイファートリング
           </SectionTitle>
-          <div>
+          <div className="mb-8">
             <p>
               牢屋でのイベントを消化したあとインフェリア城を脱出し、インフェリア港へ向かいましょう。
             </p>
@@ -205,9 +247,18 @@ export default async function HomePage() {
               ※インフェリアからのルート例:
               遠征の橋で「中継基地へ」→「反転ドーム」→「反転する」→「セレスティアポート」→「界面」
             </p>
+          </div>
+          <div className="mb-4">
+            <h3>観測所の試練</h3>
             <p>
-              観測所では最後の試練に挑みます。ここではシゼルを操作しての戦闘になり、×ボタンに割り当てられたサンダースパークで敵の動きを止めつつダメージを稼ぐのがポイントです。
+              観測所では最後の試練に挑みます。ここではシゼルを操作しての戦闘になり、×ボタンに割り当てられたサンダースパークで敵の動きを止めつつダメージを稼ぐのがポイントです。メルディが戦闘不能となるとフロアの入り口からやり直しとなります。
             </p>
+            <Information type="warning" title="見落としやすい機械操作">
+              <ResponsiveImage src="/stories/guide5-observatory-switch.jpg" />
+              <p>
+                試練の最後の方には脱出口があるのですが、ここは近くの機械を操作しないと開きません。脱出口を調べるだけでは「ここから脱出できそうだな」しか進まないため注意です。
+              </p>
+            </Information>
             <p>
               試練突破後にリッドが「極光波」を習得。その後イベントでセイファートリングが崩壊するため、界面のフィールドから突入するとティンシアへ自動転送されます。
             </p>
@@ -271,7 +322,7 @@ export default async function HomePage() {
           </SectionTitle>
           <div className="mb-4">
             <p>
-              バリル城の壊れた壁の先にある晶霊砲に近づくとイベントが発生します。その後、遠征の橋を経由してセイファート観測所へ向かいます。なお、晶霊砲のそばにいるゾシモスに話しかけて鉱石加工の話を聞いておくことが、リッドの最強武器「ラストフェンサー」入手のフラグになります。
+              バリル城の壊れた壁の先にある晶霊砲に近づくとイベントが発生します。その後、遠征の橋を経由してセイファート観測所へ向かいます。なお、晶霊砲のそばにいるゾシモスに話しかけて鉱石加工の話を聞くとリッドの強武器「ラストフェンサー」入手のフラグになります。
             </p>
             <p>
               観測所での最終決戦前イベントを終えたら、界面フィールドからセイファートリングへ突入します。
@@ -281,7 +332,7 @@ export default async function HomePage() {
           <LocationItems data={itemsData} locationIds={[36]} />
           <LocationRecipes data={recipesData} locationIds={[36]} />
           <LocationLenses data={lensesData} locationIds={[36]} />
-          <LocationSubEvents data={subEventData} locationIds={[36]} />
+          <LocationSubEvents data={subEventData} locationIds={[77]} />
         </Section>
 
         <Section>

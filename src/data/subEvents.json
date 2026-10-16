@@ -48,5 +48,40 @@
     "id": 10,
     "name": "チャットの特技習得",
     "path": "/subevents/skill-chat"
+  },
+  {
+    "id": 11,
+    "name": "隠しダンジョン「闇の洞窟」",
+    "path": "/extras/dark-cave"
+  },
+  {
+    "id": 12,
+    "name": "隠しダンジョン「ファロース教会地下」",
+    "path": "/extras/farosu-underground"
+  },
+  {
+    "id": 13,
+    "name": "ジイニ",
+    "path": "/extras/jiini"
+  },
+  {
+    "id": 14,
+    "name": "ラストフェンサー",
+    "path": "/subevents/last-fencer"
+  },
+  {
+    "id": 15,
+    "name": "飛行艇の入手",
+    "path": "/subevents/flying-board"
+  },
+  {
+    "id": 16,
+    "name": "隠し大晶霊",
+    "path": "/subevents/secret-spirits"
+  },
+  {
+    "id": 17,
+    "name": "グリップソード探し",
+    "path": "/subevents/grip-sword"
   }
 ]
