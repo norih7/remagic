@@ -8,7 +8,7 @@ import SkillIcon from "@/components/Icons/SkillIcon";
 type Subevent = {
   locationId: number;
   eventName: string;
-  eventPath: string;
+  eventPath?: string;
   remarks: string;
   type: string;
 };
@@ -22,7 +22,18 @@ export default function ChartList(props: Props) {
   const result = data.filter((item) => locationIds.includes(item.locationId));
   const List = result.map((item, index) => {
     const icon = item.type === "time-limit" ? <TimeLimitIcon /> : "";
-    return (
+    return item.eventPath === "" ? (
+      <li
+        key={index}
+        className="bg-slate-50 border border-sky-200 rounded-md px-3 py-2 text-gray-500"
+      >
+        <strong>
+          {icon}
+          {item.eventName}
+        </strong>
+        <span>{item.remarks}</span>
+      </li>
+    ) : (
       <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
         <a href={item.eventPath} className="block px-3 py-2">
           <strong>

@@ -131,13 +131,13 @@
   },
   {
     "id": "",
-    "locationId": "",
-    "locationName": "",
-    "eventId": "",
-    "eventName": "",
+    "locationId": 19,
+    "locationName": "アイメンの町",
+    "eventId": 8,
+    "eventName": "キールの称号「ボサボサあたま」",
     "eventPath": "",
     "remarks": "",
-    "type": ""
+    "type": "time-limit"
   },
   {
     "id": "",

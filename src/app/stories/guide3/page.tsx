@@ -307,6 +307,7 @@ export default async function HomePage() {
           <div className="mb-8">
             <h3>地下5階</h3>
             <p>フロアの仕掛け：出題されるクイズに正解してアイテムを獲得する</p>
+            <ResponsiveImage src="/maps/chat-5f.jpg" />
             <RoundedContainer>
               <RoundedItem title="アヒルのおもちゃ" className="mb-3">
                 左側通路の奥の部屋のクイズに正解する
@@ -338,6 +339,7 @@ export default async function HomePage() {
             <p>
               フロアの仕掛け：機械付近の隠し通路に踏み込んでアイテムを回収する
             </p>
+            <ResponsiveImage src="/maps/chat-4f.jpg" />
             <RoundedContainer>
               <RoundedItem title="アヒルのおもちゃ" className="mb-3">
                 左側通路の奥の部屋の隠し通路
@@ -355,6 +357,7 @@ export default async function HomePage() {
             <p>
               フロアの仕掛け：石像をスイッチの上に置いて動く床の向きを変更し、部屋に入る
             </p>
+            <ResponsiveImage src="/maps/chat-3f.jpg" />
             <RoundedContainer>
               <RoundedItem title="アヒルのおもちゃ" className="mb-3">
                 左側通路の奥の部屋
@@ -375,6 +378,7 @@ export default async function HomePage() {
           <div className="mb-8">
             <h3>地下2階</h3>
             <p>フロアの仕掛け：壁に掛かった絵画の向きを正しく合わせる</p>
+            <ResponsiveImage src="/maps/chat-2f.jpg" />
             <RoundedContainer>
               <RoundedItem title="アヒルのおもちゃ" className="mb-3">
                 左側通路の奥の部屋
@@ -425,6 +429,7 @@ export default async function HomePage() {
           <div className="mb-8">
             <h3>地下1階</h3>
             <p>フロアの仕掛け：各部屋固有の謎解きをクリアする</p>
+            <ResponsiveImage src="/maps/chat-1f.jpg" />
             <RoundedContainer>
               <RoundedItem title="アヒルのおもちゃ" className="mb-3">
                 右側通路の奥の部屋にあるタルを動かして入手
@@ -436,7 +441,7 @@ export default async function HomePage() {
             <ResponsiveImage src="/stories/guide3-chat-1.jpg" />
             <p>
               右側通路の奥の部屋では、タルを移動させてアヒルのおもちゃを取り出します。
-              アヒルの手前にもタルがあるため、画像のように周囲のタルをずらして通路を確保しましょう。
+              少し見えずらいですがアヒルの手前にもタルがあるため、画像のように周囲のタルをずらして通路を確保しましょう。この部屋のジャガイモ箱にはレンズもあるので取り逃がしなく。
             </p>
             <p>
               左側通路の奥の部屋では、散らばっている本を拾い集めて本棚に戻すと隠し扉が開きます。全ての書物を一度に回収してから本棚に向かい、○ボタンで戻していけばスムーズにクリアできます。
