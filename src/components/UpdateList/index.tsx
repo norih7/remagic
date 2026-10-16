@@ -3,6 +3,17 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/10/16",
+    update: (
+      <>
+        <Link href="/stories/guide3">
+          攻略チャート3 セレスティア〜チャットの小屋
+        </Link>
+        を修正。リマスター版対応の状態に調整しました。
+      </>
+    ),
+  },
+  {
     date: "2026/10/15",
     update: (
       <>

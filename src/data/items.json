@@ -5094,5 +5094,33 @@
     "sell": "-",
     "element": "none",
     "special": ""
+  },
+  {
+    "id": 367,
+    "name": "ミアキスバッジ",
+    "type": "keyItem",
+    "effect": "ストーリー上必ず入手するアイテム。ティンシアにあるシルエシカのアジトに入るためのバッジ。",
+    "isBuy": false,
+    "isDrop": false,
+    "isTreasure": false,
+    "isEvent": false,
+    "buy": "-",
+    "sell": "-",
+    "element": "none",
+    "special": ""
+  },
+  {
+    "id": 368,
+    "name": "セレスティマップ",
+    "type": "keyItem",
+    "effect": "ストーリー上必ず入手するアイテム。セレスティアのワールドマップ。",
+    "isBuy": false,
+    "isDrop": false,
+    "isTreasure": false,
+    "isEvent": false,
+    "buy": "-",
+    "sell": "-",
+    "element": "none",
+    "special": ""
   }
 ]

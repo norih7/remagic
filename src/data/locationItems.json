@@ -2806,5 +2806,23 @@
     "itemName": "トレインケイジ",
     "itemType": "keyItem",
     "remarks": ""
+  },
+  {
+    "id": 312,
+    "locationId": 60,
+    "locationName": "港町ペイルティ（氷解後）",
+    "itemId": 367,
+    "itemName": "ミアキスバッジ",
+    "itemType": "keyItem",
+    "remarks": ""
+  },
+  {
+    "id": 313,
+    "locationId": 60,
+    "locationName": "港町ペイルティ（氷解後）",
+    "itemId": 368,
+    "itemName": "セレスティマップ",
+    "itemType": "keyItem",
+    "remarks": ""
   }
 ]

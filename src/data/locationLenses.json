@@ -237,7 +237,7 @@
     "world": "celestia",
     "locationId": 60,
     "locationName": "港町ペイルティ（氷解後）",
-    "remarks": "港にいるカニ（氷解後）を調べる"
+    "remarks": "港にいるカニを調べる（氷解後）"
   },
   {
     "id": 31,
@@ -245,7 +245,7 @@
     "world": "celestia",
     "locationId": 60,
     "locationName": "港町ペイルティ（氷解後）",
-    "remarks": "青い屋根の屋台の裏側（氷解後）を調べる"
+    "remarks": "青い屋根の屋台の裏側の木を調べる（氷解後）"
   },
   {
     "id": 32,

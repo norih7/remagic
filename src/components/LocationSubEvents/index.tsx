@@ -21,7 +21,12 @@ export default function ChartList(props: Props) {
   const { data, locationIds } = props;
   const result = data.filter((item) => locationIds.includes(item.locationId));
   const List = result.map((item, index) => {
-    const icon = item.type === "time-limit" ? <TimeLimitIcon /> : "";
+    const icon =
+      item.type === "time-limit" ? (
+        <TimeLimitIcon />
+      ) : item.type === "skill" ? (
+        <SkillIcon />
+      ) : null;
     return item.eventPath === "" ? (
       <li
         key={index}
