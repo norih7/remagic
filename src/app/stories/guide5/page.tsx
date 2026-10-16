@@ -16,6 +16,7 @@ import GifPlayer from "@/components/GifPlayer";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import TableOfContents from "@/components/TableOfContents";
+import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -106,7 +107,7 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle type="flag">4.海底のアジト探し</SectionTitle>
-          <div>
+          <div className="mb-8">
             <p>
               ストーリーを進めるには、海底の「アイフリードの台座（99,
               93）」に5つのシルバーソケットをはめ込む必要があります。周辺にはシャドウと契約できる「闇の洞窟」などの隠しエリアもあるため、育成を兼ねて探索を進めるのがおすすめです。
@@ -117,7 +118,8 @@ export default async function HomePage() {
               ※アジトにある剣は後の隠し要素に関係するため、この時点では回収できません。
             </p>
           </div>
-          <div className="mb-4">
+          <div className="mb-8">
+            <h3>シルバーソケットのあるアジト</h3>
             <table>
               <thead>
                 <tr>
@@ -148,10 +150,21 @@ export default async function HomePage() {
                 </tr>
               </tbody>
             </table>
+            <Information title="アジト1にある剣は後で入手可能">
+              <ResponsiveImage src="/stories/guide5-sd.jpg" />
+              <p>
+                アジト1には地面に刺さった剣がありますがこの時点では入手できません。ストーリー終盤の隠しダンジョン「きらめきの塔」をクリア後に再度このアジト1に訪れると入手できるようになります。
+              </p>
+              <GuideList
+                items={[{ title: "きらめきの塔", href: "/extras/valkyrie" }]}
+              />
+            </Information>
           </div>
           <div className="mb-4">
+            <h3>アイフリードの台座にシルバーソケットを設置</h3>
+            <ResponsiveImage src="/stories/guide5-pedestal.jpg" />
             <p>
-              台座に5つのソケットをセットすると海上に「遠征の橋」が出現します。以降はフィールドで□ボタンを押して「中継基地へ」を選ぶことで、セレスティアとインフェリアを自由に行き来できるようになります。
+              台座に5つのソケットをセットし、海上に戻ると「遠征の橋」が出現します。以降はフィールドで□ボタンを押して「中継基地へ」を選ぶことで、セレスティアとインフェリアを自由に行き来できるようになります。
             </p>
             <p>
               起動直後はイベントにより、自動的にインフェリア側へ移動します。
