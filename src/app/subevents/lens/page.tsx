@@ -11,6 +11,8 @@ import Tag from "@/components/Tag";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedContainer from "@/components/RoundedContainer";
+import LensPropertyList from "@/components/LensPropertyList";
+import { locationLenses } from "@/db/schema";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -28,30 +30,6 @@ export const metadata = {
 };
 export default async function HomePage() {
   const lensesData = await getLocationLensesData();
-  const Lenses = lensesData.map((item, index) => {
-    console.log(item);
-    return (
-      <div className="border border-slate-300 p-3 rounded-md mb-3" key={index}>
-        <div className="mb-2 items-center" id={String(item.lensId)}>
-          <h3>
-            No.{item.id} {item.locationName}
-          </h3>
-          <div className="mr-1">
-            <Tag>{recipeWorldMap[item.world]}</Tag>
-          </div>
-        </div>
-        <div className="">
-          <RoundedItem title="場所">
-            <p>{item.remarks}</p>
-            <ResponsiveImage
-              src={`/subevents/lens-location${item.id}.jpg`}
-              noSpace
-            />
-          </RoundedItem>
-        </div>
-      </div>
-    );
-  });
 
   return (
     <Main title={title}>
@@ -120,12 +98,15 @@ export default async function HomePage() {
               </RoundedItem>
             </RoundedContainer>
           </div>
+        </Section>
+
+        <section id="detail">
           <SectionTitle>レンズの入手場所一覧（全60枚）</SectionTitle>
           <Information type="warning" title="レンズの入手タイミングについて">
             レンズは期間限定ではなく、基本的にはいつでも入手可能なので町やダンジョンで取り逃してもあとで回収可能です。ただしジイニのオークション会場にあるレンズだけ、先に王都インフェリアの闘技場「王国一決定戦」で優勝すると獲得できなくなります。ジイニで先にレンズを獲得しておくことを推奨します。
           </Information>
-          {Lenses}
-        </Section>
+          <LensPropertyList lenes={lensesData} />
+        </section>
       </article>
     </Main>
   );

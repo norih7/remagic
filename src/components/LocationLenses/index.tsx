@@ -21,7 +21,10 @@ export default function LocationLenses(props: Props) {
       key={index}
       className="bg-gray-50 border border-gray-200 rounded-lg py-2 px-3 transition-colors text-sm"
     >
-      <Link href={`/subevents/lens#${recipe.lensId}`} className="block">
+      <Link
+        href={`/subevents/lens?id=${recipe.lensId}#detail`}
+        className="block"
+      >
         <strong>{index + 1}つ目</strong>
         <span>{recipe.remarks}</span>
       </Link>
