@@ -247,6 +247,7 @@ export default async function HomePage() {
             <p>
               フロアの仕掛け：ルーレットが停止した先の部屋からゼンマイを回収する
             </p>
+            <ResponsiveImage src="/maps/chat-8f.jpg" />
             <RoundedContainer>
               <RoundedItem title="アヒルのおもちゃ" className="mb-3">
                 右側通路の奥の部屋にそのまま配置されている
@@ -271,6 +272,7 @@ export default async function HomePage() {
             <p>
               フロアの仕掛け：部屋の出入りを利用して石像を破壊し、アイテムを回収する
             </p>
+            <ResponsiveImage src="/maps/chat-7f.jpg" />
             <RoundedContainer>
               <RoundedItem title="アヒルのおもちゃ" className="mb-3">
                 左側通路の扉を塞ぐ石像を破壊する
@@ -288,6 +290,7 @@ export default async function HomePage() {
             <p>
               フロアの仕掛け：扉の貼り紙をソーサラーリングで焼き払って隠し通路を見つけ出す
             </p>
+            <ResponsiveImage src="/maps/chat-6f.jpg" />
             <RoundedContainer>
               <RoundedItem title="アヒルのおもちゃ" className="mb-3">
                 左側通路の奥にある隠し通路
