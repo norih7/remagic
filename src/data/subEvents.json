@@ -38,5 +38,15 @@
     "id": 8,
     "name": "キールの称号「ボサボサあたま」",
     "path": ""
+  },
+  {
+    "id": 9,
+    "name": "フォッグの特技習得",
+    "path": "/subevents/skill-fog"
+  },
+  {
+    "id": 10,
+    "name": "チャットの特技習得",
+    "path": "/subevents/skill-chat"
   }
 ]

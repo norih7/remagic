@@ -85,6 +85,20 @@ export default async function HomePage() {
             >
               凍結状態のペイルティでは入手できるレシピが制限されています。氷晶霊の山をクリアして町が元通りになってから再訪すればすべて回収できるようになり、どうせ必ず戻ってくることになるため、攻略後のタイミングでまとめて探索するのが効率的です。
             </Information>
+            <Information title="アイスコフィンのドロップ">
+              <ResponsiveImage src="/stories/iced-mountain-coffin.jpg" />
+              <p>
+                氷晶霊の山に登場する「アイスウォーリア」はリッドの強武器「アイスコフィン」をドロップします。この武器は闘技場の「世界一決定戦」の最適解となる武器です。ぜひダンジョン攻略中にドロップを狙いましょう。
+              </p>
+              <GuideList
+                items={[
+                  {
+                    title: "敵データNo.168 アイスウォーリア",
+                    href: "/systems/enemy/168",
+                  },
+                ]}
+              />
+            </Information>
           </div>
           <LocationItems data={itemsData} locationIds={[24]} />
           <LocationRecipes data={recipesData} locationIds={[24]} />
@@ -204,22 +218,29 @@ export default async function HomePage() {
           <div className="mb-8">
             <h3>ヒューズの回収と動く床の仕組み</h3>
             <h4 className="mb-2">（1）青の扉からヒューズを手に入れる</h4>
-            <div className="mb-4">
+            <div className="mb-8">
               <Image
                 src="/stories/guide4-volt-fuse.jpg"
                 width={300}
                 height={118}
                 alt="ヒューズ回収"
+                className="mb-4"
               />
+              <ResponsiveImage src="/stories/guide4-volt-fuse2.jpg" />
+              <p>
+                攻略に不可欠な「ヒューズ」を入手するため、まずはスイッチを「6・5・3」に調整して右側の「青の扉」を開きます。マップの矢印に沿って進み、途中のスイッチ（青色の箇所）を踏んで扉のロックを解除してヒューズを回収しましょう。
+              </p>
+              <p>
+                ヒューズは宝箱ではなく画像のように光っている箇所を調べることで入手できます。
+              </p>
             </div>
-            <p>
-              攻略に不可欠な「ヒューズ」を入手するため、まずはスイッチを「6・5・3」に調整して右側の「青の扉」を開きます。マップの矢印に沿って進み、途中のスイッチ（青色の箇所）を踏んで扉のロックを解除してヒューズを回収しましょう。
-            </p>
-            <h4 className="mb-2">（2）白の扉を進んでヒューズをセット</h4>
-            <ResponsiveImage src="/stories/guide4-volt-freeze.jpg" />
-            <p>
-              ヒューズ確保後は数字の部屋へ戻り、スイッチを「11・2・4」に合わせて左側の「白の扉」を開放します。電流で進めない通路は、手前の炎柱にフリーズリングを撃ち込む（L1ボタン）ことで電流が止まり、奥へ進めるようになります。奥にある窪みにヒューズをセットすれば、動く床のギミックが稼働し始めます。
-            </p>
+            <div className="mb-8">
+              <h4 className="mb-2">（2）白の扉を進んでヒューズをセット</h4>
+              <ResponsiveImage src="/stories/guide4-volt-freeze.jpg" />
+              <p>
+                ヒューズ確保後は数字の部屋へ戻り、スイッチを「11・2・4」に合わせて左側の「白の扉」を開放します。電流で進めない通路は、手前の炎柱にフリーズリングを撃ち込む（L1ボタン）ことで電流が止まり、奥へ進めるようになります。奥にある窪みにヒューズをセットすれば、動く床のギミックが稼働し始めます。
+              </p>
+            </div>
             <h4 className="mb-2">（3）動く床を渡ってキャンプ地へ</h4>
             <ResponsiveImage src="/stories/guide4-volt-tile.jpg" />
             <p>
@@ -233,11 +254,16 @@ export default async function HomePage() {
             <p>
               後半の目玉である「電気パズル」に挑む前に、まずは電力を通す必要があります。キャンプ場から上方へ進み、電源装置を調べてイベントを発生させましょう。この手順を踏まないと、装置起動に必要な「制御玉」が入手できなくなります。
             </p>
+          </div>
+          <div className="mb-8">
             <h4 className="mb-2">（2）制御玉の確保</h4>
             <ResponsiveImage src="/stories/guide4-volt-switch2.jpg" />
             <p>
-              色付きの石を踏んで床のスイッチを操作します。最短で進むなら「緑色」のスイッチだけを作動させ、下側の扉からルートを回りましょう。電源装置のイベントを見た後であれば、光っている場所を調べて制御玉が手に入ります。
+              色付きの石を踏んで床のスイッチを操作します。最短で進むなら「緑色」のスイッチだけを作動させ、下側の扉からルートを回りましょう。電源装置のイベントを見た後であれば、紫色の球体を場所を調べることで制御玉が手に入ります。
             </p>
+            <ResponsiveImage src="/stories/guide4-volt-control.jpg" />
+          </div>
+          <div className="mb-8">
             <h4 className="mb-2">（3）電気パズル</h4>
             <p>
               電源起動後の電気パズルエリアは、以下のマップ指定通りに「1、2、3」の順で床を踏んでいけばクリアできます。
@@ -419,6 +445,7 @@ export default async function HomePage() {
               ティンシアを出港するとフィールドマップでイベントが起き、セイファートキーが示す新たな目的地が判明します。次の舞台はペイルティの南にある「セイファート神殿」。バンエルティア号で向かいましょう。
             </p>
           </div>
+          <LocationSubEvents data={subEventData} locationIds={[75]} />
         </Section>
       </article>
     </Main>
