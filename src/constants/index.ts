@@ -95,6 +95,8 @@ export const storyLinks: Record<string, PageLink> = {
     desc: "セレスティア突入後のストーリーガイド 難易度の高いチャットの小屋も解説",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。セレスティア到着後の「地晶霊の廃坑」や「チャットの小屋」の詳細な攻略法を分かりやすく解説！階層ごとのギミック解除手順や重要アイテム、レンズの回収場所を掲載しています。",
+    createdAt: "2026-10-17",
+    updatedAt: "2026-10-17",
   },
   guide4: {
     title: "ペイルティ〜バリル城",
@@ -103,6 +105,8 @@ export const storyLinks: Record<string, PageLink> = {
     desc: "雷晶霊の遺跡とバリル城など難易度の高いセレスティアのダンジョンを解説",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。氷晶霊の山、雷晶霊の遺跡、バリル城の詳細な攻略法を分かりやすく解説！ダンジョンマップやレンズの回収位置、厄介なボス戦の対策もまとめています。",
+    createdAt: "2026-10-17",
+    updatedAt: "2026-10-17",
   },
   guide5: {
     title: "セイファート神殿〜シゼル城",
@@ -111,6 +115,8 @@ export const storyLinks: Record<string, PageLink> = {
     desc: "エンディングまでガイド。シゼル城のダンジョンをマップやゲーム画像を添えて徹底攻略！ラストバトルの解説も。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ストーリーエンディングまでを紹介。難しいシゼル城をマップやゲーム画像を添えて徹底攻略しています！",
+    createdAt: "2026-10-17",
+    updatedAt: "2026-10-17",
   },
 };
 
@@ -296,7 +302,7 @@ export const subeventLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ミンツ大学で挑戦できるテイルズクイズについて解説。クイズ一覧と回答を掲載しています。",
     createdAt: "2026-10-15",
-    updatedAt: "2026-10-15",
+    updatedAt: "2026-10-17",
   },
   kremerball: {
     title: "クレーメルボール",
@@ -553,11 +559,11 @@ export const guideLinks: Record<string, PageLink> = {
     title: "リマスター版の紹介",
     path: "/guides/remaster",
     image: "/link-headers/guides-remaster.jpg",
-    desc: "エターニア リマスター版の変化点や注意点、2周目の引き継ぎや関連する攻略情報をまとめています。",
+    desc: "リマスター版の変化点と注意点、2周目の引き継ぎ要素などの攻略情報をまとめています。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。エターニア リマスター版の変化点や注意点、2周目の引き継ぎや関連する攻略情報をまとめています。",
     createdAt: "2026-10-01",
-    updatedAt: "2026-10-01",
+    updatedAt: "2026-10-18",
   },
   first: {
     title: "序盤にやっておきたいこと",
@@ -567,7 +573,7 @@ export const guideLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。序盤でやっておきたい、戦闘の安定やゲーム効率を上げるためのTipsを紹介しています。",
     createdAt: "2026-09-16",
-    updatedAt: "2026-10-15",
+    updatedAt: "2026-10-18",
   },
   missable: {
     title: "取り逃がし要素",
@@ -577,7 +583,7 @@ export const guideLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。取り逃がし要素の解説。ストーリー攻略中に見落としがちなサブイベントや称号、レンズ、アイテムなどの取り逃がし要素を紹介しています。",
     createdAt: "2026-09-17",
-    updatedAt: "2026-10-15",
+    updatedAt: "2026-10-18",
   },
   buttle: {
     title: "戦闘システム解説",

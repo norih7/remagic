@@ -27,6 +27,7 @@ featuredLinks.push(subeventLinks["skill-chat"]);
 featuredLinks.push(systemLinks["rune"]);
 
 const fixedLink: Link[] = [];
+fixedLink.push(guideLinks["remaster"]);
 fixedLink.push(guideLinks["first"]);
 fixedLink.push(guideLinks["missable"]);
 fixedLink.push(subeventLinks["lens"]);
