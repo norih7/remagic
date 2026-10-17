@@ -9,6 +9,7 @@ import RoundedItem from "@/components/RoundedItem";
 import Image from "next/image";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export const dynamic = "force-static";
 
@@ -165,6 +166,7 @@ export default function Page() {
           </div>
           <div className="mb-8">
             <h3>2周目移行の引き継ぎ</h3>
+            <p>オプションで選べるもの</p>
             <RoundedContainer className="grid grid-cols-2 gap-3">
               <RoundedItem>キャラクター情報</RoundedItem>
               <RoundedItem>覚えた術・技</RoundedItem>
@@ -174,10 +176,22 @@ export default function Page() {
               <RoundedItem>号令</RoundedItem>
               <RoundedItem>コレクターずかん</RoundedItem>
               <RoundedItem>モンスターずかん</RoundedItem>
+              <RoundedItem>称号 ※アップデートで追加</RoundedItem>
             </RoundedContainer>
           </div>
           <div className="mb-8">
+            <h3>その他引き継ぎ</h3>
+            <ResponsiveImage src="/guides/remaster-lap.jpg" />
+            <p>
+              2周目では上記画像でわかるようにレベル、特技、使用回数、マニュアル操作（道具/貴重品）を引き継いでプレイできます。
+              使用回数の引き継ぎは嬉しいところ！
+            </p>
+          </div>
+          <div className="mb-8">
             <h3>オート戦闘の高速モード</h3>
+            <Information type="warning" title="オート戦闘の注意点">
+              オート戦闘は便利で4倍速で体感速度は速いのですが、ゲーム内の戦闘時間としては長くなりがちです。ほぼオート戦闘でプレイすると平均戦闘時間が20秒を超えるほどなので、称号「おんそくのせんし」の取得を目指す場合は非推奨です。
+            </Information>
             <p>
               オート戦闘時に高速モードを利用できます。戦闘を手早く進めたいときに便利な追加機能です。リマスター版に対応した効率的なレベルアップ場所などは後日まとめる予定です。
             </p>
@@ -207,22 +221,26 @@ export default function Page() {
           <div id="comparison" className="scroll-mt-6">
             <SectionTitle type="flag">ベースとなる移植元</SectionTitle>
           </div>
-          <p>
-            エターニアリマスターはPSP版をベースにされていると言及があります。PSPは戦闘やフィールド移動が60fpsで動作します。（PS版は30fps）
-            ただしPSP版はドットがボヤけてる欠点があったのですがリマスター版はくっきりさせています。
-          </p>
-          <h3>ポケステ要素はない</h3>
-          <p>
-            PS版エターニアにはポケステと連動するサブイベントがありますが、リマスター版ではPSP版と同じくポケステなしでアイテムだけ入手できます。重要なスマッシュマントを簡単に入手できますのでお見逃しなく。
-          </p>
-          <GuideList
-            items={[
-              {
-                title: "グリップソード探し（スマッシュマントの入手）",
-                href: "/subevents/grip-sword",
-              },
-            ]}
-          />
+          <div className="mb-8">
+            <p>
+              エターニアリマスターはPSP版をベースにされていると言及があります。PSPは戦闘やフィールド移動が60fpsで動作します。（PS版は30fps）
+              ただしPSP版はドットがボヤけてる欠点があったのですがリマスター版はくっきりさせています。
+            </p>
+          </div>
+          <div className="mb-8">
+            <h3>ポケステ要素はない</h3>
+            <p>
+              PS版エターニアにはポケステと連動するサブイベントがありますが、リマスター版ではPSP版と同じくポケステなしでアイテムだけ入手できます。重要なスマッシュマントを簡単に入手できますのでお見逃しなく。
+            </p>
+            <GuideList
+              items={[
+                {
+                  title: "グリップソード探し（スマッシュマントの入手）",
+                  href: "/subevents/grip-sword",
+                },
+              ]}
+            />
+          </div>
         </Section>
 
         <Section>

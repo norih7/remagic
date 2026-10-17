@@ -6,6 +6,15 @@ const update = [
     date: "2026/10/17",
     update: (
       <>
+        <Link href="/guides/remaster">リマスター版の紹介</Link>
+        を更新。2周目の引き継ぎについて追記しました。
+      </>
+    ),
+  },
+  {
+    date: "2026/10/17",
+    update: (
+      <>
         <Link href="/stories/guide5">
           攻略チャート5 セイファート神殿〜シゼル城
         </Link>
