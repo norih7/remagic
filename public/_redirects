@@ -1,9 +1,1 @@
 /* /404.html 404
-
-# 旧URLから新URLへの個別の301リダイレクト
-/systems/master-recipe  https://remagic.brclover.com/deeps/master-recipe 301
-/systems/buttle https://remagic.brclover.com/guides/buttle 301
-/systems/skill https://remagic.brclover.com/guides/skill 301
-
-# remagic.pages.dev ドメインからカスタムドメインへの301リダイレクト
-https://remagic.pages.dev/*  https://remagic.brclover.com/:splat 301
