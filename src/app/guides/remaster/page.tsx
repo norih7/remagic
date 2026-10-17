@@ -10,6 +10,7 @@ import Image from "next/image";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import GifPlayer from "@/components/GifPlayer";
 
 export const dynamic = "force-static";
 
@@ -219,7 +220,7 @@ export default function Page() {
 
         <Section>
           <div id="comparison" className="scroll-mt-6">
-            <SectionTitle type="flag">ベースとなる移植元</SectionTitle>
+            <SectionTitle type="flag">ベースとなる移植元はPSP</SectionTitle>
           </div>
           <div className="mb-8">
             <p>
@@ -240,6 +241,33 @@ export default function Page() {
                 },
               ]}
             />
+          </div>
+          <div className="mb-8">
+            <h3>戦闘画面のズームイン/ズームアウト</h3>
+            <p>
+              リマスター版でも戦闘中のズームイン/ズームアウトができます。戦闘の見える範囲を広げたい、カメラが近すぎて戦闘中のドット絵が荒く見えるという方はズームアウトをおすすめします。△で戦闘メニューを開いた状態でズーム操作ができます。
+            </p>
+            <RoundedContainer>
+              <div className="grid grid-cols-2 gap-3 mb-3">
+                <RoundedItem title="ズームアウト">「□ + ↑」</RoundedItem>
+                <RoundedItem title="ズームイン">「□ + ↓」</RoundedItem>
+              </div>
+              <RoundedContainer title="参考動画">
+                <GifPlayer
+                  src="/guides/remaster-zoom.gif"
+                  alt="戦闘中のズーム操作"
+                  width={520}
+                  height={292}
+                />
+              </RoundedContainer>
+            </RoundedContainer>
+          </div>
+          <div className="mb-8">
+            <h3>技術のショートカットはL1とボタン</h3>
+            <ResponsiveImage src="/guides/first-short-cut.jpg" />
+            <p>
+              PSP版と同じくショートカットはL1ボタンとボタンを組み合わせて発動させます。L2とR2は現時点でキー割当ができません。
+            </p>
           </div>
         </Section>
 

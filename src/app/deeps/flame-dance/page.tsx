@@ -1,4 +1,3 @@
-
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
@@ -129,7 +128,12 @@ export default async function HomePage() {
             <p>
               「パンチ2回 → 飛燕連天脚 → 鷹爪落爆蹴 → 殺劇舞荒拳」の4連携です。
             </p>
-            <GifPlayer src="/deeps/flame-dance.gif" alt="火龍炎舞の発動方法" />
+            <GifPlayer
+              src="/deeps/flame-dance.gif"
+              width={418}
+              height={238}
+              alt="火龍炎舞の発動方法"
+            />
           </div>
         </Section>
       </article>

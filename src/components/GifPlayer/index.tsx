@@ -14,15 +14,16 @@ type GifPlayerProps = {
 export default function GifPlayer({
   src,
   alt,
-  width = 230,
-  height = 150,
+  width = 520,
+  height = 292,
 }: GifPlayerProps) {
   const [showGif, setShowGif] = useState(false);
 
   return (
     <div
       onClick={() => setShowGif(true)}
-      className={`cursor-pointer relative w-[${width}px] h-[150px] rounded-md overflow-hidden bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition`}
+      className={`cursor-pointer relative rounded-md overflow-hidden bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition`}
+      style={{ width: `${width}px`, height: `${height}px` }}
     >
       {showGif ? (
         <Image

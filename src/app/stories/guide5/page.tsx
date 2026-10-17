@@ -352,7 +352,7 @@ export default async function HomePage() {
               本ダンジョンの最初の目標は「C」のキャンプ場へ到達することです。ここにある柱を調べた後、計6つの大晶霊に関する謎解きをすべてクリアして力を注ぎ込むと、ワープゾーンが出現し、ボス「シゼル」との最終決戦へ進めます。
             </p>
           </div>
-          <div className="mb-4">
+          <div className="mb-8">
             <h3>「C」地点までのルート</h3>
             <ResponsiveImage src="/stories/guide5-chisel-element-point.jpg" />
             <p>
@@ -367,14 +367,14 @@ export default async function HomePage() {
               height={515}
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-8">
             <h3>雷晶霊の柱</h3>
             <ResponsiveImage src="/stories/guide5-chisel-thunder.jpg" />
             <p>
               移動している水晶に向かってフリーズリングを当て、下の同色台座に落とせばクリアです。自キャラの位置を微調整しながら狙いましょう。
             </p>
           </div>
-          <div className="mb-4">
+          <div className="mb-8">
             <h3>氷晶霊の柱</h3>
             <ResponsiveImage src="/stories/guide5-chisel-ice.jpg" />
             <p>
@@ -391,7 +391,7 @@ export default async function HomePage() {
               正方形のマス目状のフロアを移動するシンプルな仕掛けです。全アイテムを回収したい場合は、いくつかのルートを試しながら歩く必要があります。
             </p>
           </div>
-          <div className="mb-4">
+          <div className="mb-8">
             <h3>水晶霊の柱</h3>
             <ResponsiveImage src="/stories/guide5-chisel-water.jpg" />
             <p>
@@ -405,21 +405,21 @@ export default async function HomePage() {
               height={470}
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-8">
             <h3>火晶霊の柱</h3>
             <ResponsiveImage src="/stories/guide5-chisel-fire.jpg" />
             <p>
               灯台を調べて放たれた火の玉を、消えないように奥の扉まで導く仕掛けです。灯台をスライドさせるタイミングやルートの調整が求められるため、落ち着いて手順を組み立てましょう。
-              タイミングが難しく、慣れるまで大変なのでよければ下記の動画を参考にしてください。
+              タイミングが難しく、慣れるまで大変なので下記の動画を参考にしてください。
             </p>
             <GifPlayer
               src="/stories/guide5-chisel-fire-sample.gif"
               alt="シゼル城 火晶霊の柱攻略動画"
               width={264}
-              height={200}
+              height={148}
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-8">
             <h3>風晶霊の柱</h3>
             <ResponsiveImage src="/stories/guide5-chisel-wind.jpg" />
             <p>
