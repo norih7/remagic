@@ -1,4 +1,3 @@
-
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
@@ -9,6 +8,7 @@ import GuideList from "@/components/GuideList";
 import Tag from "@/components/Tag";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export const dynamic = "force-static";
 
@@ -29,148 +29,156 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        敵からのドロップやチャットの盗みで手に入るステータスアップ薬草は、レベル上げやボス攻略の途中でかなり重宝します。特にHP、TP、力の延長は、長期戦での安定感を大きく左右します。
-      </PageSummary>
+        <PageSummary>
+          敵からのドロップやチャットの盗みで手に入るステータスアップ薬草は、レベル上げやボス攻略の途中でかなり重宝します。特にHP、TP、力の延長は、長期戦での安定感を大きく左右します。
+        </PageSummary>
 
-      <Section>
-        <SectionTitle>ステータスアップの薬草とは</SectionTitle>
-        <div className="mb-8">
-          <p>
-            「セージ」や「セボリー」などの薬草は使うとステータスが上がります。エターニアではLvアップによるステータス向上は控え目なので、薬草の使用は非常に強力です。長期的な強化を目的とするアイテムなので、育成が進んだ後半ほど価値が出ます。
-          </p>
-        </div>
-        <h3>薬草の種類と効果</h3>
-        <div className="mb-8">
-          <RoundedItem title="セージ/レッドセージ" className="mb-3">
-            効果: HPを5%アップする ※レッドセージは10%
-            <br />
-            用途: 体力を底上げして長い戦闘に耐える
-          </RoundedItem>
-          <RoundedItem title="セボリー/レッドセボリー" className="mb-3">
+        <Section>
+          <SectionTitle>ステータスアップの薬草とは</SectionTitle>
+          <div className="mb-8">
             <p>
-              効果: TPを5%アップする ※レッドセボリーは10%
-              <br />
-              用途: 特技の連発や術の維持をしやすくする
+              「セージ」や「セボリー」などの薬草は使うとステータスが上がります。エターニアではLvアップによるステータス向上は控え目なので、薬草の使用は非常に強力です。長期的な強化を目的とするアイテムなので、育成が進んだ後半ほど価値が出ます。
             </p>
-          </RoundedItem>
-          <RoundedItem title="ラベンダー/レッドラベンダー" className="mb-3">
-            <p>
-              効果: 力を1アップする ※レッドラベンダーは2
+          </div>
+          <h3>薬草の種類と効果</h3>
+          <div className="mb-8">
+            <RoundedItem title="セージ/レッドセージ" className="mb-3">
+              効果: HPを5%アップする ※レッドセージは10%
               <br />
-              用途: 物理攻撃のダメージを強化する
-            </p>
-          </RoundedItem>
-          <RoundedItem title="ベルベーヌ/レッドベルベーヌ" className="mb-3">
-            <p>
-              効果: 回避を1アップする ※レッドベルベーヌは2
-              <br />
-              用途: 敵からの物理攻撃に対する自動防御確率をアップ
-            </p>
-          </RoundedItem>
-        </div>
-      </Section>
+              用途: 体力を底上げして長い戦闘に耐える
+            </RoundedItem>
+            <RoundedItem title="セボリー/レッドセボリー" className="mb-3">
+              <p>
+                効果: TPを5%アップする ※レッドセボリーは10%
+                <br />
+                用途: 特技の連発や術の維持をしやすくする
+              </p>
+            </RoundedItem>
+            <RoundedItem title="ラベンダー/レッドラベンダー" className="mb-3">
+              <p>
+                効果: 力を1アップする ※レッドラベンダーは2
+                <br />
+                用途: 物理攻撃のダメージを強化する
+              </p>
+            </RoundedItem>
+            <RoundedItem title="ベルベーヌ/レッドベルベーヌ" className="mb-3">
+              <p>
+                効果: 回避を1アップする ※レッドベルベーヌは2
+                <br />
+                用途: 敵からの物理攻撃に対する自動防御確率をアップ
+              </p>
+            </RoundedItem>
+          </div>
+        </Section>
 
-      <Section>
-        <SectionTitle>薬草集めの方法</SectionTitle>
-        <div className="mb-8">
-          <h3>ドロップで集める</h3>
-          <p>
-            いくつかの敵はステータスアップ薬草を落とします。敵ごとのドロップ率は低めですが、繰り返し戦うことで確保できるので、育成用に連戦をしておくのが効率的です。
-          </p>
-          <p>
-            また「スマッシュマント」を装備するとテクニカルスマッシュ発生時にアイテムドロップ率がアップします。アイテムドロップを狙うときは術キャラ（キール、メルディ）以外にスマッシュマントを装備させるようにしましょう。フリンジで晶霊術の特殊効果「+アイテムゲッター」も習得しておくことでさらにドロップ率はアップします。
-          </p>
-          <GuideList
-            items={[
-              {
-                title: "グリップソード探し（スマッシュマント入手）",
-                href: "/subevents/grip-sword",
-              },
-              {
-                title:
-                  "ルーンボトル変化一覧（シーブスマントからのルーンボトル変化）",
-                href: "/systems/rune",
-              },
-              {
-                title: "晶霊術一覧（+アイテムゲッターのフリンジ条件）",
-                href: "/skills/magic",
-              },
-            ]}
-          />
-        </div>
-        <div className="mb-8">
-          <h3>盗みで確保する</h3>
-          <p>
-            チャットの特技「ローバーアイテム」を使えば、戦闘中に敵から薬草を盗めます。ドロップに頼るより安定して入手しやすいため、重要な薬草が落ちやすい敵を見つけたら、盗みのルートで集めるのがおすすめです。
-          </p>
-        </div>
-      </Section>
+        <Section>
+          <SectionTitle>薬草集めの方法</SectionTitle>
+          <div className="mb-8">
+            <h3>ドロップで集める</h3>
+            <p>
+              いくつかの敵はステータスアップ薬草を落とします。敵ごとのドロップ率は低めですが、繰り返し戦うことで確保できるので、育成用に連戦をしておくのが効率的です。
+            </p>
+            <p>
+              また「スマッシュマント」を装備するとテクニカルスマッシュ発生時にアイテムドロップ率がアップします。アイテムドロップを狙うときは術キャラ（キール、メルディ）以外にスマッシュマントを装備させるようにしましょう。フリンジで晶霊術の特殊効果「+アイテムゲッター」も習得しておくことでさらにドロップ率はアップします。
+            </p>
+            <GuideList
+              items={[
+                {
+                  title: "グリップソード探し（スマッシュマント入手）",
+                  href: "/subevents/grip-sword",
+                },
+                {
+                  title:
+                    "ルーンボトル変化一覧（シーブスマントからのルーンボトル変化）",
+                  href: "/systems/rune",
+                },
+                {
+                  title: "晶霊術一覧（+アイテムゲッターのフリンジ条件）",
+                  href: "/skills/magic",
+                },
+              ]}
+            />
+          </div>
+          <div className="mb-8">
+            <h3>盗みで確保する</h3>
+            <p>
+              チャットの特技「ローバーアイテム」を使えば、戦闘中に敵から薬草を盗めます。ドロップに頼るより安定して入手しやすいため、重要な薬草が落ちやすい敵を見つけたら、盗みのルートで集めるのがおすすめです。
+            </p>
+          </div>
+        </Section>
 
-      <Section>
-        <SectionTitle>セージ集め</SectionTitle>
-        {/* <div className="mb-3">
+        <Section>
+          <SectionTitle>セージ集め</SectionTitle>
+          {/* <div className="mb-3">
           <GuideList
             items={[{ title: "セージの詳細", href: "/systems/item/58" }]}
           />
         </div> */}
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>闘技場の世界一決定戦の周回</h3>
-            <Tag>後半おすすめ</Tag>
-          </div>
-          <RoundedItem title="概要" className="mb-3">
-            闘技場のヘルカイトは「セージ」「レッドセージ」をドロップします。1周3〜5分ほどでレッドセージも狙えるため効率はかなり高いです。30分でセージが3個以上集まることも。1回戦目のウィザードからは副産物でセボリーのドロップも狙えます。
-          </RoundedItem>
-          <RoundedItem title="効率的な連戦">
-            リッドに「アイスコフィン（氷属性武器）」や「せいりゅうとう（水属性武器）」、「スマッシュマント」を装備して挑みましょう。
-          </RoundedItem>
-        </RoundedContainer>
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>アックスビーク狩り</h3>
-            <Tag>後半おすすめ</Tag>
-          </div>
-          <RoundedItem title="概要" className="mb-3">
-            アイフリードの墓周辺のフィールドに出現するアックスビークはセージを1%の確率でドロップします。闘技場と比べて敵が弱めであり、アックスビークの出現率はかなり高いため周回効率はかなり高いです。こちらも30分で3個以上集まることも。
-          </RoundedItem>
-          <RoundedItem title="効率的な連戦">
-            アックスビークが登場したときだけ戦い、それ以外は逃げましょう。スマッシュマント装備したリッドで、鳳凰天駆〜緋凰絶炎衝でノーダメージかつまとめて倒すとテクニカルスマッシュが20%ほどを稼げる場合もあります。テクニカルスマッシュはアイテムドロップ率もアップに繋がるので高得点を狙っていきましょう。
-          </RoundedItem>
-        </RoundedContainer>
-      </Section>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>闘技場の世界一決定戦の周回</h3>
+              <Tag>後半おすすめ</Tag>
+            </div>
+            <RoundedItem title="概要" className="mb-3">
+              闘技場のヘルカイトは「セージ」「レッドセージ」をドロップします。1周3〜5分ほどでレッドセージも狙えるため効率はかなり高いです。30分でセージが3個以上集まることも。1回戦目のウィザードからは副産物でセボリーのドロップも狙えます。
+            </RoundedItem>
+            <RoundedItem title="効率的な連戦">
+              リッドに「アイスコフィン（氷属性武器）」や「せいりゅうとう（水属性武器）」、「スマッシュマント」を装備して挑みましょう。
+            </RoundedItem>
+          </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>アックスビーク狩り</h3>
+              <Tag>後半おすすめ</Tag>
+            </div>
+            <ResponsiveImage src="/deeps/herb-ax.jpg" />
+            <RoundedItem title="概要" className="mb-3">
+              アイフリードの墓周辺の<strong>フィールドの平地</strong>
+              に出現するアックスビークはセージを1%の確率でドロップします。闘技場と比べて敵が弱めであり、アックスビークの出現率はかなり高いため周回効率はかなり高いです。こちらも30分で3個以上集まることも。
+            </RoundedItem>
+            <RoundedItem title="効率的な連戦">
+              アックスビークが登場したときだけ戦い、それ以外は逃げましょう。スマッシュマント装備したリッドで、鳳凰天駆〜緋凰絶炎衝でノーダメージかつまとめて倒すとテクニカルスマッシュが20%ほどを稼げる場合もあります。テクニカルスマッシュはアイテムドロップ率もアップに繋がるので高得点を狙っていきましょう。
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
 
-      <Section>
-        <SectionTitle>セボリー集め</SectionTitle>
-        {/* <div className="mb-3">
+        <Section>
+          <SectionTitle>セボリー集め</SectionTitle>
+          {/* <div className="mb-3">
           <GuideList
             items={[{ title: "セボリーの詳細", href: "/systems/item/75" }]}
           />
         </div> */}
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>ジェントルマン狩り</h3>
-            <Tag>中盤おすすめ</Tag>
-          </div>
-          <RoundedItem title="概要" className="mb-3">
-            ティンシア〜雷晶霊の遺跡にかけてのフィールドマップで出現する「ジェントルマン」は1%でセボリーを落とし、5%でセボリーを盗めます。ストーリー中盤のティンシア到着後から可能です。
-          </RoundedItem>
-          <RoundedItem title="効率的な連戦">
-            パーティに号令「まもりをかためろ」で待機させ、ショートカットでチャットのローバーアイテムで盗みチャレンジ。リッドには虎牙連斬、空破絶掌撃の連携でテクニカルスマッシュを稼ぎましょう。盗みとドロップ両方狙えますが、どちらか片方やるのでもいいです。
-          </RoundedItem>
-        </RoundedContainer>
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>トロール狩り</h3>
-            <Tag>序盤おすすめ</Tag>
-          </div>
-          <RoundedItem title="概要" className="mb-3">
-            いざないの密林に出現する「トロール」は1%でセボリーを落とします。ストーリー序盤で薬草集めが可能です。
-          </RoundedItem>
-          <RoundedItem title="効率的な連戦">準備中</RoundedItem>
-        </RoundedContainer>
-      </Section>
-    </article>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>ジェントルマン狩り</h3>
+              <Tag>中盤おすすめ</Tag>
+            </div>
+            <ResponsiveImage src="/deeps/herb-gentleman.jpg" />
+            <RoundedItem title="概要" className="mb-3">
+              ティンシア〜雷晶霊の遺跡にかけて
+              <strong>フィールドマップの森</strong>
+              で出現する「ジェントルマン」は1%でセボリーを落とし、5%でセボリーを盗めます。ストーリー中盤のティンシア到着後から可能です。ジェントルマンは確定で3体出現するため中盤の稼ぎとしては効率は良いです。
+            </RoundedItem>
+            <RoundedItem title="効率的な連戦">
+              パーティに号令「まもりをかためろ」で待機させ、ショートカットでチャットのローバーアイテムで盗みチャレンジ。リッドには虎牙連斬、空破絶掌撃の連携でテクニカルスマッシュを稼ぎましょう。盗みとドロップ両方狙えますが、どちらか片方やるのでもいいです。
+            </RoundedItem>
+          </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>トロール狩り</h3>
+              <Tag>序盤おすすめ</Tag>
+            </div>
+            <ResponsiveImage src="/deeps/herb-troll.jpg" />
+            <RoundedItem title="概要" className="mb-3">
+              いざないの密林に出現する「トロール」は1%でセボリーを落とします。効率は高くないですがストーリー序盤で薬草集めが可能です。
+            </RoundedItem>
+            <RoundedItem title="効率的な連戦">
+              いざないの密林を周回しましょう。トロールは確定3体出現しますが、遭遇率は体感的には低いため（10回中1回以下）ここでセボリー集めにこだわる必要はありません。またいざないの密林で出現する「サイズキャリアー」はリバースドールを10%で落とすのでセボリーと一緒に集めるがおすすめです。
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
+      </article>
     </Main>
   );
 }

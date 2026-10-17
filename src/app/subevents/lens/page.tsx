@@ -102,7 +102,13 @@ export default async function HomePage() {
 
         <section id="detail">
           <SectionTitle>レンズの入手場所一覧（全60枚）</SectionTitle>
-          <Information type="warning" title="レンズの入手タイミングについて">
+          <Information
+            type="warning"
+            title="レンズの入手タイミングについて（PS、PSP版のみ）"
+          >
+            <p>
+              <strong>リマスター版ではレンズの消失は無くなっています</strong>
+            </p>
             レンズは期間限定ではなく、基本的にはいつでも入手可能なので町やダンジョンで取り逃してもあとで回収可能です。ただしジイニのオークション会場にあるレンズだけ、先に王都インフェリアの闘技場「王国一決定戦」で優勝すると獲得できなくなります。ジイニで先にレンズを獲得しておくことを推奨します。
           </Information>
           <LensPropertyList lenes={lensesData} />

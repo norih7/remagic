@@ -50,8 +50,8 @@ export default async function HomePage() {
             src="/subevents/lens-location51.jpg"
             alt="無くなる可能性があるジイニのオークション会場にあるレンズ"
           />
-          <Information type="warning" title="リマスター版では確認中">
-            この事象はPS版、PSP版で確認していますがデメリットがある仕様なのでリマスター版では修正されている可能性があります。確認しましたら更新します。
+          <Information type="warning" title="リマスター版では発生しない">
+            この事象はPS版、PSP版で確認していますがデメリットがある仕様なのでリマスター版では修正されています。
           </Information>
           <div className="mb-8">
             <p>
