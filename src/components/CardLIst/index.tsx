@@ -8,7 +8,7 @@ const CardList = ({ list }: Props) => {
     </li>
   ));
   return (
-    <ul className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+    <ul className="border border-gray-300 rounded-lg shadow-sm divide-y divide-gray-300">
       {List}
     </ul>
   );
