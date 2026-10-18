@@ -8,6 +8,7 @@ module.exports = {
     "/systems/item/*",
     "/systems/enemy/*",
     "/robots.txt",
+    "/rss.xml",
   ],
 
   transform: async (config, path) => {
