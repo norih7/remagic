@@ -205,7 +205,7 @@ export const subeventLinks: Record<string, PageLink> = {
     title: "チャット特技習得",
     path: "/subevents/skill-chat",
     image: "/link-headers/subevents-skill-chat.jpg",
-    desc: "偶然辿り着くのが難しいチャットの特技習得場所をチェック",
+    desc: "偶然辿り着くのが難しいチャットの特技習得場所をチェック。エターナルスロー習得時のクイズ解説も。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。チャットが習得するすべての特技（ポイハン、コチハン、パラライボール、エターナルスロー）の発生条件や場所、隠しアジトですごろく後に挑む全10問の難解なクイズの正解一覧をわかりやすく解説しています。",
   },
