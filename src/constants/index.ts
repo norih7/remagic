@@ -6,6 +6,7 @@ type PageLink = {
   seoDesc?: string;
   createdAt?: string; // まだ全項目に付いていないのでオプショナル
   updatedAt?: string;
+  type?: string;
 };
 
 export const siteName = "RE:MAGIC";
@@ -191,6 +192,7 @@ export const subeventLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。アクセサリ「スマッシュマント」を入手できるグリップソード探しのサブイベントを解説。街の探索場所について画像も掲載しています。",
   },
   beppo: {
+    type: "time-limit",
     title: "ベッポのかくれんぼ",
     path: "/subevents/beppo",
     image: "/link-headers/subevents-beppo.jpg",
@@ -199,6 +201,7 @@ export const subeventLinks: Record<string, PageLink> = {
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。バロールのサブイベント「ベッポとのかくれんぼ」の発生条件と攻略手順を解説。ルーンボトルや、ジイニのオークションで高値になるドエニスのポプリの入手方法、時限要素（セレスティア突入前までの期限）についてまとめています。",
   },
   "skill-chat": {
+    type: "skill",
     title: "チャット特技習得",
     path: "/subevents/skill-chat",
     image: "/link-headers/subevents-skill-chat.jpg",
@@ -207,6 +210,7 @@ export const subeventLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。チャットが習得するすべての特技（ポイハン、コチハン、パラライボール、エターナルスロー）の発生条件や場所、隠しアジトですごろく後に挑む全10問の難解なクイズの正解一覧をわかりやすく解説しています。",
   },
   "skill-fog": {
+    type: "skill",
     title: "フォッグ特技習得",
     image: "/link-headers/subevents-skill-fog.jpg",
     path: "/subevents/skill-fog",
@@ -215,6 +219,7 @@ export const subeventLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。フォッグがサブイベントで習得するすべての特技（エアブレイド、アクアスパイラル、レイジレーザー、ダークイレイザー、エレメンタルマスター）の発生条件、場所、強力な最終技習得までの流れを詳しく解説しています。",
   },
   lysithea: {
+    type: "skill",
     title: "画家リシテア",
     path: "/subevents/lysithea",
     image: "/link-headers/subevents-lysithea.jpg",
@@ -239,6 +244,7 @@ export const subeventLinks: Record<string, PageLink> = {
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。インフェリアにあるアイフリードの隠しアジト（全4箇所）の攻略情報です。各アジトのGPS座標やマップ画像、セボリーやホーリィクロークなどの入手アイテム一覧を網羅しています。",
   },
   "secret-spirits": {
+    type: "skill",
     title: "隠し大晶霊",
     image: "/link-headers/subevents-secret-spirits.jpg",
     path: "/subevents/secret-spirits",
@@ -285,6 +291,7 @@ export const subeventLinks: Record<string, PageLink> = {
     updatedAt: "2026-10-09",
   },
   catarine: {
+    type: "time-limit",
     title: "カトリーヌの恋愛",
     path: "/subevents/catarine",
     image: "/link-headers/subevents-catarine.jpg",
@@ -295,7 +302,7 @@ export const subeventLinks: Record<string, PageLink> = {
     updatedAt: "2026-10-08",
   },
   quiz: {
-    title: "テイルズクイズ",
+    title: "テイルズクイズ（リマスター版）",
     path: "/subevents/quiz",
     image: "/link-headers/subevents-quiz.jpg",
     desc: "ミンツ大学で挑戦できるテイルズクイズについて解説。クイズ一覧と回答を掲載しています。",
@@ -305,6 +312,7 @@ export const subeventLinks: Record<string, PageLink> = {
     updatedAt: "2026-10-17",
   },
   kremerball: {
+    type: "time-limit",
     title: "クレーメルボール",
     path: "/subevents/kremerball",
     image: "/link-headers/subevents-kremerball.jpg",
@@ -313,6 +321,7 @@ export const subeventLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。ミンツで遊べるミニゲームを解説。勝つとリッドの称号を得られるゲームです。",
   },
   arithmetic: {
+    type: "time-limit",
     title: "算術勝負",
     path: "/subevents/arithmetic",
     image: "/link-headers/subevents-arithmetic.jpg",
@@ -419,12 +428,31 @@ export const extraLinks: Record<string, PageLink> = {
   //   desc: "",
   // },
   "dark-cave": {
+    type: "skill",
     title: "闇の洞窟",
     path: "/extras/dark-cave",
     image: "/link-headers/extras-dark-cave.jpg",
     desc: "闇の大晶霊シャドウと契約できる隠しダンジョン。潜水艇を入手したら早めに目指すのがおすすめです。",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。闇の大晶霊「シャドウ」と契約できる隠しダンジョン「闇の洞窟」の行き方、謎解き・フロア攻略手順、シャドウ戦のボス攻略法やおすすめの戦術、入手できるアイテム・レンズ情報を網羅して紹介しています。",
+  },
+  "farosu-underground": {
+    type: "skill",
+    title: "ファロース教会地下",
+    path: "/extras/farosu-underground",
+    image: "/link-headers/extras-farosu.jpg",
+    desc: "大晶霊「マクスウェル」と契約できるファロース教会地下の解説。レベル上げにもおすすめな隠しダンジョンです。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。元の大晶霊「マクスウェル」と契約できる隠しダンジョン「ファロース教会地下」の行き方、ダンジョン内部の探索、ボス「マクスウェル」の攻略法、貴重なドロップアイテム「フェアリィリング」や入手装備の情報を網羅して紹介しています。",
+  },
+  valkyrie: {
+    type: "skill",
+    title: "きらめきの塔",
+    path: "/extras/valkyrie",
+    image: "/link-headers/extras-valkyrie.jpg",
+    desc: "きらめきの塔の徹底解説。謎解きの最短ルートの紹介や便利なメモ取りなど攻略をサポートします！",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しダンジョン「きらめきの塔」の行き方、1階から7階までの各フロアに用意された多彩な謎解きギミック・パズルの解き方、リッド1人で挑むボス「ワルキューレ」の攻略法や「S・D」入手の鍵に関する情報を網羅して紹介しています。",
   },
   "sunken-ship": {
     title: "沈没船",
@@ -441,22 +469,6 @@ export const extraLinks: Record<string, PageLink> = {
     desc: "飛行艇の入手に必要な隠しダンジョン。優秀な装備品もあるので早めにクリアを目指しましょう！",
     seoDesc:
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しダンジョン「アイフリードの墓」を徹底解説。飛行艇入手の必須アイテム「ひかりのたま」の獲得手順、3つのパーツ（ひげ・帽子・服）のありか、各ギミックの解除法や優秀な防具「ムーンローブ」を含む収集アイテム情報をわかりやすく紹介しています。",
-  },
-  "farosu-underground": {
-    title: "ファロース教会地下",
-    path: "/extras/farosu-underground",
-    image: "/link-headers/extras-farosu.jpg",
-    desc: "大晶霊「マクスウェル」と契約できるファロース教会地下の解説。レベル上げにもおすすめな隠しダンジョンです。",
-    seoDesc:
-      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。元の大晶霊「マクスウェル」と契約できる隠しダンジョン「ファロース教会地下」の行き方、ダンジョン内部の探索、ボス「マクスウェル」の攻略法、貴重なドロップアイテム「フェアリィリング」や入手装備の情報を網羅して紹介しています。",
-  },
-  valkyrie: {
-    title: "きらめきの塔",
-    path: "/extras/valkyrie",
-    image: "/link-headers/extras-valkyrie.jpg",
-    desc: "きらめきの塔の徹底解説。謎解きの最短ルートの紹介や便利なメモ取りなど攻略をサポートします！",
-    seoDesc:
-      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しダンジョン「きらめきの塔」の行き方、1階から7階までの各フロアに用意された多彩な謎解きギミック・パズルの解き方、リッド1人で挑むボス「ワルキューレ」の攻略法や「S・D」入手の鍵に関する情報を網羅して紹介しています。",
   },
   jiini: {
     title: "ジイニ",
@@ -498,11 +510,12 @@ export const deepLinks: Record<string, PageLink> = {
     createdAt: "2026-10-05",
     updatedAt: "2026-10-05",
   },
-  // "level-up": {
-  //   title: "レベル上げテクニック",
-  //   path: "/deeps/level-up",
-  //   desc: "下級晶霊術連発、風塵の無限コンボ、オート戦闘",
-  // },
+  "level-up": {
+    title: "レベル上げ（準備中）",
+    path: "/deeps/level-up",
+    desc: "風刃縛封の無限コンボ、下級晶霊術連発、オート戦闘などを解説予定",
+    seoDesc: "",
+  },
   herb: {
     title: "ステータスアップ薬草集め",
     path: "/deeps/herb",

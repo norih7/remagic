@@ -1,12 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./styles.module.css";
+import SkillIcon from "../Icons/SkillIcon";
+import TimeLimitIcon from "../Icons/TimeLimitIcon";
 
 type Content = {
   title: string;
   path: string;
   desc: string;
   image?: string;
+  type?: string;
 };
 type Props = {
   list: Content[];
@@ -40,7 +43,14 @@ const ContentLinks = (props: Props) => {
             href={item.path}
             className="flex flex-col h-full block pt-3 pb-3 px-4 border border-gray-300 rounded-lg hover:shadow-lg transition-shadow bg-white"
           >
-            <h3 className="mb-3 text-base">{item.title}</h3>
+            <h3 className="mb-3 text-base flex items-center">
+              {item.type && item.type === "skill" ? (
+                <SkillIcon />
+              ) : item.type === "time-limit" ? (
+                <TimeLimitIcon />
+              ) : null}
+              {item.title}
+            </h3>
             {Logo}
             {Desc}
           </Link>
