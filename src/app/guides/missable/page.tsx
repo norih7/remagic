@@ -50,8 +50,13 @@ export default async function HomePage() {
             src="/subevents/lens-location51.jpg"
             alt="無くなる可能性があるジイニのオークション会場にあるレンズ"
           />
-          <Information type="warning" title="リマスター版では発生しない">
-            この事象はPS版、PSP版で確認していますがデメリットがある仕様なのでリマスター版では修正されています。
+          <Information type="warning" title="リマスター版でも発生する">
+            <p>
+              （2026/10/18）リマスター版でもレンズか闘技場のもっとお薬セットのどちらか1つしか獲得できない仕様となっていました
+            </p>
+            <s>
+              この事象はPS版、PSP版で確認していますがデメリットとなる仕様なのでリマスター版では修正されています。
+            </s>
           </Information>
           <div className="mb-8">
             <p>
