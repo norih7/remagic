@@ -46,9 +46,9 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <SectionTitle>レベルアップ</SectionTitle>
+          {/* <SectionTitle>レベルアップ</SectionTitle>
+          <p>-</p> */}
           <div className="mb-8">
-            <p>-</p>
             <Information title="TIPS: デモンズシールとクローナシンボルの増上効果">
               デモンズシールは経験値を2倍にしてくれる反面、デメリットで様々なデメリット効果が付与されますが、クローナシンボルを同時に装備すると経験値2倍だけのメリットだけ享受できます。（クローナシンボルは異常状態を全て無効化する）デモンズシールの入手がラストランジョンのシゼル城で、終盤での活用となりますがぜひ覚えておいてください。
             </Information>
