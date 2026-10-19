@@ -11,6 +11,7 @@ import CardList from "@/components/CardLIst";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import GuideList from "@/components/GuideList";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,9 +41,13 @@ export default async function HomePage() {
         </PageSummary>
         <Section>
           <SectionTitle>クリップソード探し</SectionTitle>
-          <EventCondition category="period">
-            王都インフェリアで「じょうせんパス」入手後
-          </EventCondition>
+          <div className="mb-2 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="場所">王都インフェリア</RoundedInlineList>
+            <RoundedInlineList title="報酬">スマッシュマント</RoundedInlineList>
+            <RoundedInlineList title="発生">
+              王都インフェリアで「じょうせんパス」入手後
+            </RoundedInlineList>
+          </div>
           <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
           <div className="mb-4">
             <p>

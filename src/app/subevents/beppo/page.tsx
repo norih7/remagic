@@ -12,6 +12,7 @@ import Tag from "@/components/Tag";
 import GuideList from "@/components/GuideList";
 import Main from "@/components/SiteLayout/Main";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,17 +41,31 @@ export default async function HomePage() {
           アイテム「ルーンボトル」と「ドエニスのポプリ」を入手できるベッポとのかくれんぼについて解説。イベントはセレスティアへ行く前までにやっておく時間制限があります。
         </PageSummary>
         <Section>
-          <SectionTitle>
-            <TimeLimitIcon />
-            ベッポのかくれんぼ
-          </SectionTitle>
-          <EventCondition category="period">
-            <Tag>時限イベント</Tag>バロールの町へ到着後
-          </EventCondition>
+          <div className="mb-3">
+            <SectionTitle>
+              <TimeLimitIcon />
+              ベッポのかくれんぼ
+            </SectionTitle>
+            <div className="mb-2 grid grid-cols-1 gap-2">
+              <RoundedInlineList title="場所">バロールの町</RoundedInlineList>
+              <RoundedInlineList title="報酬">
+                「ルーンボトル」、「ドエニスのポプリ」
+              </RoundedInlineList>
+              <RoundedInlineList title="発生">
+                バロールの町へ到着後
+              </RoundedInlineList>
+            </div>
+            {/* <EventCondition category="period">
+              バロールの町へ到着後
+            </EventCondition> */}
+          </div>
           <div className="mb-4">
             <p>
               バロールの露天で遭遇した盗賊少年ベッポとかくれんぼするサブイベントが発生します。このイベントでは貴重なルーンボトルを入手でき、ストーリー後半ではドエニスのポプリを入手できます。
-              ドエニスのポプリはジイニのオークションで高値で取引されるアイテム。このイベントの発生には時間制限があり、レイス加入〜セレスティアへ渡る前までにかくれんぼをしておかないとドエニスのポプリは手に入らないため注意してください。
+              ドエニスのポプリはジイニのオークションで高値で取引されるアイテム。
+              <strong>
+                このイベントの発生には時間制限があります。セレスティアへ渡る前までにイベントを発生させていないと「ドエニスのポプリ」が手に入らないため注意してください。
+              </strong>
             </p>
           </div>
           <h3>関連記事</h3>

@@ -10,6 +10,7 @@ import { subeventLinks } from "@/constants";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,15 +33,24 @@ export default async function HomePage() {
       <article>
         <PageSummary>
           <p>
-            物語の終盤でバンエルティア号を「飛行艇」へとバージョンアップさせるための改造手順を解説するページです。飛行艇がなくてもストーリーのクリア自体は可能ですが、世界の移動が圧倒的に快適になり、強力な隠しダンジョンやサブイベントへのアクセスが解放されるため、ぜひ入手を目指しましょう。
+            物語の終盤で「飛行艇」を使うための手順を解説するページです。飛行艇がなくてもストーリーのクリア自体は可能ですが、世界の移動が圧倒的に快適になり、強力な隠しダンジョンやサブイベントへのアクセスが解放されるため、ぜひ入手を目指しましょう。
           </p>
         </PageSummary>
 
         <Section>
           <SectionTitle>飛行艇改造の概要</SectionTitle>
+          <div className="mb-2 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="場所">
+              シゼル城、アイフリードの墓
+            </RoundedInlineList>
+            <RoundedInlineList title="報酬">「飛行艇」の入手</RoundedInlineList>
+            <RoundedInlineList title="発生">
+              遠征の橋でインフェリア帰還後から
+            </RoundedInlineList>
+          </div>
           <ResponsiveImage src="/subevents/flying-board-field.jpg" />
           <p>
-            ストーリー終盤になると、移動拠点のバンエルティア号に「飛行艇」を増設できるようになります。この改造を実行するためには、ふたつの重要キーアイテム
+            ストーリー終盤になると、バンエルティア号に「飛行艇」を搭載できるようになります。飛行艇の入手のためにはふたつの重要キーアイテム
             <strong>「やみのたま」</strong>と<strong>「ひかりのたま」</strong>
             を集める必要があります。ただし、「やみのたま」が最後の決戦の舞台となるシゼル城にあるため、飛行艇が本格的に完成・利用可能になるのはゲームの最終盤となります。
           </p>
@@ -70,7 +80,7 @@ export default async function HomePage() {
             <h3>2. ひかりのたまの入手</h3>
             <ResponsiveImage src="/subevents/flying-board-light.jpg" />
             <p>
-              ストーリー後半でオルバース界面へ行けるようになった後、各地の「遠征の橋」を経由して中継基地にある「改造ドッグ」へ向かうと、バンエルティア号のさらなる改造についての話を聞くことができます。この「はるかなる地でわがあしあとを...」というイベント会話をトリガーとして、インフェリアのフィールドマップ上に隠しダンジョン
+              ストーリー後半で「遠征の橋」が開放されたあと、中継基地にある「改造ドッグ」へ向かうと、バンエルティア号のさらなる改造についての話を聞くことができます。この「はるかなる地でわがあしあとを...」というイベント会話をトリガーとして、インフェリアのフィールドマップ上に隠しダンジョン
               <strong>「アイフリードの墓」</strong>（GPS座標：88,
               64）が出現します。
             </p>
