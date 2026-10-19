@@ -1,6 +1,5 @@
 "use client";
 import { LuCirclePlay } from "react-icons/lu";
-
 import { useState } from "react";
 import Image from "next/image";
 
@@ -19,11 +18,17 @@ export default function GifPlayer({
 }: GifPlayerProps) {
   const [showGif, setShowGif] = useState(false);
 
+  // 幅と高さからアスペクト比を算出 (例: "520 / 292")
+  const aspectRatio = `${width} /${height}`;
+
   return (
     <div
       onClick={() => setShowGif(true)}
-      className={`cursor-pointer relative rounded-md overflow-hidden bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition`}
-      style={{ width: `${width}px`, height: `${height}px` }}
+      className="cursor-pointer relative rounded-md overflow-hidden bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition w-full"
+      style={{
+        maxWidth: `${width}px`, // PCなどでは指定サイズを上限にする
+        aspectRatio: aspectRatio, // 画面幅が変わっても比率を維持する
+      }}
     >
       {showGif ? (
         <Image
@@ -31,7 +36,7 @@ export default function GifPlayer({
           width={width}
           height={height}
           alt={alt}
-          className="rounded-md"
+          className="rounded-md w-full h-full object-cover"
           unoptimized
         />
       ) : (
