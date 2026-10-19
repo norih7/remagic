@@ -266,6 +266,10 @@ table td {
   text-align: center;
 }
 
+strong {
+  color: #bc5757;
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: var(--font-sans);

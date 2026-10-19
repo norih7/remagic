@@ -10,6 +10,7 @@ import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -35,7 +36,7 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <PageSummary>
-          アイテム「スマッシュマント」を入手できるグリップソート探しについて解説。イベントには時間制限がありませんが、スマッシュマントは非常に有用なアクセサリなので王都インフェリア到着後すぐにやっておくことを推奨します。
+          アイテムドロップ率アップにつながるアクセサリ「スマッシュマント」を入手できるグリップソート探しについて解説。イベントには時間制限がありませんが、スマッシュマントは非常に有用なアクセサリなので王都インフェリア到着後すぐにやっておくことを推奨します。
         </PageSummary>
         <Section>
           <SectionTitle>クリップソード探し</SectionTitle>
@@ -43,9 +44,20 @@ export default async function HomePage() {
             王都インフェリアで「じょうせんパス」入手後
           </EventCondition>
           <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
-          <p>
-            王都インフェリアの闘技場の前にいる老人に話しかけると「グリップソード」を探してほしいと頼まれます。グリップソードはインフェリアの街中にあり、簡単に探し出せるのとイベントの最後にはアクセサリ「スマッシュマント」を入手できます。スマッシュマントはアイテムドロップ率をアップする貴重なアイテムなのでぜひ入手してみてください。
-          </p>
+          <div className="mb-4">
+            <p>
+              王都インフェリアの闘技場の前にいる老人に話しかけると「グリップソード」を探してほしいと頼まれます。グリップソードはインフェリアの街中にあり、簡単に探し出せるのとイベントの最後にはアクセサリ「スマッシュマント」を入手できます。スマッシュマントはアイテムドロップ率をアップする貴重なアイテムなのでぜひ入手してみてください。
+            </p>
+          </div>
+          <h3>関連記事</h3>
+          <GuideList
+            items={[
+              {
+                title: "スマッシュマントでアイテムドロップを有利に",
+                href: "/guides/first",
+              },
+            ]}
+          />
         </Section>
         <Section>
           <SectionTitle>イベントの詳細</SectionTitle>
@@ -67,9 +79,9 @@ export default async function HomePage() {
             </RoundedItem>
             <CardList
               list={[
-                "(1) 防具屋の前にいる男性に話しかけ、グリップソードの情報を聞く",
-                "(2) 城門前にいる兵士に話しかけ、グリップソードの情報を聞く",
-                "(3) 闘技場にいる兵士に話しかけ、グリップソードを返してもらう",
+                "1. 防具屋の前にいる男性に話しかけ、グリップソードの情報を聞く",
+                "2. 城門前にいる兵士に話しかけ、グリップソードの情報を聞く",
+                "3. 闘技場にいる兵士に話しかけ、グリップソードを返してもらう",
               ]}
             />
           </RoundedContainer>
@@ -81,7 +93,13 @@ export default async function HomePage() {
             </RoundedItem>
           </RoundedContainer>
           <Information type="warning" title="機種による違い">
-            イベントの結末はPSP版のものです。PS版では「エタポケ1」を入手し、その後のポケットステーションでのミニゲームをクリアするとスマッシュマントを入手します。（PSP版はポケットステーションがないので手順が省略されている）2026年のリマスター版ではPSP版と同じ結果となる予想です。
+            <p>
+              <strong>
+                リマスター版はPSP版と同じ結果です。
+                イベントクリアだけでスマッシュマントを入手できます。
+              </strong>
+            </p>
+            イベントの結末はPSP版のものです。PS版では「エタポケ1」を入手し、その後のポケットステーションでのミニゲームをクリアするとスマッシュマントを入手します。（PSP版はポケットステーションがないので手順が省略されている）
           </Information>
         </Section>
       </article>

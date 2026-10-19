@@ -59,7 +59,7 @@ export default async function HomePage() {
           <SectionTitle>風刃縛封による無限コンボ</SectionTitle>
           <div className="mb-4">
             <div className="grid grid-cols-2 gap-2 mb-2">
-              <RoundedInlineList title="おすすめ度">
+              <RoundedInlineList title="推奨度">
                 <StarRating rating={4} />
               </RoundedInlineList>
               <RoundedInlineList title="1回の経験値">
@@ -67,13 +67,13 @@ export default async function HomePage() {
               </RoundedInlineList>
             </div>
             <RoundedInlineList title="条件">
-              リッドが風刃縛封を習得、チャットがパラライボールを習得（ストーリー終盤）
+              リッドが風刃縛封を習得、チャットがパラライボールを習得（ストーリー後半）
             </RoundedInlineList>
           </div>
           <div className="mb-8">
             <h3>概要</h3>
             <p>
-              麻痺状態の敵に風刃縛封を使うとピコピコ状態が継続する仕様を使ったコンボ。1回あたり10分ほどかかるためおすすめ度は4にしています。
+              麻痺状態の敵に風刃縛封を使うと気絶状態が継続する仕様を使ったコンボ。400HITでボーナス上限の8万経験値となりますが、1回あたり10〜15分ほどかかるのがネック。
             </p>
           </div>
           <div className="mb-8">
@@ -81,16 +81,37 @@ export default async function HomePage() {
             <div className="mb-4">
               <CardList
                 list={[
-                  "チャットのパラライボールで地上の敵を麻痺させる",
-                  "麻痺させた敵以外を倒す",
-                  "ショートカットに登録した風刃縛封を発動（初回）",
-                  "ピコピコ状態になったら1、2秒待ってから再度ショートカットの風刃縛封を発動",
-                  "以降ショートカットボタンを押したままにしてコンボループ",
-                  "TPが足りなくなったらパイングミなどを使って回復",
+                  "1. 地上の敵を麻痺させる",
+                  "2. 麻痺させた敵だけ残して、それ以外を倒す",
+                  "3. ショートカットに登録した風刃縛封を発動（初回）",
+                  "4. 敵が気絶したら1、2秒待ってから再度ショートカットの風刃縛封を発動",
+                  "5. 以降ショートカットボタンを押したままにしてコンボループ",
+                  "6. TPが足りなくなったらパイングミなどを使って回復",
                 ]}
               />
             </div>
-            <p>※ 動画やコンボの仕様などを追記予定</p>
+            <RoundedItem title="麻痺の方法">
+              <p>
+                習得が終盤となりますがチャットのパラライボールがおすすめ（飛空挺入手後以降）。もっと早くこのコンボをしたい場合は、ファラに「ヴェノム」を装備させて攻撃させましょう。
+              </p>
+              <GuideList
+                items={[
+                  {
+                    title: "武器データ: ヴェノム",
+                    href: "/systems/item/57",
+                  },
+                ]}
+              />
+            </RoundedItem>
+            <Information title="TIPS">
+              キャラクタの幸運をあげておくと麻痺が発生しやすくなります（詳細検証中）。
+              <br />
+              風刃縛封はショートカットで使う必要があります。コンボ途切れなく最短で技を発動でき、通常の×ボタンだと秘奥義が発動してしまうため。
+            </Information>
+            <p>
+              ※
+              動画やコンボの仕様などを追記予定。麻痺の状態画像と、1、2秒待つあたりを紹介予定。
+            </p>
           </div>
         </Section>
 
@@ -98,7 +119,7 @@ export default async function HomePage() {
           <SectionTitle>ブルーアース</SectionTitle>
           <div className="mb-4">
             <div className="grid grid-cols-2 gap-2 mb-2">
-              <RoundedInlineList title="おすすめ度">
+              <RoundedInlineList title="推奨度">
                 <StarRating rating={5} />
               </RoundedInlineList>
               <RoundedInlineList title="1回の経験値">100,000</RoundedInlineList>
@@ -129,7 +150,7 @@ export default async function HomePage() {
         <Section>
           <SectionTitle>リマスター版によるオート戦闘</SectionTitle>
           <div className="grid grid-cols-2 gap-2 mb-2">
-            <RoundedInlineList title="おすすめ度">
+            <RoundedInlineList title="推奨度">
               <StarRating rating={5} />
             </RoundedInlineList>
             <RoundedInlineList title="1回の経験値">

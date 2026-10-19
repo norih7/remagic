@@ -16,7 +16,7 @@ const PageSummary = (props: Props) => {
         <div className="pt-">
           <LuMessageCircleMore size={22} className="text-amber-600" />
         </div>
-        <div className={styles.content}>{children}</div>
+        <div className={`flex-1 ${styles.content}`}>{children}</div>
       </div>
     </div>
   );

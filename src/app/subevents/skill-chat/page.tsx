@@ -10,6 +10,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GuideList from "@/components/GuideList";
+import CardList from "@/components/CardLIst";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,6 +41,23 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
+          <SectionTitle>チャットの特技習得優先度</SectionTitle>
+          <div className="mb-4">
+            <CardList
+              list={[
+                "Tier1. コチハン、エターナルスロー",
+                "Tier2. パラライボール",
+                "Tier3. ポイハン",
+              ]}
+            />
+          </div>
+          <p>
+            チャットの特技はどれも強力ですが特に「コチハン」「エターナルスロー」の習得優先度は高めです。チャットは力のパラメータが高く、Lv50以降から高ダメージを与えやすいです。
+            コチハンは使いやすい高ダメージ、エターナルスローは特殊ですが最強技。パラライボールはレベル上げ（無限コンボ）をやるためには必須級です。
+          </p>
+        </Section>
+
+        <Section>
           <SectionTitle>チャットの特技習得イベント一覧</SectionTitle>
           <Information title="サブイベント発生の前提条件">
             チャットをパーティーメンバーに加えた状態で、以下の各地のスポットへ向かうことでイベントが進行・発生します。
@@ -47,60 +65,67 @@ export default async function HomePage() {
 
           <RoundedContainer>
             <h3>ポイハンの習得</h3>
-            <EventCondition category="period">
-              バンエルティア号を入手以降
-            </EventCondition>
-
-            <RoundedItem title="発生場所と手順">
-              セレスティア世界のGPS座標 (183, 130)
-              に位置する孤島へ上陸すると、アイフリードの像が祀られた隠しエリアに入ることができます。そこでイベントが発生し、チャットが毒属性のハンマー技「ポイハン」を習得します。
-            </RoundedItem>
+            <div className="grid grid-cols-1 gap-3">
+              <RoundedItem title="発生時期">
+                バンエルティア号を入手以降
+              </RoundedItem>
+              <RoundedItem title="発生場所と手順">
+                セレスティア世界のGPS座標 (183, 130)
+                に位置する孤島へ上陸すると、アイフリードの像が祀られた隠しエリアに入ることができます。そこでイベントが発生し、チャットが毒属性のハンマー技「ポイハン」を習得します。
+              </RoundedItem>
+            </div>
           </RoundedContainer>
 
           <RoundedContainer>
             <h3>コチハンの習得</h3>
-            <EventCondition category="period">
-              インフェリア世界への帰還以降
-            </EventCondition>
             <ResponsiveImage src="/subevents/skill-chat-ice-hammer.jpg" />
-            <RoundedItem title="発生場所と手順" className="mb-3">
-              潜水艇を利用してインフェリア海の海底（GPS座標：119,
-              122）にある「アジト2」へ進入し、宝箱が並ぶ奥の部屋を調査するとイベントが起き、氷属性の「コチハン」を習得します。
-            </RoundedItem>
-            <GuideList
-              items={[
-                {
-                  title: "インフェリアの隠しアジト",
-                  href: "/subevents/secret-base",
-                },
-              ]}
-            />
+            <div className="grid grid-cols-1 gap-3">
+              <RoundedItem title="発生時期">
+                遠征の橋でインフェリア世界への帰還後から
+              </RoundedItem>
+              <RoundedItem title="発生場所と手順">
+                潜水艇を利用してインフェリア海の海底（GPS座標：119,
+                122）にある「アジト2」へ進入し、宝箱が並ぶ奥の部屋を調査するとイベントが起き、氷属性の「コチハン」を習得します。
+              </RoundedItem>
+              <GuideList
+                items={[
+                  {
+                    title: "インフェリアの隠しアジト",
+                    href: "/subevents/secret-base",
+                  },
+                ]}
+              />
+            </div>
           </RoundedContainer>
 
           <RoundedContainer>
             <h3>パラライボールの習得</h3>
-            <EventCondition category="period">飛行艇を入手以降</EventCondition>
             <ResponsiveImage src="/extras/secret-town-onsen-chat.jpg" />
-            <RoundedItem title="発生場所と手順" className="mb-3">
-              飛行艇を使ってインフェリア地上の山岳エリア（GPS座標：208,
-              108）にある「晶霊温泉」へ赴き、利用料金の600ガルドを支払って温泉に浸かるとイベントが発生。雷属性の「パラライボール」を習得できます。
-            </RoundedItem>
-            <GuideList
-              items={[
-                { title: "ねこにんの里/晶霊温泉", href: "/extras/towns" },
-              ]}
-            />
+            <div className="grid grid-cols-1 gap-3">
+              <RoundedItem title="発生時期">飛行艇の入手後から</RoundedItem>
+              <RoundedItem title="発生場所と手順">
+                飛行艇を使ってインフェリア地上の山岳エリア（GPS座標：208,
+                108）にある「晶霊温泉」へ赴き、利用料金の600ガルドを支払って温泉に浸かるとイベントが発生。雷属性の「パラライボール」を習得できます。
+              </RoundedItem>
+              <GuideList
+                items={[
+                  { title: "ねこにんの里/晶霊温泉", href: "/extras/towns" },
+                ]}
+              />
+            </div>
           </RoundedContainer>
 
           <RoundedContainer>
             <h3>エターナルスローの習得</h3>
-            <EventCondition category="period">
-              アイフリードの隠しアジトクリア後
-            </EventCondition>
             <ResponsiveImage src="/subevents/skill-chat-eternal.jpg" />
-            <RoundedItem title="発生場所と手順">
-              ストーリー中で潜水艇を手に入れた後、チャットの小屋の中を訪れるとチャットが暗算に苦戦するイベントが発生します。その後、「アイフリードの洞窟」（GPS座標：204,98）内で挑戦できるすごろくゲームのイベントをクリアすると「エターナルスロー」を習得できます。クイズの詳細は後述しています。
-            </RoundedItem>
+            <div className="grid grid-cols-1 gap-3">
+              <RoundedItem title="発生時期">
+                アイフリードの隠しアジトクリア後から
+              </RoundedItem>
+              <RoundedItem title="発生場所と手順">
+                ストーリー中で潜水艇を手に入れた後、チャットの小屋の中を訪れるとチャットが暗算に苦戦するイベントが発生します。その後、「アイフリードの洞窟」（GPS座標：204,98）内で挑戦できるすごろくゲームのイベントをクリアすると「エターナルスロー」を習得できます。クイズの詳細は後述しています。
+              </RoundedItem>
+            </div>
           </RoundedContainer>
         </Section>
 
