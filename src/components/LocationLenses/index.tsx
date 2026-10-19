@@ -25,7 +25,7 @@ export default function LocationLenses(props: Props) {
         href={`/subevents/lens?id=${recipe.lensId}#detail`}
         className="block"
       >
-        <strong>{index + 1}つ目</strong>
+        <div className="font-bold">{index + 1}つ目</div>
         <span>{recipe.remarks}</span>
       </Link>
     </li>

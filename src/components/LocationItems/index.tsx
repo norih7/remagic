@@ -28,16 +28,16 @@ export default function ChartList(props: Props) {
         key={index}
         className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 transition-colors text-sm"
       >
-        <strong className="text-slate-600">{item.itemName}</strong>
+        <div className="font-bold text-slate-600">{item.itemName}</div>
         <span>{item.remarks}</span>
       </li>
     ) : (
       <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
         <a href={`/systems/item/${item.itemId}`} className="block px-3 py-2">
-          <strong>
+          <div className="font-bold">
             {item.itemType === "keyItem" && <KeyItemIcon />}
             {item.itemName}
-          </strong>
+          </div>
           <span>{item.remarks}</span>
         </a>
       </li>

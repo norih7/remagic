@@ -11,6 +11,7 @@ import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GuideList from "@/components/GuideList";
 import CardList from "@/components/CardLIst";
+import SkillIcon from "@/components/Icons/SkillIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -58,7 +59,10 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>チャットの特技習得イベント一覧</SectionTitle>
+          <SectionTitle>
+            <SkillIcon />
+            チャットの特技習得イベント一覧
+          </SectionTitle>
           <Information title="サブイベント発生の前提条件">
             チャットをパーティーメンバーに加えた状態で、以下の各地のスポットへ向かうことでイベントが進行・発生します。
           </Information>

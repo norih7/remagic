@@ -32,19 +32,19 @@ export default function ChartList(props: Props) {
         key={index}
         className="bg-slate-50 border border-sky-200 rounded-md px-3 py-2 text-gray-500"
       >
-        <strong>
+        <div className="font-bold">
           {icon}
           {item.eventName}
-        </strong>
+        </div>
         <span>{item.remarks}</span>
       </li>
     ) : (
       <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
         <a href={item.eventPath} className="block px-3 py-2">
-          <strong>
+          <div className="font-bold">
             {icon}
             {item.eventName}
-          </strong>
+          </div>
           <span>{item.remarks}</span>
         </a>
       </li>

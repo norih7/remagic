@@ -53,7 +53,7 @@ export default async function HomePage() {
               <tr>
                 <td>セレスティア突入前</td>
                 <td>
-                  <strong>難易度1</strong>
+                  <h4>難易度1</h4>
                   <ul>
                     <li>1回目クリア: リッドの称号「キングあんどバルーン」</li>
                     <li>2回目以降のクリア: ミックスグミ</li>
@@ -63,7 +63,7 @@ export default async function HomePage() {
               <tr>
                 <td>インフェリアへの帰還後</td>
                 <td>
-                  <strong>難易度2</strong>
+                  <h4>難易度2</h4>
                   <ul>
                     <li>
                       1回目クリア: リッドの称号「キングあんどバルーン」

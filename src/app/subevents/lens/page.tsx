@@ -104,7 +104,9 @@ export default async function HomePage() {
           <SectionTitle>レンズの入手場所一覧（全60枚）</SectionTitle>
           <Information type="warning" title="レンズの入手タイミングについて">
             <p>
-              <strong>リマスター版も対象です</strong>
+              <strong>
+                リマスター版では修正されているためタイミングを意識する必要はありません
+              </strong>
             </p>
             レンズは期間限定ではなく、基本的にはいつでも入手可能なので町やダンジョンで取り逃してもあとで回収可能です。ただしジイニのオークション会場にあるレンズ（No53）だけ、先に王都インフェリアの闘技場「王国一決定戦」で優勝すると獲得できなくなります。ジイニで先にレンズを獲得しておくことを推奨します。
           </Information>

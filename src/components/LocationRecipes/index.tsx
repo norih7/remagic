@@ -17,7 +17,7 @@ export default function LocationRecipes(props: Props) {
         href={`/systems/recipe/?id=${item.recipeId}`}
         className="block px-3 py-2"
       >
-        <strong>{item.recipeName}</strong>
+        <div className="font-bold">{item.recipeName}</div>
         <span>{item.remarks}</span>
       </a>
     </li>
