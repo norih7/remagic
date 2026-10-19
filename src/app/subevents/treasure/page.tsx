@@ -11,6 +11,7 @@ import GuideList from "@/components/GuideList";
 import Main from "@/components/SiteLayout/Main";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,10 +40,16 @@ export default async function HomePage() {
           ストーリー後半から収集できるセレスティア7大秘宝をまとめています。各秘宝の入手方法や使い方、特殊なS・Dなどを解説しています。
         </PageSummary>
         <Section>
-          <SectionTitle>セレスティア7大秘宝とS・D</SectionTitle>
-          <EventCondition category="period">
-            チャットの小屋クリア後から
-          </EventCondition>
+          <SectionTitle>セレスティア7大秘宝の概要</SectionTitle>
+          <div className="mb-4 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="報酬">
+              「コルレーンのつぼ」、「S・D」、「レジュームリング」など
+            </RoundedInlineList>
+            <RoundedInlineList title="場所">セレスティア各地</RoundedInlineList>
+            <RoundedInlineList title="発生">
+              チャットの小屋クリア後から
+            </RoundedInlineList>
+          </div>
           <p>
             アイフリードの遺産の「セレスティア7大秘宝」があり、ストーリー後半ではサブイベントとして秘宝を集めていくことができます。主な報酬としては特殊な召喚術が使える「S・D」、回復効果などが得られる「コルレーンのつぼ」、自動復活の可能性がある「レジュームリング」があります。
           </p>

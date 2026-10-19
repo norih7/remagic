@@ -44,13 +44,13 @@ export default async function HomePage() {
           <div className="mb-3">
             <SectionTitle>
               <TimeLimitIcon />
-              ベッポのかくれんぼ
+              「ベッポのかくれんぼ」の概要
             </SectionTitle>
-            <div className="mb-2 grid grid-cols-1 gap-2">
-              <RoundedInlineList title="場所">バロールの町</RoundedInlineList>
+            <div className="mb-4 grid grid-cols-1 gap-2">
               <RoundedInlineList title="報酬">
                 「ルーンボトル」、「ドエニスのポプリ」
               </RoundedInlineList>
+              <RoundedInlineList title="場所">バロールの町</RoundedInlineList>
               <RoundedInlineList title="発生">
                 バロールの町へ到着後
               </RoundedInlineList>

@@ -38,12 +38,12 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <SectionTitle>飛行艇改造の概要</SectionTitle>
-          <div className="mb-2 grid grid-cols-1 gap-2">
+          <SectionTitle>飛行艇入手の概要</SectionTitle>
+          <div className="mb-4 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="報酬">「飛行艇」の入手</RoundedInlineList>
             <RoundedInlineList title="場所">
               シゼル城、アイフリードの墓
             </RoundedInlineList>
-            <RoundedInlineList title="報酬">「飛行艇」の入手</RoundedInlineList>
             <RoundedInlineList title="発生">
               遠征の橋でインフェリア帰還後から
             </RoundedInlineList>

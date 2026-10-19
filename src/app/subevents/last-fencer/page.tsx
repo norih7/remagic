@@ -11,6 +11,7 @@ import GuideList from "@/components/GuideList";
 import Main from "@/components/SiteLayout/Main";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,10 +40,16 @@ export default async function HomePage() {
           リッドの強力な武器「ラストフェンサー」の入手手順と性能を解説しています
         </PageSummary>
         <Section>
-          <SectionTitle>ラストフェンサー</SectionTitle>
-          <EventCondition category="period">
-            バリル城でヒアデス撃破後
-          </EventCondition>
+          <SectionTitle>ラストフェンサーの概要</SectionTitle>
+          <div className="mb-4 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="場所">
+              バリル城、アイメン（崩壊後）
+            </RoundedInlineList>
+            <RoundedInlineList title="報酬">「飛行艇」の入手</RoundedInlineList>
+            <RoundedInlineList title="発生">
+              バリル城でヒアデス撃破後
+            </RoundedInlineList>
+          </div>
           <p>
             ストーリー後半で再び訪れたバリル城でヒアデスを撃破したあとからリッドの最強武器の1つ「ラストフェンサー」を入手することができます。ラストフェンサーは簡単に入手でき、攻撃力は控えめですが特殊効果が多いため最終盤でも活躍する武器なのでぜひ入手してください。
           </p>
@@ -53,13 +60,14 @@ export default async function HomePage() {
           <RoundedContainer>
             <h3>1. バリル城でゾシモスに話しかける</h3>
             <ResponsiveImage src="/subevents/last-fencer-zosimos.jpg" />
-            <p>
+            <RoundedItem className="mb-3">
               ヒアデス撃破後にフリンジ砲のエリアにいるゾシモスに話しかけて「リヴァイウス鉱石を使って武器を作れないか」という話を聞きます。
-            </p>
+            </RoundedItem>
             <GuideList
               items={[
                 {
-                  title: "攻略チャート5 (バリル城〜セイファート観測所)",
+                  title:
+                    "発生タイミング: 攻略チャート5 (バリル城〜セイファート観測所)",
                   href: "/stories/guide5",
                 },
               ]}
@@ -68,12 +76,16 @@ export default async function HomePage() {
           <RoundedContainer>
             <h3>2. アイメンの武器工房で武器開発を開始する</h3>
             <ResponsiveImage src="/subevents/last-fencer-imen.jpg" />
-            アイメンの武器屋に行くとゾシモスが移動しています。ゾシモスたちに話かけて武器開発をしている話を聞きます。
+            <RoundedItem>
+              アイメンの武器屋に行くとゾシモスが移動しています。ゾシモスたちに話かけて武器開発をしている話を聞きます。
+            </RoundedItem>
           </RoundedContainer>
           <RoundedContainer>
             <h3>3. 武器完成を待つ</h3>
             <ResponsiveImage src="/subevents/last-fencer-last.jpg" />
-            武器開発はアイメンの出入りで進行します（町を出てフィールドから入る）。出入りを5回した上でアイメンの武器屋へ行ってゾシモスたちに話しかけると「ラストフェンサー」を入手します。
+            <RoundedItem>
+              武器開発はアイメンの出入りで進行します（町を出てフィールドから入る）。出入りを5回した上でアイメンの武器屋へ行ってゾシモスたちに話しかけると「ラストフェンサー」を入手します。
+            </RoundedItem>
           </RoundedContainer>
         </Section>
 

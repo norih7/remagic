@@ -9,6 +9,7 @@ import Main from "@/components/SiteLayout/Main";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -37,8 +38,14 @@ export default async function HomePage() {
             <TimeLimitIcon />
             クレーメルボール
           </SectionTitle>
-          <EventCondition category="period">ミンツ到着後</EventCondition>
-          <Tag>称号の時限イベント</Tag>
+          <div className="mb-4 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="報酬">
+              リッドの称号「たまころがし」など
+            </RoundedInlineList>
+            <RoundedInlineList title="場所">ミンツの運動場</RoundedInlineList>
+            <RoundedInlineList title="発生">ミンツ到着後から</RoundedInlineList>
+          </div>
+
           <Information type="warning" title="注意点">
             このミニゲームで得られるのはリッドの称号のみです。特別なアイテムなどは何もないため称号にこだわりのない方はスキップしても問題ありません。
           </Information>

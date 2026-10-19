@@ -37,13 +37,13 @@ export default async function HomePage() {
           インフェリアにあるアイフリードの隠しアジトを紹介します。
         </PageSummary>
         <Section>
-          <SectionTitle>インフェリアのアジト一覧</SectionTitle>
+          <SectionTitle>「インフェリアの隠しアジト」の概要</SectionTitle>
           <div className="mb-2 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="場所">
-              インフェリアの海底マップ
-            </RoundedInlineList>
             <RoundedInlineList title="報酬">
               「にんとうちざくら」「ホーリィクローク」「ルーンボトル」など
+            </RoundedInlineList>
+            <RoundedInlineList title="場所">
+              インフェリアの海底マップ
             </RoundedInlineList>
             <RoundedInlineList title="発生">
               遠征の橋でインフェリア帰還後から
@@ -62,6 +62,10 @@ export default async function HomePage() {
               ]}
             />
           </div>
+        </Section>
+
+        <Section>
+          <SectionTitle>隠しアジトと入手アイテム</SectionTitle>
           <RoundedContainer>
             <h3>インフェリア アジト1</h3>
             <ResponsiveImage src="/subevents/secret-base-1.jpg" />

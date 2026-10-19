@@ -11,6 +11,7 @@ import CardList from "@/components/CardLIst";
 import LocationItems from "@/components/LocationItems";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -105,10 +106,16 @@ export default async function HomePage() {
           王都インフェリアで開催されている闘技場について解説します。
         </PageSummary>
         <Section>
-          <SectionTitle>闘技場</SectionTitle>
-          <EventCondition category="period">
-            王都インフェリアに到着後いつでも
-          </EventCondition>
+          <SectionTitle>闘技場の概要</SectionTitle>
+          <div className="mb-4 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="報酬">
+              「ステータスアップの薬草」、「各種回復グミ」、「エターナルソード」など
+            </RoundedInlineList>
+            <RoundedInlineList title="場所">王都インフェリア</RoundedInlineList>
+            <RoundedInlineList title="発生">
+              王都インフェリアに到着後いつでも
+            </RoundedInlineList>
+          </div>
           <p>
             王都インフェリアには闘技場があり、連戦を勝ち抜くことで報酬を獲得できます。
             闘技場には「王都一決定戦」「王国一決定戦」「世界一決定戦」の3つのランクが用意されており、いずれもリッドが単独で3連戦に挑む形式です。ランクの3試合すべてに勝利すると優勝となり、報酬を手に入れることができます。
@@ -117,7 +124,7 @@ export default async function HomePage() {
             また「世界一決定戦」で初めて優勝すると、テイルズオブファンタジアの「クレス」が参戦するイベントが発生します。クレスは強敵ですが倒すとリッドの最強武器の1つ「エターナルソード」を入手できます。
           </p>
           <Information type="warning" title="闘技場の難易度について">
-            闘技場は最初に王都インフェリアにきた時から挑戦できますが難易度が高いため初回訪問時ではまずクリアできません。リッドが猛虎連撃破や鳳凰天駆を覚えるあたり（レベル50ほど）で挑戦することを推奨します。クレスはさらにレベルやHPが求められます。
+            闘技場は最初に王都インフェリアにきた時から挑戦できますが難易度が高いため初回訪問時ではまずクリアできません。リッドが猛虎連撃破や鳳凰天駆を覚えるあたり（レベル50以上）で挑戦することを推奨します。クレスはさらにレベルやHPが求められます。
           </Information>
         </Section>
         <Section>

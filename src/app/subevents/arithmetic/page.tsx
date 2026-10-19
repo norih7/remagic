@@ -12,6 +12,7 @@ import Tag from "@/components/Tag";
 import GuideList from "@/components/GuideList";
 import Main from "@/components/SiteLayout/Main";
 import CardList from "@/components/CardLIst";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -42,11 +43,22 @@ export default async function HomePage() {
           バロールの町で行われているミニゲーム「算術勝負」の解説。
         </PageSummary>
         <Section>
-          <SectionTitle>算術勝負</SectionTitle>
-          <EventCondition category="period">
-            <Tag>時限イベント</Tag>バロールの町へ到着後
-          </EventCondition>
-          <p>バロールの町で行われているミニゲーム「算術勝負」の解説。</p>
+          <SectionTitle>算術勝負の概要</SectionTitle>
+          <div className="mb-4 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="報酬">
+              リッドの称号「さんじゅつせいねん」、「ミラクルグミ」など
+            </RoundedInlineList>
+            <RoundedInlineList title="場所">バロールの町</RoundedInlineList>
+            <RoundedInlineList title="発生">
+              バロールの町へ到着後から
+            </RoundedInlineList>
+          </div>
+          <p>
+            バロールの町で行われているミニゲーム「算術勝負」の解説。リッドの称号を得られるサブイベントですが、
+            <strong>
+              称号はインフェリアに渡ってしまうと入手できないことに注意が必要です。
+            </strong>
+          </p>
         </Section>
         <Section>
           <SectionTitle>イベントの詳細</SectionTitle>

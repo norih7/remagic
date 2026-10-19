@@ -91,7 +91,7 @@ export default async function ItemDetailPage({
       ? drop.map((item, index) => (
           <li key={index} className={style}>
             <Link href={`/systems/item/${item.itemId}`}>
-              <strong className="flex items-center">{item.itemName}</strong>
+              <div className="flex items-center font-bold">{item.itemName}</div>
               <span className="text-xs text-gray-700">
                 確率: {item.probability}%
               </span>
@@ -108,7 +108,7 @@ export default async function ItemDetailPage({
       ? steal.map((item, index) => (
           <li key={index} className={style}>
             <Link href={`/systems/item/${item.itemId}`}>
-              <strong className="flex items-center">{item.itemName}</strong>
+              <div className="flex items-center font-bold">{item.itemName}</div>
               <span className="text-xs text-gray-700">
                 確率: {item.probability}%
               </span>
@@ -122,9 +122,9 @@ export default async function ItemDetailPage({
     location.length > 0
       ? location.map((item, index) => (
           <li key={index} className={style}>
-            <strong className="flex items-center text-gray-700 ">
+            <div className="flex items-center text-gray-700 font-bold">
               {item.locationName}
-            </strong>
+            </div>
             <span className="text-xs">{item.remarks}</span>
           </li>
         ))

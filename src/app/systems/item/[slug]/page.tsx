@@ -69,7 +69,7 @@ export default async function ItemDetailPage({
   const style =
     "bg-gray-50 rounded-lg px-3 py-2 border border-gray-200 text-slate-700";
   const itemDescStyle =
-    "block flex items-center mb-1 text-xs text-gray-500 border-b pb-1 border-gray-300";
+    "block flex items-center mb-1 text-xs text-gray-500 border-b pb-1 border-gray-300 font-bold";
   const wrapStyle = "mb-8 px-3 pt-1 pb-3 border border-gray-300 rounded-lg";
   const headerStyle =
     "flex items-center pb-2 !mb-3 text-base border-b border-gray-300";
@@ -80,7 +80,9 @@ export default async function ItemDetailPage({
       filterItem.map((item, index) => {
         return (
           <li key={index} className={style}>
-            <strong className="flex items-center">{item.locationName}</strong>
+            <div className="flex items-center font-bold">
+              {item.locationName}
+            </div>
             <span className="text-xs">{item.shopName}</span>
           </li>
         );
@@ -96,9 +98,9 @@ export default async function ItemDetailPage({
     filterTreasureItem.length > 0
       ? filterTreasureItem.map((item, index) => (
           <li key={index} className={style}>
-            <strong className="flex items-center text-gray-700 ">
+            <div className="flex items-center text-gray-700 font-bold">
               {item.locationName}
-            </strong>
+            </div>
             <span className="text-xs">{item.remarks}</span>
           </li>
         ))
@@ -112,7 +114,9 @@ export default async function ItemDetailPage({
       ? filterEnemyItemDrop.map((item, index) => (
           <li key={index} className={style}>
             <Link href={`/systems/enemy/${item.enemyId}`}>
-              <strong className="flex items-center">{item.enemyName}</strong>
+              <div className="flex items-center font-bold">
+                {item.enemyName}
+              </div>
               <span className="text-xs  text-gray-700">
                 確率: {item.probability}%
               </span>
@@ -130,7 +134,9 @@ export default async function ItemDetailPage({
       ? filterEnemyItemSteal.map((item, index) => (
           <li key={index} className={style}>
             <Link href={`/systems/enemy/${item.enemyId}`}>
-              <strong className="flex items-center">{item.enemyName}</strong>
+              <div className="flex items-center font-bold">
+                {item.enemyName}
+              </div>
               <span className="text-xs text-gray-700 ">
                 確率: {item.probability}%
               </span>
@@ -152,25 +158,25 @@ export default async function ItemDetailPage({
       <article>
         <SectionTitle>{item.name}</SectionTitle>
         <RoundedContainer>
-          <div className={`${style} font-bold mb-2`}>
-            <strong className={itemDescStyle}>効果</strong>
+          <div className={`${style} mb-2`}>
+            <div className={itemDescStyle}>効果</div>
             {item.effect}
           </div>
-          <div className="mb-8 grid grid-cols-2 gap-2 font-bold">
+          <div className="mb-8 grid grid-cols-2 gap-2">
             <div className={style}>
-              <strong className={itemDescStyle}>種別</strong>
+              <div className={itemDescStyle}>種別</div>
               {itemTypeMap[item.type as keyof typeof itemTypeMap]}
             </div>
             <div className={style}>
-              <strong className={itemDescStyle}>購入</strong>
+              <div className={itemDescStyle}>購入</div>
               {price}
             </div>
             <div className={style}>
-              <strong className={itemDescStyle}>売却</strong>
+              <div className={itemDescStyle}>売却</div>
               {item.sell} ガルド
             </div>
             <div className={style}>
-              <strong className={itemDescStyle}>特殊効果</strong>
+              <div className={itemDescStyle}>特殊効果</div>
               {Supcial}
             </div>
           </div>

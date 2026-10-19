@@ -36,12 +36,12 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <SectionTitle>画家のリシテアイベント</SectionTitle>
-          <div className="mb-2 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="場所">セレスティア各地</RoundedInlineList>
+          <SectionTitle>画家のリシテアの概要</SectionTitle>
+          <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               「キャンセラー」、フォッグの特技「エレメントマスター」の前提条件
             </RoundedInlineList>
+            <RoundedInlineList title="場所">セレスティア各地</RoundedInlineList>
             <RoundedInlineList title="発生">
               氷晶霊の山をクリア後
             </RoundedInlineList>
