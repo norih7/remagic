@@ -9,6 +9,8 @@ import Link from "next/link";
 import Main from "@/components/SiteLayout/Main";
 import UpdateList from "@/components/UpdateList";
 import Search from "@/components/Search";
+import Image from "next/image";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 // 攻略記事やカテゴリのダミーデータ
 type Link = {
@@ -56,21 +58,21 @@ export default async function HomePage() {
       <article>
         <Search />
 
-        <div className="mb-8">
+        <div className="mb-12">
           <h2 className="text-lg font-bold mb-2 !border-none">
             テイルズオブエターニア攻略
           </h2>
           <p className="mb-4">
-            RE:MAGICではリマスター版に対応したテイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
+            RE:MAGICではテイルズオブエターニアリマスター版のストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
           </p>
-          <p>
-            サイトの全ページへのリンクを歓迎しています。攻略の参考にしていただけた場合は、ブログ、SNS、まとめ記事などで紹介してもらえるととても助かります。
+          <p className="flex-1">
+            サイトの全ページでリンクを歓迎しています。攻略の参考にしていただけた場合は、ブログ、SNS、まとめ記事などで紹介してもらえるととても助かります。
             また内容の誤りや追加してほしい情報があれば、Xやメールフォームでお気軽にお知らせください。
           </p>
         </div>
 
         {/* 2. 注目カテゴリセクション */}
-        <section className="mb-8">
+        <section className="mb-12">
           <SectionTitle>リマスター版に向けたガイド</SectionTitle>
           <ContentLinks list={fixedLink} />
         </section>
