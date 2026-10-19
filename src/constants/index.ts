@@ -514,8 +514,9 @@ export const deepLinks: Record<string, PageLink> = {
     title: "レベル上げ（追記中）",
     path: "/deeps/level-up",
     image: "/link-headers/level-up.jpg",
-    desc: "風刃縛封の無限コンボ、下級晶霊術連発、オート戦闘などを解説予定",
-    seoDesc: "",
+    desc: "効率の良いレベル上げ方法を解説。風刃縛封の無限コンボ、下級晶霊術連発、オート戦闘などを解説しています。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。効率の良いレベル上げ方法を解説。風刃縛封の無限コンボ、下級晶霊術連発、オート戦闘などを解説しています。",
   },
   herb: {
     title: "ステータスアップ薬草集め",

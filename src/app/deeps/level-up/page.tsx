@@ -21,19 +21,11 @@ const pageKey = "level-up";
 const title = deepLinks[pageKey].title;
 const description = deepLinks[pageKey].seoDesc;
 const canonical = deepLinks[pageKey].path;
-// export const metadata = {
-//   title,
-//   description,
-//   alternates: {
-//     canonical,
-//   },
-// };
 export const metadata = {
   title,
-  description: "",
-  robots: {
-    index: false,
-    follow: true,
+  description,
+  alternates: {
+    canonical,
   },
 };
 
