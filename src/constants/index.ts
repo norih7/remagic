@@ -513,6 +513,7 @@ export const deepLinks: Record<string, PageLink> = {
   "level-up": {
     title: "レベル上げ（追記中）",
     path: "/deeps/level-up",
+    image: "/link-headers/level-up.jpg",
     desc: "風刃縛封の無限コンボ、下級晶霊術連発、オート戦闘などを解説予定",
     seoDesc: "",
   },

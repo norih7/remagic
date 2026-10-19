@@ -108,10 +108,12 @@ export default async function HomePage() {
               <br />
               風刃縛封はショートカットで使う必要があります。コンボ途切れなく最短で技を発動でき、通常の×ボタンだと秘奥義が発動してしまうため。
             </Information>
-            <p>
-              ※
-              動画やコンボの仕様などを追記予定。麻痺の状態画像と、1、2秒待つあたりを紹介予定。
-            </p>
+            <h4>コンボ開始の参考動画</h4>
+            <GifPlayer
+              src="/deeps/level-up-wind-dust.gif"
+              alt="風刃縛封の無限コンボ"
+            />
+            <p></p>
           </div>
         </Section>
 
