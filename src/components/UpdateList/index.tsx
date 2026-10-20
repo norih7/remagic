@@ -6,6 +6,15 @@ const update = [
     date: "2026/10/20",
     update: (
       <>
+        <Link href="/subevents/secret-base">インフェリアの隠しアジト</Link>
+        を更新。リマスター版の画像を増やしました。
+      </>
+    ),
+  },
+  {
+    date: "2026/10/20",
+    update: (
+      <>
         <Link href="/deeps/lap">周回プレイ（リマスター版）</Link>
         を公開しました。
       </>

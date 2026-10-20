@@ -49,6 +49,7 @@ export default async function HomePage() {
               遠征の橋でインフェリア帰還後から
             </RoundedInlineList>
           </div>
+          <ResponsiveImage src="/subevents/secret-base-digest.jpg" />
           <div className="mb-4">
             <p>
               インフェリアのアイフリードのアジトは探索任意のサブイベントですがレアアイテムを入手できるため、ぜひ訪れてみてください。リッドの武器「にんとうちざくら」や、HP自動回復の特殊効果のある「ホーリィクローク」などの強力な装備品を入手でき、特にインフェリア帰還した直後のタイミングがおすすめです。
@@ -70,7 +71,8 @@ export default async function HomePage() {
             <h3>インフェリア アジト1</h3>
             <ResponsiveImage src="/subevents/secret-base-1.jpg" />
             <RoundedItem title="場所" className="mb-3">
-              <p>GPS (76, 123)</p>
+              GPS (76, 123) <br />
+              ミンツから少し北東方向にある海底
             </RoundedItem>
             <LocationItems data={itemsData} locationIds={[53]} />
           </RoundedContainer>
@@ -78,7 +80,9 @@ export default async function HomePage() {
             <h3>インフェリア アジト2</h3>
             <ResponsiveImage src="/subevents/secret-base-2.jpg" />
             <RoundedItem title="場所" className="mb-3">
-              <p>GPS (119, 122)</p>
+              GPS (119, 122)
+              <br />
+              ファロース教会から少し南東方向にある海底
             </RoundedItem>
             <LocationItems data={itemsData} locationIds={[54]} />
           </RoundedContainer>
@@ -87,6 +91,8 @@ export default async function HomePage() {
             <ResponsiveImage src="/subevents/secret-base-3.jpg" />
             <RoundedItem title="場所" className="mb-3">
               GPS (141, 1)
+              <br />
+              モルルから南東方向にある海底
             </RoundedItem>
             <LocationItems data={itemsData} locationIds={[55]} />
           </RoundedContainer>
@@ -95,6 +101,8 @@ export default async function HomePage() {
             <ResponsiveImage src="/subevents/secret-base-4.jpg" />
             <RoundedItem title="場所" className="mb-3">
               GPS (226, 130)
+              <br />
+              王都インフェリアから南東方向にある海底
             </RoundedItem>
             <LocationItems data={itemsData} locationIds={[56]} />
           </RoundedContainer>
