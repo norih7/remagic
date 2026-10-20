@@ -121,6 +121,16 @@
   },
   {
     "id": 13,
+    "subEventId": 18,
+    "subEventName": "闘技場",
+    "subEventPath": "/subevents/coliseum",
+    "itemId": 340,
+    "itemName": "クレスのバンダナ",
+    "itemType": "circlet",
+    "remarks": ""
+  },
+  {
+    "id": 14,
     "subEventId": 19,
     "subEventName": "セレスティア7大秘宝",
     "subEventPath": "/subevents/treasure",
@@ -130,7 +140,27 @@
     "remarks": ""
   },
   {
-    "id": 14,
+    "id": "",
+    "subEventId": 19,
+    "subEventName": "セレスティア7大秘宝",
+    "subEventPath": "/subevents/treasure",
+    "itemId": 284,
+    "itemName": "コルレーンのつぼ",
+    "itemType": "otherItem",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "subEventId": 19,
+    "subEventName": "セレスティア7大秘宝",
+    "subEventPath": "/subevents/treasure",
+    "itemId": 286,
+    "itemName": "ブッシュベイビー",
+    "itemType": "otherItem",
+    "remarks": ""
+  },
+  {
+    "id": 15,
     "subEventId": 20,
     "subEventName": "フォッグの武器開発",
     "subEventPath": "/subevents/fog-gun",
@@ -140,7 +170,7 @@
     "remarks": ""
   },
   {
-    "id": 15,
+    "id": 16,
     "subEventId": 20,
     "subEventName": "フォッグの武器開発",
     "subEventPath": "/subevents/fog-gun",
@@ -150,7 +180,7 @@
     "remarks": ""
   },
   {
-    "id": 16,
+    "id": 17,
     "subEventId": 20,
     "subEventName": "フォッグの武器開発",
     "subEventPath": "/subevents/fog-gun",
@@ -160,7 +190,7 @@
     "remarks": ""
   },
   {
-    "id": 17,
+    "id": 18,
     "subEventId": 20,
     "subEventName": "フォッグの武器開発",
     "subEventPath": "/subevents/fog-gun",
@@ -170,7 +200,7 @@
     "remarks": ""
   },
   {
-    "id": 18,
+    "id": 19,
     "subEventId": 20,
     "subEventName": "フォッグの武器開発",
     "subEventPath": "/subevents/fog-gun",
@@ -180,7 +210,7 @@
     "remarks": ""
   },
   {
-    "id": 19,
+    "id": 20,
     "subEventId": 20,
     "subEventName": "フォッグの武器開発",
     "subEventPath": "/subevents/fog-gun",
@@ -190,14 +220,124 @@
     "remarks": ""
   },
   {
-    "id": "",
-    "subEventId": "",
-    "subEventName": "",
-    "subEventPath": "",
-    "itemId": "",
-    "itemName": "",
-    "itemType": "",
+    "id": 21,
+    "subEventId": 13,
+    "subEventName": "ジイニ",
+    "subEventPath": "/extras/jiini",
+    "itemId": 233,
+    "itemName": "リフレックス",
+    "itemType": "armor",
+    "remarks": "オークションで購入"
+  },
+  {
+    "id": 22,
+    "subEventId": 13,
+    "subEventName": "ジイニ",
+    "subEventPath": "/extras/jiini",
+    "itemId": 234,
+    "itemName": "レアヘルム",
+    "itemType": "helmet",
+    "remarks": "オークションで購入"
+  },
+  {
+    "id": 23,
+    "subEventId": 13,
+    "subEventName": "ジイニ",
+    "subEventPath": "/extras/jiini",
+    "itemId": 299,
+    "itemName": "マジカルリボン",
+    "itemType": "ribbon",
+    "remarks": "オークションで購入"
+  },
+  {
+    "id": 24,
+    "subEventId": 13,
+    "subEventName": "ジイニ",
+    "subEventPath": "/extras/jiini",
+    "itemId": 225,
+    "itemName": "エンジェルブレス",
+    "itemType": "bracelet",
+    "remarks": "オークションで購入"
+  },
+  {
+    "id": 25,
+    "subEventId": 13,
+    "subEventName": "ジイニ",
+    "subEventPath": "/extras/jiini",
+    "itemId": 227,
+    "itemName": "クリスダガー",
+    "itemType": "shortSword",
+    "remarks": "オークションで購入"
+  },
+  {
+    "id": 26,
+    "subEventId": 13,
+    "subEventName": "ジイニ",
+    "subEventPath": "/extras/jiini",
+    "itemId": 231,
+    "itemName": "ハヌマンシャフト",
+    "itemType": "greatSword",
+    "remarks": "オークションで購入"
+  },
+  {
+    "id": 27,
+    "subEventId": 13,
+    "subEventName": "ジイニ",
+    "subEventPath": "/extras/jiini",
+    "itemId": 232,
+    "itemName": "ミョルニル",
+    "itemType": "halbert",
+    "remarks": "オークションで購入"
+  },
+  {
+    "id": 28,
+    "subEventId": 13,
+    "subEventName": "ジイニ",
+    "subEventPath": "/extras/jiini",
+    "itemId": 235,
+    "itemName": "レジュームリング",
+    "itemType": "accessory",
+    "remarks": "オークションで購入"
+  },
+  {
+    "id": 29,
+    "subEventId": 21,
+    "subEventName": "シャンバール",
+    "subEventPath": "/subevents/syanballoon",
+    "itemId": 356,
+    "itemName": "ステップリング",
+    "itemType": "accessory",
     "remarks": ""
+  },
+  {
+    "id": 30,
+    "subEventId": 21,
+    "subEventName": "シャンバール",
+    "subEventPath": "/subevents/syanballoon",
+    "itemId": 281,
+    "itemName": "うちわ",
+    "itemType": "otherItem",
+    "remarks": ""
+  },
+  {
+    "id": 31,
+    "subEventId": 4,
+    "subEventName": "画家リシテア",
+    "subEventPath": "/subevents/lysithea",
+    "itemId": 342,
+    "itemName": "キャンセラー",
+    "itemType": "accessory",
+    "remarks": ""
+  },
+  {
+    "id": 32,
+    "subEventId": 16,
+    "subEventName": "隠し大晶霊",
+    "subEventPath": "/subevents/secret-spirits",
+    "itemId": 353,
+    "itemName": "デリスエンブレム",
+    "itemType": "accessory",
+    "remarks": "ゼクンドゥス撃破報酬"
   },
   {
     "id": "",

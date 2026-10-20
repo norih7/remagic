@@ -98,5 +98,10 @@
     "id": 20,
     "name": "フォッグの武器開発",
     "path": "/subevents/fog-gun"
+  },
+  {
+    "id": 21,
+    "name": "シャンバール",
+    "path": "/subevents/syanballoon"
   }
 ]
