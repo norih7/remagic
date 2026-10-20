@@ -83,5 +83,20 @@
     "id": 17,
     "name": "グリップソード探し",
     "path": "/subevents/grip-sword"
+  },
+  {
+    "id": 18,
+    "name": "闘技場",
+    "path": "/subevents/coliseum"
+  },
+  {
+    "id": 19,
+    "name": "セレスティア7大秘宝",
+    "path": "/subevents/treasure"
+  },
+  {
+    "id": 20,
+    "name": "フォッグの武器開発",
+    "path": "/subevents/fog-gun"
   }
 ]

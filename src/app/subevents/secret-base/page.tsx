@@ -13,6 +13,7 @@ import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -34,13 +35,13 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <PageSummary>
-          インフェリアにあるアイフリードの隠しアジトを紹介します。
+          インフェリアにあるアイフリードの隠しアジトの解説。探索だけで貴重なアイテムを入手できるサブイベントです。
         </PageSummary>
         <Section>
-          <SectionTitle>「インフェリアの隠しアジト」の概要</SectionTitle>
+          <Title>「インフェリアの隠しアジト」の概要</Title>
           <div className="mb-2 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              「にんとうちざくら」「ホーリィクローク」「ルーンボトル」など
+              にんとうちざくら、ホーリィクロークなど
             </RoundedInlineList>
             <RoundedInlineList title="場所">
               インフェリアの海底マップ

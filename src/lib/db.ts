@@ -10,6 +10,7 @@ import shopItemsData from "../data/shopItems.json";
 import enemies from "../data/enemies.json";
 import enemyItems from "../data/enemyItems.json";
 import enemyLocations from "../data/enemyLocations.json";
+import subEventItems from "../data/subeventItems.json";
 
 import { elementMap } from "@/constants";
 
@@ -59,6 +60,20 @@ export type LocationItems = {
 export async function getLocationItemsData(): Promise<LocationItems[]> {
   // ここで compiledData を一度 unknown にしてから、Item[] にキャストします
   return locationItemsData as unknown as LocationItems[];
+}
+
+export type SubEventItems = {
+  subEventId: number;
+  subEventName: string;
+  subEventPath: string;
+  itemId: number;
+  itemName: string;
+  itemType: string;
+  remarks: string;
+};
+export async function getSubEventItemsData(): Promise<SubEventItems[]> {
+  // ここで compiledData を一度 unknown にしてから、Item[] にキャストします
+  return subEventItems as unknown as SubEventItems[];
 }
 
 export type LocationRecipes = {

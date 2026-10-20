@@ -6,6 +6,7 @@ import {
   getShopItemsData,
   getLocationItemsData,
   getEnemyItemsData,
+  getSubEventItemsData,
 } from "@/lib/db";
 import SectionTitle from "@/components/SectionTitle";
 import {
@@ -13,7 +14,7 @@ import {
   LuShoppingBag,
   LuGem,
   LuShieldHalf,
-  LuMapPin,
+  LuZap,
 } from "react-icons/lu";
 import { TbMoneybag } from "react-icons/tb";
 import { Metadata } from "next";
@@ -21,6 +22,8 @@ import { itemTypeMap } from "@/constants";
 import RoundedContainer from "@/components/RoundedContainer";
 import Main from "@/components/SiteLayout/Main";
 import Link from "next/link";
+import RoundedItem from "@/components/RoundedItem";
+import LinkItem from "@/components/LinkItem";
 
 // 静的生成（SSG）用：全アイテムのIDをURLとして登録する
 export async function generateStaticParams() {
@@ -60,6 +63,7 @@ export default async function ItemDetailPage({
   const shopItems = await getShopItemsData();
   const locationItems = await getLocationItemsData();
   const enemyItems = await getEnemyItemsData();
+  const subEventItems = await getSubEventItemsData();
 
   // 2. slug (ID) に一致するアイテムを探す
   const item = allItems.find((item) => item.id === itemId);
@@ -112,16 +116,12 @@ export default async function ItemDetailPage({
   const dropInfo =
     filterEnemyItemDrop.length > 0
       ? filterEnemyItemDrop.map((item, index) => (
-          <li key={index} className={style}>
-            <Link href={`/systems/enemy/${item.enemyId}`}>
-              <div className="flex items-center font-bold">
-                {item.enemyName}
-              </div>
-              <span className="text-xs  text-gray-700">
-                確率: {item.probability}%
-              </span>
-            </Link>
-          </li>
+          <LinkItem
+            name={item.enemyName}
+            href={`/systems/enemy/${item.enemyId}`}
+            remarks={`確率: ${item.probability}%`}
+            key={index}
+          />
         ))
       : "なし";
 
@@ -132,16 +132,27 @@ export default async function ItemDetailPage({
   const stealInfo =
     filterEnemyItemSteal.length > 0
       ? filterEnemyItemSteal.map((item, index) => (
-          <li key={index} className={style}>
-            <Link href={`/systems/enemy/${item.enemyId}`}>
-              <div className="flex items-center font-bold">
-                {item.enemyName}
-              </div>
-              <span className="text-xs text-gray-700 ">
-                確率: {item.probability}%
-              </span>
-            </Link>
-          </li>
+          <LinkItem
+            name={item.enemyName}
+            href={`/systems/enemy/${item.enemyId}`}
+            remarks={`確率: ${item.probability}%`}
+            key={index}
+          />
+        ))
+      : "なし";
+
+  const filterSubEventItem = subEventItems.filter(
+    (item) => item.itemId === itemId,
+  );
+  const subEventInfo =
+    filterSubEventItem.length > 0
+      ? filterSubEventItem.map((item, index) => (
+          <LinkItem
+            name={item.subEventName}
+            href={item.subEventPath}
+            remarks={item.remarks}
+            key={index}
+          />
         ))
       : "なし";
 
@@ -158,27 +169,16 @@ export default async function ItemDetailPage({
       <article>
         <SectionTitle>{item.name}</SectionTitle>
         <RoundedContainer>
-          <div className={`${style} mb-2`}>
-            <div className={itemDescStyle}>効果</div>
+          <RoundedItem title="効果" className="mb-3">
             {item.effect}
-          </div>
-          <div className="mb-8 grid grid-cols-2 gap-2">
-            <div className={style}>
-              <div className={itemDescStyle}>種別</div>
+          </RoundedItem>
+          <div className="grid grid-cols-2 gap-3">
+            <RoundedItem title="種別">
               {itemTypeMap[item.type as keyof typeof itemTypeMap]}
-            </div>
-            <div className={style}>
-              <div className={itemDescStyle}>購入</div>
-              {price}
-            </div>
-            <div className={style}>
-              <div className={itemDescStyle}>売却</div>
-              {item.sell} ガルド
-            </div>
-            <div className={style}>
-              <div className={itemDescStyle}>特殊効果</div>
-              {Supcial}
-            </div>
+            </RoundedItem>
+            <RoundedItem title="購入">{price}</RoundedItem>
+            <RoundedItem title="売却">{item.sell} ガルド</RoundedItem>
+            <RoundedItem title="特殊効果">{Supcial}</RoundedItem>
           </div>
         </RoundedContainer>
         <RoundedContainer>
@@ -211,6 +211,14 @@ export default async function ItemDetailPage({
             盗めるモンスター
           </h3>
           <ul className="grid grid-cols-2 gap-3">{stealInfo}</ul>
+        </RoundedContainer>
+
+        <RoundedContainer>
+          <h3 className={headerStyle}>
+            <LuZap className="mr-1" />
+            サブイベント
+          </h3>
+          <ul className="grid grid-cols-2 gap-3">{subEventInfo}</ul>
         </RoundedContainer>
       </article>
     </Main>

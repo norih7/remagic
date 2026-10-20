@@ -11,6 +11,7 @@ import CardList from "@/components/CardLIst";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
 import Main from "@/components/SiteLayout/Main";
+import LinkItem from "@/components/LinkItem";
 
 export const dynamic = "force-static";
 
@@ -92,94 +93,54 @@ export default async function HomePage() {
           <div className="mb-8">
             <h3>制限アイテムを引き継いで複数持つ</h3>
             <RoundedContainer className="grid grid-cols-2 gap-3">
-              <RoundedItem title="フェアリィリング">
-                <p>1周で2個 | 消費TPを1/2</p>
-                <GuideList
-                  items={[
-                    {
-                      title: "フェアリィリングの入手方法",
-                      href: "/systems/item/297",
-                    },
-                  ]}
-                />
-              </RoundedItem>
-              <RoundedItem title="ミスティシンボル">
-                <p>1周で2個 | 詠唱時間を1/2</p>
-                <GuideList
-                  items={[
-                    {
-                      title: "ミスティシンボルの入手方法",
-                      href: "/systems/item/119",
-                    },
-                  ]}
-                />
-              </RoundedItem>
-              <RoundedItem title="デモンズシール">
-                <p>1周で1個 | 経験値2倍</p>
-                <GuideList
-                  items={[
-                    {
-                      title: "デモンズシールの入手方法",
-                      href: "/systems/item/123",
-                    },
-                  ]}
-                />
-              </RoundedItem>
-              <RoundedItem title="クローナシンボル">
-                <p>1周で1個 | デモンズシールのデメリットを消去</p>
-                <GuideList
-                  items={[
-                    {
-                      title: "クローナシンボルの入手方法",
-                      href: "/systems/item/352",
-                    },
-                  ]}
-                />
-              </RoundedItem>
-              <RoundedItem title="ムーンローブ">
-                <p>1周で1個 | 特殊効果で消費TP2/3になる防具</p>
-                <GuideList
-                  items={[
-                    {
-                      title: "ムーンローブの入手方法",
-                      href: "/systems/item/264",
-                    },
-                  ]}
-                />
-              </RoundedItem>
-              <RoundedItem title="ペルシャブーツ">
-                <p>1周で1個 | 全ダメージ30%軽減</p>
-                <GuideList
-                  items={[
-                    {
-                      title: "ペルシャブーツの入手方法",
-                      href: "/systems/item/349",
-                    },
-                  ]}
-                />
-              </RoundedItem>
-              <RoundedItem title="ホーリィクローク">
-                <p>1周で1個 | HPが自動回復する女性用防具</p>
-                <GuideList
-                  items={[
-                    {
-                      title: "ホーリィクロークの入手方法",
-                      href: "/systems/item/240",
-                    },
-                  ]}
-                />
-              </RoundedItem>
-              <RoundedItem title="キューティミトン">
-                <p>1周で1個 | HPが自動回復する女性用防具</p>
-                <GuideList
-                  items={[
-                    {
-                      title: "キューティミトンの入手方法",
-                      href: "/systems/item/253",
-                    },
-                  ]}
-                />
-              </RoundedItem>
+              <LinkItem
+                name="フェアリィリング"
+                href="/systems/item/297"
+                remarks="1周で2個 | 消費TPを1/2"
+                key={1}
+              />
+              <LinkItem
+                name="ミスティシンボル"
+                href="/systems/item/119"
+                remarks="1周で2個 | 詠唱時間を1/2"
+                key={2}
+              />
+              <LinkItem
+                name="デモンズシール"
+                href="/systems/item/123"
+                remarks="1周で1個 | 経験値2倍"
+                key={3}
+              />
+              <LinkItem
+                name="クローナシンボル"
+                href="/systems/item/352"
+                remarks="1周で1個 | デモンズシールのデメリットを消去"
+                key={4}
+              />
+              <LinkItem
+                name="ムーンローブ"
+                href="/systems/item/264"
+                remarks="1周で1個 | 特殊効果で消費TP2/3になる防具"
+                key={5}
+              />
+              <LinkItem
+                name="ペルシャブーツ"
+                href="/systems/item/349"
+                remarks="1周で1個 | 全ダメージ30%軽減"
+                key={6}
+              />
+              <LinkItem
+                name="ホーリィクローク"
+                href="/systems/item/240"
+                remarks="1周で1個 | HPが自動回復する女性用防具"
+                key={7}
+              />
+              <LinkItem
+                name="キューティミトン"
+                href="/systems/item/253"
+                remarks="1周で1個 | HPが自動回復する女性用防具"
+                key={8}
+              />
             </RoundedContainer>
             <Information type="warning" title="1周目での確保が必要">
               引き継ぎなので1周目でこれらのアイテムを所持している必要があります。アイテムを獲得しているか確認してからクリアしましょう。

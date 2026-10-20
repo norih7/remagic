@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "subEventId": 5,
+    "subEventName": "レンズ交換",
+    "subEventPath": "/subevents/lens",
+    "itemId": 352,
+    "itemName": "クローナシンボル",
+    "itemType": "accessory",
+    "remarks": "レンズ50枚で入手"
+  },
+  {
+    "id": 2,
+    "subEventId": 5,
+    "subEventName": "レンズ交換",
+    "subEventPath": "/subevents/lens",
+    "itemId": 343,
+    "itemName": "コンボコマンド",
+    "itemType": "accessory",
+    "remarks": "レンズ10枚で入手"
+  },
+  {
+    "id": 3,
+    "subEventId": 5,
+    "subEventName": "レンズ交換",
+    "subEventPath": "/subevents/lens",
+    "itemId": 320,
+    "itemName": "インフェリマント",
+    "itemType": "accessory",
+    "remarks": "レンズ20枚で入手"
+  },
+  {
+    "id": 4,
+    "subEventId": 5,
+    "subEventName": "レンズ交換",
+    "subEventPath": "/subevents/lens",
+    "itemId": 321,
+    "itemName": "セレスティマント",
+    "itemType": "accessory",
+    "remarks": "レンズ30枚で入手"
+  },
+  {
+    "id": 5,
+    "subEventId": 5,
+    "subEventName": "レンズ交換",
+    "subEventPath": "/subevents/lens",
+    "itemId": 351,
+    "itemName": "イクストリーム",
+    "itemType": "accessory",
+    "remarks": "レンズ40枚で入手"
+  },
+  {
+    "id": 6,
+    "subEventId": 2,
+    "subEventName": "テイルズクイズ",
+    "subEventPath": "/subevents/quiz",
+    "itemId": 343,
+    "itemName": "コンボコマンド",
+    "itemType": "accessory",
+    "remarks": "上級クリアで入手"
+  },
+  {
+    "id": 7,
+    "subEventId": 17,
+    "subEventName": "グリップソード探し",
+    "subEventPath": "/subevents/grip-sword",
+    "itemId": 355,
+    "itemName": "スマッシュマント",
+    "itemType": "accessory",
+    "remarks": ""
+  },
+  {
+    "id": 8,
+    "subEventId": 6,
+    "subEventName": "ベッポのかくれんぼ",
+    "subEventPath": "/subevents/beppo",
+    "itemId": 43,
+    "itemName": "ルーンボトル",
+    "itemType": "useItem",
+    "remarks": ""
+  },
+  {
+    "id": 9,
+    "subEventId": 6,
+    "subEventName": "ベッポのかくれんぼ",
+    "subEventPath": "/subevents/beppo",
+    "itemId": 285,
+    "itemName": "ドエニスのポプリ",
+    "itemType": "otherItem",
+    "remarks": ""
+  },
+  {
+    "id": 10,
+    "subEventId": 14,
+    "subEventName": "ラストフェンサー",
+    "subEventPath": "/subevents/last-fencer",
+    "itemId": 305,
+    "itemName": "ラストフェンサー",
+    "itemType": "sword",
+    "remarks": ""
+  },
+  {
+    "id": 11,
+    "subEventId": 18,
+    "subEventName": "闘技場",
+    "subEventPath": "/subevents/coliseum",
+    "itemId": 306,
+    "itemName": "エターナルソード",
+    "itemType": "sword",
+    "remarks": ""
+  },
+  {
+    "id": 12,
+    "subEventId": 18,
+    "subEventName": "闘技場",
+    "subEventPath": "/subevents/coliseum",
+    "itemId": 338,
+    "itemName": "アーチェのリボン",
+    "itemType": "ribbon",
+    "remarks": ""
+  },
+  {
+    "id": 13,
+    "subEventId": 19,
+    "subEventName": "セレスティア7大秘宝",
+    "subEventPath": "/subevents/treasure",
+    "itemId": 314,
+    "itemName": "デッキブラシ",
+    "itemType": "halbert",
+    "remarks": ""
+  },
+  {
+    "id": 14,
+    "subEventId": 20,
+    "subEventName": "フォッグの武器開発",
+    "subEventPath": "/subevents/fog-gun",
+    "itemId": 325,
+    "itemName": "アサルトショット",
+    "itemType": "gun",
+    "remarks": ""
+  },
+  {
+    "id": 15,
+    "subEventId": 20,
+    "subEventName": "フォッグの武器開発",
+    "subEventPath": "/subevents/fog-gun",
+    "itemId": 326,
+    "itemName": "プラズマカノン",
+    "itemType": "gun",
+    "remarks": ""
+  },
+  {
+    "id": 16,
+    "subEventId": 20,
+    "subEventName": "フォッグの武器開発",
+    "subEventPath": "/subevents/fog-gun",
+    "itemId": 327,
+    "itemName": "グランマグナム",
+    "itemType": "gun",
+    "remarks": ""
+  },
+  {
+    "id": 17,
+    "subEventId": 20,
+    "subEventName": "フォッグの武器開発",
+    "subEventPath": "/subevents/fog-gun",
+    "itemId": 328,
+    "itemName": "インパルスカノン",
+    "itemType": "gun",
+    "remarks": ""
+  },
+  {
+    "id": 18,
+    "subEventId": 20,
+    "subEventName": "フォッグの武器開発",
+    "subEventPath": "/subevents/fog-gun",
+    "itemId": 329,
+    "itemName": "フォトンイレイズ",
+    "itemType": "gun",
+    "remarks": ""
+  },
+  {
+    "id": 19,
+    "subEventId": 20,
+    "subEventName": "フォッグの武器開発",
+    "subEventPath": "/subevents/fog-gun",
+    "itemId": 330,
+    "itemName": "メガグランチャー",
+    "itemType": "gun",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "subEventId": "",
+    "subEventName": "",
+    "subEventPath": "",
+    "itemId": "",
+    "itemName": "",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "subEventId": "",
+    "subEventName": "",
+    "subEventPath": "",
+    "itemId": "",
+    "itemName": "",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "subEventId": "",
+    "subEventName": "",
+    "subEventPath": "",
+    "itemId": "",
+    "itemName": "",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "subEventId": "",
+    "subEventName": "",
+    "subEventPath": "",
+    "itemId": "",
+    "itemName": "",
+    "itemType": "",
+    "remarks": ""
+  },
+  {
+    "id": "",
+    "subEventId": "",
+    "subEventName": "",
+    "subEventPath": "",
+    "itemId": "",
+    "itemName": "",
+    "itemType": "",
+    "remarks": ""
+  }
+]
