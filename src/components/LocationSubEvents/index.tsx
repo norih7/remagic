@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import { LuScroll } from "react-icons/lu";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 import SkillIcon from "@/components/Icons/SkillIcon";
+import LinkItem from "@/components/LinkItem";
 
 type Subevent = {
   locationId: number;
@@ -20,34 +21,47 @@ type Props = {
 export default function ChartList(props: Props) {
   const { data, locationIds } = props;
   const result = data.filter((item) => locationIds.includes(item.locationId));
+  // const List = result.map((item, index) => {
+  //   const icon =
+  //     item.type === "time-limit" ? (
+  //       <TimeLimitIcon />
+  //     ) : item.type === "skill" ? (
+  //       <SkillIcon />
+  //     ) : null;
+  //   return item.eventPath === "" ? (
+  //     <li
+  //       key={index}
+  //       className="bg-slate-50 border border-sky-200 rounded-md px-3 py-2 text-gray-500"
+  //     >
+  //       <div className="font-bold">
+  //         {icon}
+  //         {item.eventName}
+  //       </div>
+  //       <span>{item.remarks}</span>
+  //     </li>
+  //   ) : (
+  //     <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
+  //       <a href={item.eventPath} className="block px-3 py-2">
+  //         <div className="font-bold">
+  //           {icon}
+  //           {item.eventName}
+  //         </div>
+  //         <span>{item.remarks}</span>
+  //       </a>
+  //     </li>
+  //   );
+  // });
   const List = result.map((item, index) => {
-    const icon =
-      item.type === "time-limit" ? (
-        <TimeLimitIcon />
-      ) : item.type === "skill" ? (
-        <SkillIcon />
-      ) : null;
-    return item.eventPath === "" ? (
-      <li
+    const { eventPath, eventName, remarks, type } = item;
+    const href = eventPath ? eventPath : undefined;
+    return (
+      <LinkItem
+        name={eventName}
+        href={href}
+        remarks={remarks}
+        type={type}
         key={index}
-        className="bg-slate-50 border border-sky-200 rounded-md px-3 py-2 text-gray-500"
-      >
-        <div className="font-bold">
-          {icon}
-          {item.eventName}
-        </div>
-        <span>{item.remarks}</span>
-      </li>
-    ) : (
-      <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
-        <a href={item.eventPath} className="block px-3 py-2">
-          <div className="font-bold">
-            {icon}
-            {item.eventName}
-          </div>
-          <span>{item.remarks}</span>
-        </a>
-      </li>
+      />
     );
   });
   const Display =

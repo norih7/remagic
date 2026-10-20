@@ -2,6 +2,7 @@
 import styles from "./styles.module.css";
 import { LuChefHat } from "react-icons/lu";
 import type { LocationRecipes } from "@/lib/db";
+import LinkItem from "@/components/LinkItem";
 
 type Props = {
   data: LocationRecipes[];
@@ -11,17 +12,13 @@ type Props = {
 export default function LocationRecipes(props: Props) {
   const { data, locationIds } = props;
   const result = data.filter((item) => locationIds.includes(item.locationId));
-  const List = result.map((item, index) => (
-    <li key={index} className="bg-slate-50 border border-sky-200 rounded-md">
-      <a
-        href={`/systems/recipe/?id=${item.recipeId}`}
-        className="block px-3 py-2"
-      >
-        <div className="font-bold">{item.recipeName}</div>
-        <span>{item.remarks}</span>
-      </a>
-    </li>
-  ));
+  const List = result.map((item, index) => {
+    const { recipeId, recipeName, remarks } = item;
+    const href = `/systems/recipe/?id=${recipeId}`;
+    return (
+      <LinkItem name={recipeName} href={href} remarks={remarks} key={index} />
+    );
+  });
   const Display =
     result.length === 0 ? (
       <p className="pt-2">なし</p>

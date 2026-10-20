@@ -2,6 +2,7 @@
 import styles from "./styles.module.css";
 import { LuCircle } from "react-icons/lu";
 import Link from "next/link";
+import LinkItem from "../LinkItem";
 
 type Lenses = {
   locationId: number;
@@ -16,20 +17,12 @@ type Props = {
 export default function LocationLenses(props: Props) {
   const { data, locationIds } = props;
   const result = data.filter((item) => locationIds.includes(item.locationId));
-  const List = result.map((recipe, index) => (
-    <li
-      key={index}
-      className="bg-gray-50 border border-gray-200 rounded-lg py-2 px-3 transition-colors text-sm"
-    >
-      <Link
-        href={`/subevents/lens?id=${recipe.lensId}#detail`}
-        className="block"
-      >
-        <div className="font-bold">{index + 1}つ目</div>
-        <span>{recipe.remarks}</span>
-      </Link>
-    </li>
-  ));
+  const List = result.map((lens, index) => {
+    const { remarks } = lens;
+    const name = `${index + 1}つ目`;
+    const href = `/subevents/lens?id=${lens.lensId}#detail`;
+    return <LinkItem name={name} href={href} remarks={remarks} key={index} />;
+  });
   const Display = List.length === 0 ? <p>なし</p> : List;
   return (
     <div

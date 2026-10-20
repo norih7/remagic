@@ -511,7 +511,7 @@ export const deepLinks: Record<string, PageLink> = {
     updatedAt: "2026-10-05",
   },
   "level-up": {
-    title: "レベル上げ（追記中）",
+    title: "レベル上げ",
     path: "/deeps/level-up",
     image: "/link-headers/level-up.jpg",
     desc: "効率の良いレベル上げ方法を解説。風刃縛封の無限コンボ、下級晶霊術連発、オート戦闘などを解説しています。",

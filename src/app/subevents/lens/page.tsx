@@ -73,7 +73,7 @@ export default async function HomePage() {
             <p>
               インフェリマント、セレスティマント、クローナシンボルが目玉アイテム。マントはデメリットはあるものの、常に装備するのではなく「ボス戦で属性対策をする」という使い方をすれば非常に強力です。クローナシンボルはすべての異常状態を防ぐ最強クラスの装備品。
             </p>
-            <RoundedContainer className="pt-3 grid grid-cols-1 gap-3">
+            <RoundedContainer className="pt-3 grid grid-cols-2 gap-3">
               <RoundedItem title="10枚: コンボコマンド">
                 装備品:戦闘中にコマンド入力ですべての術技を出せる
               </RoundedItem>
