@@ -9,6 +9,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import TableOfContents from "@/components/TableOfContents";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,12 +37,12 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <TableOfContents />
+          <Title>エターニアの取り逃し要素</Title>
+          取り逃がし要素には称号や特殊アイテムの入手があります。取り逃がしがあっても称号やアイテム図鑑のコンプリートができないという程度で致命的ではありません。称号やアイテムの収集を楽しみたい方は、このページの情報を参考にしてください。
         </Section>
 
         <Section>
-          <SectionTitle>エターニアの取り逃し要素</SectionTitle>
-          取り逃がし要素には称号や特殊アイテムの入手があります。取り逃がしがあっても称号やアイテム図鑑のコンプリートができないという程度で致命的ではありません。称号やアイテムの収集を楽しみたい方は、このページの情報を参考にしてください。
+          <TableOfContents />
         </Section>
 
         <Section>
@@ -51,13 +52,8 @@ export default async function HomePage() {
             alt="無くなる可能性があるジイニのオークション会場にあるレンズ"
           />
           <Information type="warning" title="リマスター版では発生しない">
-            <p>
-              <s>
-                （2026/10/18）リマスター版でもレンズか闘技場のもっとお薬セットのどちらか1つしか獲得できない仕様となっていました
-              </s>
-            </p>
             <strong>
-              （2026/10/19）この事象はPS版、PSP版で確認していますがデメリットとなる仕様なのでリマスター版では修正されています。リマスター版では王国一決定戦の薬草報酬が丸ごと削除されています。
+              （2026/10/19）リマスター版ではこの事象は修正されています。ただし王国一決定戦の薬草報酬が丸ごと削除されています。
             </strong>
           </Information>
           <div className="mb-8">
@@ -66,7 +62,7 @@ export default async function HomePage() {
             </p>
           </div>
           <div className="mb-8">
-            <h3>ジイニのレンズ消失</h3>
+            <h3>攻略順に注意</h3>
             <p>
               王都インフェリアの闘技場で「王国一決定戦」に優勝すると、ジイニのカジノにあるレンズを入手できなくなります（調べても入手できなくなる）。闘技場に挑戦する前に、ジイニへ立ち寄ってレンズを回収しておきましょう。
             </p>
@@ -75,7 +71,9 @@ export default async function HomePage() {
               title="ジイニのレンズを先に入手する場合"
             >
               <p>
-                <strong>以下はリマスター版対象外です</strong>
+                <strong>
+                  リマスター版は順番に関係なく王国一決定戦の薬草が入手できなくなっています。
+                </strong>
               </p>
               逆に先にジイニのカジノでレンズを入手すると王国一決定戦の初回報酬（レッドセージ、レッドセボリー）が入手できなくなります。もしもレンズ60枚全て集めた場合のリッドの称号に興味がなく、薬草を優先したい場合はジイニのカジノでレンズを入手せずに闘技場に挑戦するのも選択肢です。
             </Information>
@@ -156,6 +154,42 @@ export default async function HomePage() {
           <div className="mb-8">
             <h3>見逃しやすい敵</h3>
             <RoundedContainer
+              title="ジャングラー"
+              className="pt-3 grid grid-cols-1 gap-3"
+            >
+              <RoundedItem title="概要">
+                いざないの密林に登場するゾンビシンボルの「ジャングラー」は5回しか戦えません。図鑑コンプリートするためには5回の中で、すべてのアイテムをドロップさせる必要があります。
+              </RoundedItem>
+              <RoundedItem title="準備や攻略ポイント">
+                <p>
+                  戦闘開始前にセーブしておきましょう。オレンジグミとライフボトルの2つを20%で落とすので最後の1体では落とさなかったらロードして地道に頑張りましょう。
+                </p>
+                <GuideList
+                  items={[
+                    { title: "ジャングラー", href: "/systems/enemy/247" },
+                  ]}
+                />
+              </RoundedItem>
+            </RoundedContainer>
+            <RoundedContainer
+              title="シルエシカへい"
+              className="pt-3 grid grid-cols-1 gap-3"
+            >
+              <RoundedItem title="概要">
+                ティンシアのアジトへ到着後にイベントで戦闘となる敵です。8体登場しますが1戦限りなので図鑑コンプリートのためには準備が必要です。
+              </RoundedItem>
+              <RoundedItem title="準備や攻略ポイント">
+                <p>
+                  アジト行く前にセーブしておきましょう。アイテムも盗めるためチャットをパーティに入れておく必要があります。チャットは自動的に仲間になってくれずバンエルティア号の船内で話かけなけれいけないので要注意。アイテムは30%のアップルグミ、40%のパンヤめんのドロップを狙います。スマッシュマントを付けることを推奨します。2つのアイテムを同時に落とさない場合はロードして再挑戦しましょう。
+                </p>
+                <GuideList
+                  items={[
+                    { title: "ジャングラー", href: "/systems/enemy/247" },
+                  ]}
+                />
+              </RoundedItem>
+            </RoundedContainer>
+            <RoundedContainer
               title="セイレーン"
               className="pt-3 grid grid-cols-1 gap-3"
             >
@@ -164,7 +198,7 @@ export default async function HomePage() {
               </RoundedItem>
               <RoundedItem title="準備や攻略ポイント">
                 <p>
-                  セイレーンに勝利すると戦闘へ戻れないため、戦闘開始前にセーブしておくのがおすすめです。チャットをパーティに入れ、ローバーアイテムでみずぐもを盗んでから撃破しましょう。盗める確率は100%なのでボスが強い以外は困る点はありません。
+                  セイレーンに勝利すると戦闘へ戻れないため、戦闘開始前にセーブしておきましょう。チャットをパーティに入れ、ローバーアイテムでみずぐもを盗んでから撃破しましょう。盗める確率は100%なのでボスが強い以外は困る点はありません。
                 </p>
                 <GuideList
                   items={[{ title: "沈没船", href: "/extras/sunken-ship" }]}
@@ -179,12 +213,35 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle>時限要素の称号</SectionTitle>
-          <Information type="warning" title="称号のページについて">
-            RE:MAGICでは称号に関するページはリマスター版発売後から作成していきます。発売直後は情報不足でご迷惑をおかけしますがしばらくお待ちください。
-          </Information>
           <div className="mb-8">
             エターニアの称号は時限イベントや特殊なものが多く通常プレイでは見逃してしまいがちです。称号自体には効果はないため通常はスルーしても良いのですが、エターニアをコンプリートしたい方は取り返しがつかない要素となります。
           </div>
+          <h3>時限要素の称号</h3>
+          <RoundedContainer className="grid grid-cols-1 gap-3">
+            <RoundedItem title="ファラの称号「あいのネゴシエーター」">
+              <p>セレスティアへ渡る前に時限イベントをすべて見る必要あり</p>
+              <GuideList
+                items={[
+                  { title: "カトリーヌの恋愛", href: "/subevents/catarine" },
+                ]}
+              />
+            </RoundedItem>
+            <RoundedItem title="リッドの称号「さんじゅつせいねん」 ">
+              <p>セレスティアへ渡る前に算術勝負で1回勝つ必要あり</p>
+              <GuideList
+                items={[{ title: "算術勝負", href: "/subevents/arithmetic" }]}
+              />
+            </RoundedItem>
+            <RoundedItem title="リッドの称号「さいそくのおとこ」">
+              プレイ時間20時間以内にラストダンジョン「シゼル城」へ入る
+            </RoundedItem>
+            <RoundedItem title="ファラの称号「ストーリーテラー」">
+              スキットを200個以上見る
+            </RoundedItem>
+            <RoundedItem title="キールの称号「ぼさぼさあたま」">
+              アイメン到着時、図書館で徹夜した後にキールを操作キャラにして給水タンクのボンズに話かける。リマスター版だとキールを操作キャラにしなくても良くなっています。
+            </RoundedItem>
+          </RoundedContainer>
         </Section>
       </article>
     </Main>
