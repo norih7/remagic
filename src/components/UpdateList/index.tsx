@@ -6,6 +6,15 @@ const update = [
     date: "2026/10/20",
     update: (
       <>
+        <Link href="/deeps/lap">周回プレイ（リマスター版）</Link>
+        を公開しました。
+      </>
+    ),
+  },
+  {
+    date: "2026/10/20",
+    update: (
+      <>
         <Link href="/deeps/level-up">レベル上げ</Link>
         をアップデート。風刃縛封の無限コンボ、アイスニードル連発の説明と動画を公開。
       </>

@@ -510,6 +510,14 @@ export const deepLinks: Record<string, PageLink> = {
     createdAt: "2026-10-05",
     updatedAt: "2026-10-05",
   },
+  lap: {
+    title: "周回プレイ（リマスター版）",
+    path: "/deeps/lap",
+    image: "/link-headers/lap.jpg",
+    desc: "リマスター版クリア後の周回プレイを紹介。引き継ぎによるおすすめのやり込みを紹介。",
+    seoDesc:
+      "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。リマスター版クリア後の周回プレイを紹介。引き継ぎによるおすすめのやり込みを紹介しています。",
+  },
   "level-up": {
     title: "レベル上げ",
     path: "/deeps/level-up",

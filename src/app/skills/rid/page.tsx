@@ -323,7 +323,7 @@ export default async function HomePage() {
             items={[
               {
                 title: "斬レベル・突レベルシステムの詳細解説",
-                href: "/systems/skill",
+                href: "/guides/skill",
               },
             ]}
           ></GuideList>

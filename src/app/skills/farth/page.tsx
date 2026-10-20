@@ -206,7 +206,7 @@ export default async function HomePage() {
             items={[
               {
                 title: "拳レベル・蹴レベルシステムの詳細解説",
-                href: "/systems/skill",
+                href: "/guides/skill",
               },
             ]}
           ></GuideList>

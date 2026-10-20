@@ -220,19 +220,6 @@ export default function Page() {
         </div> */}
         </Section>
 
-        {/* <section className="mb-12">
-        <SectionTitle>個人的に嬉しい要素</SectionTitle>
-      </section> */}
-
-        {/* <section className="mb-12">
-        <div id="retained" className="scroll-mt-6">
-          <SectionTitle type="flag">グラフィック</SectionTitle>
-        </div>
-        <p>
-          グラフィック・効果音の切り替えも用意されているため、遊びやすさと当時の雰囲気を切り替えて楽しめます。
-        </p>
-      </section> */}
-
         <Section>
           <div id="comparison" className="scroll-mt-6">
             <SectionTitle type="flag">ベースとなる移植元はPSP</SectionTitle>
@@ -298,7 +285,7 @@ export default function Page() {
               { title: "ストーリー攻略チャート", href: "/stories" },
               { title: "序盤にやっておきたいこと", href: "/guides/first" },
               { title: "取り逃がし要素", href: "/guides/missable" },
-              { title: "戦闘操作・特殊操作", href: "/systems/buttle" },
+              { title: "戦闘操作・特殊操作", href: "/guides/buttle" },
               { title: "料理一覧", href: "/systems/recipe" },
             ]}
           />

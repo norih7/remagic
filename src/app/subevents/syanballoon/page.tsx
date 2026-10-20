@@ -97,7 +97,7 @@ export default async function HomePage() {
                 items={[
                   {
                     title: "ステップリングや特殊操作の説明",
-                    href: "/systems/buttle",
+                    href: "/guides/buttle",
                   },
                 ]}
               ></GuideList>
