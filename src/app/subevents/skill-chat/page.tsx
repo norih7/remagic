@@ -12,6 +12,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import GuideList from "@/components/GuideList";
 import CardList from "@/components/CardLIst";
 import SkillIcon from "@/components/Icons/SkillIcon";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,10 +37,18 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <PageSummary>
-          <p>
-            チャットがストーリーの裏で習得していく強力な特技の数々と、その習得に必要なサブイベントの発生条件を網羅した解説ページです。後半の難関である「エターナルスロー」習得時に出題される全10問のクイズ正解一覧も掲載しています。
-          </p>
+          <p>チャットの特技習得サブイベントをまとめています。</p>
         </PageSummary>
+
+        <Section>
+          <Title>
+            <SkillIcon />
+            チャットの特技習得
+          </Title>
+          <p>
+            チャットがサブイベント習得していく強力な特技と習得に必要な発生条件や場所を解説しています。難関である「エターナルスロー」習得時に出題される全10問のクイズ正解一覧も掲載しています。
+          </p>
+        </Section>
 
         <Section>
           <SectionTitle>チャットの特技習得優先度</SectionTitle>
@@ -59,10 +68,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>
-            <SkillIcon />
-            チャットの特技習得イベント一覧
-          </SectionTitle>
+          <SectionTitle>チャットの特技習得イベント一覧</SectionTitle>
           <Information title="サブイベント発生の前提条件">
             チャットをパーティーメンバーに加えた状態で、以下の各地のスポットへ向かうことでイベントが進行・発生します。
           </Information>

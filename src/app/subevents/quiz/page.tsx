@@ -9,6 +9,7 @@ import Main from "@/components/SiteLayout/Main";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,7 +34,7 @@ export default async function HomePage() {
           ミンツ大学で挑戦できるテイルズクイズについて解説します。クイズ一覧と回答を掲載しています。
         </PageSummary>
         <Section>
-          <SectionTitle>テイルズクイズ</SectionTitle>
+          <Title>テイルズクイズ</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               リッドの称号「テイルズはかせ」、アクセサリ「コンボコマンド」など

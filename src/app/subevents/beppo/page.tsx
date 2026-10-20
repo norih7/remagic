@@ -13,6 +13,7 @@ import GuideList from "@/components/GuideList";
 import Main from "@/components/SiteLayout/Main";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -42,10 +43,10 @@ export default async function HomePage() {
         </PageSummary>
         <Section>
           <div className="mb-3">
-            <SectionTitle>
+            <Title>
               <TimeLimitIcon />
-              「ベッポのかくれんぼ」の概要
-            </SectionTitle>
+              ベッポのかくれんぼ
+            </Title>
             <div className="mb-4 grid grid-cols-1 gap-2">
               <RoundedInlineList title="報酬">
                 「ルーンボトル」、「ドエニスのポプリ」

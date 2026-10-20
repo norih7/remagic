@@ -10,6 +10,8 @@ import Tag from "@/components/Tag";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
+import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -43,7 +45,10 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <SectionTitle>「カトリーヌの恋愛」の概要</SectionTitle>
+          <Title>
+            <TimeLimitIcon />
+            カトリーヌの恋愛
+          </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               ファラの称号「あいのネゴシエーター」

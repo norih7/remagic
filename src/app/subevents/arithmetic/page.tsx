@@ -13,6 +13,8 @@ import GuideList from "@/components/GuideList";
 import Main from "@/components/SiteLayout/Main";
 import CardList from "@/components/CardLIst";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
+import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -43,7 +45,10 @@ export default async function HomePage() {
           バロールの町で行われているミニゲーム「算術勝負」の解説。
         </PageSummary>
         <Section>
-          <SectionTitle>算術勝負の概要</SectionTitle>
+          <Title>
+            <TimeLimitIcon />
+            算術勝負
+          </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               リッドの称号「さんじゅつせいねん」、「ミラクルグミ」など

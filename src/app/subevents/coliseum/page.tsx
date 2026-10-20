@@ -12,6 +12,7 @@ import LocationItems from "@/components/LocationItems";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -106,7 +107,7 @@ export default async function HomePage() {
           王都インフェリアで開催されている闘技場について解説します。
         </PageSummary>
         <Section>
-          <SectionTitle>闘技場の概要</SectionTitle>
+          <Title>闘技場</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               「ステータスアップの薬草」、「各種回復グミ」、「エターナルソード」など

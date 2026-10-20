@@ -12,6 +12,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import GuideList from "@/components/GuideList";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,7 +41,7 @@ export default async function HomePage() {
           アイテムドロップ率アップにつながるアクセサリ「スマッシュマント」を入手できるグリップソート探しについて解説。イベントには時間制限がありませんが、スマッシュマントは非常に有用なアクセサリなので王都インフェリア到着後すぐにやっておくことを推奨します。
         </PageSummary>
         <Section>
-          <SectionTitle>クリップソード探しの概要</SectionTitle>
+          <Title>クリップソード探し</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">スマッシュマント</RoundedInlineList>
             <RoundedInlineList title="場所">王都インフェリア</RoundedInlineList>

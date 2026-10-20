@@ -11,6 +11,8 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
+import SkillIcon from "@/components/Icons/SkillIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,11 +34,14 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <PageSummary>
-          セレスティア各地をにいる画家のリシテア（フォッグの妻）との遭遇イベントを説明します。このイベントではフォッグの強力なアクセサリの入手でき、フォッグの「エレメントマスター」の特技習得に関連します。
+          セレスティア各地にいる画家のリシテアとの遭遇イベントを解説します。
         </PageSummary>
 
         <Section>
-          <SectionTitle>画家のリシテアの概要</SectionTitle>
+          <Title>
+            <SkillIcon />
+            画家のリシテア
+          </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               「キャンセラー」、フォッグの特技「エレメントマスター」の前提条件
@@ -46,6 +51,9 @@ export default async function HomePage() {
               氷晶霊の山をクリア後
             </RoundedInlineList>
           </div>
+          <p>
+            このイベントはセレスティア各地にいる画家リシテアに話しかけていくもので、すべてのイベントをこなすことでフォッグの強力なアクセサリの入手および「エレメントマスター」の特技習得に関連します。リシテアイベントはストーリーの進行状況により開放されていきます。
+          </p>
         </Section>
 
         <Section>

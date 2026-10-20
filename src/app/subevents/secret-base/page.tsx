@@ -38,7 +38,7 @@ export default async function HomePage() {
           インフェリアにあるアイフリードの隠しアジトの解説。探索だけで貴重なアイテムを入手できるサブイベントです。
         </PageSummary>
         <Section>
-          <Title>「インフェリアの隠しアジト」の概要</Title>
+          <Title>インフェリアの隠しアジト</Title>
           <div className="mb-2 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               にんとうちざくら、ホーリィクロークなど

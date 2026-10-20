@@ -12,6 +12,7 @@ import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -35,7 +36,7 @@ export default async function HomePage() {
           シャンバールで行なわれているミニゲーム「シャンバルーン」についての説明です。このイベントではリッドの称号や特殊なアイテムを入手できます。
         </PageSummary>
         <Section>
-          <SectionTitle>シャンバルーンの概要</SectionTitle>
+          <Title>シャンバルーン</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               リッドの称号「キングあんどバルーン」、アクセサリ「ステップリング」など

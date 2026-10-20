@@ -12,6 +12,7 @@ import Main from "@/components/SiteLayout/Main";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,7 +41,7 @@ export default async function HomePage() {
           フォッグの武器開発について解説しています。フォッグの最強武器も開発で入手するためお見逃しなく。
         </PageSummary>
         <Section>
-          <SectionTitle>「フォッグの武器開発」の概要</SectionTitle>
+          <Title>フォッグの武器開発</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               最強武器「メガグランチャー」など
@@ -87,10 +88,10 @@ export default async function HomePage() {
                 セイファート観測所到着後から
               </RoundedItem>
               <RoundedItem title="支援総額">160,000ガルド</RoundedItem>
+              <RoundedItem title="効果">
+                攻撃+700 特殊: 攻撃ヒット時、稀に敵を吹き飛ばす
+              </RoundedItem>
             </div>
-            <RoundedItem title="効果">
-              攻撃+700 特殊: 攻撃ヒット時、稀に敵を吹き飛ばす
-            </RoundedItem>
           </RoundedContainer>
           <RoundedContainer>
             <h3>フォトンイレイズ</h3>

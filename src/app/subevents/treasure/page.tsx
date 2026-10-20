@@ -12,6 +12,7 @@ import Main from "@/components/SiteLayout/Main";
 import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,7 +41,7 @@ export default async function HomePage() {
           ストーリー後半から収集できるセレスティア7大秘宝をまとめています。各秘宝の入手方法や使い方、特殊なS・Dなどを解説しています。
         </PageSummary>
         <Section>
-          <SectionTitle>セレスティア7大秘宝の概要</SectionTitle>
+          <Title>セレスティア7大秘宝の概要</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               「コルレーンのつぼ」、「S・D」、「レジュームリング」など

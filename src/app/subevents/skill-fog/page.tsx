@@ -12,6 +12,7 @@ import Main from "@/components/SiteLayout/Main";
 import SkillIcon from "@/components/Icons/SkillIcon";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import CardList from "@/components/CardLIst";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,10 +33,18 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <PageSummary>
-          <p>
-            フォッグが物語の進行に合わせてサブイベントで習得していく、多彩な属性銃弾スキルおよび最終技の習得方法を解説するページです。最大火力を誇る「エレメンタルマスター」の習得を目指してぜひすべてのイベントをクリアしましょう。
-          </p>
+          <p>フォッグの特技習得サブイベントをまとめています。</p>
         </PageSummary>
+
+        <Section>
+          <Title>
+            <SkillIcon />
+            フォッグの特技習得
+          </Title>
+          <p>
+            フォッグがサブイベントで習得していく属性攻撃と最終技の「エレメンタルマスター」の習得方法を解説するページです。フォッグはキャンセラーの入手により技を連携できるようになるのですべての技を習得することを推奨します。
+          </p>
+        </Section>
 
         <Section>
           <SectionTitle>フォッグの特技習得優先度</SectionTitle>
@@ -54,10 +63,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>
-            <SkillIcon />
-            フォッグの特技習得イベント一覧
-          </SectionTitle>
+          <SectionTitle>フォッグの特技習得イベント一覧</SectionTitle>
           <Information title="サブイベント発生の前提条件">
             フォッグをパーティーメンバーに加えた状態で、以下の各地のスポットへ向かうことでイベントが進行・発生します。
           </Information>

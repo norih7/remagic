@@ -13,6 +13,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedContainer from "@/components/RoundedContainer";
 import LensPropertyList from "@/components/LensPropertyList";
 import { locationLenses } from "@/db/schema";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";

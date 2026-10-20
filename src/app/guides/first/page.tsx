@@ -7,6 +7,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import TableOfContents from "@/components/TableOfContents";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -29,9 +30,19 @@ export default async function HomePage() {
       <article>
         <PageSummary>
           <p>
-            序盤でやっておきたいのは、戦闘の安定と成長のスピードを上げることです。少しの準備で、後半の難所に突入する時点で大きく楽になります。
+            エターニアのプレイで序盤からやっておきたいことをまとめています。
           </p>
         </PageSummary>
+
+        <Section>
+          <Title>序盤にやっておきたいこと</Title>
+          <p>
+            マニュアル操作、アイテムドロップ率アップ、獲得ガルドを増やすなど序盤からやっておくと役立つ情報を紹介します。できるものを取り入れていただければ良いですが
+            <strong>
+              マニュアル操作の習得とセフィラの入手必須レベルです。
+            </strong>
+          </p>
+        </Section>
 
         <Section>
           <TableOfContents />
@@ -192,10 +203,6 @@ export default async function HomePage() {
               {
                 title: "火龍炎舞",
                 href: "/deeps/flame-dance",
-              },
-              {
-                title: "いざないの密林の攻略情報",
-                href: "/stories/guide2",
               },
             ]}
           />
