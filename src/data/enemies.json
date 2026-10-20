@@ -1,148 +1,5 @@
 [
   {
-    "id": 73,
-    "name": "シャドウ",
-    "type": "boss",
-    "hp": 100324,
-    "exp": 327768,
-    "gald": 0,
-    "attack": "dark",
-    "weak": "light",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark"
-  },
-  {
-    "id": 254,
-    "name": "（ネレイド）",
-    "type": "boss",
-    "hp": 160000,
-    "exp": 63000,
-    "gald": 0,
-    "attack": "dark",
-    "weak": "none",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
-  },
-  {
-    "id": 115,
-    "name": "ゼクンドゥス",
-    "type": "boss",
-    "hp": 200000,
-    "exp": 60000,
-    "gald": 0,
-    "attack": "normal",
-    "weak": "thunder",
-    "resist": "normal, fire, water, ice, wind, earth, light, dark, origin, time"
-  },
-  {
-    "id": 255,
-    "name": "ネレイド",
-    "type": "boss",
-    "hp": 160000,
-    "exp": 60000,
-    "gald": 0,
-    "attack": "dark",
-    "weak": "none",
-    "resist": "none"
-  },
-  {
-    "id": 85,
-    "name": "シゼル",
-    "type": "boss",
-    "hp": 120000,
-    "exp": 50000,
-    "gald": 0,
-    "attack": "dark",
-    "weak": "none",
-    "resist": "normal, fire, water, thunder, ice, wind, earth"
-  },
-  {
-    "id": 120,
-    "name": "レム",
-    "type": "boss",
-    "hp": 100000,
-    "exp": 40960,
-    "gald": 0,
-    "attack": "light",
-    "weak": "dark",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light"
-  },
-  {
-    "id": 55,
-    "name": "マクスウェル",
-    "type": "boss",
-    "hp": 34000,
-    "exp": 34002,
-    "gald": 0,
-    "attack": "origin",
-    "weak": "none",
-    "resist": "normal, origin"
-  },
-  {
-    "id": 40,
-    "name": "ワルキューレ",
-    "type": "boss",
-    "hp": 32000,
-    "exp": 32768,
-    "gald": 0,
-    "attack": "normal",
-    "weak": "none",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
-  },
-  {
-    "id": 233,
-    "name": "ヒアデス",
-    "type": "boss",
-    "hp": 128000,
-    "exp": 30000,
-    "gald": 0,
-    "attack": "dark",
-    "weak": "none",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
-  },
-  {
-    "id": 249,
-    "name": "エレメンタラー",
-    "type": "boss",
-    "hp": 80000,
-    "exp": 23456,
-    "gald": 12345,
-    "attack": "normal",
-    "weak": "none",
-    "resist": "none"
-  },
-  {
-    "id": 230,
-    "name": "クレス",
-    "type": "event",
-    "hp": 9999,
-    "exp": 10000,
-    "gald": 0,
-    "attack": "normal",
-    "weak": "none",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
-  },
-  {
-    "id": 231,
-    "name": "アーチェ",
-    "type": "event",
-    "hp": 6000,
-    "exp": 10000,
-    "gald": 0,
-    "attack": "normal",
-    "weak": "none",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
-  },
-  {
-    "id": 252,
-    "name": "セイレーン",
-    "type": "boss",
-    "hp": 52000,
-    "exp": 8998,
-    "gald": 3000,
-    "attack": "normal",
-    "weak": "fire, thunder",
-    "resist": "normal, water, wind, earth, ice"
-  },
-  {
     "id": 0,
     "name": "バンデット",
     "type": "normal",
@@ -154,72 +11,6 @@
     "resist": "none"
   },
   {
-    "id": 48,
-    "name": "セルシウス",
-    "type": "boss",
-    "hp": 333333,
-    "exp": 4000,
-    "gald": 0,
-    "attack": "ice",
-    "weak": "fire",
-    "resist": "normal, water, thunder, ice, wind, earth"
-  },
-  {
-    "id": 225,
-    "name": "ヒアデス",
-    "type": "boss",
-    "hp": 45000,
-    "exp": 4000,
-    "gald": 30,
-    "attack": "normal",
-    "weak": "light",
-    "resist": "normal, fire, water, thunder, ice, wind, earth"
-  },
-  {
-    "id": 46,
-    "name": "ヴォルト",
-    "type": "boss",
-    "hp": 54321,
-    "exp": 3600,
-    "gald": 0,
-    "attack": "thunder",
-    "weak": "water",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark"
-  },
-  {
-    "id": 59,
-    "name": "ノーム",
-    "type": "boss",
-    "hp": 16160,
-    "exp": 3000,
-    "gald": 2,
-    "attack": "earth",
-    "weak": "wind",
-    "resist": "normal, fire, water, thunder, ice, earth"
-  },
-  {
-    "id": 245,
-    "name": "ガーディアント",
-    "type": "boss",
-    "hp": 30000,
-    "exp": 3000,
-    "gald": 210,
-    "attack": "thunder",
-    "weak": "water, fire, ice",
-    "resist": "normal, thunder"
-  },
-  {
-    "id": 51,
-    "name": "イフリート",
-    "type": "boss",
-    "hp": 24000,
-    "exp": 2723,
-    "gald": 0,
-    "attack": "fire",
-    "weak": "water",
-    "resist": "fire, normal, wind, earth, light, ice"
-  },
-  {
     "id": 1,
     "name": "ストライカー",
     "type": "normal",
@@ -229,17 +20,6 @@
     "attack": "normal",
     "weak": "thunder",
     "resist": "none"
-  },
-  {
-    "id": 47,
-    "name": "シルフ",
-    "type": "boss",
-    "hp": 6000,
-    "exp": 1929,
-    "gald": 0,
-    "attack": "wind",
-    "weak": "earth",
-    "resist": "normal, fire, water, thunder, ice, wind"
   },
   {
     "id": 2,
@@ -273,17 +53,6 @@
     "attack": "normal",
     "weak": "ice",
     "resist": "fire, earth"
-  },
-  {
-    "id": 24,
-    "name": "ウンディーネ",
-    "type": "boss",
-    "hp": 6800,
-    "exp": 1350,
-    "gald": 0,
-    "attack": "water",
-    "weak": "thunder",
-    "resist": "water, wind, fire, earth, ice"
   },
   {
     "id": 5,
@@ -328,17 +97,6 @@
     "attack": "earth",
     "weak": "none",
     "resist": "earth"
-  },
-  {
-    "id": 248,
-    "name": "スパイラル",
-    "type": "boss",
-    "hp": 45000,
-    "exp": 1000,
-    "gald": 3000,
-    "attack": "normal",
-    "weak": "none",
-    "resist": "none"
   },
   {
     "id": 9,
@@ -506,6 +264,17 @@
     "resist": "none"
   },
   {
+    "id": 24,
+    "name": "ウンディーネ",
+    "type": "boss",
+    "hp": 6800,
+    "exp": 1350,
+    "gald": 0,
+    "attack": "water",
+    "weak": "thunder",
+    "resist": "water, wind, fire, earth, ice"
+  },
+  {
     "id": 25,
     "name": "ボルテック",
     "type": "normal",
@@ -671,6 +440,17 @@
     "resist": "water"
   },
   {
+    "id": 40,
+    "name": "ワルキューレ",
+    "type": "boss",
+    "hp": 32000,
+    "exp": 32768,
+    "gald": 0,
+    "attack": "normal",
+    "weak": "none",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
+  },
+  {
     "id": 41,
     "name": "モンク",
     "type": "normal",
@@ -726,6 +506,39 @@
     "resist": "water, fire"
   },
   {
+    "id": 46,
+    "name": "ヴォルト",
+    "type": "boss",
+    "hp": 54321,
+    "exp": 3600,
+    "gald": 0,
+    "attack": "thunder",
+    "weak": "water",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark"
+  },
+  {
+    "id": 47,
+    "name": "シルフ",
+    "type": "boss",
+    "hp": 6000,
+    "exp": 1929,
+    "gald": 0,
+    "attack": "wind",
+    "weak": "earth",
+    "resist": "normal, fire, water, thunder, ice, wind"
+  },
+  {
+    "id": 48,
+    "name": "セルシウス",
+    "type": "boss",
+    "hp": 333333,
+    "exp": 4000,
+    "gald": 0,
+    "attack": "ice",
+    "weak": "fire",
+    "resist": "normal, water, thunder, ice, wind, earth"
+  },
+  {
     "id": 49,
     "name": "アイスタイガー",
     "type": "normal",
@@ -746,6 +559,17 @@
     "attack": "normal",
     "weak": "none",
     "resist": "earth"
+  },
+  {
+    "id": 51,
+    "name": "イフリート",
+    "type": "boss",
+    "hp": 24000,
+    "exp": 2723,
+    "gald": 0,
+    "attack": "fire",
+    "weak": "water",
+    "resist": "fire, normal, wind, earth, light, ice"
   },
   {
     "id": 52,
@@ -781,6 +605,17 @@
     "resist": "dark"
   },
   {
+    "id": 55,
+    "name": "マクスウェル",
+    "type": "boss",
+    "hp": 34000,
+    "exp": 34002,
+    "gald": 0,
+    "attack": "origin",
+    "weak": "none",
+    "resist": "normal, origin"
+  },
+  {
     "id": 56,
     "name": "ミスト",
     "type": "normal",
@@ -812,6 +647,17 @@
     "attack": "normal",
     "weak": "water",
     "resist": "earth, dark"
+  },
+  {
+    "id": 59,
+    "name": "ノーム",
+    "type": "boss",
+    "hp": 16160,
+    "exp": 3000,
+    "gald": 2,
+    "attack": "earth",
+    "weak": "wind",
+    "resist": "normal, fire, water, thunder, ice, earth"
   },
   {
     "id": 60,
@@ -946,17 +792,6 @@
     "resist": "fire, thunder, light"
   },
   {
-    "id": 110,
-    "name": "????　ヒアデス",
-    "type": "boss",
-    "hp": 1000,
-    "exp": 300,
-    "gald": 800,
-    "attack": "normal",
-    "weak": "none",
-    "resist": "thunder"
-  },
-  {
     "id": 72,
     "name": "メデューサ",
     "type": "normal",
@@ -966,6 +801,17 @@
     "attack": "normal",
     "weak": "ice, thunder",
     "resist": "water, fire"
+  },
+  {
+    "id": 73,
+    "name": "シャドウ",
+    "type": "boss",
+    "hp": 100324,
+    "exp": 327768,
+    "gald": 0,
+    "attack": "dark",
+    "weak": "light",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark"
   },
   {
     "id": 74,
@@ -1089,6 +935,17 @@
     "resist": "fire, ice"
   },
   {
+    "id": 85,
+    "name": "シゼル",
+    "type": "boss",
+    "hp": 120000,
+    "exp": 50000,
+    "gald": 0,
+    "attack": "dark",
+    "weak": "none",
+    "resist": "normal, fire, water, thunder, ice, wind, earth"
+  },
+  {
     "id": 86,
     "name": "ブラッドサッカー",
     "type": "normal",
@@ -1098,17 +955,6 @@
     "attack": "water",
     "weak": "thunder",
     "resist": "water"
-  },
-  {
-    "id": 247,
-    "name": "ジャングラー",
-    "type": "event",
-    "hp": 54000,
-    "exp": 200,
-    "gald": 100,
-    "attack": "normal",
-    "weak": "fire",
-    "resist": "none"
   },
   {
     "id": 87,
@@ -1364,6 +1210,17 @@
     "resist": "fire"
   },
   {
+    "id": 110,
+    "name": "????　ヒアデス",
+    "type": "boss",
+    "hp": 1000,
+    "exp": 300,
+    "gald": 800,
+    "attack": "normal",
+    "weak": "none",
+    "resist": "thunder"
+  },
+  {
     "id": 111,
     "name": "ビッグフット",
     "type": "normal",
@@ -1408,6 +1265,17 @@
     "resist": "water, fire"
   },
   {
+    "id": 115,
+    "name": "ゼクンドゥス",
+    "type": "boss",
+    "hp": 200000,
+    "exp": 60000,
+    "gald": 0,
+    "attack": "normal",
+    "weak": "thunder",
+    "resist": "normal, fire, water, ice, wind, earth, light, dark, origin, time"
+  },
+  {
     "id": 116,
     "name": "ラウカマール",
     "type": "normal",
@@ -1450,6 +1318,17 @@
     "attack": "ice",
     "weak": "fire, light",
     "resist": "ice, dark"
+  },
+  {
+    "id": 120,
+    "name": "レム",
+    "type": "boss",
+    "hp": 100000,
+    "exp": 40960,
+    "gald": 0,
+    "attack": "light",
+    "weak": "dark",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light"
   },
   {
     "id": 121,
@@ -1505,17 +1384,6 @@
     "attack": "normal",
     "weak": "none",
     "resist": "fire, thunder"
-  },
-  {
-    "id": 234,
-    "name": "シルエシカへい",
-    "type": "event",
-    "hp": 8000,
-    "exp": 100,
-    "gald": 100,
-    "attack": "normal",
-    "weak": "wind, ice",
-    "resist": "none"
   },
   {
     "id": 126,
@@ -2607,6 +2475,17 @@
     "resist": "none"
   },
   {
+    "id": 225,
+    "name": "ヒアデス",
+    "type": "boss",
+    "hp": 45000,
+    "exp": 4000,
+    "gald": 30,
+    "attack": "normal",
+    "weak": "light",
+    "resist": "normal, fire, water, thunder, ice, wind, earth"
+  },
+  {
     "id": 226,
     "name": "フライングポリープ",
     "type": "normal",
@@ -2636,6 +2515,83 @@
     "exp": 0,
     "gald": 0,
     "attack": "normal",
+    "weak": "none",
+    "resist": "none"
+  },
+  {
+    "id": 229,
+    "name": "ビリアルへい",
+    "type": "event",
+    "hp": 5000,
+    "exp": 0,
+    "gald": 0,
+    "attack": "normal",
+    "weak": "none",
+    "resist": "none"
+  },
+  {
+    "id": 230,
+    "name": "クレス",
+    "type": "event",
+    "hp": 9999,
+    "exp": 10000,
+    "gald": 0,
+    "attack": "normal",
+    "weak": "none",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
+  },
+  {
+    "id": 231,
+    "name": "アーチェ",
+    "type": "event",
+    "hp": 6000,
+    "exp": 10000,
+    "gald": 0,
+    "attack": "normal",
+    "weak": "none",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
+  },
+  {
+    "id": 232,
+    "name": "（ネレイド）",
+    "type": "boss",
+    "hp": 300000,
+    "exp": 0,
+    "gald": 0,
+    "attack": "origin",
+    "weak": "none",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
+  },
+  {
+    "id": 233,
+    "name": "ヒアデス",
+    "type": "boss",
+    "hp": 128000,
+    "exp": 30000,
+    "gald": 0,
+    "attack": "dark",
+    "weak": "none",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
+  },
+  {
+    "id": 234,
+    "name": "シルエシカへい",
+    "type": "event",
+    "hp": 8000,
+    "exp": 100,
+    "gald": 100,
+    "attack": "normal",
+    "weak": "wind, ice",
+    "resist": "none"
+  },
+  {
+    "id": 235,
+    "name": "ネレイド",
+    "type": "boss",
+    "hp": 300000,
+    "exp": 0,
+    "gald": 0,
+    "attack": "dark",
     "weak": "none",
     "resist": "none"
   },
@@ -2706,83 +2662,6 @@
     "resist": "fire, earth, thunder, light"
   },
   {
-    "id": 244,
-    "name": "フェイク",
-    "type": "normal",
-    "hp": 10000,
-    "exp": 2100,
-    "gald": 1050,
-    "attack": "normal",
-    "weak": "none",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, time, origin"
-  },
-  {
-    "id": 246,
-    "name": "ガスクラウド",
-    "type": "normal",
-    "hp": 1600,
-    "exp": 50,
-    "gald": 150,
-    "attack": "dark",
-    "weak": "wind, fire",
-    "resist": "none"
-  },
-  {
-    "id": 251,
-    "name": "ダイナソア",
-    "type": "normal",
-    "hp": 18800,
-    "exp": 722,
-    "gald": 2100,
-    "attack": "normal",
-    "weak": "ice",
-    "resist": "fire, earth, thunder"
-  },
-  {
-    "id": 253,
-    "name": "ガンナー",
-    "type": "normal",
-    "hp": 10000,
-    "exp": 1066,
-    "gald": 2500,
-    "attack": "normal",
-    "weak": "water, thunder",
-    "resist": "none"
-  },
-  {
-    "id": 229,
-    "name": "ビリアルへい",
-    "type": "event",
-    "hp": 5000,
-    "exp": 0,
-    "gald": 0,
-    "attack": "normal",
-    "weak": "none",
-    "resist": "none"
-  },
-  {
-    "id": 232,
-    "name": "（ネレイド）",
-    "type": "boss",
-    "hp": 300000,
-    "exp": 0,
-    "gald": 0,
-    "attack": "origin",
-    "weak": "none",
-    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
-  },
-  {
-    "id": 235,
-    "name": "ネレイド",
-    "type": "boss",
-    "hp": 300000,
-    "exp": 0,
-    "gald": 0,
-    "attack": "dark",
-    "weak": "none",
-    "resist": "none"
-  },
-  {
     "id": 242,
     "name": "ハーシェル",
     "type": "event",
@@ -2805,6 +2684,72 @@
     "resist": "normal"
   },
   {
+    "id": 244,
+    "name": "フェイク",
+    "type": "normal",
+    "hp": 10000,
+    "exp": 2100,
+    "gald": 1050,
+    "attack": "normal",
+    "weak": "none",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, time, origin"
+  },
+  {
+    "id": 245,
+    "name": "ガーディアント",
+    "type": "boss",
+    "hp": 30000,
+    "exp": 3000,
+    "gald": 210,
+    "attack": "thunder",
+    "weak": "water, fire, ice",
+    "resist": "normal, thunder"
+  },
+  {
+    "id": 246,
+    "name": "ガスクラウド",
+    "type": "normal",
+    "hp": 1600,
+    "exp": 50,
+    "gald": 150,
+    "attack": "dark",
+    "weak": "wind, fire",
+    "resist": "none"
+  },
+  {
+    "id": 247,
+    "name": "ジャングラー",
+    "type": "event",
+    "hp": 54000,
+    "exp": 200,
+    "gald": 100,
+    "attack": "normal",
+    "weak": "fire",
+    "resist": "none"
+  },
+  {
+    "id": 248,
+    "name": "スパイラル",
+    "type": "boss",
+    "hp": 45000,
+    "exp": 1000,
+    "gald": 3000,
+    "attack": "normal",
+    "weak": "none",
+    "resist": "none"
+  },
+  {
+    "id": 249,
+    "name": "エレメンタラー",
+    "type": "boss",
+    "hp": 80000,
+    "exp": 23456,
+    "gald": 12345,
+    "attack": "normal",
+    "weak": "none",
+    "resist": "none"
+  },
+  {
     "id": 250,
     "name": "シャンバルーン",
     "type": "event",
@@ -2812,6 +2757,61 @@
     "exp": 0,
     "gald": 0,
     "attack": "normal",
+    "weak": "none",
+    "resist": "none"
+  },
+  {
+    "id": 251,
+    "name": "ダイナソア",
+    "type": "normal",
+    "hp": 18800,
+    "exp": 722,
+    "gald": 2100,
+    "attack": "normal",
+    "weak": "ice",
+    "resist": "fire, earth, thunder"
+  },
+  {
+    "id": 252,
+    "name": "セイレーン",
+    "type": "boss",
+    "hp": 52000,
+    "exp": 8998,
+    "gald": 3000,
+    "attack": "normal",
+    "weak": "fire, thunder",
+    "resist": "normal, water, wind, earth, ice"
+  },
+  {
+    "id": 253,
+    "name": "ガンナー",
+    "type": "normal",
+    "hp": 10000,
+    "exp": 1066,
+    "gald": 2500,
+    "attack": "normal",
+    "weak": "water, thunder",
+    "resist": "none"
+  },
+  {
+    "id": 254,
+    "name": "（ネレイド）",
+    "type": "boss",
+    "hp": 160000,
+    "exp": 63000,
+    "gald": 0,
+    "attack": "dark",
+    "weak": "none",
+    "resist": "normal, fire, water, thunder, ice, wind, earth, light, dark, origin, time"
+  },
+  {
+    "id": 255,
+    "name": "ネレイド",
+    "type": "boss",
+    "hp": 160000,
+    "exp": 60000,
+    "gald": 0,
+    "attack": "dark",
     "weak": "none",
     "resist": "none"
   }
