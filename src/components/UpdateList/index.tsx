@@ -3,6 +3,15 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/10/21",
+    update: (
+      <>
+        <Link href="/deeps/herb">ステータスアップ薬草集め</Link>
+        を更新。Tipsなど内容を追記しました。
+      </>
+    ),
+  },
+  {
     date: "2026/10/20",
     update: (
       <>

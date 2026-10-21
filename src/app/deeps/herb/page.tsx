@@ -9,6 +9,7 @@ import Tag from "@/components/Tag";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import Title from "@/components/Title";
 
 export const dynamic = "force-static";
 
@@ -30,57 +31,89 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <PageSummary>
-          敵からのドロップやチャットの盗みで手に入るステータスアップ薬草は、レベル上げやボス攻略の途中でかなり重宝します。特にHP、TP、力の延長は、長期戦での安定感を大きく左右します。
+          敵のドロップやチャットの盗みで手に入るステータスアップ薬草の集め方を解説します。
         </PageSummary>
 
         <Section>
-          <SectionTitle>ステータスアップの薬草とは</SectionTitle>
+          <Title>ステータスアップ薬草集め</Title>
           <div className="mb-8">
             <p>
-              「セージ」や「セボリー」などの薬草は使うとステータスが上がります。エターニアではLvアップによるステータス向上は控え目なので、薬草の使用は非常に強力です。長期的な強化を目的とするアイテムなので、育成が進んだ後半ほど価値が出ます。
+              「セージ」や「セボリー」などの薬草はステータスが上がる特殊アイテムです。Lvアップによるステータス向上で足りない部分を補うのに薬草の使用は非常に強力です。薬草はドロップを狙えるので必要なときに使って問題ありません。
             </p>
           </div>
           <h3>薬草の種類と効果</h3>
           <div className="mb-8">
-            <RoundedItem title="セージ/レッドセージ" className="mb-3">
-              効果: HPを5%アップする ※レッドセージは10%
-              <br />
-              用途: 体力を底上げして長い戦闘に耐える
-            </RoundedItem>
-            <RoundedItem title="セボリー/レッドセボリー" className="mb-3">
-              <p>
-                効果: TPを5%アップする ※レッドセボリーは10%
+            <RoundedContainer className="grid grid-cols-2 gap-3">
+              <RoundedItem title="セージ/レッドセージ" className="mb-3">
+                効果: HPを5%アップする
                 <br />
-                用途: 特技の連発や術の維持をしやすくする
-              </p>
-            </RoundedItem>
-            <RoundedItem title="ラベンダー/レッドラベンダー" className="mb-3">
-              <p>
-                効果: 力を1アップする ※レッドラベンダーは2
+                ※レッドセージは10%
+              </RoundedItem>
+              <RoundedItem title="セボリー/レッドセボリー" className="mb-3">
+                効果: TPを5%アップする
                 <br />
-                用途: 物理攻撃のダメージを強化する
-              </p>
-            </RoundedItem>
-            <RoundedItem title="ベルベーヌ/レッドベルベーヌ" className="mb-3">
-              <p>
-                効果: 回避を1アップする ※レッドベルベーヌは2
+                ※レッドセボリーは10%
+              </RoundedItem>
+              <RoundedItem title="ラベンダー/レッドラベンダー" className="mb-3">
+                効果: 力を1アップする
                 <br />
-                用途: 敵からの物理攻撃に対する自動防御確率をアップ
+                ※レッドラベンダーは2
+                <br />
+                効能: 特技などの物理ダメージがアップ
+              </RoundedItem>
+              <RoundedItem title="ベルベーヌ/レッドベルベーヌ" className="mb-3">
+                効果: 回避を1アップする
+                <br />
+                ※レッドベルベーヌは2
+                <br />
+                効能: 敵の攻撃の自動防御確率がアップ
+              </RoundedItem>
+            </RoundedContainer>
+            <Information type="warning" title="ステータス上限に注意">
+              <p>
+                ゲーム内でステータスパラメータは上限が設けられています。
+                <br />
+                「HP: 9999、TP: 999、力: 500、回避: 200」
+                <br />
+                この値を超える場合には薬草が使えないため目標を持って集めましょう。
               </p>
-            </RoundedItem>
+              <p>
+                キャラクタごとに以下の特徴を持っており、Lv80を超えると上限に届いてくるキャラクターも出てきます。
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                <RoundedItem title="HPが高いキャラ" white={true}>
+                  リッド、フォッグ、ファラ
+                </RoundedItem>
+                <RoundedItem title="TPが高いキャラ" white={true}>
+                  メルディ、キール
+                </RoundedItem>
+                <RoundedItem title="力が高いキャラ" white={true}>
+                  リッド、ファラ、チャット、フォッグ
+                </RoundedItem>
+                <RoundedItem title="回避が高いキャラ" white={true}>
+                  -
+                </RoundedItem>
+              </div>
+            </Information>
+            <Information title="Tips: セージとセボリーの効率的な使い方">
+              セージとセボリーは最大HP/TPから5%アップします。「ブラックオニキス」「ムーンクリスタル」を装備し、パラメータを30%底上げしてから使うと効果を大きくできます。
+            </Information>
           </div>
-        </Section>
 
-        <Section>
-          <SectionTitle>薬草集めの方法</SectionTitle>
           <div className="mb-8">
-            <h3>ドロップで集める</h3>
+            <div className="mb-3">
+              <h3>集め方1: 敵からのドロップ</h3>
+              <Tag>おすすめです</Tag>
+            </div>
             <p>
               いくつかの敵はステータスアップ薬草を落とします。敵ごとのドロップ率は低めですが、繰り返し戦うことで確保できるので、育成用に連戦をしておくのが効率的です。
             </p>
             <p>
               また「スマッシュマント」を装備するとテクニカルスマッシュ発生時にアイテムドロップ率がアップします。アイテムドロップを狙うときは術キャラ（キール、メルディ）以外にスマッシュマントを装備させるようにしましょう。フリンジで晶霊術の特殊効果「+アイテムゲッター」も習得しておくことでさらにドロップ率はアップします。
             </p>
+            <Information title="リマスター版のブースト機能でさらにドロップ率アップ">
+              リマスター版のブースト機能には「アイテム入手確率2倍」があり薬草集めに最適です。リマスター版で薬草集めするときはこの機能のONを推奨します。
+            </Information>
             <GuideList
               items={[
                 {
@@ -100,7 +133,7 @@ export default async function HomePage() {
             />
           </div>
           <div className="mb-8">
-            <h3>盗みで確保する</h3>
+            <h3>集め方2: 敵から盗む</h3>
             <p>
               チャットの特技「ローバーアイテム」を使えば、戦闘中に敵から薬草を盗めます。ドロップに頼るより安定して入手しやすいため、重要な薬草が落ちやすい敵を見つけたら、盗みのルートで集めるのがおすすめです。
             </p>
@@ -109,11 +142,6 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle>セージ集め</SectionTitle>
-          {/* <div className="mb-3">
-          <GuideList
-            items={[{ title: "セージの詳細", href: "/systems/item/58" }]}
-          />
-        </div> */}
           <RoundedContainer>
             <div className="mb-3">
               <h3>闘技場の世界一決定戦の周回</h3>
@@ -175,6 +203,40 @@ export default async function HomePage() {
             </RoundedItem>
             <RoundedItem title="効率的な連戦">
               いざないの密林を周回しましょう。トロールは確定3体出現しますが、遭遇率は体感的には低いため（10回中1回以下）ここでセボリー集めにこだわる必要はありません。またいざないの密林で出現する「サイズキャリアー」はリバースドールを10%で落とすのでセボリーと一緒に集めるがおすすめです。
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
+
+        <Section>
+          <SectionTitle>ラベンダー集め</SectionTitle>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>デュエリスト狩り</h3>
+              <Tag>終盤おすすめ</Tag>
+            </div>
+            {/* <ResponsiveImage src="/deeps/herb-troll.jpg" /> */}
+            <RoundedItem title="概要" className="mb-3">
+              レグルスの丘に出現する「デュエリスト」は1%の確率でラベンダーを落とし、20%の確率でラベンダーを盗めます。
+            </RoundedItem>
+            <RoundedItem title="効率的な連戦">
+              レグルスの丘でデュエリストを周回しましょう。デュエリストは1体だけ出現し、20%で盗めることからチャットのローバーアイテムで盗むことに集中するのがおすすめです。
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
+
+        <Section>
+          <SectionTitle>ベルベーヌ集め</SectionTitle>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>メガデス狩り</h3>
+              <Tag>終盤おすすめ</Tag>
+            </div>
+            {/* <ResponsiveImage src="/deeps/herb-troll.jpg" /> */}
+            <RoundedItem title="概要" className="mb-3">
+              アイフリードの墓に出現する「メガデス」は3%の確率でベルベーヌを落とします。
+            </RoundedItem>
+            <RoundedItem title="効率的な連戦">
+              アイフリードの墓でメガデスを周回しましょう。他の敵と比べてドロップ率は3%と少し高いため、スマッシュマントと+アイテムゲッターを準備してテクニカルスマッシュでドロップ率をアップさせましょう。
             </RoundedItem>
           </RoundedContainer>
         </Section>
