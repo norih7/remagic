@@ -72,7 +72,9 @@ export default async function HomePage() {
             </RoundedContainer>
             <Information type="warning" title="薬草の使いどき">
               <p>
-                ゲーム内でステータスパラメータは上限が設けられており、上限を超える場合には薬草が使えなくなるため目標のない集めすぎには注意してください。
+                ゲーム内でステータスパラメータは上限が設けられており、
+                <strong>上限を超える場合には薬草が使えなくなる</strong>
+                ため目標のない集めすぎには注意してください。
                 <br />
                 「HP: 9999、TP: 999、力: 500、回避: 200」
               </p>
