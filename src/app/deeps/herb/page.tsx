@@ -147,8 +147,9 @@ export default async function HomePage() {
               <h3>闘技場の世界一決定戦の周回</h3>
               <Tag>後半おすすめ</Tag>
             </div>
+            <ResponsiveImage src="/deeps/herb-hellkite.jpg" />
             <RoundedItem title="概要" className="mb-3">
-              闘技場のヘルカイトは「セージ」「レッドセージ」をドロップします。1周3〜5分ほどでレッドセージも狙えるため効率はかなり高いです。30分でセージが3個以上集まることも。1回戦目のウィザードからは副産物でセボリーのドロップも狙えます。
+              闘技場の「世界一決定戦」の2戦、3戦目に登場するヘルカイトは「セージ」「レッドセージ」をドロップします。1周3〜5分ほどでレッドセージも狙えるため効率はかなり高いです。30分でセージが3個以上集まることも。1回戦目のウィザードからは副産物でセボリーのドロップも狙えます。
             </RoundedItem>
             <RoundedItem title="効率的な連戦">
               リッドに「アイスコフィン（氷属性武器）」や「せいりゅうとう（水属性武器）」、「スマッシュマント」を装備して挑みましょう。
@@ -214,7 +215,7 @@ export default async function HomePage() {
               <h3>デュエリスト狩り</h3>
               <Tag>終盤おすすめ</Tag>
             </div>
-            {/* <ResponsiveImage src="/deeps/herb-troll.jpg" /> */}
+            <ResponsiveImage src="/deeps/herb-duelist.jpg" />
             <RoundedItem title="概要" className="mb-3">
               レグルスの丘に出現する「デュエリスト」は1%の確率でラベンダーを落とし、20%の確率でラベンダーを盗めます。
             </RoundedItem>
@@ -231,7 +232,7 @@ export default async function HomePage() {
               <h3>メガデス狩り</h3>
               <Tag>終盤おすすめ</Tag>
             </div>
-            {/* <ResponsiveImage src="/deeps/herb-troll.jpg" /> */}
+            <ResponsiveImage src="/deeps/herb-megadeth.jpg" />
             <RoundedItem title="概要" className="mb-3">
               アイフリードの墓に出現する「メガデス」は3%の確率でベルベーヌを落とします。
             </RoundedItem>
