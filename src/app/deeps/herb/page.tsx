@@ -78,7 +78,7 @@ export default async function HomePage() {
                 この値を超える場合には薬草が使えないため目標を持って集めましょう。
               </p>
               <p>
-                キャラクタごとに以下の特徴を持っており、Lv80を超えると上限に届いてくるキャラクターも出てきます。
+                キャラクタごとに以下の特徴を持っており、Lv80を超えると上限に届いてくるキャラクターも出てきます。これらのキャラとは対照的にステータスの低いキャラクタに使うのもおすすめです。
               </p>
               <div className="grid grid-cols-2 gap-2">
                 <RoundedItem title="HPが高いキャラ" white={true}>
@@ -91,7 +91,7 @@ export default async function HomePage() {
                   リッド、ファラ、チャット、フォッグ
                 </RoundedItem>
                 <RoundedItem title="回避が高いキャラ" white={true}>
-                  -
+                  リッド、ファラ
                 </RoundedItem>
               </div>
             </Information>
