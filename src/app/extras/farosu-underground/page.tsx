@@ -9,6 +9,8 @@ import EventCondition from "@/components/EventCondition";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
+import SkillIcon from "@/components/Icons/SkillIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,7 +40,10 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <SectionTitle>「ファロース教会地下」の概要</SectionTitle>
+          <Title>
+            <SkillIcon />
+            ファロース教会地下
+          </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               大晶霊「マクスウェル」、「ゴッドウェポン」、「フェアリィリング」など

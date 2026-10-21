@@ -12,6 +12,8 @@ import { extraLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
+import KeyItemIcon from "@/components/Icons/KeyItemIcon";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,7 +42,10 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <SectionTitle>「アイフリードの墓」の概要</SectionTitle>
+          <Title>
+            <KeyItemIcon />
+            アイフリードの墓
+          </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               貴重品「ひかりのため」、防具「ムーンローブ」、レンズなど

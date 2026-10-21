@@ -17,6 +17,7 @@ import GifPlayer from "@/components/GifPlayer";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -44,7 +45,7 @@ export default async function HomePage() {
           ネレイドの迷宮は全6階層で構成される最高難易度の隠しダンジョンです。ランダムに作成される迷宮を進み、各階層のボスを倒して最深部のネレイドを目指します。探索中の消耗を抑え、1〜5階層の単独ボス戦を突破する準備が重要です。
         </PageSummary>
         <Section>
-          <SectionTitle>「ネレイドの迷宮」の概要</SectionTitle>
+          <Title>ネレイドの迷宮</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               グーングニル、ペルシャブーツ、ミスティシンボルなどの超強力装備

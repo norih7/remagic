@@ -10,6 +10,7 @@ import CardList from "@/components/CardLIst";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,7 +40,7 @@ export default async function HomePage() {
         </PageSummary>
 
         <Section>
-          <SectionTitle>隠しタウン「ねこにんの里/晶霊温泉」の概要</SectionTitle>
+          <Title>隠しタウン「ねこにんの里/晶霊温泉」</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               チャットの特技習得、レンズ、パープルソディ購入など
