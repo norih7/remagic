@@ -17,7 +17,7 @@ const StarRating: React.FC<StarRatingProps> = ({
         return (
           <FaStar
             key={index}
-            size={16} // サイズを小さく設定（必要に応じて調整してください）
+            size={14} // サイズを小さく設定（必要に応じて調整してください）
             color={starValue <= rating ? "#ffc107" : "#e4e5e9"}
           />
         );

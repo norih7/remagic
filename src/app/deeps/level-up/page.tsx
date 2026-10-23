@@ -54,9 +54,7 @@ export default async function HomePage() {
               <RoundedInlineList title="推奨度">
                 <StarRating rating={5} />
               </RoundedInlineList>
-              <RoundedInlineList title="1回の経験値">
-                最大80,000
-              </RoundedInlineList>
+              <RoundedInlineList title="経験値">最大80,000</RoundedInlineList>
             </div>
             <RoundedInlineList title="条件">
               リッドが風刃縛封を習得、チャットがパラライボールを習得（ストーリー後半）
@@ -117,7 +115,7 @@ export default async function HomePage() {
               <RoundedInlineList title="推奨度">
                 <StarRating rating={4} />
               </RoundedInlineList>
-              <RoundedInlineList title="1回の経験値">100,000</RoundedInlineList>
+              <RoundedInlineList title="経験値">100,000</RoundedInlineList>
             </div>
             <RoundedInlineList title="条件">
               マクスウェル、ゼクンドゥス契約済みほか複数の条件（ストーリー終盤）
@@ -149,7 +147,7 @@ export default async function HomePage() {
               <RoundedInlineList title="推奨度">
                 <StarRating rating={4} />
               </RoundedInlineList>
-              <RoundedInlineList title="1回の経験値">80,000</RoundedInlineList>
+              <RoundedInlineList title="経験値">80,000</RoundedInlineList>
             </div>
             <RoundedInlineList title="条件">
               ミスティシンボル獲得後（ストーリー中盤）
@@ -197,9 +195,7 @@ export default async function HomePage() {
               <RoundedInlineList title="推奨度">
                 <StarRating rating={5} />
               </RoundedInlineList>
-              <RoundedInlineList title="1回の経験値">
-                10,000ほど
-              </RoundedInlineList>
+              <RoundedInlineList title="経験値">10,000ほど</RoundedInlineList>
             </div>
             <RoundedInlineList title="条件">-</RoundedInlineList>
           </div>
@@ -211,12 +207,17 @@ export default async function HomePage() {
           </div>
           <div className="mb-4">
             <h3>おすすめ周回場所</h3>
+            <p>※ブースト機能なしの状態</p>
             <RoundedContainer className="grid grid-cols-2 gap-3">
-              <RoundedItem title="シゼル城">
-                ブースト機能なしで2000〜3000。
-              </RoundedItem>
               <RoundedItem title="ファロース教会地下">
-                ブースト機能なしで1500〜3000。
+                1戦闘あたり1025〜1673
+              </RoundedItem>
+              <RoundedItem title="レグルス丘（洞窟内）">
+                1戦闘あたり1350〜1657
+              </RoundedItem>
+              <RoundedItem title="シゼル城">1戦闘あたり1276〜1965</RoundedItem>
+              <RoundedItem title="きらめきの塔">
+                1戦闘あたり1831〜2164
               </RoundedItem>
             </RoundedContainer>
           </div>
