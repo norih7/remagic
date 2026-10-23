@@ -252,6 +252,15 @@ export const subeventLinks: Record<string, PageLink> = {
     seoDesc:
       "リマスター版対応のテイルズオブエターニア（TOE）攻略。ストーリー攻略だけでは契約できない協力な大晶霊を解説。",
   },
+  sekundes: {
+    type: "skill",
+    title: "ゼクンドゥス",
+    image: "/link-headers/subevents-sekundes.jpg",
+    path: "/subevents/sekundes",
+    desc: "隠し大晶霊ゼクンドゥスとの契約方法と活用方法を解説。",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。隠し大晶霊ゼクンドゥスとの契約方法と活用方法を解説。",
+  },
   coliseum: {
     title: "闘技場",
     path: "/subevents/coliseum",

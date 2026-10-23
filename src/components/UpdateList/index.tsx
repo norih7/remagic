@@ -6,6 +6,15 @@ const update = [
     date: "2026/10/23",
     update: (
       <>
+        <Link href="/subevents/sekundes">ゼクンドゥス</Link>
+        を公開。
+      </>
+    ),
+  },
+  {
+    date: "2026/10/23",
+    update: (
+      <>
         <Link href="/deeps/lap">周回プレイ（リマスター版）</Link>
         を更新。アンノウンの仕様を記載しました。
       </>

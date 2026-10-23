@@ -35,13 +35,13 @@ export default function Page() {
         <PageSummary>
           テイルズオブエターニアリマスターの変更点やリマスター向け攻略情報をまとめます
         </PageSummary>
-        {/* 
+
         <Section>
           <Title>リマスター版の紹介</Title>
           <p>
-            テイルズオブエターニアリマスター版の変更点や公式サイトに載っていない変更点を紹介します。
+            テイルズオブエターニアリマスター版の変更点や2周目以降の引き継ぎ要素、公式サイトに載っていないような変更点などを紹介します。
           </p>
-        </Section> */}
+        </Section>
 
         <Section>
           <div id="changes" className="scroll-mt-6">
