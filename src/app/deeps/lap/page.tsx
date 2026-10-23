@@ -41,9 +41,8 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle>引き継ぎ要素</SectionTitle>
-          <div className="mb-8">
-            <h3>引き継ぎを選択できるもの</h3>
-            <RoundedContainer className="grid grid-cols-2 gap-3">
+          <RoundedContainer title="引き継ぎ可能なオプション">
+            <div className="pt-3 grid grid-cols-2 gap-3">
               <RoundedItem>キャラクター情報</RoundedItem>
               <RoundedItem>覚えた術・技</RoundedItem>
               <RoundedItem>所持アイテム</RoundedItem>
@@ -53,21 +52,25 @@ export default async function HomePage() {
               <RoundedItem>コレクターずかん</RoundedItem>
               <RoundedItem>モンスターずかん</RoundedItem>
               <RoundedItem>称号 ※アップデートで追加</RoundedItem>
-            </RoundedContainer>
-          </div>
-          <div className="mb-8">
-            <h3>その他引き継ぎ</h3>
-            <RoundedContainer className="grid grid-cols-2 gap-3">
-              <RoundedItem>キャラクターレベル</RoundedItem>
-              <RoundedItem>技の使用回数</RoundedItem>
-              <RoundedItem>
-                晶霊レベル ※大晶霊との契約状態はリセット
+            </div>
+          </RoundedContainer>
+          <RoundedContainer title="引き継ぎの詳細">
+            <div className="pt-3 grid grid-cols-1 gap-3">
+              <RoundedItem title="キャラクター情報の引き継ぎ">
+                レベル、クリア時の装備品、一部称号（レベルアップによる称号、おんそくのせんしなど）
               </RoundedItem>
-            </RoundedContainer>
-            <Information type="warning" title="貴重品の引き継ぎ">
-              一部の貴重品（マニュアルのしょ、モンスター図鑑など）のみ引き継ぎます。「やみのたま」「ひかりのたま」は引き継がれないため、2周目で飛行艇を入手できるタイミングはシゼル城突入後となります。
-            </Information>
-          </div>
+              <RoundedItem title="覚えた術・技の引き継ぎ">
+                覚えた技と技の使用回数、斬り/突きレベル、晶霊レベル
+                <br />
+                ※契約した大晶霊の状態は引き継げません
+              </RoundedItem>
+              <RoundedItem title="所持アイテム">
+                装備品や消費アイテムはそのまま引き継ぎ。
+                <br />
+                一部の貴重品（マニュアルのしょ、モンスター図鑑など）のみ引き継ぎます。「やみのたま」「ひかりのたま」は引き継がれないため、2周目で飛行艇を入手できるタイミングはシゼル城突入後となります。
+              </RoundedItem>
+            </div>
+          </RoundedContainer>
         </Section>
 
         <Section>
@@ -147,6 +150,34 @@ export default async function HomePage() {
             </Information>
           </div>
 
+          <h3>戦闘難易度「アンノウン」での戦闘</h3>
+          <RoundedContainer title="アンノウンによる戦闘変化">
+            <div className="grid grid-cols-2 gap-3 pt-3">
+              <RoundedItem title="敵のHP">1.8倍</RoundedItem>
+              <RoundedItem title="敵の攻撃力">1.3倍</RoundedItem>
+              <RoundedItem title="テクニカルスマッシュボーナス">
+                テクニカルスマッシュが6%以上で+11%のボーナス付与（最低17%）
+              </RoundedItem>
+            </div>
+          </RoundedContainer>
+          <Information type="warning" title="数値検証">
+            アンノウンの情報につきまして検証が不足している可能性があります。誤りや情報提供などございましたらXやメールフォームで問い合わせいただけたら助かります。
+          </Information>
+          <p>
+            アンノウンはテクニカルスマッシュのボーナスが魅力的。ブースト機能のアイテムドロップ2倍と合わせて、レアアイテムや薬草のドロップを狙うのがおすすめです。
+          </p>
+          <GuideList
+            items={[
+              {
+                title: "レアアイテムドロップ",
+                href: "/deeps/rare-item-drop",
+              },
+              {
+                title: "ステータスアップ薬草集め",
+                href: "/deeps/herb",
+              },
+            ]}
+          />
           {/* <div className="mb-8">
             <h3>1周目では取れなかった称号を回収</h3>
           </div> */}

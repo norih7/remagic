@@ -11,6 +11,8 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
+import Title from "@/components/Title";
+import SkillIcon from "@/components/Icons/SkillIcon";
 
 export const dynamic = "force-static";
 
@@ -33,6 +35,13 @@ export default function Page() {
         <PageSummary>
           テイルズオブエターニアリマスターの変更点やリマスター向け攻略情報をまとめます
         </PageSummary>
+        {/* 
+        <Section>
+          <Title>リマスター版の紹介</Title>
+          <p>
+            テイルズオブエターニアリマスター版の変更点や公式サイトに載っていない変更点を紹介します。
+          </p>
+        </Section> */}
 
         <Section>
           <div id="changes" className="scroll-mt-6">
@@ -68,12 +77,12 @@ export default function Page() {
               </div>
             </RoundedItem>
             <RoundedItem title="技習得アイコン" className="mb-3">
-              <div className="flex gap-x-3 mb-3">
+              <div className="flex gap-x-3 mb-1">
                 <div className="w-[30px]">
                   <Image src="/icons/skill.png" width={25} height={25} alt="" />
                 </div>
                 <p className="flex-1">
-                  主にチャットとフォッグの特技習得に関するイベントが発生する場所にアイコンが表示されます。イベント発生条件は難しいの下記ページを参照ください。
+                  チャットとフォッグの特技習得イベントや隠し大奨霊のいる場所にアイコンが表示されます。アイコンの表示タイミングや詳細は下記ページを参照ください。
                 </p>
               </div>
               <GuideList
@@ -86,11 +95,15 @@ export default function Page() {
                     title: "フォッグの特技習得イベント",
                     href: "/subevents/skill-fog",
                   },
+                  {
+                    title: "画家リシテア",
+                    href: "/subevents/lysithea",
+                  },
                 ]}
               />
             </RoundedItem>
             <RoundedItem title="砂時計アイコン" className="mb-3">
-              <div className="flex gap-x-3 mb-3">
+              <div className="flex gap-x-3 mb-1">
                 <div className="w-[30px]">
                   <Image
                     src="/icons/time-limit.png"
@@ -112,6 +125,10 @@ export default function Page() {
                   {
                     title: "ベッポのかくれんぼ",
                     href: "/subevents/beppo",
+                  },
+                  {
+                    title: "算術勝負",
+                    href: "/subevents/arithmetic",
                   },
                 ]}
               />
@@ -165,48 +182,15 @@ export default function Page() {
               <RoundedItem title="アイテム最大所持数拡張">ON、OFF</RoundedItem>
             </RoundedContainer>
           </div>
-          <div className="mb-8">
-            <h3>2周目移行の引き継ぎ</h3>
-            <p>オプションで選べるもの</p>
-            <RoundedContainer className="grid grid-cols-2 gap-3">
-              <RoundedItem>キャラクター情報</RoundedItem>
-              <RoundedItem>覚えた術・技</RoundedItem>
-              <RoundedItem>所持アイテム</RoundedItem>
-              <RoundedItem>レンズ入手状況</RoundedItem>
-              <RoundedItem>料理レシピ</RoundedItem>
-              <RoundedItem>号令</RoundedItem>
-              <RoundedItem>コレクターずかん</RoundedItem>
-              <RoundedItem>モンスターずかん</RoundedItem>
-              <RoundedItem>称号 ※アップデートで追加</RoundedItem>
-            </RoundedContainer>
-          </div>
-          <div className="mb-8">
-            <h3>その他引き継ぎ</h3>
-            <ResponsiveImage src="/guides/remaster-lap.jpg" />
-            <p>
-              2周目では上記画像でわかるようにレベル、特技、使用回数を引き継いでプレイできます。
-              技の使用回数の引き継ぎは嬉しいところ！他にも装備品を引き継ぎできるので2周目では通常は所持制限がある「ミスティシンボル」「フェアリィリング」「デモンズシール」「ペルシャブーツ」などを複数持てます。
-            </p>
-            <CardList
-              list={[
-                "キャラクターレベル",
-                "特技、奥義",
-                "技の使用回数",
-                "晶霊レベル ※大晶霊との契約状態はリセット",
-                "道具",
-                "装備品（武器、装備、アクセサリ）",
-                "一部の貴重品（マニュアルのしょ、モンスター図鑑など）",
-              ]}
-            />
-          </div>
+
           <div className="mb-8">
             <h3>オート戦闘の高速モード</h3>
             <Information type="warning" title="オート戦闘の注意点">
               オート戦闘は便利で4倍速で体感速度は速いのですが、ゲーム内の戦闘時間としては長くなりがちです。
               <strong>
-                ブースト機能で「隊列維持」をONにすることで短縮ができるのでオート戦闘をする場合は必須項目です。
+                ブースト機能では「隊列維持」をONにすることでオート戦闘の時間短縮となるので設定をお忘れなく。
               </strong>
-              ほぼオート戦闘でプレイすると平均戦闘時間が15秒を超える可能性があるので、称号「おんそくのせんし」の取得を目指す場合はご注意ください。
+              1周目ではほぼオート戦闘でプレイすると平均戦闘時間が15秒を超える可能性があるので、称号「おんそくのせんし」の取得を目指す場合はご注意ください。
             </Information>
             <p>
               オート戦闘時に高速モードを利用できます。戦闘を手早く進めたいときに便利な追加機能です。リマスター版に対応した効率的なレベルアップ場所などは後日まとめる予定です。
@@ -221,10 +205,67 @@ export default function Page() {
         </Section>
 
         <Section>
+          <SectionTitle>周回プレイ</SectionTitle>
+          <div className="mb-8">
+            <h3>2周目移行の引き継ぎ</h3>
+            <RoundedContainer title="引き継ぎ可能なオプション">
+              <div className="pt-3 grid grid-cols-2 gap-3">
+                <RoundedItem>キャラクター情報</RoundedItem>
+                <RoundedItem>覚えた術・技</RoundedItem>
+                <RoundedItem>所持アイテム</RoundedItem>
+                <RoundedItem>レンズ入手状況</RoundedItem>
+                <RoundedItem>料理レシピ</RoundedItem>
+                <RoundedItem>号令</RoundedItem>
+                <RoundedItem>コレクターずかん</RoundedItem>
+                <RoundedItem>モンスターずかん</RoundedItem>
+                <RoundedItem>称号 ※アップデートで追加</RoundedItem>
+              </div>
+            </RoundedContainer>
+            <RoundedContainer title="引き継ぎの詳細">
+              <div className="pt-3 grid grid-cols-1 gap-3">
+                <RoundedItem title="キャラクター情報の引き継ぎ">
+                  レベル、クリア時の装備品、一部称号（レベルアップによる称号、おんそくのせんしなど）
+                </RoundedItem>
+                <RoundedItem title="覚えた術・技の引き継ぎ">
+                  覚えた技と技の使用回数、斬り/突きレベル、晶霊レベル
+                  <br />
+                  ※契約した大晶霊の状態は引き継げません
+                </RoundedItem>
+                <RoundedItem title="所持アイテム">
+                  装備品や消費アイテムはそのまま引き継ぎ。
+                  <br />
+                  一部の貴重品（マニュアルのしょ、モンスター図鑑など）のみ引き継ぎます。「やみのたま」「ひかりのたま」は引き継がれないため、2周目で飛行艇を入手できるタイミングはシゼル城突入後となります。
+                </RoundedItem>
+              </div>
+            </RoundedContainer>
+            <Information title="特技回数やアイテムの引き継ぎ">
+              <ResponsiveImage src="/guides/remaster-lap.jpg" />
+              <p>
+                2周目ではレベル、特技、使用回数を引き継いでプレイできます。技の使用回数の引き継ぎは嬉しいところ！他にも装備品を引き継ぎできるので2周目では通常は所持制限がある「ミスティシンボル」「フェアリィリング」「デモンズシール」「ペルシャブーツ」などを複数持てます。
+              </p>
+            </Information>
+          </div>
+
+          <div className="mb-8">
+            <h3>戦闘ランク「アンノウン」</h3>
+            <RoundedContainer title="アンノウンによる戦闘変化">
+              <div className="grid grid-cols-2 gap-3 pt-3">
+                <RoundedItem title="敵のHP">1.8倍</RoundedItem>
+                <RoundedItem title="敵の攻撃力">1.3倍</RoundedItem>
+                <RoundedItem title="テクニカルスマッシュボーナス">
+                  テクニカルスマッシュが6%以上で+11%のボーナス付与（最低17%）
+                </RoundedItem>
+              </div>
+            </RoundedContainer>
+          </div>
+        </Section>
+
+        <Section>
           <div id="comparison" className="scroll-mt-6">
-            <SectionTitle type="flag">ベースとなる移植元はPSP</SectionTitle>
+            <SectionTitle type="flag">移植元のPSP版にまつわる仕様</SectionTitle>
           </div>
           <div className="mb-8">
+            <h3>グラフィックとFPS</h3>
             <p>
               エターニアリマスターはPSP版をベースにされていると言及があります。PSPは戦闘やフィールド移動が60fpsで動作します。（PS版は30fps）
               ただしPSP版はドットがボヤけてる欠点があったのですがリマスター版はくっきりさせています。
@@ -233,7 +274,10 @@ export default function Page() {
           <div className="mb-8">
             <h3>ポケステ要素はない</h3>
             <p>
-              PS版エターニアにはポケステと連動するサブイベントがありますが、リマスター版ではPSP版と同じくポケステなしでアイテムだけ入手できます。重要なスマッシュマントを簡単に入手できますのでお見逃しなく。
+              PS版エターニアにはポケステと連動するサブイベントがありますが、リマスター版ではPSP版と同じでポケステがないためアイテムだけ入手できます。重要なスマッシュマントを簡単に入手できますのでお見逃しなく。
+            </p>
+            <p>
+              ※PS版ではポケステというミニゲーム機を購入した上で専用ゲームをクリアすることで報酬を入手できましたがそれが丸ごとカット。
             </p>
             <GuideList
               items={[
@@ -247,7 +291,7 @@ export default function Page() {
           <div className="mb-8">
             <h3>戦闘画面のズームイン/ズームアウト</h3>
             <p>
-              リマスター版でも戦闘中のズームイン/ズームアウトができます。戦闘の見える範囲を広げたい、カメラが近すぎて戦闘中のドット絵が荒く見えるという方はズームアウトをおすすめします。△で戦闘メニューを開いた状態でズーム操作ができます。
+              PS/PSP版でも可能ですがリマスター版でも戦闘中のズームイン/ズームアウトができます。戦闘の見える範囲を広げたい、カメラが近すぎて戦闘中のドット絵が荒く見えるという方はズームアウトをおすすめします。△で戦闘メニューを開いた状態でズーム操作ができます。
             </p>
             <RoundedContainer>
               <div className="grid grid-cols-2 gap-3 mb-3">
@@ -270,6 +314,28 @@ export default function Page() {
             <p>
               PSP版と同じくショートカットはL1ボタンとボタンを組み合わせて発動させます。L2とR2は現時点でキー割当ができません。
             </p>
+          </div>
+        </Section>
+
+        <Section>
+          <SectionTitle>その他変更点</SectionTitle>
+          <p>その他気づいた変更点を追記中</p>
+          <div className="mb-8">
+            <RoundedContainer className="grid grid-cols-1 gap-3">
+              <RoundedItem title="オルバース界面の上下反転対応">
+                インフェリア側からオルバース界面に入るとセレスティア側と上下反転しています。
+                PS/PSP版はどちらも同じマップでしたが、エターニアの世界観に基づく形になっています。
+              </RoundedItem>
+              <RoundedItem title="レンズ消失の修正">
+                PS/PSP版では闘技場の「王国一決定戦」で初回報酬の薬草セットを受け取るとジイニのオークション会場のレンズが消失する仕様がありましたが調整されています。
+                <strong>
+                  王国一決定戦で薬草セットをもらえなくすることで、レンズを消失しないようにしています。
+                </strong>
+              </RoundedItem>
+              <RoundedItem title="斬り/突きレベルの数値化">
+                PS/PSP版ではリッドの斬り/突きレベルがゲージでしか確認できず数値がわかりにくいのですが、リマスター版では実際のレベルが表示されるようになりました。
+              </RoundedItem>
+            </RoundedContainer>
           </div>
         </Section>
 
