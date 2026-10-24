@@ -1,5 +1,5 @@
 type Props = {
-  list: string[];
+  list: React.ReactNode[];
 };
 const CardList = ({ list }: Props) => {
   const List = list.map((item, index) => (

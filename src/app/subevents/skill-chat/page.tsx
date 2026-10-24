@@ -13,6 +13,7 @@ import GuideList from "@/components/GuideList";
 import CardList from "@/components/CardLIst";
 import SkillIcon from "@/components/Icons/SkillIcon";
 import Title from "@/components/Title";
+import Tier from "@/components/Tier";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,17 +37,13 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>チャットの特技習得サブイベントをまとめています。</p>
-        </PageSummary>
-
         <Section>
           <Title>
             <SkillIcon />
             チャットの特技習得
           </Title>
           <p>
-            チャットがサブイベント習得していく強力な特技と習得に必要な発生条件や場所を解説しています。難関である「エターナルスロー」習得時に出題される全10問のクイズ正解一覧も掲載しています。
+            チャットがサブイベントで習得していく強力な特技とイベントの発生条件や場所を解説しています。難関である「エターナルスロー」習得時に出題される全10問のクイズ正解一覧も掲載しています。
           </p>
         </Section>
 
@@ -55,9 +52,9 @@ export default async function HomePage() {
           <div className="mb-4">
             <CardList
               list={[
-                "Tier1. コチハン、エターナルスロー",
-                "Tier2. パラライボール",
-                "Tier3. ポイハン",
+                <Tier rank={1}>コチハン、エターナルスロー</Tier>,
+                <Tier rank={2}>パラライボール</Tier>,
+                <Tier rank={3}>ポイハン</Tier>,
               ]}
             />
           </div>
@@ -75,6 +72,7 @@ export default async function HomePage() {
 
           <RoundedContainer>
             <h3>ポイハンの習得</h3>
+            <ResponsiveImage src="/subevents/skill-chat-poison-hammer.jpg" />
             <div className="grid grid-cols-1 gap-3">
               <RoundedItem title="発生時期">
                 バンエルティア号を入手以降
@@ -94,7 +92,7 @@ export default async function HomePage() {
                 遠征の橋でインフェリア世界への帰還後から
               </RoundedItem>
               <RoundedItem title="発生場所と手順">
-                潜水艇を利用してインフェリア海の海底（GPS座標：119,
+                潜水艇を利用してインフェリアの海底（GPS座標：119,
                 122）にある「アジト2」へ進入し、宝箱が並ぶ奥の部屋を調査するとイベントが起き、氷属性の「コチハン」を習得します。
               </RoundedItem>
               <GuideList

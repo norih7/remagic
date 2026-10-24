@@ -3,6 +3,17 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/10/24",
+    update: (
+      <>
+        <Link href="/subevents/skill-chat">チャットの特技習得</Link>、
+        <Link href="/subevents/skill-fog">フォッグの特技習得</Link>、
+        <Link href="/subevents/lysithea">画家リシテア</Link>
+        をアップデート。リマスター版の画像に変更しました。
+      </>
+    ),
+  },
+  {
     date: "2026/10/23",
     update: (
       <>

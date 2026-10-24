@@ -33,10 +33,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          セレスティア各地にいる画家のリシテアとの遭遇イベントを解説します。
-        </PageSummary>
-
         <Section>
           <Title>
             <SkillIcon />
@@ -44,7 +40,7 @@ export default async function HomePage() {
           </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              「キャンセラー」、フォッグの特技「エレメントマスター」の前提条件
+              キャンセラー、フォッグの「エレメントマスター」習得条件
             </RoundedInlineList>
             <RoundedInlineList title="場所">セレスティア各地</RoundedInlineList>
             <RoundedInlineList title="発生">
@@ -77,32 +73,30 @@ export default async function HomePage() {
           <p>
             セレスティア各地でリシテアと遭遇します。ここはどの順番で行っても構いません。
           </p>
-          <table>
-            <thead>
-              <tr>
-                <th className="w-[150px]">タウン</th>
-                <th>場所/条件</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>ティンシア</td>
-                <td>
-                  ティンシアの町にあるノーム銅像の前にいるリシテアに話しかける
-                </td>
-              </tr>
-              <tr>
-                <td>岬の砦</td>
-                <td>
-                  岬の砦（※セレスティア突入時の場所）にいるリシテアに話しかける
-                </td>
-              </tr>
-              <tr>
-                <td>ルイシカ</td>
-                <td>奥にある廃墟の前にいるリシテアに話しかけると</td>
-              </tr>
-            </tbody>
-          </table>
+          <RoundedContainer title="ティンシア">
+            <div className="pt-3">
+              <ResponsiveImage src="/subevents/lysithea-tinnsia.jpg" />
+            </div>
+            <RoundedItem title="場所">
+              ティンシアの町にあるノーム銅像の前にいるリシテアに話しかける
+            </RoundedItem>
+          </RoundedContainer>
+          <RoundedContainer title="岬の砦">
+            <div className="pt-3">
+              <ResponsiveImage src="/subevents/lysithea-cape.jpg" />
+            </div>
+            <RoundedItem title="場所">
+              岬の砦（※セレスティア突入時の場所）にいるリシテアに話しかける
+            </RoundedItem>
+          </RoundedContainer>
+          <RoundedContainer title="ルイシカ">
+            <div className="pt-3">
+              <ResponsiveImage src="/subevents/lysithea-louisica.jpg" />
+            </div>
+            <RoundedItem title="場所">
+              奥にある廃墟の前にいるリシテアに話しかける
+            </RoundedItem>
+          </RoundedContainer>
         </Section>
         <Section>
           <SectionTitle>イベントの最後</SectionTitle>

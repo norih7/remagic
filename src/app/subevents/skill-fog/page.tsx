@@ -13,6 +13,7 @@ import SkillIcon from "@/components/Icons/SkillIcon";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import CardList from "@/components/CardLIst";
 import Title from "@/components/Title";
+import Tier from "@/components/Tier";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,10 +33,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>フォッグの特技習得サブイベントをまとめています。</p>
-        </PageSummary>
-
         <Section>
           <Title>
             <SkillIcon />
@@ -51,9 +48,9 @@ export default async function HomePage() {
           <div className="mb-4">
             <CardList
               list={[
-                "Tier1. アクアスパイラル、エレメンタルマスター",
-                "Tier2. レイジレーザー、エアブレイド",
-                "Tier3. ダークイレイザー",
+                <Tier rank={1}>アクアスパイラル、エレメンタルマスター</Tier>,
+                <Tier rank={2}>レイジレーザー、エアブレイド</Tier>,
+                <Tier rank={3}>ダークイレイザー</Tier>,
               ]}
             />
           </div>
@@ -120,8 +117,8 @@ export default async function HomePage() {
 
           <RoundedContainer>
             <h3>ダークイレイザーの習得</h3>
+            <ResponsiveImage src="/subevents/skill-fog-dark-laser.jpg" />
             <div className="grid grid-cols-1 gap-3">
-              <ResponsiveImage src="/subevents/skill-fog-dark-laser.jpg" />
               <RoundedItem title="発生時期">レグルスの丘クリア後</RoundedItem>
               <RoundedItem title="発生場所と手順">
                 ルイシカの町にあるがれき付近に近づくとイベントが発生し、フォッグが闇属性の「ダークイレイザー」を習得します。なお、ここで目指すがれきは奥側の廃墟フロアではなく手前側にあります。一見すると最初はピンク色のミアキスが姿を見せていませんが、イベントの進行中に突如現れる仕様になっています。
