@@ -41,10 +41,10 @@ export default async function HomePage() {
           ストーリー後半から収集できるセレスティア7大秘宝をまとめています。各秘宝の入手方法や使い方、特殊なS・Dなどを解説しています。
         </PageSummary>
         <Section>
-          <Title>セレスティア7大秘宝の概要</Title>
+          <Title>セレスティア7大秘宝</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              「コルレーンのつぼ」、「S・D」、「レジュームリング」など
+              コルレーンのつぼ、S・D、レジュームリングなど
             </RoundedInlineList>
             <RoundedInlineList title="場所">セレスティア各地</RoundedInlineList>
             <RoundedInlineList title="発生">

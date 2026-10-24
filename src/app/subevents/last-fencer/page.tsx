@@ -37,16 +37,13 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          リッドの強力な武器「ラストフェンサー」の入手手順と性能を解説しています
-        </PageSummary>
         <Section>
           <Title>ラストフェンサーの入手</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="場所">
               バリル城、アイメン（崩壊後）
             </RoundedInlineList>
-            <RoundedInlineList title="報酬">「飛行艇」の入手</RoundedInlineList>
+            <RoundedInlineList title="報酬">ラストフェンサー</RoundedInlineList>
             <RoundedInlineList title="発生">
               バリル城でヒアデス撃破後
             </RoundedInlineList>
@@ -62,7 +59,7 @@ export default async function HomePage() {
             <h3>1. バリル城でゾシモスに話しかける</h3>
             <ResponsiveImage src="/subevents/last-fencer-zosimos.jpg" />
             <RoundedItem className="mb-3">
-              ヒアデス撃破後にフリンジ砲のエリアにいるゾシモスに話しかけて「リヴァイウス鉱石を使って武器を作れないか」という話を聞きます。
+              ヒアデス撃破後にフリンジ砲のエリアにいるゾシモスに話しかけて「リヴァイウス鉱石を使って武器を作れないか」という話を聞きます。フリンジ砲発射前後でゾシモスのいる場所が違っているので地上または建設上部を探してください。
             </RoundedItem>
             <GuideList
               items={[

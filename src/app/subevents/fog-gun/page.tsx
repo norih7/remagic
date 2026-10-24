@@ -37,9 +37,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          フォッグの武器開発について解説しています。フォッグの最強武器も開発で入手するためお見逃しなく。
-        </PageSummary>
         <Section>
           <Title>フォッグの武器開発</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
@@ -53,7 +50,10 @@ export default async function HomePage() {
           </div>
           <ResponsiveImage src="/subevents/fog-gun-assistance.jpg" />
           <p>
-            フォッグの武器すべてティンシアのアジトでのサブイベントから入手します。フォッグをパーティに加入させた状態でアジトの部下に話かけると1回20,000ガルドの支援金を渡し、総額が一定以上となる武器を入手できます。また武器の受け取りは合計金額を満たせばよく、この部屋から出入りせずとも「寄付→話す」を繰り返せばよいです。
+            フォッグの武器すべてティンシアのアジトでのサブイベントから入手します。フォッグの最強武器もこの開発で入手するためお見逃しなく。
+          </p>
+          <p>
+            フォッグをパーティに加入させた状態でアジトの部下に話かけると1回20,000ガルドの支援金を渡し、総額が一定以上となる武器を入手できます。また武器の受け取りは合計金額を満たせばよく、この部屋から出入りせずとも「寄付→話す」を繰り返せばよいです。
           </p>
           <Information type="warning" title="支援額について">
             <ResponsiveImage src="/subevents/fog-gun-notice.jpg" />
