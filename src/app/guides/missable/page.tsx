@@ -48,7 +48,7 @@ export default async function HomePage() {
         <Section>
           <SectionTitle>消失するレンズ</SectionTitle>
           <ResponsiveImage
-            src="/subevents/lens-location51.jpg"
+            src="/subevents/lens-location53.jpg"
             alt="無くなる可能性があるジイニのオークション会場にあるレンズ"
           />
           <Information type="warning" title="リマスター版では発生しない">

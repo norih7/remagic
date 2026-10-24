@@ -46,7 +46,7 @@ export default async function HomePage() {
           </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              大晶霊「マクスウェル」、「ゴッドウェポン」、「フェアリィリング」など
+              大晶霊「マクスウェル」、ゴッドウェポン、フェアリィリングなど
             </RoundedInlineList>
             <RoundedInlineList title="場所">ファロース教会</RoundedInlineList>
             <RoundedInlineList title="発生">

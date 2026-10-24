@@ -47,7 +47,7 @@ export default async function HomePage() {
           </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              武器「ヴォーパルソード」、防具「キューティミトン」など
+              ヴォーパルソード、キューティミトンなど
             </RoundedInlineList>
             <RoundedInlineList title="場所">
               インフェリア海底 GPS(34,4)
@@ -63,6 +63,7 @@ export default async function HomePage() {
           </div>
           <div className="mb-8">
             <h3>沈没船への行き方</h3>
+            <ResponsiveImage src="/extras/secret-sunken-location.jpg" />
             <p>
               「遠征の橋」からイベントを経てインフェリア側へ帰還したあと、インフェリア世界の海底に位置する沈没船（GPS座標：34,
               4 付近）へ潜水艇で向かうことで侵入することができます。
@@ -104,7 +105,7 @@ export default async function HomePage() {
               排水後の探索」エリアへ戻り、水が引いて通れるようになった奥の区画を本格的に探索していきましょう。
             </p>
             <ResponsiveImage
-              src="/extras/secret-sunken-ship-ladder.jpg"
+              src="/extras/sunken-ship-ladder.jpg"
               alt="沈没船のハシゴと分岐地点"
             />
             <p>
