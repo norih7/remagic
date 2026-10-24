@@ -14,6 +14,7 @@ import CardList from "@/components/CardLIst";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import SkillIcon from "@/components/Icons/SkillIcon";
+import Tag from "@/components/Tag";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -117,7 +118,76 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle>ゼクンドゥスとの戦闘</SectionTitle>
-          <p>準備中</p>
+          <div className="mb-8">
+            <h3>基本情報</h3>
+            <RoundedContainer title="ゼクンドゥスの情報">
+              <div className="grid grid-cols-2 gap-3 pt-3">
+                <RoundedItem title="HP">200000</RoundedItem>
+                <RoundedItem title="攻撃属性">
+                  <div className="py-1">
+                    <Tag element="normal">物理</Tag>
+                  </div>
+                </RoundedItem>
+                <RoundedItem title="弱点属性">
+                  <div className="py-1">
+                    <Tag element="thunder">雷</Tag>
+                  </div>
+                </RoundedItem>
+                <RoundedItem title="攻撃耐性">
+                  <div className="flex flex-wrap gap-x-2 gap-y-1">
+                    <Tag element="normal">物理</Tag>
+                    <Tag element="fire">火</Tag>
+                    <Tag element="water">水</Tag>
+                    <Tag element="ice">氷</Tag>
+                    <Tag element="wind">風</Tag>
+                    <Tag element="earth">土</Tag>
+                    <Tag element="light">光</Tag>
+                    <Tag element="dark">闇</Tag>
+                    <Tag element="origin">元</Tag>
+                    <Tag element="time">時</Tag>
+                  </div>
+                </RoundedItem>
+              </div>
+            </RoundedContainer>
+
+            <RoundedContainer title="おすすめ装備">
+              <div className="grid grid-cols-2 gap-3 pt-3">
+                <RoundedItem title="ボルテックソード">
+                  リッドの雷属性武器
+                </RoundedItem>
+                <RoundedItem title="ストライクアクス">
+                  リッドの雷属性武器
+                </RoundedItem>
+                <RoundedItem title="ピヨハン">
+                  気絶対策: 気絶時間を1/2にする
+                </RoundedItem>
+                <RoundedItem title="クローナシンボル">
+                  気絶対策: 全ステータス異常を防止（気絶含む）
+                </RoundedItem>
+              </div>
+            </RoundedContainer>
+          </div>
+          <div className="mb-8">
+            <div className="mb-3">
+              <h3>インディグネイションの特殊演出</h3>
+              <Tag>おすすめ攻略法</Tag>
+            </div>
+            <ResponsiveImage src="/subevents/sekundes-buttle-triger.jpg" />
+            <p>
+              ゼクンドゥスのHPが1/2以下（ノーマルでは100,000以下）で、インディグネイションを発動させると特殊演出が発生してゼクンドゥスを1撃で倒すことができます。インディグネイションは「ヴォルトLv15
+              ×
+              レムLv10」のフリンジで習得します。HPが1/2以下になるとゼクンドゥスがさらに強力な技を使ってくるため、この方法で倒すのを推奨します。
+            </p>
+            <Information title="特殊演出">
+              インディグネイションはキールとメルディでそれぞれ演出が用意されており、専用カットインがここだけで見れます。誰にインディグネイションを習得させるかは事前に調整しておきましょう。
+            </Information>
+          </div>
+          <div className="mb-8">
+            <div className="mb-3">
+              <h3>攻略法</h3>
+            </div>
+            <p>準備中</p>
+          </div>
         </Section>
       </article>
     </Main>
