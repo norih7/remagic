@@ -1,4 +1,3 @@
-
 import SectionTitle from "@/components/SectionTitle";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
@@ -114,12 +113,10 @@ export default async function HomePage() {
         <div className="mb-3">
           <h3>{item.name}</h3>
           <div className="flex flex-wrap gap-2">
-            <RoundedInlineList title="消費TP" type="wide">
-              {item.tp}
-            </RoundedInlineList>
-            <RoundedInlineList title="攻撃属性" type="wide">
+            <RoundedInlineList title="消費TP">{item.tp}</RoundedInlineList>
+            <div>
               <Elements list={item.element as (keyof typeof elementMap)[]} />
-            </RoundedInlineList>
+            </div>
           </div>
         </div>
         {Image}
@@ -144,12 +141,10 @@ export default async function HomePage() {
         <div className="mb-3">
           <h3>{item.name}</h3>
           <div className="flex flex-wrap gap-2">
-            <RoundedInlineList title="消費TP" type="wide">
-              {item.tp}
-            </RoundedInlineList>
-            <RoundedInlineList title="攻撃属性" type="wide">
+            <RoundedInlineList title="消費TP">{item.tp}</RoundedInlineList>
+            <div>
               <Elements list={item.element as (keyof typeof elementMap)[]} />
-            </RoundedInlineList>
+            </div>
           </div>
         </div>
         {Image}
@@ -169,14 +164,14 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <div className="mb-2">
-          <p>
-            リッドとファラが使える秘奥義の条件や発動方法、特徴をまとめています
-          </p>
-        </div>
-      </PageSummary>
-      {/* 
+        <PageSummary>
+          <div className="mb-2">
+            <p>
+              リッドとファラが使える秘奥義の条件や発動方法、特徴をまとめています
+            </p>
+          </div>
+        </PageSummary>
+        {/* 
       <section className="mb-12">
         <SectionTitle type="data">おすすめの特技</SectionTitle>
         <div className="advice">
@@ -184,26 +179,26 @@ export default async function HomePage() {
         </div>
       </section> */}
 
-      <Section>
-        <SectionTitle type="skill">リッドの秘奥義一覧</SectionTitle>
-        {/* <div className="mb-8">
+        <Section>
+          <SectionTitle type="skill">リッドの秘奥義一覧</SectionTitle>
+          {/* <div className="mb-8">
           <p>
             リッドの秘奥義でダメージを与えるために積極的に使うのは「緋凰絶炎衝」です。
             他の技も使い所
           </p>
         </div> */}
-        {ridList}
-      </Section>
+          {ridList}
+        </Section>
 
-      <Section>
-        <SectionTitle type="skill">ファラの秘奥義一覧</SectionTitle>
-        {farthList}
-      </Section>
-      {/* <section className="mb-12">
+        <Section>
+          <SectionTitle type="skill">ファラの秘奥義一覧</SectionTitle>
+          {farthList}
+        </Section>
+        {/* <section className="mb-12">
         <SectionTitle type="skill">ファラの秘奥義一覧</SectionTitle>
         {farthList}
       </section> */}
-    </article>
+      </article>
     </Main>
   );
 }
