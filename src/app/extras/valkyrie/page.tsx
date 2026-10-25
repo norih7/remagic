@@ -57,7 +57,7 @@ export default async function HomePage() {
           <Title>きらめきの塔</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              「BCロッド」「ゴールドアーマ」、「ジェットブーツ」など
+              BCロッド、ゴールドアーマーなど
             </RoundedInlineList>
             <RoundedInlineList title="場所">
               インフェリアマップ GPS(107,23)
