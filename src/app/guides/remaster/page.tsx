@@ -32,10 +32,6 @@ export default function Page() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          テイルズオブエターニアリマスターの変更点やリマスター向け攻略情報をまとめます
-        </PageSummary>
-
         <Section>
           <Title>リマスター版の紹介</Title>
           <p>

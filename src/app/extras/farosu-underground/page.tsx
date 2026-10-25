@@ -33,12 +33,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            すべての源たる元の大晶霊「マクスウェル」と契約を果たすために挑む隠しダンジョン「ファロース教会地下」の攻略情報ページです。ダンジョンの開放手順から、強力なボスへの対策、道中で手に入る強力な装備品や超レアなドロップアイテムのデータを解説します。
-          </p>
-        </PageSummary>
-
         <Section>
           <Title>
             <SkillIcon />

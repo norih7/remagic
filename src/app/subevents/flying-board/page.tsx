@@ -32,12 +32,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            物語の終盤で「飛行艇」を使うための手順を解説するページです。飛行艇がなくてもストーリーのクリア自体は可能ですが、世界の移動が圧倒的に快適になり、強力な隠しダンジョンやサブイベントへのアクセスが解放されるため、ぜひ入手を目指しましょう。
-          </p>
-        </PageSummary>
-
         <Section>
           <Title>飛行艇入手</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">

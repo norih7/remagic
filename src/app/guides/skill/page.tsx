@@ -8,6 +8,7 @@ import { guideLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -28,12 +29,10 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            『テイルズ オブ
-            エターニア』における、各種スキルや晶霊術の習得方法について解説します。本作ではキャラクターのレベルアップだけですべての技を覚えるわけではなく、各人固有の育成システムや習得手順が用意されているため、詳細をあらかじめ把握しておきましょう。
-          </p>
-        </PageSummary>
+        <Section>
+          <Title>特技/術の習得</Title>
+          『テイルズオブエターニア』における、各種スキルや晶霊術の習得方法について解説します。本作ではキャラクターのレベルアップだけですべての技を覚えるわけではなく、各人固有の育成システムや習得手順が用意されているため、詳細をあらかじめ把握しておきましょう。
+        </Section>
 
         <Section>
           <SectionTitle type="system">リッドとファラの特技習得</SectionTitle>

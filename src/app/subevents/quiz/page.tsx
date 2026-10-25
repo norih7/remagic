@@ -30,14 +30,11 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          ミンツ大学で挑戦できるテイルズクイズについて解説します。クイズ一覧と回答を掲載しています。
-        </PageSummary>
         <Section>
           <Title>テイルズクイズ</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              リッドの称号「テイルズはかせ」、アクセサリ「コンボコマンド」など
+              称号「テイルズはかせ」、コンボコマンドなど
             </RoundedInlineList>
             <RoundedInlineList title="場所">ミンツ大学</RoundedInlineList>
             <RoundedInlineList title="発生">ミンツ到着後から</RoundedInlineList>

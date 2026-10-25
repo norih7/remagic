@@ -36,12 +36,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            闇の大晶霊「シャドウ」と契約を果たすために訪れる隠しダンジョン「闇の洞窟」の攻略情報ページです。ダンジョンへのアクセス方法から、内部でのギミック解除手順、ボス戦の対策、獲得できる貴重なアイテムやチャットレンズのデータを一覧で解説します。
-          </p>
-        </PageSummary>
-
         <Section>
           <Title>
             <SkillIcon />
@@ -49,7 +43,7 @@ export default async function HomePage() {
           </Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              大晶霊「シャドウ」
+              大晶霊「シャドウ」、レンズ
             </RoundedInlineList>
             <RoundedInlineList title="場所">
               セレスティア海底 GPS(5,12)

@@ -37,9 +37,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          ストーリー後半から収集できるセレスティア7大秘宝をまとめています。各秘宝の入手方法や使い方、特殊なS・Dなどを解説しています。
-        </PageSummary>
         <Section>
           <Title>セレスティア7大秘宝</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">

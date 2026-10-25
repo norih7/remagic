@@ -35,9 +35,10 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
+        <Section>
+          <Title>レンズ収集</Title>
           町やダンジョンなどで入手することができるレンズの説明とレンズの入手場所一覧データを掲載しています。
-        </PageSummary>
+        </Section>
 
         <Section>
           <SectionTitle>レンズの説明ともらえるアイテム</SectionTitle>

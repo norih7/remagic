@@ -11,6 +11,8 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import Expand from "@/components/Expand";
 import CardList from "@/components/CardLIst";
+import Title from "@/components/Title";
+import InlineCaption from "@/components/InlineCaption";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -449,11 +451,10 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            アイテムを別アイテムに変化させるルーンボトルについて説明します。
-          </p>
-        </PageSummary>
+        <Section>
+          <Title>ルーンボトル</Title>
+          アイテムを別アイテムに変化させるルーンボトルについて解説します。
+        </Section>
         {/* <div className="mb-12">
         <h4 className="mb-2">目次</h4>
         <ul className="flex">
@@ -501,32 +502,45 @@ export default async function HomePage() {
                 <tbody>{rows}</tbody>
               </table>
             </Expand>
+            <Information title="ルーンボトルの購入">
+              <p>
+                基本的にダンジョン内で限られた数しか入手できないルーンボトルですが、ストーリー後半からは無限購入することが可能となります。ティンシア到着後から可能です。
+              </p>
+              <p>
+                ティンシアの船具屋では「販売室」の改造(購入)が可能になり、バンエルティア号内の販売室にある自販機ではルーンボトルを購入することができるます。なお販売価格は「100000」ガルドとかなり高額。
+              </p>
+            </Information>
           </div>
           <div className="mb-8"></div>
-        </Section>
-        <Section>
-          <SectionTitle>ルーンボトルの購入方法</SectionTitle>
-          <EventCondition category="period">
-            ティンシア到着後以降
-          </EventCondition>
-          <p>
-            基本的にダンジョン内で限られた数しか入手できないルーンボトルですが、ストーリー後半からは無限購入することが可能となります。ティンシア到着後から可能です。
-          </p>
-          <p>
-            ティンシアの船具屋では「販売室」の改造(購入)が可能になり、バンエルティア号内の販売室にある自販機ではルーンボトルを購入することができるます。なお販売価格は「100000」ガルドとかなり高額。
-          </p>
         </Section>
 
         <Section>
           <SectionTitle>ルーンボトルの変化一覧</SectionTitle>
-          <Information title="オススメ度について">
-            オススメ度は以下の基準としています
-            <ul>
-              <li>1: ショップで購入可能/明らかに劣化</li>
-              <li>3: ルーンボトルを無限購入できる状態で必要ならアリ</li>
-              <li>5: 元アイテムから大幅効果アップ/唯一無二</li>
-            </ul>
-          </Information>
+          <div className="mb-8">
+            <p>オススメ度は以下の基準としています</p>
+            <CardList
+              list={[
+                <>
+                  <InlineCaption>
+                    <span className="text-amber-500">★</span>1
+                  </InlineCaption>
+                  ショップで購入可能/明らかに劣化
+                </>,
+                <>
+                  <InlineCaption>
+                    <span className="text-amber-500">★</span>3
+                  </InlineCaption>
+                  ルーンボトルを無限購入できる状態で必要ならアリ
+                </>,
+                <>
+                  <InlineCaption>
+                    <span className="text-amber-500">★</span>5
+                  </InlineCaption>
+                  元アイテムから大幅効果アップ/唯一無二
+                </>,
+              ]}
+            />
+          </div>
           <RunePropertyList runes={runeItems} />
         </Section>
       </article>

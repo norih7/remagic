@@ -12,6 +12,7 @@ import Image from "next/image";
 import { systemLinks } from "@/constants";
 import Section from "@/components/Section";
 import GuideList from "@/components/GuideList";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,21 +37,12 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            料理一覧データを掲載しています。ワンダーシェフの場所を画像付きで案内し、必要な食材の購入情報などもすべて掲載しています。
-          </p>
-        </PageSummary>
-        {/* <section className="mb-12">
-        <SectionTitle>料理と習得方法</SectionTitle>
-        <p>準備中</p>
-      </section> */}
         <Section>
-          <SectionTitle>料理一覧データ</SectionTitle>
+          <Title>料理一覧データ</Title>
+          <div className="mb-6">
+            料理一覧データを掲載しています。ワンダーシェフの場所を画像付きで案内し、必要な食材の購入情報などもすべて掲載しています。
+          </div>
           <div className="mb-8">
-            <p>
-              ワンダーシェフから教えてもらえる料理とマスター料理も含めた全料理データを掲載！
-            </p>
             <GuideList
               items={[
                 {

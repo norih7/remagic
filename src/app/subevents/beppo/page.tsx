@@ -38,9 +38,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          アイテム「ルーンボトル」と「ドエニスのポプリ」を入手できるベッポとのかくれんぼについて解説。イベントはセレスティアへ行く前までにやっておく時間制限があります。
-        </PageSummary>
         <Section>
           <div className="mb-3">
             <Title>

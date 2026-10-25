@@ -28,12 +28,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            エターニアのプレイで序盤からやっておきたいことをまとめています。
-          </p>
-        </PageSummary>
-
         <Section>
           <Title>序盤にやっておきたいこと</Title>
           <p>

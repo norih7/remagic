@@ -12,6 +12,7 @@ import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import GuideList from "@/components/GuideList";
 import Main from "@/components/SiteLayout/Main";
+import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,11 +33,10 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            エターニアの戦闘システムについて解説します。マニュアル操作をできるようにするイベントや他のシリーズにあるバックステップの操作、アイテムドロップ率がアップするテクニカルスマッシュについて解説しています。
-          </p>
-        </PageSummary>
+        <Section>
+          <Title>エターニアの戦闘システム</Title>
+          エターニアの戦闘システムについて解説します。マニュアル操作をできるようにするイベントや他のシリーズにあるバックステップの操作、アイテムドロップ率がアップするテクニカルスマッシュについて解説しています。
+        </Section>
 
         <Section>
           <SectionTitle type="system">マニュアル操作</SectionTitle>

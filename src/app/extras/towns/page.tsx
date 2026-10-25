@@ -11,6 +11,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import InlineCaption from "@/components/InlineCaption";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,12 +34,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            隠しタウン「ねこにんの里」と「晶霊温泉」の攻略情報ページです。それぞれのタウンへの行き方、マスター料理の必須食材「パープルソディ」の購入方法、チャットの特技「パラライボール」を習得できる温泉イベントなど、役立つサブイベントの情報をまとめています。
-          </p>
-        </PageSummary>
-
         <Section>
           <Title>隠しタウン「ねこにんの里/晶霊温泉」</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
@@ -60,8 +55,14 @@ export default async function HomePage() {
           <h3>主な目的</h3>
           <CardList
             list={[
-              "ねこにんの里: マスター料理の食材である「パープルソディ」の購入",
-              "晶霊温泉: チャットの特技習得サブイベントなど",
+              <>
+                <InlineCaption>ねこにんの里</InlineCaption>
+                マスター料理の食材である「パープルソディ」の購入
+              </>,
+              <>
+                <InlineCaption>晶霊温泉</InlineCaption>
+                チャットの特技習得サブイベントなど
+              </>,
             ]}
           />
         </Section>

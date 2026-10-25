@@ -103,14 +103,11 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          王都インフェリアで開催されている闘技場について解説します。
-        </PageSummary>
         <Section>
           <Title>闘技場</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
-              「ステータスアップの薬草」、「各種回復グミ」、「エターナルソード」など
+              薬草セット、各種グミ、エターナルソードなど
             </RoundedInlineList>
             <RoundedInlineList title="場所">王都インフェリア</RoundedInlineList>
             <RoundedInlineList title="発生">

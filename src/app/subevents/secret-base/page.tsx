@@ -34,9 +34,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          インフェリアにあるアイフリードの隠しアジトの解説。探索だけで貴重なアイテムを入手できるサブイベントです。
-        </PageSummary>
         <Section>
           <Title>インフェリアの隠しアジト</Title>
           <div className="mb-2 grid grid-cols-1 gap-2">

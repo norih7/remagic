@@ -37,10 +37,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          飛行艇の入手に欠かせないキーアイテム「ひかりのたま」が手に入る、インフェリアの隠しダンジョン「アイフリードの墓」の攻略情報をまとめました。
-        </PageSummary>
-
         <Section>
           <Title>
             <KeyItemIcon />

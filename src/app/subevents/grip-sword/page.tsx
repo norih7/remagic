@@ -38,9 +38,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          アイテムドロップ率アップにつながるアクセサリ「スマッシュマント」を入手できるグリップソート探しについて解説。イベントには時間制限がありませんが、スマッシュマントは非常に有用なアクセサリなので王都インフェリア到着後すぐにやっておくことを推奨します。
-        </PageSummary>
         <Section>
           <Title>クリップソード探し</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
