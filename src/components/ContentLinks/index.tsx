@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import SkillIcon from "../Icons/SkillIcon";
 import TimeLimitIcon from "../Icons/TimeLimitIcon";
+import KeyItemIcon from "../Icons/KeyItemIcon";
 
 type Content = {
   title: string;
@@ -48,6 +49,8 @@ const ContentLinks = (props: Props) => {
                 <SkillIcon />
               ) : item.type === "time-limit" ? (
                 <TimeLimitIcon />
+              ) : item.type === "key-item" ? (
+                <KeyItemIcon />
               ) : null}
               {item.title}
             </h3>

@@ -290,6 +290,7 @@ export const subeventLinks: Record<string, PageLink> = {
     updatedAt: "2026-10-10",
   },
   treasure: {
+    type: "skill",
     title: "セレスティア7大秘宝",
     path: "/subevents/treasure",
     image: "/link-headers/subevents-tresure.jpg",
@@ -464,6 +465,7 @@ export const extraLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。隠しダンジョン「きらめきの塔」の行き方、1階から7階までの各フロアに用意された多彩な謎解きギミック・パズルの解き方、リッド1人で挑むボス「ワルキューレ」の攻略法や「S・D」入手の鍵に関する情報を網羅して紹介しています。",
   },
   "sunken-ship": {
+    type: "key-item",
     title: "沈没船",
     path: "/extras/sunken-ship",
     image: "/link-headers/extras-sunken-ship.jpg",
@@ -472,6 +474,7 @@ export const extraLinks: Record<string, PageLink> = {
       "リマスター版に対応したテイルズオブエターニア（TOE）の攻略ガイド。インフェリアの隠しダンジョン「沈没船」の行き方、船内の謎解き（隔壁のキー・ポンプ室の鍵・水の放出）、インシーマップの入手法、ボス「セイレーン」の攻略、入手アイテム情報を網羅して紹介しています。",
   },
   aifread: {
+    type: "key-item",
     title: "アイフリードの墓",
     image: "/link-headers/extras-aifread.jpg",
     path: "/extras/aifread",

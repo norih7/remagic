@@ -13,6 +13,7 @@ import Main from "@/components/SiteLayout/Main";
 import GuideList from "@/components/GuideList";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import InlineCaption from "@/components/InlineCaption";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -85,9 +86,18 @@ export default async function HomePage() {
             </RoundedItem>
             <CardList
               list={[
-                "1. 防具屋の前にいる男性に話しかけ、グリップソードの情報を聞く",
-                "2. 城門前にいる兵士に話しかけ、グリップソードの情報を聞く",
-                "3. 闘技場にいる兵士に話しかけ、グリップソードを返してもらう",
+                <>
+                  <InlineCaption>1</InlineCaption>
+                  防具屋の前にいる男性に話しかけ、グリップソードの情報を聞く
+                </>,
+                <>
+                  <InlineCaption>2</InlineCaption>
+                  城門前にいる兵士に話しかけ、グリップソードの情報を聞く
+                </>,
+                <>
+                  <InlineCaption>3</InlineCaption>
+                  闘技場にいる兵士に話しかけ、グリップソードを返してもらう
+                </>,
               ]}
             />
           </RoundedContainer>
