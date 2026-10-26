@@ -1,4 +1,3 @@
-
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
@@ -13,6 +12,8 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
 import Image from "next/image";
 import Main from "@/components/SiteLayout/Main";
+import Expand from "@/components/Expand";
+import InlineCaption from "@/components/InlineCaption";
 
 export const dynamic = "force-static";
 
@@ -32,7 +33,7 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
+        <PageSummary>
           隠し晶霊術「ブルーアース」の情報をまとめています。ブルーアースを発動させるフェイクの場所も掲載。発動コマンドが難しいので、ぜひ手元でこのページ開いてやってください。
         </PageSummary>
 
@@ -72,12 +73,14 @@ export default async function HomePage() {
           </div>
           <div className="mb-8">
             <h3>地晶霊の廃坑のフェイクの場所</h3>
+            <ResponsiveImage src="/deeps/blue-earth-fake.jpg" />
             <p>
-              チャットの小屋側のフィールドマップから地晶霊の廃坑へ入り、下記のように進むとフェイクが無限に出現するベルトコンベアへ辿り着きます。
+              チャットの小屋側のフィールドマップから地晶霊の廃坑へ入り、下記マップの案内に進むとフェイクが無限に出現するベルトコンベアへ辿り着きます。※もし初回の宝箱を開封した場合は「オールディバイト」を入手します。その後レバーをもう一度調べると再度宝箱が運ばれてきてフェイクが出現します。
             </p>
-            <div className="pt-8">
+
+            <Expand title="フェイクまでのマップ解説">
               <Image src="/maps/mine-map.jpg" width={700} height={500} alt="" />
-            </div>
+            </Expand>
           </div>
         </Section>
 
@@ -89,28 +92,55 @@ export default async function HomePage() {
             </p>
             <RoundedContainer className="grid grid-cols-2 gap-3">
               <RoundedItem title="1. マクスウェル召喚時">
-                「← + □」を押し続ける
+                <div className="mb-2">
+                  <InlineCaption>PS系統</InlineCaption>「← + □」を押し続ける
+                </div>
+                <InlineCaption>Switch</InlineCaption>「← + Y」を押し続ける
               </RoundedItem>
               <RoundedItem title="2. デュアル・ザ・サン発動時">
-                「×」を押し続ける
+                <div className="mb-2">
+                  <InlineCaption>PS系統</InlineCaption>「×」を押し続ける
+                </div>
+                <InlineCaption>Switch</InlineCaption>「B」を押し続ける
               </RoundedItem>
               <RoundedItem title="3. エタニティ・スォーム発動時">
-                「⚪︎」を押し続ける
+                <div className="mb-2">
+                  <InlineCaption>PS系統</InlineCaption>「⚪︎」を押し続ける
+                </div>
+                <InlineCaption>Switch</InlineCaption>「A」を押し続ける
               </RoundedItem>
               <RoundedItem title="4. プリズミックスターズ発動時">
-                「△」を押し続ける
+                <div className="mb-2">
+                  <InlineCaption>PS系統</InlineCaption>「△」を押し続ける
+                </div>
+                <InlineCaption>Switch</InlineCaption>「X」を押し続ける
               </RoundedItem>
               <RoundedItem title="5. ブライティスト・ゲート発動時">
-                「□」を押し続ける
+                <div className="mb-2">
+                  <InlineCaption>PS系統</InlineCaption>「□」を押し続ける
+                </div>
+                <InlineCaption>Switch</InlineCaption>「Y」を押し続ける
               </RoundedItem>
               <RoundedItem title="6. エクスプロージョン・ノヴァ発動時">
-                「△ + ×」を押し続ける
+                <div className="mb-2">
+                  <InlineCaption>PS系統</InlineCaption>「△ + ×」を押し続ける
+                </div>
+                <InlineCaption>Switch</InlineCaption>「X + B」を押し続ける
               </RoundedItem>
               <RoundedItem title="7. マクスウェル・ロアー発動時">
-                「⚪︎ + × + □」を押し続ける
+                <div className="mb-2">
+                  <InlineCaption>PS系統</InlineCaption>「⚪︎ + × +
+                  □」を押し続ける
+                </div>
+                <InlineCaption>Switch</InlineCaption>「A + B + Y」を押し続ける
               </RoundedItem>
               <RoundedItem title="8. ディメンジョナル・マテリアル発動時">
-                「⚪︎ + × + □ + △」を押し続ける
+                <div className="mb-2">
+                  <InlineCaption>PS系統</InlineCaption>「⚪︎ + × + □ +
+                  △」を押し続ける
+                </div>
+                <InlineCaption>Switch</InlineCaption>「A + B + Y +
+                X」を押し続ける
               </RoundedItem>
               <RoundedItem title="9. ブルー・アース">最後の術</RoundedItem>
             </RoundedContainer>

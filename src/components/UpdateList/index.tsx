@@ -3,6 +3,15 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/10/26",
+    update: (
+      <>
+        <Link href="/deeps/blue-earth">ブルーアース</Link>
+        をアップデート。リマスター版の画像に変更しました。
+      </>
+    ),
+  },
+  {
     date: "2026/10/24",
     update: (
       <>
