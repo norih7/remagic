@@ -14,6 +14,21 @@ import Image from "next/image";
 import Main from "@/components/SiteLayout/Main";
 import Expand from "@/components/Expand";
 import InlineCaption from "@/components/InlineCaption";
+import {
+  SwitchY,
+  SwitchLeft,
+  SwitchB,
+  SwitchA,
+  SwitchX,
+} from "@/components/Buttons/Switch";
+import {
+  PSLeft,
+  PSSquare,
+  PSCross,
+  PSCircle,
+  PSTriange,
+} from "@/components/Buttons/Playstation";
+import Title from "@/components/Title";
 
 export const dynamic = "force-static";
 
@@ -29,16 +44,14 @@ export const metadata = {
   },
 };
 
+const platformWidth = "min-w-[65px]";
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          隠し晶霊術「ブルーアース」の情報をまとめています。ブルーアースを発動させるフェイクの場所も掲載。発動コマンドが難しいので、ぜひ手元でこのページ開いてやってください。
-        </PageSummary>
-
         <Section>
-          <SectionTitle>ブルーアースとは</SectionTitle>
+          <Title>ブルーアース</Title>
           <ResponsiveImage src="/deeps/blue-earth-digest.jpg" />
           <div className="mb-8">
             <p>
@@ -56,12 +69,17 @@ export default async function HomePage() {
               list={[
                 "戦闘ランクマニアで1回以上戦闘を実施",
                 "術者（キール/メルディ）のTPが999",
-                "術者を戦闘操作キャラにして、「デリスエンブレム」と「レジュームリングまたはメンタルリング」（TP自動回復アイテム）を装備",
+                "術者に「デリスエンブレム」と「レジュームリングまたはメンタルリング」（TP自動回復アクセサリ）を装備",
                 "マクスウェルのレベルが30",
                 "マクスウェルを召喚できる状態となっている",
               ]}
             />
             <Information type="warning" title="必要なTP">
+              <p>
+                <strong>
+                  リマスター版ではブースト機能の「術技消費TP減少」を使えばTP自動回復アクセサリの装備は不要です。
+                </strong>
+              </p>
               必要TPの理論値は999より少ないです。これは術発動中のTP自動回復を考慮しているためですが、確実にブルーアースを発動させるためにTP999を推奨します。計算式などは準備中。
             </Information>
           </div>
@@ -90,57 +108,123 @@ export default async function HomePage() {
             <p>
               条件を満たしたうえで術者（キール/メルディ）を操作キャラにしてマクスウェルを召喚すると特殊演出が起動し、ブルーアースにつながっていきます。
             </p>
+            <p>
+              対象の術の発動中に下記のボタンを押し続けることで次の術が発動していきます。術発動の「ピッ」という音がしたら次のボタンへ移動していきましょう。
+            </p>
             <RoundedContainer className="grid grid-cols-2 gap-3">
               <RoundedItem title="1. マクスウェル召喚時">
-                <div className="mb-2">
-                  <InlineCaption>PS系統</InlineCaption>「← + □」を押し続ける
+                <div className="mb-2 flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>PS系統</InlineCaption>
+                  </div>
+                  <PSLeft /> + <PSSquare />
                 </div>
-                <InlineCaption>Switch</InlineCaption>「← + Y」を押し続ける
+                <div className="flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>Switch</InlineCaption>
+                  </div>
+                  <SwitchLeft /> + <SwitchY />
+                </div>
               </RoundedItem>
               <RoundedItem title="2. デュアル・ザ・サン発動時">
-                <div className="mb-2">
-                  <InlineCaption>PS系統</InlineCaption>「×」を押し続ける
+                <div className="mb-2 flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>PS系統</InlineCaption>
+                  </div>
+                  <PSCross />
                 </div>
-                <InlineCaption>Switch</InlineCaption>「B」を押し続ける
+                <div className="flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>Switch</InlineCaption>
+                  </div>
+                  <SwitchB />
+                </div>
               </RoundedItem>
               <RoundedItem title="3. エタニティ・スォーム発動時">
-                <div className="mb-2">
-                  <InlineCaption>PS系統</InlineCaption>「⚪︎」を押し続ける
+                <div className="mb-2 flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>PS系統</InlineCaption>
+                  </div>
+                  <PSCircle />
                 </div>
-                <InlineCaption>Switch</InlineCaption>「A」を押し続ける
+                <div className="flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>Switch</InlineCaption>
+                  </div>
+                  <SwitchA />
+                </div>
               </RoundedItem>
               <RoundedItem title="4. プリズミックスターズ発動時">
-                <div className="mb-2">
-                  <InlineCaption>PS系統</InlineCaption>「△」を押し続ける
+                <div className="mb-2 flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>PS系統</InlineCaption>
+                  </div>
+                  <PSTriange />
                 </div>
-                <InlineCaption>Switch</InlineCaption>「X」を押し続ける
+                <div className="flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>Switch</InlineCaption>
+                  </div>
+                  <SwitchX />
+                </div>
               </RoundedItem>
               <RoundedItem title="5. ブライティスト・ゲート発動時">
-                <div className="mb-2">
-                  <InlineCaption>PS系統</InlineCaption>「□」を押し続ける
+                <div className="mb-2 flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>PS系統</InlineCaption>
+                  </div>
+                  <PSSquare />
                 </div>
-                <InlineCaption>Switch</InlineCaption>「Y」を押し続ける
+                <div className="flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>Switch</InlineCaption>
+                  </div>
+                  <SwitchY />
+                </div>
               </RoundedItem>
               <RoundedItem title="6. エクスプロージョン・ノヴァ発動時">
-                <div className="mb-2">
-                  <InlineCaption>PS系統</InlineCaption>「△ + ×」を押し続ける
+                <div className="mb-2 flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>PS系統</InlineCaption>
+                  </div>
+                  <PSTriange /> + <PSCross />
                 </div>
-                <InlineCaption>Switch</InlineCaption>「X + B」を押し続ける
+                <div className="flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>Switch</InlineCaption>
+                  </div>
+                  <SwitchX /> + <SwitchB />
+                </div>
               </RoundedItem>
               <RoundedItem title="7. マクスウェル・ロアー発動時">
-                <div className="mb-2">
-                  <InlineCaption>PS系統</InlineCaption>「⚪︎ + × +
-                  □」を押し続ける
+                <div className="mb-2 flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>PS系統</InlineCaption>
+                  </div>
+                  <PSCircle /> + <PSCross /> +
+                  <PSSquare />
                 </div>
-                <InlineCaption>Switch</InlineCaption>「A + B + Y」を押し続ける
+                <div className="flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>Switch</InlineCaption>
+                  </div>
+                  <SwitchA /> + <SwitchB /> + <SwitchY />
+                </div>
               </RoundedItem>
               <RoundedItem title="8. ディメンジョナル・マテリアル発動時">
-                <div className="mb-2">
-                  <InlineCaption>PS系統</InlineCaption>「⚪︎ + × + □ +
-                  △」を押し続ける
+                <div className="mb-2 flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>PS系統</InlineCaption>
+                  </div>
+                  <PSCircle /> + <PSCross /> + <PSSquare /> +
+                  <PSTriange />
                 </div>
-                <InlineCaption>Switch</InlineCaption>「A + B + Y +
-                X」を押し続ける
+                <div className="flex items-center gap-x-1">
+                  <div className={platformWidth}>
+                    <InlineCaption>Switch</InlineCaption>
+                  </div>
+                  <SwitchA /> + <SwitchB /> + <SwitchY /> + <SwitchX />
+                </div>
               </RoundedItem>
               <RoundedItem title="9. ブルー・アース">最後の術</RoundedItem>
             </RoundedContainer>
