@@ -718,7 +718,7 @@ export const elementMap = {
   none: {
     name: "-",
     color: "text-mist-400",
-    tagClass: "bg-orange-100 text-orange-700 border-orange-500",
+    tagClass: "bg-orange-100 text-orange-700 border-orange-200",
   },
 } as const;
 

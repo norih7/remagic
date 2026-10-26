@@ -9,6 +9,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
+import InlineCaption from "@/components/InlineCaption";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,7 +33,11 @@ export default async function HomePage() {
       ruby: "まじんけん",
       description:
         "前方に真空の波を飛ばす飛び道具スキル。敵の詠唱を遠くから妨害したい場面で非常に重宝します。",
-      remarks: "派生先: 魔神剣・双牙、魔神千裂破",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>魔神剣・双牙、魔神千裂破
+        </>
+      ),
       requirement: "斬Lv1/突Lv1",
       tp: 4,
       hit: 1,
@@ -44,7 +49,11 @@ export default async function HomePage() {
       ruby: "らいじんけん",
       description:
         "雷を纏った鋭い突きを繰り出す技。突きがクリーンヒットすると追加で雷属性の電撃ダメージが発生します。",
-      remarks: "派生先: 風雷神剣、雷神双破斬",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>風雷神剣、雷神双破斬
+        </>
+      ),
       requirement: "斬Lv1/突Lv2",
       tp: 4,
       hit: 2,
@@ -56,7 +65,11 @@ export default async function HomePage() {
       ruby: "こがはざん",
       description:
         "上段と下段を素早く切り払う2段攻撃。無駄のないキビキビとしたモーションで、ゲーム終盤まで長く頼れる特技です。",
-      remarks: "派生先: 虎牙連斬、雷神双破斬",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>虎牙連斬、雷神双破斬
+        </>
+      ),
       requirement: "斬Lv5/突Lv2",
       tp: 6,
       hit: 2,
@@ -67,8 +80,12 @@ export default async function HomePage() {
       name: "散沙雨",
       ruby: "ちりさだめ",
       description:
-        "目にも留まらぬ速さで最大5ヒットの連続突きをお見舞いします。武器自体の命中ステータスが低いとヒット数が減るので注意しましょう。",
-      remarks: "派生先: 秋沙雨、魔神千裂破、空破絶掌撃",
+        "最大5ヒットの連続突き。武器自体の命中ステータスが低いとヒット数が減るので注意しましょう。",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>秋沙雨、魔神千裂破、空破絶掌撃
+        </>
+      ),
       requirement: "斬Lv2/突Lv5",
       tp: 7,
       hit: 5,
@@ -80,7 +97,11 @@ export default async function HomePage() {
       ruby: "れっくうざん",
       description:
         "身体を回転させながら周囲を薙ぎ払う技。敵の裏に回り込みたいときのポジショニング調整にも向いています。使用回数が100回を超えるとジャンプ中にも発動可能になり、戦術の幅がぐっと広がります。",
-      remarks: "派生先: 真空裂斬、翔雨裂空撃",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>真空裂斬、翔雨裂空撃
+        </>
+      ),
       requirement: "斬Lv16/突Lv8",
       tp: 7,
       hit: 5,
@@ -92,7 +113,11 @@ export default async function HomePage() {
       ruby: "ふうらいじんけん",
       description:
         "雷神剣の性能をさらに高めた強化版。使い勝手自体は元と大きく変わりませんが、のちに強力な「鳳凰天駆」を覚えるために数多くの使用回数が必要となります。初段は風属性、追撃の電撃は雷属性を帯びます。習得には規定のレベルに加え、「雷神剣」を50回以上使うことが条件となります。",
-      remarks: "派生先: 空破絶掌撃",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>空破絶掌撃
+        </>
+      ),
       requirement: "斬Lv4/突Lv10",
       requirement2: "雷神剣50回以上",
       tp: 8,
@@ -105,7 +130,11 @@ export default async function HomePage() {
       ruby: "まじんけんそうが",
       description:
         "魔神剣をタイミングよく連続で2発放ちます。当たり判定の距離が限定されるものの、リズムをずらした素早い2連撃はなかなかの使い勝手。習得には規定レベルと「魔神剣」を48回以上使用していることが求められます。",
-      remarks: "派生先: 魔神連牙斬",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>魔神連牙斬
+        </>
+      ),
       requirement: "斬Lv10/突Lv3",
       requirement2: "魔神剣48回",
       tp: 8,
@@ -118,7 +147,11 @@ export default async function HomePage() {
       ruby: "こがれんざん",
       description:
         "虎牙破斬をベースにパワーアップさせた優秀な攻撃。従来の虎牙破斬からこちらへ切り替えるプレイヤーが多い定番の技です。習得にはレベル条件のほかに「虎牙破斬」を150回以上使っている必要があります。",
-      remarks: "派生先: 雷神双破斬、猛虎連撃破",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>雷神双破斬、猛虎連撃破
+        </>
+      ),
       requirement: "斬Lv13/突Lv4",
       requirement2: "虎牙破斬150回",
       tp: 10,
@@ -131,7 +164,11 @@ export default async function HomePage() {
       ruby: "あきさだめ",
       description:
         "最大11ヒットにも及ぶ怒涛の連続突きを叩き込みます。最後の一撃で相手をカチ上げるため、地上コンボに組み込む際は少しタイミングの調整が必要です。習得にはレベル条件と「散沙雨」の130回以上の使用実績が必要です。",
-      remarks: "派生先: 翔雨裂空撃",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>翔雨裂空撃
+        </>
+      ),
       requirement: "斬Lv4/突Lv13",
       requirement2: "散沙雨130回",
       tp: 12,
@@ -192,7 +229,11 @@ export default async function HomePage() {
       ruby: "せんくうれっぱ",
       description:
         "光のオーラを纏いながら敵集団を巻き込んで突進する技。光属性を帯びており、キャラの命中ステータスがしっかり育っていれば安定した活躍を見せます。",
-      remarks: "派生先: 閃空翔裂破",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>閃空翔裂破
+        </>
+      ),
       requirement: "斬Lv9/突Lv16",
       tp: 10,
       hit: 8,
@@ -237,7 +278,11 @@ export default async function HomePage() {
       ruby: "しんくうれつざん",
       description:
         "裂空斬をスピードアップ＆強化した発展技。風属性の追加効果を持ち、全体的なモーション速度がスピーディになっています。",
-      remarks: "派生先: 翔雨裂空撃",
+      remarks: (
+        <>
+          <InlineCaption>派生技</InlineCaption>翔雨裂空撃
+        </>
+      ),
       requirement: "斬Lv23/突Lv4",
       tp: 14,
       hit: 5,

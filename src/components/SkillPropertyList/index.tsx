@@ -84,11 +84,10 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
         );
         const descripion =
           skill.remarks === undefined ? (
-            <p>{skill.description}</p>
+            <>{skill.description}</>
           ) : (
             <>
-              {skill.description}
-              <br />
+              <div className="mb-3">{skill.description}</div>
               {skill.remarks}
             </>
           );
