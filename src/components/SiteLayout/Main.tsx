@@ -22,7 +22,7 @@ const Main = ({ title, children }: Props) => {
   const category = useCategory();
   const test =
     pathname === "/" ? (
-      <p className="mb-1 text-xs text-slate-800">
+      <p className="mb-1.5 text-xs text-slate-800">
         RE:MAGIC リマスター版対応の完全攻略データ
       </p>
     ) : (
@@ -59,9 +59,11 @@ const Main = ({ title, children }: Props) => {
   return (
     <>
       <div className={styles.pageTitleArea}>
-        <div className={`${styles.pageTitleInner} px-4 pt-3 pb-2`}>
+        <div className={`${styles.pageTitleInner} px-4 py-3`}>
           {test}
-          <h2 className="text-lg font-bold text-slate-700">{title}</h2>
+          <h2 className="text-lg font-bold text-slate-700 leading-none">
+            {title}
+          </h2>
         </div>
       </div>
       <div className={`${styles.shortcutMenu} shadow-2xs`}>

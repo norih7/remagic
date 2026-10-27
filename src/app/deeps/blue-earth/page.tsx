@@ -113,13 +113,13 @@ export default async function HomePage() {
             </p>
             <RoundedContainer className="grid grid-cols-2 gap-3">
               <RoundedItem title="1. マクスウェル召喚時">
-                <div className="mb-2 flex items-center gap-x-1">
+                <div className="mb-2 flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>PS系統</InlineCaption>
                   </div>
                   <PSLeft /> + <PSSquare />
                 </div>
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>Switch</InlineCaption>
                   </div>
@@ -127,13 +127,13 @@ export default async function HomePage() {
                 </div>
               </RoundedItem>
               <RoundedItem title="2. デュアル・ザ・サン発動時">
-                <div className="mb-2 flex items-center gap-x-1">
+                <div className="mb-2 flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>PS系統</InlineCaption>
                   </div>
                   <PSCross />
                 </div>
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>Switch</InlineCaption>
                   </div>
@@ -141,13 +141,13 @@ export default async function HomePage() {
                 </div>
               </RoundedItem>
               <RoundedItem title="3. エタニティ・スォーム発動時">
-                <div className="mb-2 flex items-center gap-x-1">
+                <div className="mb-2 flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>PS系統</InlineCaption>
                   </div>
                   <PSCircle />
                 </div>
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>Switch</InlineCaption>
                   </div>
@@ -155,13 +155,13 @@ export default async function HomePage() {
                 </div>
               </RoundedItem>
               <RoundedItem title="4. プリズミックスターズ発動時">
-                <div className="mb-2 flex items-center gap-x-1">
+                <div className="mb-2 flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>PS系統</InlineCaption>
                   </div>
                   <PSTriange />
                 </div>
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>Switch</InlineCaption>
                   </div>
@@ -169,13 +169,13 @@ export default async function HomePage() {
                 </div>
               </RoundedItem>
               <RoundedItem title="5. ブライティスト・ゲート発動時">
-                <div className="mb-2 flex items-center gap-x-1">
+                <div className="mb-2 flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>PS系統</InlineCaption>
                   </div>
                   <PSSquare />
                 </div>
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>Switch</InlineCaption>
                   </div>
@@ -183,13 +183,13 @@ export default async function HomePage() {
                 </div>
               </RoundedItem>
               <RoundedItem title="6. エクスプロージョン・ノヴァ発動時">
-                <div className="mb-2 flex items-center gap-x-1">
+                <div className="mb-2 flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>PS系統</InlineCaption>
                   </div>
                   <PSTriange /> + <PSCross />
                 </div>
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>Switch</InlineCaption>
                   </div>
@@ -197,14 +197,14 @@ export default async function HomePage() {
                 </div>
               </RoundedItem>
               <RoundedItem title="7. マクスウェル・ロアー発動時">
-                <div className="mb-2 flex items-center gap-x-1">
+                <div className="mb-2 flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>PS系統</InlineCaption>
                   </div>
                   <PSCircle /> + <PSCross /> +
                   <PSSquare />
                 </div>
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>Switch</InlineCaption>
                   </div>
@@ -212,14 +212,14 @@ export default async function HomePage() {
                 </div>
               </RoundedItem>
               <RoundedItem title="8. ディメンジョナル・マテリアル発動時">
-                <div className="mb-2 flex items-center gap-x-1">
+                <div className="mb-2 flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>PS系統</InlineCaption>
                   </div>
                   <PSCircle /> + <PSCross /> + <PSSquare /> +
                   <PSTriange />
                 </div>
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center flex-wrap gap-1">
                   <div className={platformWidth}>
                     <InlineCaption>Switch</InlineCaption>
                   </div>

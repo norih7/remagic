@@ -21,7 +21,7 @@ const Breadcrumb = (props: Props) => {
   return category === "none" ? null : (
     <nav
       aria-label="Breadcrumb"
-      className={`${styles.breadcrumb} text-xs mb-1`}
+      className={`${styles.breadcrumb} text-xs mb-1.5`}
     >
       <ol>
         <li>
