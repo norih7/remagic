@@ -59,7 +59,7 @@ const Main = ({ title, children }: Props) => {
   return (
     <>
       <div className={styles.pageTitleArea}>
-        <div className={`${styles.pageTitleInner} px-4 py-3`}>
+        <div className={`${styles.pageTitleInner} px-4 pt-3 pb-2`}>
           {test}
           <h2 className="text-lg font-bold text-slate-700">{title}</h2>
         </div>
