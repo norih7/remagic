@@ -113,7 +113,7 @@ export default function SiteLayout({
               <a href="/">
                 <Image
                   src="/logo.png"
-                  alt="RE:MAGIC - テイルズオブエターニア攻略/リマスター対応サイト"
+                  alt="RE:MAGIC - テイルズオブエターニア リマスター完全攻略サイト"
                   width={145}
                   height={45}
                 />

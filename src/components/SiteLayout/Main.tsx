@@ -61,7 +61,7 @@ const Main = ({ title, children }: Props) => {
       <div className={styles.pageTitleArea}>
         <div className={`${styles.pageTitleInner} px-4 py-3`}>
           {test}
-          <h2 className="text-lg font-bold text-slate-700">{title}</h2>
+          <h2 className="text-lg font-bold text-slate-800">{title}</h2>
         </div>
       </div>
       <div className={`${styles.shortcutMenu} shadow-2xs`}>

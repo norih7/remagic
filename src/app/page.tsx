@@ -62,6 +62,7 @@ export default async function HomePage() {
           <h2 className="text-lg font-bold mb-2 !border-none">
             テイルズオブエターニア攻略
           </h2>
+          <ResponsiveImage src="/top-header.png" />
           <p className="mb-4">
             RE:MAGICではテイルズオブエターニアリマスター版のストーリー、データ、やり込み要素など攻略情報を公開しています！スマホに最適したシンプルでクリーンなサイトを目指しています。
           </p>
