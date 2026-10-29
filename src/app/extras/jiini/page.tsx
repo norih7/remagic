@@ -44,12 +44,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            隠しタウン「ジイニ」の攻略情報について、行き方や昼夜の仕組み、オークションでの効率的なジイニ稼ぎ（アイテム出品・リセット手法）、および購入できるアイテムのステップ一覧を網羅的に解説します。
-          </p>
-        </PageSummary>
-
         <Section>
           <Title>ジイニ</Title>
           <div className="mb-4 grid grid-cols-1 gap-2">
@@ -64,6 +58,7 @@ export default async function HomePage() {
           <div className="mb-8">
             <p>
               潜水艇入手後からセレスティアの隠しタウンであるジイニに行くことができます。ジイニではオークションの開催、フォッグの最強技「エレメントマスター」の習得などさまざまなイベントが発生します。
+              このページではジイニへの行き方や昼夜の仕組み、オークションでの効率的なジイニ稼ぎ（アイテム出品・リセット手法）、および購入できるアイテムのステップ一覧を解説します。
             </p>
           </div>
           <h3>ジイニへの行き方</h3>

@@ -29,6 +29,7 @@ import {
   PSTriange,
 } from "@/components/Buttons/Playstation";
 import Title from "@/components/Title";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 export const dynamic = "force-static";
 
@@ -52,6 +53,14 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>ブルーアース</Title>
+          <div className="mb-4 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="目的">
+              隠し晶霊術の発動ボーナスによるレベル上げ（経験値10万）
+            </RoundedInlineList>
+            <RoundedInlineList title="発生">
+              マクスウェル契約、ゼクンドゥス撃破など
+            </RoundedInlineList>
+          </div>
           <ResponsiveImage src="/deeps/blue-earth-digest.jpg" />
           <div className="mb-8">
             <p>
