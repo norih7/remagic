@@ -10,6 +10,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Title from "@/components/Title";
+import RoundedInlineList from "@/components/RoundedInlineList";
 
 export const dynamic = "force-static";
 
@@ -30,17 +31,20 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          敵のドロップやチャットの盗みで手に入るステータスアップ薬草の集め方を解説します。
-        </PageSummary>
-
         <Section>
           <Title>ステータスアップ薬草集め</Title>
+          <div className="mb-4 grid grid-cols-1 gap-2">
+            <RoundedInlineList title="目的">
+              薬草による効率良いステータスアップ
+            </RoundedInlineList>
+            <RoundedInlineList title="発生">
+              最短でいざないの密林から
+            </RoundedInlineList>
+          </div>
           <div className="mb-8">
             <p>
               「セージ」や「セボリー」などの薬草はステータスが上がる特殊アイテムで、レベルアップによるステータスアップで足りない部分を補うのに強力なアイテムです！このページでは薬草を集めるために周回方法を解説します。
             </p>
-            {/* <p>なお薬草はドロップを狙えるので必要なときに使って問題ありません。</p> */}
           </div>
           <h3>薬草の種類と効果</h3>
           <div className="mb-8">
@@ -96,6 +100,10 @@ export default async function HomePage() {
                   リッド、ファラ
                 </RoundedItem>
               </div>
+            </Information>
+            <Information type="warning" title="リマスター版でのバグ">
+              <strong>バグ技注意</strong>
+              リマスター版では回避のみ200を超えてベルベーヌでアップでき、レベルアップすると200にリセットされます。Lv上限の250ではリセットされずに回避を上げ続けることができます。今後のアップデートで修正される可能性があります。
             </Information>
             <Information title="Tips: セージとセボリーの効率的な使い方">
               セージとセボリーは最大HP/TPから5%アップします。「ブラックオニキス」「ムーンクリスタル」を装備し、パラメータを30%底上げしてから使うと効果を大きくできます。
