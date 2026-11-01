@@ -572,11 +572,12 @@ export const deepLinks: Record<string, PageLink> = {
   //   desc: "",
   //seoDesc: "リマスター版対応のテイルズオブエターニア（TOE）攻略。",
   // },
-  // "level-up": {
-  //   title: "クレス&アーチェ戦",
-  //   path: "/deeps/level-up",
-  //   desc: "下級晶霊術連発、風塵の無限コンボ、オート戦闘",
-  // },
+  "cless-and-arche": {
+    title: "クレス&アーチェ戦",
+    path: "/deeps/cless-and-arche",
+    image: "/link-headers/subevents-cless-and-arche.jpg",
+    desc: "闘技場に乱入してくる強敵クレスとアーチェとの戦いを解説。",
+  },
   "flame-dance": {
     title: "火龍炎舞",
     path: "/deeps/flame-dance",

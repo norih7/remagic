@@ -31,7 +31,7 @@ const Title = (props: Props) => {
   const { children, type = "guide", data = "" } = props;
   return (
     <h2
-      className="flex items-center mb-2 pb-2 border-b border-black"
+      className="flex items-center mb-3 border- border-black"
       data-title={data}
     >
       {children}
