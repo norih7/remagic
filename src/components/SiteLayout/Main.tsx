@@ -66,7 +66,7 @@ const Main = ({ title, children }: Props) => {
           </h2>
         </div>
       </div>
-      <div className={`${styles.shortcutMenu} md:shadow-2xs shadow-gray-200`}>
+      <div className={`${styles.shortcutMenu} shadow-2xs shadow-gray-200`}>
         <div>
           <ul className="grid grid-cols-4 md:flex md:flex-wrap gap-x-4 gap-y-1 px-4 py-2 font-bold text-slate-600">
             {menu}

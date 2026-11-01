@@ -130,7 +130,7 @@ export default async function HomePage() {
           </div>
           <div className="mb-8">
             <h3>戦闘ランクによる戦闘の違い</h3>
-            <RoundedContainer title="ノーマル">
+            {/* <RoundedContainer title="ノーマル">
               <div className="grid grid-cols-2 gap-3 pt-3 mb-3">
                 <RoundedItem title="敵">クレスのみ</RoundedItem>
                 <RoundedItem title="ステータス">
@@ -176,6 +176,36 @@ export default async function HomePage() {
                 </RoundedItem>
               </div>
               <RoundedItem title="戦闘内容">-</RoundedItem>
+            </RoundedContainer> */}
+            <RoundedContainer>
+              <div className="grid grid-cols-2 gap-3">
+                <RoundedItem title="ノーマル" white={true}>
+                  <div className="mb-2">
+                    <InlineCaption>HP</InlineCaption>クレス: 9999
+                  </div>
+                </RoundedItem>
+                <RoundedItem title="ハード" white={true}>
+                  <div className="mb-2">
+                    <InlineCaption>HP</InlineCaption>クレス: 11998 / アーチェ:
+                    7200
+                  </div>
+                  <InlineCaption>戦闘変化</InlineCaption>アーチェが追加
+                </RoundedItem>
+                <RoundedItem title="マニア" white={true}>
+                  <div className="mb-2">
+                    <InlineCaption>HP</InlineCaption>クレス: 14998 / アーチェ:
+                    9000
+                  </div>
+                  <InlineCaption>戦闘変化</InlineCaption>
+                  クレスが秘奥義「緋凰絶炎衝」を発動
+                </RoundedItem>
+                <RoundedItem title="アンノウン" white={true}>
+                  <div className="mb-2">
+                    <InlineCaption>HP</InlineCaption>クレス: 17998 / アーチェ:
+                    10800
+                  </div>
+                </RoundedItem>
+              </div>
             </RoundedContainer>
           </div>
         </Section>
