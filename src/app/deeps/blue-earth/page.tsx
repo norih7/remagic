@@ -30,6 +30,7 @@ import {
 } from "@/components/Buttons/Playstation";
 import Title from "@/components/Title";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import DescriptionList from "@/components/DescriptionList";
 
 export const dynamic = "force-static";
 
@@ -53,7 +54,8 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>ブルーアース</Title>
-          <div className="mb-8 grid grid-cols-1 gap-2">
+          <ResponsiveImage src="/deeps/blue-earth-digest.jpg" />
+          <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="目的">
               隠し晶霊術の発動ボーナスによるレベル上げ（経験値10万）
             </RoundedInlineList>
@@ -61,7 +63,6 @@ export default async function HomePage() {
               マクスウェル契約、ゼクンドゥス撃破など
             </RoundedInlineList>
           </div>
-          <ResponsiveImage src="/deeps/blue-earth-digest.jpg" />
           <div className="mb-8">
             <p>
               ブルーアース（正式:
@@ -122,118 +123,182 @@ export default async function HomePage() {
             </p>
             <RoundedContainer className="grid grid-cols-2 gap-3">
               <RoundedItem title="1. マクスウェル召喚時">
-                <div className="mb-2 flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>PS系統</InlineCaption>
-                  </div>
-                  <PSLeft /> + <PSSquare />
-                </div>
-                <div className="flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>Switch</InlineCaption>
-                  </div>
-                  <SwitchLeft /> + <SwitchY />
-                </div>
+                <DescriptionList
+                  list={[
+                    {
+                      label: "PlayStation",
+                      value: (
+                        <>
+                          <PSLeft /> + <PSSquare />
+                        </>
+                      ),
+                    },
+                    {
+                      label: "Switch",
+                      value: (
+                        <>
+                          <SwitchLeft /> + <SwitchY />
+                        </>
+                      ),
+                    },
+                  ]}
+                />
               </RoundedItem>
               <RoundedItem title="2. デュアル・ザ・サン発動時">
-                <div className="mb-2 flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>PS系統</InlineCaption>
-                  </div>
-                  <PSCross />
-                </div>
-                <div className="flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>Switch</InlineCaption>
-                  </div>
-                  <SwitchB />
-                </div>
+                <DescriptionList
+                  list={[
+                    {
+                      label: "PlayStation",
+                      value: (
+                        <>
+                          <PSCross />
+                        </>
+                      ),
+                    },
+                    {
+                      label: "Switch",
+                      value: (
+                        <>
+                          <SwitchB />
+                        </>
+                      ),
+                    },
+                  ]}
+                />
               </RoundedItem>
               <RoundedItem title="3. エタニティ・スォーム発動時">
-                <div className="mb-2 flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>PS系統</InlineCaption>
-                  </div>
-                  <PSCircle />
-                </div>
-                <div className="flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>Switch</InlineCaption>
-                  </div>
-                  <SwitchA />
-                </div>
+                <DescriptionList
+                  list={[
+                    {
+                      label: "PlayStation",
+                      value: (
+                        <>
+                          <PSCircle />
+                        </>
+                      ),
+                    },
+                    {
+                      label: "Switch",
+                      value: (
+                        <>
+                          <SwitchA />
+                        </>
+                      ),
+                    },
+                  ]}
+                />
               </RoundedItem>
               <RoundedItem title="4. プリズミックスターズ発動時">
-                <div className="mb-2 flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>PS系統</InlineCaption>
-                  </div>
-                  <PSTriange />
-                </div>
-                <div className="flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>Switch</InlineCaption>
-                  </div>
-                  <SwitchX />
-                </div>
+                <DescriptionList
+                  list={[
+                    {
+                      label: "PlayStation",
+                      value: (
+                        <>
+                          <PSTriange />
+                        </>
+                      ),
+                    },
+                    {
+                      label: "Switch",
+                      value: (
+                        <>
+                          <SwitchX />
+                        </>
+                      ),
+                    },
+                  ]}
+                />
               </RoundedItem>
               <RoundedItem title="5. ブライティスト・ゲート発動時">
-                <div className="mb-2 flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>PS系統</InlineCaption>
-                  </div>
-                  <PSSquare />
-                </div>
-                <div className="flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>Switch</InlineCaption>
-                  </div>
-                  <SwitchY />
-                </div>
+                <DescriptionList
+                  list={[
+                    {
+                      label: "PlayStation",
+                      value: (
+                        <>
+                          <PSSquare />
+                        </>
+                      ),
+                    },
+                    {
+                      label: "Switch",
+                      value: (
+                        <>
+                          <SwitchY />
+                        </>
+                      ),
+                    },
+                  ]}
+                />
               </RoundedItem>
               <RoundedItem title="6. エクスプロージョン・ノヴァ発動時">
-                <div className="mb-2 flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>PS系統</InlineCaption>
-                  </div>
-                  <PSTriange /> + <PSCross />
-                </div>
-                <div className="flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>Switch</InlineCaption>
-                  </div>
-                  <SwitchX /> + <SwitchB />
-                </div>
+                <DescriptionList
+                  list={[
+                    {
+                      label: "PlayStation",
+                      value: (
+                        <>
+                          <PSTriange /> + <PSCross />
+                        </>
+                      ),
+                    },
+                    {
+                      label: "Switch",
+                      value: (
+                        <>
+                          <SwitchX /> + <SwitchB />
+                        </>
+                      ),
+                    },
+                  ]}
+                />
               </RoundedItem>
               <RoundedItem title="7. マクスウェル・ロアー発動時">
-                <div className="mb-2 flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>PS系統</InlineCaption>
-                  </div>
-                  <PSCircle /> + <PSCross /> +
-                  <PSSquare />
-                </div>
-                <div className="flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>Switch</InlineCaption>
-                  </div>
-                  <SwitchA /> + <SwitchB /> + <SwitchY />
-                </div>
+                <DescriptionList
+                  list={[
+                    {
+                      label: "PlayStation",
+                      value: (
+                        <>
+                          <PSCircle /> + <PSCross /> +
+                          <PSSquare />
+                        </>
+                      ),
+                    },
+                    {
+                      label: "Switch",
+                      value: (
+                        <>
+                          <SwitchA /> + <SwitchB /> + <SwitchY />
+                        </>
+                      ),
+                    },
+                  ]}
+                />
               </RoundedItem>
               <RoundedItem title="8. ディメンジョナル・マテリアル発動時">
-                <div className="mb-2 flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>PS系統</InlineCaption>
-                  </div>
-                  <PSCircle /> + <PSCross /> + <PSSquare /> +
-                  <PSTriange />
-                </div>
-                <div className="flex items-center flex-wrap gap-1">
-                  <div className={platformWidth}>
-                    <InlineCaption>Switch</InlineCaption>
-                  </div>
-                  <SwitchA /> + <SwitchB /> + <SwitchY /> + <SwitchX />
-                </div>
+                <DescriptionList
+                  list={[
+                    {
+                      label: "PlayStation",
+                      value: (
+                        <>
+                          <PSCircle /> + <PSCross /> + <PSSquare /> +
+                          <PSTriange />
+                        </>
+                      ),
+                    },
+                    {
+                      label: "Switch",
+                      value: (
+                        <>
+                          <SwitchA /> + <SwitchB /> + <SwitchY /> + <SwitchX />
+                        </>
+                      ),
+                    },
+                  ]}
+                />
               </RoundedItem>
               <RoundedItem title="9. ブルー・アース">最後の術</RoundedItem>
             </RoundedContainer>

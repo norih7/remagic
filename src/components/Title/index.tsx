@@ -34,7 +34,7 @@ const Title = (props: Props) => {
       className="flex items-center mb-3 border- border-black"
       data-title={data}
     >
-      {children}
+      「{children}」の概要
     </h2>
   );
 };

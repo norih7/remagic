@@ -31,6 +31,7 @@ import {
 import Title from "@/components/Title";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import LocationItems from "@/components/LocationItems";
+import DescriptionList from "@/components/DescriptionList";
 
 export const dynamic = "force-static";
 
@@ -97,6 +98,8 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>{title}</Title>
+          <ResponsiveImage src="/deeps/cless-and-arche-digest.jpg" />
+
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="目的">
               最強クラスのボス討伐、エターナルソードなどの入手
@@ -105,7 +108,6 @@ export default async function HomePage() {
               王都インフェリア到着後 ※ストーリー最終盤推奨
             </RoundedInlineList>
           </div>
-          <ResponsiveImage src="/deeps/cless-and-arche-digest.jpg" />
           <div className="mb-8">
             <p>
               闘技場の世界一決定戦で優勝すると乱入してくる謎の剣士「クレス」との戦いを解説します。戦闘ランクハード以上で戦闘に追加される「アーチェ」についての攻略法も。
@@ -180,30 +182,64 @@ export default async function HomePage() {
             <RoundedContainer>
               <div className="grid grid-cols-2 gap-3">
                 <RoundedItem title="ノーマル" white={true}>
-                  <div className="mb-2">
-                    <InlineCaption>HP</InlineCaption>クレス: 9999
-                  </div>
+                  <DescriptionList
+                    list={[{ label: "HP", value: "クレス: 9999" }]}
+                  />
                 </RoundedItem>
                 <RoundedItem title="ハード" white={true}>
-                  <div className="mb-2">
-                    <InlineCaption>HP</InlineCaption>クレス: 11998 / アーチェ:
-                    7200
-                  </div>
-                  <InlineCaption>戦闘変化</InlineCaption>アーチェが追加
+                  <DescriptionList
+                    list={[
+                      {
+                        label: "HP",
+                        value: (
+                          <>
+                            クレス: 11998
+                            <br />
+                            アーチェ: 7200
+                          </>
+                        ),
+                      },
+
+                      { lavel: "戦闘変化", value: "アーチェが追加" },
+                    ]}
+                  />
                 </RoundedItem>
                 <RoundedItem title="マニア" white={true}>
-                  <div className="mb-2">
-                    <InlineCaption>HP</InlineCaption>クレス: 14998 / アーチェ:
-                    9000
-                  </div>
-                  <InlineCaption>戦闘変化</InlineCaption>
-                  クレスが秘奥義「緋凰絶炎衝」を発動
+                  <DescriptionList
+                    list={[
+                      {
+                        label: "HP",
+                        value: (
+                          <>
+                            クレス: 14998
+                            <br />
+                            アーチェ:9000
+                          </>
+                        ),
+                      },
+
+                      {
+                        lavel: "戦闘変化",
+                        value: "クレスが秘奥義「緋凰絶炎衝」を発動",
+                      },
+                    ]}
+                  />
                 </RoundedItem>
                 <RoundedItem title="アンノウン" white={true}>
-                  <div className="mb-2">
-                    <InlineCaption>HP</InlineCaption>クレス: 17998 / アーチェ:
-                    10800
-                  </div>
+                  <DescriptionList
+                    list={[
+                      {
+                        label: "HP",
+                        value: (
+                          <>
+                            クレス: 17998
+                            <br />
+                            アーチェ:10800
+                          </>
+                        ),
+                      },
+                    ]}
+                  />
                 </RoundedItem>
               </div>
             </RoundedContainer>
