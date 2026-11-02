@@ -3,6 +3,15 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/11/01",
+    update: (
+      <>
+        <Link href="/deeps/cless-and-arche">クレス&アーチェ戦</Link>
+        を作成中。
+      </>
+    ),
+  },
+  {
     date: "2026/10/29",
     update: (
       <>

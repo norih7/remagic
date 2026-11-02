@@ -119,7 +119,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>クレス戦の仕様</SectionTitle>
+          <SectionTitle>クレス&アーチェ戦の仕様</SectionTitle>
           <div className="mb-8">
             <h3>報酬</h3>
             <CardList
@@ -132,58 +132,18 @@ export default async function HomePage() {
           </div>
           <div className="mb-8">
             <h3>戦闘ランクによる戦闘の違い</h3>
-            {/* <RoundedContainer title="ノーマル">
-              <div className="grid grid-cols-2 gap-3 pt-3 mb-3">
-                <RoundedItem title="敵">クレスのみ</RoundedItem>
-                <RoundedItem title="ステータス">
-                  <InlineCaption>クレス</InlineCaption>HP: 9999
-                </RoundedItem>
-              </div>
-              <RoundedItem title="戦闘内容">-</RoundedItem>
-            </RoundedContainer>
-            <RoundedContainer title="ハード">
-              <div className="grid grid-cols-2 gap-3 pt-3 mb-3">
-                <RoundedItem title="敵">クレス、アーチェ</RoundedItem>
-                <RoundedItem title="ステータス">
-                  <div className="mb-2">
-                    <InlineCaption>クレス</InlineCaption>HP: 11998
-                  </div>
-                  <InlineCaption>アーチェ</InlineCaption>HP: 7200
-                </RoundedItem>
-              </div>
-              <RoundedItem title="戦闘内容">-</RoundedItem>
-            </RoundedContainer>
-            <RoundedContainer title="マニア">
-              <div className="grid grid-cols-2 gap-3 pt-3 mb-3">
-                <RoundedItem title="敵">クレス、アーチェ</RoundedItem>
-                <RoundedItem title="ステータス">
-                  <div className="mb-2">
-                    <InlineCaption>クレス</InlineCaption>HP: 14998
-                  </div>
-                  <InlineCaption>アーチェ</InlineCaption>HP: 9000
-                </RoundedItem>
-              </div>
-              <RoundedItem title="戦闘内容">
-                クレスが秘奥義「緋凰絶炎衝」を発動するようになります。
-              </RoundedItem>
-            </RoundedContainer>
-            <RoundedContainer title="アンノウン">
-              <div className="grid grid-cols-2 gap-3 pt-3 mb-3">
-                <RoundedItem title="敵">クレス、アーチェ</RoundedItem>
-                <RoundedItem title="ステータス">
-                  <div className="mb-2">
-                    <InlineCaption>クレス</InlineCaption>HP: 17998
-                  </div>
-                  <InlineCaption>アーチェ</InlineCaption>HP: 10800
-                </RoundedItem>
-              </div>
-              <RoundedItem title="戦闘内容">-</RoundedItem>
-            </RoundedContainer> */}
             <RoundedContainer>
               <div className="grid grid-cols-2 gap-3">
                 <RoundedItem title="ノーマル" white={true}>
                   <DescriptionList
-                    list={[{ label: "HP", value: "クレス: 9999" }]}
+                    list={[
+                      { label: "HP", value: "クレス: 9999" },
+                      {
+                        label: "戦闘内容",
+                        value:
+                          "緋凰絶炎衝の発動なし。HPが50%以下で次元斬、25%以下で冥空斬翔剣を発動。",
+                      },
+                    ]}
                   />
                 </RoundedItem>
                 <RoundedItem title="ハード" white={true}>
@@ -200,7 +160,11 @@ export default async function HomePage() {
                         ),
                       },
 
-                      { label: "戦闘変化", value: "アーチェが追加" },
+                      {
+                        label: "戦闘変化",
+                        value:
+                          "敵にアーチェが追加。クレスの行動パターンは同じで攻撃力がアップ。",
+                      },
                     ]}
                   />
                 </RoundedItem>
@@ -247,11 +211,33 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>装備品</SectionTitle>
-          <p>
-            クレスの鳳凰天駆、アーチェの魔術に耐性がある装備を準備しておきましょう。
-          </p>
-          <LocationItems data={data} locationIds={[]} title="おすすめ装備品" />
+          <SectionTitle>装備品と準備</SectionTitle>
+          <div className="mb-8">
+            <h3>装備品</h3>
+            <p>
+              クレスの鳳凰天駆、アーチェの魔術に耐性がある装備を準備しておきましょう。
+            </p>
+            <LocationItems
+              data={data}
+              locationIds={[]}
+              title="おすすめ装備品"
+            />
+          </div>
+          <div className="mb-8">
+            <h3>その他準備</h3>
+            <RoundedContainer title="薬草でHP/TPを上げる">
+              <div className="grid grid-cols-1 gap-3 pt-3">
+                <RoundedItem>
+                  闘技場は戦闘中の回復ができないためHPとTPをなるべくMAXにしておくことを推奨します。足りない場合はリッドにセージやセボリーを使ってMAX状態にしましょう。
+                </RoundedItem>
+                <GuideList
+                  items={[
+                    { title: "ステータスアップ薬草集め", href: "/deeps/herb" },
+                  ]}
+                />
+              </div>
+            </RoundedContainer>
+          </div>
         </Section>
 
         <Section>
@@ -297,19 +283,28 @@ export default async function HomePage() {
                 <RoundedItem title="アーチェの魔術回避">-</RoundedItem>
               </div>
             </RoundedContainer>
-            <RoundedContainer title="HP/TPをMAXにしておく">
+            <RoundedContainer title="戦闘不能前にリバースドールを装備">
               <div className="grid grid-cols-1 gap-3 pt-3">
                 <RoundedItem>
-                  闘技場は戦闘中の回復ができないためHPとTPはMAXにしておくことを推奨します。足りない場合はリッドにセージやセボリーを使ってMAX状態にしましょう。
+                  戦闘不能前になると思ったらメニュー画面を開き、リバースドールを装備させましょう。何度も使えるためどうしてもクレスやアーチェに勝てない場合に有効です。
                 </RoundedItem>
               </div>
             </RoundedContainer>
-            <RoundedContainer title="戦闘不能前にリバースドールを装備">
-              <div className="grid grid-cols-1 gap-3 pt-3">
-                <RoundedItem>-</RoundedItem>
-              </div>
-            </RoundedContainer>
           </div>
+        </Section>
+
+        <Section>
+          <SectionTitle>攻略法</SectionTitle>
+          <div className="mb-3">
+            <h3>デリスエンブレムがない場合</h3>
+            <div>
+              <Tag>初心者おすすめ</Tag>
+              <Tag>ノーマルおすすめ</Tag>
+            </div>
+          </div>
+          <p>
+            シンプルに通常攻撃と「空破絶掌撃」をベースに攻撃していく戦法です。空破絶掌撃は命中率が高いためデリスエンブレムなしでもクレスのガードを崩しやすいです。
+          </p>
         </Section>
       </article>
     </Main>

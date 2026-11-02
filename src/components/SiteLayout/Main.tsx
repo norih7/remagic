@@ -79,7 +79,7 @@ const Main = ({ title, children }: Props) => {
           <Menu />
         </aside>
 
-        <main id="main-content" className={`${styles.main} px-6`}>
+        <main id="main-content" className={`${styles.main} px-4`}>
           {/* <div className="p-4 bg-gray- border border-gray-400 rounded-xl mb-8">
             Adsense
           </div> */}

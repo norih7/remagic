@@ -6,11 +6,11 @@ type Props = {
 
 const DescriptionList = (props: Props) => {
   const { list } = props;
-
+  const last = list.length - 1;
   const result = list.map((item, index) => {
     const { label, value } = item;
     return (
-      <div className="mb-3" key={index}>
+      <div className={`${last !== index && "mb-3"}`} key={index}>
         {/* <dt className="border border-gray-600 rounded-sm inline-block px-2 mb-1"> */}
         <dt className="font-bold mb-1 flex items-center gap-1">{label}</dt>
         <dd className="flex items-center gap-x-1">{value}</dd>

@@ -107,7 +107,7 @@ export default function SiteLayout({
   return (
     <>
       <header className={`${styles.header}`}>
-        <div className={`${styles.headerInner} px-4 pb-1 pt-1`}>
+        <div className={`${styles.headerInner} px-4 py-0.5`}>
           <div className="flex justify-between items-center ">
             <h1 className="text-lg font-bold tracking-tight">
               <a href="/">

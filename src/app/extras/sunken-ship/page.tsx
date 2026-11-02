@@ -34,12 +34,6 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            インフェリア世界でさまざまな有用アイテムや貴重な重要品を獲得できる隠しダンジョン「沈没船」の攻略情報ページです。ダンジョンへのアクセス方法から、入り組んだ船内のギミック解除手順、ボス「セイレーン」との戦い方、獲得できるアイテム情報を分かりやすく解説します。
-          </p>
-        </PageSummary>
-
         <Section>
           <Title>
             <KeyItemIcon />

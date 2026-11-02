@@ -576,7 +576,11 @@ export const deepLinks: Record<string, PageLink> = {
     title: "クレス&アーチェ戦",
     path: "/deeps/cless-and-arche",
     image: "/link-headers/subevents-cless-and-arche.jpg",
-    desc: "闘技場に乱入してくる強敵クレスとアーチェとの戦いを解説。",
+    desc: "闘技場の強敵クレスとアーチェとの戦いを解説。戦闘テクニック動画や初心者向けの攻略法も",
+    seoDesc:
+      "リマスター版対応のテイルズオブエターニア（TOE）攻略。闘技場に乱入してくる強敵クレスとアーチェとの戦いを解説。戦闘テクニックの動画や初心者向けの攻略法も掲載しています。",
+    createdAt: "2026-11-01",
+    updatedAt: "2026-11-02",
   },
   "flame-dance": {
     title: "火龍炎舞",
