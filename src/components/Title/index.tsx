@@ -4,6 +4,7 @@ import {
   LuInfo,
   LuSparkles,
   LuMessageSquareWarning,
+  LuMessageCircleMore,
 } from "react-icons/lu";
 import { RiFlag2Fill } from "react-icons/ri";
 import { FaMagic } from "react-icons/fa";
@@ -30,11 +31,8 @@ type Props = {
 const Title = (props: Props) => {
   const { children, type = "guide", data = "" } = props;
   return (
-    <h2
-      className="flex items-center mb-4 border- border-black"
-      data-title={data}
-    >
-      「{children}」の概要
+    <h2 className="flex items-center mb-4" data-title={data}>
+      {children}
     </h2>
   );
 };
