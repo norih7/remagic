@@ -10,11 +10,9 @@ const DescriptionList = (props: Props) => {
   const result = list.map((item, index) => {
     const { label, value } = item;
     return (
-      <div className="mb-2" key={index}>
+      <div className="mb-3" key={index}>
         {/* <dt className="border border-gray-600 rounded-sm inline-block px-2 mb-1"> */}
-        <dt className="border-b border-gray-300 font-bold mb-1 pb-1 flex items-center gap-1">
-          {label}
-        </dt>
+        <dt className="font-bold mb-1 flex items-center gap-1">{label}</dt>
         <dd className="flex items-center gap-x-1">{value}</dd>
       </div>
     );

@@ -200,7 +200,7 @@ export default async function HomePage() {
                         ),
                       },
 
-                      { lavel: "戦闘変化", value: "アーチェが追加" },
+                      { label: "戦闘変化", value: "アーチェが追加" },
                     ]}
                   />
                 </RoundedItem>
@@ -219,7 +219,7 @@ export default async function HomePage() {
                       },
 
                       {
-                        lavel: "戦闘変化",
+                        label: "戦闘変化",
                         value: "クレスが秘奥義「緋凰絶炎衝」を発動",
                       },
                     ]}
