@@ -296,15 +296,16 @@ export default async function HomePage() {
         <Section>
           <SectionTitle>攻略法</SectionTitle>
           <div className="mb-3">
-            <h3>デリスエンブレムがない場合</h3>
+            <h3>デリスエンブレムがない場合: 空破絶掌撃</h3>
             <div>
               <Tag>初心者おすすめ</Tag>
               <Tag>ノーマルおすすめ</Tag>
             </div>
           </div>
           <p>
-            シンプルに通常攻撃と「空破絶掌撃」をベースに攻撃していく戦法です。空破絶掌撃は命中率が高いためデリスエンブレムなしでもクレスのガードを崩しやすいです。
+            シンプルに通常攻撃と「空破絶掌撃」をベースに攻撃していく戦法です。空破絶掌撃は命中率が高いためデリスエンブレムなしでもクレスのガードを崩しやすいです。クレスの鳳凰天駆をガードしたあとの隙にも通常攻撃→空破絶掌撃の連携を徹底していきます。
           </p>
+          <GifPlayer src="/deeps/cless-thrust.gif" alt="空破絶掌撃ベース" />
         </Section>
       </article>
     </Main>
