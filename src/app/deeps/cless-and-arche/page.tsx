@@ -127,6 +127,8 @@ export default async function HomePage() {
                 <>
                   <h4>エターナルソード</h4>
                   リッドの最強武器。「斬り+890、突き+850」の性能を持つ剣。
+                  <br />
+                  攻撃ヒット時、稀に敵の詠唱時間を2倍にする効果も。
                 </>,
                 <>
                   <h4>クレスのバンダナ</h4>
@@ -144,7 +146,7 @@ export default async function HomePage() {
             <h3>戦闘ランクによる戦闘の違い</h3>
             <RoundedContainer>
               <div className="grid grid-cols-2 gap-3">
-                <RoundedItem title="ノーマル" white={true}>
+                <RoundedItem title="ノーマル" white={true} large={true}>
                   <DescriptionList
                     list={[
                       { label: "HP", value: "クレス: 9999" },
@@ -156,7 +158,7 @@ export default async function HomePage() {
                     ]}
                   />
                 </RoundedItem>
-                <RoundedItem title="ハード" white={true}>
+                <RoundedItem title="ハード" white={true} large={true}>
                   <DescriptionList
                     list={[
                       {
@@ -178,7 +180,7 @@ export default async function HomePage() {
                     ]}
                   />
                 </RoundedItem>
-                <RoundedItem title="マニア" white={true}>
+                <RoundedItem title="マニア" white={true} large={true}>
                   <DescriptionList
                     list={[
                       {
@@ -199,7 +201,7 @@ export default async function HomePage() {
                     ]}
                   />
                 </RoundedItem>
-                <RoundedItem title="アンノウン" white={true}>
+                <RoundedItem title="アンノウン" white={true} large={true}>
                   <DescriptionList
                     list={[
                       {
@@ -217,6 +219,14 @@ export default async function HomePage() {
                 </RoundedItem>
               </div>
             </RoundedContainer>
+          </div>
+
+          <div className="mb-8">
+            <h3>リマスター版</h3>
+            <p>クレス&アーチェを倒しても何度も挑戦可能。</p>
+            <p>
+              まずはノーマルでクリアしてエターナルソードを入手してからハード以上に挑むことが可能。特にエターナルソードはアーチェの詠唱時間を遅延させる効果も期待できるためこちらのルートを推奨。
+            </p>
           </div>
         </Section>
 
@@ -299,7 +309,8 @@ export default async function HomePage() {
                     list={[
                       {
                         label: "インディグネイション",
-                        value: "大ダメージを受けるためダッシュで回避",
+                        value:
+                          "大ダメージを受けるため空中烈空斬やダッシュで回避",
                       },
                       {
                         label: "レイ、スパークウェーブ",
@@ -315,6 +326,12 @@ export default async function HomePage() {
                 <RoundedItem>
                   戦闘不能前になると思ったらメニュー画面を開き、リバースドールを装備させましょう。何度も使えるためどうしてもクレスやアーチェに勝てない場合に有効です。
                 </RoundedItem>
+              </div>
+            </RoundedContainer>
+
+            <RoundedContainer title="最後の極光剣">
+              <div className="grid grid-cols-1 gap-3 pt-3">
+                <RoundedItem>-</RoundedItem>
               </div>
             </RoundedContainer>
           </div>
