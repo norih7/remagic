@@ -13,6 +13,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import SkillIcon from "@/components/Icons/SkillIcon";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,23 +40,32 @@ export default async function HomePage() {
         <Section>
           <Title>
             <SkillIcon />
-            闇の洞窟
+            {title}
           </Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              大晶霊「シャドウ」、レンズ
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">
-              セレスティア海底 GPS(5,12)
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">潜水艇入手後から</RoundedInlineList>
-          </div>
-          <div className="mb-4">
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "大晶霊「シャドウ」、レンズ",
+              },
+              {
+                label: "場所",
+                value: "セレスティア海底 GPS(5,12)",
+              },
+              {
+                label: "発生",
+                value: "潜水艇入手後から",
+              },
+            ]}
+          />
+          <div className="mb-8">
             <p>
-              セレスティアの海中深くに潜む隠しダンジョンのひとつです。物語の進行で「潜水艇」を入手した直後から自由に挑むことが可能です。ダンジョン内に巣食うモンスターたちは総じて光属性が弱点となっており、雷晶霊の遺跡クリア後に入手できる強力な武器「エクスカリバー」などを装備させておくと戦闘を非常にスムーズに進められます。最奥に待つ大晶霊「シャドウ」との戦闘に勝利すれば、晴れて契約を結ぶことができます。
+              闇の洞窟はセレスティアの海中深くに潜む隠しダンジョンのひとつです。物語の進行で「潜水艇」を入手した直後から自由に挑むことが可能です。ダンジョン内に巣食うモンスターたちは総じて光属性が弱点となっており、雷晶霊の遺跡クリア後に入手できる光武器「エクスカリバー」などを装備させておくとダンジョン攻略やボス戦をスムーズに進められます。最奥に待つ大晶霊「シャドウ」との戦闘に勝利すれば契約を結ぶことができます。
             </p>
           </div>
-          <h3>闇の洞窟への行き方</h3>
+        </Section>
+        <Section>
+          <SectionTitle>闇の洞窟への行き方</SectionTitle>
           <ResponsiveImage src="/extras/secret-dark-cave-location.jpg" />
           <p>
             闇の洞窟はセレスティア世界の海中に位置しています。「バリル城」の海域から北東方向へ進んだ周辺で、潜水艇に乗り換えてGPS座標目安

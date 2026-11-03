@@ -13,6 +13,8 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
+import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -49,17 +51,22 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>きらめきの塔</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              BCロッド、ゴールドアーマーなど
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">
-              インフェリアマップ GPS(107,23)
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              飛行艇を入手後から挑戦可能
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "BCロッド、ゴールドアーマーなど",
+              },
+              {
+                label: "場所",
+                value: "インフェリアマップ GPS(107,23)",
+              },
+              {
+                label: "発生",
+                value: "飛行艇を入手後から挑戦可能",
+              },
+            ]}
+          />
           <div className="mb-8">
             <p>
               物語終盤で「飛行艇」を入手したあとから挑戦できる隠しダンジョンのひとつです。ダンジョン内では『ワルキューレの伝説』のアレンジBGMが流れる特徴的なダンジョンで、最強クラスの装備品やのちにS・Dを入手するためのイベントが発生します。
@@ -78,12 +85,20 @@ export default async function HomePage() {
               ダンジョンの仕掛けが難しく、ボスのワルキューレも強敵ですが報酬が豪華なのでぜひ挑戦してみてください。
             </p>
           </div>
-          <h3>きらめきの塔への行き方</h3>
-          <ResponsiveImage src="/extras/secret-valkyrie-location.jpg" />
-          <p>
-            インフェリアのミンツから飛行艇で南にずっとすすんだ岩山に囲まれたエリア（GPS座標：107,
-            23付近）に佇んでおり、飛行艇を使用することで初めて着陸・侵入することが可能です。
-          </p>
+        </Section>
+        <Section>
+          <div className="mb-4">
+            <SectionTitle>きらめきの塔への行き方</SectionTitle>
+            <ResponsiveImage src="/extras/secret-valkyrie-location.jpg" />
+            <p>
+              インフェリアのミンツから飛行艇で南にずっとすすんだ岩山に囲まれたエリア（GPS座標：107,
+              23付近）に佇んでおり、飛行艇を使用することで初めて着陸・侵入することが可能です。
+            </p>
+          </div>
+          <GuideList
+            isRelated={true}
+            items={[{ title: "飛行艇の入手", href: "/subevents/flying-board" }]}
+          />
         </Section>
 
         <Section>

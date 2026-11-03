@@ -16,6 +16,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -46,22 +47,33 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>ジイニ</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              フォッグの技習得関連イベント、オークション景品、レンズなど
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">
-              セレスティアフィールド ※海底または飛行艇から入る
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">潜水艇入手後から</RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value:
+                  "フォッグの技習得関連イベント、オークション景品、レンズなど",
+              },
+              {
+                label: "場所",
+                value: "セレスティアフィールド ※海底または飛行艇から入る",
+              },
+              {
+                label: "発生",
+                value: "潜水艇入手後から",
+              },
+            ]}
+          />
+
           <div className="mb-8">
             <p>
               潜水艇入手後からセレスティアの隠しタウンであるジイニに行くことができます。ジイニではオークションの開催、フォッグの最強技「エレメントマスター」の習得などさまざまなイベントが発生します。
               このページではジイニへの行き方や昼夜の仕組み、オークションでの効率的なジイニ稼ぎ（アイテム出品・リセット手法）、および購入できるアイテムのステップ一覧を解説します。
             </p>
           </div>
-          <h3>ジイニへの行き方</h3>
+        </Section>
+        <Section>
+          <SectionTitle>ジイニへの行き方</SectionTitle>
           <p>
             ジイニへの行き方は2通りあります。最初は潜水艇でセレスティアの海底から向かうことしかできませんが、飛行艇を入手すると空から直接ジイニに降りることも可能となります。
           </p>

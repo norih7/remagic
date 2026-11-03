@@ -10,24 +10,9 @@ import Section from "@/components/Section";
 import CardList from "@/components/CardLIst";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
-import Image from "next/image";
 import Main from "@/components/SiteLayout/Main";
-import Expand from "@/components/Expand";
-import InlineCaption from "@/components/InlineCaption";
-import {
-  SwitchY,
-  SwitchLeft,
-  SwitchB,
-  SwitchA,
-  SwitchX,
-} from "@/components/Buttons/Switch";
-import {
-  PSLeft,
-  PSSquare,
-  PSCross,
-  PSCircle,
-  PSTriange,
-} from "@/components/Buttons/Playstation";
+import Summary from "@/components/Summary";
+
 import Title from "@/components/Title";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import LocationItems from "@/components/LocationItems";
@@ -99,15 +84,18 @@ export default async function HomePage() {
         <Section>
           <Title>{title}</Title>
           <ResponsiveImage src="/deeps/cless-and-arche-digest.jpg" />
-
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="目的">
-              最強クラスのボス討伐、エターナルソードなどの入手
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              王都インフェリア到着後 ※ストーリー最終盤推奨
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "目的",
+                value: "最強クラスのボス討伐、エターナルソードなどの入手",
+              },
+              {
+                label: "発生",
+                value: "王都インフェリア到着後 ※ストーリー最終盤推奨",
+              },
+            ]}
+          />
           <div className="mb-8">
             <p>
               闘技場の世界一決定戦で優勝すると乱入してくる謎の剣士「クレス」との戦いを解説します。戦闘ランクハード以上で戦闘に追加される「アーチェ」についての攻略法も。

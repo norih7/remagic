@@ -11,6 +11,7 @@ import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import Title from "@/components/Title";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Summary from "@/components/Summary";
 
 export const dynamic = "force-static";
 
@@ -33,14 +34,18 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>ステータスアップ薬草集め</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="目的">
-              薬草による効率良いステータスアップ
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              最短でいざないの密林から
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "目的",
+                value: "薬草による効率良いステータスアップ",
+              },
+              {
+                label: "発生",
+                value: "最短でいざないの密林から",
+              },
+            ]}
+          />
           <div className="mb-8">
             <p>
               「セージ」や「セボリー」などの薬草はステータスが上がる特殊アイテムで、レベルアップによるステータスアップで足りない部分を補うのに強力なアイテムです！このページでは薬草を集めるために周回方法を解説します。

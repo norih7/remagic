@@ -11,6 +11,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import SkillIcon from "@/components/Icons/SkillIcon";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,25 +39,35 @@ export default async function HomePage() {
             <SkillIcon />
             ファロース教会地下
           </Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              大晶霊「マクスウェル」、ゴッドウェポン、フェアリィリングなど
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">ファロース教会</RoundedInlineList>
-            <RoundedInlineList title="発生">
-              インフェリアへ帰還後から
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value:
+                  "大晶霊「マクスウェル」、ゴッドウェポン、フェアリィリングなど",
+              },
+              {
+                label: "場所",
+                value: "ファロース教会",
+              },
+              {
+                label: "発生",
+                value: "インフェリアへ帰還後から",
+              },
+            ]}
+          />
           <div className="mb-8">
             <p>
               物語の後半に訪れることができる隠しダンジョンのひとつです。インフェリアの「ファロース教会」の最奥には、強力な大晶霊「マクスウェル」が待ち構えており、激闘を制することで晴れて契約を結ぶことができます。非常に手強い強敵ですが、勝利すれば絶大な見返りを得られます。
             </p>
             <p>
-              出現するモンスターはなかなかの強さですが、その分1回の戦闘で約1500〜3000もの高い経験値を稼ぐことができます。また、ファロース教会内には無料で宿泊できるベッドが用意されているため、冒険の合間のレベル上げスポットとしても非常に優秀です。
+              出現するモンスターはなかなかの強さですが、その分1回の戦闘で約1000〜1500もの高い経験値を稼ぐことができます。また、ファロース教会内には無料で宿泊できるベッドが用意されているため、冒険の合間のレベル上げスポットとしても非常に優秀です。
             </p>
           </div>
+        </Section>
+        <Section>
           <div className="mb-4">
-            <h3>ダンジョンへの行き方</h3>
+            <SectionTitle>ダンジョンへの行き方</SectionTitle>
             <ResponsiveImage src="/extras/secret-farosu-entrance.jpg" />
             <p>
               「遠征の橋」を経由してインフェリアの世界へ再び帰還できるようになった後、ファロース教会（GPS座標：93,

@@ -12,9 +12,10 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
 import Main from "@/components/SiteLayout/Main";
 import LinkItem from "@/components/LinkItem";
+import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 export const dynamic = "force-static";
-
 const pageKey = "lap";
 const title = deepLinks[pageKey].title;
 const description = deepLinks[pageKey].seoDesc;
@@ -31,14 +32,24 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          リマスター版の周回プレイについて解説。引き継ぎ可能な項目や周回プレイについて。
-        </PageSummary>
-        {/* 
         <Section>
-          <SectionTitle>「リマスター版の周回プレイ」の概要</SectionTitle>
-        </Section> */}
-
+          <Title>{title}</Title>
+          <Summary
+            list={[
+              {
+                label: "目的",
+                value: "リマスター版のやり込みとしての周回プレイ",
+              },
+              {
+                label: "発生",
+                value: "エターニアクリア後から",
+              },
+            ]}
+          />
+          <p>
+            リマスター版から新しく引き継ぎをした周回プレイが可能となりました。引き継ぎ可能な項目や周回プレイのおすすめ内容などを解説します。
+          </p>
+        </Section>
         <Section>
           <SectionTitle>引き継ぎ要素</SectionTitle>
           <RoundedContainer title="引き継ぎ可能なオプション">

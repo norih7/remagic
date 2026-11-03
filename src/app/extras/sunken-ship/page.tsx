@@ -12,6 +12,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import KeyItemIcon from "@/components/Icons/KeyItemIcon";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,24 +40,31 @@ export default async function HomePage() {
             <KeyItemIcon />
             沈没船
           </Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              ヴォーパルソード、キューティミトンなど
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">
-              インフェリア海底 GPS(34,4)
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              インフェリアへ帰還後から挑戦可能
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "ヴォーパルソード、キューティミトンなど",
+              },
+              {
+                label: "場所",
+                value: "インフェリア海底 GPS(34,4)",
+              },
+              {
+                label: "発生",
+                value: "インフェリアへ帰還後から挑戦可能",
+              },
+            ]}
+          />
           <div className="mb-8">
             <p>
               海底に眠る隠しダンジョンのひとつです。ダンジョン内では貴重品「インシーマップ」やリッドの武器「ヴォーパルソード」を入手できます。ヴォーパルソードは水属性武器で、物理耐性のあるマクスウェルなどのボスに挑む場合の装備候補となる強力な武器です。最奥にはボスの「セイレーン」が待ち構えていますが、全体の攻略難易度は比較的優しめです。「遠征の橋」を経由してインフェリアへ戻ってきた直後のレベル上げや、アイテムの回収スポットとして非常に最適です。
             </p>
           </div>
+        </Section>
+        <Section>
           <div className="mb-8">
-            <h3>沈没船への行き方</h3>
+            <SectionTitle>沈没船への行き方</SectionTitle>
             <ResponsiveImage src="/extras/secret-sunken-location.jpg" />
             <p>
               「遠征の橋」からイベントを経てインフェリア側へ帰還したあと、インフェリア世界の海底に位置する沈没船（GPS座標：34,

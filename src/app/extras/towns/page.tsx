@@ -12,6 +12,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import InlineCaption from "@/components/InlineCaption";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -36,17 +37,22 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>隠しタウン「ねこにんの里/晶霊温泉」</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              チャットの特技習得、レンズ、パープルソディ購入など
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">
-              セレスティア/インフェリアフィールド ※飛行艇から入る
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              飛行艇を入手後から
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "チャットの特技習得、レンズ、パープルソディ購入など",
+              },
+              {
+                label: "場所",
+                value: "セレスティア/インフェリアフィールド ※飛行艇から入る",
+              },
+              {
+                label: "発生",
+                value: "飛行艇を入手後から",
+              },
+            ]}
+          />
           <div className="mb-8">
             <p>
               インフェリアとセレスティアそれぞれに隠されたタウンがあり、飛行艇を入手後から行くことができます。ねこにんの里はセレスティア、晶霊温泉はインフェリアにあります。サブイベントや貴重な食材購入もできるのでぜひ覚えておいてください。
@@ -56,11 +62,11 @@ export default async function HomePage() {
           <CardList
             list={[
               <>
-                <InlineCaption>ねこにんの里</InlineCaption>
+                <div className="font-bold">ねこにんの里</div>
                 マスター料理の食材である「パープルソディ」の購入
               </>,
               <>
-                <InlineCaption>晶霊温泉</InlineCaption>
+                <div className="font-bold">晶霊温泉</div>
                 チャットの特技習得サブイベントなど
               </>,
             ]}
