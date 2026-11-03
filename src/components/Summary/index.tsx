@@ -1,7 +1,6 @@
 import styles from "./style.module.css";
 import { BiSolidInfoSquare } from "react-icons/bi";
 import { LuLightbulb } from "react-icons/lu";
-import { RiFileInfoFill } from "react-icons/ri";
 import { LuMessageCircleMore, LuChevronDown } from "react-icons/lu";
 import RoundedInlineList from "@/components/RoundedInlineList";
 

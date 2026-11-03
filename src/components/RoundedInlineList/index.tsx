@@ -11,14 +11,16 @@ const RoundedInlineList = (props: Props) => {
   const minWidth = onecol === true ? "min-w-[80px]" : null;
   return (
     <dl
-      className={`border border-gray-700 ${paddingType} rounded-xs text-center flex items-center items-stretch text-xs`}
+      className={`border border-gray-400 ${paddingType} rounded-xs text-center flex items-center items-stretch text-xs`}
     >
       <dt
-        className={`px-2 flex items-center border-r border-solid border-gray-700 ${minWidth}`}
+        className={`px-2 py-0.5 flex items-center border-r border-solid border-gray-400 ${minWidth}`}
       >
         {title}
       </dt>
-      <dd className="px-2 flex-1 items-center flex text-left ">{children}</dd>
+      <dd className="px-2 py-0.5 flex-1 items-center flex text-left ">
+        {children}
+      </dd>
     </dl>
   );
 };
