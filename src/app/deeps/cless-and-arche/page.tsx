@@ -319,7 +319,12 @@ export default async function HomePage() {
 
             <RoundedContainer title="最後の極光剣">
               <div className="grid grid-cols-1 gap-3 pt-3">
-                <RoundedItem>-</RoundedItem>
+                <RoundedItem>
+                  <p>
+                    クレスのHPが1500近くになり、リッドのHPが少なくなった場合には「極光剣」が有効です。「□+×+⚪︎」で極光壁を出して「⚪︎」ボタンを連打することで極光剣を発動させることができます。
+                  </p>
+                  <GifPlayer src="/deeps/cless-aurora-sword.gif" alt="" />
+                </RoundedItem>
               </div>
             </RoundedContainer>
           </div>
@@ -342,6 +347,22 @@ export default async function HomePage() {
               クレスのHPが50%以下になると使ってくる「次元斬」は正面から近づくと攻撃を受けてしまうため、ダッシュすり抜けや空中烈空斬で次元斬を使ったクレスの背後をとって攻撃→空破絶掌撃の連携をとっていきましょう。
             </p>
             <GifPlayer src="/deeps/cless-thrust.gif" alt="空破絶掌撃ベース" />
+          </div>
+
+          <div className="mb-8">
+            <div className="mb-3">
+              <h3>緋凰絶炎衝の連発</h3>
+              <div>
+                <Tag>ハードおすすめ</Tag>
+              </div>
+            </div>
+            <p>
+              ハードでおすすめなのが「緋凰絶炎衝」を連発していく戦法。アーチェは攻撃による崩しが容易なため、鳳凰天駆をヒットさせて「緋凰絶炎衝」を繰り出しましょう。画面端に2人を寄せるハメでこのように緋凰絶炎衝を連発するとアーチェのHPを一気に削ることができます。
+            </p>
+            <GifPlayer
+              src="/deeps/cless-arche-phoenix.gif"
+              alt="緋凰絶炎衝連発"
+            />
           </div>
         </Section>
       </article>
