@@ -15,6 +15,7 @@ import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import SkillIcon from "@/components/Icons/SkillIcon";
 import Tag from "@/components/Tag";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -44,15 +45,22 @@ export default async function HomePage() {
             <SkillIcon />
             ゼクンドゥス
           </Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              大晶霊「ゼクンドゥス」、デリスエンブレム
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">シゼル城</RoundedInlineList>
-            <RoundedInlineList title="発生">
-              シゼル城到着後から
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "大晶霊「ゼクンドゥス」、デリスエンブレム",
+              },
+              {
+                label: "場所",
+                value: "シゼル城",
+              },
+              {
+                label: "発生",
+                value: "シゼル城到着後から",
+              },
+            ]}
+          />
           <p>
             ラストダンジョン「シゼル城」には大晶霊ゼクンドゥスがいて契約することができます。ゼクンドゥスは非常に強力で、特定の場所に辿り着けば簡単に契約できるためシゼル城に到着してから早めに契約することを推奨します。
           </p>

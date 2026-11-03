@@ -13,6 +13,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import SkillIcon from "@/components/Icons/SkillIcon";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,15 +39,22 @@ export default async function HomePage() {
             <SkillIcon />
             画家のリシテア
           </Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              キャンセラー、フォッグの「エレメントマスター」習得条件
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">セレスティア各地</RoundedInlineList>
-            <RoundedInlineList title="発生">
-              氷晶霊の山をクリア後
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "キャンセラー、フォッグのエレメントマスター習得条件",
+              },
+              {
+                label: "場所",
+                value: "セレスティア各地",
+              },
+              {
+                label: "発生",
+                value: "氷晶霊の山をクリア後",
+              },
+            ]}
+          />
           <p>
             このイベントはセレスティア各地にいる画家リシテアに話しかけていくもので、すべてのイベントをこなすことでフォッグの強力なアクセサリの入手および「エレメントマスター」の特技習得に関連します。リシテアイベントはストーリーの進行状況により開放されていきます。
           </p>

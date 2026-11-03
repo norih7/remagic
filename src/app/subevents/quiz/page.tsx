@@ -10,6 +10,7 @@ import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -32,13 +33,22 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>テイルズクイズ</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              称号「テイルズはかせ」、コンボコマンドなど
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">ミンツ大学</RoundedInlineList>
-            <RoundedInlineList title="発生">ミンツ到着後から</RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "称号「テイルズはかせ」、コンボコマンドなど",
+              },
+              {
+                label: "場所",
+                value: "ミンツ大学",
+              },
+              {
+                label: "発生",
+                value: "ミンツ到着後から",
+              },
+            ]}
+          />
           <div className="mb-8">
             <p>
               ミンツ大学のではテイルズクイズを受験できます。クイズは初級、中級、上級とあり、最初にミンツに訪れた時点では初級のみ受験できます。各級に合格するとアイテムと称号を獲得できます。クイズは時限要素はないためいつでも受験できます。

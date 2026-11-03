@@ -14,6 +14,7 @@ import Main from "@/components/SiteLayout/Main";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -44,18 +45,22 @@ export default async function HomePage() {
               <TimeLimitIcon />
               ベッポのかくれんぼ
             </Title>
-            <div className="mb-4 grid grid-cols-1 gap-2">
-              <RoundedInlineList title="報酬">
-                「ルーンボトル」、「ドエニスのポプリ」
-              </RoundedInlineList>
-              <RoundedInlineList title="場所">バロールの町</RoundedInlineList>
-              <RoundedInlineList title="発生">
-                バロールの町へ到着後
-              </RoundedInlineList>
-            </div>
-            {/* <EventCondition category="period">
-              バロールの町へ到着後
-            </EventCondition> */}
+            <Summary
+              list={[
+                {
+                  label: "報酬",
+                  value: "ルーンボトル、ドエニスのポプリ",
+                },
+                {
+                  label: "場所",
+                  value: "ルーンボトル、ドエニスのポプリ",
+                },
+                {
+                  label: "発生",
+                  value: "バロールの町へ到着後 ※時限イベント",
+                },
+              ]}
+            />
           </div>
           <div className="mb-4">
             <p>

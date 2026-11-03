@@ -13,6 +13,7 @@ import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -39,15 +40,13 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>ラストフェンサーの入手</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="場所">
-              バリル城、アイメン（崩壊後）
-            </RoundedInlineList>
-            <RoundedInlineList title="報酬">ラストフェンサー</RoundedInlineList>
-            <RoundedInlineList title="発生">
-              バリル城でヒアデス撃破後
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              { label: "報酬", value: "ラストフェンサー" },
+              { label: "場所", value: "バリル城、アイメン（崩壊後）" },
+              { label: "発生", value: "バリル城でヒアデス撃破後" },
+            ]}
+          />
           <p>
             ストーリー後半で再び訪れたバリル城でヒアデスを撃破したあとからリッドの最強武器の1つ「ラストフェンサー」を入手することができます。ラストフェンサーは簡単に入手でき、攻撃力は控えめですが特殊効果が多いため最終盤でも活躍する武器なのでぜひ入手してください。
           </p>

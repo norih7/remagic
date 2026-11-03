@@ -12,6 +12,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -35,15 +36,22 @@ export default async function HomePage() {
         <Section>
           <Title>飛行艇入手</Title>
           <ResponsiveImage src="/subevents/flying-board-field.jpg" />
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">「飛行艇」の入手</RoundedInlineList>
-            <RoundedInlineList title="場所">
-              シゼル城、アイフリードの墓
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              遠征の橋でインフェリア帰還後から
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "飛行艇の入手",
+              },
+              {
+                label: "場所",
+                value: "シゼル城、アイフリードの墓",
+              },
+              {
+                label: "発生",
+                value: "遠征の橋でインフェリア帰還後から",
+              },
+            ]}
+          />
           <p>
             ストーリー終盤になると、バンエルティア号に「飛行艇」を搭載できるようになります。飛行艇の入手のためにはふたつの重要キーアイテム
             <strong>「やみのたま」</strong>と<strong>「ひかりのたま」</strong>

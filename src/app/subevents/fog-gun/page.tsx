@@ -13,6 +13,7 @@ import EventCondition from "@/components/EventCondition";
 import CardList from "@/components/CardLIst";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -40,15 +41,22 @@ export default async function HomePage() {
         <Section>
           <Title>フォッグの武器開発</Title>
           <ResponsiveImage src="/subevents/fog-gun-assistance.jpg" />
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              最強武器「メガグランチャー」など
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">ティンシア</RoundedInlineList>
-            <RoundedInlineList title="発生">
-              フォッグが仲間になってから
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "フォッグの最強武器「メガグランチャー」など",
+              },
+              {
+                label: "場所",
+                value: "ティンシア",
+              },
+              {
+                label: "発生",
+                value: "フォッグが仲間になってから",
+              },
+            ]}
+          />
           <p>
             フォッグの武器すべてティンシアのアジトでのサブイベントから入手します。フォッグの最強武器もこの開発で入手するためお見逃しなく。
           </p>

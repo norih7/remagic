@@ -15,6 +15,7 @@ import LensPropertyList from "@/components/LensPropertyList";
 import { locationLenses } from "@/db/schema";
 import Title from "@/components/Title";
 import RoundedInlineList from "@/components/RoundedInlineList";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,17 +39,23 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>レンズ収集</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              インフェリマント、セレスティマント、クローナシンボルなど
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">
-              ゲーム内のタウン、ダンジョンなど
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              ストーリー開始後から
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value:
+                  "インフェリマント、セレスティマント、クローナシンボルなど",
+              },
+              {
+                label: "場所",
+                value: "ゲーム内のタウン、ダンジョンなど",
+              },
+              {
+                label: "発生",
+                value: "ストーリー開始後からレンズ収集可能",
+              },
+            ]}
+          />
           町やダンジョンなどで入手することができるレンズの説明とレンズの入手場所の一覧データを掲載しています。
         </Section>
 

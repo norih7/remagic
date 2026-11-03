@@ -13,6 +13,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -105,15 +106,22 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>闘技場</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              薬草セット、各種グミ、エターナルソードなど
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">王都インフェリア</RoundedInlineList>
-            <RoundedInlineList title="発生">
-              王都インフェリアに到着後いつでも
-            </RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: "薬草セット、各種グミ、エターナルソードなど",
+              },
+              {
+                label: "場所",
+                value: "王都インフェリア",
+              },
+              {
+                label: "発生",
+                value: "王都インフェリアに到着後いつでも",
+              },
+            ]}
+          />
           <p>
             王都インフェリアには闘技場があり、連戦を勝ち抜くことで報酬を獲得できます。
             闘技場には「王都一決定戦」「王国一決定戦」「世界一決定戦」の3つのランクが用意されており、いずれもリッドが単独で3連戦に挑む形式です。ランクの3試合すべてに勝利すると優勝となり、報酬を手に入れることができます。

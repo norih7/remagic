@@ -11,6 +11,7 @@ import Tag from "@/components/Tag";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -31,22 +32,18 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          ミンツでプレイできるミニゲーム「クレーメルボール」について解説しています。このイベントをやり込むとリッドの称号を得ることができます。
-        </PageSummary>
         <Section>
           <Title>
             <TimeLimitIcon />
             クレーメルボール
           </Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              リッドの称号「たまころがし」など
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">ミンツの運動場</RoundedInlineList>
-            <RoundedInlineList title="発生">ミンツ到着後から</RoundedInlineList>
-          </div>
-
+          <Summary
+            list={[
+              { label: "報酬", value: "リッドの称号「たまころがし」など" },
+              { label: "場所", value: "ミンツの運動場" },
+              { label: "発生", value: "ミンツ到着後から" },
+            ]}
+          />
           <Information type="warning" title="注意点">
             このミニゲームで得られるのはリッドの称号のみです。特別なアイテムなどは何もないため称号にこだわりのない方はスキップしても問題ありません。
           </Information>

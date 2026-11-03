@@ -12,6 +12,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -49,13 +50,13 @@ export default async function HomePage() {
             <TimeLimitIcon />
             カトリーヌの恋愛
           </Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              ファラの称号「あいのネゴシエーター」
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">インフェリア各地</RoundedInlineList>
-            <RoundedInlineList title="発生">ミンツ到着後から</RoundedInlineList>
-          </div>
+          <Summary
+            list={[
+              { label: "報酬", value: "ファラの称号「あいのネゴシエーター」" },
+              { label: "場所", value: "インフェリア各地" },
+              { label: "発生", value: "ミンツ到着後から ※次元イベント" },
+            ]}
+          />
           <p>
             インフェリア各地を巡るピンク髪の女性「カトリーヌ」を追うサブイベントです。ストーリーの進行に合わせてどれだけ彼女に遭遇したかの回数によって最終的な結末が大きく変化し、すべてのイベント（全6回）を目撃してハッピーエンドを迎えることで、ファラの称号「あいのネゴシエーター」を獲得できます。
           </p>
