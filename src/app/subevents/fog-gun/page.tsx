@@ -39,6 +39,7 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>フォッグの武器開発</Title>
+          <ResponsiveImage src="/subevents/fog-gun-assistance.jpg" />
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">
               最強武器「メガグランチャー」など
@@ -48,7 +49,6 @@ export default async function HomePage() {
               フォッグが仲間になってから
             </RoundedInlineList>
           </div>
-          <ResponsiveImage src="/subevents/fog-gun-assistance.jpg" />
           <p>
             フォッグの武器すべてティンシアのアジトでのサブイベントから入手します。フォッグの最強武器もこの開発で入手するためお見逃しなく。
           </p>

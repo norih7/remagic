@@ -34,6 +34,7 @@ export default async function HomePage() {
       <article>
         <Section>
           <Title>飛行艇入手</Title>
+          <ResponsiveImage src="/subevents/flying-board-field.jpg" />
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">「飛行艇」の入手</RoundedInlineList>
             <RoundedInlineList title="場所">
@@ -43,7 +44,6 @@ export default async function HomePage() {
               遠征の橋でインフェリア帰還後から
             </RoundedInlineList>
           </div>
-          <ResponsiveImage src="/subevents/flying-board-field.jpg" />
           <p>
             ストーリー終盤になると、バンエルティア号に「飛行艇」を搭載できるようになります。飛行艇の入手のためにはふたつの重要キーアイテム
             <strong>「やみのたま」</strong>と<strong>「ひかりのたま」</strong>

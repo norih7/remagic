@@ -39,7 +39,8 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>クリップソード探し</Title>
+          <Title>{title}</Title>
+          <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
           <div className="mb-4 grid grid-cols-1 gap-2">
             <RoundedInlineList title="報酬">スマッシュマント</RoundedInlineList>
             <RoundedInlineList title="場所">王都インフェリア</RoundedInlineList>
@@ -47,7 +48,6 @@ export default async function HomePage() {
               王都インフェリアで「じょうせんパス」入手後
             </RoundedInlineList>
           </div>
-          <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
           <div className="mb-4">
             <p>
               王都インフェリアの闘技場の前にいる老人に話しかけると「グリップソード」を探してほしいと頼まれます。グリップソードはインフェリアの街中にあり、簡単に探し出せるのとイベントの最後にはアクセサリ「スマッシュマント」を入手できます。スマッシュマントはアイテムドロップ率をアップする貴重なアイテムなのでぜひ入手してみてください。

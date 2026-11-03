@@ -124,9 +124,19 @@ export default async function HomePage() {
             <h3>報酬</h3>
             <CardList
               list={[
-                "エターナルソード",
-                "クレスのバンダナ",
-                "アーチェのリボン ※ハード以上でクリア",
+                <>
+                  <h4>エターナルソード</h4>
+                  リッドの最強武器。「斬り+890、突き+850」の性能を持つ剣。
+                </>,
+                <>
+                  <h4>クレスのバンダナ</h4>
+                  リッドが装備可能な頭防具。「回避+20、命中+10、時耐性+20%」の性能。
+                </>,
+                <>
+                  <h4>アーチェのリボン ※ハード以上でクリア</h4>
+                  ファラとメルディが装備可能な頭防具。「幸運+30
+                  火風水土耐性+10%」の性能。
+                </>,
               ]}
             />
           </div>
@@ -232,7 +242,10 @@ export default async function HomePage() {
                 </RoundedItem>
                 <GuideList
                   items={[
-                    { title: "ステータスアップ薬草集め", href: "/deeps/herb" },
+                    {
+                      title: "ステータスアップ薬草集めはこちら",
+                      href: "/deeps/herb",
+                    },
                   ]}
                 />
               </div>
@@ -247,8 +260,8 @@ export default async function HomePage() {
               <div className="grid grid-cols-1 gap-3 pt-3">
                 <RoundedItem title="鳳凰天駆のガードと立ち回り">
                   <p>
-                    鳳凰天駆はガードし、その後の隙を攻撃するようにしましょう。HIT数が多いため全てをガードできないケースがありますが基本は鳳凰天駆を発動されたらガードしていきます。ガード成功するとクレスに隙ができているため攻撃を繰り出しましょう。
-                  </p>{" "}
+                    鳳凰天駆はガードしましょう。HIT数が多いため全てをガードできないケースがありますが基本は鳳凰天駆を発動されたらガードすること推奨します。ガードに成功するとクレスに隙ができているため攻撃を繰り出しましょう。またマニア以上のクレスが発動する「緋凰絶炎衝」も鳳凰天駆をガードできれば発動を防止できます。
+                  </p>
                   <GifPlayer
                     src="/deeps/cless-guard1.gif"
                     alt="クレスの魔神剣防御"
@@ -256,7 +269,7 @@ export default async function HomePage() {
                 </RoundedItem>
                 <RoundedItem title="連続魔神剣の防御">
                   <p>
-                    ガードし続けるではなく魔神剣を1つずつガードする。ガードは初回の攻撃に対して強固という仕様があるため毎回防御ボタンを押しましょう。ただし基本的には後述する烈空斬による回避がおすすめです。
+                    ガードし続けるではなく魔神剣を1つずつガードする。ガードは初回の攻撃に対して強固という仕様があるため毎回防御ボタンを押しましょう。基本的には烈空斬による回避がおすすめですが、アーチェ戦では間合い的に魔神剣をガードしてすぐに鳳凰天駆を使うケースがあります。
                   </p>
                   <GifPlayer
                     src="/deeps/cless-guard2.gif"
@@ -280,7 +293,21 @@ export default async function HomePage() {
                   />
                 </RoundedItem>
 
-                <RoundedItem title="アーチェの魔術回避">-</RoundedItem>
+                <RoundedItem title="アーチェの魔術回避">
+                  <div className="mb-3">下記の術はなるべく回避したい</div>
+                  <DescriptionList
+                    list={[
+                      {
+                        label: "インディグネイション",
+                        value: "大ダメージを受けるためダッシュで回避",
+                      },
+                      {
+                        label: "レイ、スパークウェーブ",
+                        value: "空中烈空斬で回避",
+                      },
+                    ]}
+                  />
+                </RoundedItem>
               </div>
             </RoundedContainer>
             <RoundedContainer title="戦闘不能前にリバースドールを装備">
@@ -295,17 +322,22 @@ export default async function HomePage() {
 
         <Section>
           <SectionTitle>攻略法</SectionTitle>
-          <div className="mb-3">
-            <h3>デリスエンブレムがない場合: 空破絶掌撃</h3>
-            <div>
-              <Tag>初心者おすすめ</Tag>
-              <Tag>ノーマルおすすめ</Tag>
+          <div className="mb-8">
+            <div className="mb-3">
+              <h3>デリスエンブレムがない場合: 空破絶掌撃</h3>
+              <div>
+                <Tag>簡単攻略法</Tag>
+                <Tag>ノーマルおすすめ</Tag>
+              </div>
             </div>
+            <p>
+              シンプルに通常攻撃と「空破絶掌撃」をベースに攻撃していく戦法です。空破絶掌撃は命中率が高いためデリスエンブレムなしでもクレスのガードを崩しやすいです。クレスの鳳凰天駆をガードしたあとの隙にも通常攻撃→空破絶掌撃の連携を徹底していきます。
+            </p>
+            <p>
+              クレスのHPが50%以下になると使ってくる「次元斬」は正面から近づくと攻撃を受けてしまうため、ダッシュすり抜けや空中烈空斬で次元斬を使ったクレスの背後をとって攻撃→空破絶掌撃の連携をとっていきましょう。
+            </p>
+            <GifPlayer src="/deeps/cless-thrust.gif" alt="空破絶掌撃ベース" />
           </div>
-          <p>
-            シンプルに通常攻撃と「空破絶掌撃」をベースに攻撃していく戦法です。空破絶掌撃は命中率が高いためデリスエンブレムなしでもクレスのガードを崩しやすいです。クレスの鳳凰天駆をガードしたあとの隙にも通常攻撃→空破絶掌撃の連携を徹底していきます。
-          </p>
-          <GifPlayer src="/deeps/cless-thrust.gif" alt="空破絶掌撃ベース" />
         </Section>
       </article>
     </Main>

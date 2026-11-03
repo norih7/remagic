@@ -6,19 +6,21 @@ import { LuFile, LuBookOpen } from "react-icons/lu";
 export interface GuideItem {
   title: string;
   href: string;
-  description?: string; // 任意で説明文を追加できるようにしています
+  description?: string;
 }
 
 interface GuideListProps {
   items: GuideItem[];
+  isRelated?: boolean;
 }
 
-export const GuideList: React.FC<GuideListProps> = ({ items }) => {
+export const GuideList: React.FC<GuideListProps> = ({
+  items,
+  isRelated = false,
+}) => {
   return (
-    <div className="">
-      {/* 左側のラベル部分 */}
-
-      {/* 右側のリスト部分 */}
+    <div>
+      {isRelated && <h4 className="!mb-2">関連記事</h4>}
       <ul className="space-y-2">
         {items.map((item, index) => (
           <li key={index}>
