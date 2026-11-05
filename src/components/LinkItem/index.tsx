@@ -9,9 +9,10 @@ type Props = {
   remarks?: string;
   href?: string;
   type?: string;
+  thin?: boolean;
 };
 const LinkItem = (props: Props) => {
-  const { name, remarks, href, type } = props;
+  const { name, remarks, href, type, thin = false } = props;
 
   const Icon =
     type === "keyItem" ? (
@@ -22,13 +23,15 @@ const LinkItem = (props: Props) => {
       <SkillIcon />
     ) : null;
   return typeof href === "undefined" ? (
-    <div className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-3 leading-none">
+    <div
+      className={`bg-slate-50 border border-slate-200 rounded-lg px-3 ${thin ? "py-0.5" : "py-3"} leading-none`}
+    >
       <div className="font-bold text-slate-600 mb-1">{name}</div>
       {remarks && <span className="text-slate-600 text-xs">{remarks}</span>}
     </div>
   ) : (
     <Link
-      className="block bg-slate-50 hover:bg-blue-50 border border-slate-200 rounded-lg px-3 py-3 leading-none"
+      className={`block bg-slate-50 hover:bg-blue-50 border border-slate-200 rounded-lg px-3 ${thin ? "py-1" : "py-3"} leading-none`}
       href={href}
     >
       <div className="font-bold flex items-center">

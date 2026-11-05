@@ -15,6 +15,7 @@ import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import InlineCaption from "@/components/InlineCaption";
 import Summary from "@/components/Summary";
+import LinkItem from "@/components/LinkItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -46,7 +47,18 @@ export default async function HomePage() {
             list={[
               {
                 label: "報酬",
-                value: "スマッシュマント",
+                value: (
+                  <ul className="flex flex-wrap gap-x-2">
+                    <li>
+                      <LinkItem
+                        name="スマッシュマント"
+                        href="/systems/item/355"
+                        key={1}
+                        thin={true}
+                      />
+                    </li>
+                  </ul>
+                ),
               },
               {
                 label: "場所",
@@ -63,8 +75,8 @@ export default async function HomePage() {
               王都インフェリアの闘技場の前にいる老人に話しかけると「グリップソード」を探してほしいと頼まれます。グリップソードはインフェリアの街中にあり、簡単に探し出せるのとイベントの最後にはアクセサリ「スマッシュマント」を入手できます。スマッシュマントはアイテムドロップ率をアップする貴重なアイテムなのでぜひ入手してみてください。
             </p>
           </div>
-          <h3>関連記事</h3>
           <GuideList
+            isRelated={true}
             items={[
               {
                 title: "スマッシュマントでアイテムドロップを有利に",

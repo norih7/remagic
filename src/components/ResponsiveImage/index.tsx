@@ -22,7 +22,7 @@ const ResponsiveImage = (props: Props) => {
           height: "auto",
           display: "block",
         }}
-        className={className}
+        className={`${className}`}
       />
     </div>
   );

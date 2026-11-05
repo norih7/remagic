@@ -15,6 +15,7 @@ import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import Summary from "@/components/Summary";
+import LinkItem from "@/components/LinkItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -49,11 +50,30 @@ export default async function HomePage() {
               list={[
                 {
                   label: "報酬",
-                  value: "ルーンボトル、ドエニスのポプリ",
+                  value: (
+                    <ul className="flex flex-wrap gap-x-2">
+                      <li>
+                        <LinkItem
+                          name="ルーンボトル"
+                          href="/systems/item/43"
+                          key={1}
+                          thin={true}
+                        />
+                      </li>
+                      <li>
+                        <LinkItem
+                          name="ドエニスのポプリ"
+                          href="/systems/item/285"
+                          key={2}
+                          thin={true}
+                        />
+                      </li>
+                    </ul>
+                  ),
                 },
                 {
                   label: "場所",
-                  value: "ルーンボトル、ドエニスのポプリ",
+                  value: "バロールの町",
                 },
                 {
                   label: "発生",
@@ -71,8 +91,8 @@ export default async function HomePage() {
               </strong>
             </p>
           </div>
-          <h3>関連記事</h3>
           <GuideList
+            isRelated={true}
             items={[{ title: "ルーンボトル解説", href: "/systems/rune" }]}
           />
         </Section>

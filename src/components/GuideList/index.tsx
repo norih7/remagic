@@ -20,7 +20,11 @@ export const GuideList: React.FC<GuideListProps> = ({
 }) => {
   return (
     <div>
-      {isRelated && <h4 className="!mb-2">関連記事</h4>}
+      {isRelated && (
+        <div className="inline-block bg-gray-600 px-3 py-0.5 mb-2 font-bold text-white rounded-lg text-xs">
+          関連記事
+        </div>
+      )}
       <ul className="space-y-2">
         {items.map((item, index) => (
           <li key={index}>

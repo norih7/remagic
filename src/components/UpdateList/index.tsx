@@ -3,6 +3,10 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/11/06",
+    update: <>サブイベントなどの攻略情報のデザインを改修しました。</>,
+  },
+  {
     date: "2026/11/01",
     update: (
       <>
