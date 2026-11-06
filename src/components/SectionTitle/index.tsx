@@ -25,12 +25,13 @@ type Props = {
   type?: keyof typeof sectionIcons;
   data?: string;
   children: React.ReactNode;
+  id?: string;
 };
 
 const SectionTitle = (props: Props) => {
-  const { children, type = "guide", data = "" } = props;
+  const { children, type = "guide", data = "", id = "" } = props;
   return (
-    <h2 className="flex items-center mb-3" data-title={data}>
+    <h2 className="flex items-center mb-3" data-title={data} id={id}>
       <LuBookText className="mr-1" />
       {children}
     </h2>

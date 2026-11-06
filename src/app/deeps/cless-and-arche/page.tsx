@@ -12,7 +12,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
 import Main from "@/components/SiteLayout/Main";
 import Summary from "@/components/Summary";
-
+import ToC from "@/components/ToC";
 import Title from "@/components/Title";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import LocationItems from "@/components/LocationItems";
@@ -77,6 +77,13 @@ const data = [
   },
 ];
 
+const toc = {
+  spec: "クレス&アーチェ戦の仕様",
+  prepare: "装備品と準備",
+  point: "戦闘のコツ",
+  method: "攻略法",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
@@ -96,7 +103,7 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-8">
+          <div className="mb-4">
             <p>
               闘技場の世界一決定戦で優勝すると乱入してくる謎の剣士「クレス」との戦いを解説します。戦闘ランクハード以上で戦闘に追加される「アーチェ」についての攻略法も。
             </p>
@@ -104,10 +111,11 @@ export default async function HomePage() {
               エターニアでも屈指の強敵ですがリッドの最強武器「エターナルソード」の入手や、アクセサリ「クレスのバンダナ」「アーチェのリボン」なども入手できるためぜひ挑戦しましょう。
             </p>
           </div>
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>クレス&アーチェ戦の仕様</SectionTitle>
+          <SectionTitle id="spec">{toc.spec}</SectionTitle>
           <div className="mb-8">
             <h3>報酬</h3>
             <CardList
@@ -219,7 +227,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>装備品と準備</SectionTitle>
+          <SectionTitle id="prepare">{toc.prepare}</SectionTitle>
           <div className="mb-8">
             <h3>装備品</h3>
             <p>
@@ -252,7 +260,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>戦闘のコツ</SectionTitle>
+          <SectionTitle id="point">{toc.point}</SectionTitle>
           <div className="mb-8">
             <RoundedContainer title="ガードテクニック">
               <div className="grid grid-cols-1 gap-3 pt-3">
@@ -331,7 +339,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>攻略法</SectionTitle>
+          <SectionTitle id="method">{toc.method}</SectionTitle>
           <div className="mb-8">
             <div className="mb-3">
               <h3>デリスエンブレムがない場合: 空破絶掌撃</h3>

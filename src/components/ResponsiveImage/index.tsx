@@ -8,9 +8,9 @@ type Props = {
 
 const ResponsiveImage = (props: Props) => {
   const { src, alt = "", noSpace = false } = props;
-  const className = noSpace ? "mx-auto" : "mb-4 mx-auto";
+  const className = noSpace ? "" : "mb-4";
   return (
-    <div className="bg-gray-900">
+    <div className={`bg-gray-900 rounded-sm overflow-hidden ${className}`}>
       <Image
         src={src}
         alt={alt}
@@ -22,7 +22,7 @@ const ResponsiveImage = (props: Props) => {
           height: "auto",
           display: "block",
         }}
-        className={`${className}`}
+        className={` mx-auto`}
       />
     </div>
   );
