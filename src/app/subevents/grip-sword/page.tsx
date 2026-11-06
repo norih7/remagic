@@ -41,8 +41,10 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>{title}</Title>
           <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
+          <PageSummary>
+            王都インフェリアの闘技場の前にいる老人に話しかけると「グリップソード」を探してほしいと頼まれます。グリップソードはインフェリアの街中にあり、簡単に探し出せるのとイベントの最後にはアクセサリ「スマッシュマント」を入手できます。スマッシュマントはアイテムドロップ率をアップする貴重なアイテムなのでぜひ入手してみてください。
+          </PageSummary>
           <Summary
             list={[
               {
@@ -70,11 +72,6 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-4">
-            <p>
-              王都インフェリアの闘技場の前にいる老人に話しかけると「グリップソード」を探してほしいと頼まれます。グリップソードはインフェリアの街中にあり、簡単に探し出せるのとイベントの最後にはアクセサリ「スマッシュマント」を入手できます。スマッシュマントはアイテムドロップ率をアップする貴重なアイテムなのでぜひ入手してみてください。
-            </p>
-          </div>
           <GuideList
             isRelated={true}
             items={[

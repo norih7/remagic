@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import EventCondition from "@/components/EventCondition";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import Information from "@/components/Information";
 import Tag from "@/components/Tag";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -29,17 +30,30 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "manual-controls": "マニュアル操作",
+  "technical-smash": "テクニカルスマッシュ",
+  "skill-usage-and-accuracy": "特技の使用回数と命中率",
+  "special-battle-controls": "戦闘中の特殊操作",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>エターニアの戦闘システム</Title>
-          エターニアの戦闘システムについて解説します。マニュアル操作をできるようにするイベントや他のシリーズにあるバックステップの操作、アイテムドロップ率がアップするテクニカルスマッシュについて解説しています。
+          <PageSummary>
+            エターニアの戦闘システムについて解説します。マニュアル操作をできるようにするイベントや他のシリーズにあるバックステップの操作、アイテムドロップ率がアップするテクニカルスマッシュについて解説しています。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
+
         <Section>
-          <SectionTitle type="system">マニュアル操作</SectionTitle>
+          <SectionTitle type="system" id="manual-controls">
+            {toc["manual-controls"]}
+          </SectionTitle>
           <div className="mb-8">
             <div className="mb-4">
               <h3>マニュアル操作とセミオート操作</h3>
@@ -80,7 +94,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>テクニカルスマッシュ</SectionTitle>
+          <SectionTitle id="technical-smash">
+            {toc["technical-smash"]}
+          </SectionTitle>
           <ResponsiveImage src="/guides/buttle-smash.jpg" />
           <div className="mb-8">
             <p>
@@ -128,7 +144,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>特技の使用回数と命中率</SectionTitle>
+          <SectionTitle id="skill-usage-and-accuracy">
+            {toc["skill-usage-and-accuracy"]}
+          </SectionTitle>
           <p>
             リッドとファラの特技と奥義には使用回数があり、使用回数が増えることによって技の命中率が上がっていきます。100回毎に10%上がり400%で40%で上限となるため、特技や奥義の使用回数は400回を目指すのがおすすめです。
           </p>
@@ -146,7 +164,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="system">戦闘中の特殊操作</SectionTitle>
+          <SectionTitle type="system" id="special-battle-controls">
+            {toc["special-battle-controls"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>戦闘中の移動速度アップ</h3>
             <p>

@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
@@ -29,26 +30,32 @@ export const metadata = {
     canonical,
   },
 };
+const toc = {
+  "chat-skill-priorities": "チャットの特技習得優先度",
+  "chat-skill-events": "チャットの特技習得イベント一覧",
+  "eternal-throw-quiz-answers": "エターナルスロー習得時のクイズ正解一覧",
+};
+
 export default async function HomePage() {
   const anserStyle =
     "block bg-slate-100 border rounded-md px-3 py-1 font-bold text-slate-600 mt-2";
   const questionStyle = "border-b pb-2 mb-2";
 
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <Section>
-          <Title>
-            <SkillIcon />
-            チャットの特技習得
-          </Title>
-          <p>
+          <PageSummary>
             チャットがサブイベントで習得していく強力な特技とイベントの発生条件や場所を解説しています。難関である「エターナルスロー」習得時に出題される全10問のクイズ正解一覧も掲載しています。
-          </p>
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>チャットの特技習得優先度</SectionTitle>
+          <SectionTitle id="chat-skill-priorities">
+            {toc["chat-skill-priorities"]}
+          </SectionTitle>
           <div className="mb-4">
             <CardList
               list={[
@@ -65,7 +72,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>チャットの特技習得イベント一覧</SectionTitle>
+          <SectionTitle id="chat-skill-events">
+            {toc["chat-skill-events"]}
+          </SectionTitle>
           <Information title="サブイベント発生の前提条件">
             チャットをパーティーメンバーに加えた状態で、以下の各地のスポットへ向かうことでイベントが進行・発生します。
           </Information>
@@ -138,7 +147,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>エターナルスロー習得時のクイズ正解一覧</SectionTitle>
+          <SectionTitle id="eternal-throw-quiz-answers">
+            {toc["eternal-throw-quiz-answers"]}
+          </SectionTitle>
           <p>
             アイフリードの隠しアジトでのイベント中に出題されるクイズはひっかけ問題が多く難易度が高いため、ここで全10問の正確な内容と正解を確認しておきましょう。
           </p>

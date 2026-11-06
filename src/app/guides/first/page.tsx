@@ -6,7 +6,7 @@ import GuideList from "@/components/GuideList";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
-import TableOfContents from "@/components/TableOfContents";
+import ToC from "@/components/ToC";
 import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
@@ -24,26 +24,36 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "manual-battle-controls": "1. 戦闘のマニュアル操作",
+  "learn-skills": "2. 特技習得を意識する",
+  "collect-recipes-and-lenses": "3. ストーリー攻略時に料理とレンズも回収する",
+  "auto-cooking": "4. オート料理を活用",
+  "early-smash-mantle":
+    "5. スマッシュマントを早期入手してアイテムドロップを有利に",
+  "get-sephira": "6. いざないの密林でセフィラを入手",
+  "control-farth": "7. ファラを操作キャラにする",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>序盤にやっておきたいこと</Title>
-          <p>
+          <PageSummary>
             マニュアル操作、アイテムドロップ率アップ、獲得ガルドを増やすなど序盤からやっておくと役立つ情報を紹介します。できるものを取り入れていただければ良いですが
             <strong>
               マニュアル操作の習得とセフィラの入手必須レベルです。
             </strong>
-          </p>
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <TableOfContents />
-        </Section>
-
-        <Section>
-          <SectionTitle type="flag">1. 戦闘のマニュアル操作</SectionTitle>
+          <SectionTitle type="flag" id="manual-battle-controls">
+            {toc["manual-battle-controls"]}
+          </SectionTitle>
           <ResponsiveImage src="/systems/buttle-manual.jpg" />
           <p>
             エターニアの戦闘は攻撃やジャンプを自分のタイミングで選べる「マニュアル操作」がおすすめです。マニュアル操作は最序盤に訪れるレグルス道場で「マニュアルのしょ」を入手することで選択できるようになります。ただしストーリー上必ず入手できるのではなく特定のキャラクタに話しかけることが必要です。
@@ -62,7 +72,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">2. 特技習得を意識する</SectionTitle>
+          <SectionTitle type="flag" id="learn-skills">
+            {toc["learn-skills"]}
+          </SectionTitle>
           <ResponsiveImage src="/guides/first-skill.jpg" />
           <p>
             リッドとファラはキャラクタのレベルだけではなく専用の斬り/突きレベルで特技や奥義を習得します。リッドの最強奥義「鳳凰天駆」は突きレベルを高くしないといけないので、戦闘で突き攻撃も意識していきましょう。また斬り/突きだけではなく特技の使用回数も必要となることが多いため特技の習得を意識しながら日々の戦闘を進めてください。
@@ -86,8 +98,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            3. ストーリー攻略時に料理とレンズも回収する
+          <SectionTitle type="flag" id="collect-recipes-and-lenses">
+            {toc["collect-recipes-and-lenses"]}
           </SectionTitle>
           <ResponsiveImage src="/stories/guide1-crystal-river-2.jpg" />
           <p>
@@ -104,7 +116,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">4. オート料理を活用</SectionTitle>
+          <SectionTitle type="flag" id="auto-cooking">
+            {toc["auto-cooking"]}
+          </SectionTitle>
           <ResponsiveImage src="/guides/first-auto-cook.jpg" />
           <p>
             料理にはオート料理があり戦闘のたびに回復や状態回復を手間なく行えます。また料理には熟練度があり、オート料理でも熟練度アップが可能です。熟練度を上げていくことで成功率が100%となったりマスター料理の習得にも発展します。
@@ -127,8 +141,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            5. スマッシュマントを早期入手してアイテムドロップを有利に
+          <SectionTitle type="flag" id="early-smash-mantle">
+            {toc["early-smash-mantle"]}
           </SectionTitle>
           <ResponsiveImage src="/guides/first-bandit.jpg" />
           <p>
@@ -159,8 +173,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            6. いざないの密林でセフィラを入手
+          <SectionTitle type="flag" id="get-sephira">
+            {toc["get-sephira"]}
           </SectionTitle>
           <ResponsiveImage src="/guides/first-reverse-doll.jpg" />
           <p>
@@ -184,7 +198,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">7. ファラを操作キャラにする</SectionTitle>
+          <SectionTitle type="flag" id="control-farth">
+            {toc["control-farth"]}
+          </SectionTitle>
           <ResponsiveImage src="/guides/first-farth.jpg" />
           <p>
             ファラの秘奥義「火龍炎舞」を発動させるためにはファラを操作キャラにして累計300回の戦闘で勝利する必要があります。

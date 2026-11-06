@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -30,6 +31,11 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "craft-last-fencer": "ラストフェンサー作成の流れ",
+  "last-fencer-effects": "ラストフェンサーの効果",
+};
+
 export default async function HomePage() {
   const styles = {
     card: "border border-slate-300 rounded-md p-3 mb-3",
@@ -39,7 +45,10 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>ラストフェンサーの入手</Title>
+          <PageSummary>
+            ストーリー後半で再び訪れたバリル城でヒアデスを撃破したあとからリッドの最強武器の1つ「ラストフェンサー」を入手することができます。ラストフェンサーは簡単に入手でき、攻撃力は控えめですが特殊効果が多いため最終盤でも活躍する武器なのでぜひ入手してください。
+          </PageSummary>
+
           <Summary
             list={[
               { label: "報酬", value: "ラストフェンサー" },
@@ -47,13 +56,14 @@ export default async function HomePage() {
               { label: "発生", value: "バリル城でヒアデス撃破後" },
             ]}
           />
-          <p>
-            ストーリー後半で再び訪れたバリル城でヒアデスを撃破したあとからリッドの最強武器の1つ「ラストフェンサー」を入手することができます。ラストフェンサーは簡単に入手でき、攻撃力は控えめですが特殊効果が多いため最終盤でも活躍する武器なのでぜひ入手してください。
-          </p>
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>ラストフェンサー作成の流れ</SectionTitle>
+          <SectionTitle id="craft-last-fencer">
+            {toc["craft-last-fencer"]}
+          </SectionTitle>
           <RoundedContainer>
             <h3>1. バリル城でゾシモスに話しかける</h3>
             <ResponsiveImage src="/subevents/last-fencer-zosimos.jpg" />
@@ -87,7 +97,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ラストフェンサーの効果</SectionTitle>
+          <SectionTitle id="last-fencer-effects">
+            {toc["last-fencer-effects"]}
+          </SectionTitle>
           <p>
             ラストフェンサーの攻撃力は「斬り+765、突き+758」で「エターナルソード」や「せいりゅうとう」の方が攻撃力は上です。ただしラストフェンサーは「命中+10、回避+3、知力+2、幸運+5」の複数バフが付与され、攻撃ヒット時に稀にHPが回復します。
           </p>

@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
 import SkillPropertyList from "@/components/SkillPropertyList";
@@ -23,6 +24,11 @@ export const metadata = {
   alternates: {
     canonical,
   },
+};
+
+const toc = {
+  "recommended-skills-and-arcane-arts": "おすすめ特技/奥義",
+  "farth-skills": "ファラの特技一覧",
 };
 
 export default async function HomePage() {
@@ -196,13 +202,15 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
+        <Section>
+          <PageSummary>
           <div className="mb-2">
             <p>
               ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご確認ください。
             </p>
           </div>
           <GuideList
+            isRelated={true}
             items={[
               {
                 title: "拳レベル・蹴レベルシステムの詳細解説",
@@ -210,10 +218,16 @@ export default async function HomePage() {
               },
             ]}
           ></GuideList>
-        </PageSummary>
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
+
 
         <Section>
-          <SectionTitle>おすすめ特技/奥義</SectionTitle>
+          <SectionTitle id="recommended-skills-and-arcane-arts">
+            {toc["recommended-skills-and-arcane-arts"]}
+          </SectionTitle>
           <div className="mb-8">
             <RoundedContainer className="grid grid-cols-2 gap-3">
               <RoundedItem title="飛燕連脚">
@@ -236,7 +250,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="skill">ファラの特技一覧</SectionTitle>
+          <SectionTitle type="skill" id="farth-skills">
+            {toc["farth-skills"]}
+          </SectionTitle>
           <SkillPropertyList skills={skills} />
         </Section>
       </article>

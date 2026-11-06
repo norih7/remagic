@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import CardList from "@/components/CardLIst";
 import Information from "@/components/Information";
 import { subeventLinks } from "@/constants";
@@ -27,12 +28,22 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "about-quiz": "クイズの開放タイミング",
+  "beginner-quiz": "初級（リマスター版）",
+  "intermediate-quiz": "中級（リマスター版）",
+  "advanced-quiz": "上級（リマスター版）",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>テイルズクイズ</Title>
+          <PageSummary>
+            ミンツ大学ではテイルズクイズを受験できます。クイズは初級、中級、上級とあり、最初にミンツに訪れた時点では初級のみ受験できます。各級に合格するとアイテムと称号を獲得できます。クイズは時限要素はないためいつでも受験できます。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -49,13 +60,14 @@ export default async function HomePage() {
               },
             ]}
           />
+
+          <ToC list={toc} />
+        </Section>
+
+
+        <Section>
           <div className="mb-8">
-            <p>
-              ミンツ大学のではテイルズクイズを受験できます。クイズは初級、中級、上級とあり、最初にミンツに訪れた時点では初級のみ受験できます。各級に合格するとアイテムと称号を獲得できます。クイズは時限要素はないためいつでも受験できます。
-            </p>
-          </div>
-          <div className="mb-8">
-            <h3>クイズの開放タイミング</h3>
+            <SectionTitle id="about-quiz">{toc["about-quiz"]}</SectionTitle>
             <Information type="warning" title="リマスター版の違い">
               リマスター版ではクイズ内容が刷新されていますが報酬には変化がありません。
             </Information>
@@ -104,7 +116,7 @@ export default async function HomePage() {
           <Information type="warning" title="クイズの出題順について">
             クイズは順番はランダムになるため質問を確認したうえで回答してください
           </Information>
-          <SectionTitle>初級（リマスター版）</SectionTitle>
+          <SectionTitle id="beginner-quiz">{toc["beginner-quiz"]}</SectionTitle>
           <table>
             <thead>
               <tr>
@@ -200,7 +212,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>中級（リマスター版）</SectionTitle>
+          <SectionTitle id="intermediate-quiz">
+            {toc["intermediate-quiz"]}
+          </SectionTitle>
           <table>
             <thead>
               <tr>
@@ -304,7 +318,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>上級（リマスター版）</SectionTitle>
+          <SectionTitle id="advanced-quiz">{toc["advanced-quiz"]}</SectionTitle>
           <table>
             <thead>
               <tr>

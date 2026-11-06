@@ -1,6 +1,6 @@
-
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
 import { deepLinks } from "@/constants";
@@ -33,6 +33,13 @@ export const metadata = {
 type EnemyInfo = {
   enemyId: number;
   enemyName: string;
+};
+
+const toc = {
+  "top-tier-equipment": "最強クラスの装備品",
+  "special-effects": "特殊効果",
+  "early-game-recommendations": "序盤おすすめ",
+  "mid-game-recommendations": "中盤おすすめ",
 };
 
 export default async function HomePage() {
@@ -89,263 +96,280 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        敵がドロップするアイテムでもレアなアイテムや装備品を紹介します。どれも何らかの使い道があったり、強力な装備なのでコンプリートを目指しましょう。
-      </PageSummary>
+        <Section>
+          <PageSummary>
+            敵がドロップするアイテムでもレアなアイテムや装備品を紹介します。どれも何らかの使い道があったり、強力な装備なのでコンプリートを目指しましょう。
+          </PageSummary>
 
-      <Section>
-        <SectionTitle>最強クラスの装備品</SectionTitle>
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>ワンダーバッグ</h3>
-            <Tag>武器</Tag>
-            <Tag>チャットの最強装備</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            チャットの最強武器はドロップでのみ入手可能です。頑張ってドロップを狙いましょう。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>
-              隠しダンジョン「きらめきの塔」で出現するガンナーを周回しましょう。アイテムドロップ率は4%と低いのでスマッシュマントなどを活用して倒しましょう。
-            </p>
-            <GuideList
-              items={[{ title: "ガンナー", href: "/systems/enemy/253" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
+          <ToC list={toc} />
+        </Section>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>カオスシールド</h3>
-            <Tag>防具</Tag>
-            <Tag>リッドの最強盾の1つ</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            カオスシールドは防御+40とリッドの盾で一番数値が高いです。特殊効果などで他の盾を装備することもありますが防御力最強の盾はドロップで入手します。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>
-              ラストダンジョン「シゼル城」で出現するファイアウォーリアを周回しましょう。アイテムドロップ率は12%と割と高めです。
-            </p>
-            <GuideList
-              items={[
-                { title: "ファイアウォーリア", href: "/systems/enemy/102" },
-              ]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>リバヴィウサー</h3>
-            <Tag>アクセサリ</Tag>
-            <Tag>唯一無二の性能</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            ダメージを受けるタイミングで□ボタンを押すとさらにダメージを軽減させる効果のアクセサリ。□+↓でバックステップもできるようになります。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>
-              アイフリードの墓やきらめきの塔で出現するメデューサを周回しましょう。アイテムドロップ率は1%なので。
-            </p>
-            <GuideList
-              items={[{ title: "メデューサ", href: "/systems/enemy/72" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
+        <Section>
+          <SectionTitle id="top-tier-equipment">
+            {toc["top-tier-equipment"]}
+          </SectionTitle>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>ワンダーバッグ</h3>
+              <Tag>武器</Tag>
+              <Tag>チャットの最強装備</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              チャットの最強武器はドロップでのみ入手可能です。頑張ってドロップを狙いましょう。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>
+                隠しダンジョン「きらめきの塔」で出現するガンナーを周回しましょう。アイテムドロップ率は4%と低いのでスマッシュマントなどを活用して倒しましょう。
+              </p>
+              <GuideList
+                items={[{ title: "ガンナー", href: "/systems/enemy/253" }]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>アイスコフィン</h3>
-            <Tag>武器</Tag>
-            <Tag>リッドの最強武器の1つ</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            リッドの氷属性武器として最強クラスの剣。闘技場の世界一決定戦の最適解装備としてアイスコフィンが挙がります。中盤では必ずドロップさせるようにしましょう。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>氷晶霊の山に出現するアイスウォーリアを周回しましょう。</p>
-            <GuideList
-              items={[
-                { title: "アイスウォーリア", href: "/systems/enemy/168" },
-              ]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
-      </Section>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>カオスシールド</h3>
+              <Tag>防具</Tag>
+              <Tag>リッドの最強盾の1つ</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              カオスシールドは防御+40とリッドの盾で一番数値が高いです。特殊効果などで他の盾を装備することもありますが防御力最強の盾はドロップで入手します。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>
+                ラストダンジョン「シゼル城」で出現するファイアウォーリアを周回しましょう。アイテムドロップ率は12%と割と高めです。
+              </p>
+              <GuideList
+                items={[
+                  { title: "ファイアウォーリア", href: "/systems/enemy/102" },
+                ]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
 
-      <Section>
-        <SectionTitle>特殊効果</SectionTitle>
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>シーブスマント</h3>
-            <Tag>アクセサリ</Tag>
-            <Tag>序盤で入手可能</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            ルーンボトルで変化させて最終的にスマッシュマントへ変化するアクセサリ。スマッシュマントはアイテムドロップアップに繋がるため重要なアクセサリです。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>
-              ミンツ周辺のフィールドに出現するバンデットを周回しましょう。最序盤から入手可能でアイテムドロップ率も12%と高め。最大確保は4つ。
-            </p>
-            <GuideList
-              items={[{ title: "バンデット", href: "/systems/enemy/0" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>リバヴィウサー</h3>
+              <Tag>アクセサリ</Tag>
+              <Tag>唯一無二の性能</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              ダメージを受けるタイミングで□ボタンを押すとさらにダメージを軽減させる効果のアクセサリ。□+↓でバックステップもできるようになります。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>
+                アイフリードの墓やきらめきの塔で出現するメデューサを周回しましょう。アイテムドロップ率は1%なので。
+              </p>
+              <GuideList
+                items={[{ title: "メデューサ", href: "/systems/enemy/72" }]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>エルヴンブーツ</h3>
-            <Tag>アクセサリ</Tag>
-            <Tag>序盤で入手可能</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            戦闘中の移動速度を20%アップさせるアクセサリ。キールとフォッグは移動速度が遅く、特にネレイドの迷宮などリッド以外を操作する場合に有効。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>
-              霊峰ファロース周辺のフィールドに出現するグラップラーを周回しましょう。アイテムドロップ率は2%と低いですがセレスティアへ渡る前に2つ以上確保しておくことを推奨します。最大確保は4つ。
-            </p>
-            <GuideList
-              items={[{ title: "グラップラー", href: "/systems/enemy/148" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>アイスコフィン</h3>
+              <Tag>武器</Tag>
+              <Tag>リッドの最強武器の1つ</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              リッドの氷属性武器として最強クラスの剣。闘技場の世界一決定戦の最適解装備としてアイスコフィンが挙がります。中盤では必ずドロップさせるようにしましょう。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>氷晶霊の山に出現するアイスウォーリアを周回しましょう。</p>
+              <GuideList
+                items={[
+                  { title: "アイスウォーリア", href: "/systems/enemy/168" },
+                ]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>リバースドール</h3>
-            <Tag>アクセサリ</Tag>
-            <Tag>序盤で入手可能</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            戦闘不能時に壊れる代わりに自動回復するアクセサリ。エターニアは戦闘中に装備の付け替えができるため、戦闘不能になる直前にメニューを開いてリバースドールを装備させる戦法ができます。なかなか勝てない強敵との闘いで活躍します。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>
-              いざないの密林に出現するサイズキャリアーを周回しましょう。序盤から入手可能でアイテムドロップ率も10%と高め。最大確保数は15個。
-            </p>
-            <GuideList
-              items={[{ title: "サイズキャリアー", href: "/systems/enemy/18" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
-      </Section>
+        <Section>
+          <SectionTitle id="special-effects">
+            {toc["special-effects"]}
+          </SectionTitle>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>シーブスマント</h3>
+              <Tag>アクセサリ</Tag>
+              <Tag>序盤で入手可能</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              ルーンボトルで変化させて最終的にスマッシュマントへ変化するアクセサリ。スマッシュマントはアイテムドロップアップに繋がるため重要なアクセサリです。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>
+                ミンツ周辺のフィールドに出現するバンデットを周回しましょう。最序盤から入手可能でアイテムドロップ率も12%と高め。最大確保は4つ。
+              </p>
+              <GuideList
+                items={[{ title: "バンデット", href: "/systems/enemy/0" }]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
 
-      <Section>
-        <SectionTitle>序盤おすすめ</SectionTitle>
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>バスタードソード</h3>
-            <Tag>武器</Tag>
-            <Tag>序盤で入手可能</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            リッドの武器で使いやすい剣。ドロップでしか入手できず、バロールへ行くまで十分使える性能なので是非ドロップを狙いましょう。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>いざないの密林など出現するスケルトンを周回しましょう。</p>
-            <GuideList
-              items={[{ title: "スケルトン", href: "/systems/enemy/31" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>エルヴンブーツ</h3>
+              <Tag>アクセサリ</Tag>
+              <Tag>序盤で入手可能</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              戦闘中の移動速度を20%アップさせるアクセサリ。キールとフォッグは移動速度が遅く、特にネレイドの迷宮などリッド以外を操作する場合に有効。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>
+                霊峰ファロース周辺のフィールドに出現するグラップラーを周回しましょう。アイテムドロップ率は2%と低いですがセレスティアへ渡る前に2つ以上確保しておくことを推奨します。最大確保は4つ。
+              </p>
+              <GuideList
+                items={[{ title: "グラップラー", href: "/systems/enemy/148" }]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>ニンブルレイピア</h3>
-            <Tag>武器</Tag>
-            <Tag>序盤で入手可能</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            リッドの武器で風属性。風晶霊の空洞へ訪れたタイミングでは強力な武器。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>風晶霊の空洞などに出現するボーンナイトを周回しましょう。</p>
-            <GuideList
-              items={[{ title: "ボーンナイト", href: "/systems/enemy/155" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>リバースドール</h3>
+              <Tag>アクセサリ</Tag>
+              <Tag>序盤で入手可能</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              戦闘不能時に壊れる代わりに自動回復するアクセサリ。エターニアは戦闘中に装備の付け替えができるため、戦闘不能になる直前にメニューを開いてリバースドールを装備させる戦法ができます。なかなか勝てない強敵との闘いで活躍します。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>
+                いざないの密林に出現するサイズキャリアーを周回しましょう。序盤から入手可能でアイテムドロップ率も10%と高め。最大確保数は15個。
+              </p>
+              <GuideList
+                items={[
+                  { title: "サイズキャリアー", href: "/systems/enemy/18" },
+                ]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>フランベルジュ</h3>
-            <Tag>武器</Tag>
-            <Tag>序盤で入手可能</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            リッドの武器で火属性。こちらも火晶霊の谷へ訪れたタイミングでは強力な武器。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>火晶霊の谷などに出現するファイアバードを周回しましょう。</p>
-            <GuideList
-              items={[{ title: "ファイアバード", href: "/systems/enemy/78" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
+        <Section>
+          <SectionTitle id="early-game-recommendations">
+            {toc["early-game-recommendations"]}
+          </SectionTitle>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>バスタードソード</h3>
+              <Tag>武器</Tag>
+              <Tag>序盤で入手可能</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              リッドの武器で使いやすい剣。ドロップでしか入手できず、バロールへ行くまで十分使える性能なので是非ドロップを狙いましょう。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>いざないの密林など出現するスケルトンを周回しましょう。</p>
+              <GuideList
+                items={[{ title: "スケルトン", href: "/systems/enemy/31" }]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>グレートソード</h3>
-            <Tag>武器</Tag>
-            <Tag>序盤で入手可能</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            リッドの件。こちらもファロース到着時点では強力な武器。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>
-              霊峰ファロース周辺のフィールドに出現するフェザーマジックを周回しましょう。
-            </p>
-            <GuideList
-              items={[{ title: "フェザーマジック", href: "/systems/enemy/83" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
-      </Section>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>ニンブルレイピア</h3>
+              <Tag>武器</Tag>
+              <Tag>序盤で入手可能</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              リッドの武器で風属性。風晶霊の空洞へ訪れたタイミングでは強力な武器。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>風晶霊の空洞などに出現するボーンナイトを周回しましょう。</p>
+              <GuideList
+                items={[{ title: "ボーンナイト", href: "/systems/enemy/155" }]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
 
-      <Section>
-        <SectionTitle>中盤おすすめ</SectionTitle>
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>アースブレイド</h3>
-            <Tag>武器</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            リッドの地属性武器として強力な剣。地属性武器最強はガイアクリーヴァですが入手難易度が高いため、中盤でアースブレイドは確保しておけば長く使えます。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>地晶霊の廃坑に出現するハードホーンを周回しましょう。</p>
-            <GuideList
-              items={[{ title: "ハードホーン", href: "/systems/enemy/58" }]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>フランベルジュ</h3>
+              <Tag>武器</Tag>
+              <Tag>序盤で入手可能</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              リッドの武器で火属性。こちらも火晶霊の谷へ訪れたタイミングでは強力な武器。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>火晶霊の谷などに出現するファイアバードを周回しましょう。</p>
+              <GuideList
+                items={[{ title: "ファイアバード", href: "/systems/enemy/78" }]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
 
-        <RoundedContainer>
-          <div className="mb-3">
-            <h3>ラブリィミトン</h3>
-            <Tag>防具</Tag>
-          </div>
-          <RoundedItem title="特徴" className="mb-3">
-            女性キャラ専用の体防具。防御力の効果はそこそこですが、光と闇の耐性+20%が強力で特にラスボスやネレイドの迷宮で活躍します。中盤の最後、バリル城で入手可能。
-          </RoundedItem>
-          <RoundedItem title="狙い方">
-            <p>
-              バリル城に出現するストロングホーンを周回しましょう。最大確保は3つ。
-            </p>
-            <GuideList
-              items={[
-                { title: "ストロングホーン", href: "/systems/enemy/181" },
-              ]}
-            />
-          </RoundedItem>
-        </RoundedContainer>
-      </Section>
-      {/* 
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>グレートソード</h3>
+              <Tag>武器</Tag>
+              <Tag>序盤で入手可能</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              リッドの件。こちらもファロース到着時点では強力な武器。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>
+                霊峰ファロース周辺のフィールドに出現するフェザーマジックを周回しましょう。
+              </p>
+              <GuideList
+                items={[
+                  { title: "フェザーマジック", href: "/systems/enemy/83" },
+                ]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
+
+        <Section>
+          <SectionTitle id="mid-game-recommendations">
+            {toc["mid-game-recommendations"]}
+          </SectionTitle>
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>アースブレイド</h3>
+              <Tag>武器</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              リッドの地属性武器として強力な剣。地属性武器最強はガイアクリーヴァですが入手難易度が高いため、中盤でアースブレイドは確保しておけば長く使えます。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>地晶霊の廃坑に出現するハードホーンを周回しましょう。</p>
+              <GuideList
+                items={[{ title: "ハードホーン", href: "/systems/enemy/58" }]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
+
+          <RoundedContainer>
+            <div className="mb-3">
+              <h3>ラブリィミトン</h3>
+              <Tag>防具</Tag>
+            </div>
+            <RoundedItem title="特徴" className="mb-3">
+              女性キャラ専用の体防具。防御力の効果はそこそこですが、光と闇の耐性+20%が強力で特にラスボスやネレイドの迷宮で活躍します。中盤の最後、バリル城で入手可能。
+            </RoundedItem>
+            <RoundedItem title="狙い方">
+              <p>
+                バリル城に出現するストロングホーンを周回しましょう。最大確保は3つ。
+              </p>
+              <GuideList
+                items={[
+                  { title: "ストロングホーン", href: "/systems/enemy/181" },
+                ]}
+              />
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
+        {/* 
       <section className="mb-12">
         <SectionTitle>序盤でおすすめのドロップ専用装備</SectionTitle>
         <RoundedContainer>
@@ -393,7 +417,7 @@ export default async function HomePage() {
           </RoundedItem>
         </RoundedContainer>
       </section> */}
-    </article>
+      </article>
     </Main>
   );
 }

@@ -30,13 +30,12 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <Main title={title}>
+    <Main title={title} type="time-limit">
       <article>
         <Section>
-          <Title>
-            <TimeLimitIcon />
-            クレーメルボール
-          </Title>
+          <PageSummary>
+            ミンツの運動場にいる体操着の女の子に話かけるとクレメールボールをプレイできます。このゲームではアイテムの入手などはありませんが丁寧に作られたミニゲームです。PS版だと2人対戦もできちゃう作り込み。
+          </PageSummary>
           <Summary
             list={[
               { label: "報酬", value: "リッドの称号「たまころがし」など" },
@@ -47,11 +46,6 @@ export default async function HomePage() {
           <Information type="warning" title="注意点">
             このミニゲームで得られるのはリッドの称号のみです。特別なアイテムなどは何もないため称号にこだわりのない方はスキップしても問題ありません。
           </Information>
-          <div className="mb-8">
-            <p>
-              ミンツの運動場にいる体操着の女の子に話かけるとクレメールボールをプレイできます。このゲームではアイテムの入手などはありませんが丁寧に作られたミニゲームです。PS版だと2人対戦もできちゃう作り込み。
-            </p>
-          </div>
           <div className="mb-8">
             <h3>時限要素</h3>
             <p>

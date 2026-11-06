@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import LocationItems from "@/components/LocationItems";
 import LocationLenses from "@/components/LocationLenses";
 import { getLocationItemsData } from "@/lib/db";
@@ -30,18 +31,22 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "reach-dark-cave": "闇の洞窟への行き方",
+  "dark-cave-walkthrough": "ダンジョン攻略手順",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const lensesData = await getLocationLensesData();
 
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <Section>
-          <Title>
-            <SkillIcon />
-            {title}
-          </Title>
+          <PageSummary>
+            闇の洞窟は、セレスティアの海底に潜む隠しダンジョンです。物語で「潜水艇」を入手した直後から挑戦でき、最奥の大晶霊「シャドウ」に勝利すると契約できます。出現モンスターは光属性が弱点なので、光武器を用意して臨むと攻略が楽になります。
+          </PageSummary>
           <Summary
             list={[
               {
@@ -58,14 +63,12 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-8">
-            <p>
-              闇の洞窟はセレスティアの海中深くに潜む隠しダンジョンのひとつです。物語の進行で「潜水艇」を入手した直後から自由に挑むことが可能です。ダンジョン内に巣食うモンスターたちは総じて光属性が弱点となっており、雷晶霊の遺跡クリア後に入手できる光武器「エクスカリバー」などを装備させておくとダンジョン攻略やボス戦をスムーズに進められます。最奥に待つ大晶霊「シャドウ」との戦闘に勝利すれば契約を結ぶことができます。
-            </p>
-          </div>
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>闇の洞窟への行き方</SectionTitle>
+          <SectionTitle id="reach-dark-cave">
+            {toc["reach-dark-cave"]}
+          </SectionTitle>
           <ResponsiveImage src="/extras/secret-dark-cave-location.jpg" />
           <p>
             闇の洞窟はセレスティア世界の海中に位置しています。「バリル城」の海域から北東方向へ進んだ周辺で、潜水艇に乗り換えてGPS座標目安
@@ -76,7 +79,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ダンジョン攻略手順</SectionTitle>
+          <SectionTitle id="dark-cave-walkthrough">
+            {toc["dark-cave-walkthrough"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>シンボルエネミーが徘徊するフロア</h3>
             <p>

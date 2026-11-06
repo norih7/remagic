@@ -1,5 +1,6 @@
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
 import { deepLinks } from "@/constants";
@@ -31,6 +32,7 @@ import {
 import Title from "@/components/Title";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import DescriptionList from "@/components/DescriptionList";
+import Summary from "@/components/Summary";
 
 export const dynamic = "force-static";
 
@@ -48,31 +50,40 @@ export const metadata = {
 
 const platformWidth = "min-w-[65px]";
 
+const toc = {
+  "activation-requirements": "ブルーアース発動に必要なこと",
+  "activation-steps": "ブルーアースの発動方法",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>ブルーアース</Title>
           <ResponsiveImage src="/deeps/blue-earth-digest.jpg" />
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="目的">
-              隠し晶霊術の発動ボーナスによるレベル上げ（経験値10万）
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              マクスウェル契約、ゼクンドゥス撃破など
-            </RoundedInlineList>
-          </div>
-          <div className="mb-8">
-            <p>
-              ブルーアース（正式:
-              ブルー・アース）はキールとメルディが使える隠し晶霊術です。発動すると経験値10万を獲得できるため主にレベル上げに使われます。発動にはTP999、マクスウェルLv30、デリスエンブレムなど厳しい条件が必要ですがぜひ発動を目指してください。
-            </p>
-          </div>
+          <PageSummary>
+            ブルーアース（正式:
+            ブルー・アース）はキールとメルディが使える隠し晶霊術です。発動すると経験値10万を獲得できるため主にレベル上げに使われます。発動にはTP999、マクスウェルLv30、デリスエンブレムなど厳しい条件が必要ですがぜひ発動を目指してください。
+          </PageSummary>
+          <Summary
+            list={[
+              {
+                label: "目的",
+                value: "隠し晶霊術の発動ボーナスによるレベル上げ（経験値10万）",
+              },
+              {
+                label: "発生",
+                value: "マクスウェル契約、ゼクンドゥス撃破など",
+              },
+            ]}
+          />
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>ブルーアース発動に必要なこと</SectionTitle>
+          <SectionTitle id="activation-requirements">
+            {toc["activation-requirements"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>前提条件</h3>
             <CardList
@@ -113,7 +124,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ブルーアースの発動方法</SectionTitle>
+          <SectionTitle id="activation-steps">
+            {toc["activation-steps"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>
               条件を満たしたうえで術者（キール/メルディ）を操作キャラにしてマクスウェルを召喚すると特殊演出が起動し、ブルーアースにつながっていきます。

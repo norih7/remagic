@@ -36,8 +36,10 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>インフェリアの隠しアジト</Title>
           <ResponsiveImage src="/subevents/secret-base-digest.jpg" />
+          <PageSummary>
+            インフェリアのアイフリードのアジトは探索任意のサブイベントですが、レアアイテムを入手できるためぜひ訪れてみてください。リッドの武器「にんとうちざくら」や、HP自動回復の特殊効果のある「ホーリィクローク」などの強力な装備品を入手でき、特にインフェリア帰還した直後のタイミングがおすすめです。
+          </PageSummary>
           <Summary
             list={[
               {
@@ -54,14 +56,9 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-4">
-            <p>
-              インフェリアのアイフリードのアジトは探索任意のサブイベントですがレアアイテムを入手できるため、ぜひ訪れてみてください。リッドの武器「にんとうちざくら」や、HP自動回復の特殊効果のある「ホーリィクローク」などの強力な装備品を入手でき、特にインフェリア帰還した直後のタイミングがおすすめです。
-            </p>
-          </div>
           <div className="mb-8">
-            <h3>関連ページ</h3>
             <GuideList
+              isRelated={true}
               items={[
                 { title: "装備品の特殊効果", href: "/systems/special-effect" },
               ]}

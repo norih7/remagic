@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import Image from "next/image";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import LocationItems from "@/components/LocationItems";
 import { getLocationItemsData } from "@/lib/db";
 import { extraLinks } from "@/constants";
@@ -43,11 +44,16 @@ for (let i = 1; i <= 10; i++) {
   );
 }
 
+const toc = {
+  "reach-valkyrie-tower": "きらめきの塔への行き方",
+  "floor-by-floor-walkthrough": "ダンジョンフロア別攻略・謎解き手順",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
 
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <Section>
           <Title>きらめきの塔</Title>
@@ -87,8 +93,13 @@ export default async function HomePage() {
           </div>
         </Section>
         <Section>
+          <ToC list={toc} />
+        </Section>
+        <Section>
           <div className="mb-4">
-            <SectionTitle>きらめきの塔への行き方</SectionTitle>
+            <SectionTitle id="reach-valkyrie-tower">
+              {toc["reach-valkyrie-tower"]}
+            </SectionTitle>
             <ResponsiveImage src="/extras/secret-valkyrie-location.jpg" />
             <p>
               インフェリアのミンツから飛行艇で南にずっとすすんだ岩山に囲まれたエリア（GPS座標：107,
@@ -102,7 +113,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ダンジョンフロア別攻略・謎解き手順</SectionTitle>
+          <SectionTitle id="floor-by-floor-walkthrough">
+            {toc["floor-by-floor-walkthrough"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>1階：星型スイッチの踏破ギミック</h3>
             <p>

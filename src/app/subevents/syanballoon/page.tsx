@@ -33,12 +33,11 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          シャンバールで行なわれているミニゲーム「シャンバルーン」についての説明です。このイベントではリッドの称号や特殊なアイテムを入手できます。
-        </PageSummary>
         <Section>
-          <Title>シャンバルーン</Title>
           <ResponsiveImage src="/subevents/syanballoon-location.jpg" />
+          <PageSummary>
+            シャンバールの噴水フロアにいる老人に話しかけることでシャンバルーンに挑戦することができます。シャンバルーンは特殊な戦闘で、リッドが固定配置された風船を割っていくゲームです。合計5回のコースをクリアすることで報酬を得ることができます。
+          </PageSummary>
           <Summary
             list={[
               {
@@ -57,9 +56,7 @@ export default async function HomePage() {
             ]}
           />
           <div className="mb-4">
-            <p>
-              シャンバールの噴水フロアにいる老人に話しかけることでシャンバルーンに挑戦することができます。シャンバルーンは特殊な戦闘で、リッドが固定配置された風船を割っていくゲームです。合計5回のコースをクリアすることで報酬を得ることができます。
-            </p>
+            <p></p>
           </div>
           <h3>ストーリー進行による難易度変化</h3>
           <p>

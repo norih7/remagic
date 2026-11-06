@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import { getLocationLensesData } from "@/lib/db";
 import RoundedItem from "@/components/RoundedItem";
 import { recipeWorldMap } from "@/constants";
@@ -31,6 +32,11 @@ export const metadata = {
     canonical,
   },
 };
+const toc = {
+  "lens-overview-and-rewards": "レンズの説明ともらえるアイテム",
+  "all-lens-locations": "レンズの入手場所一覧（全60枚）",
+};
+
 export default async function HomePage() {
   const lensesData = await getLocationLensesData();
 
@@ -38,7 +44,10 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>レンズ収集</Title>
+          <PageSummary>
+            町やダンジョンなどで入手することができるレンズの説明とレンズの入手場所の一覧データを掲載しています。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -56,11 +65,14 @@ export default async function HomePage() {
               },
             ]}
           />
-          町やダンジョンなどで入手することができるレンズの説明とレンズの入手場所の一覧データを掲載しています。
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>レンズの説明ともらえるアイテム</SectionTitle>
+          <SectionTitle id="lens-overview-and-rewards">
+            {toc["lens-overview-and-rewards"]}
+          </SectionTitle>
           <div className="mb-8">
             町やダンジョンなどの特定の場所を調べるとレンズを入手することがあります。レンズは一定枚数以上を集めると貴重なアイテムをもらうことができるものです。シャンバールにいるイレーヌに話しかけると所持枚数に応じてアイテムがもらえます。なおアイテムをもらってもレンズは消費されません。
           </div>
@@ -122,7 +134,9 @@ export default async function HomePage() {
         </Section>
 
         <section id="detail">
-          <SectionTitle>レンズの入手場所一覧（全60枚）</SectionTitle>
+          <SectionTitle id="all-lens-locations">
+            {toc["all-lens-locations"]}
+          </SectionTitle>
           <Information type="warning" title="レンズの入手タイミングについて">
             <p>
               <strong>

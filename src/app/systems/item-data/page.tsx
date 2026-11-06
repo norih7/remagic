@@ -1,6 +1,6 @@
-
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import { Item } from "@/lib/db";
 import { systemLinks } from "@/constants";
 import { getItemsData } from "@/lib/db";
@@ -21,6 +21,12 @@ export const metadata = {
   alternates: {
     canonical,
   },
+};
+
+const toc = {
+  "consumable-items": "消費アイテム一覧データ",
+  ingredients: "食材一覧データ",
+  "other-items": "その他アイテムデータ",
 };
 
 export default async function HomePage() {
@@ -52,28 +58,31 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <p>
-          エターニアの消費アイテム一覧データを掲載しています。購入場所、入手可能ダンジョンなどは詳細ページにて一覧を掲載していますのでぜひご確認ください。
-        </p>
-      </PageSummary>
-      {/* <section className="mb-12">
-        <SectionTitle>料理と習得方法</SectionTitle>
-        <p>準備中</p>
-      </section> */}
-      <Section>
-        <SectionTitle>消費アイテム一覧データ</SectionTitle>
-        <ItemList data={filterData.useItem} />
-      </Section>
-      <Section>
-        <SectionTitle>食材一覧データ</SectionTitle>
-        <ItemList data={filterData.food} />
-      </Section>
-      <Section>
-        <SectionTitle>その他アイテムデータ</SectionTitle>
-        <ItemList data={filterData.otherItem} />
-      </Section>
-    </article>
+        <Section>
+          <PageSummary>
+            エターニアの消費アイテム一覧データを掲載しています。購入場所、入手可能ダンジョンなどは詳細ページにて一覧を掲載していますのでぜひご確認ください。
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
+
+
+        <Section>
+          <SectionTitle id="consumable-items">
+            {toc["consumable-items"]}
+          </SectionTitle>
+          <ItemList data={filterData.useItem} />
+        </Section>
+
+        <Section>
+          <SectionTitle id="ingredients">{toc["ingredients"]}</SectionTitle>
+          <ItemList data={filterData.food} />
+        </Section>
+        <Section>
+          <SectionTitle id="other-items">{toc["other-items"]}</SectionTitle>
+          <ItemList data={filterData.otherItem} />
+        </Section>
+      </article>
     </Main>
   );
 }

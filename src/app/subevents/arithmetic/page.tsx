@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -15,6 +16,7 @@ import CardList from "@/components/CardLIst";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,40 +35,43 @@ export const metadata = {
 
 const topics = "bg-gray-600 px-3 py-0.5 rounded-xs text-white";
 
+const toc = {
+  "event-details": "イベントの詳細",
+  "reliable-winning-strategy": "確実な勝ち方",
+};
+
 export default async function HomePage() {
   const styles = {
     card: "border border-slate-300 rounded-md p-3 mb-3",
     header: "text-[1rem]",
   };
   return (
-    <Main title={title}>
+    <Main title={title} type="time-limit">
       <article>
-        <PageSummary>
-          バロールの町で行われているミニゲーム「算術勝負」の解説。
-        </PageSummary>
         <Section>
-          <Title>
-            <TimeLimitIcon />
-            算術勝負
-          </Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              リッドの称号「さんじゅつせいねん」、「ミラクルグミ」など
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">バロールの町</RoundedInlineList>
-            <RoundedInlineList title="発生">
-              バロールの町へ到着後から
-            </RoundedInlineList>
-          </div>
-          <p>
+          <PageSummary>
             バロールの町で行われているミニゲーム「算術勝負」の解説。リッドの称号を得られるサブイベントですが、
             <strong>
               称号はインフェリアに渡ってしまうと入手できないことに注意が必要です。
             </strong>
-          </p>
+          </PageSummary>
+
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value:
+                  "リッドの称号「さんじゅつせいねん」、「ミラクルグミ」など",
+              },
+              { label: "場所", value: "バロールの町" },
+              { label: "発生", value: "バロールの町へ到着後から" },
+            ]}
+          />
+
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>イベントの詳細</SectionTitle>
+          <SectionTitle id="event-details">{toc["event-details"]}</SectionTitle>
           <ResponsiveImage src="/subevents/arithmetic-title.jpg" />
           <div className="mb-8">
             <p>
@@ -122,7 +127,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>確実な勝ち方</SectionTitle>
+          <SectionTitle id="reliable-winning-strategy">
+            {toc["reliable-winning-strategy"]}
+          </SectionTitle>
           <div className="mb-8">準備中です</div>
         </Section>
         {/* <Section>

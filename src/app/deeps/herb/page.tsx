@@ -1,5 +1,6 @@
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
 import { deepLinks } from "@/constants";
@@ -28,12 +29,23 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "about-herb": "薬草の詳細",
+  "collect-sage": "セージ集め",
+  "collect-savory": "セボリー集め",
+  "collect-lavender": "ラベンダー集め",
+  "collect-verbena": "ベルベーヌ集め",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>ステータスアップ薬草集め</Title>
+          <PageSummary>
+            「セージ」や「セボリー」などの薬草はステータスが上がる特殊アイテムで、レベルアップによるステータスアップで足りない部分を補うのに強力なアイテムです！このページでは薬草を集めるために周回方法を解説します。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -46,11 +58,11 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-8">
-            <p>
-              「セージ」や「セボリー」などの薬草はステータスが上がる特殊アイテムで、レベルアップによるステータスアップで足りない部分を補うのに強力なアイテムです！このページでは薬草を集めるために周回方法を解説します。
-            </p>
-          </div>
+
+          <ToC list={toc} />
+        </Section>
+        <Section>
+          <SectionTitle id="about-herb">{toc["about-herb"]}</SectionTitle>
           <h3>薬草の種類と効果</h3>
           <div className="mb-8">
             <RoundedContainer className="grid grid-cols-2 gap-3">
@@ -156,7 +168,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>セージ集め</SectionTitle>
+          <SectionTitle id="collect-sage">{toc["collect-sage"]}</SectionTitle>
           <RoundedContainer>
             <div className="mb-3">
               <h3>闘技場の世界一決定戦の周回</h3>
@@ -187,7 +199,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>セボリー集め</SectionTitle>
+          <SectionTitle id="collect-savory">
+            {toc["collect-savory"]}
+          </SectionTitle>
           {/* <div className="mb-3">
           <GuideList
             items={[{ title: "セボリーの詳細", href: "/systems/item/75" }]}
@@ -224,7 +238,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ラベンダー集め</SectionTitle>
+          <SectionTitle id="collect-lavender">
+            {toc["collect-lavender"]}
+          </SectionTitle>
           <RoundedContainer>
             <div className="mb-3">
               <h3>デュエリスト狩り</h3>
@@ -241,7 +257,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ベルベーヌ集め</SectionTitle>
+          <SectionTitle id="collect-verbena">
+            {toc["collect-verbena"]}
+          </SectionTitle>
           <RoundedContainer>
             <div className="mb-3">
               <h3>メガデス狩り</h3>

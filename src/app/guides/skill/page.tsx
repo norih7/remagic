@@ -1,5 +1,6 @@
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import SectionHeader from "@/components/SectionHeader";
 import GuideList from "@/components/GuideList";
 import Image from "next/image";
@@ -25,17 +26,29 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "rid-and-farth-skills": "リッドとファラの特技習得",
+  "keele-and-meredy-spell-system": "キールおよびメルディの晶霊術習得システム",
+  "chat-and-fog-skill-system": "チャットおよびフォッグの特技習得システム",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>特技/術の習得</Title>
-          『テイルズオブエターニア』における、各種スキルや晶霊術の習得方法について解説します。本作ではキャラクターのレベルアップだけですべての技を覚えるわけではなく、各人固有の育成システムや習得手順が用意されているため、詳細をあらかじめ把握しておきましょう。
+          <PageSummary>
+            『テイルズオブエターニア』における、各種スキルや晶霊術の習得方法について解説します。本作ではキャラクターのレベルアップだけですべての技を覚えるわけではなく、各人固有の育成システムや習得手順が用意されているため、詳細をあらかじめ把握しておきましょう。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
+
         <Section>
-          <SectionTitle type="system">リッドとファラの特技習得</SectionTitle>
+          <SectionTitle type="system" id="rid-and-farth-skills">
+            {toc["rid-and-farth-skills"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>専用レベルと確認方法</h3>
             <ResponsiveImage
@@ -91,8 +104,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="system">
-            キールおよびメルディの晶霊術習得システム
+          <SectionTitle type="system" id="keele-and-meredy-spell-system">
+            {toc["keele-and-meredy-spell-system"]}
           </SectionTitle>
           <div className="mb-8">
             <h3>晶霊術の習得と大晶霊のレベル仕様</h3>
@@ -150,8 +163,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="system">
-            チャットおよびフォッグの特技習得システム
+          <SectionTitle type="system" id="chat-and-fog-skill-system">
+            {toc["chat-and-fog-skill-system"]}
           </SectionTitle>
           <div className="mb-8">
             <p>

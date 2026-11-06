@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import LocationItems from "@/components/LocationItems";
 import { getLocationItemsData } from "@/lib/db";
 import { extraLinks } from "@/constants";
@@ -28,17 +29,23 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "reach-underground-dungeon": "ダンジョンへの行き方",
+  "dungeon-walkthrough": "ダンジョン攻略と探索手順",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
 
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <Section>
-          <Title>
-            <SkillIcon />
-            ファロース教会地下
-          </Title>
+          <PageSummary>
+            物語の後半に訪れることができる隠しダンジョンのひとつです。インフェリアの「ファロース教会」の最奥には、強力な大晶霊「マクスウェル」が待ち構えており、激闘を制することで晴れて契約を結ぶことができます。非常に手強い強敵ですが、勝利すれば絶大な見返りを得られます。
+            出現するモンスターはなかなかの強さですが、その分1回の戦闘で約1000〜1500もの高い経験値を稼ぐことができます。また、ファロース教会内には無料で宿泊できるベッドが用意されているため、冒険の合間のレベル上げスポットとしても非常に優秀です。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -56,18 +63,14 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-8">
-            <p>
-              物語の後半に訪れることができる隠しダンジョンのひとつです。インフェリアの「ファロース教会」の最奥には、強力な大晶霊「マクスウェル」が待ち構えており、激闘を制することで晴れて契約を結ぶことができます。非常に手強い強敵ですが、勝利すれば絶大な見返りを得られます。
-            </p>
-            <p>
-              出現するモンスターはなかなかの強さですが、その分1回の戦闘で約1000〜1500もの高い経験値を稼ぐことができます。また、ファロース教会内には無料で宿泊できるベッドが用意されているため、冒険の合間のレベル上げスポットとしても非常に優秀です。
-            </p>
-          </div>
+
+          <ToC list={toc} />
         </Section>
         <Section>
           <div className="mb-4">
-            <SectionTitle>ダンジョンへの行き方</SectionTitle>
+            <SectionTitle id="reach-underground-dungeon">
+              {toc["reach-underground-dungeon"]}
+            </SectionTitle>
             <ResponsiveImage src="/extras/secret-farosu-entrance.jpg" />
             <p>
               「遠征の橋」を経由してインフェリアの世界へ再び帰還できるようになった後、ファロース教会（GPS座標：93,
@@ -77,7 +80,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ダンジョン攻略と探索手順</SectionTitle>
+          <SectionTitle id="dungeon-walkthrough">
+            {toc["dungeon-walkthrough"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>
               ダンジョン内複雑な謎解きやギミックなどは存在しないため、一本道をしっかりと奥へ進んでいけば迷うことはありません。道中の宝箱には、リッド用の強力な頭防具「ゴールデンヘルム」や、キール用の優秀な体防具「スピリッドローブ」が眠っています。どちらも攻略の大きな助けとなる強力な装備なので、忘れずに回収しておきましょう。

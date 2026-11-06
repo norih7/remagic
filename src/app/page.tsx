@@ -5,6 +5,8 @@ import { systemLinks } from "@/constants";
 import { skillLinks } from "@/constants";
 import { extraLinks, guideLinks } from "@/constants";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
+import Section from "@/components/Section";
 import Link from "next/link";
 import Main from "@/components/SiteLayout/Main";
 import UpdateList from "@/components/UpdateList";
@@ -51,6 +53,12 @@ export async function generateMetadata() {
   };
 }
 
+const toc = {
+  "remaster-guide": "リマスター版に向けたガイド",
+  "featured-content": "注目コンテンツ",
+  "latest-updates": "最新更新履歴",
+};
+
 export default async function HomePage() {
   const subTitle = "エターニア攻略トップ";
   return (
@@ -74,18 +82,24 @@ export default async function HomePage() {
 
         {/* 2. 注目カテゴリセクション */}
         <section className="mb-12">
-          <SectionTitle>リマスター版に向けたガイド</SectionTitle>
+          <SectionTitle id="remaster-guide">
+            {toc["remaster-guide"]}
+          </SectionTitle>
           <ContentLinks list={fixedLink} />
         </section>
 
         <section className="mb-8">
-          <SectionTitle>注目コンテンツ</SectionTitle>
+          <SectionTitle id="featured-content">
+            {toc["featured-content"]}
+          </SectionTitle>
           <ContentLinks list={featuredLinks} />
         </section>
 
         {/* 3. 更新履歴セクション */}
         <section>
-          <SectionTitle type="history">最新更新履歴</SectionTitle>
+          <SectionTitle type="history" id="latest-updates">
+            {toc["latest-updates"]}
+          </SectionTitle>
           <div className="w-full">
             <UpdateList />
           </div>

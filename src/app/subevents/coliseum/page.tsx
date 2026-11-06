@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -28,6 +29,14 @@ export const metadata = {
   alternates: {
     canonical,
   },
+};
+
+const toc = {
+  "coliseum-strategy": "闘技場で勝つためのポイント",
+  "infernian-championship": "王都一決定戦",
+  "kingdom-championship": "王国一決定戦",
+  "world-championship": "世界一決定戦",
+  "cres-challenge": "クレス乱入",
 };
 
 export default async function HomePage() {
@@ -105,7 +114,12 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>闘技場</Title>
+          <PageSummary>
+            王都インフェリアには闘技場があり、連戦を勝ち抜くことで報酬を獲得できます。
+            闘技場には「王都一決定戦」「王国一決定戦」「世界一決定戦」の3つのランクが用意されており、いずれもリッドが単独で3連戦に挑む形式です。ランクの3試合すべてに勝利すると優勝となり、報酬を手に入れることができます。
+            また「世界一決定戦」で初めて優勝すると、テイルズオブファンタジアの「クレス」が参戦するイベントが発生します。クレスは強敵ですが倒すとリッドの最強武器の1つ「エターナルソード」を入手できます。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -122,19 +136,16 @@ export default async function HomePage() {
               },
             ]}
           />
-          <p>
-            王都インフェリアには闘技場があり、連戦を勝ち抜くことで報酬を獲得できます。
-            闘技場には「王都一決定戦」「王国一決定戦」「世界一決定戦」の3つのランクが用意されており、いずれもリッドが単独で3連戦に挑む形式です。ランクの3試合すべてに勝利すると優勝となり、報酬を手に入れることができます。
-          </p>
-          <p>
-            また「世界一決定戦」で初めて優勝すると、テイルズオブファンタジアの「クレス」が参戦するイベントが発生します。クレスは強敵ですが倒すとリッドの最強武器の1つ「エターナルソード」を入手できます。
-          </p>
           <Information type="warning" title="闘技場の難易度について">
             闘技場は最初に王都インフェリアにきた時から挑戦できますが難易度が高いため初回訪問時ではまずクリアできません。リッドが猛虎連撃破や鳳凰天駆を覚えるあたり（レベル50以上）で挑戦することを推奨します。クレスはさらにレベルやHPが求められます。
           </Information>
+
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>闘技場で勝つためのポイント</SectionTitle>
+          <SectionTitle id="coliseum-strategy">
+            {toc["coliseum-strategy"]}
+          </SectionTitle>
           <h3>敵に合わせて装備品を準備する</h3>
           <div className="mb-8">
             <p>
@@ -157,7 +168,9 @@ export default async function HomePage() {
           </p>
         </Section>
         <Section>
-          <SectionTitle>王都一決定戦</SectionTitle>
+          <SectionTitle id="infernian-championship">
+            {toc["infernian-championship"]}
+          </SectionTitle>
           <div className="mb-4">
             <CardList
               list={[
@@ -198,7 +211,9 @@ export default async function HomePage() {
           </RoundedContainer>
         </Section>
         <Section>
-          <SectionTitle>王国一決定戦</SectionTitle>
+          <SectionTitle id="kingdom-championship">
+            {toc["kingdom-championship"]}
+          </SectionTitle>
           <div className="mb-4">
             <CardList
               list={[
@@ -239,7 +254,9 @@ export default async function HomePage() {
           </RoundedContainer>
         </Section>
         <Section>
-          <SectionTitle>世界一決定戦</SectionTitle>
+          <SectionTitle id="world-championship">
+            {toc["world-championship"]}
+          </SectionTitle>
           <div className="mb-4">
             <CardList
               list={[
@@ -280,7 +297,9 @@ export default async function HomePage() {
           </RoundedContainer>
         </Section>
         <section>
-          <SectionTitle>クレス乱入</SectionTitle>
+          <SectionTitle id="cres-challenge">
+            {toc["cres-challenge"]}
+          </SectionTitle>
           <ResponsiveImage src="/subevents/coliseum-appear-cless.jpg" />
           <div className="mb-4">
             <p>

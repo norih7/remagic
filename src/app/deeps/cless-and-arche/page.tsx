@@ -78,10 +78,10 @@ const data = [
 ];
 
 const toc = {
-  spec: "クレス&アーチェ戦の仕様",
-  prepare: "装備品と準備",
-  point: "戦闘のコツ",
-  method: "攻略法",
+  "battle-rules": "クレス&アーチェ戦の仕様",
+  "equipment-and-preparation": "装備品と準備",
+  "battle-tips": "戦闘のコツ",
+  "battle-strategy": "攻略法",
 };
 
 export default async function HomePage() {
@@ -89,8 +89,12 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>{title}</Title>
           <ResponsiveImage src="/deeps/cless-and-arche-digest.jpg" />
+          <PageSummary>
+            闘技場の世界一決定戦で優勝すると乱入してくる謎の剣士「クレス」との戦いを解説します。戦闘ランクハード以上で戦闘に追加される「アーチェ」についての攻略法も。
+            エターニアでも屈指の強敵ですがリッドの最強武器「エターナルソード」の入手や、アクセサリ「クレスのバンダナ」「アーチェのリボン」なども入手できるためぜひ挑戦しましょう。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -103,19 +107,13 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-4">
-            <p>
-              闘技場の世界一決定戦で優勝すると乱入してくる謎の剣士「クレス」との戦いを解説します。戦闘ランクハード以上で戦闘に追加される「アーチェ」についての攻略法も。
-            </p>
-            <p>
-              エターニアでも屈指の強敵ですがリッドの最強武器「エターナルソード」の入手や、アクセサリ「クレスのバンダナ」「アーチェのリボン」なども入手できるためぜひ挑戦しましょう。
-            </p>
-          </div>
+          <div className="mb-4"></div>
+
           <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle id="spec">{toc.spec}</SectionTitle>
+          <SectionTitle id="battle-rules">{toc["battle-rules"]}</SectionTitle>
           <div className="mb-8">
             <h3>報酬</h3>
             <CardList
@@ -227,7 +225,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle id="prepare">{toc.prepare}</SectionTitle>
+          <SectionTitle id="equipment-and-preparation">
+            {toc["equipment-and-preparation"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>装備品</h3>
             <p>
@@ -260,7 +260,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle id="point">{toc.point}</SectionTitle>
+          <SectionTitle id="battle-tips">{toc["battle-tips"]}</SectionTitle>
           <div className="mb-8">
             <RoundedContainer title="ガードテクニック">
               <div className="grid grid-cols-1 gap-3 pt-3">
@@ -339,7 +339,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle id="method">{toc.method}</SectionTitle>
+          <SectionTitle id="battle-strategy">
+            {toc["battle-strategy"]}
+          </SectionTitle>
           <div className="mb-8">
             <div className="mb-3">
               <h3>デリスエンブレムがない場合: 空破絶掌撃</h3>

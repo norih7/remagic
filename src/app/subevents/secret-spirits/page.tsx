@@ -28,7 +28,7 @@ export const metadata = {
 
 export default async function HomePage() {
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <PageSummary>
           エターニアにはサブイベントにて契約できる大晶霊が存在します。強力な晶霊術のフリンジが可能となるので是非とも契約を目指しましょう。

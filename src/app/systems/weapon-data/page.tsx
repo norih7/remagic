@@ -1,5 +1,6 @@
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import { Item } from "@/lib/db";
 import { systemLinks } from "@/constants";
 import { getItemsData } from "@/lib/db";
@@ -20,6 +21,21 @@ export const metadata = {
   alternates: {
     canonical,
   },
+};
+
+const toc = {
+  swords: "武器: 剣",
+  daggers: "武器: 短剣",
+  greatswords: "武器: 大剣",
+  spears: "武器: 槍",
+  axes: "武器: 斧",
+  halberds: "武器: ハルバート",
+  knuckles: "武器: ナックル",
+  whistles: "武器: ホイッスル",
+  staves: "武器: 杖",
+  maces: "武器: メイス",
+  bags: "武器: バッグ",
+  guns: "武器: 銃",
 };
 
 export default async function HomePage() {
@@ -57,73 +73,76 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            エターニアの武器アイテム一覧データを掲載しています。購入場所、入手可能ダンジョンなどは詳細ページにて一覧を掲載しています。
-          </p>
-        </PageSummary>
-        {/* <section className="mb-12">
-        <SectionTitle>料理と習得方法</SectionTitle>
-        <p>準備中</p>
-      </section> */}
+        <Section>
+          <PageSummary>
+          エターニアの武器アイテム一覧データを掲載しています。購入場所、入手可能ダンジョンなどは詳細ページにて一覧を掲載しています。
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
+
+
         <Section>
           <div className="mb-8">
-            <SectionTitle>武器: 剣</SectionTitle>
+            <SectionTitle id="swords">{toc["swords"]}</SectionTitle>
             <p>装備可能: リッド</p>
             <ItemList data={filterData.sword} />
           </div>
+        </Section>
+
+        <Section>
           <div className="mb-8">
-            <SectionTitle>武器: 短剣</SectionTitle>
+            <SectionTitle id="daggers">{toc["daggers"]}</SectionTitle>
             <p>装備可能: リッド</p>
             <ItemList data={filterData.shortSword} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: 大剣</SectionTitle>
+            <SectionTitle id="greatswords">{toc["greatswords"]}</SectionTitle>
             <p>装備可能: リッド</p>
             <ItemList data={filterData.greatSword} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: 槍</SectionTitle>
+            <SectionTitle id="spears">{toc["spears"]}</SectionTitle>
             <p>装備可能: リッド</p>
             <ItemList data={filterData.spear} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: 斧</SectionTitle>
+            <SectionTitle id="axes">{toc["axes"]}</SectionTitle>
             <p>装備可能: リッド</p>
             <ItemList data={filterData.ax} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: ハルバート</SectionTitle>
+            <SectionTitle id="halberds">{toc["halberds"]}</SectionTitle>
             <p>装備可能: リッド</p>
             <ItemList data={filterData.halbert} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: ナックル</SectionTitle>
+            <SectionTitle id="knuckles">{toc["knuckles"]}</SectionTitle>
             <p>装備可能: ファラ</p>
             <ItemList data={filterData.knuckle} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: ホイッスル</SectionTitle>
+            <SectionTitle id="whistles">{toc["whistles"]}</SectionTitle>
             <p>装備可能: メルディ</p>
             <ItemList data={filterData.whistle} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: 杖</SectionTitle>
+            <SectionTitle id="staves">{toc["staves"]}</SectionTitle>
             <p>装備可能: キール</p>
             <ItemList data={filterData.cane} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: メイス</SectionTitle>
+            <SectionTitle id="maces">{toc["maces"]}</SectionTitle>
             <p>装備可能: キール</p>
             <ItemList data={filterData.mace} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: バッグ</SectionTitle>
+            <SectionTitle id="bags">{toc["bags"]}</SectionTitle>
             <p>装備可能: チャット</p>
             <ItemList data={filterData.bag} />
           </div>
           <div className="mb-8">
-            <SectionTitle>武器: 銃</SectionTitle>
+            <SectionTitle id="guns">{toc["guns"]}</SectionTitle>
             <p>装備可能: フォッグ</p>
             <ItemList data={filterData.gun} />
           </div>

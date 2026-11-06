@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import RoundedInlineList from "@/components/RoundedInlineList";
@@ -28,268 +29,280 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "tp-reduction": "TP減少",
+  "automatic-hp-recovery": "HP自動回復",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        <p>
-          装備すると特殊効果がある装備品を紹介します。一部の装備品には隠し効果で強力なアクセサリと同じ効果を得ることができるものがあります。
-          例えば防具であればアクセサリの2枠を消費しないため非常に強力な効果となります。
-        </p>
-      </PageSummary>
-      <Section>
-        <SectionTitle>TP減少</SectionTitle>
-        <p>装備すると術技の消費TPを「2/3」または「1/2」にする装備品です</p>
-        <RoundedContainer>
-          <div className="mb-3 flex items-center">
-            <div className="mr-3">
-              <Image
-                src="/icons/item-70.jpg"
-                width={50}
-                height={50}
-                alt=""
-                className="rounded-md"
-              />
-            </div>
-            <div>
-              <h3>エメラルドリング</h3>
-              <div className="flex items-center gap-1">
-                <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
-                <RoundedInlineList title="評価">
-                  <StarRating rating={4} />
-                </RoundedInlineList>
-              </div>
-            </div>
-          </div>
-          <RoundedItem title="説明" className="mb-3">
-            装備キャラクターの消費TPが2/3となる指輪。ゲーム内で2つのみ入手可能。ダンジョン内の宝箱にあり、早くはファロース霊峰にて入手できる。
-          </RoundedItem>
-          <RoundedItem title="入手方法">
-            <ul>
-              <li>ファロース霊峰の宝箱から入手</li>
-              <li>チャットの小屋にある宝箱から入手</li>
-            </ul>
-          </RoundedItem>
-        </RoundedContainer>
-        <RoundedContainer>
-          <div className="mb-3 flex items-center">
-            <div className="mr-3">
-              <Image
-                src="/icons/item-297.jpg"
-                width={50}
-                height={50}
-                alt=""
-                className="rounded-md"
-              />
-            </div>
-            <div>
-              <h3>フェアリィリング</h3>
-              <div className="flex items-center gap-1">
-                <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
-                <RoundedInlineList title="評価">
-                  <StarRating rating={5} />
-                </RoundedInlineList>
-              </div>
-            </div>
-          </div>
-          <RoundedItem title="説明" className="mb-3">
-            装備キャラクターの消費TPが1/2となる指輪。ゲーム内で最大3つ入手可能。入手できるのはストーリーの後半となり、通常入手可能な2つはボスを倒すことで入手できる。ボス「スパイラル」はストーリー上で必ず倒すボスなのでフェアリィリングは最低1個は獲得する。
-          </RoundedItem>
-          <RoundedItem title="入手方法">
-            <ul>
-              <li>バリル城にてボス「スパイラル」を倒す</li>
-              <li>セイファート神殿地下にてボス「マクスウェル」を倒す</li>
-              <li>ミスティシンボルにルーンボトルを使って変化させる</li>
-            </ul>
-          </RoundedItem>
-        </RoundedContainer>
-        <RoundedContainer>
-          <div className="mb-3 flex items-center">
-            <div className="mr-3">
-              <Image
-                src="/icons/item-264.jpg"
-                width={50}
-                height={50}
-                alt=""
-                className="rounded-md"
-              />
-            </div>
-            <div>
-              <h3>ムーンローブ</h3>
-              <div className="flex items-center gap-1">
-                <RoundedInlineList title="種別">防具</RoundedInlineList>
-                <RoundedInlineList title="評価">
-                  <StarRating rating={5} />
-                </RoundedInlineList>
-              </div>
-            </div>
-          </div>
-          <RoundedItem title="説明" className="mb-3">
-            装備キャラクターの消費TPが2/3となる防具。ゲーム内で1つだけ入手可能。キールとフォッグが装備でき、アクセサリではないため非常に優秀な防具です。
-          </RoundedItem>
-          <RoundedItem title="入手方法" className="mb-3">
-            <ul className="mb-2">
-              <li>アイフリードの墓の宝箱から入手</li>
-            </ul>
-            <GuideList
-              items={[
-                {
-                  title: "アイフリードの墓の解説",
-                  href: "/extras/aifread",
-                },
-              ]}
-            ></GuideList>
-          </RoundedItem>
-        </RoundedContainer>
-      </Section>
-      <Section>
-        <SectionTitle>HP自動回復</SectionTitle>
-        <p>
-          これらの装備品はすべて「戦闘中8秒ごとにHPが5%回復する」効果があります
-        </p>
-        <RoundedContainer>
-          <div className="mb-3 flex items-center">
-            <div className="mr-3">
-              <Image
-                src="/icons/item-68.jpg"
-                width={50}
-                height={50}
-                alt=""
-                className="rounded-md"
-              />
-            </div>
-            <div>
-              <h3>アンクシールド</h3>
-              <div className="flex items-center gap-1">
-                <RoundedInlineList title="種別">防具</RoundedInlineList>
-                <RoundedInlineList title="評価">
-                  <StarRating rating={4} />
-                </RoundedInlineList>
-              </div>
-            </div>
-          </div>
-          <RoundedItem title="説明" className="mb-3">
-            リッドが装備可能な盾。ゲーム内で1つだけ入手可能。ストーリーの中盤前に入手可能な盾なので使い勝手が良いです。後半になる他に強力な盾も出てきて活躍の場は減りますが、場合によってはHP自動回復のためにアンクシールドを装備する戦略はアリです。
-          </RoundedItem>
-          <RoundedItem title="入手方法" className="mb-3">
-            <ul>
-              <li>霊峰ファロースの宝箱から入手</li>
-            </ul>
-          </RoundedItem>
-        </RoundedContainer>
+        <Section>
+          <PageSummary>
+            装備すると特殊効果がある装備品を紹介します。一部の装備品には隠し効果で強力なアクセサリと同じ効果を得ることができるものがあります。
+            例えば防具であればアクセサリの2枠を消費しないため非常に強力な効果となります。
+          </PageSummary>
 
-        <RoundedContainer>
-          <div className="mb-3 flex items-center">
-            <div className="mr-3">
-              <Image
-                src="/icons/item-298.jpg"
-                width={50}
-                height={50}
-                alt=""
-                className="rounded-md"
-              />
-            </div>
-            <div>
-              <h3>ホーリィシンボル</h3>
-              <div className="flex items-center gap-1">
-                <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
-                <RoundedInlineList title="評価">
-                  <StarRating rating={3} />
-                </RoundedInlineList>
-              </div>
-            </div>
-          </div>
-          <div className="mb-3"></div>
-          <RoundedItem title="説明" className="mb-3">
-            雷晶霊の遺跡で「ヴォルト」を倒すと入手できるアイテム。ゲーム内で最大2つ入手可能。風晶霊の空洞で入手できる「メンタルリング」にルーンボトルを使うと変化させることもでき、最短でシルフ契約前に入手できます。
-          </RoundedItem>
-          <RoundedItem title="入手方法" className="mb-3">
-            <ul>
-              <li>雷晶霊の遺跡で「ヴォルト」を倒すと入手</li>
-            </ul>
-          </RoundedItem>
-        </RoundedContainer>
+          <ToC list={toc} />
+        </Section>
 
-        <RoundedContainer>
-          <div className="mb-3 flex items-center">
-            <div className="mr-3">
-              <Image
-                src="/icons/item-240.jpg"
-                width={50}
-                height={50}
-                alt=""
-                className="rounded-md"
-              />
-            </div>
-            <div>
-              <h3>ホーリィクローク</h3>
-              <div className="flex items-center gap-1">
-                <RoundedInlineList title="種別">防具</RoundedInlineList>
-                <RoundedInlineList title="評価">
-                  <StarRating rating={5} />
-                </RoundedInlineList>
-              </div>
-            </div>
-          </div>
-          <RoundedItem title="説明" className="mb-3">
-            女性キャラクタ（ファラ、メルディ、チャット）が装備可能な防具。ゲーム内で1つだけ入手可能。防御力も高く、簡単に入手できるのでインフェリア帰還後に早めに入手するのがおすすめです。
-          </RoundedItem>
-          <RoundedItem title="入手方法" className="mb-3">
-            <ul className="mb-2">
-              <li>インフェリアの隠しアジト1の宝箱から入手</li>
-            </ul>
-            <GuideList
-              items={[
-                {
-                  title: "インフェリアの隠しアジト",
-                  href: "/subevents/secret-base",
-                },
-              ]}
-            ></GuideList>
-          </RoundedItem>
-        </RoundedContainer>
 
-        <RoundedContainer>
-          <div className="mb-3 flex items-center">
-            <div className="mr-3">
-              <Image
-                src="/icons/item-253.jpg"
-                width={50}
-                height={50}
-                alt=""
-                className="rounded-md"
-              />
-            </div>
-            <div>
-              <h3>キューティミトン</h3>
-              <div className="flex items-center gap-1">
-                <RoundedInlineList title="種別">防具</RoundedInlineList>
-                <RoundedInlineList title="評価">
-                  <StarRating rating={5} />
-                </RoundedInlineList>
+        <Section>
+          <SectionTitle id="tp-reduction">{toc["tp-reduction"]}</SectionTitle>
+          <p>装備すると術技の消費TPを「2/3」または「1/2」にする装備品です</p>
+          <RoundedContainer>
+            <div className="mb-3 flex items-center">
+              <div className="mr-3">
+                <Image
+                  src="/icons/item-70.jpg"
+                  width={50}
+                  height={50}
+                  alt=""
+                  className="rounded-md"
+                />
+              </div>
+              <div>
+                <h3>エメラルドリング</h3>
+                <div className="flex items-center gap-1">
+                  <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
+                  <RoundedInlineList title="評価">
+                    <StarRating rating={4} />
+                  </RoundedInlineList>
+                </div>
               </div>
             </div>
-          </div>
-          <RoundedItem title="説明" className="mb-3">
-            女性キャラクタ（ファラ、メルディ、チャット）が装備可能な防具。ゲーム内で1つだけ入手可能。沈没船の難易度は低いためこちらもインフェリア帰還後早めに入手するのがおすすめです。
-          </RoundedItem>
-          <RoundedItem title="入手方法" className="mb-3">
-            <ul className="mb-2">
-              <li>沈没船の宝箱から入手</li>
-            </ul>
-            <GuideList
-              items={[
-                {
-                  title: "沈没船の解説",
-                  href: "/extras/sunken-ship",
-                },
-              ]}
-            ></GuideList>
-          </RoundedItem>
-        </RoundedContainer>
-      </Section>
-    </article>
+            <RoundedItem title="説明" className="mb-3">
+              装備キャラクターの消費TPが2/3となる指輪。ゲーム内で2つのみ入手可能。ダンジョン内の宝箱にあり、早くはファロース霊峰にて入手できる。
+            </RoundedItem>
+            <RoundedItem title="入手方法">
+              <ul>
+                <li>ファロース霊峰の宝箱から入手</li>
+                <li>チャットの小屋にある宝箱から入手</li>
+              </ul>
+            </RoundedItem>
+          </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3 flex items-center">
+              <div className="mr-3">
+                <Image
+                  src="/icons/item-297.jpg"
+                  width={50}
+                  height={50}
+                  alt=""
+                  className="rounded-md"
+                />
+              </div>
+              <div>
+                <h3>フェアリィリング</h3>
+                <div className="flex items-center gap-1">
+                  <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
+                  <RoundedInlineList title="評価">
+                    <StarRating rating={5} />
+                  </RoundedInlineList>
+                </div>
+              </div>
+            </div>
+            <RoundedItem title="説明" className="mb-3">
+              装備キャラクターの消費TPが1/2となる指輪。ゲーム内で最大3つ入手可能。入手できるのはストーリーの後半となり、通常入手可能な2つはボスを倒すことで入手できる。ボス「スパイラル」はストーリー上で必ず倒すボスなのでフェアリィリングは最低1個は獲得する。
+            </RoundedItem>
+            <RoundedItem title="入手方法">
+              <ul>
+                <li>バリル城にてボス「スパイラル」を倒す</li>
+                <li>セイファート神殿地下にてボス「マクスウェル」を倒す</li>
+                <li>ミスティシンボルにルーンボトルを使って変化させる</li>
+              </ul>
+            </RoundedItem>
+          </RoundedContainer>
+          <RoundedContainer>
+            <div className="mb-3 flex items-center">
+              <div className="mr-3">
+                <Image
+                  src="/icons/item-264.jpg"
+                  width={50}
+                  height={50}
+                  alt=""
+                  className="rounded-md"
+                />
+              </div>
+              <div>
+                <h3>ムーンローブ</h3>
+                <div className="flex items-center gap-1">
+                  <RoundedInlineList title="種別">防具</RoundedInlineList>
+                  <RoundedInlineList title="評価">
+                    <StarRating rating={5} />
+                  </RoundedInlineList>
+                </div>
+              </div>
+            </div>
+            <RoundedItem title="説明" className="mb-3">
+              装備キャラクターの消費TPが2/3となる防具。ゲーム内で1つだけ入手可能。キールとフォッグが装備でき、アクセサリではないため非常に優秀な防具です。
+            </RoundedItem>
+            <RoundedItem title="入手方法" className="mb-3">
+              <ul className="mb-2">
+                <li>アイフリードの墓の宝箱から入手</li>
+              </ul>
+              <GuideList
+                items={[
+                  {
+                    title: "アイフリードの墓の解説",
+                    href: "/extras/aifread",
+                  },
+                ]}
+              ></GuideList>
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
+
+        <Section>
+          <SectionTitle id="automatic-hp-recovery">
+            {toc["automatic-hp-recovery"]}
+          </SectionTitle>
+          <p>
+            これらの装備品はすべて「戦闘中8秒ごとにHPが5%回復する」効果があります
+          </p>
+          <RoundedContainer>
+            <div className="mb-3 flex items-center">
+              <div className="mr-3">
+                <Image
+                  src="/icons/item-68.jpg"
+                  width={50}
+                  height={50}
+                  alt=""
+                  className="rounded-md"
+                />
+              </div>
+              <div>
+                <h3>アンクシールド</h3>
+                <div className="flex items-center gap-1">
+                  <RoundedInlineList title="種別">防具</RoundedInlineList>
+                  <RoundedInlineList title="評価">
+                    <StarRating rating={4} />
+                  </RoundedInlineList>
+                </div>
+              </div>
+            </div>
+            <RoundedItem title="説明" className="mb-3">
+              リッドが装備可能な盾。ゲーム内で1つだけ入手可能。ストーリーの中盤前に入手可能な盾なので使い勝手が良いです。後半になる他に強力な盾も出てきて活躍の場は減りますが、場合によってはHP自動回復のためにアンクシールドを装備する戦略はアリです。
+            </RoundedItem>
+            <RoundedItem title="入手方法" className="mb-3">
+              <ul>
+                <li>霊峰ファロースの宝箱から入手</li>
+              </ul>
+            </RoundedItem>
+          </RoundedContainer>
+
+          <RoundedContainer>
+            <div className="mb-3 flex items-center">
+              <div className="mr-3">
+                <Image
+                  src="/icons/item-298.jpg"
+                  width={50}
+                  height={50}
+                  alt=""
+                  className="rounded-md"
+                />
+              </div>
+              <div>
+                <h3>ホーリィシンボル</h3>
+                <div className="flex items-center gap-1">
+                  <RoundedInlineList title="種別">アクセサリ</RoundedInlineList>
+                  <RoundedInlineList title="評価">
+                    <StarRating rating={3} />
+                  </RoundedInlineList>
+                </div>
+              </div>
+            </div>
+            <div className="mb-3"></div>
+            <RoundedItem title="説明" className="mb-3">
+              雷晶霊の遺跡で「ヴォルト」を倒すと入手できるアイテム。ゲーム内で最大2つ入手可能。風晶霊の空洞で入手できる「メンタルリング」にルーンボトルを使うと変化させることもでき、最短でシルフ契約前に入手できます。
+            </RoundedItem>
+            <RoundedItem title="入手方法" className="mb-3">
+              <ul>
+                <li>雷晶霊の遺跡で「ヴォルト」を倒すと入手</li>
+              </ul>
+            </RoundedItem>
+          </RoundedContainer>
+
+          <RoundedContainer>
+            <div className="mb-3 flex items-center">
+              <div className="mr-3">
+                <Image
+                  src="/icons/item-240.jpg"
+                  width={50}
+                  height={50}
+                  alt=""
+                  className="rounded-md"
+                />
+              </div>
+              <div>
+                <h3>ホーリィクローク</h3>
+                <div className="flex items-center gap-1">
+                  <RoundedInlineList title="種別">防具</RoundedInlineList>
+                  <RoundedInlineList title="評価">
+                    <StarRating rating={5} />
+                  </RoundedInlineList>
+                </div>
+              </div>
+            </div>
+            <RoundedItem title="説明" className="mb-3">
+              女性キャラクタ（ファラ、メルディ、チャット）が装備可能な防具。ゲーム内で1つだけ入手可能。防御力も高く、簡単に入手できるのでインフェリア帰還後に早めに入手するのがおすすめです。
+            </RoundedItem>
+            <RoundedItem title="入手方法" className="mb-3">
+              <ul className="mb-2">
+                <li>インフェリアの隠しアジト1の宝箱から入手</li>
+              </ul>
+              <GuideList
+                items={[
+                  {
+                    title: "インフェリアの隠しアジト",
+                    href: "/subevents/secret-base",
+                  },
+                ]}
+              ></GuideList>
+            </RoundedItem>
+          </RoundedContainer>
+
+          <RoundedContainer>
+            <div className="mb-3 flex items-center">
+              <div className="mr-3">
+                <Image
+                  src="/icons/item-253.jpg"
+                  width={50}
+                  height={50}
+                  alt=""
+                  className="rounded-md"
+                />
+              </div>
+              <div>
+                <h3>キューティミトン</h3>
+                <div className="flex items-center gap-1">
+                  <RoundedInlineList title="種別">防具</RoundedInlineList>
+                  <RoundedInlineList title="評価">
+                    <StarRating rating={5} />
+                  </RoundedInlineList>
+                </div>
+              </div>
+            </div>
+            <RoundedItem title="説明" className="mb-3">
+              女性キャラクタ（ファラ、メルディ、チャット）が装備可能な防具。ゲーム内で1つだけ入手可能。沈没船の難易度は低いためこちらもインフェリア帰還後早めに入手するのがおすすめです。
+            </RoundedItem>
+            <RoundedItem title="入手方法" className="mb-3">
+              <ul className="mb-2">
+                <li>沈没船の宝箱から入手</li>
+              </ul>
+              <GuideList
+                items={[
+                  {
+                    title: "沈没船の解説",
+                    href: "/extras/sunken-ship",
+                  },
+                ]}
+              ></GuideList>
+            </RoundedItem>
+          </RoundedContainer>
+        </Section>
+      </article>
     </Main>
   );
 }

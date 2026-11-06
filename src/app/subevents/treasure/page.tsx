@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -30,16 +31,25 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "treasures-and-locations": "秘宝一覧と入手方法",
+  "find-deck-brush": "デッキブラシの入手方法",
+  "about-sd": "S・Dについて",
+};
+
 export default async function HomePage() {
   const styles = {
     card: "border border-slate-300 rounded-md p-3 mb-3",
     header: "text-[1rem]",
   };
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <Section>
-          <Title>セレスティア7大秘宝</Title>
+          <PageSummary>
+            アイフリードの遺産の「セレスティア7大秘宝」があり、ストーリー後半ではサブイベントとして秘宝を集めていくことができます。主な報酬としては特殊な召喚術が使える「S・D」、回復効果などが得られる「コルレーンのつぼ」、自動復活の可能性がある「レジュームリング」があります。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -56,12 +66,13 @@ export default async function HomePage() {
               },
             ]}
           />
-          <p>
-            アイフリードの遺産の「セレスティア7大秘宝」があり、ストーリー後半ではサブイベントとして秘宝を集めていくことができます。主な報酬としては特殊な召喚術が使える「S・D」、回復効果などが得られる「コルレーンのつぼ」、自動復活の可能性がある「レジュームリング」があります。
-          </p>
+
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>秘宝一覧と入手方法</SectionTitle>
+          <SectionTitle id="treasures-and-locations">
+            {toc["treasures-and-locations"]}
+          </SectionTitle>
           <Information type="warning" title="称号を入手できないバグ">
             セレスティア7大秘宝をすべて揃えるとリッドの称号「エクスプローラー」を得られます。ただし1週目で「デッキブラシ」「ブッシュベイビー」を入手している状態で2週目を開始するとこの称号が得られないバグが発生する可能性があります。（PS/PSP版で確認）
           </Information>
@@ -143,7 +154,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>デッキブラシの入手方法</SectionTitle>
+          <SectionTitle id="find-deck-brush">
+            {toc["find-deck-brush"]}
+          </SectionTitle>
           <div className="mb-8">
             <ResponsiveImage src="/subevents/tresure-5.jpg" />
             <p>
@@ -165,7 +178,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>S・Dについて</SectionTitle>
+          <SectionTitle id="about-s-d">{toc["about-sd"]}</SectionTitle>
           <h3>召喚術「デスティニー」</h3>
           <ResponsiveImage src="/subevents/tresure-destiny.jpg" />
           <div className="mb-8">

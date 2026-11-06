@@ -1,5 +1,6 @@
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
 import { deepLinks } from "@/constants";
@@ -28,12 +29,20 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "carryover-content": "引き継ぎ要素",
+  "recommended-challenges": "おすすめのやり込み",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>{title}</Title>
+          <PageSummary>
+            リマスター版から新しく引き継ぎをした周回プレイが可能となりました。引き継ぎ可能な項目や周回プレイのおすすめ内容などを解説します。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -46,12 +55,13 @@ export default async function HomePage() {
               },
             ]}
           />
-          <p>
-            リマスター版から新しく引き継ぎをした周回プレイが可能となりました。引き継ぎ可能な項目や周回プレイのおすすめ内容などを解説します。
-          </p>
+
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>引き継ぎ要素</SectionTitle>
+          <SectionTitle id="carryover-content">
+            {toc["carryover-content"]}
+          </SectionTitle>
           <RoundedContainer title="引き継ぎ可能なオプション">
             <div className="pt-3 grid grid-cols-2 gap-3">
               <RoundedItem>キャラクター情報</RoundedItem>
@@ -85,7 +95,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>おすすめのやり込み</SectionTitle>
+          <SectionTitle id="recommended-challenges">
+            {toc["recommended-challenges"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>すべてを引き継いだ状態でのやり込み要素を紹介します。</p>
           </div>

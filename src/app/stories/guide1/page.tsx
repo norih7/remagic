@@ -16,7 +16,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import Link from "next/link";
-import TableOfContents from "@/components/TableOfContents";
+import ToC from "@/components/ToC";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 import KeyItemIcon from "@/components/Icons/KeyItemIcon";
 
@@ -35,6 +35,16 @@ export const metadata = {
   },
 };
 
+const toc = {
+  rasheans: "1.ラシュアン",
+  "rasheans-river-to-regulus-dojo": "2.ラシュアン河の桟橋〜レグルス道場",
+  "return-to-river-and-mintche": "3.ラシュアン河の桟橋(2回目)〜学問の町ミンツ",
+  "mintche-mountain-and-observatory": "4.ミンツの岩山〜岩山の観測所",
+  "nostalgia-cave": "5.望郷の洞窟",
+  "morle-village": "6.木陰の村モルル",
+  "crystal-river": "7.水晶霊の河",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
@@ -44,18 +54,17 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            ラシュアンを出発して水の大晶霊ウンディーネと契約するまでの流れを紹介します。序盤で入手できる「オムライス」や「マニュアルのしょ」、ダンジョン内のレンズなど、見逃しやすい要素もあわせて確認しておきましょう。
-          </p>
-        </PageSummary>
-
         <Section>
-          <TableOfContents />
+          <PageSummary>
+            ラシュアンを出発して水の大晶霊ウンディーネと契約するまでの流れを紹介します。序盤で入手できる「オムライス」や「マニュアルのしょ」、ダンジョン内のレンズなど、見逃しやすい要素もあわせて確認しておきましょう。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
+
         <Section>
-          <SectionTitle>1.ラシュアン</SectionTitle>
+          <SectionTitle id="rasheans">{toc["rasheans"]}</SectionTitle>
           <p>物語はラシュアンから始まります。</p>
           <p>
             森の中を進んでいると、空から落ちてきた物体と一人の少女を発見します。
@@ -77,8 +86,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            2.ラシュアン河の桟橋〜レグルス道場
+          <SectionTitle type="flag" id="rasheans-river-to-regulus-dojo">
+            {toc["rasheans-river-to-regulus-dojo"]}
           </SectionTitle>
           <p>
             桟橋の先へ進むと、ガケ崩れによって道が塞がれていることが分かります。
@@ -100,8 +109,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            3.ラシュアン河の桟橋(2回目)〜学問の町ミンツ
+          <SectionTitle type="flag" id="return-to-river-and-mintche">
+            {toc["return-to-river-and-mintche"]}
           </SectionTitle>
           <p>
             もう一度ラシュアン河の桟橋へ戻り、橋にいるパウロへ話しかけます。
@@ -132,7 +141,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">4.ミンツの岩山〜岩山の観測所</SectionTitle>
+          <SectionTitle type="flag" id="mintche-mountain-and-observatory">
+            {toc["mintche-mountain-and-observatory"]}
+          </SectionTitle>
           <p>
             岩山の観測所へ向かうには、まずミンツの岩山を抜ける必要があります。
           </p>
@@ -159,7 +170,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">5.望郷の洞窟</SectionTitle>
+          <SectionTitle type="flag" id="nostalgia-cave">
+            {toc["nostalgia-cave"]}
+          </SectionTitle>
           <p>
             望郷の洞窟では、内部の潮の状態によって通れる場所や回収できるアイテムが変わります。潮はダンジョンを移動することで変化し、外へ出ると最初の状態に戻ります。
             <br />
@@ -195,7 +208,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">6.木陰の村モルル</SectionTitle>
+          <SectionTitle type="flag" id="morle-village">
+            {toc["morle-village"]}
+          </SectionTitle>
           <p>
             モルルでは、道をそのまま進んで頂上にあるマゼットの家を訪ねます。
             <br />
@@ -224,7 +239,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">7.水晶霊の河</SectionTitle>
+          <SectionTitle type="flag" id="crystal-river">
+            {toc["crystal-river"]}
+          </SectionTitle>
           <p>
             ここまでのダンジョンと比べて探索に時間がかかるため、入る前に回復アイテムや料理を十分に用意しておきましょう。
           </p>

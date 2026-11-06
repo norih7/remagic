@@ -1,5 +1,6 @@
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
 import { deepLinks } from "@/constants";
@@ -26,16 +27,28 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "about-fire-dance": "火龍炎舞とは",
+  "learn-acupoint-binding": "点穴縛態の習得方法",
+  "activate-fire-dance": "火龍炎舞の発動方法",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          ファラの隠し秘奥義「火龍炎舞」の習得方法や発動条件、おすすめの連携例を解説しています。発動条件が難しいこの特殊技について、「点穴縛態」の効率的な習得手順や実際の4連携の組み方、注意点などをわかりやすくまとめています。
-        </PageSummary>
+        <Section>
+          <PageSummary>
+            ファラの隠し秘奥義「火龍炎舞」の習得方法や発動条件、おすすめの連携例を解説しています。発動条件が難しいこの特殊技について、「点穴縛態」の効率的な習得手順や実際の4連携の組み方、注意点などをわかりやすくまとめています。
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
 
         <Section>
-          <SectionTitle>火龍炎舞とは</SectionTitle>
+          <SectionTitle id="about-fire-dance">
+            {toc["about-fire-dance"]}
+          </SectionTitle>
           <ResponsiveImage
             src="/deeps/flame-dance-cutin.jpg"
             alt="火龍炎舞のカットイン"
@@ -67,9 +80,10 @@ export default async function HomePage() {
             />
           </div>
         </Section>
-
         <Section>
-          <SectionTitle>点穴縛態の習得方法</SectionTitle>
+          <SectionTitle id="learn-acupoint-binding">
+            {toc["learn-acupoint-binding"]}
+          </SectionTitle>
           <Information type="warning" title="リマスター版の注意点">
             リマスター版ではブースト機能がありますが「点穴縛態」の習得に役立つ機能はありません。地道にファラを操作して300回戦闘する必要があります。
           </Information>
@@ -99,7 +113,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>火龍炎舞の発動方法</SectionTitle>
+          <SectionTitle id="activate-fire-dance">
+            {toc["activate-fire-dance"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>
               火龍炎舞は点穴縛態を敵にヒットした後、ファラ単独で4連携攻撃をすることで発動します。通常攻撃も1連携にカウントされ、その後は「地上技」「対空技」「地上技」のように連携をつなげます。

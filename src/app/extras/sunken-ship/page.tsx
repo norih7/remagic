@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import LocationItems from "@/components/LocationItems";
 import { getLocationItemsData } from "@/lib/db";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -29,17 +30,22 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "reach-sunken-ship": "沈没船への行き方",
+  "dungeon-walkthrough": "ダンジョン攻略手順",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
 
   return (
-    <Main title={title}>
+    <Main title={title} type="key-item">
       <article>
         <Section>
-          <Title>
-            <KeyItemIcon />
-            沈没船
-          </Title>
+          <PageSummary>
+            海底に眠る隠しダンジョンのひとつです。ダンジョン内では貴重品「インシーマップ」やリッドの武器「ヴォーパルソード」を入手できます。ヴォーパルソードは水属性武器で、物理耐性のあるマクスウェルなどのボスに挑む場合の装備候補となる強力な武器です。最奥にはボスの「セイレーン」が待ち構えていますが、全体の攻略難易度は比較的優しめです。「遠征の橋」を経由してインフェリアへ戻ってきた直後のレベル上げや、アイテムの回収スポットとして非常に最適です。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -56,15 +62,14 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-8">
-            <p>
-              海底に眠る隠しダンジョンのひとつです。ダンジョン内では貴重品「インシーマップ」やリッドの武器「ヴォーパルソード」を入手できます。ヴォーパルソードは水属性武器で、物理耐性のあるマクスウェルなどのボスに挑む場合の装備候補となる強力な武器です。最奥にはボスの「セイレーン」が待ち構えていますが、全体の攻略難易度は比較的優しめです。「遠征の橋」を経由してインフェリアへ戻ってきた直後のレベル上げや、アイテムの回収スポットとして非常に最適です。
-            </p>
-          </div>
+
+          <ToC list={toc} />
         </Section>
         <Section>
           <div className="mb-8">
-            <SectionTitle>沈没船への行き方</SectionTitle>
+            <SectionTitle id="reach-sunken-ship">
+              {toc["reach-sunken-ship"]}
+            </SectionTitle>
             <ResponsiveImage src="/extras/secret-sunken-location.jpg" />
             <p>
               「遠征の橋」からイベントを経てインフェリア側へ帰還したあと、インフェリア世界の海底に位置する沈没船（GPS座標：34,
@@ -74,7 +79,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ダンジョン攻略手順</SectionTitle>
+          <SectionTitle id="dungeon-walkthrough">
+            {toc["dungeon-walkthrough"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>ダンジョン内部の構造と進め方</h3>
             <ResponsiveImage

@@ -23,7 +23,7 @@ const Summary = (props: Props) => {
     //   })}
     // </div>
     <>
-      <div className="inline-block bg-lime-600 px-3 py-0.5 mb-2 font-bold text-white rounded-lg text-xs">
+      <div className="inline-block bg-lime-600 px-3 py-0.5 mb-3 font-bold text-white rounded-lg text-xs">
         攻略情報
       </div>
       <RoundedContainer>

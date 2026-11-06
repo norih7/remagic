@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
@@ -30,15 +31,21 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "start-event": "イベントの開始",
+  "encounters-by-location": "各地での遭遇",
+  "event-conclusion": "イベントの最後",
+};
+
 export default async function HomePage() {
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <Section>
-          <Title>
-            <SkillIcon />
-            画家のリシテア
-          </Title>
+          <PageSummary>
+            このイベントはセレスティア各地にいる画家リシテアに話しかけていくもので、すべてのイベントをこなすことでフォッグの強力なアクセサリの入手および「エレメントマスター」の特技習得に関連します。リシテアイベントはストーリーの進行状況により開放されていきます。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -55,13 +62,12 @@ export default async function HomePage() {
               },
             ]}
           />
-          <p>
-            このイベントはセレスティア各地にいる画家リシテアに話しかけていくもので、すべてのイベントをこなすことでフォッグの強力なアクセサリの入手および「エレメントマスター」の特技習得に関連します。リシテアイベントはストーリーの進行状況により開放されていきます。
-          </p>
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>イベントの開始</SectionTitle>
+          <SectionTitle id="start-event">{toc["start-event"]}</SectionTitle>
           <Information type="warning" title="注意事項">
             リシテアはフォッグがパーティに加入していると出現しません。ティンシアのアジトでフォッグを加入/離脱できるのでこのイベント時は離脱させてください。
           </Information>
@@ -77,7 +83,9 @@ export default async function HomePage() {
           </RoundedContainer>
         </Section>
         <Section>
-          <SectionTitle>各地での遭遇</SectionTitle>
+          <SectionTitle id="encounters-by-location">
+            {toc["encounters-by-location"]}
+          </SectionTitle>
           <p>
             セレスティア各地でリシテアと遭遇します。ここはどの順番で行っても構いません。
           </p>
@@ -107,7 +115,9 @@ export default async function HomePage() {
           </RoundedContainer>
         </Section>
         <Section>
-          <SectionTitle>イベントの最後</SectionTitle>
+          <SectionTitle id="event-conclusion">
+            {toc["event-conclusion"]}
+          </SectionTitle>
           <RoundedContainer>
             <h3>ジイニでの遭遇</h3>
             <ResponsiveImage src="/subevents/lysithea-finish.jpg" />

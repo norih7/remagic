@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
 import SkillPropertyList from "@/components/SkillPropertyList";
@@ -22,6 +23,11 @@ export const metadata = {
   alternates: {
     canonical,
   },
+};
+
+const toc = {
+  "recommended-skills": "おすすめ特技",
+  "chat-skills": "チャットの特技一覧",
 };
 
 export default async function HomePage() {
@@ -91,24 +97,31 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <div className="mb-2">
-            <p>
-              海賊チャットが習得するすべての特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご確認ください。
-            </p>
-          </div>
-          <GuideList
-            items={[
-              {
-                title: "チャットの特技習得サブイベント一覧",
-                href: "/subevents/skill-chat",
-              },
-            ]}
-          ></GuideList>
-        </PageSummary>
+        <Section>
+          <PageSummary>
+            <div className="mb-2">
+              <p>
+                チャットが習得するすべての特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご確認ください。
+              </p>
+            </div>
+            <GuideList
+              isRelated={true}
+              items={[
+                {
+                  title: "チャットの特技習得サブイベント一覧",
+                  href: "/subevents/skill-chat",
+                },
+              ]}
+            ></GuideList>
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
 
         <Section>
-          <SectionTitle>おすすめ特技</SectionTitle>
+          <SectionTitle id="recommended-skills">
+            {toc["recommended-skills"]}
+          </SectionTitle>
           <div className="mb-8">
             <RoundedContainer className="grid grid-cols-2 gap-3">
               <RoundedItem title="ローバーアイテム">
@@ -128,7 +141,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="skill">チャットの特技一覧</SectionTitle>
+          <SectionTitle type="skill" id="chat-skills">
+            {toc["chat-skills"]}
+          </SectionTitle>
           <SkillPropertyList skills={skills} />
         </Section>
       </article>

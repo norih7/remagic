@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
@@ -29,22 +30,27 @@ export const metadata = {
     canonical,
   },
 };
+const toc = {
+  "fog-skill-priorities": "フォッグの特技習得優先度",
+  "fog-skill-events": "フォッグの特技習得イベント一覧",
+};
+
 export default async function HomePage() {
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <Section>
-          <Title>
-            <SkillIcon />
-            フォッグの特技習得
-          </Title>
-          <p>
+          <PageSummary>
             フォッグがサブイベントで習得していく属性攻撃と最終技の「エレメンタルマスター」の習得方法を解説するページです。フォッグはキャンセラーの入手により技を連携できるようになるのですべての技を習得することを推奨します。
-          </p>
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>フォッグの特技習得優先度</SectionTitle>
+          <SectionTitle id="fog-skill-priorities">
+            {toc["fog-skill-priorities"]}
+          </SectionTitle>
           <div className="mb-4">
             <CardList
               list={[
@@ -60,7 +66,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>フォッグの特技習得イベント一覧</SectionTitle>
+          <SectionTitle id="fog-skill-events">
+            {toc["fog-skill-events"]}
+          </SectionTitle>
           <Information title="サブイベント発生の前提条件">
             フォッグをパーティーメンバーに加えた状態で、以下の各地のスポットへ向かうことでイベントが進行・発生します。
           </Information>

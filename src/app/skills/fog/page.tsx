@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
 import SkillPropertyList from "@/components/SkillPropertyList";
@@ -22,6 +23,11 @@ export const metadata = {
   alternates: {
     canonical,
   },
+};
+
+const toc = {
+  "recommended-skills": "おすすめ特技",
+  "fog-skills": "フォッグの特技一覧",
 };
 
 export default async function HomePage() {
@@ -91,13 +97,15 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
+        <Section>
+          <PageSummary>
           <div className="mb-2">
             <p>
               フォッグの特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細情報については、専用のサブイベント解説ページをご確認ください。
             </p>
           </div>
           <GuideList
+            isRelated={true}
             items={[
               {
                 title: "フォッグの特技習得サブイベント一覧",
@@ -105,10 +113,16 @@ export default async function HomePage() {
               },
             ]}
           ></GuideList>
-        </PageSummary>
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
+
 
         <Section>
-          <SectionTitle>おすすめ特技</SectionTitle>
+          <SectionTitle id="recommended-skills">
+            {toc["recommended-skills"]}
+          </SectionTitle>
           <div className="mb-8">
             <RoundedContainer className="grid grid-cols-2 gap-3">
               <RoundedItem title="アクアスパイラル">
@@ -125,7 +139,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="skill">フォッグの特技一覧</SectionTitle>
+          <SectionTitle type="skill" id="fog-skills">
+            {toc["fog-skills"]}
+          </SectionTitle>
           <SkillPropertyList skills={skills} />
         </Section>
       </article>

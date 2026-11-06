@@ -1,4 +1,5 @@
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import PageSummary from "@/components/PageSummary";
 import GuideList from "@/components/GuideList";
 import SkillPropertyList from "@/components/SkillPropertyList";
@@ -26,6 +27,11 @@ export const metadata = {
   alternates: {
     canonical,
   },
+};
+
+const toc = {
+  "rid-mystic-arts": "リッドの秘奥義一覧",
+  "farth-mystic-arts": "ファラの秘奥義一覧",
 };
 
 export default async function HomePage() {
@@ -164,23 +170,19 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <div className="mb-2">
-            <p>
-              リッドとファラが使える秘奥義の条件や発動方法、特徴をまとめています
-            </p>
-          </div>
-        </PageSummary>
-        {/* 
-      <section className="mb-12">
-        <SectionTitle type="data">おすすめの特技</SectionTitle>
-        <div className="advice">
-          <p>準備中</p>
-        </div>
-      </section> */}
+        <Section>
+          <PageSummary>
+            リッドとファラが使える秘奥義の条件や発動方法、特徴をまとめています
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
+
 
         <Section>
-          <SectionTitle type="skill">リッドの秘奥義一覧</SectionTitle>
+          <SectionTitle type="skill" id="rid-mystic-arts">
+            {toc["rid-mystic-arts"]}
+          </SectionTitle>
           {/* <div className="mb-8">
           <p>
             リッドの秘奥義でダメージを与えるために積極的に使うのは「緋凰絶炎衝」です。
@@ -191,7 +193,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="skill">ファラの秘奥義一覧</SectionTitle>
+          <SectionTitle type="skill" id="farth-mystic-arts">
+            {toc["farth-mystic-arts"]}
+          </SectionTitle>
           {farthList}
         </Section>
         {/* <section className="mb-12">

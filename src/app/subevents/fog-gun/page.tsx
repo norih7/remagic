@@ -39,8 +39,10 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>フォッグの武器開発</Title>
           <ResponsiveImage src="/subevents/fog-gun-assistance.jpg" />
+          <PageSummary>
+            フォッグの武器すべてティンシアのアジトでのサブイベントから入手します。フォッグの最強武器もこの開発で入手するためお見逃しなく。
+          </PageSummary>
           <Summary
             list={[
               {
@@ -57,9 +59,9 @@ export default async function HomePage() {
               },
             ]}
           />
-          <p>
-            フォッグの武器すべてティンシアのアジトでのサブイベントから入手します。フォッグの最強武器もこの開発で入手するためお見逃しなく。
-          </p>
+        </Section>
+        <Section>
+          <SectionTitle>フォッグの武器開発の流れ</SectionTitle>
           <p>
             フォッグをパーティに加入させた状態でアジトの部下に話かけると1回20,000ガルドの支援金を渡し、総額が一定以上となる武器を入手できます。また武器の受け取りは合計金額を満たせばよく、この部屋から出入りせずとも「寄付→話す」を繰り返せばよいです。
           </p>

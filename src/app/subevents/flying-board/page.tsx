@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import EventCondition from "@/components/EventCondition";
@@ -29,13 +30,23 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "key-item-locations": "キーアイテムの入手方法",
+  "complete-and-use-flying-board": "飛行艇の完成と操作方法",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>飛行艇入手</Title>
           <ResponsiveImage src="/subevents/flying-board-field.jpg" />
+          <PageSummary>
+            ストーリー終盤になると、バンエルティア号に「飛行艇」を搭載できるようになります。飛行艇の入手のためにはふたつの重要キーアイテム
+            <strong>「やみのたま」</strong>と<strong>「ひかりのたま」</strong>
+            を集める必要があります。ただし、「やみのたま」が最後の決戦の舞台となるシゼル城にあるため、飛行艇が本格的に完成・利用可能になるのはゲームの最終盤となります。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -52,15 +63,14 @@ export default async function HomePage() {
               },
             ]}
           />
-          <p>
-            ストーリー終盤になると、バンエルティア号に「飛行艇」を搭載できるようになります。飛行艇の入手のためにはふたつの重要キーアイテム
-            <strong>「やみのたま」</strong>と<strong>「ひかりのたま」</strong>
-            を集める必要があります。ただし、「やみのたま」が最後の決戦の舞台となるシゼル城にあるため、飛行艇が本格的に完成・利用可能になるのはゲームの最終盤となります。
-          </p>
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>キーアイテムの入手方法</SectionTitle>
+          <SectionTitle id="key-item-locations">
+            {toc["key-item-locations"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>1. やみのたまの入手</h3>
             <ResponsiveImage src="/subevents/flying-board-dark.jpg" />
@@ -127,7 +137,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>飛行艇の完成と操作方法</SectionTitle>
+          <SectionTitle id="complete-and-use-flying-board">
+            {toc["complete-and-use-flying-board"]}
+          </SectionTitle>
           <ResponsiveImage src="/subevents/flying-board-set.jpg" />
           <p>
             「やみのたま」と「ひかりのたま」の2つを改造ドックのアイフリード像にはめ込むと、バンエルティア号が改造されて「飛行艇」が搭載されます。入手したたまは上記画像のようにアイフリード像の左右の窪みを調べるとはめ込むことができます。

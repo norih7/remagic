@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import EventCondition from "@/components/EventCondition";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import StarRating from "@/components/StarRating";
 import RunePropertyList from "@/components/RunePropertyList";
 import Information from "@/components/Information";
@@ -435,6 +436,11 @@ const runeItems = [
   },
 ];
 
+const toc = {
+  "rune-bottle-guide": "ルーンボトル活用ガイド",
+  "rune-bottle-transformations": "ルーンボトルの変化一覧",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const rows = itemsData
@@ -452,25 +458,16 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>ルーンボトル</Title>
-          アイテムを別アイテムに変化させるルーンボトルについて解説します。
+          <PageSummary>
+            アイテムを別アイテムに変化させるルーンボトルについて解説します。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
-        {/* <div className="mb-12">
-        <h4 className="mb-2">目次</h4>
-        <ul className="flex">
-          <li className="bg-gray-200 rounded-lg mr-2 px-3 py-1">
-            ルーンボトルの説明
-          </li>
-          <li className="bg-gray-200 rounded-lg mr-2 px-3 py-1">
-            ルーンボトルの無限購入
-          </li>
-          <li className="bg-gray-200 rounded-lg mr-2 px-3 py-1">
-            ルーンボトルのアイテム変化一覧
-          </li>
-        </ul>
-      </div> */}
         <Section>
-          <SectionTitle data="about">ルーンボトル活用ガイド</SectionTitle>
+          <SectionTitle data="about" id="rune-bottle-guide">
+            {toc["rune-bottle-guide"]}
+          </SectionTitle>
           <div className="mb-4">
             <p>
               ルーンボトルはアイテムを変化させる便利なツールですが、必ずしも有利になるとは限りません。効率的な運用を心がけましょう。
@@ -515,7 +512,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ルーンボトルの変化一覧</SectionTitle>
+          <SectionTitle id="rune-bottle-transformations">
+            {toc["rune-bottle-transformations"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>オススメ度は以下の基準としています</p>
             <CardList

@@ -1,4 +1,3 @@
-
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
 import Information from "@/components/Information";
@@ -94,15 +93,15 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-<PageSummary>
-        エターニアの敵がドロップするアイテム（消費アイテム、装備品）の一覧ページです。
-      </PageSummary>
+        <PageSummary>
+          エターニアの敵がドロップするアイテム（消費アイテム、装備品）の一覧ページです。
+        </PageSummary>
 
-      <Section>
-        <SectionTitle>ドロップアイテム一覧</SectionTitle>
-        {itemDropList}
-      </Section>
-    </article>
+        <Section>
+          <SectionTitle>ドロップアイテム一覧</SectionTitle>
+          {itemDropList}
+        </Section>
+      </article>
     </Main>
   );
 }

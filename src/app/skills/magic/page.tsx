@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import EventCondition from "@/components/EventCondition";
 import Tag from "@/components/Tag";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import { Skill } from "@/components/MagicPropertyList";
 import MagicPropertyList from "@/components/MagicPropertyList";
 import { skillLinks, elementMap } from "@/constants";
@@ -24,6 +25,11 @@ export const metadata = {
   alternates: {
     canonical,
   },
+};
+
+const toc = {
+  "recommended-spells-and-fringe": "おすすめ晶霊術とフリンジ",
+  "spirit-spells": "晶霊術一覧",
 };
 
 export default async function HomePage() {
@@ -613,11 +619,19 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          エターニアの晶霊術一覧ページです。フリンジのシミュレータでどの組み合わせで術が発生するかを確認することもできます。
-        </PageSummary>
         <Section>
-          <SectionTitle>おすすめ晶霊術とフリンジ</SectionTitle>
+          <PageSummary>
+          エターニアの晶霊術一覧ページです。フリンジのシミュレータでどの組み合わせで術が発生するかを確認することもできます。
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
+
+
+        <Section>
+          <SectionTitle id="recommended-spells-and-fringe">
+            {toc["recommended-spells-and-fringe"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>おすすめ晶霊術</h3>
             <RoundedContainer className="grid grid-cols-2 gap-3">
@@ -673,8 +687,11 @@ export default async function HomePage() {
             </RoundedContainer>
           </div>
         </Section>
+
         <Section>
-          <SectionTitle type="skill">晶霊術一覧</SectionTitle>
+          <SectionTitle type="skill" id="spirit-spells">
+            {toc["spirit-spells"]}
+          </SectionTitle>
           <MagicPropertyList skills={skills} />
         </Section>
       </article>

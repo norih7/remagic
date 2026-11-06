@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import LocationItems from "@/components/LocationItems";
 import LocationLenses from "@/components/LocationLenses";
 import { getLocationItemsData } from "@/lib/db";
@@ -31,18 +32,24 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "unlock-aifread-tomb": "アイフリードの墓の出現方法",
+  "dungeon-overview": "ダンジョン概要",
+  "dungeon-walkthrough": "ダンジョン攻略",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const lensesData = await getLocationLensesData();
 
   return (
-    <Main title={title}>
+    <Main title={title} type="key-item">
       <article>
         <Section>
-          <Title>
-            <KeyItemIcon />
-            アイフリードの墓
-          </Title>
+          <PageSummary>
+            アイフリードの墓はインフェリア地方に存在する隠しダンジョンの一つで、ボスの出現しない探索型のエリアです。主な目的は、飛行艇を作成するために不可欠な「ひかりのたま」を回収することとなります。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -60,12 +67,13 @@ export default async function HomePage() {
               },
             ]}
           />
-          <p>
-            アイフリードの墓はインフェリア地方に存在する隠しダンジョンの一つで、ボスの出現しない探索型のエリアです。主な目的は、飛行艇を作成するために不可欠な「ひかりのたま」を回収することとなります。
-          </p>
+
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>アイフリードの墓の出現方法</SectionTitle>
+          <SectionTitle id="unlock-aifread-tomb">
+            {toc["unlock-aifread-tomb"]}
+          </SectionTitle>
           <ResponsiveImage src="/extras/secret-aifread-flag.jpg" />
           <p>
             ダンジョンを出現させるには、遠征の橋にある改造ドックにてアイフリード像を調べ、上記の手がかりを聞き出す必要があります。改造ドックへは、インフェリアおよびセレスティアの遠征の橋にあるトラベルメニューから「中継基地へ」→「反転ドーム」→「改造ドック」の順に選択していくことでアクセス可能です。
@@ -76,7 +84,9 @@ export default async function HomePage() {
           </p>
         </Section>
         <Section>
-          <SectionTitle>ダンジョン概要</SectionTitle>
+          <SectionTitle id="dungeon-overview">
+            {toc["dungeon-overview"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>
               アイフリードの墓では、エントランスに置かれたアイフリードの胸像に3種類の専用パーツをはめ込むと隠し通路が通じ、その奥で「ひかりのたま」が手に入ります。
@@ -86,7 +96,9 @@ export default async function HomePage() {
           </div>
         </Section>
         <Section>
-          <SectionTitle>ダンジョン攻略</SectionTitle>
+          <SectionTitle id="dungeon-walkthrough">
+            {toc["dungeon-walkthrough"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>「アイフリードのひげ」の入手手順</h3>
             <p>

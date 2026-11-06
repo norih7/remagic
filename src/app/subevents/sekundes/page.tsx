@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -32,19 +33,25 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "find-and-contract-sekundes": "ゼクンドゥスの場所と契約",
+  "use-sekundes": "ゼクンドゥスの活用",
+  "fight-sekundes": "ゼクンドゥスとの戦闘",
+};
+
 export default async function HomePage() {
   const styles = {
     card: "border border-slate-300 rounded-md p-3 mb-3",
     header: "text-[1rem]",
   };
   return (
-    <Main title={title}>
+    <Main title={title} type="skill">
       <article>
         <Section>
-          <Title>
-            <SkillIcon />
-            ゼクンドゥス
-          </Title>
+          <PageSummary>
+            ラストダンジョン「シゼル城」にいる隠し大晶霊ゼクンドゥスについて解説します。ゼクンドゥスは非常に強力な大晶霊であり、特定の場所に辿り着けば簡単に契約できるためシゼル城に到着してから早めに契約することを推奨します。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -61,12 +68,13 @@ export default async function HomePage() {
               },
             ]}
           />
-          <p>
-            ラストダンジョン「シゼル城」には大晶霊ゼクンドゥスがいて契約することができます。ゼクンドゥスは非常に強力で、特定の場所に辿り着けば簡単に契約できるためシゼル城に到着してから早めに契約することを推奨します。
-          </p>
+
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>ゼクンドゥスの場所と契約</SectionTitle>
+          <SectionTitle id="find-and-contract-sekundes">
+            {toc["find-and-contract-sekundes"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>ゼクンドゥスの場所</h3>
             <ResponsiveImage src="/subevents/sekundes-location.jpg" />
@@ -94,7 +102,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ゼクンドゥスの活用</SectionTitle>
+          <SectionTitle id="use-sekundes">{toc["use-sekundes"]}</SectionTitle>
           <p>
             ゼクンドゥスと契約後、フリンジで以下の術を習得可能です。ディストーションとシューティングスターが特に強力です。
           </p>
@@ -125,7 +133,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ゼクンドゥスとの戦闘</SectionTitle>
+          <SectionTitle id="fight-sekundes">
+            {toc["fight-sekundes"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>基本情報</h3>
             <RoundedContainer title="ゼクンドゥスの情報">

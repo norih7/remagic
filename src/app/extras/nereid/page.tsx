@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import LocationItems from "@/components/LocationItems";
 import LocationLenses from "@/components/LocationLenses";
 import { getLocationItemsData } from "@/lib/db";
@@ -18,6 +19,7 @@ import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
+import Summary from "@/components/Summary";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -34,6 +36,14 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "reach-nereid-labyrinth": "ネレイドの迷宮への行き方",
+  "before-entering-dungeon": "ダンジョンに挑む前に",
+  "dungeon-walkthrough": "ダンジョン攻略",
+  "solo-boss-strategy": "1人で討伐するボス攻略",
+  "final-boss-strategy": "ラスボス攻略",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const lensesData = await getLocationLensesData();
@@ -41,31 +51,37 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          ネレイドの迷宮は全6階層で構成される最高難易度の隠しダンジョンです。ランダムに作成される迷宮を進み、各階層のボスを倒して最深部のネレイドを目指します。探索中の消耗を抑え、1〜5階層の単独ボス戦を突破する準備が重要です。
-        </PageSummary>
         <Section>
-          <Title>ネレイドの迷宮</Title>
-          <div className="mb-4 grid grid-cols-1 gap-2">
-            <RoundedInlineList title="報酬">
-              グーングニル、ペルシャブーツ、ミスティシンボルなどの超強力装備
-            </RoundedInlineList>
-            <RoundedInlineList title="場所">
-              オルバース界面マップ
-            </RoundedInlineList>
-            <RoundedInlineList title="発生">
-              シゼル城到着後 ※機種によって異なる
-            </RoundedInlineList>
-          </div>
-          <p>
-            ネレイドの迷宮は高難易度の隠しダンジョンです。1〜5階層はキャラクター1人で探索とボス戦に挑み、6階層では自由にパーティを組んでネレイドと戦います。クリアを目指す場合はLv80以上での挑戦を推奨します。
-          </p>
-          <p>
-            各階層のボスを倒した時点で、先へ進まずにダンジョンを抜けることもできます。何度でも挑戦できるため、準備が足りないと感じたら無理に最深部まで進まず、一度脱出して態勢を整えましょう。
-          </p>
+          <PageSummary>
+          ネレイドの迷宮は全6階層で構成される最高難易度の隠しダンジョンです。ランダムに作成される迷宮を進み、各階層のボスを倒して最深部のネレイドを目指します。探索中の消耗を抑え、1〜5階層の単独ボス戦を突破する準備が重要です。
+          </PageSummary>
+
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value:
+                  "グーングニル、ペルシャブーツ、ミスティシンボルなどの超強力装備",
+              },
+              { label: "場所", value: "オルバース界面マップ" },
+              { label: "発生", value: "シゼル城到着後 ※機種によって異なる" },
+            ]}
+          />
+          <Information type="warning" title="注意点">
+            <p>
+              ネレイドの迷宮は高難易度の隠しダンジョンです。1〜5階層はキャラクター1人で探索とボス戦に挑み、6階層では自由にパーティを組んでネレイドと戦います。クリアを目指す場合はLv80以上での挑戦を推奨します。
+            </p>
+            <p>
+              各階層のボスを倒した時点で、先へ進まずにダンジョンを抜けることもできます。何度でも挑戦できるため、準備が足りないと感じたら無理に最深部まで進まず、一度脱出して態勢を整えましょう。
+            </p>
+          </Information>
+
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>ネレイドの迷宮への行き方</SectionTitle>
+          <SectionTitle id="reach-nereid-labyrinth">
+            {toc["reach-nereid-labyrinth"]}
+          </SectionTitle>
           <ResponsiveImage src="/extras/nereid-location.jpg" />
           <h3>リマスター版</h3>
           <div className="mb-8">
@@ -91,7 +107,9 @@ export default async function HomePage() {
           </div>
         </Section>
         <Section>
-          <SectionTitle>ダンジョンに挑む前に</SectionTitle>
+          <SectionTitle id="before-entering-dungeon">
+            {toc["before-entering-dungeon"]}
+          </SectionTitle>
           <p>
             エターニアの最高難易度のダンジョンであるため徹底的な準備が必要です。
           </p>
@@ -146,7 +164,9 @@ export default async function HomePage() {
           </div>
         </Section>
         <Section>
-          <SectionTitle>ダンジョン攻略</SectionTitle>
+          <SectionTitle id="dungeon-walkthrough">
+            {toc["dungeon-walkthrough"]}
+          </SectionTitle>
           <Information title="探索中の注意点">
             <p>
               基本的にはエンカウントする敵との戦闘はすべて逃げることを推奨します。無駄な消耗を避けてボス戦に備え、薬草をドロップする敵と戦う場合は料理で回復しましょう。
@@ -165,7 +185,9 @@ export default async function HomePage() {
           </div>
         </Section>
         <Section>
-          <SectionTitle>1人で討伐するボス攻略</SectionTitle>
+          <SectionTitle id="solo-boss-strategy">
+            {toc["solo-boss-strategy"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>1階層: エレメンタラー戦</h3>
             <ResponsiveImage src="/extras/nereid-1f-boss.jpg" />
@@ -234,7 +256,9 @@ export default async function HomePage() {
           </div>
         </Section>
         <Section>
-          <SectionTitle>ラスボス攻略</SectionTitle>
+          <SectionTitle id="final-boss-strategy">
+            {toc["final-boss-strategy"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>ネレイド戦</h3>
             <p>

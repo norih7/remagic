@@ -1,5 +1,6 @@
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import Information from "@/components/Information";
 import RoundedItem from "@/components/RoundedItem";
 import { deepLinks } from "@/constants";
@@ -29,13 +30,25 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "wind-blade-infinite-combo": "風刃縛封による無限コンボ",
+  "blue-earth": "ブルーアース",
+  "ice-needle-infinite-combo": "アイスニードル連発による無限コンボ",
+  "remaster-auto-battle": "リマスター版によるオート戦闘",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          エターニアのレベル上げに関する情報をまとめます。
-        </PageSummary>
+        <Section>
+          <PageSummary>
+            エターニアのレベル上げに関する情報をまとめます。
+          </PageSummary>
+
+          <ToC list={toc} />
+        </Section>
+
 
         <Section>
           {/* <SectionTitle>レベルアップ</SectionTitle>
@@ -48,7 +61,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>風刃縛封による無限コンボ</SectionTitle>
+          <SectionTitle id="wind-blade-infinite-combo">
+            {toc["wind-blade-infinite-combo"]}
+          </SectionTitle>
           <div className="mb-4">
             <div className="grid grid-cols-2 gap-2 mb-2">
               <RoundedInlineList title="推奨度">
@@ -109,7 +124,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ブルーアース</SectionTitle>
+          <SectionTitle id="blue-earth">{toc["blue-earth"]}</SectionTitle>
           <div className="mb-4">
             <div className="grid grid-cols-2 gap-2 mb-2">
               <RoundedInlineList title="推奨度">
@@ -141,7 +156,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>アイスニードル連発による無限コンボ</SectionTitle>
+          <SectionTitle id="ice-needle-infinite-combo">
+            {toc["ice-needle-infinite-combo"]}
+          </SectionTitle>
           <div className="mb-4">
             <div className="grid grid-cols-2 gap-2 mb-2">
               <RoundedInlineList title="推奨度">
@@ -189,7 +206,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>リマスター版によるオート戦闘</SectionTitle>
+          <SectionTitle id="remaster-auto-battle">
+            {toc["remaster-auto-battle"]}
+          </SectionTitle>
           <div className="mb-4">
             <div className="grid grid-cols-2 gap-2 mb-2">
               <RoundedInlineList title="推奨度">

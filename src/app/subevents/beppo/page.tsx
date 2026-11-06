@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
 import ResponsiveImage from "@/components/ResponsiveImage";
@@ -32,72 +33,74 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "event-details": "イベントの詳細",
+  "after-returning-to-infernia": "インフェリア帰還後",
+};
+
 export default async function HomePage() {
   const styles = {
     card: "border border-slate-300 rounded-md p-3 mb-3",
     header: "text-[1rem]",
   };
   return (
-    <Main title={title}>
+    <Main title={title} type="time-limit">
       <article>
         <Section>
-          <div className="mb-3">
-            <Title>
-              <TimeLimitIcon />
-              ベッポのかくれんぼ
-            </Title>
-            <Summary
-              list={[
-                {
-                  label: "報酬",
-                  value: (
-                    <ul className="flex flex-wrap gap-x-2">
-                      <li>
-                        <LinkItem
-                          name="ルーンボトル"
-                          href="/systems/item/43"
-                          key={1}
-                          thin={true}
-                        />
-                      </li>
-                      <li>
-                        <LinkItem
-                          name="ドエニスのポプリ"
-                          href="/systems/item/285"
-                          key={2}
-                          thin={true}
-                        />
-                      </li>
-                    </ul>
-                  ),
-                },
-                {
-                  label: "場所",
-                  value: "バロールの町",
-                },
-                {
-                  label: "発生",
-                  value: "バロールの町へ到着後 ※時限イベント",
-                },
-              ]}
+          <PageSummary>
+            バロールの露天で遭遇した盗賊少年ベッポとかくれんぼするサブイベントが発生します。このイベントでは貴重なルーンボトルを入手でき、ストーリー後半ではドエニスのポプリを入手できます。
+            ドエニスのポプリはジイニのオークションで高値で取引されるアイテム。
+            <strong>
+              このイベントの発生には時間制限があります。セレスティアへ渡る前までにイベントを発生させていないと「ドエニスのポプリ」が手に入らないため注意してください。
+            </strong>
+          </PageSummary>
+
+          <Summary
+            list={[
+              {
+                label: "報酬",
+                value: (
+                  <ul className="flex flex-wrap gap-x-2">
+                    <li>
+                      <LinkItem
+                        name="ルーンボトル"
+                        href="/systems/item/43"
+                        key={1}
+                        thin={true}
+                      />
+                    </li>
+                    <li>
+                      <LinkItem
+                        name="ドエニスのポプリ"
+                        href="/systems/item/285"
+                        key={2}
+                        thin={true}
+                      />
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                label: "場所",
+                value: "バロールの町",
+              },
+              {
+                label: "発生",
+                value: "バロールの町へ到着後 ※時限イベント",
+              },
+            ]}
+          />
+          <div className="mb-4">
+            <GuideList
+              isRelated={true}
+              items={[{ title: "ルーンボトル解説", href: "/systems/rune" }]}
             />
           </div>
-          <div className="mb-4">
-            <p>
-              バロールの露天で遭遇した盗賊少年ベッポとかくれんぼするサブイベントが発生します。このイベントでは貴重なルーンボトルを入手でき、ストーリー後半ではドエニスのポプリを入手できます。
-              ドエニスのポプリはジイニのオークションで高値で取引されるアイテム。
-              <strong>
-                このイベントの発生には時間制限があります。セレスティアへ渡る前までにイベントを発生させていないと「ドエニスのポプリ」が手に入らないため注意してください。
-              </strong>
-            </p>
-          </div>
-          <GuideList
-            isRelated={true}
-            items={[{ title: "ルーンボトル解説", href: "/systems/rune" }]}
-          />
+          <ToC list={toc} />
         </Section>
+
         <Section>
-          <SectionTitle>イベントの詳細</SectionTitle>
+          <SectionTitle id="event-details">{toc["event-details"]}</SectionTitle>
           <div className="mb-4">
             <p>
               まずはレイス加入後〜セレスティア突入前までにバロールの町に隠れているベッポに話しかけることでイベントがスタートします。
@@ -149,7 +152,9 @@ export default async function HomePage() {
           </RoundedContainer>
         </Section>
         <section>
-          <SectionTitle>インフェリア帰還後</SectionTitle>
+          <SectionTitle id="after-returning-to-infernia">
+            {toc["after-returning-to-infernia"]}
+          </SectionTitle>
           <div className="mb-4">
             <ResponsiveImage src="/subevents/beppo-end.jpg" />
             <p>

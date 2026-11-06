@@ -7,7 +7,7 @@ type Props = {
 
 const RoundedInlineList = (props: Props) => {
   const { title, type = "default", children, onecol = false } = props;
-  const paddingType = type === "wide" ? "py-1.5" : "py-[4px]";
+  const paddingType = type === "wide" ? "py-1.5" : "py-0.5";
   const minWidth = onecol === true ? "min-w-[80px]" : null;
   return (
     <dl

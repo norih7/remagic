@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import LocationItems from "@/components/LocationItems";
 import LocationLenses from "@/components/LocationLenses";
 import { getLocationItemsData } from "@/lib/db";
@@ -33,6 +34,13 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "reach-jiini": "ジイニへの行き方",
+  "day-and-night": "ジイニの昼と夜",
+  "auction-items": "オークションへの出品",
+  "buy-auction-items": "オークションでのアイテム購入",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const lensesData = await getLocationLensesData();
@@ -46,7 +54,11 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>ジイニ</Title>
+          <PageSummary>
+            潜水艇入手後からセレスティアの隠しタウンであるジイニに行くことができます。ジイニではオークションの開催、フォッグの最強技「エレメントマスター」の習得などさまざまなイベントが発生します。
+            このページではジイニへの行き方や昼夜の仕組み、オークションでの効率的なジイニ稼ぎ（アイテム出品・リセット手法）、および購入できるアイテムのステップ一覧を解説します。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -65,15 +77,10 @@ export default async function HomePage() {
             ]}
           />
 
-          <div className="mb-8">
-            <p>
-              潜水艇入手後からセレスティアの隠しタウンであるジイニに行くことができます。ジイニではオークションの開催、フォッグの最強技「エレメントマスター」の習得などさまざまなイベントが発生します。
-              このページではジイニへの行き方や昼夜の仕組み、オークションでの効率的なジイニ稼ぎ（アイテム出品・リセット手法）、および購入できるアイテムのステップ一覧を解説します。
-            </p>
-          </div>
+          <ToC list={toc} />
         </Section>
         <Section>
-          <SectionTitle>ジイニへの行き方</SectionTitle>
+          <SectionTitle id="reach-jiini">{toc["reach-jiini"]}</SectionTitle>
           <p>
             ジイニへの行き方は2通りあります。最初は潜水艇でセレスティアの海底から向かうことしかできませんが、飛行艇を入手すると空から直接ジイニに降りることも可能となります。
           </p>
@@ -90,7 +97,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ジイニの昼と夜</SectionTitle>
+          <SectionTitle id="day-and-night">{toc["day-and-night"]}</SectionTitle>
           <div className="mb-8">
             <h3>昼の状態</h3>
             {/* <ResponsiveImage src="/extras/secret-jiini-first.jpg" /> */}
@@ -120,7 +127,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>オークションへの出品</SectionTitle>
+          <SectionTitle id="auction-items">{toc["auction-items"]}</SectionTitle>
           <div className="mb-8">
             <p>
               オークション会場では所有しているアイテムをオークションに出品できます。ジイニを稼ぐにはこのオークションが圧倒的におすすめです。高値がつくアイテムを出品してジイニを効率的に増やしましょう。
@@ -167,7 +174,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>オークションでのアイテム購入</SectionTitle>
+          <SectionTitle id="buy-auction-items">
+            {toc["buy-auction-items"]}
+          </SectionTitle>
           <ResponsiveImage src="/extras/secret-jiini-buy.jpg" />
           <p>
             アイテムの購入はオークション形式ではなく定額で購入できます。宿に泊まるなどして1晩以上空けることで次のSTEPになっていきループします。

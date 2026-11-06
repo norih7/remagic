@@ -2,6 +2,7 @@ import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import RoundedItem from "@/components/RoundedItem";
 import { subeventLinks } from "@/constants";
 import Section from "@/components/Section";
@@ -29,6 +30,11 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "encounter-locations-and-timing": "全6回の遭遇場所と発生時期一覧",
+  "ending-and-rewards": "イベントの結末と報酬",
+};
+
 export default async function HomePage() {
   const styles = {
     card: "border border-slate-300 rounded-md p-4 mb-4 bg-white",
@@ -36,20 +42,13 @@ export default async function HomePage() {
   };
 
   return (
-    <Main title={title}>
+    <Main title={title} type="time-limit">
       <article>
-        <PageSummary>
-          <p>
-            ファラの限定称号「あいのネゴシエーター」
-            を獲得できる隠しサブイベント「カトリーヌの恋愛イベント」の完全攻略ページです。ゲーム序盤から中盤にかけて非常に厳しい時限要素があり、見逃さずにベストエンドを達成するための全遭遇ポイントを解説します。
-          </p>
-        </PageSummary>
-
         <Section>
-          <Title>
-            <TimeLimitIcon />
-            カトリーヌの恋愛
-          </Title>
+          <PageSummary>
+            インフェリア各地を巡るピンク髪の女性「カトリーヌ」を追うサブイベントです。ストーリーの進行に合わせてどれだけ彼女に遭遇したかの回数によって最終的な結末が大きく変化し、すべてのイベント（全6回）を目撃してハッピーエンドを迎えることで、ファラの称号「あいのネゴシエーター」を獲得できます。
+          </PageSummary>
+
           <Summary
             list={[
               { label: "報酬", value: "ファラの称号「あいのネゴシエーター」" },
@@ -57,10 +56,6 @@ export default async function HomePage() {
               { label: "発生", value: "ミンツ到着後から ※次元イベント" },
             ]}
           />
-          <p>
-            インフェリア各地を巡るピンク髪の女性「カトリーヌ」を追うサブイベントです。ストーリーの進行に合わせてどれだけ彼女に遭遇したかの回数によって最終的な結末が大きく変化し、すべてのイベント（全6回）を目撃してハッピーエンドを迎えることで、ファラの称号「あいのネゴシエーター」を獲得できます。
-          </p>
-
           <Information type="warning" title="プレイ時の注意点">
             このイベントを完全クリアしても強力な武具やストーリー進行に必須のアイテム等は入手できません。あくまでファラの称号収集要素となるため、称号コンプリートにこだわりのない方はスルーしてもゲーム攻略上の支障はありません。また、
             <strong>
@@ -68,10 +63,14 @@ export default async function HomePage() {
             </strong>
             なので注意しましょう。
           </Information>
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <SectionTitle>全6回の遭遇場所と発生時期一覧</SectionTitle>
+          <SectionTitle id="encounter-locations-and-timing">
+            {toc["encounter-locations-and-timing"]}
+          </SectionTitle>
           <p className="mb-4">
             イベントはそれぞれの期間（ストーリーの区切り）を過ぎてしまうと二度と見られなくなります。こまめに各地を訪れてカトリーヌを探しましょう。
           </p>
@@ -144,7 +143,9 @@ export default async function HomePage() {
         </Section>
 
         <section>
-          <SectionTitle>イベントの結末と報酬</SectionTitle>
+          <SectionTitle id="ending-and-rewards">
+            {toc["ending-and-rewards"]}
+          </SectionTitle>
           <ResponsiveImage src="/subevents/catarine-end.jpg" />
           <p className="mb-4">
             物語が進行してインフェリアへ戻ってきた後（あるいは特定の終盤タイミング）、カトリーヌの居場所を訪ねることでイベントが完結します。これまでの遭遇回数に応じて結果が分かれます。

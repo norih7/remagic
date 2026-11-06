@@ -8,7 +8,7 @@ import Main from "@/components/SiteLayout/Main";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import RoundedContainer from "@/components/RoundedContainer";
 import RoundedItem from "@/components/RoundedItem";
-import TableOfContents from "@/components/TableOfContents";
+import ToC from "@/components/ToC";
 import Title from "@/components/Title";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
@@ -26,22 +26,31 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "missable-lenses": "消失するレンズ",
+  "catarine-romance": "カトリーヌの恋愛",
+  "beppo-hide-and-seek": "ベッポのかくれんぼ",
+  "monster-book": "モンスター図鑑",
+  "timed-titles": "時限要素の称号",
+};
+
 export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>エターニアの取り逃し要素</Title>
-          ストーリーを進めると発生しなくなるイベントや、ボス戦の前に回収しておきたいアイテムを解説します。
-          取り逃がし要素には称号や特殊アイテムの入手があります。取り逃がしがあっても称号やアイテム図鑑のコンプリートができないという程度で致命的ではありません。称号やアイテムの収集を楽しみたい方は、このページの情報を参考にしてください。
+          <PageSummary>
+            ストーリーを進めると発生しなくなるイベントや、ボス戦の前に回収しておきたいアイテムを解説します。
+            取り逃がし要素には称号や特殊アイテムの入手があります。取り逃がしがあっても称号やアイテム図鑑のコンプリートができないという程度で致命的ではありません。称号やアイテムの収集を楽しみたい方は、このページの情報を参考にしてください。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
         <Section>
-          <TableOfContents />
-        </Section>
-
-        <Section>
-          <SectionTitle>消失するレンズ</SectionTitle>
+          <SectionTitle id="missable-lenses">
+            {toc["missable-lenses"]}
+          </SectionTitle>
           <ResponsiveImage
             src="/subevents/lens-location53.jpg"
             alt="無くなる可能性があるジイニのオークション会場にあるレンズ"
@@ -82,7 +91,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>カトリーヌの恋愛</SectionTitle>
+          <SectionTitle id="catarine-romance">
+            {toc["catarine-romance"]}
+          </SectionTitle>
           <ResponsiveImage
             src="/subevents/catarine-end.jpg"
             alt="カトリーヌの恋愛イベントで獲得する称号"
@@ -109,7 +120,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ベッポのかくれんぼ</SectionTitle>
+          <SectionTitle id="beppo-hide-and-seek">
+            {toc["beppo-hide-and-seek"]}
+          </SectionTitle>
           <ResponsiveImage
             src="/subevents/beppo-5.jpg"
             alt="ベッポのかくれんぼ"
@@ -136,7 +149,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>モンスター図鑑</SectionTitle>
+          <SectionTitle id="monster-book">{toc["monster-book"]}</SectionTitle>
           <div className="mb-8">
             <p>
               モンスター図鑑のコンプリートには敵のドロップアイテムとアイテム盗みが必要です。スペクタクルで調べるだけではなく、実際にアイテムを入手する必要があります。エターニアではボスを含め、戦闘回数が限られている敵がいるため図鑑コンプリートを目指す場合は根気強さが必要です。
@@ -207,7 +220,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>時限要素の称号</SectionTitle>
+          <SectionTitle id="timed-titles">{toc["timed-titles"]}</SectionTitle>
           <div className="mb-8">
             エターニアの称号は時限イベントや特殊なものが多く通常プレイでは見逃してしまいがちです。称号自体には効果はないため通常はスルーしても良いのですが、エターニアをコンプリートしたい方は取り返しがつかない要素となります。
           </div>

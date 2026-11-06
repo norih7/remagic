@@ -16,7 +16,7 @@ import GuideList from "@/components/GuideList";
 import { storyLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
-import TableOfContents from "@/components/TableOfContents";
+import ToC from "@/components/ToC";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,6 +33,17 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "peiltie-port-town": "1.港町ペイルティ",
+  "ice-spirit-mountain": "2.氷晶霊の山",
+  "peiltie-to-imen-after-collapse": "3.ペイルティ〜アイメン（崩壊）",
+  tinnsia: "4.ティンシア",
+  "thunder-spirit-ruins": "5.雷晶霊の遺跡",
+  "prepare-for-barille-castle": "6.ティンシア〜バリル城突入の準備",
+  "barille-castle": "7.バリル城",
+  "after-barille-castle": "バリル城クリア後の流れ",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
@@ -42,18 +53,19 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            大晶霊セルシウスとの出会いから、物語が急展開を迎えるバリル城までの道のりを完全攻略！難所となる「雷晶霊の遺跡」や「バリル城」は詳細なマップ付きでスムーズな突破をサポートします。
-          </p>
-        </PageSummary>
-
         <Section>
-          <TableOfContents />
+          <PageSummary>
+            大晶霊セルシウスとの出会いから、物語が急展開を迎えるバリル城までの道のりを完全攻略！難所となる「雷晶霊の遺跡」や「バリル城」は詳細なマップ付きでスムーズな突破をサポートします。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
+
         <Section>
-          <SectionTitle type="flag">1.港町ペイルティ</SectionTitle>
+          <SectionTitle type="flag" id="peiltie-port-town">
+            {toc["peiltie-port-town"]}
+          </SectionTitle>
           <Information type="warning" title="ペイルティでの準備は必須">
             次の目的地である「氷晶霊の山」へ進むには、ペイルティできちんと防寒具を購入しておく必要があります。また、道具屋で販売されている「フリーズチェック」をあらかじめ1つ（可能ならリッド・ファラ用に2つ）購入するのを推奨します。20000ガルドと高価ですが、戦闘中の凍結を完全に防いでくれるため非常に重宝します。
           </Information>
@@ -107,7 +119,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">2.氷晶霊の山</SectionTitle>
+          <SectionTitle type="flag" id="ice-spirit-mountain">
+            {toc["ice-spirit-mountain"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>氷晶霊の山のマップ</h3>
             <Image
@@ -141,8 +155,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            3.ペイルティ〜アイメン（崩壊）
+          <SectionTitle type="flag" id="peiltie-to-imen-after-collapse">
+            {toc["peiltie-to-imen-after-collapse"]}
           </SectionTitle>
           <div className="mb-8">
             <h3>ペイルティの復興</h3>
@@ -174,7 +188,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">4.ティンシア</SectionTitle>
+          <SectionTitle type="flag" id="tinnsia">
+            {toc["tinnsia"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>
               ティンシアでの主な目的は、反乱軍「シルエシカ」のリーダーと接触すること。アジトは街の右奥エリアにある船の中にあります。
@@ -193,7 +209,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">5.雷晶霊の遺跡</SectionTitle>
+          <SectionTitle type="flag" id="thunder-spirit-ruins">
+            {toc["thunder-spirit-ruins"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>雷晶霊の遺跡の概要と全体マップ</h3>
             <Image
@@ -306,8 +324,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            6.ティンシア〜バリル城突入の準備
+          <SectionTitle type="flag" id="prepare-for-barille-castle">
+            {toc["prepare-for-barille-castle"]}
           </SectionTitle>
           <p>
             シルエシカのアジトに戻るとイベントが発生し、フォッグが離脱してキールが正式にパーティへ復帰します。アジトではホテルの宿泊券を貰えます。
@@ -326,7 +344,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">7.バリル城</SectionTitle>
+          <SectionTitle type="flag" id="barille-castle">
+            {toc["barille-castle"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>バリル城の全体マップと構造</h3>
             <Image
@@ -412,7 +432,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">バリル城クリア後の流れ</SectionTitle>
+          <SectionTitle type="flag" id="after-barille-castle">
+            {toc["after-barille-castle"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>ガレノスとシルエシカの合流</h3>
             <p>

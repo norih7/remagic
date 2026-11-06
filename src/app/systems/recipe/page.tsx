@@ -38,12 +38,12 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>料理一覧データ</Title>
-          <div className="mb-6">
+          <PageSummary>
             料理一覧データを掲載しています。ワンダーシェフの場所を画像付きで案内し、必要な食材の購入情報などもすべて掲載しています。
-          </div>
+          </PageSummary>
           <div className="mb-8">
             <GuideList
+              isRelated={true}
               items={[
                 {
                   title: "マスター料理の詳細はこちら",

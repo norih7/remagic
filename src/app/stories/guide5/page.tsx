@@ -15,7 +15,7 @@ import ResponsiveImage from "@/components/ResponsiveImage";
 import GifPlayer from "@/components/GifPlayer";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
-import TableOfContents from "@/components/TableOfContents";
+import ToC from "@/components/ToC";
 import GuideList from "@/components/GuideList";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
@@ -33,6 +33,19 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "seifert-temple": "1.セイファート神殿",
+  "chat-hut": "2.チャットの小屋",
+  "aifread-cave": "3.アイフリードの洞窟",
+  "undersea-hideout-search": "4.海底のアジト探し",
+  "seifert-garden": "5.セイファート庭園",
+  "infernian-castle-to-seifert-ring": "6.インフェリア城〜セイファートリング",
+  "tinnsia-to-barille-castle": "7.ティンシア〜バリル城",
+  "regulus-hill": "8.レグルスの丘",
+  "barille-castle-to-observatory": "9.バリル城〜セイファート観測所",
+  "shizel-castle": "10.シゼル城",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
@@ -42,18 +55,19 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            物語の終盤からエンディングまでの流れを丁寧に解説！ラストダンジョンとなる「シゼル城」のマップや仕掛けの攻略手順も詳しく掲載しています。
-          </p>
-        </PageSummary>
-
         <Section>
-          <TableOfContents />
+          <PageSummary>
+            物語の終盤からエンディングまでの流れを丁寧に解説！ラストダンジョンとなる「シゼル城」のマップや仕掛けの攻略手順も詳しく掲載しています。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
+
         <Section>
-          <SectionTitle type="flag">1.セイファート神殿</SectionTitle>
+          <SectionTitle type="flag" id="seifert-temple">
+            {toc["seifert-temple"]}
+          </SectionTitle>
           <div className="mb-4">
             <p>
               ストーリーが進行すると、セイファートの試練に挑むことになります。神殿内でのイベントを終えると、リッドが「極光壁」を習得します。
@@ -69,7 +83,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">2.チャットの小屋</SectionTitle>
+          <SectionTitle type="flag" id="chat-hut">
+            {toc["chat-hut"]}
+          </SectionTitle>
           <div className="mb-4">
             <p>
               小屋に到着してイベントをクリアすると「GPS」が入手でき、フィールド上で現在の緯度と経度が確認できるようになります。
@@ -86,7 +102,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">3.アイフリードの洞窟</SectionTitle>
+          <SectionTitle type="flag" id="aifread-cave">
+            {toc["aifread-cave"]}
+          </SectionTitle>
           <div className="mb-4">
             <p>
               バンエルティア号で座標（204,
@@ -106,7 +124,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">4.海底のアジト探し</SectionTitle>
+          <SectionTitle type="flag" id="undersea-hideout-search">
+            {toc["undersea-hideout-search"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>
               ストーリーを進めるには、海底の「アイフリードの台座（99,
@@ -177,7 +197,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">5.セイファート庭園</SectionTitle>
+          <SectionTitle type="flag" id="seifert-garden">
+            {toc["seifert-garden"]}
+          </SectionTitle>
           <div className="mb-4">
             <p>インフェリアの海中（GPS座標：169, 18）に位置しています。</p>
             <p>
@@ -233,8 +255,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            6.インフェリア城〜セイファートリング
+          <SectionTitle type="flag" id="infernian-castle-to-seifert-ring">
+            {toc["infernian-castle-to-seifert-ring"]}
           </SectionTitle>
           <div className="mb-8">
             <p>
@@ -270,7 +292,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">7.ティンシア〜バリル城</SectionTitle>
+          <SectionTitle type="flag" id="tinnsia-to-barille-castle">
+            {toc["tinnsia-to-barille-castle"]}
+          </SectionTitle>
           <div className="mb-4">
             <p>
               ティンシアで自由に動けるようになったら、アジトにいるフォッグのもとへ向かいます。
@@ -295,7 +319,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">8.レグルスの丘</SectionTitle>
+          <SectionTitle type="flag" id="regulus-hill">
+            {toc["regulus-hill"]}
+          </SectionTitle>
           <div className="mb-4">
             <p>
               ダンジョンは長いですが複雑な謎解きはありません。行き止まりやくぼみがある場所は、別の通路から岩を落として足場を作ることで先に進めるようになります。
@@ -317,8 +343,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            9.バリル城〜セイファート観測所
+          <SectionTitle type="flag" id="barille-castle-to-observatory">
+            {toc["barille-castle-to-observatory"]}
           </SectionTitle>
           <div className="mb-4">
             <p>
@@ -336,7 +362,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">10.シゼル城</SectionTitle>
+          <SectionTitle type="flag" id="shizel-castle">
+            {toc["shizel-castle"]}
+          </SectionTitle>
           <p>
             いよいよラストダンジョンです。マップ自体はコンパクトですが仕掛けが複雑なため、アイテムを十分に買い揃えてから挑みましょう。
           </p>

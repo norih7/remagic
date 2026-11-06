@@ -1,6 +1,7 @@
 import PageSummary from "@/components/PageSummary";
 import Information from "@/components/Information";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import { guideLinks } from "@/constants";
 import GuideList from "@/components/GuideList";
 import CardList from "@/components/CardLIst";
@@ -28,21 +29,29 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "remaster-highlights": "リマスター版の変更点ピックアップ",
+  "new-game-plus": "周回プレイ",
+  "psp-version-changes": "移植元のPSP版にまつわる仕様",
+  "other-changes": "その他変更点",
+  "remaster-walkthrough": "リマスター版の攻略に進む",
+};
+
 export default function Page() {
   return (
     <Main title={title}>
       <article>
         <Section>
-          <Title>リマスター版の紹介</Title>
-          <p>
+          <PageSummary>
             テイルズオブエターニアリマスター版の変更点や2周目以降の引き継ぎ要素、公式サイトに載っていないような変更点などを紹介します。
-          </p>
+          </PageSummary>
+          <ToC list={toc} />
         </Section>
 
         <Section>
           <div id="changes" className="scroll-mt-6">
-            <SectionTitle type="flag">
-              リマスター版の変更点ピックアップ
+            <SectionTitle type="flag" id="remaster-highlights">
+              {toc["remaster-highlights"]}
             </SectionTitle>
           </div>
           <div className="mb-8">
@@ -201,7 +210,7 @@ export default function Page() {
         </Section>
 
         <Section>
-          <SectionTitle>周回プレイ</SectionTitle>
+          <SectionTitle id="new-game-plus">{toc["new-game-plus"]}</SectionTitle>
           <div className="mb-8">
             <h3>2周目移行の引き継ぎ</h3>
             <RoundedContainer title="引き継ぎ可能なオプション">
@@ -258,7 +267,9 @@ export default function Page() {
 
         <Section>
           <div id="comparison" className="scroll-mt-6">
-            <SectionTitle type="flag">移植元のPSP版にまつわる仕様</SectionTitle>
+            <SectionTitle type="flag" id="psp-version-changes">
+              {toc["psp-version-changes"]}
+            </SectionTitle>
           </div>
           <div className="mb-8">
             <h3>グラフィックとFPS</h3>
@@ -314,7 +325,7 @@ export default function Page() {
         </Section>
 
         <Section>
-          <SectionTitle>その他変更点</SectionTitle>
+          <SectionTitle id="other-changes">{toc["other-changes"]}</SectionTitle>
           <p>その他気づいた変更点を追記中</p>
           <div className="mb-8">
             <RoundedContainer className="grid grid-cols-1 gap-3">
@@ -337,7 +348,9 @@ export default function Page() {
 
         <Section>
           <div id="guides" className="scroll-mt-6">
-            <SectionTitle type="flag">リマスター版の攻略に進む</SectionTitle>
+            <SectionTitle type="flag" id="remaster-walkthrough">
+              {toc["remaster-walkthrough"]}
+            </SectionTitle>
           </div>
           <p>
             追加機能を活用しながら進めたい方は、RE:MAGICの攻略情報もあわせてご利用ください。ストーリー順の回収要素や、見落としやすいイベント・戦闘の仕組みを確認できます。

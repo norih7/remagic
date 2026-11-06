@@ -1,6 +1,7 @@
 import { createMetaTitle } from "@/utils";
 import PageSummary from "@/components/PageSummary";
 import SectionTitle from "@/components/SectionTitle";
+import ToC from "@/components/ToC";
 import LocationItems from "@/components/LocationItems";
 import { getLocationItemsData } from "@/lib/db";
 import { extraLinks } from "@/constants";
@@ -29,6 +30,12 @@ export const metadata = {
   },
 };
 
+const toc = {
+  purpose: "主な目的",
+  "katz-village": "ねこにんの里",
+  "spirit-spring": "晶霊温泉",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
 
@@ -36,7 +43,10 @@ export default async function HomePage() {
     <Main title={title}>
       <article>
         <Section>
-          <Title>隠しタウン「ねこにんの里/晶霊温泉」</Title>
+          <PageSummary>
+            インフェリアとセレスティアそれぞれに隠されたタウンがあり、飛行艇を入手後から行くことができます。ねこにんの里はセレスティア、晶霊温泉はインフェリアにあります。サブイベントや貴重な食材購入もできるのでぜひ覚えておいてください。
+          </PageSummary>
+
           <Summary
             list={[
               {
@@ -53,12 +63,13 @@ export default async function HomePage() {
               },
             ]}
           />
-          <div className="mb-8">
-            <p>
-              インフェリアとセレスティアそれぞれに隠されたタウンがあり、飛行艇を入手後から行くことができます。ねこにんの里はセレスティア、晶霊温泉はインフェリアにあります。サブイベントや貴重な食材購入もできるのでぜひ覚えておいてください。
-            </p>
-          </div>
-          <h3>主な目的</h3>
+
+          <ToC list={toc} />
+        </Section>
+
+
+        <Section>
+          <SectionTitle id="purpose">{toc.purpose}</SectionTitle>
           <CardList
             list={[
               <>
@@ -74,7 +85,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>ねこにんの里</SectionTitle>
+          <SectionTitle id="katz-village">{toc["katz-village"]}</SectionTitle>
           <div className="mb-8">
             <p>
               セレスティアにある隠しタウン。可愛いねこにんが住んでいる村でマスター料理の共通食材である「パープルソディ」を購入できる場所です。パープルソディを入手できるのはねこにんの里と、ノームの集落の2箇所だけです。
@@ -101,7 +112,7 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle>晶霊温泉</SectionTitle>
+          <SectionTitle id="spirit-spring">{toc["spirit-spring"]}</SectionTitle>
           <div className="mb-8">
             <p>
               インフェリアにある隠しタウン。温泉があり入浴ができる場所です。ここではアイテムの購入などはありませんがチャットの特技習得などのサブイベントが発生します。

@@ -21,7 +21,7 @@ export const GuideList: React.FC<GuideListProps> = ({
   return (
     <div>
       {isRelated && (
-        <div className="inline-block bg-gray-600 px-3 py-0.5 mb-2 font-bold text-white rounded-lg text-xs">
+        <div className="inline-block bg-gray-600 px-3 py-0.5 mb-3 font-bold text-white rounded-lg text-xs">
           関連記事
         </div>
       )}

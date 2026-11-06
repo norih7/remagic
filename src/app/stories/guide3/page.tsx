@@ -16,7 +16,7 @@ import RoundedItem from "@/components/RoundedItem";
 import { storyLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
-import TableOfContents from "@/components/TableOfContents";
+import ToC from "@/components/ToC";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,6 +33,13 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "cape-fort-to-imen-station": "1.岬の砦〜アイメン駅",
+  "luishka-and-mine-station": "2.ルイシカ〜廃坑駅",
+  "earth-spirit-mine": "3.地晶霊の廃坑",
+  "chat-hut": "4.チャットの小屋",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
@@ -42,18 +49,19 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            セレスティアへ到着した後のストーリーを徹底攻略！「地晶霊の廃坑」や「チャットの小屋」といった難易度の高いダンジョンが連続するため、本記事のマップや攻略手順を参考に進めていきましょう。
-          </p>
-        </PageSummary>
-
         <Section>
-          <TableOfContents />
+          <PageSummary>
+            セレスティアへ到着した後のストーリーを徹底攻略！「地晶霊の廃坑」や「チャットの小屋」といった難易度の高いダンジョンが連続するため、本記事のマップや攻略手順を参考に進めていきましょう。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
+
         <Section>
-          <SectionTitle type="flag">1.岬の砦〜アイメン駅</SectionTitle>
+          <SectionTitle type="flag" id="cape-fort-to-imen-station">
+            {toc["cape-fort-to-imen-station"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>岬の砦</h3>
             <ol>
@@ -107,7 +115,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">2.ルイシカ〜廃坑駅</SectionTitle>
+          <SectionTitle type="flag" id="luishka-and-mine-station">
+            {toc["luishka-and-mine-station"]}
+          </SectionTitle>
           <div className="mb-8">
             <h3>ルイシカ</h3>
             <ol>
@@ -149,7 +159,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">3.地晶霊の廃坑</SectionTitle>
+          <SectionTitle type="flag" id="earth-spirit-mine">
+            {toc["earth-spirit-mine"]}
+          </SectionTitle>
           <div className="mb-8">
             <p>
               当ダンジョンは前半と後半（リフト起動後の下層）に分かれています。前半は入口付近の休憩所ロッカーからツールを取り出し、障害物を排除しながら進むスタイルです。主に「ダイナマイト」と「鍵」を使用します。「スコップ」は攻略必須ではありませんが、通路のショートカットや「コルレーンのつぼ」の入手に必要となります。
@@ -226,7 +238,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">4.チャットの小屋</SectionTitle>
+          <SectionTitle type="flag" id="chat-hut">
+            {toc["chat-hut"]}
+          </SectionTitle>
           <div className="mb-8">
             <ResponsiveImage src="/stories/guide3-chat-contraption.jpg" />
             <p>

@@ -16,7 +16,7 @@ import CardList from "@/components/CardLIst";
 import { storyLinks } from "@/constants";
 import Section from "@/components/Section";
 import Main from "@/components/SiteLayout/Main";
-import TableOfContents from "@/components/TableOfContents";
+import ToC from "@/components/ToC";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,6 +33,17 @@ export const metadata = {
   },
 };
 
+const toc = {
+  "forest-of-enchantment": "1.いざないの密林",
+  "infernian-capital": "2.王都インフェリア",
+  "infernian-port": "3.インフェリア港",
+  "barole-port-and-town": "4.バロール港〜商業の町バロール",
+  "wind-spirit-cave": "5.風晶霊の空洞",
+  "chambard-desert-town": "6.熱砂の町 シャンバール",
+  "fire-spirit-valley": "7.火晶霊の谷",
+  "mount-faros": "8.霊峰ファロース",
+};
+
 export default async function HomePage() {
   const itemsData = await getLocationItemsData();
   const recipesData = await getLocationRecipesData();
@@ -42,18 +53,19 @@ export default async function HomePage() {
   return (
     <Main title={title}>
       <article>
-        <PageSummary>
-          <p>
-            インフェリアからセレスティアの世界へ向かう「霊峰ファロース」までを解説。謎解きが複雑な「いざないの密林」はダンジョンマップ付きで解説！他のダンジョン内にもレンズがあるので取り逃がしがないように確認してください。
-          </p>
-        </PageSummary>
-
         <Section>
-          <TableOfContents containerId="main-content" />
+          <PageSummary>
+            インフェリアからセレスティアの世界へ向かう「霊峰ファロース」までを解説。謎解きが複雑な「いざないの密林」はダンジョンマップ付きで解説！他のダンジョン内にもレンズがあるので取り逃がしがないように確認してください。
+          </PageSummary>
+
+          <ToC list={toc} />
         </Section>
 
+
         <Section>
-          <SectionTitle type="flag">1.いざないの密林</SectionTitle>
+          <SectionTitle type="flag" id="forest-of-enchantment">
+            {toc["forest-of-enchantment"]}
+          </SectionTitle>
           <div className="mb-4">
             <p>
               序盤の難関ダンジョンの一つ。
@@ -129,7 +141,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">2.王都インフェリア</SectionTitle>
+          <SectionTitle type="flag" id="infernian-capital">
+            {toc["infernian-capital"]}
+          </SectionTitle>
           <p>
             町の奥にあるインフェリア城へ行くとイベント。その後も天文台、教会、インフェリア城とイベントが進行します。
             一連のイベントでリッド達が死刑から解放されたらインフェリア城の内部に入り込むことになります。
@@ -160,7 +174,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">3.インフェリア港</SectionTitle>
+          <SectionTitle type="flag" id="infernian-port">
+            {toc["infernian-port"]}
+          </SectionTitle>
           <Information type="warning" title="注意事項">
             インフェリア港で出航しようとするとキールとしばらくパーティから離脱します。致命的な取り逃し要素はありませんがキャンプのチャットをコンプリートしたい人はご注意ください。
           </Information>
@@ -177,8 +193,8 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">
-            4.バロール港〜商業の町バロール
+          <SectionTitle type="flag" id="barole-port-and-town">
+            {toc["barole-port-and-town"]}
           </SectionTitle>
           <div className="mb-8">
             <h3>バロール港</h3>
@@ -217,7 +233,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">5.風晶霊の空洞</SectionTitle>
+          <SectionTitle type="flag" id="wind-spirit-cave">
+            {toc["wind-spirit-cave"]}
+          </SectionTitle>
           <p>
             ダンジョンには特に難しい謎解きはありませんが、吹き上げてくる風にタイミングよく乗っかることが必要な場所が多くあります。風の吹上を観察し、慌てないで操作しましょう。
           </p>
@@ -245,7 +263,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">6.熱砂の町 シャンバール</SectionTitle>
+          <SectionTitle type="flag" id="chambard-desert-town">
+            {toc["chambard-desert-town"]}
+          </SectionTitle>
           <p>
             シャンバールは砂漠の真ん中にある町。火の大晶霊のいる「火晶霊の谷」をクリアするためにこの町で休憩をしたり、アイテムの補充をするようにしましょう。ショップで購入できるアイタムとしてはファラとメルディが装備できる「キッチンミトン」は火属性耐性+30%なので次のダンジョン攻略に特におすすめです！準備ができたら砂漠奥地にある「火晶霊の谷」へ向かいましょう。
           </p>
@@ -276,7 +296,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">7.火晶霊の谷</SectionTitle>
+          <SectionTitle type="flag" id="fire-spirit-valley">
+            {toc["fire-spirit-valley"]}
+          </SectionTitle>
           <p>
             ダンジョン内では灼熱のためウンディーネのサポートを受けて進んでいきます。ウンディーネのHPが0になるとサポートがなくなり、常時灼熱のダメージう受けることになります。一度ダンジョンから出ればHPは満タンとなるので、アイテム回収などでHPが危なくなったら無理せず引き返しましょう。
           </p>
@@ -306,7 +328,9 @@ export default async function HomePage() {
         </Section>
 
         <Section>
-          <SectionTitle type="flag">8.霊峰ファロース</SectionTitle>
+          <SectionTitle type="flag" id="mount-faros">
+            {toc["mount-faros"]}
+          </SectionTitle>
           <p>
             ファロースはエアリアルボードで向かう必要がありマップ中央下の孤島にあります。
             目的は霊峰の頂上にある「光の橋」で、ダンジョンに挑む前には一度教会で休憩してイベントを見る必要があります。

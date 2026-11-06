@@ -11,13 +11,17 @@ import { usePathname } from "next/navigation";
 import Breadcrumb from "@/components/Breadcrumb";
 import { useCategory } from "@/hooks/useCategory";
 import Menu from "./Menu";
+import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
+import SkillIcon from "@/components/Icons/SkillIcon";
+import KeyItemIcon from "@/components/Icons/KeyItemIcon";
 
 type Props = {
+  type?: string;
   title: string;
   children: React.ReactNode;
 };
 
-const Main = ({ title, children }: Props) => {
+const Main = ({ title, type, children }: Props) => {
   const pathname = usePathname();
   const category = useCategory();
   const test =
@@ -61,7 +65,14 @@ const Main = ({ title, children }: Props) => {
       <div className={styles.pageTitleArea}>
         <div className={`${styles.pageTitleInner} px-4 py-3`}>
           {test}
-          <h2 className="text-lg font-bold text-slate-800 leading-none">
+          <h2 className="text-lg font-bold text-slate-800 leading-none flex items-center">
+            {type === "time-limit" ? (
+              <TimeLimitIcon />
+            ) : type === "skill" ? (
+              <SkillIcon />
+            ) : type === "key-item" ? (
+              <KeyItemIcon />
+            ) : null}
             {title}
           </h2>
         </div>
