@@ -1,5 +1,5 @@
 import ContentLinks from "@/components/ContentLinks";
-import { storyLinks } from "@/constants";
+import { deepLinks, storyLinks } from "@/constants";
 import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
 import { skillLinks } from "@/constants";
@@ -22,6 +22,8 @@ type Link = {
   image?: string;
 };
 const featuredLinks: Link[] = [];
+featuredLinks.push(deepLinks["cless-and-arche"]);
+featuredLinks.push(deepLinks["herb"]);
 featuredLinks.push(extraLinks["valkyrie"]);
 featuredLinks.push(subeventLinks["flying-board"]);
 featuredLinks.push(storyLinks["guide3"]);
