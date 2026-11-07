@@ -20,6 +20,7 @@ import RoundedInlineList from "@/components/RoundedInlineList";
 import RoundedContainer from "../RoundedContainer";
 import Tag from "@/components/Tag";
 import Elements from "@/components/Elements";
+import ResponsiveImage from "../ResponsiveImage";
 
 type Element = keyof typeof elementMap;
 
@@ -35,6 +36,7 @@ export interface Skill {
   element: Element[];
   type?: string;
   pair?: string[];
+  image?: string;
 }
 
 // 修正点: PropertyListProps が Skill[] を受け取るように変更
@@ -110,6 +112,7 @@ export const SkillPropertyList: React.FC<SkillPropertyListProps> = ({
                 </div>
               </div>
             </div>
+            {skill.image && <ResponsiveImage src={skill.image} />}
             <div className="grid grid-cols-2 gap-2 mb-2">
               {displayItems.map((item, index) => (
                 <RoundedItem title={item.label} key={index}>

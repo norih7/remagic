@@ -88,18 +88,16 @@ export default async function HomePage() {
           <RoundedContainer>
             <h3 className={styles.header}>No1. イベント開始</h3>
             <ResponsiveImage src="/subevents/grid-sword-start.jpg" />
-            <RoundedItem title="説明">
-              まずは闘技場前にいる老人に話しかけることでイベントがスタートします。
-            </RoundedItem>
+            まずは闘技場前にいる老人に話しかけることでイベントがスタートします。
           </RoundedContainer>
           <RoundedContainer>
             <h3 className={styles.header}>
               No2. 街の探索（防具屋前の男性〜闘技場内の兵士）
             </h3>
             <ResponsiveImage src="/subevents/grid-sword-search.jpg" />
-            <RoundedItem title="説明" className="mb-4">
+            <div className="mb-3">
               インフェリアの町では下記の順番でグリップソードを探していきます。
-            </RoundedItem>
+            </div>
             <CardList
               list={[
                 <>
@@ -120,9 +118,7 @@ export default async function HomePage() {
           <RoundedContainer>
             <h3 className={styles.header}>No3. イベントの最後</h3>
             <ResponsiveImage src="/subevents/grid-sword-end.jpg" />
-            <RoundedItem title="説明">
-              グリップソードを入手してから老人に話しかけるとアクセサリ「スマッシュマント」を入手します。
-            </RoundedItem>
+            グリップソードを入手してから老人に話しかけるとアクセサリ「スマッシュマント」を入手します。
           </RoundedContainer>
           <Information type="warning" title="機種による違い">
             <p>

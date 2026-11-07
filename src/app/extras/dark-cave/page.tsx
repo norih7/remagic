@@ -15,6 +15,8 @@ import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import SkillIcon from "@/components/Icons/SkillIcon";
 import Summary from "@/components/Summary";
+import Expand from "@/components/Expand";
+import LinkItem from "@/components/LinkItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -44,6 +46,7 @@ export default async function HomePage() {
     <Main title={title} type="skill">
       <article>
         <Section>
+          <ResponsiveImage src="/extras/secret-dark-cave-shadow.jpg" />
           <PageSummary>
             闇の洞窟は、セレスティアの海底に潜む隠しダンジョンです。物語で「潜水艇」を入手した直後から挑戦でき、最奥の大晶霊「シャドウ」に勝利すると契約できます。出現モンスターは光属性が弱点なので、光武器を用意して臨むと攻略が楽になります。
           </PageSummary>
@@ -51,7 +54,25 @@ export default async function HomePage() {
             list={[
               {
                 label: "報酬",
-                value: "大晶霊「シャドウ」、レンズ",
+                value: (
+                  <ul className="flex flex-wrap gap-x-2">
+                    <li>
+                      <LinkItem
+                        name="大晶霊「シャドウ」"
+                        key="shadow"
+                        thin={true}
+                      />
+                    </li>
+                    <li>
+                      <LinkItem
+                        name="レンズ"
+                        href="/subevents/lens?id=54#detail"
+                        key="lens"
+                        thin={true}
+                      />
+                    </li>
+                  </ul>
+                ),
               },
               {
                 label: "場所",
@@ -71,11 +92,12 @@ export default async function HomePage() {
           </SectionTitle>
           <ResponsiveImage src="/extras/secret-dark-cave-location.jpg" />
           <p>
-            闇の洞窟はセレスティア世界の海中に位置しています。「バリル城」の海域から北東方向へ進んだ周辺で、潜水艇に乗り換えてGPS座標目安
-            (5,12)
-            付近へアプローチすると、ダンジョンの入り口を発見・進入することができます。
+            闇の洞窟はセレスティアの海中に位置しています。「ティンシア」から北東方向へ進んだ周辺で潜水艇に乗り換えてGPS座標目安
+            (5,12) へ進むとダンジョンがあります。
           </p>
-          <p></p>
+          <Expand title="ワールドマップ上の位置">
+            <ResponsiveImage src="/extras/secret-dark-cave-map.jpg" />
+          </Expand>
         </Section>
 
         <Section>

@@ -49,12 +49,13 @@ export default async function HomePage() {
       hit: 1,
       element: ["normal"],
       type: "特技",
+      image: "/skills/rid-demon-fang.jpg",
     },
     {
       name: "雷神剣",
       ruby: "らいじんけん",
       description:
-        "雷を纏った鋭い突きを繰り出す技。突きがクリーンヒットすると追加で雷属性の電撃ダメージが発生します。",
+        "雷を纏った鋭い突きを繰り出す技。突きがヒットすると追加で雷属性の電撃ダメージが発生します。",
       remarks: (
         <>
           <InlineCaption>派生技</InlineCaption>風雷神剣、雷神双破斬
@@ -65,12 +66,13 @@ export default async function HomePage() {
       hit: 2,
       element: ["thunder"],
       type: "特技",
+      image: "/skills/rid-lightning-blade.jpg",
     },
     {
       name: "虎牙破斬",
       ruby: "こがはざん",
       description:
-        "上段と下段を素早く切り払う2段攻撃。無駄のないキビキビとしたモーションで、ゲーム終盤まで長く頼れる特技です。",
+        "上段と下段を素早く切り払う2段攻撃。命中率も高く、無駄のないモーションでゲーム終盤まで長く頼れる特技です。虎牙破斬から奥義に連携すると非常に強力なイチオシの特技です。",
       remarks: (
         <>
           <InlineCaption>派生技</InlineCaption>虎牙連斬、雷神双破斬
@@ -81,6 +83,7 @@ export default async function HomePage() {
       hit: 2,
       element: ["normal"],
       type: "特技",
+      image: "/skills/rid-tiger-blade.jpg",
     },
     {
       name: "散沙雨",
@@ -97,6 +100,7 @@ export default async function HomePage() {
       hit: 5,
       element: ["normal"],
       type: "特技",
+      image: "/skills/rid-sword-rain.jpg",
     },
     {
       name: "裂空斬",
@@ -113,6 +117,7 @@ export default async function HomePage() {
       hit: 5,
       element: ["normal"],
       type: "特技",
+      image: "/skills/rid-tempest-strike.jpg",
     },
     {
       name: "風雷神剣",
@@ -130,6 +135,7 @@ export default async function HomePage() {
       hit: 3,
       element: ["wind", "thunder"],
       type: "特技",
+      image: "/skills/rid-super-lightning-blade.jpg",
     },
     {
       name: "魔神剣・双牙",
@@ -147,12 +153,13 @@ export default async function HomePage() {
       hit: 3,
       element: ["normal"],
       type: "特技",
+      image: "/skills/rid-twin-sonic-blade.jpg",
     },
     {
       name: "虎牙連斬",
       ruby: "こがれんざん",
       description:
-        "虎牙破斬をベースにパワーアップさせた優秀な攻撃。従来の虎牙破斬からこちらへ切り替えるプレイヤーが多い定番の技です。習得にはレベル条件のほかに「虎牙破斬」を150回以上使っている必要があります。",
+        "虎牙破斬をパワーアップさせた攻撃。空中での2撃が追加されて攻撃力がアップしています。消費TPを気にせず攻撃力を取る場合は虎牙破斬よりこちら。習得にはレベル条件のほかに「虎牙破斬」を150回以上使っている必要があります。",
       remarks: (
         <>
           <InlineCaption>派生技</InlineCaption>雷神双破斬、猛虎連撃破
@@ -164,6 +171,7 @@ export default async function HomePage() {
       hit: 4,
       element: ["normal"],
       type: "特技",
+      image: "/skills/rid-tiger-rage.jpg",
     },
     {
       name: "秋沙雨",
@@ -181,6 +189,7 @@ export default async function HomePage() {
       hit: 11,
       element: ["normal"],
       type: "奥義",
+      image: "/skills/rid-neo-swarm.jpg",
     },
     {
       name: "雷神双破斬",
@@ -193,6 +202,7 @@ export default async function HomePage() {
       hit: 4,
       element: ["thunder"],
       type: "奥義",
+      image: "/skills/rid-lightning-hammer.jpg",
     },
     {
       name: "魔神千裂破",
@@ -205,6 +215,7 @@ export default async function HomePage() {
       hit: 6,
       element: ["normal"],
       type: "奥義",
+      image: "/skills/rid-demonic-sword-rain.jpg",
     },
     {
       name: "魔神連牙斬",
@@ -217,6 +228,7 @@ export default async function HomePage() {
       hit: 4,
       element: ["normal"],
       type: "奥義",
+      image: "/skills/rid-sonic-chaos.jpg",
     },
     {
       name: "空破絶掌撃",
@@ -229,12 +241,13 @@ export default async function HomePage() {
       hit: 2,
       element: ["normal"],
       type: "奥義",
+      image: "/skills/rid-mega-sonic-thrus.jpg",
     },
     {
       name: "閃空裂破",
       ruby: "せんくうれっぱ",
       description:
-        "光のオーラを纏いながら敵集団を巻き込んで突進する技。光属性を帯びており、キャラの命中ステータスがしっかり育っていれば安定した活躍を見せます。",
+        "光のオーラを纏いながら敵集団を巻き込んで突進する技。光属性攻撃で、敵を吹き飛ばす効果も。",
       remarks: (
         <>
           <InlineCaption>派生技</InlineCaption>閃空翔裂破
@@ -244,29 +257,33 @@ export default async function HomePage() {
       tp: 10,
       hit: 8,
       element: ["light"],
-      type: "奥義",
+      type: "特技",
+      image: "/skills/rid-spiral-attack.jpg",
     },
     {
       name: "閃空双破斬",
       ruby: "せんくうそうはざん",
-      description: "閃空裂破と虎牙破斬をクロスオーバーさせた高威力の奥義。",
+      description:
+        "閃空裂破と虎牙破斬を組み合わせた高威力の奥義。最後に敵を吹き飛ばす効果があります。",
       requirement: "斬Lv19/突Lv14",
       tp: 20,
       hit: 8,
       element: ["light"],
       type: "奥義",
+      image: "/skills/rid-demon-spiral-hammer.jpg",
     },
     {
       name: "翔雨裂空撃",
       ruby: "しょううれっくうげき",
       description:
-        "裂空斬と秋沙雨を融合させたダイナミックな奥義。理論上は最大19ヒットを叩き出せますが、全段クリーンヒットさせるには高いプレイヤースキルが求められます。習得にはレベル条件のほか、「裂空斬」80回以上、「秋沙雨」120回以上の使い込みが必要です。",
+        "裂空斬と秋沙雨を組み合わせた奥義。理論上は最大19ヒットを叩き出せますが、全段クリーンヒットさせるには高いプレイヤースキルが求められます。習得にはレベル条件のほか、「裂空斬」80回以上、「秋沙雨」120回以上の使い込みが必要です。",
       requirement: "斬Lv14/突Lv19",
       requirement2: "裂空斬80回/秋沙雨120回",
       tp: 24,
       hit: 19,
       element: ["normal"],
       type: "特技",
+      image: "/skills/rid-neo-tempest-swarm.jpg",
     },
     {
       name: "閃空翔裂破",
@@ -278,6 +295,7 @@ export default async function HomePage() {
       hit: 4,
       element: ["light"],
       type: "奥義",
+      image: "/skills/rid-double-spiral-attack.jpg",
     },
     {
       name: "真空裂斬",
@@ -294,6 +312,7 @@ export default async function HomePage() {
       hit: 5,
       element: ["wind"],
       type: "特技",
+      image: "/skills/rid-omega-tempest-strike.jpg",
     },
     {
       name: "鳳凰天駆",
@@ -306,6 +325,7 @@ export default async function HomePage() {
       hit: 9,
       element: ["fire"],
       type: "奥義",
+      image: "/skills/rid-rising-phoenix.jpg",
     },
     {
       name: "猛虎連撃破",
@@ -318,6 +338,7 @@ export default async function HomePage() {
       hit: 8,
       element: ["normal"],
       type: "奥義",
+      image: "/skills/rid-omega-demon-chaos.jpg",
     },
     {
       name: "風刃縛封",
@@ -328,6 +349,7 @@ export default async function HomePage() {
       hit: 2,
       element: ["wind"],
       type: "奥義",
+      image: "/skills/rid-omega-seal.jpg",
     },
     {
       name: "極光壁",
@@ -366,11 +388,9 @@ export default async function HomePage() {
       <article>
         <Section>
           <PageSummary>
-            <div className="mb-2">
-              <p>
-                主人公リッドが習得するすべての特技と奥義の一覧ページです。スキルの前提となる「斬レベル」や「突レベル」の仕組みは専用の解説ページをご確認ください。
-              </p>
-            </div>
+            主人公リッドが習得するすべての特技と奥義の一覧ページです。スキルの前提となる「斬レベル」や「突レベル」の仕組みは専用の解説ページをご確認ください。
+          </PageSummary>
+          <div className="mb-4">
             <GuideList
               isRelated={true}
               items={[
@@ -380,8 +400,7 @@ export default async function HomePage() {
                 },
               ]}
             ></GuideList>
-          </PageSummary>
-
+          </div>
           <ToC list={toc} />
         </Section>
 
