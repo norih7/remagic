@@ -107,7 +107,7 @@ export default function SiteLayout({
   return (
     <>
       <header className={`${styles.header}`}>
-        <div className={`${styles.headerInner} px-4 py-0.5`}>
+        <div className={`${styles.headerInner} px-4 pt-0.5 pb-1`}>
           <div className="flex justify-between items-center ">
             <h1 className="text-lg font-bold tracking-tight">
               <a href="/">
@@ -123,7 +123,7 @@ export default function SiteLayout({
           </div>
           <div>
             <span className="relative text-xs text-gray-700">
-              リマスターに対応したテイルズオブエターニア攻略ガイド
+              テイルズオブエターニア リマスター完全攻略ガイド
             </span>
           </div>
         </div>

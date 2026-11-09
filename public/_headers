@@ -1,2 +1,6 @@
 https://remagic.pages.dev/*
-  X-Robots-Tag: noindex
+	X-Robots-Tag: noindex
+
+https://:version.remagic.pages.dev/*
+	X-Robots-Tag: noindex
+
