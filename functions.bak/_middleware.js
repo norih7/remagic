@@ -8,6 +8,20 @@ const GOOGLE_VERIFICATIONS = {
 export async function onRequest(context) {
   const url = new URL(context.request.url);
 
+  // If the request is to pages.dev, return 410 Gone
+  if (url.hostname.endsWith(".pages.dev")) {
+    return new Response(
+      `<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=https://remagic.brclover.com${url.pathname}"><title>Moved</title></head><body><p>This page has moved to <a href="https://remagic.brclover.com${url.pathname}">https://remagic.brclover.com${url.pathname}</a></p></body></html>`,
+      {
+        status: 410,
+        headers: {
+          "Content-Type": "text/html; charset=utf-8",
+          "X-Robots-Tag": "noindex",
+        },
+      },
+    );
+  }
+
   // Google確認ファイルはASSETSを経由させず直接返す(ASSETS.fetchはリダイレクトルールを再適用してしまうため)
   const verificationBody = GOOGLE_VERIFICATIONS[url.pathname];
   if (verificationBody !== undefined) {
