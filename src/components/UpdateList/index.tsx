@@ -3,6 +3,15 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/11/09",
+    update: (
+      <>
+        <Link href="/deeps/skills/rid">リッドの特技/奥義</Link>
+        をアップデート。技の画像を掲載しました。
+      </>
+    ),
+  },
+  {
     date: "2026/11/06",
     update: <>サブイベントなどの攻略情報のデザインを改修しました。</>,
   },

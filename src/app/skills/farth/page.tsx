@@ -34,37 +34,51 @@ const toc = {
 export default async function HomePage() {
   const skills = [
     {
+      name: "掌底破",
+      ruby: "しょうていは",
+      description: "-",
+      requirement: "拳Lv2/蹴Lv1",
+      tp: 4,
+      hit: 1,
+      element: ["normal"],
+      type: "特技",
+      image: "/skills/farth-palm-strike.jpg",
+    },
+    {
       name: "三散華",
       ruby: "さざんか",
       description:
-        "連続の蹴り上げと足払いによる3連撃。ラッシュの締めくくりで標的を奥へと吹き飛ばします。動作中の隙がやや大きいため、相手の命中率が低い状況や硬い敵を相手にする際は注意が必要です。",
+        "連続の蹴り上げと足払いによる3連撃。標的を奥へと押し除けながら蹴りを繰り広げます。ムーンサルトが入るので空中の敵にもあてることができます。",
       requirement: "拳Lv2/蹴Lv2",
       tp: 6,
       hit: 3,
       element: ["normal"],
       type: "特技",
+      image: "/skills/farth-triple-blossom.jpg",
     },
     {
       name: "連牙弾",
       ruby: "れんがだん",
       description:
-        "素早い拳のラッシュを打ち込む近接連打技。手数は多いものの拳による攻撃ゆえに攻撃範囲はやや狭めです。",
+        "素早い拳のラッシュを打ち込む近接連打技。攻撃範囲は狭めで接近しなければ当たりませんが序盤の特技で最大6HITを狙えるのは強み。最後に敵を少し吹き飛ばします。",
       requirement: "拳Lv5/蹴Lv2",
       tp: 8,
       hit: 6,
       element: ["normal"],
       type: "特技",
+      image: "/skills/farth-sonic-first.jpg",
     },
     {
       name: "飛燕連脚",
       ruby: "ひえんれんきゃく",
       description:
-        "地表からふわりと飛び上がり、空中から鋭い蹴りを放ちます。非常に使い勝手が良く、モーションの途中でキャンセルして空中からのコンボへスムーズにつなげられる優秀な技です。",
+        "地表から蹴りながら飛び上がり、空中から鋭い蹴りを放ちます。非常に使い勝手が良く、モーションの途中でキャンセルして空中からのコンボへスムーズにつなげられる優秀な技です。",
       requirement: "拳Lv4/蹴Lv5",
       tp: 7,
       hit: 3,
       element: ["normal"],
       type: "特技",
+      image: "/skills/farth-swallow-dance.jpg",
     },
     {
       name: "鷹爪蹴撃",
@@ -204,25 +218,21 @@ export default async function HomePage() {
       <article>
         <Section>
           <PageSummary>
-          <div className="mb-2">
-            <p>
-              ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご確認ください。
-            </p>
-          </div>
-          <GuideList
-            isRelated={true}
-            items={[
-              {
-                title: "拳レベル・蹴レベルシステムの詳細解説",
-                href: "/guides/skill",
-              },
-            ]}
-          ></GuideList>
+            ファラが習得するすべての特技、奥義、および回復功の一覧ページです。スキルの前提条件となる「拳レベル」や「蹴レベル」のシステム、秘奥義の詳細な仕組みについては専用の解説ページをご確認ください。
           </PageSummary>
-
+          <div className="mb-4">
+            <GuideList
+              isRelated={true}
+              items={[
+                {
+                  title: "拳レベル・蹴レベルシステムの詳細解説",
+                  href: "/guides/skill",
+                },
+              ]}
+            ></GuideList>
+          </div>
           <ToC list={toc} />
         </Section>
-
 
         <Section>
           <SectionTitle id="recommended-skills-and-arcane-arts">
