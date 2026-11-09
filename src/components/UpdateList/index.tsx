@@ -6,7 +6,7 @@ const update = [
     date: "2026/11/09",
     update: (
       <>
-        <Link href="/deeps/skills/rid">リッドの特技/奥義</Link>
+        <Link href="/skills/rid">リッドの特技/奥義</Link>
         をアップデート。技の画像を掲載しました。
       </>
     ),
