@@ -36,7 +36,8 @@ export default async function HomePage() {
     {
       name: "掌底破",
       ruby: "しょうていは",
-      description: "リーチの短い打撃をあてる技。",
+      description:
+        "リーチの短い打撃をあてる技。最初に覚える技で通常攻撃からの連携として使いやすい。",
       requirement: "拳Lv2/蹴Lv1",
       tp: 4,
       hit: 1,

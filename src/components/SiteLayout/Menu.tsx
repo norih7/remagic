@@ -6,6 +6,7 @@ import { subeventLinks } from "@/constants";
 import { systemLinks } from "@/constants";
 import { extraLinks, deepLinks, guideLinks } from "@/constants";
 import { LuMessageCircleMore, LuChevronDown } from "react-icons/lu";
+import { usePathname } from "next/navigation";
 
 type Link = {
   title: string;
@@ -19,27 +20,36 @@ type Props = {
 };
 const List = (props: Props) => {
   const { links } = props;
-  const list = links.map((item, index) => (
-    <li key={index}>
-      <a href={item.path} className="block p-1 hover:bg-gray-100 rounded">
-        {item.title}
-      </a>
-    </li>
-  ));
+  const pathname = usePathname();
+
+  const list = links.map((item, index) => {
+    return (
+      <li key={index}>
+        <a
+          href={item.path}
+          className={`block p-1 hover:bg-gray-100 rounded ${pathname === item.path ? "bg-gray-100 font-bold text-gray-700" : ""}`}
+        >
+          {item.title}
+        </a>
+      </li>
+    );
+  });
   return <ul className="space-y-1 mb-6">{list}</ul>;
 };
 
-const Category = ({ children }: { children: React.ReactNode }) => (
-  <h3 className="flex items-center mb-1 text-sm font-semibold text-black-400 uppercase tracking-wider pb-1">
-    <div
-      className="text-center mr-3"
-      // style={{ background: "#cfa157", padding: "3px 2px 3px 4px" }}
-    >
-      {/* <LuMessageCircleMore className="text-taupe-500" /> */}
-    </div>
-    {children}
-  </h3>
-);
+const Category = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <h3 className="flex items-center mb-1 text-sm font-semibold text-black-400 uppercase tracking-wider pb-1">
+      <div
+        className="text-center mr-3"
+        // style={{ background: "#cfa157", padding: "3px 2px 3px 4px" }}
+      >
+        {/* <LuMessageCircleMore className="text-taupe-500" /> */}
+      </div>
+      {children}
+    </h3>
+  );
+};
 
 export default function Menu() {
   return (
@@ -50,21 +60,6 @@ export default function Menu() {
       <List links={Object.values(storyLinks)} />
       <Category>特技/晶霊術</Category>
       <List links={Object.values(skillLinks)} />
-      {/* <p className="mb-2 text-sm font-semibold text-black-400 uppercase tracking-wider">
-        Data
-      </p>
-      <ul className="space-y-1 mb-5">
-        <li>
-          <a href="/recipes" className="block p-1 hover:bg-gray-100 rounded">
-            レシピ一覧
-          </a>
-        </li>
-        <li>
-          <a href="/recipes" className="block p-1 hover:bg-gray-100 rounded">
-            レンズ一覧
-          </a>
-        </li>
-      </ul> */}
       <Category>システム/データ</Category>
       <List links={Object.values(systemLinks)} />
       <Category>サブイベント</Category>
