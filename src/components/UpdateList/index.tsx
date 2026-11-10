@@ -3,6 +3,15 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/11/10",
+    update: (
+      <>
+        <Link href="/skills/farth">ファラの特技</Link>
+        をアップデート。技の画像を掲載しました。
+      </>
+    ),
+  },
+  {
     date: "2026/11/09",
     update: (
       <>
