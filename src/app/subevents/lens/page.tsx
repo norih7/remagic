@@ -17,6 +17,7 @@ import { locationLenses } from "@/db/schema";
 import Title from "@/components/Title";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Summary from "@/components/Summary";
+import LinkItem from "@/components/LinkItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -33,7 +34,7 @@ export const metadata = {
   },
 };
 const toc = {
-  "lens-overview-and-rewards": "レンズの説明ともらえるアイテム",
+  "lens-overview-and-rewards": "レンズの説明と報酬",
   "all-lens-locations": "レンズの入手場所一覧（全60枚）",
 };
 
@@ -52,8 +53,35 @@ export default async function HomePage() {
             list={[
               {
                 label: "報酬",
-                value:
-                  "インフェリマント、セレスティマント、クローナシンボルなど",
+                value: (
+                  <ul className="flex flex-wrap items-center gap-2">
+                    <li>
+                      <LinkItem
+                        name="インフェリマント"
+                        href="/systems/item/320"
+                        key={1}
+                        thin={true}
+                      />
+                    </li>
+                    <li>
+                      <LinkItem
+                        name="セレスティマント"
+                        href="/systems/item/321"
+                        key={2}
+                        thin={true}
+                      />
+                    </li>
+                    <li>
+                      <LinkItem
+                        name="クローナシンボル"
+                        href="/systems/item/352"
+                        key={2}
+                        thin={true}
+                      />
+                    </li>
+                    <li>など</li>
+                  </ul>
+                ),
               },
               {
                 label: "場所",
@@ -102,7 +130,7 @@ export default async function HomePage() {
                 </tr>
               </tbody>
             </table>
-            <h3>もらえるアイテム</h3>
+            <h3>報酬アイテム</h3>
             <p>
               インフェリマント、セレスティマント、クローナシンボルが目玉アイテム。マントはデメリットはあるものの、常に装備するのではなく「ボス戦で属性対策をする」という使い方をすれば非常に強力です。クローナシンボルはすべての異常状態を防ぐ最強クラスの装備品。
             </p>

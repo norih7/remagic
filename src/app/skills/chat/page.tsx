@@ -99,11 +99,9 @@ export default async function HomePage() {
       <article>
         <Section>
           <PageSummary>
-            <div className="mb-2">
-              <p>
-                チャットが習得するすべての特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご確認ください。
-              </p>
-            </div>
+            チャットが習得するすべての特技一覧ページです。各スキルを習得するために必要なサブイベントの発生手順や詳細については、専用の攻略ガイドページをご確認ください。
+          </PageSummary>
+          <div className="mb-4">
             <GuideList
               isRelated={true}
               items={[
@@ -112,9 +110,8 @@ export default async function HomePage() {
                   href: "/subevents/skill-chat",
                 },
               ]}
-            ></GuideList>
-          </PageSummary>
-
+            />
+          </div>
           <ToC list={toc} />
         </Section>
 

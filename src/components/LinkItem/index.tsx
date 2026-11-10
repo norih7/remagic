@@ -24,9 +24,9 @@ const LinkItem = (props: Props) => {
     ) : null;
   return typeof href === "undefined" ? (
     <div
-      className={`bg-slate-50 border border-slate-200 rounded-lg px-3 ${thin ? "py-0.5" : "py-3"} leading-none`}
+      className={`bg-slate-50 border border-slate-200 rounded-lg px-3 ${thin ? "py-1" : "py-3"} leading-none`}
     >
-      <div className="font-bold text-slate-600 mb-1">{name}</div>
+      <div className="font-bold text-slate-600">{name}</div>
       {remarks && <span className="text-slate-600 text-xs">{remarks}</span>}
     </div>
   ) : (

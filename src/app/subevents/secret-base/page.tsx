@@ -15,6 +15,7 @@ import Main from "@/components/SiteLayout/Main";
 import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import Summary from "@/components/Summary";
+import LinkItem from "@/components/LinkItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -38,13 +39,33 @@ export default async function HomePage() {
         <Section>
           <ResponsiveImage src="/subevents/secret-base-digest.jpg" />
           <PageSummary>
-            インフェリアのアイフリードのアジトは探索任意のサブイベントですが、レアアイテムを入手できるためぜひ訪れてみてください。リッドの武器「にんとうちざくら」や、HP自動回復の特殊効果のある「ホーリィクローク」などの強力な装備品を入手でき、特にインフェリア帰還した直後のタイミングがおすすめです。
+            インフェリアにあるアイフリードの隠しアジトではレアアイテムを入手できます。リッドの武器「にんとうちざくら」や、HP自動回復の特殊効果のある「ホーリィクローク」などの強力な装備品を探索だけで入手でき、特にインフェリア帰還した直後のタイミングがおすすめです。
           </PageSummary>
           <Summary
             list={[
               {
                 label: "報酬",
-                value: "にんとうちざくら、ホーリィクロークなど",
+                value: (
+                  <ul className="flex flex-wrap items-center gap-2">
+                    <li>
+                      <LinkItem
+                        name="にんとうちざくら"
+                        href="/systems/item/242"
+                        key={1}
+                        thin={true}
+                      />
+                    </li>
+                    <li>
+                      <LinkItem
+                        name="ホーリィクローク"
+                        href="/systems/item/240"
+                        key={2}
+                        thin={true}
+                      />
+                    </li>
+                    <li>など</li>
+                  </ul>
+                ),
               },
               {
                 label: "場所",

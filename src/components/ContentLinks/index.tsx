@@ -22,7 +22,7 @@ const ContentLinks = (props: Props) => {
     <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 ${styles.content}`}>
       {list.map((item) => {
         const Logo = item.image ? (
-          <div className="flex justify-center bg-gray-800 mb-2">
+          <div className="flex justify-center bg-gray-800 mb-2 rounded-sm overflow-hidden ">
             <Image
               src={item.image}
               alt=""

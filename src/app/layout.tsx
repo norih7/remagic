@@ -11,7 +11,7 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 export const metadata: Metadata = {
   title: {
     default: "RE:MAGIC ",
-    template: "%s | RE:MAGIC テイルズオブエターニア攻略",
+    template: "%s | RE:MAGIC テイルズオブエターニアリマスター(TOER)完全攻略",
   },
   description:
     "テイルズオブエターニアのストーリー、データ、やり込み要素など攻略情報を公開。リマスター版にも対応予定のクリーンな攻略サイトです。",

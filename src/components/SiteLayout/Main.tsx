@@ -63,7 +63,7 @@ const Main = ({ title, type, children }: Props) => {
   return (
     <>
       <div className={styles.pageTitleArea}>
-        <div className={`${styles.pageTitleInner} px-4 py-3`}>
+        <div className={`${styles.pageTitleInner} px-4 py-2.5`}>
           {test}
           <h2 className="text-lg font-bold text-slate-800 leading-none flex items-center">
             {type === "time-limit" ? (
