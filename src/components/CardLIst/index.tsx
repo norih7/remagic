@@ -3,7 +3,7 @@ type Props = {
 };
 const CardList = ({ list }: Props) => {
   const List = list.map((item, index) => (
-    <li className="p-3 hover:bg-gray-50 transition-colors" key={index}>
+    <li className="px-4 py-3 hover:bg-gray-50 transition-colors" key={index}>
       {item}
     </li>
   ));

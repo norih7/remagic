@@ -17,6 +17,8 @@ import RoundedInlineList from "@/components/RoundedInlineList";
 import Title from "@/components/Title";
 import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 import Summary from "@/components/Summary";
+import InlineCaption from "@/components/InlineCaption";
+import Link from "next/link";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -37,7 +39,7 @@ const topics = "bg-gray-600 px-3 py-0.5 rounded-xs text-white";
 
 const toc = {
   "event-details": "イベントの詳細",
-  "reliable-winning-strategy": "確実な勝ち方",
+  "reliable-winning-strategy": "簡単必勝法",
 };
 
 export default async function HomePage() {
@@ -83,46 +85,28 @@ export default async function HomePage() {
           </div>
           <div className="mb-8">
             <h3>報酬情報</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>タイミング</th>
-                  <th>報酬</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>セレスティア到着前まで</td>
-                  <td>
-                    <div className="text-left">
-                      <span className={topics}>初回勝利</span>
-                      <br />
-                      称号「さんじゅつせいねん」
-                      <br />
-                      「レモングミ」
-                      <br />
-                      <span className={topics}>2階目以降</span>
-                      <br />
-                      「ミラクルグミ」
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>遠征の橋でインフェリア帰還後</td>
-                  <td>
-                    <div className="text-left">
-                      <span className={topics}>初回勝利</span>
-                      <br />
-                      「ミラクルチャーム」
-                      <br />
-                      <span className={topics}>2階目以降</span>
-                      <br />
-                      「レモングミ」「パイングミ」「ミラクルグミ」
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <RoundedContainer title="セレスティア到着前まで">
+              <div className="pt-3 grid grid-cols-1 gap-3">
+                <RoundedItem title="初回報酬">
+                  称号「さんじゅつせいねん」
+                  <br />
+                  <strong>
+                    ※ セレスティアへ行ってしまうと入手不可能になります
+                  </strong>
+                </RoundedItem>
+                <RoundedItem title="2回目以降の勝利報酬">
+                  「ミラクルグミ」
+                </RoundedItem>
+              </div>
+            </RoundedContainer>
+            <RoundedContainer title="遠征の橋でインフェリア帰還後">
+              <div className="pt-3 grid grid-cols-1 gap-3">
+                <RoundedItem title="初回報酬">「ミラクルチャーム」</RoundedItem>
+                <RoundedItem title="2回目以降の勝利報酬">
+                  「レモングミ」「パイングミ」「ミラクルグミ」
+                </RoundedItem>
+              </div>
+            </RoundedContainer>
           </div>
         </Section>
 
@@ -130,7 +114,89 @@ export default async function HomePage() {
           <SectionTitle id="reliable-winning-strategy">
             {toc["reliable-winning-strategy"]}
           </SectionTitle>
-          <div className="mb-8">準備中です</div>
+          <div className="mb-8">
+            <h3>1. 最初の状態を見て勝負するか決める</h3>
+            <p>
+              ゲームが始まったら3つの山の石の数を見て、
+              <strong>
+                同じ数の山が2つ揃っている場合（例：「6、6、3」や「8、2、8」
+                など）だけ勝負してください。
+              </strong>
+              それ以外は撤退します。
+            </p>
+            <div className="mb-4">
+              <p>
+                勝負する場合、
+                <span className="font-bold">揃っていない山の状態</span>
+                で以下を選択してください。
+              </p>
+            </div>
+            <CardList
+              list={[
+                "1〜3個だったら「先攻で」山の石を全部取る",
+                "4の倍数（4、8、12など）であれば先に相手に取ってもらう",
+                "5個以上なら「先攻で」1〜3個取って4の倍数にする",
+              ]}
+            />
+          </div>
+          <div className="mb-8">
+            <h3>2. 初手以降は「相手のマネ」をする</h3>
+            <div className="mb-4">
+              <p>
+                1以降は相手のマネをして
+                <strong>
+                  「2つの山が同じ数に揃っている状態」をキープし続けてください。
+                </strong>
+              </p>
+            </div>
+            <div className="font-bold mb-2">具体例</div>
+            <CardList
+              list={[
+                <>
+                  <div className="font-bold mb-2">「8、4、8」の場合</div>
+                  相手が「左の山から2個」取ったら自分は「右の山から2個」取って「6、4、6」にする。
+                </>,
+                <>
+                  <div className="font-bold mb-2">「8、10、10」の場合</div>
+                  相手が「真ん中の山から2個」取ったら自分は「右の山から2個」取って「8、8、8」にする
+                </>,
+              ]}
+            />
+          </div>
+          <div className="mb-8">
+            <h3>3. もし揃っていない山からとられた場合</h3>
+            <div className="mb-4">
+              <p>
+                2つ数が揃っている山ではなく、揃っていない山（4の倍数にした山）を相手が触ってきた場合は、以下のように石を取ります。
+              </p>
+            </div>
+            <CardList
+              list={[
+                <>
+                  <div className="font-bold mb-2">
+                    あまりの山が4個だった場合
+                  </div>
+                  相手が1〜3個とった後、自分でとって0にします
+                  <br />
+                  （例）「6、4、6」の場合、相手が「真ん中の山から1個」取ったら「真ん中の山から3個」とって「6、0、6」にする。
+                </>,
+                <>
+                  <div className="font-bold mb-2">
+                    あまりの山が4個より多い場合
+                  </div>
+                  相手が1〜3個とった後、自分でとって4の倍数にします
+                  <br />
+                  （例）「12、8、12」の場合、相手が「真ん中の山から2個」取ったら「真ん中の山から2個」とって「12、4、12」にする。
+                </>,
+              ]}
+            />
+          </div>
+        </Section>
+        <Section>
+          参考:{" "}
+          <Link href="https://manabitimes.jp/math/950">
+            ニム（複数山の石取りゲーム）の必勝法 | 高校数学の美しい物語
+          </Link>
         </Section>
         {/* <Section>
           <SectionTitle>確実な勝ち方</SectionTitle>
