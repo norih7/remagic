@@ -3,6 +3,15 @@ type Props = {};
 
 const update = [
   {
+    date: "2026/11/11",
+    update: (
+      <>
+        <Link href="/subevents/arithmetic">算術勝負</Link>
+        をアップデート。簡単必勝法を掲載しました。
+      </>
+    ),
+  },
+  {
     date: "2026/11/10",
     update: (
       <>

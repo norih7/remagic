@@ -19,6 +19,7 @@ import TimeLimitIcon from "@/components/Icons/TimeLimitIcon";
 import Summary from "@/components/Summary";
 import InlineCaption from "@/components/InlineCaption";
 import Link from "next/link";
+import LinkItem from "@/components/LinkItem";
 
 // 💡 念のため、このページは完全に静的（SSG）であることを明示します
 export const dynamic = "force-static";
@@ -51,6 +52,7 @@ export default async function HomePage() {
     <Main title={title} type="time-limit">
       <article>
         <Section>
+          <ResponsiveImage src="/subevents/arithmetic-title.jpg" />
           <PageSummary>
             バロールの町で行われているミニゲーム「算術勝負」の解説。リッドの称号を得られるサブイベントですが、
             <strong>
@@ -62,26 +64,50 @@ export default async function HomePage() {
             list={[
               {
                 label: "報酬",
-                value:
-                  "リッドの称号「さんじゅつせいねん」、「ミラクルグミ」など",
+                value: (
+                  <ul className="flex items-center flex-wrap gap-2">
+                    <li>
+                      <LinkItem
+                        name="リッドの称号「さんじゅつせいねん」"
+                        key={1}
+                        thin={true}
+                      />
+                    </li>
+                    <li>
+                      <LinkItem
+                        name="ミラクルグミ"
+                        href="/systems/item/46"
+                        key={2}
+                        thin={true}
+                      />
+                    </li>
+                    <li>
+                      <LinkItem
+                        name="ミラクルチャーム"
+                        href="/systems/item/278"
+                        key={2}
+                        thin={true}
+                      />
+                    </li>
+                    <li>など</li>
+                  </ul>
+                ),
               },
               { label: "場所", value: "バロールの町" },
               { label: "発生", value: "バロールの町へ到着後から" },
             ]}
           />
-
+          <Information type="warning" title="注意点">
+            このミニゲームで時限要素となっているのはリッドの称号だけです。称号にこだわりのない方はスキップしても問題ありません。
+          </Information>
           <ToC list={toc} />
         </Section>
         <Section>
           <SectionTitle id="event-details">{toc["event-details"]}</SectionTitle>
-          <ResponsiveImage src="/subevents/arithmetic-title.jpg" />
           <div className="mb-8">
             <p>
               バロールの町にいる商人に話しかけることで算術勝負のミニゲームができ、勝利すると称号とアイテムがもらえます。このミニゲームはいつでもできますが称号はセレスティアへ行く前までしか入手できない時間制限があります。
             </p>
-            <Information type="warning" title="注意点">
-              このミニゲームで時限要素となっているのはリッドの称号だけです。称号にこだわりのない方はスキップしても問題ありません。
-            </Information>
           </div>
           <div className="mb-8">
             <h3>報酬情報</h3>
@@ -116,26 +142,41 @@ export default async function HomePage() {
           </SectionTitle>
           <div className="mb-8">
             <h3>1. 最初の状態を見て勝負するか決める</h3>
+            <ResponsiveImage src="/subevents/arithmetic-pattern.jpg" />
             <p>
               ゲームが始まったら3つの山の石の数を見て、
               <strong>
-                同じ数の山が2つ揃っている場合（例：「6、6、3」や「8、2、8」
-                など）だけ勝負してください。
+                同じ数の山が2つある場合（「4、3、4」や「6、10、10」）だけ勝負してください。
               </strong>
-              それ以外は撤退します。
+              それ以外はこの画面でキャンセルボタンを押して勝負から撤退します。
             </p>
-            <div className="mb-4">
+            <div className="mb-2">
               <p>
-                勝負する場合、
-                <span className="font-bold">揃っていない山の状態</span>
-                で以下を選択してください。
+                条件を満たした場合は
+                <span className="font-bold">揃っていない山の残数を見て</span>
+                次の対応をしてください。
               </p>
             </div>
             <CardList
               list={[
-                "1〜3個だったら「先攻で」山の石を全部取る",
-                "4の倍数（4、8、12など）であれば先に相手に取ってもらう",
-                "5個以上なら「先攻で」1〜3個取って4の倍数にする",
+                <>
+                  <div className="font-bold mb-2">1〜3個の場合</div>
+                  先攻で山の石を全部取る
+                  <br />
+                  例: 「4、3、4」であれば真ん中から3を取って「4、0、4」にする
+                </>,
+                <>
+                  <div className="font-bold mb-2">
+                    4の倍数（4、8、12など）の場合
+                  </div>
+                  先に相手に取ってもらう
+                </>,
+                <>
+                  <div className="font-bold mb-2">5個以上の場合</div>
+                  先攻で1〜3個取って4の倍数にする
+                  <br />
+                  例: 「6、10、10」であれば左から2個取って「4、10、10」にする
+                </>,
               ]}
             />
           </div>
@@ -149,23 +190,23 @@ export default async function HomePage() {
                 </strong>
               </p>
             </div>
-            <div className="font-bold mb-2">具体例</div>
+            <div className="font-bold mb-2">参考例</div>
             <CardList
               list={[
                 <>
                   <div className="font-bold mb-2">「8、4、8」の場合</div>
-                  相手が「左の山から2個」取ったら自分は「右の山から2個」取って「6、4、6」にする。
+                  相手が「左の山から2個」取ったら自分は「右の山から2個」取って「6、4、6」にする
                 </>,
                 <>
-                  <div className="font-bold mb-2">「8、10、10」の場合</div>
-                  相手が「真ん中の山から2個」取ったら自分は「右の山から2個」取って「8、8、8」にする
+                  <div className="font-bold mb-2">「4、10、10」の場合</div>
+                  相手が「真ん中の山から2個」取ったら自分は「右の山から2個」取って「4、8、8」にする
                 </>,
               ]}
             />
           </div>
           <div className="mb-8">
             <h3>3. もし揃っていない山からとられた場合</h3>
-            <div className="mb-4">
+            <div className="mb-2">
               <p>
                 2つ数が揃っている山ではなく、揃っていない山（4の倍数にした山）を相手が触ってきた場合は、以下のように石を取ります。
               </p>
@@ -174,19 +215,21 @@ export default async function HomePage() {
               list={[
                 <>
                   <div className="font-bold mb-2">
-                    あまりの山が4個だった場合
+                    揃っていない山が4個だった場合
                   </div>
                   相手が1〜3個とった後、自分でとって0にします
                   <br />
-                  （例）「6、4、6」の場合、相手が「真ん中の山から1個」取ったら「真ん中の山から3個」とって「6、0、6」にする。
+                  例:
+                  「6、4、6」の場合、相手が「真ん中の山から1個」取ったら「真ん中の山から3個」とって「6、0、6」にする。
                 </>,
                 <>
                   <div className="font-bold mb-2">
-                    あまりの山が4個より多い場合
+                    揃っていない山が4個より多い場合
                   </div>
                   相手が1〜3個とった後、自分でとって4の倍数にします
                   <br />
-                  （例）「12、8、12」の場合、相手が「真ん中の山から2個」取ったら「真ん中の山から2個」とって「12、4、12」にする。
+                  例:
+                  「12、8、12」の場合、相手が「真ん中の山から2個」取ったら「真ん中の山から2個」とって「12、4、12」にする。
                 </>,
               ]}
             />
